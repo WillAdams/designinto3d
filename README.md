@@ -1,3 +1,8 @@
-# designinto3d
+---
+description: A system for parametric design of projects for CNC or traditional techniques
+---
 
-website test
+# Introduction
+
+A system for parametric design of projects for CNC or traditional techniques
+
