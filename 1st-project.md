@@ -22,5 +22,7 @@ With the part designed, the next consideration is manufacture. The easiest way t
 
 In order to do this, one would create a checkbox \(or Boolean\) in BlockSCAD \(or OpenSCAD\). Unfortunately, support for 2D in the former is quite limited, so it will be necessary to model this in 3D, and then export to the latter to actually export a DXF.
 
+A further consideration is the matter of tooling ― it is necessary to consider the diameter of the endmill in cutting out the part, so we add a few more variables including `Endmill Diameter` and some logic to arrange things. This also requires that one revisit matters of orientation and rotation.
+
 
 
