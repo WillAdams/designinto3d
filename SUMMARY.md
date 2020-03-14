@@ -1,5 +1,5 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [A First Project](a-first-project.md)
+* [1st Project](1st-project.md)
 
