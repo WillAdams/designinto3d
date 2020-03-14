@@ -8,5 +8,13 @@ The first project is a rectangular block with the proportions of the monolith fr
 
 A quick and easy way to model in 3D is to use the Blockly variant of OpenSCAD, BlockSCAD: [https://www.blockscad3d.com/editor/](https://www.blockscad3d.com/editor/)
 
-In it, one simply drags blocks and arranges them and updates variable values until one arrives at a desired design. While one could simply use a cube object and manually enter the values, the best practice would be to use a module and have the calculations done automatically based on the user inputting the thickness desired.
+In it, one simply drags blocks and arranges them and updates variable values until one arrives at a desired design. While one could simply use a cube object and manually enter the values:
+
+`cube(size = [4,1,9], center = false);`
+
+The best practice would be to use a module and have the calculations done automatically based on the user inputting the thickness desired:
+
+![Design into 3D: 1st Project: BlockSCAD](.gitbook/assets/blockscad.PNG)
+
+With the part designed, the next consideration is manufacture. 
 
