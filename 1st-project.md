@@ -28,3 +28,7 @@ A further consideration is the matter of tooling ― it is necessary to consider
 
 This is available at: [https://www.blockscad3d.com/community/projects/810179](https://www.blockscad3d.com/community/projects/810179)
 
+Actually manufacturing this is a bit problematic however, since a typical endmill such as a \#201 only has ¾″ of flute length, and wood is measured in rough cut, not finished dimensions. For the former see: [https://docs.carbide3d.com/tutorials/tutorial-tooling/](https://docs.carbide3d.com/tutorials/tutorial-tooling/) and for the latter, consult a text on woodworking or a book such as R. Bruce Hoadley’s wonderful _Understanding Wood: A Craftsman's Guide to Wood Technology_. 
+
+The solution of course, is making a hollow part with top and bottom and four sides. While modern adhesives would allow a simple butt joint to work, having a CNC affords the option of doing joinery in new ways suited to how the machine can move precisely despite repetition.
+
