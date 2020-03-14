@@ -4,9 +4,7 @@ description: A system for parametric design of projects for CNC or traditional t
 
 # Introduction
 
-| Design into 3D is an effort to create a systematic set of project generators for CNC projects, documenting things well enough that one would be able to draw up traditional plans using pen and pencil and fabricate an instance of a project using hand tools. |
-| :--- |
-
+Design into 3D is an effort to create a systematic set of project generators for CNC projects, documenting things well enough that one would be able to draw up traditional plans using pen and pencil and fabricate an instance of a project using hand tools.
 
 It is simultaneously:
 
@@ -14,7 +12,7 @@ It is simultaneously:
 * a [Kickstarter](https://www.kickstarter.com/projects/designinto3d/design-into-3d-a-book-of-customizable-project-desi)
 * a book \(currently in early draft stages\)
 * a paper submitted to the TeX User's Group 40th Anniversary 2019 conference [https://www.tug.org/tug2019/program.html](https://www.tug.org/tug2019/program.html)
-* Design into 3D is a system for modeling parametric projects for manufacture using CNC machines. It documents using OpenSCAD to allow a user to instantly see a 3D rendering of the result of adjusting a parameter in the Customizer interface, parameters are then saved as JSON files which are then read into a LuaLaTeX file which creates a PDF as a cut list/setup sheet/assembly instructions and METAPOST to create SVG files which may be loaded into a CAM tool. A further possibility is using a tool such as TPL \(Tool Path Language\) to make files which are ready to cut. [http://tug.org/TUGboat/tb40-2/tb125adams-3d.pdf](http://tug.org/TUGboat/tb40-2/tb125adams-3d.pdf)
+* Design into 3D is a system for modeling parametric projects for manufacture using CNC machines. It documents using OpenSCAD to allow a user to instantly see a 3D rendering of the result of adjusting a parameter in the Customizer interface, parameters are then saved as JSON files which are then read into a LuaLaTeX file which creates a PDF as a cut list/setup sheet/assembly instructions and METAPOST to create SVG files which may be loaded into a CAM tool. A further possibility is using a tool to make files which are ready to cut. [http://tug.org/TUGboat/tb40-2/tb125adams-3d.pdf](http://tug.org/TUGboat/tb40-2/tb125adams-3d.pdf)
 * a website: [https://designinto3d.com/](https://designinto3d.com/)
 * a design philosophy
 
