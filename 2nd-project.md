@@ -10,5 +10,11 @@ The first machined joint which took into account the use of round tools to join 
 
 An alternative technique would be to lay the stock out flat and machine the edges so that things are not merely cut to size, but also have any necessary features cut in place and geometry along the edges which will allow parts to fit together. Finger joints are popular for this, and can be cut on a CNC if one finds the semicircular voids which are the result of cutting dogbones and similar features where necessary. For a lengthy discussion of this see: [https://community.carbide3d.com/t/design-into-3d-boxes-magazine-storage/16238](https://community.carbide3d.com/t/design-into-3d-boxes-magazine-storage/16238).
 
+One of the oldest of woodworking joints however is the rabbeted joint which fortuitously allows for this sort of thing without voids. It is so simple that it is the subject of a video, “The Simple Box” by Carbide 3D:
+
+{% embed url="https://www.youtube.com/watch?v=V93xDM3lXsM" %}
+
+which is detailed at: [https://www.shapeoko.com/wiki/index.php/Carbide\_Create:\_A\_Simple\_CNC\_Box](https://www.shapeoko.com/wiki/index.php/Carbide_Create:_A_Simple_CNC_Box) and discussed at: [https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530](https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530)
+
 
 
