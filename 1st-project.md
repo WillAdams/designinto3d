@@ -8,6 +8,10 @@ description: 'Creating a first project using BlockSCAD, OpenSCAD, and Carbide Cr
 
 The first project is a rectangular block with the proportions of the monolith from Arthur C. Clarke's science fiction classic, _2001: A Space Odyssey_, 1:4:9, where the second and third value are the second and third natural squares \(the book goes on to imply that the progression continues in other dimensions, but that is beyond the scope of this project\). This allows us to cover cutting to length and width and to consider part orientation.
 
+This is of course easily drawn up in profile, and front, and overhead views:
+
+![1 &#xD7; 4 &#xD7; 9 monolith drawn in 2D](.gitbook/assets/monolith_1x4x9_carbide_create.PNG)
+
 A quick and easy way to model in 3D is to use the Blockly variant of OpenSCAD, BlockSCAD: [https://www.blockscad3d.com/editor/](https://www.blockscad3d.com/editor/)
 
 In it, one simply drags blocks and arranges them and updates variable values until one arrives at a desired design. While one could simply use a cube object and manually enter the values:
