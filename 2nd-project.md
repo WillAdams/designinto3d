@@ -16,5 +16,10 @@ One of the oldest of woodworking joints however is the rabbeted joint which fort
 
 which is detailed at: [https://www.shapeoko.com/wiki/index.php/Carbide\_Create:\_A\_Simple\_CNC\_Box](https://www.shapeoko.com/wiki/index.php/Carbide_Create:_A_Simple_CNC_Box) and discussed at: [https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530](https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530)
 
+A rabbeted joint has the following advantages over a simple butt joint:
 
+* aligns along the join
+* increased glue surface
+
+Since it is cut at right angles, it is easily machined into stock which is laying flat on the machine bed.
 
