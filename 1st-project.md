@@ -6,7 +6,7 @@ description: 'Creating a first project using BlockSCAD, OpenSCAD, and Carbide Cr
 
 ## 1st Project
 
-The first project is a rectangular block with the proportions of the monolith from Arthur C. Clarke's science fiction classic, _2001: A Space Odyssey_, 1:4:9, where the second and third values are the second and third natural squares \(the book goes on to imply that the progression continues in other dimensions, but that is beyond the scope of this project\). This allows us to cover cutting to length and width and to consider part orientation as a necessary adjunct of thickness.
+The first project is a rectangular block with the proportions of the monolith from Arthur C. Clarke's science fiction classic, _2001: A Space Odyssey_, 1:4:9, where the second and third value are the second and third natural squares \(the book goes on to imply that the progression continues in other dimensions, but that is beyond the scope of this project\). This allows us to cover cutting to length and width and to consider part orientation.
 
 This is of course easily drawn up in profile, and front, and overhead views:
 
