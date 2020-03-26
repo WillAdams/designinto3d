@@ -26,5 +26,17 @@ Since it is cut at right angles, it is easily machined into stock which is layin
 * use a smaller endmill and machine grooves trapping the lid and bottom
 * use a larger endmill \(easing machining\) and depend on adhesives and have a lid which lifts off
 
+As in the video, we will do the former. The next consideration is overall dimensions, in this case 3″ wide × 7″ deep × 1½″ high, and the thickness of the stock, ¼″. Based on those, we draw up the three different views:
 
+![Carbide Create Initial view of Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033;](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_initialview.png)
+
+Next, draw in the various thickness of the material:
+
+![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; with boards drawn in.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_drawinboards.png)
+
+It is at the squares where it will be necessary to adjust the sizing of parts to accommodate rabbets and so forth. First, reduce the grid spacing to half the board thickness \(0.125" in this case\), then adjust parts to show the fit of the various rabbeted joints using Boolean operations:
+
+![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; with parts drawn in.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_drawinparts.png)
+
+One may now arrange rectangles of the appropriate sizes for the six parts needed and begin modeling them by drawing in additional rectangles which represent the interior of the box, and where necessary the rabbets:
 
