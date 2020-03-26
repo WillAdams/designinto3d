@@ -21,5 +21,10 @@ A rabbeted joint has the following advantages over a simple butt joint:
 * aligns along the join
 * increased glue surface
 
-Since it is cut at right angles, it is easily machined into stock which is laying flat on the machine bed.
+Since it is cut at right angles, it is easily machined into stock which is laying flat on the machine bed, and it affords two options for orientation:
+
+* use a smaller endmill and machine grooves trapping the lid and bottom
+* use a larger endmill \(easing machining\) and depend on adhesives and have a lid which lifts off
+
+
 
