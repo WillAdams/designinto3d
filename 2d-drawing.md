@@ -4,19 +4,21 @@ description: Drawing in 2 dimensions to make 3 dimensional parts
 
 # 2D Drawing
 
-First though, one must define the geometry of the design. This is done using classic geometric constructs, and possibly some curves defined by fancy math \(but usually drawn up in a CAD or Bézier curve drawing program. We will use Carbide Create as a basic beginning point, but the concepts would apply to any vector drawing program.
+First though, one must define the geometry of the design. This is done using classic geometric constructs, and possibly some curves defined by fancy math \(but usually drawn up in a CAD or Bézier curve drawing program. We will use Carbide Create as a specific example, but the concepts would apply to any vector drawing program, so will be explored first.
+
+![Carbide Create interface.](.gitbook/assets/carbide_create_screengrab_fh11.png)
 
 ## Points
 
-The most basic geometric construct as noted by Euclid in [_Elements_](https://mathcs.clarku.edu/~djoyce/java/elements/elements.html)_:_ [_Book 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html)_:_ [_Definition 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI1.html) is a point in coordinate space --- some CAM tools allow one to assign a drilling operation at a point, but many vector editors disallow a point as an individual stand-alone entity, instead, they are used as a building block for everything else. Carbide Create does not allow the creation of single points, so one would create a circle to define the perimeter of the circle which one wished to drill \(see below\)
+The most basic geometric construct as noted by Euclid in [_Elements_](https://mathcs.clarku.edu/~djoyce/java/elements/elements.html)_:_ [_Book 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html)_:_ [_Definition 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI1.html) is a point in coordinate space --- some CAM tools allow one to assign a drilling operation at a point, but many vector editors disallow a point as an individual stand-alone entity, instead, they are used as a building block for everything else. Carbide Create does not allow the creation of single points, so one would create a circle to define the perimeter of the circle which one wished to machine \(see below\).
 
 ## Lines
 
-Straight lines are the fundamental building blocks of vector drawing and are of course defined as the shortest distance between two points. Some CAM tools will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point. Carbide Create allows one to draw lines as unclosed paths, choose either the Polyline or Curve tool, click at the beginning and end points, and then click on "Done".
+Straight lines are the fundamental building blocks of vector drawing and are of course defined as the shortest distance between two points \(Euclid’s _Elements: Book 1:_ [_Definitions 2–5_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html#defs). Some CAM tools will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point \(path direction\). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline or Curve tool, clicking at the beginning and end points, and then clicking on "Done".
 
 ## Arcs
 
-Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways --- an origin point, end point, and a point of rotation are typical. Unfortunately, Carbide Create does not have an arc tool. They may be made using Boolean operations as parts of circles, or drawn using the Curve tool.
+Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles, or drawn using the Curve tool \(see below\).
 
 ## Polylines
 
@@ -28,7 +30,7 @@ As noted above, toolpaths may be assigned to open paths, and the directionality 
 
 ### Closed Paths 
 
-Closed paths meet back at the point of origin and open up additional operations in CAM tools. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently.
+Closed paths meet back at the point of origin and open up additional operations in CAM tools. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for Circles, Rectangles \(which may be squares\), and Regular Polygons.
 
 ## Curves 
 
@@ -36,7 +38,11 @@ Curves are omitted from some vector drawing programs, and when present may be de
 
 ### Bézier Curves 
 
-The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ending on-curve point. 
+The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ending on-curve point. Carbide Create uses Bézier curves in its Curve tool.
+
+### Quadratic B-Splines
+
+A curve which alternates on-curve and off-curve nodes, B-Splines are used for TrueType fonts, since their calculation is efficiently done.
 
 ## Third Dimensional Shapes
 
