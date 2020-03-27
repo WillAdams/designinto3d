@@ -4,5 +4,41 @@ description: Drawing in 2 dimensions to make 3 dimensional parts
 
 # 2D Drawing
 
-First though, one must define the geometry of the design. This is done using classic geometric constructs, and possibly some curves defined by fancy math \(but usually drawn up in a CAD or Bézier curve drawing program. Points The most basic construct is a point in coordinate space --- some CAM tools allow one to assign a drilling operation at a point. Lines Straight lines are the fundamental building blocks of vector drawing and are of course defined as the shortest distance between two points. Some CAM tools will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point. Arcs Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways --- an origin point, end point, and a point of rotation are typical. Curves Curves are omitted from some tools, and when present may be defined in several ways. Bézier Curves The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ending on-curve point. Paths Paths are made up of multiple points, and/or lines/arcs/curves and are differentiated by being open or closed. Open Paths As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. Closed Paths Closed paths meet back at the point of origin and open up additional operations in CAM tools. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Third Dimensional Shapes Extending all of these into 3 dimensions becomes more complex with each additional element, each of which complicates the mathematics. Up through arcs and regular curves, these are usually manageable, as is expressed in constructive solid geometry \(CSG\), and OpenSCAD is essentially a scripting front-end for this. Extending arbitrary curves into 3 dimensional space involves complex geometric calculations which are the domain of 3 dimensional modeling tools such as Blender and various commercial programs. Fortunately, the regular polygons and extruded shapes of CSG afford one a very wide array of design options.
+First though, one must define the geometry of the design. This is done using classic geometric constructs, and possibly some curves defined by fancy math \(but usually drawn up in a CAD or Bézier curve drawing program. We will use Carbide Create as a basic beginning point, but the concepts would apply to any vector drawing program.
+
+## Points
+
+The most basic geometric construct as noted by Euclid in [_Elements_](https://mathcs.clarku.edu/~djoyce/java/elements/elements.html)_:_ [_Book 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html)_:_ [_Definition 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI1.html) is a point in coordinate space --- some CAM tools allow one to assign a drilling operation at a point, but many vector editors disallow a point as an individual stand-alone entity, instead, they are used as a building block for everything else. Carbide Create does not allow the creation of single points, so one would create a circle to define the perimeter of the circle which one wished to drill \(see below\)
+
+## Lines
+
+Straight lines are the fundamental building blocks of vector drawing and are of course defined as the shortest distance between two points. Some CAM tools will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point. Carbide Create allows one to draw lines as unclosed paths, choose either the Polyline or Curve tool, click at the beginning and end points, and then click on "Done".
+
+## Arcs
+
+Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways --- an origin point, end point, and a point of rotation are typical. Unfortunately, Carbide Create does not have an arc tool. They may be made using Boolean operations as parts of circles, or drawn using the Curve tool.
+
+## Polylines
+
+Polylines are made up of multiple points, and/or lines/arcs/curves and are differentiated by being open or closed. 
+
+### Open Paths
+
+As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. 
+
+### Closed Paths 
+
+Closed paths meet back at the point of origin and open up additional operations in CAM tools. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently.
+
+## Curves 
+
+Curves are omitted from some vector drawing programs, and when present may be defined in several ways. 
+
+### Bézier Curves 
+
+The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ending on-curve point. 
+
+## Third Dimensional Shapes
+
+Extending all of these into 3 dimensions becomes more complex with each additional element, each of which complicates the mathematics. Up through arcs and regular curves, these are usually manageable, as is expressed in constructive solid geometry \(CSG\), and OpenSCAD is essentially a scripting front-end for this. Extending arbitrary curves into 3 dimensional space involves complex geometric calculations which are the domain of 3 dimensional modeling tools such as Blender and various commercial programs. Fortunately, the regular polygons and extruded shapes of CSG afford one a very wide array of design options.
 
