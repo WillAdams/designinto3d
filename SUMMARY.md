@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [1st Project](1st-project.md)
-* [2nd Project](2nd-project.md)
+* [1st Concepts](1st-concepts.md)
+* [2D Drawing](2d-drawing.md)
+* [3D Project](3d-project.md)
 
