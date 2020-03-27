@@ -38,5 +38,11 @@ It is at the squares where it will be necessary to adjust the sizing of parts to
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; with parts drawn in.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_drawinparts.png)
 
-One may now arrange rectangles of the appropriate sizes for the six parts needed and begin modeling them by drawing in additional rectangles which represent the interior of the box, and where necessary the rabbets:
+One may now arrange rectangles of the appropriate sizes for the six parts needed and begin modeling them by drawing in additional rectangles which represent the interior of the box:
+
+![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; part outlines only.](.gitbook/assets/rabbeted-box-with-features-3-7-1-_partoutlinesonly.png)
+
+Next, draw in the geometry necessary to model the rabbets. Basically you need to draw outlines for all the stock which will be left uncut:
+
+
 
