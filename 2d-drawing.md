@@ -54,6 +54,16 @@ Note that the Done button allows one to cancel out of the circle drawing mode.
 
 Named as quadrilaterals in Euclid’s _Elements: Book 1:_ [_Definition 19_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI19.html), rectangles have a specific tool for their creation, squares may be defined by making height and width equal, and in Carbide Create they have a corner feature which other shapes do not. As circles are, they are drawn from the inside out in Carbide Create:
 
+![Carbide Create drawing a rectangle.](.gitbook/assets/carbide_create_interface_create_rectangle.png)
+
+Since Carbide Create draws from center out, shapes are often twice the desired dimensions, in such instances they may be easily scaled to half their size.
+
+### Parameters
+
+Once shapes have been drawn, they may be selected and changed or modified. The most basic change is simply modifying their dimensions:
+
+![Carbide Create modifying circle parameters.](.gitbook/assets/carbide_create_screengrab_circle_parameters.png)
+
 
 
 ## Curves 
