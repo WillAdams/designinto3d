@@ -10,7 +10,7 @@ First though, one must define the geometry of the design. This is done using cla
 
 ## Points
 
-The most basic geometric construct as noted by Euclid in [_Elements_](https://mathcs.clarku.edu/~djoyce/java/elements/elements.html)_:_ [_Book 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html)_:_ [_Definition 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI1.html) is a point in coordinate space --- some CAM tools allow one to assign a drilling operation at a point, but many vector editors disallow a point as an individual stand-alone entity, instead, they are used as a building block for everything else. Carbide Create does not allow the creation of single points, so one would create a circle to define the perimeter of the circle which one wished to machine \(see below\).
+The most basic geometric construct as noted by Euclid in [_Elements_](https://mathcs.clarku.edu/~djoyce/java/elements/elements.html)_:_ [_Book 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html)_:_ [_Definition 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI1.html) is a point in coordinate space ― some CAM tools allow one to assign a drilling operation at a point, but many vector editors disallow a point as an individual stand-alone entity, instead, they are used as a building block for everything else. Carbide Create does not allow the creation of single points, so one would create a circle to define the perimeter of the circle which one wished to machine \(see below\).
 
 ## Lines
 
@@ -18,7 +18,11 @@ Straight lines are the fundamental building blocks of vector drawing and are of 
 
 ![Carbide Create Polyline Tool.](.gitbook/assets/carbide_create_screengrab_polyline_hl%20%281%29.png)
 
-clicking at the beginning and end points, and then clicking on "Done".
+clicking at the beginning and end points:
+
+![Carbide Create line drawing with polyline tool.](.gitbook/assets/carbide_create_screengrab_create_polyline.png)
+
+and then clicking on "Done". Note that open lines in Carbide Create will be indicated by being magenta.
 
 ## Arcs
 
