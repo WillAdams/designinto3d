@@ -46,6 +46,14 @@ Closed paths meet back at the point of origin and open up additional operations 
 
 Circle are defined in Euclid’s _Elements: Book 1:_ [_Definition 15–17_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI15.html) __as a plane figure with one line equidistant from a point. In Carbide Create one draws circles from the inside out, clicking first at the center point, then on a point at the perimeter to define the diameter:
 
+![Carbide Create drawing a circle.](.gitbook/assets/carbide_create_interface_create_circle.png)
+
+Note that the Done button allows one to cancel out of the circle drawing mode.
+
+#### Rectangles and Squares
+
+Named as quadrilaterals in Euclid’s _Elements: Book 1:_ [_Definition 19_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI19.html), rectangles have a specific tool for their creation, squares may be defined by making height and width equal, and in Carbide Create they have a corner feature which other shapes do not. As circles are, they are drawn from the inside out in Carbide Create:
+
 
 
 ## Curves 
