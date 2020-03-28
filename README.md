@@ -8,7 +8,7 @@ Design into 3D is an effort to create a systematic set of project generators for
 
 It is simultaneously:
 
-* an opensource project which is a collection of projects for objects such as boxes, furniture, and tools
+* an opensource project which is a collection of projects for objects such as boxes, furniture, and tools \(available on [https://cutrocket.com/u/WillAdams](https://cutrocket.com/u/WillAdams) and [https://www.thingiverse.com/willadams/designs](https://www.thingiverse.com/willadams/designs) and [https://github.com/WillAdams/Design\_Into\_3D/](https://github.com/WillAdams/Design_Into_3D/)\)
 * a [Kickstarter](https://www.kickstarter.com/projects/designinto3d/design-into-3d-a-book-of-customizable-project-desi)
 * a book \(currently in early draft stages\)
 * an ebook \(you are here\)
@@ -21,9 +21,12 @@ The design philosophy touches on the idea that fundamentally there are only two 
 * platforms
 * boxes
 
-with more complicated pieces incorporating both structures.
+with more complicated pieces incorporating both structures, and that any object is fundamentally described in two ways: 
 
-Currently it uses [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD) as a 3D modeling front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518) When the parameters for a suitable design are entered into the customizer they may be instantiated by exporting as a DXF for designs where this is possible, or saved as a preset in a JSON file which is stored in the same directory as the OpenSCAD source file. The DXFs may of course directly be imported into a traditional CAM tool, while the JSON may then be loaded into a file which generates a design using those parameters for cutting, or toolpaths without further user intervention. The initial implementation of this uses [METAPOST](https://wiki.shapeoko.com/index.php/METAPOST) via the library embedded in [LuaTeX](http://luatex.org/) and importing the JSON file using the [Lua scripting language](http://www.lua.org/).
+* its design
+* its dimensions
+
+Currently it uses [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD) as a 3D modeling front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518) When the parameters for a suitable design are entered into the customizer they may be instantiated by exporting as a DXF for designs where this is possible, or saved as a preset in a JSON file which is stored in the same directory as the OpenSCAD source file. The DXFs may of course directly be imported into a traditional CAM tool such as Carbide Create, while the JSON may then be loaded into a file which generates a design using those parameters ― eventually for cutting, or toolpaths without further user intervention. The initial implementation of this uses [METAPOST](https://wiki.shapeoko.com/index.php/METAPOST) via the library embedded in [LuaTeX](http://luatex.org/) and importing the JSON file using the [Lua scripting language](http://www.lua.org/).
 
 This online ebook is available under a Creative Commons license: Attribution-NonCommercial-ShareAlike 3.0 Unported \(CC BY-NC-SA 3.0\) [https://creativecommons.org/licenses/by-nc-sa/3.0/](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 
