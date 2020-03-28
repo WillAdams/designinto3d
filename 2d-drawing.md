@@ -20,11 +20,11 @@ Straight lines are the fundamental building blocks of vector drawing and are of 
 
 clicking at the beginning and end points:
 
-![Carbide Create line drawing with polyline tool.](.gitbook/assets/carbide_create_screengrab_create_polyline.png)
+![Carbide Create drawing line with polyline tool.](.gitbook/assets/carbide_create_interface_create_polyline.png)
 
 and then clicking on "Done". Note that open lines in Carbide Create will be indicated by being magenta.
 
-Due to the limited toolpath support, open polylines \(or curves, see below\) are not typically used in Carbide Create.
+Due to the limited toolpath support, open polylines \(or curves, see below\) are not typically used in Carbide Create, instead .one will re-work closed paths so that they have suitable geometry.
 
 ## Arcs
 
@@ -40,9 +40,11 @@ As noted above, toolpaths may be assigned to open paths, and the directionality 
 
 ### Closed Paths 
 
-Closed paths meet back at the point of origin and open up additional operations in CAM tools. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for Circles, Rectangles \(which may be squares\), and Regular Polygons.
+Closed paths meet back at the point of origin and open up additional operations in CAM tools. In Euclid’s _Elements: Book 1:_ [_Definition 13–14_ ](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for Circles, Rectangles \(which may be squares\), and Regular Polygons.
 
 #### Circles
+
+Circle are defined in Euclid’s _Elements: Book 1:_ [_Definition 15–17_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI15.html) __as a plane figure with one line equidistant from a point. In Carbide Create one draws circles from the inside out, clicking first at the center point, then on a point at the perimeter to define the diameter:
 
 
 
