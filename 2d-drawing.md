@@ -42,6 +42,10 @@ As noted above, toolpaths may be assigned to open paths, and the directionality 
 
 Closed paths meet back at the point of origin and open up additional operations in CAM tools. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for Circles, Rectangles \(which may be squares\), and Regular Polygons.
 
+#### Circles
+
+
+
 ## Curves 
 
 Curves are omitted from some vector drawing programs, and when present may be defined in several ways. 
