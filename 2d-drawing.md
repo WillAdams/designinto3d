@@ -24,6 +24,8 @@ clicking at the beginning and end points:
 
 and then clicking on "Done". Note that open lines in Carbide Create will be indicated by being magenta.
 
+Due to the limited toolpath support, open polylines \(or curves, see below\) are not typically used in Carbide Create.
+
 ## Arcs
 
 Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles, or drawn using the Curve tool \(see below\).
