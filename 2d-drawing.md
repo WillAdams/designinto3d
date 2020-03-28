@@ -14,7 +14,11 @@ The most basic geometric construct as noted by Euclid in [_Elements_](https://ma
 
 ## Lines
 
-Straight lines are the fundamental building blocks of vector drawing and are of course defined as the shortest distance between two points \(Euclid’s _Elements: Book 1:_ [_Definitions 2–5_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html#defs). Some CAM tools will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point \(path direction\). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline or Curve tool, clicking at the beginning and end points, and then clicking on "Done".
+Straight lines are the fundamental building blocks of vector drawing and are of course defined as the shortest distance between two points \(Euclid’s _Elements: Book 1:_ [_Definitions 2–5_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html#defs). Some CAM tools \(including Carbide Create\) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point \(path direction\). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline \(or Curve\) tool:
+
+![Carbide Create Polyline Tool.](.gitbook/assets/carbide_create_screengrab_polyline_hl%20%281%29.png)
+
+clicking at the beginning and end points, and then clicking on "Done".
 
 ## Arcs
 
