@@ -64,7 +64,18 @@ Once shapes have been drawn, they may be selected and changed or modified. The m
 
 ![Carbide Create modifying circle parameters.](.gitbook/assets/carbide_create_screengrab_circle_parameters.png)
 
+Rectangles may also be modified in their dimensions:
 
+![Carbide Create modifying rectangle parameters.](.gitbook/assets/carbide_create_interface_parameters_rectangle%20%281%29.png)
+
+Note that rather than radius, one may change the shaping/appearance of corners. The possible options are:
+
+* Square \(the default show above\)
+* Fillet \(rounded corners\)
+* Chamfer \(45 degree angles\)
+* Flipped fillet \(quarter circles removed from corners\)
+* Dogbone \(placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit\)
+* Tee \(pacing a semicircle at a corner to ensure that a part with right angle corners will still fit --- note that orientation may not be specified, but by adding the feature, then resizing the stock this may be controlled\)
 
 ## Curves 
 
