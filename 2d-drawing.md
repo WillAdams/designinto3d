@@ -103,6 +103,18 @@ Polygons may be adjusted for Width or Height \(since only regular polygons are s
 
 ![Carbide Create modifying polygon parameters.](.gitbook/assets/carbide_create_interface_polygon_parameters%20%281%29.png)
 
+## Transformations
+
+Geometry may be adjusted in a number of ways:
+
+* Moved to a different location in the drawing area
+* Resized or scaled to a different size/proportion
+* Rotated
+* Flipped along an axis \(Carbide Create affords tools for horizontal and vertical\)
+* Aligned, either to another piece of geometry or the defined Stock.
+
+Another option which drawing programs may afford is offsetting ― this is especially important for Carbide Create since it allows one to adjust the geometry in terms of the radius or diameter of the endmill.
+
 ## Curves 
 
 Curves are omitted from some vector drawing programs, and when present may be defined in several ways. 
