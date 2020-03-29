@@ -58,26 +58,48 @@ Named as quadrilaterals in Euclid’s _Elements: Book 1:_ [_Definition 19_](http
 
 Since Carbide Create draws from center out, shapes are often twice the desired dimensions, in such instances they may be easily scaled to half their size.
 
+### Polygons
+
+Drawing programs often have support for regular polygons, as does Carbide Create. As other objects, polygons are drawn from the centerpoint out:
+
+![Carbide Create drawing a rectangle.](.gitbook/assets/carbide_create_interface_create_polygon.png)
+
+Once drawn, they may be adjusted in their dimensions, and for their number of sides, see below.
+
 ### Parameters
 
-Once shapes have been drawn, they may be selected and changed or modified. The most basic change is simply modifying their dimensions:
+Once shapes have been drawn, they may be selected and changed or modified. The most basic change is simply modifying their dimensions.
+
+#### Circle Parameters
+
+For a circle, this may be done in terms of its overall size \(either Width or Height, only one may be adjusted, the other will be forced to match when **Apply** is clicked, or Radius:
 
 ![Carbide Create modifying circle parameters.](.gitbook/assets/carbide_create_screengrab_circle_parameters.png)
 
-Rectangles may also be modified in their dimensions:
+#### Rectangle Parameters
+
+Rectangles may also be modified in their dimensions, but one is not limited to a regular square, width and height may be specified separately:
 
 ![Carbide Create modifying rectangle parameters.](.gitbook/assets/carbide_create_interface_parameters_rectangle%20%281%29.png)
 
-Note that rather than radius, one may change the shaping/appearance of corners. The possible options are:
+Note that in addition to the dimensions, one may change the shaping/appearance of corners. The possible options are:
 
 ![Carbide Create corner treatments.](.gitbook/assets/carbidecreate_corner_treatments.png)
 
-* Square \(the default show above\)
+* Square \(the default shown above\)
 * Fillet \(rounded corners\)
 * Chamfer \(45 degree angles\)
 * Flipped fillet \(quarter circles removed from corners\)
 * Dogbone \(placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit\)
 * Tee \(placing a semicircle at a corner to ensure that a part with right angle corners will still fit --- note that orientation may not be specified, but by adding the feature, then rotating the part this may be controlled\)
+
+Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter:
+
+#### Polygon Parameters
+
+Polygons may be adjusted for Width or Height \(since only regular polygons are supported, only one measurement may be specified, the other will be forced to the correct dimension\) and number of sides:
+
+![Carbide Create modifying polygon parameters.](.gitbook/assets/carbide_create_interface_polygon_parameters%20%281%29.png)
 
 ## Curves 
 
