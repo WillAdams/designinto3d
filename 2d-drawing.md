@@ -75,7 +75,7 @@ Note that rather than radius, one may change the shaping/appearance of corners. 
 * Chamfer \(45 degree angles\)
 * Flipped fillet \(quarter circles removed from corners\)
 * Dogbone \(placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit\)
-* Tee \(pacing a semicircle at a corner to ensure that a part with right angle corners will still fit --- note that orientation may not be specified, but by adding the feature, then resizing the stock this may be controlled\)
+* Tee \(placing a semicircle at a corner to ensure that a part with right angle corners will still fit --- note that orientation may not be specified, but by adding the feature, then rotating the part this may be controlled\)
 
 ## Curves 
 
