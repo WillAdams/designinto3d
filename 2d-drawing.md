@@ -95,6 +95,8 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 
 Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter:
 
+![Carbide Create modify rectangle corner parameters.](.gitbook/assets/carbide_create_interface_rectangle_fillet_parameters.png)
+
 #### Polygon Parameters
 
 Polygons may be adjusted for Width or Height \(since only regular polygons are supported, only one measurement may be specified, the other will be forced to the correct dimension\) and number of sides:
