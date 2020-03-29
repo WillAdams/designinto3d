@@ -70,6 +70,8 @@ Rectangles may also be modified in their dimensions:
 
 Note that rather than radius, one may change the shaping/appearance of corners. The possible options are:
 
+![Carbide Create corner treatments.](.gitbook/assets/carbidecreate_corner_treatments.png)
+
 * Square \(the default show above\)
 * Fillet \(rounded corners\)
 * Chamfer \(45 degree angles\)
