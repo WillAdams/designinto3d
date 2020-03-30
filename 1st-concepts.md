@@ -1,5 +1,5 @@
 ---
-description: 'Creating a first project using BlockSCAD, OpenSCAD, and Carbide Create'
+description: Concepts and design and fabrication considerations
 ---
 
 # 1st Concepts
@@ -28,7 +28,7 @@ The best practice would be to use a module and have the calculations done automa
 
 With the part designed, the next consideration is manufacture. The easiest way to get a project from BlockSCAD \(or OpenSCAD\) into a CAM tool such as Carbide Create is to export a DXF. If this were done along the standard 2D view, one would get a rectangle as wide as the cube, but only as deep as the thickness, where instead what is wanted is the height, so the block needs to be rotated to provide a different view. As the above 2D drawing makes obvious the correct view for manufacture would be the front.
 
-In order to do this, one would create a checkbox \(or Boolean\) in BlockSCAD \(or OpenSCAD\). Unfortunately, support for 2D in the former is quite limited, so it will be necessary to model this in 3D, and then export to the latter to actually export a DXF.
+In order to do this, one would create a checkbox \(or Boolean\) in BlockSCAD \(or OpenSCAD\). Unfortunately, support for 2D in the former is quite limited, so it will be necessary to model this in 3D, and then export to the latter to actually export a DXF beyond the most basic of geometry.
 
 A further consideration is the matter of tooling ― it is necessary to consider the diameter of the endmill in cutting out the part, so we add a few more variables including `Endmill Diameter` and some logic to arrange things. This also requires that one revisit matters of orientation and rotation. It is best to work with the normal Cartesian orientation ― this allows one to use a cylinder to represent an endmill. Similarly, we want to represent the area which the endmill will remove. Adjust for that and we get:
 
