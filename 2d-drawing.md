@@ -143,6 +143,13 @@ Once a curve is created it may be either open \(indicated by being magenta when 
 
 Note that the beginning and ending nodes will be connected as directly as possible, and it may be necessary to adjust the curve if the path crosses itself.
 
+#### Principles for Bézier Curves
+
+Bézier Curves should be drawn following some basic principles:
+
+* on-curve nodes should be at extrema \(north/south \(top/bottom\) or east/west \(or left/right\) and at points of inflection \(where a shape changes direction, such as in the middle of an _S_ curve\)
+* curves are smoothest when off-curve nodes follow the rule of 30 and are approximately one-third \(30 percent\) of the distance towards the next on-curve node
+
 ### Quadratic B-Splines
 
 A curve which alternates on-curve and off-curve nodes, B-Splines are used for TrueType fonts, since their calculation is efficiently done.
