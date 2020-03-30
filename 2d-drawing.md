@@ -32,11 +32,11 @@ Many CAD programs will allow the definition of arcs which are easily drawn and m
 
 ## Polylines
 
-Polylines are made up of multiple points, and/or lines/arcs/curves and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options are a bit different based on how it was created, and if it has been edited. 
+Polylines are made up of multiple points, and/or lines/arcs/curves and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created, and if it has been edited. 
 
 ### Open Paths
 
-As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. 
+As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. Open paths may be converted to closed by using the Join command \(see Curve Editing below\)
 
 ### Closed Paths 
 
@@ -68,17 +68,17 @@ Once drawn, they may be adjusted in their dimensions, and for their number of si
 
 ### Parameters
 
-Once shapes have been drawn, they may be selected and changed or modified. The most basic change is simply modifying their dimensions.
+Once shapes have been drawn, they may be selected and changed or modified. The most basic change is simply modifying their dimensions, but other properties and features may be available.
 
 #### Circle Parameters
 
-For a circle, this may be done in terms of its overall size \(either Width or Height, only one may be adjusted, the other will be forced to match when **Apply** is clicked, or Radius:
+For a circle, the size parameter adjustment may be done in terms of its overall size \(either Width or Height, only one may be adjusted, the other will be forced to match when **Apply** is clicked\), or Radius:
 
 ![Carbide Create modifying circle parameters.](.gitbook/assets/carbide_create_screengrab_circle_parameters.png)
 
 #### Rectangle Parameters
 
-Rectangles may also be modified in their dimensions, but one is not limited to a regular square, width and height may be specified separately:
+Rectangles may also be modified in their dimensions, but one is not limited to a regular square, Width and Height may be specified separately:
 
 ![Carbide Create modifying rectangle parameters.](.gitbook/assets/carbide_create_interface_parameters_rectangle%20%281%29.png)
 
@@ -131,7 +131,7 @@ Curves are omitted from some vector drawing programs, and when present may be de
 
 ### Bézier Curves 
 
-The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ending on-curve point. Carbide Create uses Bézier curves in its Curve tool.
+The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ending on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options.
 
 To create a curve, select that tool, then click or click-drag where one wants on-curve points \(clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve node\):
 
@@ -139,7 +139,9 @@ To create a curve, select that tool, then click or click-drag where one wants on
 
 Once a curve is created it may be either open \(indicated by being magenta when not selected\), or closed \(black\). Open paths may be closed using the Join command:
 
+![Carbide Create closing curve using Join command. ](.gitbook/assets/carbide_create_interface_join_curve%20%281%29.png)
 
+Note that the beginning and ending nodes will be connected as directly as possible, and it may be necessary to adjust the curve if the path crosses itself.
 
 ### Quadratic B-Splines
 
