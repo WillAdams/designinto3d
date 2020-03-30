@@ -4,7 +4,7 @@ description: A system for parametric design of projects for CNC or traditional t
 
 # Introduction
 
-Design into 3D is an effort to create a systematic set of project generators for objects made using CNC machines, documenting things well enough that one would be able to draw up traditional plans using pen and pencil and fabricate an instance of a project using hand tools, or create files which will efficiently and correctly make toolpaths for cutting on a CNC.
+Design into 3D is an effort to create a systematic set of design and fabrication techniques and project generators for objects made using CNC machines, documenting things well enough that one would be able to draw up traditional plans using pen and pencil and fabricate an instance of a project using hand tools, or create files which will efficiently and correctly make toolpaths for cutting on a CNC.
 
 It is simultaneously:
 
