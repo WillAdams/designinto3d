@@ -4,7 +4,7 @@ description: Drawing in 2 dimensions to make 3 dimensional parts
 
 # 2D Drawing
 
-Before one can make a part, one must define the geometry of the design. This is done using classic geometric constructs, and possibly some curves defined by fancy math \(but usually drawn up in a CAD or Bézier curve drawing program. We will use Carbide Create as a specific example, but the concepts would apply to any vector drawing program, so will be explored first.
+Before one can make a part, one must define the geometry of the design. This is done using classic geometric constructs, and possibly some curves defined mathematically \(but usually drawn up in a CAD or Bézier curve drawing program. We will use Carbide Create as a specific example, but the concepts would apply to any vector drawing program, so will be explored first.
 
 ![Carbide Create interface.](.gitbook/assets/carbide_create_screengrab_fh11.png)
 
