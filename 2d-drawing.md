@@ -14,7 +14,7 @@ The most basic geometric construct as noted by Euclid in [_Elements_](https://ma
 
 ## Lines
 
-Straight lines are a fundamental building blocks of vector drawing and are of course defined as the shortest distance between two points \(Euclid’s _Elements: Book 1:_ [_Definitions 2–5_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html#defs). Some CAM tools \(including Carbide Create\) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point \(path direction\). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline \(or Curve\) tool:
+Straight lines are a fundamental building block of vector drawing and are of course defined as the shortest distance between two points \(Euclid’s _Elements: Book 1:_ [_Definitions 2–5_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html#defs). Some CAM tools \(including Carbide Create\) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point \(path direction\). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline \(or Curve\) tool:
 
 ![Carbide Create Polyline Tool.](.gitbook/assets/carbide_create_screengrab_polyline_hl%20%281%29.png)
 
@@ -32,7 +32,7 @@ Many CAD programs will allow the definition of arcs which are easily drawn and m
 
 ## Polylines
 
-Polylines are made up of multiple points, and/or lines/arcs/curves and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created, and if it has been edited. 
+Polylines are made up of multiple points, and/or lines/arcs/curves and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created, and if it has been edited. For example, a square may have corner options if drawn using the Rectangle tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular Polygon tool, may be changed into another polygon, and if drawn using the Polyline or Curve tool may only be resized or node-edited \(which to a degree are possible with the other creation options\).
 
 ### Open Paths
 
@@ -56,7 +56,7 @@ Named as quadrilaterals in Euclid’s _Elements: Book 1:_ [_Definition 19_](http
 
 ![Carbide Create drawing a rectangle.](.gitbook/assets/carbide_create_interface_create_rectangle.png)
 
-Since Carbide Create draws from center out, shapes are often twice the desired dimensions, in such instances they may be easily scaled to half their size.
+Since Carbide Create draws from center out, shapes are often twice the desired dimensions, in such instances they may be easily scaled to half their size \(this applies to other shapes and is often useful/expedient\).
 
 ### Polygons
 
@@ -111,7 +111,7 @@ Geometry may be adjusted in a number of ways:
 * Resized or scaled to a different size/proportion
 * Rotated
 * Flipped along an axis \(Carbide Create affords tools for horizontal and vertical\)
-* Aligned, either to another piece of geometry or the defined Stock.
+* Aligned, either to another piece of geometry or the defined Stock
 
 Another option which drawing programs may afford is offsetting ― this is especially important for Carbide Create since it allows one to adjust the geometry in terms of the radius or diameter of the endmill.
 
@@ -133,7 +133,7 @@ Curves are omitted from some vector drawing programs, and when present may be de
 
 The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ending on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options.
 
-To create a curve, select that tool, then click or click-drag where one wants on-curve points \(clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve node\):
+To create a curve, select that tool, then click or click-drag where one wants on-curve points \(clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve node ― either may be changed to the other, see below\):
 
 ![Carbide Create drawing curve.](.gitbook/assets/carbide_create_interface_create_curve.png)
 
@@ -147,8 +147,8 @@ Note that the beginning and ending nodes will be connected as directly as possib
 
 Bézier Curves should be drawn following some basic principles:
 
-* on-curve nodes should be at extrema \(north/south \(top/bottom\) or east/west \(or left/right\) and at points of inflection \(where a shape changes direction, such as in the middle of an _S_ curve\)
-* curves are smoothest when off-curve nodes follow the rule of 30 and are approximately one-third \(30 percent\) of the distance towards the next on-curve node
+* on-curve nodes should be at extrema \(north/south \(top/bottom\) or east/west \(or left/right\)\) and at points of inflection \(where a shape changes direction, such as in the middle of an _S_ curve\)
+* curves are smoothest when off-curve nodes follow the “Rule of 30” and are approximately one-third \(30 percent\) of the distance towards the next on-curve node
 
 ### Quadratic B-Splines
 
