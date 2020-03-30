@@ -14,7 +14,7 @@ The most basic geometric construct as noted by Euclid in [_Elements_](https://ma
 
 ## Lines
 
-Straight lines are the fundamental building blocks of vector drawing and are of course defined as the shortest distance between two points \(Euclid’s _Elements: Book 1:_ [_Definitions 2–5_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html#defs). Some CAM tools \(including Carbide Create\) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point \(path direction\). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline \(or Curve\) tool:
+Straight lines are a fundamental building blocks of vector drawing and are of course defined as the shortest distance between two points \(Euclid’s _Elements: Book 1:_ [_Definitions 2–5_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html#defs). Some CAM tools \(including Carbide Create\) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point \(path direction\). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline \(or Curve\) tool:
 
 ![Carbide Create Polyline Tool.](.gitbook/assets/carbide_create_screengrab_polyline_hl%20%281%29.png)
 
@@ -24,7 +24,7 @@ clicking at the beginning and end points:
 
 and then clicking on "Done". Note that open lines in Carbide Create will be indicated by being magenta.
 
-Due to the limited toolpath support, open polylines \(or curves, see below\) are not typically used in Carbide Create, instead .one will re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms \(see below\) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed as a part of the Curve tool.
+Due to the limited toolpath support, open polylines \(or curves, see below\) are not typically used in Carbide Create, instead one will re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms \(see below\) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the Curve tool section below.
 
 ## Arcs
 
@@ -32,7 +32,7 @@ Many CAD programs will allow the definition of arcs which are easily drawn and m
 
 ## Polylines
 
-Polylines are made up of multiple points, and/or lines/arcs/curves and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options are a bit different based on how it was created, and how it has been edited. 
+Polylines are made up of multiple points, and/or lines/arcs/curves and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options are a bit different based on how it was created, and if it has been edited. 
 
 ### Open Paths
 
