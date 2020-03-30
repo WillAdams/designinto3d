@@ -30,6 +30,8 @@ and then clicking on "Done". Note that open lines in Carbide Create will be indi
 
 Due to the limited toolpath support, open polylines \(or curves, see below\) are not typically used in Carbide Create, instead one will re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms \(see below\) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the Curve tool section below.
 
+Lines will be used to define Rectangles \(which may be squares\) and regular Polygons as described below.
+
 ## Arcs
 
 Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles, or drawn using the Curve tool \(see below\).
@@ -54,6 +56,8 @@ Circle are defined in Euclid’s _Elements: Book 1:_ [_Definition 15–17_](http
 
 Note that the Done button allows one to cancel out of the circle drawing mode.
 
+Circles are defined as 4 Bézier curves which is necessarily an approximation of a perfect circle.
+
 #### Rectangles and Squares
 
 Named as quadrilaterals in Euclid’s _Elements: Book 1:_ [_Definition 19_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI19.html), rectangles have a specific tool for their creation, squares may be defined by making height and width equal, and in Carbide Create they have a corner feature which other shapes do not. As circles are, they are drawn from the inside out in Carbide Create:
@@ -64,7 +68,7 @@ Since Carbide Create draws from center out, shapes are often twice the desired d
 
 ### Polygons
 
-Drawing programs often have support for regular polygons, as does Carbide Create. As other objects, polygons are drawn from the centerpoint out:
+Drawing programs often have support for regular polygons, as does Carbide Create. As other objects, Polygons are drawn from the centerpoint out:
 
 ![Carbide Create drawing a rectangle.](.gitbook/assets/carbide_create_interface_create_polygon.png)
 
