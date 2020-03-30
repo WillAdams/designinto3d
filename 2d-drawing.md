@@ -160,7 +160,7 @@ Bézier Curves should be drawn following some basic principles:
 
 ### Quadratic B-Splines
 
-A curve which alternates on-curve and off-curve nodes, B-Splines are used for TrueType fonts, since their calculation is efficiently done.
+A curve which alternates on-curve and off-curve nodes, B-Splines are used for TrueType fonts, since their calculation is efficiently done, but are not used in typical CAD or Bézier curve drawing applications. Note that when TrueType fonts are converted to paths, conversion from B-Splines to Bézier curves may result in odd node placement.
 
 ## Third Dimensional Shapes
 
