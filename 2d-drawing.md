@@ -24,7 +24,7 @@ clicking at the beginning and end points:
 
 and then clicking on "Done". Note that open lines in Carbide Create will be indicated by being magenta.
 
-Due to the limited toolpath support, open polylines \(or curves, see below\) are not typically used in Carbide Create, instead .one will re-work closed paths so that they have suitable geometry.
+Due to the limited toolpath support, open polylines \(or curves, see below\) are not typically used in Carbide Create, instead .one will re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms \(see below\) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed as a part of the Curve tool.
 
 ## Arcs
 
@@ -32,7 +32,7 @@ Many CAD programs will allow the definition of arcs which are easily drawn and m
 
 ## Polylines
 
-Polylines are made up of multiple points, and/or lines/arcs/curves and are differentiated by being open or closed. 
+Polylines are made up of multiple points, and/or lines/arcs/curves and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options are a bit different based on how it was created, and how it has been edited. 
 
 ### Open Paths
 
@@ -121,7 +121,7 @@ When selecting geometry in Carbide Create and selecting Move, the X and Y coordi
 
 ![Carbide Create move transform.](.gitbook/assets/carbide_create_interface_transform_move.png)
 
-In addition to moving, geometry may also be transformed. Using the numeric interface selections may be scaled symmetrically --- the drag handles afford asymmetric scaling by dragging instead:
+In addition to moving, geometry may also be transformed. Using the numeric interface selections may be scaled symmetrically ― the drag handles afford asymmetric scaling by dragging instead:
 
 ![Carbide Create scale transform.](.gitbook/assets/carbide_create_interface_transform_scale.png)
 
@@ -132,6 +132,14 @@ Curves are omitted from some vector drawing programs, and when present may be de
 ### Bézier Curves 
 
 The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ending on-curve point. Carbide Create uses Bézier curves in its Curve tool.
+
+To create a curve, select that tool, then click or click-drag where one wants on-curve points \(clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve node\):
+
+![Carbide Create drawing curve.](.gitbook/assets/carbide_create_interface_create_curve.png)
+
+Once a curve is created it may be either open \(indicated by being magenta when not selected\), or closed \(black\). Open paths may be closed using the Join command:
+
+
 
 ### Quadratic B-Splines
 
