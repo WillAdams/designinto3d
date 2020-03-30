@@ -115,6 +115,12 @@ Geometry may be adjusted in a number of ways:
 
 Another option which drawing programs may afford is offsetting ― this is especially important for Carbide Create since it allows one to adjust the geometry in terms of the radius or diameter of the endmill.
 
+### Move
+
+When selecting geometry in Carbide Create and selecting Move, the X and Y coordinates may be entered, and the reference point selected from the proxy \(indicated by the green highlighted circle\), and will move to that point when Apply is clicked:
+
+![Carbide Create move transform.](.gitbook/assets/carbide_create_interface_transform_move.png)
+
 ## Curves 
 
 Curves are omitted from some vector drawing programs, and when present may be defined in several ways. 
