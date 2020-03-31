@@ -162,7 +162,9 @@ Bézier Curves should be drawn following some basic principles:
 
 The underlying points of geometry may be modified by selecting it and choosing Node Edit Mode:
 
-![](.gitbook/assets/carbide_create_interface_node_edit_mode.png)
+![Carbide Create Node Edit Mode](.gitbook/assets/carbide_create_interface_node_edit_mode.png)
+
+As noted above, geometry is made up of lines and/or curves which are bounded by on-path nodes, and for curves, have a pair of off-path nodes which determine how the curve is drawn.
 
 ### Quadratic B-Splines
 
