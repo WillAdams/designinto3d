@@ -158,6 +158,12 @@ Bézier Curves should be drawn following some basic principles:
 * on-curve nodes should be at extrema \(north/south \(top/bottom\) or east/west \(or left/right\)\) and at points of inflection \(where a shape changes direction, such as in the middle of an _S_ curve\)
 * curves are smoothest when off-curve nodes follow the “Rule of 30” and are approximately one-third \(30 percent\) of the distance towards the next on-curve node
 
+#### Node Edit Mode
+
+The underlying points of geometry may be modified by selecting it and choosing Node Edit Mode:
+
+
+
 ### Quadratic B-Splines
 
 A curve which alternates on-curve and off-curve nodes, B-Splines are used for TrueType fonts, since their calculation is efficiently done, but are not used in typical CAD or Bézier curve drawing applications. Note that when TrueType fonts are converted to paths, conversion from B-Splines to Bézier curves may result in odd node placement.
