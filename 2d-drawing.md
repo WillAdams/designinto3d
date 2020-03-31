@@ -137,7 +137,7 @@ In addition to moving, geometry may also be transformed. Using the numeric inter
 
 Curves are omitted from some vector drawing programs, and when present may be defined in several ways. 
 
-### B zier Curves 
+### Bézier Curves 
 
 The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ending on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options.
 
