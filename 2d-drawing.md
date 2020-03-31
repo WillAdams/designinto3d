@@ -166,9 +166,13 @@ The underlying points of geometry may be modified by selecting it and choosing N
 
 As noted above, geometry is made up of lines and/or curves which are bounded by on-path nodes, and for curves, have a pair of off-path nodes which determine how the curve is drawn.
 
-When in Node Edit Mode it is possible to:
+When in Node Edit Mode it is possible to right-click and:
 
+* add an on-path node
+* delete an on-path node
+* toggle a node from smooth to sharp and vice-versa
 
+Off-path nodes may be dragged to reshape paths, and by holding the Alt \(Option\) key, dragged without affecting the other off-path node for the associated on-path node.
 
 ### Quadratic B-Splines
 
