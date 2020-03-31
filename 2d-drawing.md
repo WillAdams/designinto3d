@@ -135,6 +135,14 @@ In addition to moving, geometry may also be transformed. Using the numeric inter
 
 ![Carbide Create scale transform.](.gitbook/assets/carbide_create_interface_transform_scale.png)
 
+#### Offset Path
+
+Geometry may be selected and offset, either to the inside or outside:
+
+![Carbide Create Offset Path.](.gitbook/assets/carbide_create_interface_offsetpath.png)
+
+When offsetting paths to the outside, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape.
+
 ## Curves 
 
 Curves are omitted from some vector drawing programs, and when present may be defined in several ways. 
