@@ -129,6 +129,8 @@ When selecting geometry in Carbide Create and selecting Move, the X and Y coordi
 
 ![Carbide Create move transform.](.gitbook/assets/carbide_create_interface_transform_move.png)
 
+### Resize
+
 In addition to moving, geometry may also be transformed. Using the numeric interface selections may be scaled symmetrically ― the drag handles afford asymmetric scaling by dragging instead:
 
 ![Carbide Create scale transform.](.gitbook/assets/carbide_create_interface_transform_scale.png)
