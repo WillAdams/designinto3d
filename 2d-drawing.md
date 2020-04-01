@@ -135,7 +135,7 @@ In addition to moving, geometry may also be transformed. Using the numeric inter
 
 ![Carbide Create scale transform.](.gitbook/assets/carbide_create_interface_transform_scale.png)
 
-#### Offset Path
+### Offset Path
 
 Geometry may be selected and offset, either to the inside or outside:
 
