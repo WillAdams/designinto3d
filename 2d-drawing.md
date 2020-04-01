@@ -4,7 +4,7 @@ description: Drawing in 2 dimensions to make 3 dimensional parts
 
 # 2D Drawing
 
-Before one can make a part, one must define the geometry of the design. This is done using classic geometric constructs, and possibly curves defined mathematically \(but usually drawn up in a CAD or Bézier curve drawing program. We will use Carbide Create as a specific example, but the concepts would apply to any CAD or vector drawing program and will be explored first.
+Before one can make a part, one must define the geometry of the design. This is done using classic geometric constructs, and possibly curves defined mathematically \(but usually drawn up in a CAD or Bézier curve drawing program. We will use Carbide Create as a specific example \(freely available from: [https://carbide3d.com/carbidecreate/](https://carbide3d.com/carbidecreate/)\), but the concepts would apply to any CAD or vector drawing program and will be explored first.
 
 ![Carbide Create interface.](.gitbook/assets/carbide_create_screengrab_fh11.png)
 
@@ -24,9 +24,9 @@ Straight lines are a fundamental building block of vector drawing and are of cou
 
 clicking at the beginning and end points:
 
-![Carbide Create drawing line with polyline tool.](.gitbook/assets/carbide_create_interface_create_polyline.png)
+![Carbide Create drawing line with Polyline tool.](.gitbook/assets/carbide_create_interface_create_polyline.png)
 
-and then clicking on "Done". Note that open lines in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths.
+and then clicking on "Done". Note that open lines in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange.
 
 Due to the limited toolpath support, open polylines \(or curves, see below\) are not typically used in Carbide Create, instead one will re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms \(see below\) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the Curve tool section below.
 
@@ -42,7 +42,7 @@ Polylines are made up of multiple points describing lines and are differentiated
 
 ### Open Paths
 
-As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. Open paths may be converted to closed by using the Join command \(see Curve Editing below\)
+As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the Join command \(see Curve Editing below\) but there is no mechanism at this time for combining two \(or more\) open paths into a single path, open or closed. 
 
 ### Closed Paths 
 
@@ -54,9 +54,9 @@ Circle are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](http
 
 ![Carbide Create drawing a circle.](.gitbook/assets/carbide_create_interface_create_circle.png)
 
-Note that the Done button allows one to cancel out of the circle drawing mode.
+Note that the **Done** button allows one to cancel out of the circle drawing mode.
 
-Circles are defined as 4 Bézier curves which is necessarily an approximation of a perfect circle.
+Circles are defined as four Bézier curves which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for machining purposes.
 
 #### Rectangles and Squares
 
@@ -103,13 +103,13 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 
 Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter:
 
-![Carbide Create modify rectangle corner parameters.](.gitbook/assets/carbide_create_interface_rectangle_fillet_parameters.png)
+![Carbide Create modifying Rectangle corner parameters.](.gitbook/assets/carbide_create_interface_rectangle_fillet_parameters.png)
 
 #### Polygon Parameters
 
 Polygons may be adjusted for Width or Height \(since only regular polygons are supported, only one measurement may be specified, the other will be forced to the correct dimension\) and number of sides:
 
-![Carbide Create modifying polygon parameters.](.gitbook/assets/carbide_create_interface_polygon_parameters%20%281%29.png)
+![Carbide Create modifying Polygon parameters.](.gitbook/assets/carbide_create_interface_polygon_parameters%20%281%29.png)
 
 ## Transformations
 
@@ -125,9 +125,9 @@ Another option which drawing programs may afford is offsetting ― this is espec
 
 ### Move
 
-When selecting geometry in Carbide Create and selecting Move, the X and Y coordinates may be entered, and the reference point selected from the proxy \(indicated by the green highlighted circle\), and will move to that point when Apply is clicked:
+When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy \(indicated by the green highlighted circle\), and will move to that point when Apply is clicked:
 
-![Carbide Create move transform.](.gitbook/assets/carbide_create_interface_transform_move.png)
+![Carbide Create Move transform.](.gitbook/assets/carbide_create_interface_transform_move.png)
 
 ### Resize
 
@@ -139,7 +139,7 @@ In addition to moving, geometry may also be transformed. Using the numeric inter
 
 Geometry may be selected and offset, either to the inside or outside:
 
-![Carbide Create Offset Path.](.gitbook/assets/carbide_create_interface_offsetpath.png)
+![](.gitbook/assets/carbide_create_interface_offsetpath%20%281%29.png)
 
 When offsetting paths to the outside, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape.
 
@@ -183,6 +183,15 @@ When in Node Edit Mode it is possible to right-click and:
 * toggle a node from smooth to sharp and vice-versa
 
 Off-path nodes may be dragged to reshape paths, and by holding the Alt \(Option\) key, dragged without affecting the other off-path node for the associated on-path node.
+
+#### Drawing Tutorials
+
+The following drawing tutorials are available:
+
+* [http://community.carbide3d.com/t/lets-draw-an-ellipse-with-new-users/4194](http://community.carbide3d.com/t/lets-draw-an-ellipse-with-new-users/4194)  — very basic tutorial on drawing with the Curve tool
+* [https://community.carbide3d.com/t/lets-make-a-b-for-anyone/14223](https://community.carbide3d.com/t/lets-make-a-b-for-anyone/14223) — drawing more complex forms with the Curve tool
+* [https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022)
+* [https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022)
 
 ### Quadratic B-Splines
 
