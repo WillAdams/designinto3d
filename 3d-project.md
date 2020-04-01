@@ -10,6 +10,8 @@ The first machined joint which took into account the use of round tools to join 
 
 An alternative technique would be to lay the stock out flat and machine the edges so that things are not merely cut to size, but also have any necessary features cut in place and geometry along the edges which will allow parts to fit together. Finger joints are popular for this, and can be cut on a CNC if one finds the semicircular voids which are the result of cutting dogbones and similar features where necessary acceptable. For a lengthy discussion of this see: [https://community.carbide3d.com/t/design-into-3d-boxes-magazine-storage/16238](https://community.carbide3d.com/t/design-into-3d-boxes-magazine-storage/16238) \(including a work-around which will be explored later in this text\).
 
+## The Simple Box Rabbeted Joint
+
 One of the oldest of woodworking joints however is the rabbeted joint which fortuitously allows for this sort of thing without voids. It is so simple that it is the subject of a video, “The Simple Box” by Carbide 3D:
 
 {% embed url="https://www.youtube.com/watch?v=V93xDM3lXsM" %}
@@ -26,15 +28,19 @@ Since it is cut at right angles, it is easily machined into stock which is layin
 * use a smaller endmill and machine grooves trapping the lid and bottom
 * use a larger endmill \(easing machining\) and depend on adhesives to secure the bottm and have a lid which lifts off
 
-As in the video, we will do the former. The next consideration is overall dimensions, in this case 3″ wide × 7″ deep × 1½″ high, and the thickness of the stock, ¼″. Based on those, we draw up the three different views:
+As in the video, we will do the former. 
+
+### Dimensions
+
+The next consideration is overall dimensions, in this case 3″ wide × 7″ deep × 1½″ high, and the thickness of the stock, ¼″. Based on those, we draw up the three different views:
 
 ![Carbide Create Initial view of Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033;](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_initialview.png)
 
-Next, draw in the various thickness of the material:
+Next, draw in the thickness of the material:
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; with boards drawn in.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_drawinboards.png)
 
-It is at the overlapping squares where it will be necessary to adjust the sizing of parts to accommodate rabbets and so forth. First, reduce the grid spacing to half the board thickness \(0.125" in this case\), then adjust parts to show the fit of the various rabbeted joints using Boolean operations:
+It is at the overlapping squares where it will be necessary to adjust the sizing of parts to accommodate rabbets and so forth. First, reduce the grid spacing to half the board thickness \(0.25" so we change grid spacing to 0.125" in this case\), then adjust parts to show the fit of the various rabbeted joints using Boolean operations:
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; with parts drawn in.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_drawinparts.png)
 
