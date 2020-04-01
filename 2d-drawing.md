@@ -137,11 +137,11 @@ In addition to moving, geometry may also be transformed. Using the numeric inter
 
 ### Rotate
 
-Objects may be rotated. This is often useful for decorative designs.
+Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design.
 
 ### Flip
 
-Objects may be flipped \(mirrored\) horizontally or vertically. Useful for decorative designs, it also allows \(for instance\) the creation of reversed geometry for creating stamps or printing blocks.
+Objects may be flipped \(mirrored\) horizontally or vertically. Useful for decorative designs, it also allows \(for instance\) the creation of reversed geometry for creating stamps or printing blocks or creating a mirror of a part for cutting it as an inlay.
 
 ### Align
 
@@ -153,7 +153,7 @@ Geometry may be selected and offset, either to the inside or outside:
 
 ![](.gitbook/assets/carbide_create_interface_offsetpath%20%281%29.png)
 
-When offsetting paths to the outside, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape.
+When offsetting paths to the outside, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a 3rd party tool such as Inkscape, and then reimport, or redraw the geometry.
 
 ### Boolean Operations
 
@@ -165,7 +165,7 @@ Depending on the selection, Carbide Create affords the following Boolean operati
 
 * Union ― the current selection \(two or more objects\) will be added together, creating a new object which is the outermost perimeter of the selection
 * Intersection ― only available when two objects are selected, the new object will be that area included within both objects
-* Subtraction ― the key object \(indicated by a dashed highlight\) will be removed from each of the other objects in the selection
+* Subtraction ― the key object \(indicated by a dashed highlight\) will be removed from each of the other object\(s\) in the selection
 
 Note that the selection is modified, so if the original geometry will be needed after, the objects should be duplicated and dragged back into alignment with the originals.
 
