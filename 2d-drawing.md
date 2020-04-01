@@ -143,6 +143,16 @@ Geometry may be selected and offset, either to the inside or outside:
 
 When offsetting paths to the outside, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape.
 
+### Boolean Operations
+
+Booleans allow for the instantiation of geometry from existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected:
+
+![Carbide Create Boolean options.](.gitbook/assets/carbide_create_interface_boolean.png)
+
+Depending on the selection, Carbide Create affords the following Boolean operations:
+
+* Union
+
 ## Curves 
 
 Curves are omitted from some vector drawing programs, and when present may be defined in several ways. 
