@@ -151,7 +151,11 @@ Booleans allow for the instantiation of geometry from existing geometry. Named f
 
 Depending on the selection, Carbide Create affords the following Boolean operations:
 
-* Union
+* Union ― the current selection \(two or more objects\) will be added together, creating a new object which is the outermost perimeter of the selection
+* Intersection ― only available when two objects are selected, the new object will be that area included within both objects
+* Subtraction ― the key object \(indicated by a dashed highlight\) will be removed from each of the other objects in the selection
+
+Note that the selection is modified, so if the original geometry will be needed after, the objects should be duplicated and dragged back into alignment with the originals.
 
 ## Curves 
 
