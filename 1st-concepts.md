@@ -6,7 +6,7 @@ description: Concepts and design and fabrication considerations
 
 ## 1st Project
 
-The first project is a rectangular block with the proportions of the monolith from Arthur C. Clarke's science fiction classic, _2001: A Space Odyssey_, 1:4:9, where the second and third values are the second and third natural squares \(the book goes on to imply that the progression continues in other dimensions, but that is beyond the scope of this project\). This allows us to cover cutting to length and width and to consider part orientation as a necessary adjunct of thickness.
+The first project is a rectangular block with the proportions of the monolith from Arthur C. Clarke's science fiction classic, _2001: A Space Odyssey_, 1:4:9, where the second and third values are the second and third natural squares \(the book goes on to imply that the progression continues in other dimensions, but that is beyond the scope of this project\). This allows us to cover cutting to length and width and to consider part orientation as a necessary adjunct of thickness, without the pressure of actually making the project.
 
 This is of course easily drawn up in profile, and front, and overhead views:
 
@@ -22,7 +22,7 @@ In it, one simply drags blocks and arranges them and updates variable values unt
 
 `cube(size = [4,1,9], center = false);`
 
-The best practice would be to use a module and have the calculations done automatically based on the user inputting the thickness desired:
+the best practice would be to use a module and have the calculations done automatically based on the user inputting the thickness desired:
 
 ![Design into 3D: 1st Project: BlockSCAD](.gitbook/assets/blockscad.PNG)
 
@@ -30,13 +30,13 @@ With the part designed, the next consideration is manufacture. The easiest way t
 
 In order to do this, one would create a checkbox \(or Boolean\) in BlockSCAD \(or OpenSCAD\). Unfortunately, support for 2D in the former is quite limited, so it will be necessary to model this in 3D, and then export to the latter to actually export a DXF beyond the most basic of geometry.
 
-A further consideration is the matter of tooling ― it is necessary to consider the diameter of the endmill in cutting out the part, so we add a few more variables including `Endmill Diameter` and some logic to arrange things. This also requires that one revisit matters of orientation and rotation. It is best to work with the normal Cartesian orientation ― this allows one to use a cylinder to represent an endmill. Similarly, we want to represent the area which the endmill will remove. Adjust for that and we get:
+In theory one would simply assign an outer profile toolpath to the front view above, but actually manufacturing this is a bit problematic however, since a typical endmill such as a \#201 only has ¾″ of flute length, slotting is hard, and wood is measured in rough cut, not finished dimensions. For the former see: [https://docs.carbide3d.com/tutorials/tutorial-tooling/](https://docs.carbide3d.com/tutorials/tutorial-tooling/) and for the latter, consult a text on woodworking or a book such as R. Bruce Hoadley’s wonderful Understanding Wood: A Craftsman's Guide to Wood Technology.
+
+A further consideration is the matter of tooling ― it is necessary to consider the diameter of the endmill in cutting out the part, so it is necessary to add a few more variables including `Endmill Diameter` and some logic to arrange things. This also requires that one revisit matters of orientation and rotation. It is best to work with the normal Cartesian orientation ― this allows one to use a cylinder to represent an endmill. Similarly, we want to represent the area which the endmill will remove. Adjust for that and we get:
 
 ![Design into 3D: 1st Project: BlockSCAD: Part view](.gitbook/assets/blockscad_part.png)
 
 This is available at: [https://www.blockscad3d.com/community/projects/810179](https://www.blockscad3d.com/community/projects/810179)
-
-In theory one would simply assign an outer profile toolpath to the front view above, but actually manufacturing this is a bit problematic however, since a typical endmill such as a \#201 only has ¾″ of flute length, slotting is hard, and wood is measured in rough cut, not finished dimensions. For the former see: [https://docs.carbide3d.com/tutorials/tutorial-tooling/](https://docs.carbide3d.com/tutorials/tutorial-tooling/) and for the latter, consult a text on woodworking or a book such as R. Bruce Hoadley’s wonderful Understanding Wood: A Craftsman's Guide to Wood Technology.
 
 The solution of course, is making a hollow part with top and bottom and four sides. While modern adhesives would allow a simple butt joint to work, having a CNC affords the option of doing joinery in new ways suited to how the machine can move precisely despite repetition. This book is about that solution.
 
