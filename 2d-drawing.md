@@ -157,6 +157,8 @@ Depending on the selection, Carbide Create affords the following Boolean operati
 
 Note that the selection is modified, so if the original geometry will be needed after, the objects should be duplicated and dragged back into alignment with the originals.
 
+If a given operation does not have the desired result, undoing it in Carbide Create will change which object is the current key object \(indicated by a dashed highlight\) ― reattempting the operation will then do so based on that new aspect of the selection with different results than previously.
+
 ## Curves 
 
 Curves are omitted from some vector drawing programs, and when present may be defined in several ways. 
