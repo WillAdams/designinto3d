@@ -135,6 +135,18 @@ In addition to moving, geometry may also be transformed. Using the numeric inter
 
 ![Carbide Create scale transform.](.gitbook/assets/carbide_create_interface_transform_scale.png)
 
+### Rotate
+
+Objects may be rotated. This is often useful for decorative designs.
+
+### Flip
+
+Objects may be flipped \(mirrored\) horizontally or vertically. Useful for decorative designs, it also allows \(for instance\) the creation of reversed geometry for creating stamps or printing blocks.
+
+### Align
+
+Most, if not all CAD and design tools allow an option for aligning one or more objects. Typically if only one object is selected, the alignment is against the drawing area, in the case of Carbide Create, against the Stock. Alignment affords precision, and control, especially when one is using Rotation.
+
 ### Offset Path
 
 Geometry may be selected and offset, either to the inside or outside:
