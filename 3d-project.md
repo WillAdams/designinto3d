@@ -50,5 +50,7 @@ One may now arrange rectangles of the appropriate sizes for the six parts needed
 
 Next, draw in the geometry necessary to model the rabbets. Basically you need to draw outlines for all the stock which will be left uncut:
 
+![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; part geometry.](.gitbook/assets/carbide_create_screengrab_rabbetedbox_paths.PNG)
 
+\(and we've taken the liberty of drawing in the circle for the fingerhole\).
 
