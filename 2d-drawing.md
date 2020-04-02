@@ -42,7 +42,7 @@ Polylines are made up of multiple points describing lines and are differentiated
 
 ### Open Paths
 
-As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the Join command \(see Curve Editing below\) but there is no mechanism at this time for combining two \(or more\) open paths into a single path, open or closed. 
+As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the Join command \(see Curve Editing below\) but there is no mechanism at this time in Carbide Create for combining two \(or more\) open paths into a single path, open or closed. 
 
 ### Closed Paths 
 
@@ -64,7 +64,7 @@ Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](http
 
 ![Carbide Create drawing a rectangle.](.gitbook/assets/carbide_create_interface_create_rectangle.png)
 
-Since Carbide Create draws from center out, shapes are often twice the desired dimensions, in such instances they may be easily scaled to half their size \(this applies to other shapes and is often useful/expedient\).
+Since Carbide Create draws from center out, shapes are often twice the desired dimensions, in such instances they may be easily scaled to half their size \(this applies to other shapes and is often useful/expedient\) so as to have them at the intended size.
 
 ### Polygons
 
@@ -86,7 +86,7 @@ For a circle, the size parameter adjustment may be done in terms of its overall 
 
 #### Rectangle Parameters
 
-Rectangles may also be modified in their dimensions, but one is not limited to a regular square, Width and Height may be specified separately:
+Rectangles may also be modified in their dimensions, but one is not limited to a regular square, Width and/or Height may be specified separately:
 
 ![Carbide Create modifying rectangle parameters.](.gitbook/assets/carbide_create_interface_parameters_rectangle%20%281%29.png)
 
@@ -137,7 +137,7 @@ In addition to moving, geometry may also be transformed. Using the numeric inter
 
 ### Rotate
 
-Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design.
+Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design. Note that for some objects it may be better to alter their size rather than rotating them in Carbide Create.
 
 ### Flip
 
@@ -157,7 +157,7 @@ When offsetting paths to the outside, corners are rounded off to match the dista
 
 ### Boolean Operations
 
-Booleans allow for the instantiation of geometry from existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected:
+Booleans allow for the instantiation of geometry from existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected \(the green indicates the geometry which will be produced by the operation, the black what is removed\):
 
 ![Carbide Create Boolean options.](.gitbook/assets/carbide_create_interface_boolean.png)
 
