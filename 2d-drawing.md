@@ -191,7 +191,7 @@ Once a Curve \(or Polyline\) is created it may be either open \(indicated by bei
 
 Note that the beginning and ending nodes will be connected as directly as possible:
 
-
+![Carbide Create curve closed using Join command.](.gitbook/assets/carbide_create_interface_join_curve_after.png)
 
 and it may be necessary to adjust the curve if the path crosses itself.
 
