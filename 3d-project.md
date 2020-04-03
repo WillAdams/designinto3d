@@ -16,7 +16,7 @@ One of the oldest of woodworking joints however is the rabbeted joint which fort
 
 {% embed url="https://www.youtube.com/watch?v=V93xDM3lXsM" %}
 
-which is detailed at: [https://www.shapeoko.com/wiki/index.php/Carbide\_Create:\_A\_Simple\_CNC\_Box](https://www.shapeoko.com/wiki/index.php/Carbide_Create:_A_Simple_CNC_Box) and discussed at: [https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530](https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530)
+which is detailed at: [https://www.shapeoko.com/wiki/index.php/Carbide\_Create:\_A\_Simple\_CNC\_Box](https://www.shapeoko.com/wiki/index.php/Carbide_Create:_A_Simple_CNC_Box) and discussed at: [https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530](https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530). Note that there is a generator available at: [http://chaunax.github.io/projects/twhl-box/twhl.html](http://chaunax.github.io/projects/twhl-box/twhl.html) which has an OpenSCAD front-end at: [https://www.thingiverse.com/thing:3575705](https://www.thingiverse.com/thing:3575705).
 
 A rabbeted joint has the following advantages over a simple butt joint:
 
