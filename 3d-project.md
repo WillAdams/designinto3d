@@ -52,5 +52,5 @@ Next, draw in the geometry necessary to model the rabbets. Basically you need to
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; part geometry.](.gitbook/assets/carbide_create_screengrab_rabbetedbox_paths.PNG)
 
-\(and we've taken the liberty of drawing in the circle for the finger hole\).
+\(and we've taken the liberty of drawing in the circle for the finger hole --- if this is not a through hole, then the lid would require two-sided machining operations\).
 
