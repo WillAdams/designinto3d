@@ -14,6 +14,9 @@ As with most drawing tools, there are menus for commands or different program fu
 * [http://carbide3d.com/carbidecreate/video/](http://carbide3d.com/carbidecreate/video/) \(a collection of tutorial videos\)
 * [http://community.carbide3d.com/c/software/carbide-create](http://community.carbide3d.com/c/software/carbide-create) \(a community forum\)
 * [https://wiki.shapeoko.com/index.php/Carbide\_Create](https://wiki.shapeoko.com/index.php/Carbide_Create) \(a wiki page\)
+
+![](.gitbook/assets/carbide3d_create_motion_keyboard_shortcuts.png)
+
 * [Carbide3D\_create\_motion\_keyboard\_shortcuts.pdf](https://community.carbide3d.com/uploads/default/original/3X/1/1/11767141a1e1d62246952219ec915572aae4c699.pdf) \(available at: [https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839)\)
 
 ## Points
