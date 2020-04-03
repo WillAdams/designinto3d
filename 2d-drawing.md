@@ -199,7 +199,7 @@ and it may be necessary to adjust the curve if the path crosses itself.
 
 Bézier Curves should be drawn following some basic principles:
 
-* on-curve nodes should be at extrema \(north/south \(top/bottom\) or east/west \(or left/right\)\) and at points of inflection \(where a shape changes direction, such as in the middle of an _S_ curve\)
+* on-curve nodes should be at extrema \(north/south \(top/bottom\) or east/west \(left/right\)\) and at points of inflection \(where a shape changes direction, such as at the middle of an _S_ curve\)
 * curves are smoothest when off-curve nodes follow the “Rule of 30” and are approximately one-third \(30 percent\) of the distance towards the next on-curve node
 
 #### Node Edit Mode
