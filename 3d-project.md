@@ -44,6 +44,8 @@ It is at the overlapping squares where it will be necessary to adjust the sizing
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; with parts drawn in.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_drawinparts.png)
 
+### Parts
+
 One may now arrange rectangles of the appropriate sizes for the six parts needed and begin modeling them by drawing in additional rectangles which represent the interior of the box:
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; part outlines only.](.gitbook/assets/rabbeted-box-with-features-3-7-1-_partoutlinesonly.png)
@@ -53,4 +55,14 @@ Next, draw in the geometry necessary to model the rabbets. Basically you need to
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; part geometry.](.gitbook/assets/carbide_create_screengrab_rabbetedbox_paths.PNG)
 
 \(and we've taken the liberty of drawing in the circle for the finger hole --- if this is not a through hole, then the lid would require two-sided machining operations\).
+
+### Machining
+
+Adding the machining operations takes us into the 3rd dimension. While one could most expediently add outline profiles only, the rabbets require additional geometry to cut their corners, and it is best practice to cut as a pocket down to tab depth.
+
+Select the geometry for the parts and offset by a distance at least 10% greater than the diameter of the endmill which will be used:
+
+![Carbide Create rabbeted box parts selected for offsetting.](.gitbook/assets/rabbeted-box-with-features-3-7-1-_partoutlines_selected.png)
+
+
 
