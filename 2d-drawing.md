@@ -231,7 +231,7 @@ The following drawing tutorials are available:
 
 A curve which alternates on-curve and off-curve nodes, B-Splines are used for TrueType fonts, since their calculation is efficiently done, but are not used in typical CAD or Bézier curve drawing applications. Note that when TrueType fonts are converted to paths, conversion from B-Splines to Bézier curves may result in odd node placement.
 
-## Carbide Create
+## Resources
 
 For further information on Carbide Create please see:
 
