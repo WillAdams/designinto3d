@@ -64,5 +64,9 @@ Select the geometry for the parts and offset by a distance at least 10% greater 
 
 ![Carbide Create rabbeted box parts selected for offsetting.](.gitbook/assets/rabbeted-box-with-features-3-7-1-_partoutlines_selected.png)
 
+After, an optional optimization would be to edit out the small divots in the offset path:
+
+![Carbide Create rabbeted box after offsetting parts.](.gitbook/assets/rabbeted-box-with-features-3-7-1-_partoutlines_offset.png)
+
 
 
