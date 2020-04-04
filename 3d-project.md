@@ -68,5 +68,9 @@ After, an optional optimization would be to edit out the small divots in the off
 
 ![Carbide Create rabbeted box after offsetting parts.](.gitbook/assets/rabbeted-box-with-features-3-7-1-_partoutlines_offset.png)
 
+With the outer outlines for the rabbet/pocket made, it is simply a matter of selecting the feature geometries as well and pocketing to one-half the stock thickness:
+
+![Carbide Create rabbeted box rabbets.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_rabbets.png)
+
 
 
