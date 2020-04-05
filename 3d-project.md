@@ -55,15 +55,15 @@ First these dimensions are entered into a 3D modeling system as parameters. For 
 
 ![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; dimensions as variables.](.gitbook/assets/blockscad_3d_variables.png)
 
-
+With the dimensions available one can then begin laying out the box and associated parts.
 
 ### Parts
 
-One may now arrange rectangles of the appropriate sizes for the six parts needed and begin modeling them by drawing in additional rectangles which represent the interior of the box:
+In Carbide Create begin by arranging rectangles of the appropriate sizes for the six parts needed:
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; part outlines only.](.gitbook/assets/rabbeted-box-with-features-3-7-1-_partoutlinesonly.png)
 
-Next, draw in the geometry necessary to model the rabbets. Basically you need to draw outlines for all the stock which will be left uncut:
+Model them by drawing in additional rectangles which represent the interior of the box to model the rabbets. Basically you need to draw outlines for all the stock which will be left uncut:
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; part geometry.](.gitbook/assets/carbide_create_screengrab_rabbetedbox_paths.PNG)
 
