@@ -26,7 +26,7 @@ A rabbeted joint has the following advantages over a simple butt joint:
 Since it is cut at right angles, it is easily machined into stock which is laying flat on the machine bed, and it affords two options for orientation:
 
 * use a smaller endmill and machine grooves trapping the lid and bottom
-* use a larger endmill \(easing machining\) and depend on adhesives to secure the bottm and have a lid which lifts off
+* use a larger endmill \(easing machining\) and depend on adhesives to secure the bottom and have a lid which lifts off
 
 As in the video, we will do the former. 
 
@@ -43,6 +43,15 @@ Next, draw in the thickness of the material:
 It is at the overlapping squares where it will be necessary to adjust the sizing of parts to accommodate rabbets and so forth. First, reduce the grid spacing to half the board thickness \(0.25" so we change grid spacing to 0.125" in this case\), then adjust parts to show the fit of the various rabbeted joints using Boolean operations:
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; with parts drawn in.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_drawinparts.png)
+
+To confirm these dimensions, we model things in 3D. All dimensions need to be specified in terms of the overall dimensions of the box and the stock thickness:
+
+* 3" wide \(along X\)
+* 7" deep \(along Y\)
+* 1½″ high \(along Z\)
+* ¼" thick \(actual, not nominal thickness\)
+
+First these dimensions are entered into a 3D modeling system as parameters. For this, BlockSCAD will be used.
 
 ### Parts
 
