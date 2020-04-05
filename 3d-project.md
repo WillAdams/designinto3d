@@ -51,7 +51,11 @@ To confirm these dimensions, we model things in 3D. All dimensions need to be sp
 * 1½″ high \(along Z\)
 * ¼" thick \(actual, not nominal thickness\)
 
-First these dimensions are entered into a 3D modeling system as parameters. For this, BlockSCAD will be used.
+First these dimensions are entered into a 3D modeling system as parameters. For this, [BlockSCAD ](https://www.blockscad3d.com/)will be used: [https://www.blockscad3d.com/editor/](https://www.blockscad3d.com/editor/)
+
+![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; dimensions as variables.](.gitbook/assets/blockscad_3d_variables.png)
+
+
 
 ### Parts
 
