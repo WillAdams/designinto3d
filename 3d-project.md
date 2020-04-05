@@ -59,6 +59,14 @@ With the dimensions available one can then begin laying out the box and associat
 
 ### Parts
 
+Each part will ultimately need to be located within a cube the dimensions of the box:
+
+![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; cube.](.gitbook/assets/blockscad_3d_cube.png)
+
+Start with the bottom, since its orientation and placement match that of the entire box. Note that it must be shifted within the box outline up and over by half the stock thickness \(and reduced in dimensions by that as well\), and that at this time, we will ignore the matter of toolpaths in doing the 3D modeling. However, best practice is to modularize the code, and that will be done:
+
+![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; bottom.](.gitbook/assets/blockscad_3d_makebottom.png)
+
 In Carbide Create begin by arranging rectangles of the appropriate sizes for the six parts needed:
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; part outlines only.](.gitbook/assets/rabbeted-box-with-features-3-7-1-_partoutlinesonly.png)
