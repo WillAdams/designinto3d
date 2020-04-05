@@ -75,7 +75,7 @@ BottomDepth = BoxDepth - StockThickness;
 rabbet = StockThickness / 2;
 ```
 
-\(for expedience the calculations are done directly\) 
+For expedience the calculations are done directly. Similarly, it is simpler to create the part in an orientation which is easily machined, shown upside down relative its orientation in the box.
 
 In Carbide Create begin by arranging rectangles of the appropriate sizes for the six parts needed:
 
