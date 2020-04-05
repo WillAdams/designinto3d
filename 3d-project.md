@@ -75,7 +75,7 @@ BottomDepth = BoxDepth - StockThickness;
 rabbet = StockThickness / 2;
 ```
 
-For expedience the calculations are done directly. Similarly, it is simpler to create the part in an orientation which is easily machined, shown upside down relative its orientation in the box.
+For expedience the calculations are done directly. Similarly, it is simpler to create the part in an orientation which is easily machined, shown upside down relative its orientation in the box. A further consideration is that the rabbet should be slightly increased for the sake of the glue joint, and an option should be added for part spacing.
 
 In Carbide Create begin by arranging rectangles of the appropriate sizes for the six parts needed:
 
