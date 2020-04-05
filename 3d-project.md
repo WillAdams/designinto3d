@@ -67,6 +67,16 @@ Start with the bottom, since its orientation and placement match that of the ent
 
 ![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; bottom.](.gitbook/assets/blockscad_3d_makebottom.png)
 
+It will be necessary to create some variables and code:
+
+```text
+BottomWidth = BoxWidth - StockThickness;
+BottomDepth = BoxDepth - StockThickness;
+rabbet = StockThickness / 2;
+```
+
+\(for expedience the calculations are done directly\) 
+
 In Carbide Create begin by arranging rectangles of the appropriate sizes for the six parts needed:
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; part outlines only.](.gitbook/assets/rabbeted-box-with-features-3-7-1-_partoutlinesonly.png)
