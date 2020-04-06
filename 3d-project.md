@@ -16,7 +16,7 @@ One of the oldest of woodworking joints however is the rabbeted joint which fort
 
 {% embed url="https://www.youtube.com/watch?v=V93xDM3lXsM" %}
 
-which is detailed at: [https://www.shapeoko.com/wiki/index.php/Carbide\_Create:\_A\_Simple\_CNC\_Box](https://www.shapeoko.com/wiki/index.php/Carbide_Create:_A_Simple_CNC_Box) and discussed at: [https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530](https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530). Note that there is a generator available at: [http://chaunax.github.io/projects/twhl-box/twhl.html](http://chaunax.github.io/projects/twhl-box/twhl.html) which has an OpenSCAD front-end at: [https://www.thingiverse.com/thing:3575705](https://www.thingiverse.com/thing:3575705).
+which is detailed at: [https://www.shapeoko.com/wiki/index.php/Carbide\_Create:\_A\_Simple\_CNC\_Box](https://www.shapeoko.com/wiki/index.php/Carbide_Create:_A_Simple_CNC_Box) and discussed at: [https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530](https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530). Note that there is a generator for a very simple rabbeted box available at: [http://chaunax.github.io/projects/twhl-box/twhl.html](http://chaunax.github.io/projects/twhl-box/twhl.html) which has an OpenSCAD front-end at: [https://www.thingiverse.com/thing:3575705](https://www.thingiverse.com/thing:3575705).
 
 A rabbeted joint has the following advantages over a simple butt joint:
 
@@ -25,14 +25,14 @@ A rabbeted joint has the following advantages over a simple butt joint:
 
 Since it is cut at right angles, it is easily machined into stock which is laying flat on the machine bed, and it affords two options for orientation:
 
-* use a smaller endmill and machine grooves trapping the lid and bottom
-* use a larger endmill \(easing machining\) and depend on adhesives to secure the bottom and have a lid which lifts off
+* use a larger endmill \(easing machining\) and depend on adhesives to secure the bottom and have a lid which lifts off \(this is the technique used in the generator mentioned above\)
+* use a smaller endmill and machine grooves trapping the lid and bottom \(which is the technique used in the video linked above and which will be detailed in this chapter\)
 
-As in the video, we will do the former. 
+Other hybrid options are possible, and a style which uses butt joints for the parts, and grooves \(which are visible\) for the lid and bottom is popular for inexpensive packaging. 
 
 ### Dimensions
 
-The next consideration is overall dimensions, in this case 3″ wide × 7″ deep × 1½″ high, and the thickness of the stock, ¼″. Based on those, we draw up the three different views:
+The first consideration is overall dimensions, in this case 3″ wide × 7″ deep × 1½″ high, and the thickness of the stock, ¼″. Based on those, we draw up the three different views \(clockwise from top-left: side, top/bottom, end\):
 
 ![Carbide Create Initial view of Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033;](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_initialview.png)
 
@@ -68,6 +68,8 @@ Start with the bottom, since its orientation and placement match that of the ent
 ![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; bottom.](.gitbook/assets/blockscad_3d_makebottom.png)
 
 It will be necessary to create some variables and code.
+
+The BlockSCAD project for this is available at: [https://www.blockscad3d.com/community/projects/819419](https://www.blockscad3d.com/community/projects/819419)
 
 For expedience the calculations are done directly. Similarly, it is simpler to create the part in an orientation which is easily machined, shown upside down relative its orientation in the box. A further consideration is that the rabbet should be slightly increased for the sake of the glue joint, and an option should be added for part spacing.
 
