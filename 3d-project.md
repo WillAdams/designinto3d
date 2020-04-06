@@ -103,5 +103,7 @@ With the outer outlines for the rabbet/pocket made, it is simply a matter of sel
 
 ![Carbide Create rabbeted box rabbets.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_rabbets.png)
 
+Then select each part outline and add suitable toolpaths and tabs to allow them to be cut free:
 
+![Carbide Create rabbeted box toolpaths with tabs.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_rabbets_profiles.png)
 
