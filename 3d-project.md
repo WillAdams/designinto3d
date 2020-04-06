@@ -67,15 +67,15 @@ Start with the bottom, since its orientation and placement match that of the ent
 
 ![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; bottom.](.gitbook/assets/blockscad_3d_makebottom.png)
 
-It will be necessary to create some variables and code:
-
-```text
-BottomWidth = BoxWidth - StockThickness;
-BottomDepth = BoxDepth - StockThickness;
-rabbet = StockThickness / 2;
-```
+It will be necessary to create some variables and code.
 
 For expedience the calculations are done directly. Similarly, it is simpler to create the part in an orientation which is easily machined, shown upside down relative its orientation in the box. A further consideration is that the rabbet should be slightly increased for the sake of the glue joint, and an option should be added for part spacing.
+
+Taking all of that into account, it is straight-forward to show the different lengths and their attendant calculations with a bit of color-coding:
+
+![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; parts and dimensions.](.gitbook/assets/rabbeted-box-with-features-3_7_1_5_partsdimensions.png)
+
+This should make it obvious that the box sides are the full depth of the box, while the box ends are the width of by the box less twice the rabbet dimension \(since they are inset into the sides\). Similarly the bottom is the width and depth of the box less the rabbet twice over, since it is placed in grooves which are one rabbet deep, leaving one rabbet of thickness around it. Lastly the lid is the same width as the bottom, but is only shorter than the box depth by a single rabbet, since it aligns with the edge of the box at the opening.
 
 In Carbide Create begin by arranging rectangles of the appropriate sizes for the six parts needed:
 
