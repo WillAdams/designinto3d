@@ -4,4 +4,5 @@
 * [1st Concepts](1st-concepts.md)
 * [2D Drawing](2d-drawing.md)
 * [3D Project](3d-project.md)
+* [Further Toolpath Details](further-toolpath-details.md)
 
