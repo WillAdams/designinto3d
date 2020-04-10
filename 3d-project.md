@@ -111,3 +111,9 @@ Then select each part outline and add suitable toolpaths and tabs to allow them 
 
 ![Carbide Create rabbeted box toolpaths with tabs.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_rabbets_profiles.png)
 
+The box may then be cut out.
+
+![Rabbeted box.](.gitbook/assets/win_20200409_22_12_01_pro.jpg)
+
+See: [https://cutrocket.com/p/5e8fd99cc1578/](https://cutrocket.com/p/5e8fd99cc1578/)
+
