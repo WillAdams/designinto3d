@@ -39,6 +39,14 @@ This yields:
 
 ![](.gitbook/assets/blockscad-final-project-variables.PNG)
 
+Working in multiples of boards we need a module to create an array of boards. The inputs should be obvious, as are the calculations and looping. It will be expedient to calculate out the actual dimensions of the \(lower portion of the\) box:
+
+* boxwidth
+* boxdepth
+* boxheight
+
+![](.gitbook/assets/blockscad-final-project-makeboardarry.PNG)
+
 
 
 
