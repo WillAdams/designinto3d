@@ -4,7 +4,7 @@ description: A project which uses multiple materials and techniques
 
 # A Final Project
 
-While there are many guides for making coopered boxes, none of them discuss the underlying mathematics and algorithms. This project allows one to design a traditional chest made up of multiple boards, and straps of a different material \(the design will assume metal, but adapting the design to leather will also be covered\).
+While there are many guides for making coopered boxes, none of them discuss the underlying mathematics and algorithms. This project allows one to design a traditional chest made up of multiple boards, and straps of different materials. The design will use metal for the central flat straps, and leather for the edging and corner protectors.
 
 The first consideration is the necessary parameters. Rather than using absolute/specific dimensions, the height and length and width of the project will be defined in terms of the base width of the boards, so the first parameters would be to define:
 
@@ -54,6 +54,8 @@ Working in multiples of boards we need a module to create an array of boards. Th
 Next we erect the front and back and ends:
 
 ![](.gitbook/assets/blockscad-final-project-front-and-back-and-ends.PNG)
+
+Next is the logic for the lid, a simple if-then construct based on the allowed lid types \(which will become a drop-down menu in OpenSCAD\). Since the skirt will vary, amongst designs, but the basic version will work for multiple designs it is made into a module \(from which code will be copied for the 3-faceted version\):
 
 
 
