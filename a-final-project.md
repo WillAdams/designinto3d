@@ -39,6 +39,10 @@ This yields:
 
 ![](.gitbook/assets/blockscad-final-project-variables.PNG)
 
+In addition, if we are cutting the boards in half lengthwise it will be necessary to know the width of the saw kerf \(dimension of material lost to the cutting\), so add:
+
+* SawKerf
+
 Working in multiples of boards we need a module to create an array of boards. The inputs should be obvious, as are the calculations and looping. It will be expedient to calculate out the actual dimensions of the \(lower portion of the\) box:
 
 * boxwidth
@@ -47,7 +51,9 @@ Working in multiples of boards we need a module to create an array of boards. Th
 
 ![](.gitbook/assets/blockscad-final-project-makeboardarry.PNG)
 
+Next we erect the front and back and ends:
 
+![](.gitbook/assets/blockscad-final-project-front-and-back-and-ends.PNG)
 
 
 
