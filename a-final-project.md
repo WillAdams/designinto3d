@@ -59,3 +59,7 @@ Next is the logic for the lid, a simple if-then construct based on the allowed l
 
 ![](.gitbook/assets/blockscad-final-project-makelidskirt.PNG)
 
+Placing the flat lid is simply a matter of positioning a duplicate of the bottom:
+
+![](.gitbook/assets/blockscad-final-project-lid-flat.PNG)
+
