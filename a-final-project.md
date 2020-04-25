@@ -26,9 +26,16 @@ In addition we will provide the following options for styles of lid:
 * faceted — a three-sided, Mansard-style lid
 * arched — a traditional coopered \(curved, multi-piece\) lid
 
-In order to facilitate the strapping it will be necessary to specify the dimensions for it:
+In order to facilitate the strapping \(for simplicity's sake it is assumed the flat strapping is the same width and thickness as the angle profile\) it will be necessary to specify the dimensions for it:
 
+* anglewidth
+* anglethickness
 
+Lastly we will need to fasten things with some sort of hardware which requires that a hole is placed through the strapping — for simplicity a matching hole will not be machined during manufacture, instead it is expected that the holes will be drilled during assembly. Similarly, the actual hardware used is not specified, only the diameter of the necessary hole:
+
+* hardwarediameter
+
+This yields:
 
 
 
