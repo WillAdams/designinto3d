@@ -39,7 +39,7 @@ This yields:
 
 ![](.gitbook/assets/blockscad-final-project-variables.PNG)
 
-In addition, if we are cutting the boards in half lengthwise it will be necessary to know the width of the saw kerf \(dimension of material lost to the cutting\), so add:
+In addition, since we are cutting the boards in half lengthwise for the lid parts it will be necessary to know the width of the saw kerf \(dimension of material lost to the cutting\), so add:
 
 * SawKerf
 
@@ -57,7 +57,5 @@ Next we erect the front and back and ends:
 
 Next is the logic for the lid, a simple if-then construct based on the allowed lid types \(which will become a drop-down menu in OpenSCAD\). Since the skirt will vary, amongst designs, but the basic version will work for multiple designs it is made into a module \(from which code will be copied for the 3-faceted version\):
 
-
-
-
+![](.gitbook/assets/blockscad-final-project-makelidskirt.PNG)
 
