@@ -16,5 +16,23 @@ In keeping things proportional, it will also be expedient to use that last value
 
 The actual size of the base of the box will be calculated from:
 
+* boxwidthinboards
+* boxdepthinboards
+* boxheightinboards
+
+In addition we will provide the following options for styles of lid:
+
+* flat — a plain flat lid
+* faceted — a three-sided, Mansard-style lid
+* arched — a traditional coopered \(curved, multi-piece\) lid
+
+In order to facilitate the strapping it will be necessary to specify the dimensions for it:
+
+
+
+
+
+
+
 
 
