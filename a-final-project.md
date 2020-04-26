@@ -71,3 +71,7 @@ Adding the front/back facets is easily done:
 
 ![](.gitbook/assets/blockscad-final-project-makefacetedlidfrontback.PNG)
 
+The ends require a bit of trigonometry to calculate the offset of the angled boards and necessary gaps:
+
+![](.gitbook/assets/blockscad-final-project-makefacetedlid-ends.PNG)
+
