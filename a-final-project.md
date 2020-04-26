@@ -75,3 +75,7 @@ The ends require a bit of trigonometry to calculate the offset of the angled boa
 
 ![](.gitbook/assets/blockscad-final-project-makefacetedlid-ends.PNG)
 
+Add the boards at the top to finish this version of the box:
+
+![](.gitbook/assets/blockscad-final-project-makefacetedlidtop.PNG)
+
