@@ -63,3 +63,7 @@ Placing the flat lid is simply a matter of positioning a duplicate of the bottom
 
 ![](.gitbook/assets/blockscad-final-project-lid-flat.PNG)
 
+The faceted lid is a basic variation, starting with appropriate angles on the skirt pieces:
+
+![](.gitbook/assets/blockscad-final-project-makefacetedlidskirt.PNG)
+
