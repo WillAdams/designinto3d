@@ -67,3 +67,7 @@ The faceted lid is a basic variation, starting with appropriate angles on the sk
 
 ![](.gitbook/assets/blockscad-final-project-makefacetedlidskirt.PNG)
 
+Adding the front/back facets is easily done:
+
+![](.gitbook/assets/blockscad-final-project-makefacetedlidfrontback.PNG)
+
