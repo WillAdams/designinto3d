@@ -4,7 +4,7 @@ description: A project which uses multiple materials and techniques
 
 # A Final Project
 
-While there are many guides for making coopered boxes, none of them discuss the underlying mathematics and algorithms. This project allows one to design a traditional chest made up of multiple boards, and straps of different materials. The design will use metal for the central flat straps, and leather for the edging and corner protectors.
+While there are many guides for making coopered boxes, none of them discuss the underlying mathematics and algorithms. This project allows one to design a traditional chest made up of multiple boards, and straps of different materials. The project will use metal for the central flat straps, and leather for the edging and corner protectors way be fashioned of either material, or suitable hardware may be sourced commercially.
 
 The first consideration is the necessary parameters. Rather than using absolute/specific dimensions, the height and length and width of the project will be defined in terms of the base width of the boards, so the first parameters would be to define:
 
