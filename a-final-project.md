@@ -79,3 +79,7 @@ Add the boards at the top to finish this version of the box:
 
 ![](.gitbook/assets/blockscad-final-project-makefacetedlidtop.PNG)
 
+The arched form requires some additional variables:
+
+![](.gitbook/assets/blockscad-final-project-variables-for-arched-lid.PNG)
+
