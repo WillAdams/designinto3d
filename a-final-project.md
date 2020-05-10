@@ -81,5 +81,9 @@ Add the boards at the top to finish this version of the box:
 
 The arched form requires some additional variables:
 
-![](.gitbook/assets/blockscad-final-project-variables-for-arched-lid.PNG)
+![](.gitbook/assets/blockscad-final-project-variables-for-arched-lid%20%281%29.PNG)
+
+But eventually one arrives at:
+
+![](.gitbook/assets/blockscad-final-project-archedlid.PNG)
 
