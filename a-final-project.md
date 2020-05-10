@@ -83,7 +83,11 @@ The arched form requires some additional variables:
 
 ![](.gitbook/assets/blockscad-final-project-variables-for-arched-lid%20%281%29.PNG)
 
-But eventually one arrives at:
+Arching the lid so that it fits requires calculating two triangle angles:
 
 ![](.gitbook/assets/blockscad-final-project-archedlid.PNG)
+
+Combining all the wooden parts and one arrives at:
+
+![](.gitbook/assets/blockscad-final-project-withoutstraps.PNG)
 
