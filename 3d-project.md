@@ -75,7 +75,7 @@ For expedience the calculations are done directly. Similarly, it is simpler to c
 
 Taking all of that into account, it is straight-forward to show the different lengths and their attendant calculations with a bit of color-coding:
 
-![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; parts and dimensions.](.gitbook/assets/rabbeted-box-with-features-3_7_1_5_partsdimensions.png)
+![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; parts and dimensions.](.gitbook/assets/rabbeted-box-with-features-3_7_1_5_partsdimensions%20%281%29.png)
 
 This should make it obvious that the box sides are the full depth of the box, while the box ends are the width of by the box less twice the rabbet dimension \(since they are inset into the sides\). Similarly the bottom is the width and depth of the box less the rabbet twice over, since it is placed in grooves which are one rabbet deep, leaving one rabbet of thickness around it. Lastly the lid is the same width as the bottom, but is only shorter than the box depth by a single rabbet, since it aligns with the edge of the box at the opening.
 
