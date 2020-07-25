@@ -8,9 +8,9 @@ description: Concepts and design and fabrication considerations
 
 The first project is a rectangular block with the proportions of the monolith from Arthur C. Clarke's science fiction classic, _2001: A Space Odyssey_, 1:4:9, where the second and third values are the second and third natural squares \(the book goes on to imply that the progression continues in other dimensions, but that is beyond the scope of this project\). This allows us to cover cutting to length and width and to consider part orientation as a necessary adjunct of thickness, without the pressure of actually making the project.
 
-This is of course easily drawn up in profile, and front, and overhead views:
+This is of course easily drawn up in overhead, front, and profile views:
 
-![1 &#xD7; 4 &#xD7; 9 monolith drawn in 2D](.gitbook/assets/monolith_1x4x9_carbide_create.PNG)
+![1 &#xD7; 4 &#xD7; 9 monolith drawn in 2D](.gitbook/assets/monolith_1x4x9_carbide_create.png)
 
 Which may be combined into an isometric view quite easily:
 
