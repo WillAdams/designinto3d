@@ -5,6 +5,7 @@
 * [2D Drawing](2d-drawing.md)
 * [3D Project](3d-project.md)
 * [Prototypes and Designs](prototypes-and-designs.md)
+* [Fingerjoints](fingerjoints.md)
 * [A Final Project](a-final-project.md)
 * [Further Toolpath Details](further-toolpath-details.md)
 
