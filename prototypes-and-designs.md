@@ -16,6 +16,8 @@ Or for the 3D Preview:
 
 ![Design into 3D: Box: 3D Preview](.gitbook/assets/blockscad_box_3d_preview.png)
 
+This design template is available at: [https://www.blockscad3d.com/community/projects/965700](https://www.blockscad3d.com/community/projects/965700).
+
 With the basic box design worked up the project may be duplicated for specific implementations and varying sorts of joinery techniques:
 
 * fingerjoints ― there are two different approaches here, traditional and cut with the boards standing on end in a vertical fixture: [https://cutrocket.com/p/5cb536396c281/](https://cutrocket.com/p/5cb536396c281/) or a contemporary approach which typically uses sheet goods and are cut flat on the machine with the finger joints relieved in some way \(dogbones or some similar approach are easily done since they rely on the same tool used for the bulk of the cutting, _e.g._, [https://docs.carbide3d.com/tutorials/project-minibox/](https://docs.carbide3d.com/tutorials/project-minibox/) or [https://docs.carbide3d.com/tutorials/project-simplebox/](https://docs.carbide3d.com/tutorials/project-simplebox/)\)
