@@ -89,7 +89,7 @@ Model them by drawing in additional rectangles which represent the interior of t
 
 ![Carbide Create Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; part geometry.](.gitbook/assets/carbide_create_screengrab_rabbetedbox_paths.PNG)
 
-\(and we've taken the liberty of drawing in the circle for the finger hole --- if this is not a through hole, then the lid would require two-sided machining operations\).
+\(and we've taken the liberty of drawing in the circle for the finger hole\).
 
 ### Machining
 
