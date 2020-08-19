@@ -220,9 +220,24 @@ Off-path nodes may be dragged to reshape paths, and by holding the Alt \(Option\
 
 #### Drawing Tutorials
 
-The following drawing tutorials are available:
+A very basic drawing task is to draw an oval. Originally this tutorial was available at: [http://community.carbide3d.com/t/lets-draw-an-ellipse-with-new-users/4194](http://community.carbide3d.com/t/lets-draw-an-ellipse-with-new-users/4194) — and is provided here in an updated form.
 
-* [http://community.carbide3d.com/t/lets-draw-an-ellipse-with-new-users/4194](http://community.carbide3d.com/t/lets-draw-an-ellipse-with-new-users/4194)  — very basic tutorial on drawing with the Curve tool
+Start by launching Carbide Create — in Job Setup \(gear icon\) set the width of the drawing area to 20", the height to 15", and go into Job Setup \| Document background \| Edit Ensure the grid spacing is 0.50. Download the following file:
+
+![](.gitbook/assets/cc_diamond.png)
+
+Placing it on the background layer scaled so that it fills the entire drawing area \(0.557 should work\). Ensure that Snap to Grid is enabled.
+
+Select the Curve tool and click on each of the four points of the placed image, clicking again on the first to close the path.
+
+Download and place the image below on the background scaled as before:
+
+![](.gitbook/assets/cc_ellipse.png)
+
+Select the path and go into Node Edit Mode and right-click on each node and select "Toggle Smooth" \(or press the "s" key\) and drag the off-curve nodes to match the positioning of the background image.
+
+The following additional drawing tutorials are available:
+
 * [https://community.carbide3d.com/t/lets-make-a-b-for-anyone/14223](https://community.carbide3d.com/t/lets-make-a-b-for-anyone/14223) — drawing more complex forms with the Curve tool
 * [https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022)
 * [https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022)
