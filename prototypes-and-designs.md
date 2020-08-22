@@ -4,7 +4,7 @@ description: Working efficiently to save time and effort
 
 # Prototypes and Designs
 
-As noted, projects are either boxes or platforms. Creating a template for a basic box design will allow the development of features and capabilities which may then be used for specific design implementations. Setup is straight-forward: variables for parameters and some modules for the parts:
+As noted, functional objects are either boxes or platforms. Creating a template for a basic box design will allow the development of features and capabilities which may then be used for specific design implementations. Setup is straight-forward: variables for parameters and some modules for the parts:
 
 ![Design into 3D: Box: Basic](.gitbook/assets/blockscad_box_basics.png)
 
@@ -32,10 +32,10 @@ With the basic box design worked up the project may be duplicated for specific i
 There are 3 approaches for cutting joinery on a CNC:
 
 * boards oriented at 90 degrees to each other using a vertical fixture such as: [https://cutrocket.com/p/5cb25f3380844/](https://cutrocket.com/p/5cb25f3380844/)
-* boards arranged at various angles via fixtures ― one example was the commercial program AnyTail which used a 15 degree fixture so that a 30 degree V endmill could make a 90 degree cut 
+* boards arranged at various angles via fixtures ― one example was the commercial program AnyTail which used a 15 degree fixture so that a 30 degree V endmill could make a 90 degree cut at the end of the board and various features which would line up
 * boards \(or sheet goods\) flat on the machine 
 
-Since joints using vertical fixtures are simply a reprise of traditional work it is that last which will be focused on, beginning with the next chapter.
+Since joints using vertical fixtures are simply a reprise of traditional work it is the latter two techniques which will be focused on, beginning with the next chapter.
 
 
 
