@@ -4,7 +4,7 @@ description: Drawing in 2 dimensions to make 3 dimensional parts
 
 # 2D Drawing
 
-Before one can make a part, one must define the geometry of the design. This is done using classic geometric constructs, and possibly curves defined mathematically \(but usually drawn up in a CAD or Bézier curve drawing program\). We will use Carbide Create as a specific example \(freely available from: [https://carbide3d.com/carbidecreate/](https://carbide3d.com/carbidecreate/)\), but the concepts would apply to any CAD or vector drawing program and will be explored first.
+As noted previously, before one can make a part, one must define the geometry of the design. This is done using classic geometric constructs, and possibly curves defined mathematically \(but usually drawn up in a CAD or Bézier curve drawing program\). We will use Carbide Create as a specific example \(freely available from: [https://carbide3d.com/carbidecreate/](https://carbide3d.com/carbidecreate/)\), but the concepts would apply to any CAD or vector drawing program and will be explored first.
 
 ![Carbide Create interface.](.gitbook/assets/carbide_create_screengrab_fh11.png)
 
@@ -42,7 +42,7 @@ Polylines are made up of multiple points describing lines and are differentiated
 
 ### Open Paths
 
-As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the Join command \(see Curve Editing below\) but there is no mechanism at this time in Carbide Create for combining two \(or more\) open paths into a single path, open or closed. 
+As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the Join command \(see Curve Editing below\) and it is also possible to combine two \(or more\) open paths drawn in Carbide Create into a single path, open or closed. 
 
 ### Closed Paths 
 
@@ -70,7 +70,7 @@ Since Carbide Create draws from center out, shapes are often twice the desired d
 
 Drawing programs often have support for regular polygons, as does Carbide Create. As other objects, Polygons are drawn from the centerpoint out:
 
-![Carbide Create drawing a rectangle.](.gitbook/assets/carbide_create_interface_create_polygon.png)
+![Carbide Create drawing a hexagon.](.gitbook/assets/carbide_create_interface_create_polygon.png)
 
 Once drawn, they may be adjusted in their dimensions, and for their number of sides, see below.
 
@@ -99,7 +99,7 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 * Chamfer \(45 degree angles\)
 * Flipped fillet \(quarter circles removed from corners\)
 * Dogbone \(placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit\)
-* Tee \(placing a semicircle at a corner to ensure that a part with right angle corners will still fit --- note that orientation may not be specified, but by adding the feature, then rotating the part this may be controlled\)
+* Tee \(placing a semicircle at a corner to ensure that a part with right angle corners will still fit ― note that orientation may not be specified, but by adding the feature, then rotating the part this may be controlled\)
 
 Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter:
 
@@ -125,7 +125,7 @@ Another option which drawing programs may afford is offsetting ― this is espec
 
 ### Move
 
-When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy \(indicated by the green highlighted circle\), and will move to that point when Apply is clicked:
+When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy point \(indicated by the green highlighted circle\), and will move to that point when Apply is clicked:
 
 ![Carbide Create Move transform.](.gitbook/assets/carbide_create_interface_transform_move.png)
 
@@ -216,7 +216,7 @@ When in Node Edit Mode it is possible to right-click and:
 * delete an on-path node
 * toggle a node from smooth to sharp and vice-versa
 
-Off-path nodes may be dragged to reshape paths, and by holding the Alt \(Option\) key, dragged without affecting the other off-path node for the associated on-path node.
+Off-path nodes may be dragged to reshape paths, and by holding the Alt \(Option\) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
 
 #### Drawing Tutorials
 
