@@ -16,7 +16,7 @@ It is simultaneously:
 * a website: [https://designinto3d.com/](https://designinto3d.com/)
 * a design philosophy
 
-The design philosophy touches on the idea that fundamentally there are only two types of furniture \(and arguably functional objects\):
+The design philosophy touches on the idea that fundamentally there are only two types of furniture \(and arguably objects\):
 
 * platforms
 * boxes
@@ -28,15 +28,14 @@ with more complicated pieces incorporating both structures, and that any object 
 
 Currently it uses [BlockSCAD](https://www.blockscad3d.com/) and [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD) as a 3D modeling front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) in OpenCAD which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518) 
 
-There are several possible approaches for making designs from OpenSCAD:
+There are several possible approaches for making the design:
 
 * use the Projection\(\) command to allow the exporting of a 2D view of the design as a DXF or SVG which may then have toolpaths made using a traditional CAM tool
 * directly export the 3D design as an STL which may then have toolpaths made using a 3D CAM tool such as MeshCAM or pyCAM
 * import the OpenSCAD file into FreeCAD and use the Path Workbench to create G-Code
-* exporting the parameters from the customizer as a preset in a JSON file \(which is stored in the same directory as the OpenSCAD source file\) the JSON may then be loaded into a program developed using a second language which generates a design using those parameters ― eventually for cutting, or toolpaths without further user intervention. As an example, the initial implementation of this uses [METAPOST](https://wiki.shapeoko.com/index.php/METAPOST) via the library embedded in [LuaTeX](http://luatex.org/) and importing the JSON file using the [Lua scripting language](http://www.lua.org/).
-* from within OpenSCAD develop the design so that toolpaths are modeled in that language and the coordinate information may be exported as G-Code commands to the console from where they may be extracted
+* When the parameters for a suitable design are entered into the customizer they may be saved as a preset in a JSON file which is stored in the same directory as the OpenSCAD source file. while the JSON may then be loaded into a file which generates a design using those parameters ― eventually for cutting, or toolpaths without further user intervention. The initial implementation of this uses [METAPOST](https://wiki.shapeoko.com/index.php/METAPOST) via the library embedded in [LuaTeX](http://luatex.org/) and importing the JSON file using the [Lua scripting language](http://www.lua.org/).
 
-The first and last two options will be explored in the course of this text.
+The first and last options will be explored in the course of this text.
 
 This online ebook is available under a Creative Commons license: Attribution-NonCommercial-ShareAlike 3.0 Unported \(CC BY-NC-SA 3.0\) [https://creativecommons.org/licenses/by-nc-sa/3.0/](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 
