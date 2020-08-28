@@ -63,7 +63,7 @@ Each part will ultimately need to be located within a cube the dimensions of the
 
 ![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; cube.](.gitbook/assets/blockscad_3d_cube.png)
 
-Start with the bottom, since its orientation and placement match that of the entire box. Note that it must be shifted within the box outline up and over by half the stock thickness \(and reduced in dimensions by that as well\), and that at this time, we will ignore the matter of toolpaths in doing the 3D modeling. However, best practice is to modularize the code, and that will be done:
+Start with the top/bottom, since its orientation and placement match that of the entire box in situ \(save for the bottom being upside down\). Note that it must be shifted within the box outline up and over by half the stock thickness \(and reduced in dimensions by that as well\), and that at this time, we will ignore the matter of toolpaths in doing the 3D modeling. However, best practice is to modularize the code, and that will be done:
 
 ![BlockSCAD Rabbeted Box 3&#xD7;7&#xD7;1&#xBD;&#x2033; bottom.](.gitbook/assets/blockscad_3d_makebottom.png)
 
@@ -71,7 +71,7 @@ It will be necessary to create some variables and code.
 
 The BlockSCAD project for this is available at: [https://www.blockscad3d.com/community/projects/819419](https://www.blockscad3d.com/community/projects/819419)
 
-For expedience the calculations are done directly. Similarly, it is simpler to create the part in an orientation which is easily machined, shown upside down relative its orientation in the box. A further consideration is that the rabbet should be slightly increased for the sake of the glue joint, and an option should be added for part spacing.
+For expedience the calculations are done directly. Similarly, it is simpler to create the part in an orientation which is easily machined, for the bottom for example, shown upside down relative its orientation in the box. A further consideration is that the rabbet should be slightly increased for the sake of the glue joint, and an option should be added for part spacing.
 
 Taking all of that into account, it is straight-forward to show the different lengths and their attendant calculations with a bit of color-coding:
 
