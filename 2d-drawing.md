@@ -248,7 +248,38 @@ A curve which alternates on-curve and off-curve nodes, B-Splines are used for Tr
 
 ## Geometry
 
-When drawing and modeling it is often necessary to rotate parts and place them accurately based on the original positioning. Geometry allows the calculation of such positioning, usually in terms of right triangles, or chords for elements based on circles or segments of circles. A basic overview of the formulas involved:
+When drawing and modeling it is often necessary to place parts relative to the original positioning based on a distance and possibly rotation determined by the dimensions of the parts. Geometry and trigonometry allow the calculation of such positioning, usually in terms of right triangles, or chords for elements based on circles or segments of circles. 
+
+There are of course several different sorts of triangles depending on the specifics of their angles and the length of their sides. 
+
+By length:
+
+* scalene ― all sides are different lengths
+* isosceles ― two sides are the same length
+* equilateral ― all three sides are the same length
+
+By angles:
+
+* right triangle ― one angle is 90 degrees \(may also be an isosceles or scalene triangle\)
+* oblique ― no angle is equal to 90 degrees
+* obtuse ― one angle is greater than 90 degrees
+* acute ― all angles are less than 90 degrees
+
+Depending on the angles and the orientation of a given triangle, various labeling may be appropriate. 
+
+For specific triangles, different formulae apply. 
+
+We begin of course with the Pythagorean theorem:
+
+$$
+a^2 + b^2 = c^2
+$$
+
+which allows us to determine the length of one side of a right triangle, given the lengths of the other two sides.
+
+
+
+
 
 ## Resources
 
