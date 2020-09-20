@@ -277,9 +277,17 @@ $$
 
 which allows us to determine the length of one side of a right triangle, given the lengths of the other two sides.
 
+$$
+c = \sqrt{a^2 + b^2}
+$$
 
+$$
+b = \sqrt{c^2 - a^2}
+$$
 
-
+$$
+a = \sqrt{c^2 - b^2}
+$$
 
 ## Resources
 
