@@ -289,6 +289,14 @@ $$
 a = \sqrt{c^2 - b^2}
 $$
 
+All the possible formulae for calculating the lengths of the sides of a right triangle are:
+
+![Formulae for calculating lengths of triangle sides.](.gitbook/assets/triangle-sides.png)
+
+Similarly, the angles of a right triangle may be calculated by:
+
+
+
 ## Resources
 
 For further information on Carbide Create please see:
