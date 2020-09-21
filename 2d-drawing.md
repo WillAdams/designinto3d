@@ -297,6 +297,10 @@ Similarly, the angles of a right triangle may be calculated by:
 
 ![Formulae for calculating the angles of a right triangle.](.gitbook/assets/triangle-angles.png)
 
+Projects involving circles are usually calculated in terms of chords, radius, and the height of the chord segment.
+
+![Formulae for calculating radius, length or chord, and height of chord segment.](.gitbook/assets/circle-chord.png)
+
 ## Resources
 
 For further information on Carbide Create please see:
