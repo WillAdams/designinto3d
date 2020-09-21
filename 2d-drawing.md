@@ -295,7 +295,7 @@ All the possible formulae for calculating the lengths of the sides of a right tr
 
 Similarly, the angles of a right triangle may be calculated by:
 
-
+![](.gitbook/assets/triangle-angles.png)
 
 ## Resources
 
