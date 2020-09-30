@@ -34,7 +34,7 @@ Lines will be used to define Rectangles \(which may be squares\) and regular Pol
 
 ## Arcs
 
-Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles and geometry based on circles \(segments and so forth\), or drawn using the Curve tool \(see below\).
+Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles and geometry based on circles \(segments and so forth\), as fillets when rounding the corners of a rectangle \(see below\), or drawn using the Curve tool \(see below\).
 
 ## Polylines
 
@@ -68,7 +68,7 @@ Since Carbide Create draws from center out, shapes are often twice the desired d
 
 ### Polygons
 
-Drawing programs often have support for regular polygons, as does Carbide Create. As with other objects, Polygons are drawn from the centerpoint out:
+Drawing programs often have support for regular polygons, as does Carbide Create. As with other objects, Polygons are drawn from the center point out:
 
 ![Carbide Create drawing a hexagon.](.gitbook/assets/carbide_create_interface_create_polygon.png)
 
@@ -95,7 +95,7 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 ![Carbide Create corner treatments.](.gitbook/assets/carbidecreate_corner_treatments.png)
 
 * Square \(the default shown above\)
-* Fillet \(rounded corners\)
+* Fillet \(rounded corners which allow applying an arc to a given corner\)
 * Chamfer \(45 degree angles\)
 * Flipped fillet \(quarter circles removed from corners\)
 * Dogbone \(placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit\)
@@ -131,7 +131,7 @@ When selecting geometry in Carbide Create and selecting **Move**, the X and Y co
 
 ### Resize
 
-In addition to moving, geometry may also be transformed. Using the numeric interface selections may be scaled symmetrically ― the drag handles afford asymmetric scaling by dragging instead:
+In addition to moving, geometry may also be transformed. Using the numeric interface selections may be scaled symmetrically using the hollow square drag handles at the corners ― midpoints of the selection marquee afford asymmetric scaling by dragging instead:
 
 ![Carbide Create scale transform.](.gitbook/assets/carbide_create_interface_transform_scale.png)
 
@@ -173,7 +173,7 @@ If a given operation does not have the desired result, undoing it in Carbide Cre
 
 ## Curves 
 
-Curves are omitted from some vector drawing programs, and when present may be defined in several ways. 
+Curves are available in most vector drawing programs, and when present may be defined in several ways. 
 
 ### Bézier Curves 
 
@@ -200,7 +200,7 @@ and it may be necessary to adjust the curve if the path crosses itself.
 Bézier Curves should be drawn following some basic principles:
 
 * on-curve nodes should be at extrema \(north/south \(top/bottom\) or east/west \(left/right\)\) and at points of inflection \(where a shape changes direction, such as at the middle of an _S_ curve\)
-* curves are smoothest when off-curve nodes follow the “Rule of 30” and are approximately one-third \(30 percent\) of the distance towards the next on-curve node
+* curves are smoothest when off-curve nodes follow the “Rule of 30” and are approximately one-third \(~30 percent\) of the distance towards the next on-curve node
 
 #### Node Edit Mode
 
