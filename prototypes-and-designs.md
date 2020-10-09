@@ -23,7 +23,7 @@ With the basic box design worked up the project may be duplicated for specific i
 * fingerjoints ― there are two different approaches here, traditional and cut with the boards standing on end in a vertical fixture: [https://cutrocket.com/p/5cb536396c281/](https://cutrocket.com/p/5cb536396c281/) or a contemporary approach which typically uses sheet goods and are cut flat on the machine with the finger joints relieved in some way \(dogbones or some similar approach are easily done since they rely on the same tool used for the bulk of the cutting, _e.g._, [https://docs.carbide3d.com/tutorials/project-minibox/](https://docs.carbide3d.com/tutorials/project-minibox/) or [https://docs.carbide3d.com/tutorials/project-simplebox/](https://docs.carbide3d.com/tutorials/project-simplebox/)\)
 * dovetails ― these also require that the boards be cut in a vertical fixture for traditional approaches
 * rabbet joints ― these were shown in the previous chapter
-* butt joints ― typically using nails or other hardware these are simply a matter of appropriately shortening the boards. Reinforcing with dowels or some other suitable technique may be easily done using a vertical fixture
+* butt joints ― typically using nails or other hardware, these are simply a matter of appropriately shortening the boards. Reinforcing with dowels or some other suitable technique may be easily done using a vertical fixture
 * miter joints ― while modern adhesives make such joints feasible it is best to reinforce them in some way, full-blind dovetails being a traditional technique, but one which would be challenging to manage via CNC
 * Knapp joints ― like to the dovetail joints which they replace these require a vertical fixture
 
