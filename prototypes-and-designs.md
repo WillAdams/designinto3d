@@ -16,7 +16,7 @@ Or for the 3D Preview:
 
 ![Design into 3D: Box: 3D Preview](.gitbook/assets/blockscad_box_3d_preview.png)
 
-This design template is available at: [https://www.blockscad3d.com/community/projects/965700](https://www.blockscad3d.com/community/projects/965700).
+This design template is available at: [https://www.blockscad3d.com/community/projects/1012246](https://www.blockscad3d.com/community/projects/1012246).
 
 With the basic box design worked up the project may be duplicated for specific implementations and varying sorts of joinery techniques:
 
