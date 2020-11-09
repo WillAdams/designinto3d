@@ -121,3 +121,11 @@ See: [https://cutrocket.com/p/5e8fd99cc1578/](https://cutrocket.com/p/5e8fd99cc1
 
 Creating a variation is simply a matter of entering the new dimensions \(height, width, depth, stock thickness\) into the BlockSCAD or OpenSCAD program, exporting an SVG, then re-arranging in the CAM program to create a file to cut which is efficient in terms of material usage, or directly creating a file in Carbide Create per the relative dimensions and techniques noted above.
 
+![BlocksCAD: Rabbeted Box: 1&#xBD;&#x2033; &#xD7; 1&#xBD;&#x2033; &#xD7; 8&#x2033;](.gitbook/assets/rabbeted-box-with-features-1_5x8x1_5_blockscad.png)
+
+Or in Carbide Create:
+
+![Carbide Create: Rabbeted Box: 1&#xBD;&#x2033; &#xD7; 1&#xBD;&#x2033; &#xD7; 8&#x2033;](.gitbook/assets/rabbeted-box-with-features-1_5x8x1_5_carbide-create.png)
+
+
+
