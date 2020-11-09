@@ -69,7 +69,7 @@ Start with the top/bottom, since its orientation and placement match that of the
 
 It will be necessary to create some variables and code.
 
-The BlockSCAD project for this is available at: [https://www.blockscad3d.com/community/projects/819419](https://www.blockscad3d.com/community/projects/819419)
+The BlockSCAD project for this is available at: [https://www.blockscad3d.com/community/projects/1048451](https://www.blockscad3d.com/community/projects/1048451)
 
 For expedience the calculations are done directly. Similarly, it is simpler to create the part in an orientation which is easily machined, for the bottom for example, shown upside down relative its orientation in the box. A further consideration is that the rabbet should be slightly increased for the sake of the glue joint, and an option should be added for part spacing.
 
@@ -111,7 +111,7 @@ Then select each part outline and add suitable toolpaths and tabs to allow them 
 
 ![Carbide Create rabbeted box toolpaths with tabs.](.gitbook/assets/carbide-create_rabbeted-box-with-features-3-7-1-_rabbets_profiles.png)
 
-The box may then be cut out.
+The box may then be cut out, the pieces post-processed if need be \(setting the Z origin on the spoilboard surface should minimize this\), and then glued-up and assembled.
 
 ![Rabbeted box.](.gitbook/assets/win_20200409_22_12_01_pro.jpg)
 
