@@ -123,6 +123,8 @@ Creating a variation is simply a matter of entering the new dimensions \(height,
 
 ![BlocksCAD: Rabbeted Box: 1&#xBD;&#x2033; &#xD7; 1&#xBD;&#x2033; &#xD7; 8&#x2033;](.gitbook/assets/rabbeted-box-with-features-1_5x8x1_5_blockscad.png)
 
+See: [https://www.blockscad3d.com/community/projects/819419](https://www.blockscad3d.com/community/projects/819419)
+
 Or in Carbide Create:
 
 ![Carbide Create: Rabbeted Box: 1&#xBD;&#x2033; &#xD7; 1&#xBD;&#x2033; &#xD7; 8&#x2033;](.gitbook/assets/rabbeted-box-with-features-1_5x8x1_5_carbide-create.png)
