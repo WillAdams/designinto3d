@@ -117,7 +117,7 @@ The box may then be cut out.
 
 See: [https://cutrocket.com/p/5e8fd99cc1578/](https://cutrocket.com/p/5e8fd99cc1578/)
 
-## Variation: Rabbeted Box: 1½″ × 1½″ × 8″ 
+### Variation: Rabbeted Box: 1½″ × 1½″ × 8″ 
 
-Creating a variation is simply a matter of entering the new dimensions \(height, width, depth, stock thickness\) into the BlockSCAD or OpenSCAD program, exporting an SVG, then re-arranging in the CAM program to create a file to cut which is efficient in terms of material usage.
+Creating a variation is simply a matter of entering the new dimensions \(height, width, depth, stock thickness\) into the BlockSCAD or OpenSCAD program, exporting an SVG, then re-arranging in the CAM program to create a file to cut which is efficient in terms of material usage, or directly creating a file in Carbide Create per the relative dimensions and techniques noted above.
 
