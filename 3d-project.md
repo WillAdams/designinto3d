@@ -129,5 +129,5 @@ Or in Carbide Create:
 
 ![Carbide Create: Rabbeted Box: 1&#xBD;&#x2033; &#xD7; 1&#xBD;&#x2033; &#xD7; 8&#x2033;](.gitbook/assets/rabbeted-box-with-features-1_5x8x1_5_carbide-create.png)
 
-
+See: [https://cutrocket.com/p/5fb0a1afbf9d6/](https://cutrocket.com/p/5fb0a1afbf9d6/) for a file, and comments and discussion: [https://community.carbide3d.com/t/design-into-3d-rabbeted-box-with-features/20741/36](https://community.carbide3d.com/t/design-into-3d-rabbeted-box-with-features/20741/36).
 
