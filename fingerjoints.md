@@ -4,7 +4,7 @@ description: Cutting fingerjoints vertically in boards at the front of the machi
 
 # Fingerjoints
 
-Starting with the box design template from the previous chapter: [https://www.blockscad3d.com/community/projects/965700](https://www.blockscad3d.com/community/projects/965700) it is a simple matter of adding cuts for joinery along the corners of the box. Fingerjoints are notable since they can be implemented along all edges of a box and with a bit of a relief can be cut flat on the machine simplifying fixturing and making manufacture more efficient, but the traditional technique of fingerjoints at the box corner with the top and bottom in rabbeted grooves is simpler to calculate.
+Starting with the box design template from the previous chapter: [https://www.blockscad3d.com/community/projects/1012246](https://www.blockscad3d.com/community/projects/1012246) it is a simple matter of adding cuts for joinery along the corners of the box. Fingerjoints are notable since they can be implemented along all edges of a box and with a bit of a relief can be cut flat on the machine simplifying fixturing and making manufacture more efficient, but the traditional technique of fingerjoints at the box corner with the top and bottom in rabbeted grooves is simpler to calculate.
 
 Necessary additional variables are:
 
@@ -21,6 +21,15 @@ The interplay of the geometry of the board being flat and the cutter being round
 * Whether the cut should be adjusted for endmill diameter
 * Whether the cut should be relieved for endmill diameter
 * If the cut should be adjusted at its beginning or end for the thickness of the material
+
+Setting up a box design for this we duplicate the project from the previous chapter as: [https://www.blockscad3d.com/community/projects/1052034](https://www.blockscad3d.com/community/projects/1052034) and update it with the desired dimensions:
+
+* 10 in wide
+* 8 in deep
+* 3.5 in high
+* 0.25" thick stock
+* 5.5mm thick top and bottom
+* 0.375" part spacing
 
 
 
