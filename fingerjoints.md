@@ -22,14 +22,16 @@ The interplay of the geometry of the board being flat and the cutter being round
 * Whether the cut should be relieved for endmill diameter
 * If the cut should be adjusted at its beginning or end for the thickness of the material
 
-Setting up a box design for this we duplicate the project from the previous chapter as: [https://www.blockscad3d.com/community/projects/1052034](https://www.blockscad3d.com/community/projects/1052034) and update it with the desired dimensions:
+Setting up a box design for this we duplicate the project from the previous chapter as: [https://www.blockscad3d.com/community/projects/1052045](https://www.blockscad3d.com/community/projects/1052045) and update it with the desired dimensions:
 
 * 10 in wide
 * 8 in deep
 * 3.5 in high
 * 0.25" thick stock
-* 5.5mm thick top and bottom
+* 0.21653543" \(5.5mm\) thick top and bottom
 * 0.375" part spacing
+
+![BlockSCAD: Fingerjoints: Vertical: Variables](.gitbook/assets/blockscad-fingerjoint-vertical-variables.png)
 
 
 
