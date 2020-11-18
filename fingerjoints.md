@@ -49,3 +49,5 @@ and cut in at least pairs \(cutting all four at once will halve the number of op
 
 ![BlockSCAD: Fingerjoints: Vertical: Cuts](.gitbook/assets/blockscad-fingerjoint-vertical-cuts.png)
 
+See: [https://www.blockscad3d.com/community/projects/1053568](https://www.blockscad3d.com/community/projects/1053568)
+
