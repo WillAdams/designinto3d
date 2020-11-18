@@ -37,5 +37,7 @@ Add code to cut grooves for the lid and for the fingerjoints themselves:
 
 ![BlockSCAD: Fingerjoints: Vertical: Features](.gitbook/assets/blockscad-fingerjoint-vertical-features.png)
 
- 
+ as well as laying out the parts for cutting:
+
+![BlockSCAD: Fingerjoints: Vertical: DXF](.gitbook/assets/blockscad-fingerjoint-vertical-dxf.png)
 
