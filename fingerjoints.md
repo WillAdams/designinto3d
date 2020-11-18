@@ -33,7 +33,9 @@ Setting up a box design for this we duplicate the project from the previous chap
 
 ![BlockSCAD: Fingerjoints: Vertical: Variables](.gitbook/assets/blockscad-fingerjoint-vertical-variables.png)
 
+Add code to cut grooves for the lid and for the fingerjoints themselves:
 
+![BlockSCAD: Fingerjoints: Vertical: Features](.gitbook/assets/blockscad-fingerjoint-vertical-features.png)
 
  
 
