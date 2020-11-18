@@ -41,3 +41,7 @@ Add code to cut grooves for the lid and for the fingerjoints themselves:
 
 ![BlockSCAD: Fingerjoints: Vertical: DXF](.gitbook/assets/blockscad-fingerjoint-vertical-dxf.png)
 
+The final aspect is cutting the joints ― the boards need to be offset from each other and cut in at least pairs \(cutting all four at once will halve the number of operations\):
+
+![BlockSCAD: Fingerjoints: Vertical: Boards](.gitbook/assets/blockscad-fingerjoint-vertical-boards.png)
+
