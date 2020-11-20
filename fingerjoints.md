@@ -51,3 +51,7 @@ and cut in at least pairs \(cutting all four at once will halve the number of op
 
 See: [https://www.blockscad3d.com/community/projects/1053568](https://www.blockscad3d.com/community/projects/1053568)
 
+Export to OpenSCAD from BlockSCAD and then customize the file in OpenSCAD to allow exporting SVGs:
+
+![BlockSCAD: Fingerjoints: Vertical: Cuts](.gitbook/assets/openscad-fingerjoint-vertical-cuts.png)
+
