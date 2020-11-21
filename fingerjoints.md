@@ -57,7 +57,15 @@ Export to OpenSCAD from BlockSCAD and then customize the file in OpenSCAD to all
 
 ![OpenSCAD: Fingerjoints: Vertical: Cuts](.gitbook/assets/openscad-fingerjoint-vertical-cuts.png)
 
+The OpenSCAD file is available at: [https://github.com/WillAdams/Design\_Into\_3D/blob/master/box/fingerjoint/vertical/Box\_%20Fingerjoint\_%20Vertical.scad](https://github.com/WillAdams/Design_Into_3D/blob/master/box/fingerjoint/vertical/Box_%20Fingerjoint_%20Vertical.scad)
+
 Export each view and import into Carbide Create files:
 
+![Carbide Create: Fingerjoints: Vertical: Parts](.gitbook/assets/carbidecreate-fingerjoint-vertical-parts.png)
 
+![Carbide Create: Fingerjoints: Vertical: Cuts](.gitbook/assets/carbidecreate-fingerjoint-vertical-cuts.png)
+
+Once imported, it will be helpful for the Cuts file to set the stock size to match the boards being used, and to draw in rectangles representing the boards --- this will help to make clear how they are to be positioned for cutting and how the toolpaths will interact. The 3D preview of the toolpaths shows the cuts which will be made which is accurate save for the excess stock shown at the upper left and lower right corners \(areas not encompassed by the orange highlighted boards in the image above\):
+
+![](.gitbook/assets/carbidecreate-fingerjoint-vertical-cut-preview.png)
 
