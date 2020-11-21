@@ -53,5 +53,11 @@ See: [https://www.blockscad3d.com/community/projects/1053568](https://www.blocks
 
 Export to OpenSCAD from BlockSCAD and then customize the file in OpenSCAD to allow exporting SVGs:
 
-![BlockSCAD: Fingerjoints: Vertical: Cuts](.gitbook/assets/openscad-fingerjoint-vertical-cuts.png)
+![OpenSCAD: Fingerjoints: Vertical: Parts](.gitbook/assets/openscad-fingerjoint-vertical-parts.png)
+
+![OpenSCAD: Fingerjoints: Vertical: Cuts](.gitbook/assets/openscad-fingerjoint-vertical-cuts.png)
+
+Export each view and import into Carbide Create files:
+
+
 
