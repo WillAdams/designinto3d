@@ -31,13 +31,169 @@ Setting up a box design for this we duplicate the project from the previous chap
 * 0.21653543" \(5.5mm\) thick top and bottom
 * 0.375" part spacing
 
+As OpenSCAD code, this has the file beginning as:
+
+```text
+//!OpenSCAD
+
+Height = 3.5;
+Width = 10;
+Depth = 8;
+Stock_Thickness = 0.25;
+Top_Bottom_Thickness = 0.21653543;
+Part_Spacing = 0.375;
+//(millimeters or inches)
+Units = 1; //[1:millimeters, 25.4:inches]
+Preview_3D = true;
+Joinery_Cut = false;
+Generate_DXF = false;
+Endmill_Diameter = 0.125;
+```
+
+With all of the variables set up, it is necessary to scale for units:
+
+```text
+h = Height * Units;
+w = Width * Units;
+d = Depth * Units;
+st = Stock_Thickness * Units;
+tbt = Top_Bottom_Thickness * Units;
+ps = Part_Spacing * Units;
+cd = Endmill_Diameter * Units;
+fjcount = (ceil(Height / Stock_Thickness) / 2) * 2 + 1;
+fjsize = h / fjcount;
+```
+
+as shown below:
+
 ![BlockSCAD: Fingerjoints: Vertical: Variables](.gitbook/assets/blockscad-fingerjoint-vertical-variables.png)
 
-Add code to cut grooves for the lid and for the fingerjoints themselves:
+Add code to cut grooves for the lid and for the fingerjoints themselves --- this will want a module for modeling the endmill:
+
+```text
+module em() {
+  cylinder(r1=(cd / 2), r2=(cd / 2), h=(cd + st), center=false);
+}
+```
+
+which is then used in a module which makes a cut as a pocket:
+
+```text
+module cut(cbx, cby, cex, cey, abx, aby, aex, aey, sd, ed) {
+  translate([0, 0, (sd - ed)]){
+    hull(){
+      translate([cbx, cby, 0]){
+        em();
+      }
+      translate([cex, cey, 0]){
+        em();
+      }
+      translate([abx, aby, 0]){
+        em();
+      }
+      translate([aex, aey, 0]){
+        em();
+      }
+    }
+  }
+}
+```
 
 ![BlockSCAD: Fingerjoints: Vertical: Features](.gitbook/assets/blockscad-fingerjoint-vertical-features.png)
 
- as well as laying out the parts for cutting:
+ A legacy of the prototype box file used is that there is a module for modeling a board:
+
+```text
+module board(ht, wd, dpth) {
+  cube([wd, dpth, ht], center=false);
+}
+```
+
+At some point in the future that may be used as a control point for modifying how the file is previewed or rendered.
+
+That module is then used for additional modules for each sort of part needed. Quite simple for the top and bottom:
+
+```text
+module topbottom() {
+  board(tbt, w - st, d - st);
+}
+```
+
+But requiring various calculations for the grooves and fingerjoints for the sides:
+
+```text
+module sides() {
+  difference() {
+    board(st, h, d);
+
+    cut(st / 2 + cd / 2, st / 2, st / 2 + cd / 2, d - st / 2, (st / 2 + tbt) - cd / 2, st / 2, (st / 2 + tbt) - cd / 2, d - st / 2, st, st / 2);
+    translate([(h - st * 2), 0, 0]){
+      cut(st / 2 + cd / 2, st / 2, st / 2 + cd / 2, d - st / 2, (st / 2 + tbt) - cd / 2, st / 2, (st / 2 + tbt) - cd / 2, d - st / 2, st, st / 2);
+    }
+    if (Generate_DXF == false) {
+      union(){
+        translate([0, (-cd), (-st)]){
+          for (i = [1 : abs(2) : fjcount]) {
+            translate([(i * fjsize), 0, 0]){
+              cube([fjsize, (cd + st), (st * 3)], center=false);
+            }
+          }
+
+        }
+        translate([0, (d - st), (-st)]){
+          for (i = [1 : abs(2) : fjcount]) {
+            translate([(i * fjsize), 0, 0]){
+              cube([fjsize, (cd + st), (st * 3)], center=false);
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+}
+```
+
+ and front/back:
+
+```text
+module frontback() {
+  difference() {
+    board(st, w, h);
+
+    cut(st / 2, st / 2 + cd / 2, w - st / 2, st / 2 + cd / 2, st / 2, (st / 2 + tbt) - cd / 2, w - st / 2, (st / 2 + tbt) - cd / 2, st, st / 2);
+    translate([0, (h - st * 2), 0]){
+      cut(st / 2, st / 2 + cd / 2, w - st / 2, st / 2 + cd / 2, st / 2, (st / 2 + tbt) - cd / 2, w - st / 2, (st / 2 + tbt) - cd / 2, st, st / 2);
+    }
+    if (Generate_DXF == false) {
+      union(){
+        translate([(-cd), 0, (-st)]){
+          for (i = [0 : abs(2) : fjcount - 1]) {
+            translate([0, (i * fjsize), 0]){
+              cube([(cd + st), fjsize, (st * 3)], center=false);
+            }
+          }
+
+        }
+        translate([(w - st), 0, (-st)]){
+          for (i = [0 : abs(2) : fjcount - 1]) {
+            translate([0, (i * fjsize), 0]){
+              cube([(cd + st), fjsize, (st * 3)], center=false);
+            }
+          }
+
+        }
+      }
+    }
+
+  }
+}
+```
+
+In particular note the halving and then doubling of the number of fingerjoints before adding 1 so as to ensure that an odd number is used for one set.
+
+As well as laying out the parts for cutting:
 
 ![BlockSCAD: Fingerjoints: Vertical: DXF](.gitbook/assets/blockscad-fingerjoint-vertical-dxf.png)
 
@@ -56,6 +212,119 @@ Export to OpenSCAD from BlockSCAD and then customize the file in OpenSCAD to all
 ![OpenSCAD: Fingerjoints: Vertical: Parts](.gitbook/assets/openscad-fingerjoint-vertical-parts.png)
 
 ![OpenSCAD: Fingerjoints: Vertical: Cuts](.gitbook/assets/openscad-fingerjoint-vertical-cuts.png)
+
+The final code is using the checkboxes to control how the parts are rendered as discussed above:
+
+```text
+if (Preview_3D == false) {
+    projection(cut = true)
+    {
+  union(){
+    translate([0, (h + ps), -st*0.9]){
+      sides();
+    }
+    translate([(h + ps), 0, -st*0.9]){
+      frontback();
+    }
+    translate([((h + ps) + st / 2), ((h + ps) + st / 2), 0]){
+      topbottom();
+    }
+    translate([(h + ps), ((h + ps) + (d + ps)), -st*0.9]){
+      frontback();
+    }
+    translate([((h + ps) + (w + ps)), (h + ps), -st*0.9]){
+      sides();
+    }
+  }
+}} else {
+  if (Joinery_Cut == false) {
+    union(){
+      translate([0, ps, (h + ps)]){
+        rotate([0, 90, 0]){
+          sides();
+        }
+      }
+      translate([0, 0, 0]){
+        mirror([0,1,0]){
+          translate([ps, 0, ps]){
+            rotate([90, 0, 0]){
+              frontback();
+            }
+          }
+        }
+      }
+      translate([(ps + st / 2), (ps + st / 2), (st / 2)]){
+        topbottom();
+      }
+      translate([(ps + st / 2), (ps + st / 2), ((h + ps * 2) - st * 1.5)]){
+        topbottom();
+      }
+      translate([((w + ps * 2) - 0), ps, (h + ps)]){
+        rotate([0, 90, 0]){
+          mirror([0,0,1]){
+            sides();
+          }
+        }
+      }
+      translate([ps, (d + ps * 2), ps]){
+        rotate([90, 0, 0]){
+          frontback();
+        }
+      }
+    }
+  } else {
+    if (Generate_DXF == true) {
+        projection(){
+      union(){
+        cube([(cd / 2), (cd / 2), (cd / 2)], center=false);
+        translate([fjsize, (-(cd / 2)), 0]){
+          for (j = [0 : abs(2) : fjcount]) {
+            translate([(j * fjsize), 0, 0]){
+              cube([fjsize, ((st * 4 + ps * 3) + cd), (st * 2)], center=false);
+            }
+          }
+
+        }
+      }
+    }} else {
+      difference() {
+        union(){
+          translate([0, st, (st - d)]){
+            rotate([90, 0, 0]){
+              union(){
+                sides();
+                translate([0, 0, (-(st + ps))]){
+                  sides();
+                }
+              }
+            }
+          }
+          translate([fjsize, ((st + ps) * 2 + st), st]){
+            rotate([90, 90, 0]){
+              union(){
+                frontback();
+                translate([0, 0, (-(st + ps))]){
+                  frontback();
+                }
+              }
+            }
+          }
+        }
+
+        translate([fjsize, (-(cd / 2)), 0]){
+          for (j = [0 : abs(2) : fjcount]) {
+            translate([(j * fjsize), 0, 0]){
+              cube([fjsize, ((st * 4 + ps * 3) + cd), (st * 2)], center=false);
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+
+```
 
 The OpenSCAD file is available at: [https://github.com/WillAdams/Design\_Into\_3D/blob/master/box/fingerjoint/vertical/Box\_%20Fingerjoint\_%20Vertical.scad](https://github.com/WillAdams/Design_Into_3D/blob/master/box/fingerjoint/vertical/Box_%20Fingerjoint_%20Vertical.scad)
 
