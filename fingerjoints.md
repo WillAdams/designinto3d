@@ -73,14 +73,20 @@ For the Parts file, it is only necessary at first to cut one side, and a single 
 
 ![Carbide Create: Fingerjoints: Vertical: Parts in-line](.gitbook/assets/carbidecreate-fingerjoint-vertical-parts-inline.png)
 
-Since the parts will be cut from an S4S board which is the correct size, it will only be necessary to machine the grooves for the top/bottom, the groove with tabs separating the lid from the base of the box, and pockets at the ends of each board to cut them to length. To eliminate the need for tabs and the attendant post-processing, work-holding will be two-stage:
+Since the parts will be cut from an S4S board which is the correct size, it will only be necessary to machine the grooves for the top/bottom, the groove with tabs separating the lid from the base of the box \(import a copy of the fingerjoint cuts and rotate 90 degrees to allow for placement\), and pockets at the ends of each board to cut them to length. To eliminate the need for tabs and the attendant post-processing, work-holding will be two-stage:
 
 * normal clamps outside the cutting area as well as a sacrificial caul clamp across the gap between the parts
 * additional cauls added after cutting the grooves to secure the stock and ensure the parts do not move once cut free
 
 To ensure the board is square to the machine the first operation will be to machine a pocket in which to register the board, then the board will be secured and the grooves cut, then the additional cauls put in place, and the last operation will be cutting the pockets which cut the part to length.
 
+![Carbide Create: Fingerjoints: Vertical: Toolpaths](.gitbook/assets/carbidecreate-fingerjoint-vertical-parts-toolpaths.png)
 
+Verify the preview:
+
+![Carbide Create: Fingerjoints: Vertical: Parts Preview](.gitbook/assets/carbidecreate-fingerjoint-vertical-parts-preview.png)
+
+Then cut the parts, then mount them in a fixture such as: [https://cutrocket.com/p/5cb25f3380844/](https://cutrocket.com/p/5cb25f3380844/) and cut the joints, then dry-fit to measure for cutting the top/bottom.
 
  
 
