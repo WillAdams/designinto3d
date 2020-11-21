@@ -67,5 +67,20 @@ Export each view and import into Carbide Create files:
 
 Once imported, it will be helpful for the Cuts file to set the stock size to match the boards being used, and to draw in rectangles representing the boards --- this will help to make clear how they are to be positioned for cutting and how the toolpaths will interact. The 3D preview of the toolpaths shows the cuts which will be made which is accurate save for the excess stock shown at the upper left and lower right corners \(areas not encompassed by the orange highlighted boards in the image above\):
 
-![](.gitbook/assets/carbidecreate-fingerjoint-vertical-cut-preview.png)
+![Carbide Create: Fingerjoints: Vertical: Cut 3D Preview](.gitbook/assets/carbidecreate-fingerjoint-vertical-cut-preview.png)
+
+For the Parts file, it is only necessary at first to cut one side, and a single instance of the front/back part --- the parts need to be positioned in-line and separated by at least the endmill diameter plus 10%. The top/bottom will be measured for from the actual box after it is cut and dry fit. A further consideration here is the matter of accessing the interior of the box --- we will draw in a rectangle which may be cut with a narrow endmill \(or one may do the traditional cutting apart with a bandsaw or hand saw\):
+
+![Carbide Create: Fingerjoints: Vertical: Parts in-line](.gitbook/assets/carbidecreate-fingerjoint-vertical-parts-inline.png)
+
+Since the parts will be cut from an S4S board which is the correct size, it will only be necessary to machine the grooves for the top/bottom, the groove with tabs separating the lid from the base of the box, and pockets at the ends of each board to cut them to length. To eliminate the need for tabs and the attendant post-processing, work-holding will be two-stage:
+
+* normal clamps outside the cutting area as well as a sacrificial caul clamp across the gap between the parts
+* additional cauls added after cutting the grooves to secure the stock and ensure the parts do not move once cut free
+
+To ensure the board is square to the machine the first operation will be to machine a pocket in which to register the board, then the board will be secured and the grooves cut, then the additional cauls put in place, and the last operation will be cutting the pockets which cut the part to length.
+
+
+
+ 
 
