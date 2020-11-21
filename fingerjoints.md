@@ -338,6 +338,10 @@ Once imported, it will be helpful for the Cuts file to set the stock size to mat
 
 ![Carbide Create: Fingerjoints: Vertical: Cut 3D Preview](.gitbook/assets/carbidecreate-fingerjoint-vertical-cut-preview.png)
 
+A desirable improvement is to trim the right-most geometry so that it only cuts the rearmost boards:
+
+![Carbide Create: Fingerjoints: Vertical: Cuts trimmed](.gitbook/assets/carbidecreate-fingerjoint-vertical-parts-trim.png)
+
 For the Parts file, it is only necessary at first to cut one side, and a single instance of the front/back part --- the parts need to be positioned in-line and separated by at least the endmill diameter plus 10%. The top/bottom will be measured for from the actual box after it is cut and dry fit. A further consideration here is the matter of accessing the interior of the box --- we will draw in a rectangle which may be cut with a narrow endmill \(or one may do the traditional cutting apart with a bandsaw or hand saw\):
 
 ![Carbide Create: Fingerjoints: Vertical: Parts in-line](.gitbook/assets/carbidecreate-fingerjoint-vertical-parts-inline.png)
