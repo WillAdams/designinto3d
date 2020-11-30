@@ -359,7 +359,29 @@ Verify the preview:
 
 ![Carbide Create: Fingerjoints: Vertical: Parts Preview](.gitbook/assets/carbidecreate-fingerjoint-vertical-parts-preview.png)
 
-Then cut the parts, then mount them in a fixture such as: [https://cutrocket.com/p/5cb25f3380844/](https://cutrocket.com/p/5cb25f3380844/) and cut the joints, then dry-fit to measure for cutting the top/bottom.
+Then cut the parts:
+
+![Carbide Create: Fingerjoints: Vertical: Cutting Parts](.gitbook/assets/win_20201127_16_23_47_pro.jpg)
+
+Then mount them in a fixture such as: [https://cutrocket.com/p/5cb25f3380844/](https://cutrocket.com/p/5cb25f3380844/) and cut the joints
+
+![Carbide Create: Fingerjoints: Vertical: Setup for Joints](.gitbook/assets/win_20201128_13_38_27_pro.jpg)
+
+![Carbide Create: Fingerjoints: Vertical: Clamping for Joints](.gitbook/assets/win_20201128_13_41_20_pro.jpg)
+
+![Carbide Create: Fingerjoints: Vertical: Measuring Joints](.gitbook/assets/win_20201128_15_50_57_pro.jpg)
+
+Then dry-fit to measure for cutting the top/bottom \(or just cut the top/bottom based on the initial CAD measurement\):
+
+![Carbide Create: Fingerjoints: Vertical: Joints Test Fit](.gitbook/assets/20201129_143144-1-.jpg)
+
+The cut the top and bottom and glue and clamp up:
+
+![Carbide Create: Fingerjoints: Vertical: Joint Glue Up](.gitbook/assets/win_20201129_19_06_39_pro.jpg)
+
+Last cut apart, finish, and install hardware:
+
+![Carbide Create: Fingerjoints: Vertical: Assembled and Glued](.gitbook/assets/win_20201129_20_33_53_pro.jpg)
 
  
 
