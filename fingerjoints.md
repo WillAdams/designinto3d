@@ -383,5 +383,7 @@ Last cut apart, finish, and install hardware:
 
 ![Carbide Create: Fingerjoints: Vertical: Assembled and Glued](.gitbook/assets/win_20201129_20_33_53_pro.jpg)
 
+![Carbide Create: Fingerjoints: Vertical: Cut Apart](.gitbook/assets/win_20201130_10_15_33_pro.jpg)
+
  
 
