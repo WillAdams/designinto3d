@@ -379,11 +379,13 @@ The cut the top and bottom and glue and clamp up:
 
 ![Carbide Create: Fingerjoints: Vertical: Joint Glue Up](.gitbook/assets/win_20201129_19_06_39_pro.jpg)
 
-Last cut apart, finish, and install hardware:
+Last cut apart, clean up edges, finish, and install hardware:
 
 ![Carbide Create: Fingerjoints: Vertical: Assembled and Glued](.gitbook/assets/win_20201129_20_33_53_pro.jpg)
 
 ![Carbide Create: Fingerjoints: Vertical: Cut Apart](.gitbook/assets/win_20201130_10_15_33_pro.jpg)
+
+![Carbide Create: Fingerjoints: Vertical: Ready for finishing and hardware](.gitbook/assets/win_20201130_23_50_55_pro.jpg)
 
  
 
