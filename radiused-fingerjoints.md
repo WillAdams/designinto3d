@@ -12,5 +12,19 @@ Start with a suitable generator ― we will use:
 
 {% embed url="https://www.makercase.com/" %}
 
+This project will be a 3" x 3" x 3" open box:
+
+![MakerCase: 3&quot; x 3&quot; x 3&quot; Open Box](.gitbook/assets/makercase_3x3x3_open%20%281%29.png)
+
+Download the box plans as an SVG:
+
+![MakerCase: 3&quot; x 3&quot; x 3&quot; Open Box: SVG Plans](.gitbook/assets/box.svg)
+
+Import them into Carbide Create and arrange for cutting:
+
+![Carbide Create: 3&quot; x 3&quot; x 3&quot; Open Box: SVG Plans: Imported and arranged](.gitbook/assets/cc_makercase_3x3x3_import.png)
+
+
+
 
 
