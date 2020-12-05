@@ -30,5 +30,5 @@ Import them into Carbide Create and arrange for cutting:
 
 Unfortunately, Carbide Create doesn't support cove radius endmill geometry, so it will be necessary to work out where to place lines so as to cut the desired radius ― draw up a profile of your endmill to work this out ― a cove radius should have a tip diameter, a diameter at the top which determines how widely it will cut, a total cutting height, and of course the radius itself:
 
-
+![Cove radius endmill: 1/4&quot; radius](.gitbook/assets/tool_cove_radius_0_25.png)
 
