@@ -72,6 +72,8 @@ For the sides we can recycle the remaining rectangles by setting them to the sam
 
 ![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Bottom Fingers for Sides](.gitbook/assets/image.png)
 
+### Making the Front/Back
+
 ![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Side after Boolean Union](.gitbook/assets/image%20%282%29.png)
 
 \(Alternately, the bottom could have been duplicated, rotated and aligned against the bottom and Boolean subtracted.\)
