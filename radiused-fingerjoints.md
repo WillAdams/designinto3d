@@ -110,3 +110,7 @@ With the geometry verified it is now possible to draw in circles which will allo
 
 ![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Toolpath Preview](.gitbook/assets/image%20%2813%29.png)
 
+Use that construct to place lines relative to each edge which needs to be radiused:
+
+
+
