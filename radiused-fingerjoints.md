@@ -94,9 +94,13 @@ Duplicate the geometry for the front/back and sides and arrange them with the bo
 
 ## Model the Endmill
 
-Unfortunately, Carbide Create doesn't support cove radius endmill geometry, so it will be necessary to work out where to place lines so as to cut the desired radius ― draw up a profile of your endmill to work this out ― a cove radius should have a tip diameter, a diameter at the top which determines how widely it will cut, a total cutting height, and of course the radius itself:
+Unfortunately, Carbide Create doesn't support cove radius endmill geometry, so it will be necessary to work out where to place lines so as to cut the desired radius ― draw up a profile of your endmill to work this out ― a cove radius should have a tip diameter, a diameter at the top which determines how widely it will cut, a total cutting height, and of course the radius itself.
 
-![Cove radius endmill: 1/4&quot; radius](.gitbook/assets/tool_cove_radius_0_25.png)
+The endmill used will be a 5/16" \(8mm\) diameter endmill with 1/8" cove radius with 1/16" tip to match a 1/4" diameter endmill:  
+
+![Cove radius endmill: 1/8&quot; radius](.gitbook/assets/20201206_085531-1-.jpg)
+
+![Diagram: Cove radius endmill: 1/8&quot; radius](.gitbook/assets/tool_cove_radius_0_25.png)
 
 Then draw up the side view to help determine where the cut should be made and draw in the tooling showing where the cuts should \(and should not\) be made:
 
