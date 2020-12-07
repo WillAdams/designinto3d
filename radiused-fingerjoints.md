@@ -162,5 +162,11 @@ With the rounding working the 3D model is verified:
 
 ![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: 3D Model](.gitbook/assets/image%20%288%29.png)
 
+The OpenSCAD source is available at:
 
+[https://github.com/WillAdams/Design\_Into\_3D/blob/master/box/fingerjoint/radius/Design%20into%203D\_%20Box\_%20fingerjoint\_radius.scad](https://github.com/WillAdams/Design_Into_3D/blob/master/box/fingerjoint/radius/Design%20into%203D_%20Box_%20fingerjoint_radius.scad)
+
+## Make the Box
+
+With the concept proven out it is simply a matter of making the toolpaths to cut out the design.
 
