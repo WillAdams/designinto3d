@@ -144,7 +144,11 @@ Available at:
 
 {% embed url="https://www.blockscad3d.com/community/projects/1065533" %}
 
+## Model the Joinery
+
 Export the OpenSCAD code and then test it to determine what material intersects and needs to be removed:
+
+![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: Intersecting Areas](.gitbook/assets/image%20%2822%29.png)
 
 
 
