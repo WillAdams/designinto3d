@@ -168,5 +168,7 @@ Unfortunately, that file is not directly useful for CAM work, since it is not po
 
 ## Make the Box
 
-With the concept proven out it is simply a matter of making the toolpaths to cut out the design.
+With the concept proven out it is simply a matter of making the toolpaths to cut out the design. As noted above, while it is possible to create the toolpaths, it is not possible to directly preview the tool cutting shape with any readily available tool.
+
+
 
