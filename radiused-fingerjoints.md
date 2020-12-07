@@ -164,6 +164,8 @@ With the rounding working the 3D model is verified:
 
 The OpenSCAD source is available at: [https://github.com/WillAdams/Design\_Into\_3D/blob/master/box/fingerjoint/radius/Design%20into%203D\_%20Box\_%20fingerjoint\_radius.scad](https://github.com/WillAdams/Design_Into_3D/blob/master/box/fingerjoint/radius/Design%20into%203D_%20Box_%20fingerjoint_radius.scad)
 
+Unfortunately, that file is not directly useful for CAM work, since it is not possible to export an unclosed path as a DXF or SVG from OpenSCAD. There is code for directly exporting G-Code commented out of the above, but due to limitations of coordinates and arguments in OpenSCAD and possibly rounding issues as well as the specific steps required to get a suitable text file out of OpenSCAD the effort has been set aside for the time being.
+
 ## Make the Box
 
 With the concept proven out it is simply a matter of making the toolpaths to cut out the design.
