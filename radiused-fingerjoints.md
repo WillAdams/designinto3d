@@ -40,7 +40,7 @@ Inset by the thickness of the stock which will be used \(plus desired glueline i
 
 The design will not be precisely recreated, but the basic concept will be followed. The bottom is symmetrical which makes later design easier, and the fingerjoints are inset somewhat ― we will use half the stock thickness, so adjust the grid spacing accordingly and draw in a rectangle which represents this length centered at one edge of the box:
 
-![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Initial Joinery](.gitbook/assets/image%20%2821%29.png)
+![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Initial Joinery](.gitbook/assets/image%20%2822%29.png)
 
 This needs to be divided into fifths \(two fingers and three gaps\):
 
@@ -60,11 +60,11 @@ Since the box is square, the two fingers and the outer rectangle may be duplicat
 
 Select the narrow rectangles for the fingers and the inset of the bottom:
 
-![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Fingers and Inset Base](.gitbook/assets/image%20%2820%29.png)
+![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Fingers and Inset Base](.gitbook/assets/image%20%2821%29.png)
 
 And then Boolean union:
 
-![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Finished Bottom](.gitbook/assets/image%20%2819%29.png)
+![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Finished Bottom](.gitbook/assets/image%20%2820%29.png)
 
 ### Making the Sides
 
@@ -116,7 +116,7 @@ With the geometry verified it is now possible to draw in circles which will allo
 
 Use that construct to place lines relative to each edge which needs to be radiused:
 
-![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Radius Lines](.gitbook/assets/image%20%2818%29.png)
+![Carbide Create: Radiused Fingerjoints: 3&quot; x 3&quot; x 3&quot;: Radius Lines](.gitbook/assets/image%20%2819%29.png)
 
 At this point one could go to the Toolpath pane and set up all the cuts, but since a cove radius endmill cannot be previewed in Carbide Create we will instead model the endmill, and then the design in BlockSCAD/OpenSCAD.
 
@@ -148,7 +148,13 @@ Available at:
 
 Export the OpenSCAD code and then test it to determine what material intersects and needs to be removed:
 
-![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: Intersecting Areas](.gitbook/assets/image%20%2822%29.png)
+![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: Intersecting Areas](.gitbook/assets/image%20%2823%29.png)
+
+Modify the module for the fingerjoint cuts to round them off:
+
+![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: Radiused Fingerjoints](.gitbook/assets/image%20%2817%29.png)
+
+Repeating the intersection verifies that the rounding works:
 
 
 
