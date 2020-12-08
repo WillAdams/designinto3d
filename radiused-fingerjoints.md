@@ -170,5 +170,13 @@ Unfortunately, that file is not directly useful for CAM work, since it is not po
 
 With the concept proven out it is simply a matter of making the toolpaths to cut out the design. As noted above, while it is possible to create the toolpaths, it is not possible to directly preview the tool cutting shape with any readily available tool.
 
+With the parts laid out, select the part outlines and offset them a suitable distance:
+
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Parts Outline](.gitbook/assets/image%20%2826%29.png)
+
+Select the outline and the parts and assign a pocket toolpath which will cut down to tab depth:
+
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Parts Toolpath](.gitbook/assets/image%20%2827%29.png)
+
 
 
