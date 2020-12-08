@@ -176,15 +176,19 @@ With the parts laid out, select the part outlines and offset them a suitable dis
 
 Select the outline and the parts and assign a pocket toolpath which will cut down to tab depth:
 
-![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Parts Toolpath](.gitbook/assets/image%20%2828%29.png)
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Parts Toolpath](.gitbook/assets/image%20%2829%29.png)
 
 Select the lines for the relief cut, select a suitable tool and assign it a suitable tool cutting to a depth which will cut the relief \(in this case 0.125"\) ― the actual tool used doesn't matter since it's not possible to get a correct preview, but matching the outer diameter if convenient will help in verifying the cut:
 
-![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Radius Toolpath](.gitbook/assets/image%20%2829%29.png)
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Radius Toolpath](.gitbook/assets/image%20%2830%29.png)
 
 Next add an outer profile toolpath to cut out the parts:
 
 ![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Profile Toolpath](.gitbook/assets/image%20%2826%29.png)
+
+And preview insofar as is possible:
+
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Preview using square endmills](.gitbook/assets/image%20%2828%29.png)
 
 Lastly generate the G-Code, secure the stock, set zero relative to it, and cut the part out.
 
