@@ -192,3 +192,5 @@ And preview insofar as is possible:
 
 Lastly generate the G-Code, secure the stock, set zero relative to it, and cut the part out.
 
+It should be possible to create a program which converts the G-Code into an OpenSCAD file which could then be used to preview the cut.
+
