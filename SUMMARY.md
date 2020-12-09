@@ -9,4 +9,5 @@
 * [Radiused Fingerjoints](radiused-fingerjoints.md)
 * [A Final Project](a-final-project.md)
 * [Further Toolpath Details](further-toolpath-details.md)
+* [Mortise and Tenon Joinery](mortise-and-tenon-joinery.md)
 
