@@ -387,5 +387,7 @@ Last cut apart, clean up edges, finish, and install hardware:
 
 ![Carbide Create: Fingerjoints: Vertical: Ready for finishing and hardware](.gitbook/assets/win_20201130_23_50_55_pro.jpg)
 
- While it is possible to do traditional fingerjoints on a CNC, the tedium of multiple setups can be avoided on a CNC, which will be explored in the next chapter.
+![Finished box with fingerjoints and installed hardware](.gitbook/assets/20201210_213240-1-.jpg)
+
+While it is possible to do traditional fingerjoints on a CNC, the tedium of multiple setups can be avoided on a CNC, which will be explored in the next chapter.
 
