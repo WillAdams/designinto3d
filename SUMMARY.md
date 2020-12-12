@@ -7,6 +7,7 @@
 * [Prototypes and Designs](prototypes-and-designs.md)
 * [Fingerjoints](fingerjoints.md)
 * [Radiused Fingerjoints](radiused-fingerjoints.md)
+* [Blind Miter & Hidden Spline](blind-miter-and-hidden-spline.md)
 * [Mortise and Tenon Joinery](mortise-and-tenon-joinery.md)
 * [A Final Project](a-final-project.md)
 * [Further Toolpath Details](further-toolpath-details.md)
