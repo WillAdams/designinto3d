@@ -6,3 +6,7 @@ description: Ninety degree joints with 90 degree V bits and minimal voids
 
 While modern adhesives are surprisingly able to allow one to simply cut and glue miters \(esp. if one is willing to add a few nails\), adding a hidden spline will create a much stronger joint. 
 
+![Basic Miter Joint \(overhead view\)](.gitbook/assets/image%20%2832%29.png)
+
+![Blind Miter Joint and profile of smaller V endmill](.gitbook/assets/image%20%2831%29.png)
+
