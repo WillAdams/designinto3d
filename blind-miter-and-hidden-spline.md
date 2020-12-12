@@ -18,23 +18,31 @@ While modern adhesives are surprisingly able to allow one to simply cut and glue
 
 ![Blind Miter Joint and hidden spline profile unfolded](.gitbook/assets/image%20%2832%29.png)
 
-![Box with parameters/dimensions](.gitbook/assets/image%20%2841%29.png)
+![Box with parameters/dimensions](.gitbook/assets/image%20%2845%29.png)
 
-![Box parts with side profiles](.gitbook/assets/image%20%2843%29.png)
+![Box parts with side profiles](.gitbook/assets/image%20%2848%29.png)
 
-![Parts preview with miters](.gitbook/assets/image%20%2838%29.png)
+![Parts preview with miters](.gitbook/assets/image%20%2839%29.png)
 
-![Pockets for hidden splines](.gitbook/assets/image%20%2840%29.png)
+![Pockets for hidden splines](.gitbook/assets/image%20%2844%29.png)
 
-![](.gitbook/assets/image%20%2844%29.png)
+![](.gitbook/assets/image%20%2849%29.png)
 
-![](.gitbook/assets/image%20%2839%29.png)
+![](.gitbook/assets/image%20%2840%29.png)
 
 
 
 ![](.gitbook/assets/image%20%2837%29.png)
 
+![](.gitbook/assets/image%20%2847%29.png)
 
+![](.gitbook/assets/image%20%2841%29.png)
+
+![](.gitbook/assets/image%20%2843%29.png)
+
+![](.gitbook/assets/image%20%2838%29.png)
+
+![](.gitbook/assets/image%20%2842%29.png)
 
 
 
