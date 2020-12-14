@@ -6,7 +6,9 @@ description: Cutting fingerjoints on boards flat on the machine
 
 There are many examples of cutting fingerjoints with dogbones to allow for the radius on an endmill, which works, but results in visible voids in the project. An alternative technique is to cut the fingerjoints and then use a cove radius endmill to round off the fingers as necessary allowing for a joint which does not have visible voids. For discussion see: [https://community.carbide3d.com/t/design-into-3d-boxes-magazine-storage/16238](https://community.carbide3d.com/t/design-into-3d-boxes-magazine-storage/16238)
 
-Interestingly, it is possible to take a file intended for lasercutting and simply add some lines for the radiusing and then cut out the box \(if one is willing to forgo an accurate 3D preview of the cut\). Since this affords an expedient technique which allows approaching the project in a straight-forward fashion which can be built on to understand the concepts in question, this will be shown first.
+As shown there, one option is to add geometry to relieve the fingers using a V carving toolpath. This works, but results in visible voids since the straight line of the V angle doesn't match the arc of the radius left by the round endmill.
+
+Interestingly, it is possible to take a file intended for lasercutting and simply add some geometry for the radiusing and then cut out the box \(if one is willing to forgo an accurate 3D preview of the cut\). Since this affords an expedient technique which allows approaching the project in a straight-forward fashion which can be built on to understand the concepts in question, this will be shown first.
 
 ## Generate the Design
 
@@ -158,7 +160,7 @@ Repeating the intersection verifies that the rounding works:
 
 ![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: Intersecting Thinness](.gitbook/assets/image%20%2815%29.png)
 
-But unfortunately also indicates that too much material will be left for a fit without post-processing. The tip on the cove radius endmill selected above is too wide to clear this material without leaving a void larger than is desired or one which would be visible inside the box, so the solution is to draw in a suitable geometry to clear this material as a V carving.
+But unfortunately also indicates that some material will be left for a fit which would require post-processing. The tip on the cove radius endmill selected above is too wide to clear this material without leaving a void larger than is desired or one which would be visible inside the box, so the solution is to draw in a suitable geometry to clear this material as a V carving.
 
 
 
