@@ -158,6 +158,10 @@ Repeating the intersection verifies that the rounding works:
 
 ![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: Intersecting Thinness](.gitbook/assets/image%20%2815%29.png)
 
+But unfortunately also indicates that too much material will be left for a fit without post-processing. The tip on the cove radius endmill selected above is too wide to clear this material without leaving a void larger than is desired or one which would be visible inside the box, so the solution is to draw in a suitable geometry to clear this material as a V carving.
+
+
+
 With the rounding working the 3D model is verified:
 
 ![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: 3D Model](.gitbook/assets/image%20%288%29.png)
