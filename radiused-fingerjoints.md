@@ -162,7 +162,7 @@ Repeating the intersection verifies that the rounding works:
 
 But unfortunately also indicates that some material will be left for a fit which would require post-processing. The tip on the cove radius endmill selected above is too wide to clear this material without leaving a void larger than is desired or one which would be visible inside the box, so the solution is to draw in a suitable geometry to clear this material as a V carving.
 
-
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Geometry for V carving](.gitbook/assets/image%20%2851%29.png)
 
 With the rounding working the 3D model is verified:
 
