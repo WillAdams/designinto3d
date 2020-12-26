@@ -162,13 +162,19 @@ Repeating the intersection verifies that the rounding works:
 
 But unfortunately also indicates that some material will be left for a fit which would require post-processing. The tip on the cove radius endmill selected above is too wide to clear this material without leaving a void larger than is desired or one which would be visible inside the box, so the solution is to draw in a suitable geometry to clear this material as a V carving.
 
-![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Geometry for V carving](.gitbook/assets/image%20%2853%29.png)
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Geometry for V carving](.gitbook/assets/image%20%2854%29.png)
 
 With the rounding working the 3D model is verified:
 
 ![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: Radius and V carving Relief cut](.gitbook/assets/image%20%2852%29.png)
 
-![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: 3D Model](.gitbook/assets/image%20%288%29.png)
+Including the intersection:
+
+![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: Radius and V carving Relief cut intersection](.gitbook/assets/image%20%2853%29.png)
+
+Which once verified, allows us to preview the box:
+
+![OpenSCAD: Box: 3&quot; x 3&quot; x 3&quot;: 3D Model](.gitbook/assets/image%20%2857%29.png)
 
 The OpenSCAD source is available at: [https://github.com/WillAdams/Design\_Into\_3D/blob/master/box/fingerjoint/radius/Design%20into%203D\_%20Box\_%20fingerjoint\_radius.scad](https://github.com/WillAdams/Design_Into_3D/blob/master/box/fingerjoint/radius/Design%20into%203D_%20Box_%20fingerjoint_radius.scad)
 
@@ -190,15 +196,19 @@ Select the lines for the relief cut, select a suitable tool and assign it a suit
 
 ![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Radius Toolpath](.gitbook/assets/image%20%2830%29.png)
 
+Then add the geometry for the internal \(hidden\) V carving relief:
+
+![](.gitbook/assets/image%20%2855%29.png)
+
 Next add an outer profile toolpath to cut out the parts:
 
 ![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Profile Toolpath](.gitbook/assets/image%20%2826%29.png)
 
 And preview insofar as is possible:
 
-![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Preview using square endmills](.gitbook/assets/image%20%2828%29.png)
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Preview using square and V endmills](.gitbook/assets/image%20%2856%29.png)
 
 Lastly generate the G-Code, secure the stock, set zero relative to it, and cut the part out.
 
-It should be possible to create a program which converts the G-Code into an OpenSCAD file which could then be used to preview the cut.
+A noted above, it should be possible to create a program which converts the G-Code into an OpenSCAD file which could then be used to preview the cut.
 
