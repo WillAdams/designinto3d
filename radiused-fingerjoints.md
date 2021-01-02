@@ -210,5 +210,15 @@ And preview insofar as is possible:
 
 Lastly generate the G-Code, secure the stock, set zero relative to it, and cut the part out.
 
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Successful cut](.gitbook/assets/20201229_202932-1-.jpg)
+
+The parts should then merely require separating and some basic cleanup with a sharp chisel and suitable files:
+
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Parts ready for assembly](.gitbook/assets/20210101_135801-1-.jpg)
+
+Which then fit together:
+
+![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Box](.gitbook/assets/20210101_135732-1-.jpg)
+
 A noted above, it should be possible to create a program which converts the G-Code into an OpenSCAD file which could then be used to preview the cut.
 
