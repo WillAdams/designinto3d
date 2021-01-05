@@ -6,6 +6,8 @@ description: Ninety degree joints with 90 degree V bits and minimal voids
 
 While modern adhesives are surprisingly able to allow one to simply cut and glue miters \(esp. if one is willing to add a few nails\), adding a hidden spline will create a much stronger joint \(and one which has the added benefit of being self-aligning\). 
 
+## Drawing the Joint
+
 The miter itself is of course simply a bisecting of the junction of the two boards:
 
 ![Basic Miter Joint \(overhead view\)](.gitbook/assets/image%20%2834%29.png)
@@ -26,7 +28,11 @@ Rotating the components and arranging them flat on the working area for cutting 
 
 ![Blind Miter Joint and hidden spline profile unfolded](.gitbook/assets/image%20%2832%29.png)
 
+## Modeling the Box
+
 ![Box with parameters/dimensions](.gitbook/assets/image%20%2846%29.png)
+
+## Cutting the Joint
 
 ![Box parts with side profiles](.gitbook/assets/image%20%2849%29.png)
 
