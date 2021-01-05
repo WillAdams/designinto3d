@@ -18,7 +18,11 @@ In order to leave a reasonable amount of material, the endmill should cut so tha
 
 ![Blind Miter Joint with smaller V endmill positioned](.gitbook/assets/image%20%2831%29.png)
 
+Which may then be drawn up:
+
 ![Blind Miter Joint and hidden spline profile](.gitbook/assets/image%20%2836%29.png)
+
+Rotating the components and arranging them flat on the working area for cutting out shows them in profile as:
 
 ![Blind Miter Joint and hidden spline profile unfolded](.gitbook/assets/image%20%2832%29.png)
 
