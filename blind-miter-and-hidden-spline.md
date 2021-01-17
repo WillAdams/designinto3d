@@ -60,5 +60,17 @@ Rotating the components and arranging them flat on the working area for cutting 
 
 ![](.gitbook/assets/image%20%2839%29.png)
 
+Cut the file:
 
+![](.gitbook/assets/20210116_134633-1-.jpg)
+
+![](.gitbook/assets/20210116_165842-1-.jpg)
+
+With a downcut endmill the parts need minimal cleanup:
+
+![](.gitbook/assets/20210117_122620-1-.jpg)
+
+And the box fits together, self-aligning:
+
+![](.gitbook/assets/20210117_123246-1-.jpg)
 
