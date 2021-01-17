@@ -131,7 +131,7 @@ When selecting geometry in Carbide Create and selecting **Move**, the X and Y co
 
 ### Resize
 
-In addition to moving, geometry may also be transformed. Using the numeric interface selections may be scaled symmetrically using the hollow square drag handles at the corners ― midpoints of the selection marquee afford asymmetric scaling by dragging instead:
+In addition to moving, geometry may also be transformed. Using the numeric interface selections may be scaled symmetrically using the hollow square drag handles at the corners ― midpoints of the selection marquee afford asymmetric scaling by dragging instead \(this is a simple way to create an ellipse/oval\):
 
 ![Carbide Create scale transform.](.gitbook/assets/carbide_create_interface_transform_scale.png)
 
