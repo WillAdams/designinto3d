@@ -153,7 +153,7 @@ Geometry may be selected and offset, either to the inside or outside:
 
 ![](.gitbook/assets/carbide_create_interface_offsetpath%20%281%29.png)
 
-When offsetting paths to the outside, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a 3rd party tool such as Inkscape, and then reimport, or redraw the geometry.
+When offsetting paths to the outside in Carbide Create, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a 3rd party tool such as Inkscape, and then reimport, or redraw the geometry.
 
 ### Boolean Operations
 
@@ -177,7 +177,7 @@ Curves are available in most vector drawing programs, and when present may be de
 
 ### Bézier Curves 
 
-The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ending on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options.
+The most common is Bézier curves which are defined by an on-curve point \(the origin\), a matching off-curve point, and an additional off-curve point paired with the ultimate \(ending\) on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options.
 
 To create a curve, select that tool, then click or click-drag where one wants on-curve points \(clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve node ― either may be changed to the other, see below\):
 
@@ -316,5 +316,5 @@ For further information on Carbide Create please see:
 
 ## Third Dimensional Shapes
 
-Extending all of these into 3 dimensions becomes more complex with each additional element, each of which complicates the mathematics. Up through arcs and regular curves, these are usually manageable, as is expressed in constructive solid geometry \(CSG\), and OpenSCAD is essentially a scripting front-end for this. Extending arbitrary curves into 3 dimensional space involves complex geometric calculations which are the domain of 3 dimensional modeling tools such as Blender and various commercial programs. Fortunately, the regular polygons and extruded shapes of CSG afford one a very wide array of design options.
+Extending all of these into 3 dimensions becomes more complex with each additional element, each of which complicates the mathematics. Up through arcs and regular curves, these are usually manageable, as is expressed in constructive solid geometry \(CSG\), and OpenSCAD \(and its Blockly derivative BlockSCAD\) is essentially a scripting front-end for this. Extending arbitrary curves into 3 dimensional space involves complex geometric calculations which are the domain of 3 dimensional modeling tools such as Blender and various commercial programs. Fortunately, the regular polygons and extruded shapes of CSG afford one a very wide array of design options.
 
