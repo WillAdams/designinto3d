@@ -103,7 +103,7 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 
 Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter:
 
-![Carbide Create modifying Rectangle corner parameters.](.gitbook/assets/carbide_create_interface_rectangle_fillet_parameters.png)
+![Carbide Create modifying Rectangle corner parameters.](.gitbook/assets/carbide_create_interface_rectangle_fillet_parameters%20%281%29.png)
 
 #### Polygon Parameters
 
