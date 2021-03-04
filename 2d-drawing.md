@@ -82,7 +82,7 @@ Once shapes have been drawn, they may be selected and changed or modified. The m
 
 For a circle, the size parameter adjustment may be done in terms of its overall size \(either Width or Height, only one may be adjusted, the other will be forced to match when **Apply** is clicked\), or Radius:
 
-![Carbide Create modifying circle parameters.](.gitbook/assets/carbide_create_screengrab_circle_parameters.png)
+![Carbide Create modifying circle parameters.](.gitbook/assets/carbide_create_screengrab_circle_parameters%20%281%29.png)
 
 #### Rectangle Parameters
 
