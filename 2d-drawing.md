@@ -88,7 +88,7 @@ For a circle, the size parameter adjustment may be done in terms of its overall 
 
 Rectangles may also be modified in their dimensions, but one is not limited to a regular square, Width and/or Height may be specified separately:
 
-![Carbide Create modifying rectangle parameters.](.gitbook/assets/carbide_create_interface_parameters_rectangle%20%281%29.png)
+![Carbide Create modifying rectangle parameters.](.gitbook/assets/carbide_create_interface_parameters_rectangle%20%282%29.png)
 
 Note that in addition to the dimensions, one may change the shaping/appearance of corners. The possible options are:
 
