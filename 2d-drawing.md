@@ -125,9 +125,9 @@ Another option which drawing programs may afford is offsetting ― this is espec
 
 ### Move
 
-When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy point \(indicated by the green highlighted circle\), and will move to that point when Apply is clicked:
+When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy point \(indicated by the green highlighted circle\), and will move to that point when the Return/Enter is pressed:
 
-![Carbide Create Move transform.](.gitbook/assets/carbide_create_interface_transform_move.png)
+![Carbide Create Move transform.](.gitbook/assets/carbide_create_interface_transform_move%20%281%29.png)
 
 ### Resize
 
