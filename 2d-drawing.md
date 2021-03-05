@@ -109,7 +109,7 @@ Once a corner treatment is specified, one may set its dimension in terms of the 
 
 Polygons may be adjusted for Width or Height \(since only regular polygons are supported, only one measurement may be specified, the other will be forced to the correct dimension\) and number of sides:
 
-![Carbide Create modifying Polygon parameters.](.gitbook/assets/carbide_create_interface_polygon_parameters%20%282%29.png)
+![Carbide Create modifying Polygon parameters.](.gitbook/assets/carbide_create_interface_polygon_parameters%20%283%29.png)
 
 ## Transformations
 
