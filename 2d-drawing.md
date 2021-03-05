@@ -28,7 +28,7 @@ clicking at the beginning and end points:
 
 and then clicking on "Done". Note that open lines in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange.
 
-Due to the limited toolpath support, open polylines \(or curves, see below\) are not typically used in Carbide Create, instead one will re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms \(see below\) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the Curve tool section below.
+Open polylines \(or curves, see below\) are not typically used in Carbide Create, instead one will usually re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms \(see below\) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the Curve tool section below.
 
 Lines will be used to define Rectangles \(which may be squares\) and regular Polygons as described below.
 
@@ -80,7 +80,7 @@ Once shapes have been drawn, they may be selected and changed or modified. The m
 
 #### Circle Parameters
 
-For a circle, the size parameter adjustment may be done in terms of its overall size \(either Width or Height, only one may be adjusted, the other will be forced to match when **Apply** is clicked\), or Radius:
+For a circle, the size parameter adjustment may be done in terms of its overall size using the **Resize** tool \(either Width or Height, only one may be adjusted, the other will be forced to match\), or **Radius**:
 
 ![Carbide Create modifying circle parameters.](.gitbook/assets/carbide_create_screengrab_circle_parameters%20%281%29.png)
 
@@ -133,7 +133,7 @@ When selecting geometry in Carbide Create and selecting **Move**, the X and Y co
 
 In addition to moving, geometry may also be transformed. Using the numeric interface selections may be scaled symmetrically using the hollow square drag handles at the corners ― midpoints of the selection marquee afford asymmetric scaling by dragging instead \(this is a simple way to create an ellipse/oval\):
 
-![Carbide Create scale transform.](.gitbook/assets/carbide_create_interface_transform_scale.png)
+![](.gitbook/assets/carbide_create_interface_transform_scale%20%281%29.png)
 
 ### Rotate
 
