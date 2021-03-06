@@ -151,7 +151,7 @@ Most, if not all CAD and design tools allow an option for aligning one or more o
 
 Geometry may be selected and offset, either to the inside or outside:
 
-![](.gitbook/assets/carbide_create_interface_offsetpath%20%281%29.png)
+![Carbide Create offset interface options](.gitbook/assets/carbide_create_interface_offsetpath%20%282%29.png)
 
 When offsetting paths to the outside in Carbide Create, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a 3rd party tool such as Inkscape, and then reimport, or redraw the geometry.
 
