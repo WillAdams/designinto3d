@@ -159,7 +159,7 @@ When offsetting paths to the outside in Carbide Create, corners are rounded off 
 
 Booleans allow for the instantiation of geometry from existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected \(the green indicates the geometry which will be produced by the operation, the black what is removed\):
 
-![Carbide Create Boolean options.](.gitbook/assets/carbide_create_interface_boolean.png)
+![Carbide Create Boolean options.](.gitbook/assets/carbide_create_interface_boolean%20%281%29.png)
 
 Depending on the selection, Carbide Create affords the following Boolean operations:
 
