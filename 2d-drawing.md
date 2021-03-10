@@ -24,7 +24,7 @@ Straight lines are a fundamental building block of vector drawing and are of cou
 
 clicking at the beginning and end points:
 
-![Carbide Create drawing line with Polyline tool.](.gitbook/assets/carbide_create_interface_create_polyline.png)
+![Carbide Create drawing line with Polyline tool.](.gitbook/assets/carbide_create_interface_create_polyline%20%281%29.png)
 
 and then clicking on "Done". Note that open lines in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange.
 
