@@ -62,7 +62,7 @@ Circles are defined as four Bézier curves which is necessarily an approximation
 
 Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI19.html), rectangles have a specific tool for their creation, squares may be defined by making height and width equal, and in Carbide Create they have a corner feature which other shapes do not. As circles are, they are drawn from the inside out in Carbide Create:
 
-![Carbide Create drawing a rectangle.](.gitbook/assets/carbide_create_interface_create_rectangle.png)
+![Carbide Create drawing a rectangle.](.gitbook/assets/carbide_create_interface_create_rectangle%20%281%29.png)
 
 Since Carbide Create draws from center out, shapes are often twice the desired dimensions, in such instances they may be easily scaled to half their size \(this applies to other shapes and is often useful/expedient\) so as to have them at the intended size.
 
