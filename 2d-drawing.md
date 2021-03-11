@@ -181,7 +181,7 @@ The most common is Bézier curves which are defined by an on-curve point \(the o
 
 To create a curve, select that tool, then click or click-drag where one wants on-curve points \(clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve node ― either may be changed to the other, see below\):
 
-![Carbide Create drawing curve.](.gitbook/assets/carbide_create_interface_create_curve.png)
+![Carbide Create drawing curve.](.gitbook/assets/carbide_create_interface_create_curve%20%281%29.png)
 
 #### Open or Closed Paths
 
