@@ -70,7 +70,7 @@ Since Carbide Create draws from center out, shapes are often twice the desired d
 
 Drawing programs often have support for regular polygons, as does Carbide Create. As with other objects, Polygons are drawn from the center point out:
 
-![Carbide Create drawing a hexagon.](.gitbook/assets/carbide_create_interface_create_polygon.png)
+![Carbide Create drawing a hexagon.](.gitbook/assets/carbide_create_interface_create_polygon%20%281%29.png)
 
 Once drawn, they may be adjusted in their dimensions, and for their number of sides, see below.
 
