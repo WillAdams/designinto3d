@@ -18,7 +18,7 @@ When the stock has a tenon cut while flat the tenons will have a rounded base wh
 
 ![Tenons cut from flat stock.](.gitbook/assets/image%20%2858%29.png)
 
-
+When cutting the mortises it will be necessary to cut T-bones or dogbones to allow for the square corners, and the longitudinal edges will need to be relieved, say with a V cut.
 
 
 
