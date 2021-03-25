@@ -11,4 +11,5 @@
 * [Mortise and Tenon Joinery](mortise-and-tenon-joinery.md)
 * [A Final Project](a-final-project.md)
 * [Further Toolpath Details](further-toolpath-details.md)
+* [Drawer Organizers](drawer-organizers.md)
 
