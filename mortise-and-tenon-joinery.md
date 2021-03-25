@@ -22,7 +22,15 @@ When cutting the mortises it will be necessary to cut T-bones or dogbones to all
 
 ![Mortises relieved with a V cut.](.gitbook/assets/image%20%2859%29.png)
 
+With code in place to make the mortises and tenons, it is a simple matter to use them in a suitable design:
 
+![Child&apos;s step stool made with mortise and tenon joinery.](.gitbook/assets/image%20%2860%29.png)
+
+Available at: [https://www.blockscad3d.com/community/projects/1151153](https://www.blockscad3d.com/community/projects/1151153)
+
+Arguably, the proportions should be adjusted, since the current dimensions seem more bench-like and is a bit low for use.
+
+ 
 
 
 
