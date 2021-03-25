@@ -30,6 +30,10 @@ Available at: [https://www.blockscad3d.com/community/projects/1151153](https://w
 
 Arguably, the proportions should be adjusted, since the current dimensions seem more bench-like and is a bit low for use.
 
+![Child&apos;s step stool with visible mortise and tenon joinery](.gitbook/assets/20210303_163038-1-.jpg)
+
+
+
  
 
 
