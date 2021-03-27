@@ -23,6 +23,10 @@ Length
 * positive values will have the divider starting to the left/in front of that position and continuing to the right or rear
 * negative values will have the divider starting to the right of/behind that position and continuing left or to the front
 
+In order to do this we need a module which has an input for the maximum possible number of positions:
+
+![Draw divider module](.gitbook/assets/image%20%2861%29.png)
+
 
 
 
