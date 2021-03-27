@@ -16,7 +16,7 @@ Programmatically this will be done by the following possible values:
 Position
 
 * 0 --- divider is disabled
-* 1--9 --- divider will start to the at that numbered position
+* 1--9 --- divider will start at that numbered position
 
 Length
 
