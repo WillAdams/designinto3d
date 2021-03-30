@@ -29,7 +29,11 @@ In order to do this we need a module which has an input for the maximum possible
 
 Then, based on the logic of which is the highest numbered position which has a non-zero number the distances are apportioned evenly and calculated. First create variables for each divider position:
 
-![Drawer divider variables](.gitbook/assets/image%20%2862%29.png)
+![Drawer divider variables](.gitbook/assets/image%20%2863%29.png)
+
+To make checking the position easier, draw in a surround:
+
+![Drawer divider surround](.gitbook/assets/image%20%2862%29.png)
 
 
 
