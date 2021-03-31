@@ -26,7 +26,7 @@ clicking at the beginning and end points:
 
 ![Carbide Create drawing line with Polyline tool.](.gitbook/assets/carbide_create_interface_create_polyline%20%281%29.png)
 
-and then clicking on "Done". Note that open lines in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange.
+and then clicking on **Done**. Note that open lines in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange.
 
 Open polylines \(or curves, see below\) are not typically used in Carbide Create, instead one will usually re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms \(see below\) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the Curve tool section below.
 
@@ -56,7 +56,7 @@ Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](htt
 
 Note that the **Done** button allows one to cancel out of the circle drawing mode.
 
-Circles are defined as four Bézier curves which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for machining purposes.
+In Carbide Create, circles are defined as four Bézier curves \(as opposed to using arcs\) which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for machining purposes. Researching the match involved in this differentiation is left as an exercise for the interested reader.
 
 #### Rectangles and Squares
 
@@ -107,7 +107,7 @@ Once a corner treatment is specified, one may set its dimension in terms of the 
 
 #### Polygon Parameters
 
-Polygons may be adjusted for Width or Height \(since only regular polygons are supported, only one measurement may be specified, the other will be forced to the correct dimension\) and number of sides:
+Polygons may be adjusted for Radius \(since only regular polygons are supported, only one measurement need be specified\) and number of sides:
 
 ![Carbide Create modifying Polygon parameters.](.gitbook/assets/carbide_create_interface_polygon_parameters%20%284%29.png)
 
@@ -125,19 +125,19 @@ Another option which drawing programs may afford is offsetting ― this is espec
 
 ### Move
 
-When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy point \(indicated by the green highlighted circle\), and will move to that point when the Return/Enter is pressed:
+When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy point \(indicated by the highlighted/selected circle\), and will move to that point when the Return/Enter key is pressed:
 
 ![Carbide Create Move transform.](.gitbook/assets/carbide_create_interface_transform_move%20%281%29.png)
 
 ### Resize
 
-In addition to moving, geometry may also be transformed. Using the numeric interface selections may be scaled symmetrically using the hollow square drag handles at the corners ― midpoints of the selection marquee afford asymmetric scaling by dragging instead \(this is a simple way to create an ellipse/oval\):
+In addition to moving, geometry may also be transformed. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface  ― midpoints of the selection marquee afford asymmetric scaling by dragging instead \(this is a simple way to create an ellipse/oval\) but it is not possible to scale asymmetrically numerically:
 
 ![](.gitbook/assets/carbide_create_interface_transform_scale%20%281%29.png)
 
 ### Rotate
 
-Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design. Note that for some objects it may be better to alter their size rather than rotating them in Carbide Create.
+Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in Carbide Create.
 
 ### Flip
 
@@ -153,11 +153,11 @@ Geometry may be selected and offset, either to the inside or outside:
 
 ![Carbide Create offset interface options](.gitbook/assets/carbide_create_interface_offsetpath%20%282%29.png)
 
-When offsetting paths to the outside in Carbide Create, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a 3rd party tool such as Inkscape, and then reimport, or redraw the geometry.
+When offsetting paths to the outside in Carbide Create, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a 3rd party tool such as Inkscape, and then reimport, or, redraw the geometry.
 
 ### Boolean Operations
 
-Booleans allow for the instantiation of geometry from existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected \(the green indicates the geometry which will be produced by the operation, the black what is removed\):
+Booleans allow for the instantiation of geometry from existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected \(the green indicates the geometry which will be produced by the operation, the black what is used and which is normally replaced by the result\):
 
 ![Carbide Create Boolean options.](.gitbook/assets/carbide_create_interface_boolean%20%281%29.png)
 
