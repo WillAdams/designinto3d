@@ -125,7 +125,7 @@ Another option which drawing programs may afford is offsetting ― this is espec
 
 ### Move
 
-When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy point \(indicated by the highlighted/selected circle\), and will move to that point when the Return/Enter key is pressed:
+When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy point \(indicated by the highlighted/selected circle\), and will move the object so the referred corner is at that point when the Return/Enter key is pressed:
 
 ![Carbide Create Move transform.](.gitbook/assets/carbide_create_interface_transform_move%20%281%29.png)
 
@@ -137,7 +137,7 @@ In addition to moving, geometry may also be transformed. Selections may be scale
 
 ### Rotate
 
-Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in Carbide Create.
+Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design, or to adjust for orientation of T-bones. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in Carbide Create.
 
 ### Flip
 
@@ -157,7 +157,7 @@ When offsetting paths to the outside in Carbide Create, corners are rounded off 
 
 ### Boolean Operations
 
-Booleans allow for the instantiation of geometry from existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected \(the green indicates the geometry which will be produced by the operation, the black what is used and which is normally replaced by the result\):
+Booleans allow for the modification of geometry using existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected \(the green indicates the geometry which will be produced by the operation, the black what is used and which is normally replaced by the result\):
 
 ![Carbide Create Boolean options.](.gitbook/assets/carbide_create_interface_boolean%20%281%29.png)
 
@@ -195,6 +195,8 @@ Note that the beginning and ending nodes will be connected as directly as possib
 
 and it may be necessary to adjust the curve if the path crosses itself.
 
+As of Carbide Create build 520 there is no way to change a closed path to being an open path.
+
 #### Principles for Bézier Curves
 
 Bézier Curves should be drawn following some basic principles:
@@ -212,8 +214,8 @@ As noted above, geometry is made up of lines and/or curves which are bounded by 
 
 When in Node Edit Mode it is possible to right-click and:
 
-* add an on-path node
-* delete an on-path node
+* add an on-path node \(by clicking on an part of the path which does not have nodes\)
+* delete an on-path node \(when it is selected\)
 * toggle a node from smooth to sharp and vice-versa
 
 Off-path nodes may be dragged to reshape paths, and by holding the Alt \(Option\) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
