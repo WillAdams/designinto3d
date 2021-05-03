@@ -34,6 +34,10 @@ It includes a matrix for laying out the parts for cutting:
 
 The parts layout may be easily prepared for exporting as a DXF or SVG using the projection\(\) command as previously shown.
 
+It is frequently necessary to refer to the dimensions of parts while working. While these could be stored as variables, it may be more expressive to calculate them using a module which can then return either width or depth based on a parameter:
+
+![Dimension calculation using a module](.gitbook/assets/image%20%2872%29.png)
+
 
 
 
