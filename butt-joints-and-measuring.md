@@ -20,9 +20,23 @@ Usually designed around the dimensions of the stock used:
 
 This requirement suggests a technique which will address the inability to parse an object w/in OpenSCAD to determine its dimensions:
 
-![Wren birdhouse: module for calculating dimensions](.gitbook/assets/image%20%2870%29.png)
+![Wren birdhouse: module for calculating dimensions](.gitbook/assets/image%20%2871%29.png)
 
 Create a module, the output of which may be plugged in wherever a given set of dimensions is used.
+
+The BlockSCAD link for the wren birdhouse is:
+
+{% embed url="https://www.blockscad3d.com/community/projects/1168572" %}
+
+It includes a matrix for laying out the parts for cutting:
+
+![Wren birdhouse: parts for cutting](.gitbook/assets/image%20%2870%29.png)
+
+The parts layout may be easily prepared for exporting as a DXF or SVG using the projection\(\) command as previously shown.
+
+
+
+
 
 
 
