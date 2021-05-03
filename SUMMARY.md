@@ -9,6 +9,7 @@
 * [Radiused Fingerjoints](radiused-fingerjoints.md)
 * [Blind Miter & Hidden Spline](blind-miter-and-hidden-spline.md)
 * [Mortise and Tenon Joinery](mortise-and-tenon-joinery.md)
+* [Butt Joints and Measuring](butt-joints-and-measuring.md)
 * [Drawer Organizers](drawer-organizers.md)
 * [A Final Project](a-final-project.md)
 * [Further Toolpath Details](further-toolpath-details.md)
