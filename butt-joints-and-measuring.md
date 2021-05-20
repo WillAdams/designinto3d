@@ -24,6 +24,10 @@ This requirement suggests a technique which will address the inability to parse 
 
 Create a module, the output of which may be plugged in wherever a given set of dimensions is used.
 
+An optional improvement here is to allow inputting the desired axis \(two is easiest, but more may be done\) as shown in:
+
+[https://www.blockscad3d.com/community/projects/1205684](https://www.blockscad3d.com/community/projects/1205684)
+
 The BlockSCAD link for the wren birdhouse is:
 
 {% embed url="https://www.blockscad3d.com/community/projects/1168572" %}
