@@ -220,7 +220,7 @@ Which then fit together:
 
 ![Carbide Create: Box: 3&quot; x 3&quot; x 3&quot;: Box](.gitbook/assets/20210101_135732-1-.jpg)
 
-A file for cutting this is available at: [https://community.carbide3d.com/uploads/short-url/1d7MKvdtTSImzI3SLwP8Deiy2SW.c2d](https://community.carbide3d.com/uploads/short-url/1d7MKvdtTSImzI3SLwP8Deiy2SW.c2d)
+A file for cutting this is available at: [https://community.carbide3d.com/t/design-into-3d-boxes-magazine-storage/16238/59](https://community.carbide3d.com/t/design-into-3d-boxes-magazine-storage/16238/59)
 
 A noted above, it should be possible to create a program which converts the G-Code into an OpenSCAD file which could then be used to preview the cut.
 
