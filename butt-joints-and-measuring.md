@@ -42,9 +42,13 @@ It is frequently necessary to refer to the dimensions of parts while working. Wh
 
 ![Dimension calculation using a module](.gitbook/assets/image%20%2872%29.png)
 
+Then it is simply a matter of cutting out the parts:
 
+![Birdhouse parts](.gitbook/assets/20210526_163408.jpg)
 
+and assembling with a few nails and a hinge and associated hardware:
 
+![Wren birdhouse](.gitbook/assets/win_20210528_14_05_13_pro.jpg)
 
-
+Files for this size are available at: [https://community.carbide3d.com/t/a-birdhouse-for-wrens-but-parametric-so-adjustable/32161/11](https://community.carbide3d.com/t/a-birdhouse-for-wrens-but-parametric-so-adjustable/32161/11)
 
