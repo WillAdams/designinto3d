@@ -391,3 +391,5 @@ Last cut apart, clean up edges, finish, and install hardware:
 
 While it is possible to do traditional fingerjoints on a CNC, the tedium of multiple setups can be avoided on a CNC, which will be explored in the next chapter.
 
+The files for the above box are available at: [https://community.carbide3d.com/t/cnc-finger-joint-box/8880/133](https://community.carbide3d.com/t/cnc-finger-joint-box/8880/133)
+
