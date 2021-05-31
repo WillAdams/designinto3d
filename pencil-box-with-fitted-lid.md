@@ -14,6 +14,10 @@ Then a module for cutting the desired shapes:
 
 ![Pencil Box module for cutting pockets at specified depth and location](.gitbook/assets/image%20%2876%29.png)
 
+Then modules for cutting each part:
+
+![Pencil Box top module](.gitbook/assets/image%20%2880%29.png)
+
 
 
 
