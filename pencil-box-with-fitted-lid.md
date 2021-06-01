@@ -18,9 +18,9 @@ Then modules for cutting each part:
 
 ![Pencil Box top module](.gitbook/assets/image%20%2880%29.png)
 
-![Pencil Box bottom module setup](.gitbook/assets/image%20%2885%29.png)
+![Pencil Box bottom module setup](.gitbook/assets/image%20%2886%29.png)
 
-![Pencil Box bottom module loop](.gitbook/assets/image%20%2886%29.png)
+![Pencil Box bottom module loop](.gitbook/assets/image%20%2887%29.png)
 
 Creating a file for cutting is simply a matter of capturing each elevation of features:
 
@@ -56,7 +56,11 @@ to get a flattened view which may be exported to a DXF or SVG and then imported 
 
 ![Pencil Box in OpenSCAD projection](.gitbook/assets/image%20%2884%29.png)
 
+Once imported into Carbide Create it is simply a matter of assigning toolpaths:
 
+![Pencil Box in Carbide Create](.gitbook/assets/image%20%2885%29.png)
+
+Files are available at: [https://community.carbide3d.com/t/fitted-box-design-generator-underway/13437/29](https://community.carbide3d.com/t/fitted-box-design-generator-underway/13437/29)
 
 
 
