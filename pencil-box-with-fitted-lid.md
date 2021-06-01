@@ -18,13 +18,13 @@ Then modules for cutting each part:
 
 ![Pencil Box top module](.gitbook/assets/image%20%2880%29.png)
 
-![Pencil Box bottom module setup](.gitbook/assets/image%20%2883%29.png)
+![Pencil Box bottom module setup](.gitbook/assets/image%20%2884%29.png)
 
-![Pencil Box bottom module loop](.gitbook/assets/image%20%2884%29.png)
+![Pencil Box bottom module loop](.gitbook/assets/image%20%2885%29.png)
 
 Creating a file for cutting is simply a matter of capturing each elevation of features:
 
-![](.gitbook/assets/image%20%2882%29.png)
+![](.gitbook/assets/image%20%2883%29.png)
 
 Available at:
 
@@ -46,13 +46,15 @@ Endmill_Diameter = 0.125;
 my_3D_Preview = false;   
 $fn=80;`
 
-![Pencil Box in OpenSCAD with customization](.gitbook/assets/image%20%2881%29.png)
+![Pencil Box in OpenSCAD with customization](.gitbook/assets/image%20%2882%29.png)
 
 Add the command:
 
 `projection()`
 
 to get a flattened view which may be exported to a DXF or SVG and then imported into Carbide Create:
+
+![Pencil Box in OpenSCAD projection](.gitbook/assets/image%20%2881%29.png)
 
 
 
