@@ -18,13 +18,13 @@ Then modules for cutting each part:
 
 ![Pencil Box top module](.gitbook/assets/image%20%2880%29.png)
 
-![Pencil Box bottom module setup](.gitbook/assets/image%20%2886%29.png)
+![Pencil Box bottom module setup](.gitbook/assets/image%20%2887%29.png)
 
-![Pencil Box bottom module loop](.gitbook/assets/image%20%2887%29.png)
+![Pencil Box bottom module loop](.gitbook/assets/image%20%2888%29.png)
 
 Creating a file for cutting is simply a matter of capturing each elevation of features:
 
-![](.gitbook/assets/image%20%2883%29.png)
+![](.gitbook/assets/image%20%2884%29.png)
 
 Available at:
 
@@ -46,7 +46,7 @@ Endmill_Diameter = 0.125;
 my_3D_Preview = false;   
 $fn=80;`
 
-![Pencil Box in OpenSCAD with customization](.gitbook/assets/image%20%2882%29.png)
+![Pencil Box in OpenSCAD with customization](.gitbook/assets/image%20%2883%29.png)
 
 Add the command:
 
@@ -54,13 +54,31 @@ Add the command:
 
 to get a flattened view which may be exported to a DXF or SVG and then imported into Carbide Create:
 
-![Pencil Box in OpenSCAD projection](.gitbook/assets/image%20%2884%29.png)
+![Pencil Box in OpenSCAD projection](.gitbook/assets/image%20%2885%29.png)
 
 Once imported into Carbide Create it is simply a matter of assigning toolpaths:
 
-![Pencil Box in Carbide Create](.gitbook/assets/image%20%2885%29.png)
+![Pencil Box in Carbide Create](.gitbook/assets/image%20%2886%29.png)
 
 Files are available at: [https://community.carbide3d.com/t/fitted-box-design-generator-underway/13437/29](https://community.carbide3d.com/t/fitted-box-design-generator-underway/13437/29)
 
+### One or more variations
 
+The problem with the generator, is that even the most minor change requires re-creating the toolpaths.
+
+One thing which is persistent as regards toolpaths, but which is easily changed is text, so if one had a box design which had for its dividers a character from a single font, one could change the number of dividers as simply as re-typing a number, and still have the product ready to run.
+
+First step is to make a font which has dividers for numbers, so:
+
+![Design into 3D font for round box dividers](.gitbook/assets/designinto3d_font%20%282%29.png)
+
+This font is available at: [https://community.carbide3d.com/t/fitted-box-design-generator-underway/13437/30](https://community.carbide3d.com/t/fitted-box-design-generator-underway/13437/30)
+
+It works when placed in the Carbide 3D font directory \(Help \| About \| Open Data Directory\).
+
+Once installed, load the Carbide Create file, select the center divider, then choose the font tool and replace the number with the number of dividers you want:
+
+![Round box with variable dividers](.gitbook/assets/image%20%2881%29.png)
+
+![Round box with 2 or 7 dividers](.gitbook/assets/win_20190825_11_17_15_pro.jpg)
 
