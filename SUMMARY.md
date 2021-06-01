@@ -10,7 +10,7 @@
 * [Blind Miter & Hidden Spline](blind-miter-and-hidden-spline.md)
 * [Mortise and Tenon Joinery](mortise-and-tenon-joinery.md)
 * [Butt Joints and Measuring](butt-joints-and-measuring.md)
-* [Pencil Box with Fitted Lid](pencil-box-with-fitted-lid.md)
+* [Box with Fitted Lid](pencil-box-with-fitted-lid.md)
 * [Further Toolpath Details](further-toolpath-details.md)
 * [Drawer Organizers](drawer-organizers.md)
 * [A Final Project](a-final-project.md)
