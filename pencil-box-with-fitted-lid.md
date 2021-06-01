@@ -18,9 +18,9 @@ Then modules for cutting each part:
 
 ![Pencil Box top module](.gitbook/assets/image%20%2880%29.png)
 
-![Pencil Box bottom module setup](.gitbook/assets/image%20%2884%29.png)
+![Pencil Box bottom module setup](.gitbook/assets/image%20%2885%29.png)
 
-![Pencil Box bottom module loop](.gitbook/assets/image%20%2885%29.png)
+![Pencil Box bottom module loop](.gitbook/assets/image%20%2886%29.png)
 
 Creating a file for cutting is simply a matter of capturing each elevation of features:
 
@@ -54,7 +54,7 @@ Add the command:
 
 to get a flattened view which may be exported to a DXF or SVG and then imported into Carbide Create:
 
-![Pencil Box in OpenSCAD projection](.gitbook/assets/image%20%2881%29.png)
+![Pencil Box in OpenSCAD projection](.gitbook/assets/image%20%2884%29.png)
 
 
 
