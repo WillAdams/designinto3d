@@ -6,7 +6,7 @@
 * [3D Project](3d-project.md)
 * [Prototypes and Designs](prototypes-and-designs.md)
 * [Box \(Finger\) Joints](fingerjoints.md)
-* [Radiused Fingerjoints](radiused-fingerjoints.md)
+* [Radiused Box joints](radiused-fingerjoints.md)
 * [Blind Miter & Hidden Spline](blind-miter-and-hidden-spline.md)
 * [Mortise and Tenon Joinery](mortise-and-tenon-joinery.md)
 * [Butt Joints and Measuring](butt-joints-and-measuring.md)
