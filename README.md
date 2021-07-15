@@ -26,7 +26,7 @@ with more complicated pieces incorporating both structures, and that any object 
 * its design
 * its dimensions
 
-Currently it uses [BlockSCAD](https://www.blockscad3d.com/) and [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD) as a 3D modeling front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) in OpenCAD which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518) 
+Currently it uses [BlockSCAD](https://www.blockscad3d.com/) and [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD) as a 3D modeling front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) in OpenSCAD which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518) 
 
 There are several possible approaches for making designs from BlockSCAD/OpenSCAD:
 
