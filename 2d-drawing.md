@@ -18,15 +18,15 @@ Points of course will be used to define the Cartesian X, Y coordinates of all ge
 
 ## Lines
 
-Straight lines are a fundamental building block of vector drawing and are of course defined as the shortest distance between two points \(Euclid’s _Elements: Book I:_ [_Definitions 2–5_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html#defs)\). Some CAM tools \(including Carbide Create\) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point \(path direction\). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline \(or Curve\) tool:
+Straight lines are a fundamental building block of vector drawing and are of course defined as the shortest distance between two points \(Euclid’s _Elements: Book I:_ [_Definitions 2–5_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html#defs)\). Some CAM tools \(including Carbide Create\) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point \(which is to say, the path direction\). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline \(or Curve\) tool:
 
 ![Carbide Create Polyline Tool.](.gitbook/assets/carbide_create_screengrab_polyline_hl%20%284%29.png)
 
-clicking at the beginning and end points:
+clicking at the beginning \(as well as if desired intermediary points\) and end points:
 
 ![Carbide Create drawing line with Polyline tool.](.gitbook/assets/carbide_create_interface_create_polyline%20%281%29.png)
 
-and then clicking on **Done**. Note that open lines in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange.
+and then clicking on **Done**. Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange.
 
 Open polylines \(or curves, see below\) are not typically used in Carbide Create, instead one will usually re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms \(see below\) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the Curve tool section below.
 
@@ -34,7 +34,7 @@ Lines will be used to define Rectangles \(which may be squares\) and regular Pol
 
 ## Arcs
 
-Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles and geometry based on circles \(segments and so forth\), as fillets when rounding the corners of a rectangle \(see below\), or drawn using the Curve tool \(see below\).
+Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles and geometry based on circles \(segments and so forth\), as fillets when rounding the corners of a rectangle \(see below\), or drawn using the Curve tool \(see below\), though since they are represented as either curves or polylines will necessarily be approximations of the actual arc.
 
 ## Polylines
 
@@ -42,7 +42,7 @@ Polylines are made up of multiple points describing lines and are differentiated
 
 ### Open Paths
 
-As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the Join command \(see Curve Editing below\) and it is also possible to combine two \(or more\) open paths drawn in Carbide Create into a single path, open or closed. 
+As noted above, toolpaths may be assigned to open paths, and the directionality will determine any offset if needed for a toolpath. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the Join Vectors command \(see Curve Editing below\) and it is also possible to combine two \(or more\) open paths drawn in Carbide Create into a single path, open or closed. 
 
 Note that in build 527 Carbide Create gained a feature for adding all open paths to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/) 
 
@@ -60,7 +60,7 @@ Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](htt
 
 Note that the **Done** button allows one to cancel out of the circle drawing mode.
 
-In Carbide Create, circles are defined as four Bézier curves \(as opposed to using arcs\) which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for machining purposes. Researching the match involved in this differentiation is left as an exercise for the interested reader.
+In Carbide Create, circles are defined as four Bézier curves \(as opposed to using arcs\) which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for machining purposes. Researching the math involved in this differentiation is left as an exercise for the interested reader.
 
 Note that in build 527 Carbide Create gained a feature for adding all circles to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/) 
 
@@ -72,7 +72,7 @@ One may select the minimum and maximum diameter for adding circles to the curren
 
 #### Rectangles and Squares
 
-Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI19.html), rectangles have a specific tool for their creation, squares may be defined by making height and width equal, and in Carbide Create they have a corner feature which other shapes do not. As circles are, they are drawn from the inside out in Carbide Create:
+Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI19.html), rectangles have a specific tool for their creation; squares may be defined by making height and width equal, and in Carbide Create they have a corner feature which other shapes do not. As circles are, they are drawn from the inside out in Carbide Create:
 
 ![Carbide Create drawing a rectangle.](.gitbook/assets/carbide_create_interface_create_rectangle%20%281%29.png)
 
@@ -111,7 +111,7 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 * Chamfer \(45 degree angles\)
 * Flipped fillet \(quarter circles removed from corners\)
 * Dogbone \(placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit\)
-* Tee \(placing a semicircle at a corner to ensure that a part with right angle corners will still fit ― note that orientation may not be specified, but by adding the feature, then rotating the part this may be controlled\)
+* Tee \(placing a semicircle at a corner to ensure that a part with right angle corners will still fit ― note that orientation may not be specified, but by adding the feature, then rotating the part, this may be controlled\)
 
 Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter/distance from the corner:
 
