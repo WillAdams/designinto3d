@@ -13,7 +13,7 @@ A similar design would be the blind miter box or fingerjoint which has seen a nu
 * [https://community.carbide3d.com/t/full-blind-finger-joints/947](https://community.carbide3d.com/t/full-blind-finger-joints/947)
 * [https://community.carbide3d.com/t/overengineered-box-for-the-endmills-i-dont-have-yet/429](https://community.carbide3d.com/t/overengineered-box-for-the-endmills-i-dont-have-yet/429)
 
-As the latter two links note, there are two possible approaches: 
+As the latter two links make clear, there are two possible approaches: 
 
 * Use the radius of the endmill to define the fingers so as to minimize endgrain--endgrain connections
 * Overcut with dogbones which makes the layout simpler
