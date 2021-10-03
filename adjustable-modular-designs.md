@@ -33,7 +33,10 @@ The fingerjoints fit together, providing a great deal of glue surface:
 
 Fitting the bottom and lid snuggly against fingers removes the need to remove material at the top and bottom angles --- if the box is sawn in twain so that it has a V area at that point it will then be necessary to relieve the material where the V endmill cannot cut.
 
-The initial part of the joint is made by cutting away as much of the angles as can be using a ball-nosed endmill, and machining the fingers:
+The initial part of the joint is made by cutting away as much of the angles as can be using a ball-nosed endmill, and machining the fingers. Laying out two parts at once makes this easier to see, and allows one to cut both a front/back and one of the sides in a single operation. The specifics of the joint are:
+
+* 1/4"  thick and 3.5" wide stock
+* cut using a 1/8" ball-nosed endmill, a 1/8" 90 degree V endmill, a suitably small endmill for relieving the board to make cutting the box apart to open it easier, and a cove radius endmill which matches the radius of the ball endmill
 
 ![](.gitbook/assets/image%20%2899%29.png)
 
@@ -59,5 +62,11 @@ Lastly the pockets for the top and bottom and relief and indicator cuts for sawi
 
 ![](.gitbook/assets/image%20%2895%29.png)
 
+With the joint laid out, while it is specific to a given size of board \(though it can easily be adapted to narrower boards by deleting finger pairs and adjusting the placement of the remaining elements\) it is a simple matter to adjust the file for a given depth and width of box --- simply open the file and adjust the width to match the sum of the lengths of the parts.
 
+The file is available at: [https://community.carbide3d.com/t/modular-joinery-system-for-blind-miter-fingerjoint-boxes/36161](https://community.carbide3d.com/t/modular-joinery-system-for-blind-miter-fingerjoint-boxes/36161)
+
+
+
+ 
 
