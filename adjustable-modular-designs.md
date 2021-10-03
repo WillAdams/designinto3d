@@ -35,19 +35,29 @@ Fitting the bottom and lid snuggly against fingers removes the need to remove ma
 
 The initial part of the joint is made by cutting away as much of the angles as can be using a ball-nosed endmill, and machining the fingers:
 
-![](.gitbook/assets/image%20%2896%29.png)
+![](.gitbook/assets/image%20%2899%29.png)
 
 ![](.gitbook/assets/image%20%2892%29.png)
 
 Then the V angles are cut to make the miter:
 
-![](.gitbook/assets/image%20%2894%29.png)
+![](.gitbook/assets/image%20%2897%29.png)
 
-![](.gitbook/assets/image%20%2895%29.png)
+![](.gitbook/assets/image%20%2898%29.png)
 
 Then, a cove radius endmill is used to relieve the fingers:
 
 ![](.gitbook/assets/image%20%2893%29.png)
 
 \(which cut Carbide Create cannot preview accurately at this time, so the tool used is simply provided with appropriate feeds and speed and set to a diameter which will show\)
+
+![](.gitbook/assets/image%20%2894%29.png)
+
+Lastly the pockets for the top and bottom and relief and indicator cuts for sawing off the lid are drawn in and then suitable toolpaths applied:
+
+![](.gitbook/assets/image%20%2896%29.png)
+
+![](.gitbook/assets/image%20%2895%29.png)
+
+
 
