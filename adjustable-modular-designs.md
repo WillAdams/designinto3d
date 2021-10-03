@@ -66,7 +66,7 @@ With the joint laid out, while it is specific to a given size of board \(though 
 
 The file is available at: [https://community.carbide3d.com/t/modular-joinery-system-for-blind-miter-fingerjoint-boxes/36161](https://community.carbide3d.com/t/modular-joinery-system-for-blind-miter-fingerjoint-boxes/36161)
 
-
+To adjust it for a given box size, add the desired depth and width of the box to arrive at the width required for the stock. If using pre-cut pieces for the top and bottom, use that dimension, plus the stock thickness, plus some reasonable dimension for play. 
 
  
 
