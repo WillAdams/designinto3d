@@ -66,7 +66,41 @@ With the joint laid out, while it is specific to a given size of board \(though 
 
 The file is available at: [https://community.carbide3d.com/t/modular-joinery-system-for-blind-miter-fingerjoint-boxes/36161](https://community.carbide3d.com/t/modular-joinery-system-for-blind-miter-fingerjoint-boxes/36161)
 
-To adjust it for a given box size, add the desired depth and width of the box to arrive at the width required for the stock. If using pre-cut pieces for the top and bottom, use that dimension, plus the stock thickness, plus some reasonable dimension for play. 
+To adjust it for a given box size, add the desired depth and width of the box to arrive at the width required for the stock. If using pre-cut pieces for the top and bottom, use that dimension, plus the stock thickness, plus some reasonable dimension for play. In this case, the pre-cut piece is a 200mm × 200mm piece of two-color HDPE, so 8.125" × 8.125" for box dimensions, and the stock area should be 16.25" wide:
+
+![](.gitbook/assets/image%20%28104%29.png)
+
+![](.gitbook/assets/image%20%28106%29.png)
+
+Select everything and then go into Node Edit mode:
+
+![](.gitbook/assets/image%20%28110%29.png)
+
+Drag-select all nodes associated with the right most joint:
+
+![](.gitbook/assets/image%20%28111%29.png)
+
+and drag it to the far-right, so that it has the same relative position to the end of the stock as previously:
+
+![](.gitbook/assets/image%20%28112%29.png)
+
+Draw in a rectangle which defines one of the two parts and is placed to match the stock:
+
+![](.gitbook/assets/image%20%28100%29.png)
+
+Then select everything but this rectangle and again go into Node Edit mode and select the nodes associated with the middle two joints:
+
+![](.gitbook/assets/image%20%28109%29.png)
+
+and drag it into position relative to the rectangle which defines where the two parts are cut away at:
+
+![](.gitbook/assets/image%20%28101%29.png)
+
+Verify the positioning of everything and check with the 3D preview:
+
+![](.gitbook/assets/image%20%28108%29.png)
+
+
 
  
 
