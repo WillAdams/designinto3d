@@ -1,5 +1,5 @@
 ---
-description: Designs mad up of discrete parts allows customization without programming.
+description: Design made up of discrete parts allows customization without programming.
 ---
 
 # Adjustable Modular Designs
@@ -18,22 +18,22 @@ As the latter two links make clear, there are two possible approaches:
 * Use the radius of the endmill to define the fingers so as to minimize endgrain--endgrain connections
 * Overcut with dogbones which makes the layout simpler
 
-The former can become quite complex and requires over-cutting which creates voids, while the latter has voids designed in.
+The former can become quite complex and requires over-cutting where the fingers and miter angle intersect which creates voids, while the latter has voids designed in.
 
 There are a couple of different features which make the joint work:
 
 * a bisecting angle where the joint will be exposed 
 * the fingerjoints, alternating so that they fit together
 
-The fingerjoints fit together, providing a great deal of glue surface:
+The fingerjoints fitting together, provides a great deal of glue surface:
 
 ![](.gitbook/assets/win_20210711_18_46_40_pro.jpg)
 
 ![](.gitbook/assets/win_20210711_18_47_23_pro.jpg)
 
-Fitting the bottom and lid snuggly against fingers removes the need to remove material at the top and bottom angles --- if the box is sawn in twain so that it has a V area at that point it will then be necessary to relieve the material where the V endmill cannot cut.
+Fitting the bottom and lid snuggly against fingers removes the need to remove material from the top and bottom fingers at the top and bottom angles --- if the box is sawn in twain so that it has a V area at that point it will then be necessary to relieve the material where the V endmill cannot cut for the fingers directly above and below the lid.
 
-The initial part of the joint is made by cutting away as much of the angles as can be using a ball-nosed endmill, and machining the fingers. Laying out two parts at once makes this easier to see, and allows one to cut both a front/back and one of the sides in a single operation. The specifics of the joint are:
+The initial part of the joint is made by cutting away as much of the angles as can be using a ball-nosed endmill, and machining the fingers. Laying out two parts at once makes this easier to see, and allows one to cut both a front/back and one of the sides in a single operation. The specifics of the first example joint are:
 
 * 1/4"  thick and 3.5" wide stock
 * cut using a 1/8" ball-nosed endmill, a 1/8" 90 degree V endmill, a suitably small endmill for relieving the board to make cutting the box apart to open it easier, and a cove radius endmill which matches the radius of the ball endmill
@@ -92,7 +92,7 @@ Then select everything but this rectangle and again go into Node Edit mode and s
 
 ![](.gitbook/assets/image%20%28109%29.png)
 
-and drag it into position relative to the rectangle which defines where the two parts are cut away at:
+and drag them into position relative to the rectangle which defines where the two parts are cut away at:
 
 ![](.gitbook/assets/image%20%28101%29.png)
 
