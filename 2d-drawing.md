@@ -262,6 +262,24 @@ and if one has difficulty drawing up anything, either post on the Carbide 3D com
 
 A curve which alternates on-curve and off-curve nodes, B-Splines are used for TrueType fonts, since their calculation is efficiently done, but are not used in typical CAD or Bézier curve drawing applications because of the difficulty in editing them. Note that when TrueType fonts are converted to paths, conversion from B-Splines to Bézier curves may result in odd node placement.
 
+## Other Features
+
+CAD and drawing programs may have a number of other features, depending on their intended use. Some of these include:
+
+### Layers
+
+Carbide Create supports layers since version 521. Available under Edit | Show Layers:
+
+![](<.gitbook/assets/image (113).png>)
+
+(or using the keyboard shortcut **L**)
+
+it then affords the ability to create and name layers, as well as to color-code them:
+
+![](<.gitbook/assets/image (114).png>)
+
+and to move objects to specific layers and to hide/show, or lock/unlock layers.
+
 ## Geometry
 
 When drawing and modeling it is often necessary to place parts relative to the original positioning based on a distance and possibly rotation determined by the dimensions of the parts. Geometry and trigonometry allow the calculation of such positioning, usually in terms of right triangles, or chords for elements based on circles or segments of circles.&#x20;
