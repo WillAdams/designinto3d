@@ -26,9 +26,9 @@ clicking at the beginning (as well as if desired intermediary points) and end po
 
 ![Carbide Create drawing line with Polyline tool.](<.gitbook/assets/carbide\_create\_interface\_create\_polyline (1).png>)
 
-and then clicking on **Done**. Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange.
+and then clicking on **Done**. Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange (for objects on the current layer).
 
-Open polylines (or curves, see below) are not typically used in Carbide Create, instead one will usually re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the Curve tool section below.
+Open polylines (or curves, see below) are not typically used in Carbide Create, instead one will usually re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve **tool section below.
 
 Lines will be used to define Rectangles (which may be squares) and regular Polygons as described below.
 
@@ -38,7 +38,7 @@ Many CAD programs will allow the definition of arcs which are easily drawn and m
 
 ## Polylines
 
-Polylines are made up of multiple points describing lines and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created, and if it has been edited. For example, a square may have corner options if drawn using the Rectangle tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular Polygon tool, may be changed into another polygon or resized proportionally, and if drawn using the Polyline or Curve tool may only be resized proportionally or node-edited (which to a degree are possible with the other creation options).
+Polylines are made up of multiple points describing lines and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created, and if it has been edited. For example, a square may have corner options if drawn using the **Rectangle **tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular **Polygon **tool, may be changed into another polygon or resized proportionally, and if drawn using the **Polyline **or **Curve **tool may only be resized proportionally or node-edited (which to a degree are possible with the other creation options).
 
 ### Open Paths
 
@@ -50,7 +50,7 @@ Edit | Select... | Select Open Vectors
 
 ### Closed Paths&#x20;
 
-Closed paths meet back at the point of origin and open up additional operations in CAM tools. In Euclid’s _Elements: Book I: _[_Definition 13–14_ ](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for Circles, Rectangles (which may be squares), and Regular Polygons.
+Closed paths meet back at the point of origin and open up additional operations in CAM tools. In Euclid’s _Elements: Book I: _[_Definition 13–14_ ](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for **Circles**, **Rectangles **(which may be squares), and Regular **Polygons**.
 
 #### Circles
 
@@ -80,7 +80,7 @@ Since Carbide Create draws from center out, shapes are often twice the desired d
 
 ### Polygons
 
-Drawing programs often have support for regular polygons, as does Carbide Create. As with other objects, Polygons are drawn from the center point out:
+Drawing programs often have support for regular polygons, as does Carbide Create. As with other objects in Carbide Create, Polygons are drawn from the center point out:
 
 ![Carbide Create drawing a hexagon.](<.gitbook/assets/carbide\_create\_interface\_create\_polygon (1).png>)
 
@@ -92,7 +92,7 @@ Once shapes have been drawn, they may be selected and changed or modified. The m
 
 #### Circle Parameters
 
-For a circle, the size parameter adjustment may be done in terms of its overall size using the **Resize **tool (either Width or Height, only one may be adjusted, the other will be forced to match), or **Radius**:
+For a circle, the size parameter adjustment may be done in terms of its overall size using the **Resize **tool (either **Width **or **Height**, only one may be adjusted, the other will be forced to match), or **Radius**:
 
 ![Carbide Create modifying circle parameters.](<.gitbook/assets/carbide\_create\_screengrab\_circle\_parameters (1).png>)
 
@@ -106,12 +106,12 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 
 ![Carbide Create corner treatments.](.gitbook/assets/carbidecreate\_corner\_treatments.png)
 
-* Square (the default shown above)
-* Fillet (rounded corners which allow applying an arc to a given corner)
-* Chamfer (45 degree angles)
-* Flipped fillet (quarter circles removed from corners)
-* Dogbone (placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit)
-* Tee (placing a semicircle at a corner to ensure that a part with right angle corners will still fit ― note that orientation may not be specified, but by adding the feature, then rotating the part, this may be controlled)
+* _Square _(the default shown above)
+* _Fillet_ (rounded corners which allow applying an arc to a given corner)
+* _Chamfer _(45 degree angles)
+* _Flipped fillet_ (quarter circles removed from corners)
+* _Dogbone _(placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit)
+* _Tee _(placing a semicircle at a corner to ensure that a part with right angle corners will still fit ― note that orientation may not be specified, but by adding the feature, then rotating the part, this may be controlled)
 
 Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter/distance from the corner:
 
@@ -143,7 +143,7 @@ When selecting geometry in Carbide Create and selecting **Move**, the X and Y co
 
 ### Resize
 
-In addition to moving, geometry may also be altered in size. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface  ― midpoints of the selection marquee afford asymmetric scaling by dragging instead (this is a simple way to create an ellipse/oval) but it is not possible to scale asymmetrically numerically:
+In addition to moving, geometry may also be altered in size. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface  ― midpoints of the selection marquee afford asymmetric scaling by dragging instead (this is a simple way to create an ellipse/oval) but it is not possible to scale asymmetrically numerically (though such drag-scaling should snap to the grid):
 
 ![](<.gitbook/assets/carbide\_create\_interface\_transform\_scale (1).png>)
 
@@ -175,9 +175,9 @@ Booleans allow for the modification of geometry using existing geometry. Named f
 
 Depending on the selection, Carbide Create affords the following Boolean operations:
 
-* Union ― the current selection (two or more objects) will be added together, creating a new object which is the outermost perimeter of the selection
-* Intersection ― only available when two objects are selected, the new object will be that area included within both objects
-* Subtraction ― the key object (indicated by a dashed highlight) will be removed from each of the other object(s) in the selection
+* **Union** ― the current selection (two or more objects) will be added together, creating a new object which is the outermost perimeter of the selection
+* **Intersection **― only available when two objects are selected, the new object will be that area included within both objects
+* **Subtraction** ― the key object (indicated by a dashed highlight) will be removed from each of the other object(s) in the selection
 
 Note that in most programs, the selection is modified, so if the original geometry will be needed after, it may be necessary that the objects be duplicated and dragged back into alignment with the originals.
 
@@ -207,7 +207,7 @@ Note that the beginning and ending nodes will be connected as directly as possib
 
 and it may be necessary to adjust the curve if the path crosses itself.
 
-As of Carbide Create build 620 there is no way to change a closed path to being an open path. A work-around for this (other than the obvious one of exporting the geometry as an SVG, editing in a in 3rd party tool to effect the change, then reimporting) is to use off-setting and Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)&#x20;
+As of Carbide Create build 621 there is no way to change a closed path to being an open path. A work-around for this (other than the obvious one of exporting the geometry as an SVG, editing in a in 3rd party tool to effect the change, then reimporting) is to use off-setting and Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)&#x20;
 
 #### Principles for Bézier Curves
 
