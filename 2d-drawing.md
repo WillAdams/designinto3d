@@ -270,13 +270,13 @@ CAD and drawing programs may have a number of other features, depending on their
 
 Carbide Create supports layers since version 521. Available under Edit | Show Layers:
 
-![](<.gitbook/assets/image (113).png>)
+![](<.gitbook/assets/image (113) (1).png>)
 
 (or using the keyboard shortcut **L**)
 
 it then affords the ability to create and name layers, as well as to color-code them:
 
-![](<.gitbook/assets/image (114).png>)
+![](<.gitbook/assets/image (114) (1).png>)
 
 and to move objects to specific layers and to hide/show, or lock/unlock layers.
 
