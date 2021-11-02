@@ -104,14 +104,25 @@ A much simpler option is to use a small endmill and to overcut the fingers with 
 
 Drawing things in profile with the V endmill makes the starting point of the joint geometry quite obvious:
 
-![](<.gitbook/assets/image (113).png>)
+![](<.gitbook/assets/image (113) (1).png>)
 
 which is easily modeled in 3D:
 
-![](<.gitbook/assets/image (114).png>)
+![](<.gitbook/assets/image (114) (1).png>)
 
-Then it is simply a matter of working up the depth which is being cut to, and drawing or modeling the fingers:
+Then it is simply a matter of working up the depth which is being cut to, and drawing or modeling the fingers --- draw in appropriate geometry to model them, and add a square in the profile drawing to show to what depth things should be cut:
 
+![](<.gitbook/assets/image (115).png>)
 
+&#x20;Then assign a pocket toolpath to that depth:
 
-&#x20;
+![](<.gitbook/assets/image (117).png>)
+
+then select the rounded rectangles for the V cut and start it at the bottom of the pocket:
+
+![](<.gitbook/assets/image (118).png>)
+
+which then previews as:
+
+![](<.gitbook/assets/image (116).png>)
+
