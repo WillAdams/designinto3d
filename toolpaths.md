@@ -69,4 +69,14 @@ If there is nested geometry, then the pocketing algorithm will alternate between
 
 ![](<.gitbook/assets/image (121).png>)
 
+![](<.gitbook/assets/image (116) (1).png>)
+
+## Drill
+
+Drill toolpaths plunge the tool at the center of the selected geometry:
+
 ![](<.gitbook/assets/image (116).png>)
+
+As noted above, square, ball-nosed, and V endmills may be used, and will be correctly previewed in how they cut:
+
+![](<.gitbook/assets/image (120).png>)
