@@ -108,7 +108,7 @@ Drawing things in profile with the V endmill makes the starting point of the joi
 
 which is easily modeled in 3D:
 
-![](<.gitbook/assets/image (114) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1).png>)
 
 Then it is simply a matter of working up the depth which is being cut to, and drawing or modeling the fingers --- draw in appropriate geometry to model them, and add a square in the profile drawing to show to what depth things should be cut:
 
@@ -124,5 +124,5 @@ then select the rounded rectangles for the V cut and start it at the bottom of t
 
 which then previews as:
 
-![](<.gitbook/assets/image (116).png>)
+![](<.gitbook/assets/image (116) (1).png>)
 

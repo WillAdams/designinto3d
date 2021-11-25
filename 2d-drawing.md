@@ -276,7 +276,7 @@ Carbide Create supports layers since version 521. Available under Edit | Show La
 
 it then affords the ability to create and name layers, as well as to color-code them:
 
-![](<.gitbook/assets/image (114) (1) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1) (1).png>)
 
 and to move objects to specific layers and to hide/show, or lock/unlock layers.
 

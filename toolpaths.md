@@ -20,7 +20,7 @@ The following toolpath types may be used with the following sorts of tools in Ca
 
 The following toolpaths are for either decorative or for Carbide Create Pro only and so will not be considered at this time:
 
-* Texture 
+* Texture&#x20;
 * Engrave (Pro only)
 * 3D Rough (Pro only)
 * 3D Finish (Pro only)
@@ -53,5 +53,20 @@ If cut with a ball-nosed endmill, a rounded groove may be achieved:
 
 ![](<.gitbook/assets/image (89).png>)
 
+## Pocket
 
+Pocket toolpaths allow cutting out the interior of geometry:
 
+![](<.gitbook/assets/image (119).png>)
+
+which will be a flat bottomed pocket with vertical walls if cut out with a square endmill.
+
+If one uses a ball-nosed endmill, the bottom will be scalloped, and there may be artifacts left behind:
+
+![](<.gitbook/assets/image (114).png>)
+
+If there is nested geometry, then the pocketing algorithm will alternate between cutting and not cutting, leaving islands:
+
+![](<.gitbook/assets/image (121).png>)
+
+![](<.gitbook/assets/image (116).png>)
