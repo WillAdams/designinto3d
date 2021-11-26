@@ -22,6 +22,17 @@ The former can become quite complex and requires over-cutting where the fingers 
 
 This is discussed at: [https://community.carbide3d.com/t/a-different-sort-of-box/36882](https://community.carbide3d.com/t/a-different-sort-of-box/36882)
 
+This allows one to cut out a box in 2, 3 or 4 operations:
+
+* bottom (cut to size)
+* top (cut to size) — possibly combined w/ the bottom
+* front/back and one or both sides (repeat once for 2 operations if need be) — this will cut the joinery blind box joints and miter as well as feature for lid, bottom, and a relief cut to ease sawing the lid off
+
+using only two tools:
+
+* a small endmill
+* a narrow V endmill
+
 Drawing things in profile with the V endmill makes the starting point of the joint geometry quite obvious:
 
 ![](<.gitbook/assets/image (113) (1) (1).png>)
@@ -30,9 +41,17 @@ which is easily modeled in 3D:
 
 ![](<.gitbook/assets/image (114) (1) (1).png>)
 
-Then it is simply a matter of working up the depth which is being cut to, and drawing or modeling the fingers --- draw in appropriate geometry to model them, and add a square in the profile drawing to show to what depth things should be cut:
+Adding an option for laying out things so as to generate a DXF results in:
 
-![](<.gitbook/assets/image (115) (1).png>)
+![](<.gitbook/assets/image (115).png>)
+
+which may be easily exported to OpenSCAD where the projection() command can be added so that it may be exported as a DXF and imported into Carbide Create:
+
+![](<.gitbook/assets/image (121).png>)
+
+Once it is imported, the elements must be dragged into alignment, then it is simply a matter of working up the depth which is being cut to, and drawing or modeling the fingers --- draw in appropriate geometry to model them, and add a square in the profile drawing to show to what depth things should be cut:
+
+![](<.gitbook/assets/image (115) (1) (1).png>)
 
 &#x20;Then assign a pocket toolpath to that depth:
 

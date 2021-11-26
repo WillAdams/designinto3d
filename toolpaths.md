@@ -67,7 +67,7 @@ If one uses a ball-nosed endmill, the edges will be rounded, the bottom will be 
 
 If there is nested geometry, then the pocketing algorithm will alternate between cutting and not cutting, leaving islands:
 
-![](<.gitbook/assets/image (121).png>)
+![](<.gitbook/assets/image (121) (1).png>)
 
 ![](<.gitbook/assets/image (116) (1) (1).png>)
 
