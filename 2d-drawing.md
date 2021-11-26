@@ -143,7 +143,7 @@ When selecting geometry in Carbide Create and selecting **Move**, the X and Y co
 
 ### Resize
 
-In addition to moving, geometry may also be altered in size. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface  ― midpoints of the selection marquee afford asymmetric scaling by dragging instead (this is a simple way to create an ellipse/oval) but it is not possible to scale asymmetrically numerically (though such drag-scaling should snap to the grid):
+In addition to moving, geometry may also be altered in size. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface ― midpoints of the selection marquee afford asymmetric scaling by dragging instead (this is a simple way to create an ellipse/oval) but it is not possible to scale asymmetrically numerically (though such drag-scaling should snap to the grid):
 
 ![](<.gitbook/assets/carbide\_create\_interface\_transform\_scale (1).png>)
 
@@ -153,7 +153,7 @@ Objects may be rotated. This is often useful for decorative designs, and may be 
 
 ### Flip
 
-Objects may be flipped (mirrored) horizontally or vertically. Useful for decorative designs, it also allows (for instance) the creation of reversed geometry for creating stamps or printing blocks or creating a mirror of a part for cutting it as an inlay.
+Objects may be flipped (mirrored) horizontally or vertically. Useful for decorative designs, it also allows (for instance) the creation of reversed geometry for creating stamps or printing blocks or branding irons or creating a mirror of a part for cutting it as an inlay.
 
 ### Align
 
@@ -207,7 +207,7 @@ Note that the beginning and ending nodes will be connected as directly as possib
 
 and it may be necessary to adjust the curve if the path crosses itself.
 
-As of Carbide Create build 621 there is no way to change a closed path to being an open path. A work-around for this (other than the obvious one of exporting the geometry as an SVG, editing in a in 3rd party tool to effect the change, then reimporting) is to use off-setting and Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)&#x20;
+As of Carbide Create build 622 there is no way to change a closed path to being an open path. A work-around for this (other than the obvious one of exporting the geometry as an SVG, editing in a in 3rd party tool to effect the change, then reimporting) is to use off-setting and Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)&#x20;
 
 #### Principles for Bézier Curves
 
@@ -227,8 +227,8 @@ As noted above, geometry is made up of lines and/or curves which are bounded by 
 When in Node Edit Mode it is possible to right-click and:
 
 * add an on-path node (by clicking on an part of the path which does not have nodes)
-* delete an on-path node (when it is selected)
-* toggle a node from smooth to sharp and vice-versa
+* delete an on-path node (when it is selected) — keyboard shortcut d
+* toggle a node from smooth to sharp and vice-versa — keyboard shortcut s
 
 Off-path nodes may be dragged to reshape paths, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
 
@@ -253,10 +253,10 @@ Select the path and go into Node Edit Mode and right-click on each node and sele
 The following additional drawing tutorials are available:
 
 * [https://community.carbide3d.com/t/lets-make-a-b-for-anyone/14223](https://community.carbide3d.com/t/lets-make-a-b-for-anyone/14223) — drawing more complex forms with the Curve tool
-* [https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022)
+* [https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022) — using rotation
 * [https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022)
 
-and if one has difficulty drawing up anything, either post on the Carbide 3D community forums: [https://community.carbide3d.com/](https://community.carbide3d.com) or e-mail in to support@carbide3d.com and we will do our best to assist.
+and if one has difficulty drawing up anything, either post on the Carbide 3D community forums: [https://community.carbide3d.com/](https://community.carbide3d.com) or e-mail in to [support@carbide3d.com](mailto:support@carbide3d.com) and we will do our best to assist.
 
 ### Quadratic B-Splines
 
