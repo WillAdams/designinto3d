@@ -104,7 +104,7 @@ A much simpler option is to use a small endmill and to overcut the fingers with 
 
 Drawing things in profile with the V endmill makes the starting point of the joint geometry quite obvious:
 
-![](<.gitbook/assets/image (113) (1).png>)
+![](<.gitbook/assets/image (113) (1) (1).png>)
 
 which is easily modeled in 3D:
 
@@ -124,5 +124,5 @@ then select the rounded rectangles for the V cut and start it at the bottom of t
 
 which then previews as:
 
-![](<.gitbook/assets/image (116) (1) (1).png>)
+![](<.gitbook/assets/image (116) (1) (1) (1).png>)
 

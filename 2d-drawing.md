@@ -270,7 +270,7 @@ CAD and drawing programs may have a number of other features, depending on their
 
 Carbide Create supports layers since version 521. Available under Edit | Show Layers:
 
-![](<.gitbook/assets/image (113) (1) (1).png>)
+![](<.gitbook/assets/image (113) (1) (1) (1).png>)
 
 (or using the keyboard shortcut **L**)
 

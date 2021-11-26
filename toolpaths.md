@@ -15,8 +15,8 @@ The following toolpath types may be used with the following sorts of tools in Ca
 * Contour --- square or ball-nosed endmills
 * Pocket --- square or ball-nosed endmills
 * Drill --- square, ball-nosed, or V-endmills
-* VCarve --- only V-endmills
-* Advanced VCarve --- V endmills must be used, but there is an option for a second tool for cutting a flat-bottomed pocket which a square endmill may be used for
+* VCarve --- only V-endmills --- cuts along the center of the geometry
+* Advanced VCarve --- V endmills must be used and will cut along the perimeter(s) of the geometry, but there is an option for a second tool for cutting a flat-bottomed pocket which a square endmill may be used for
 
 The following toolpaths are for either decorative or for Carbide Create Pro only and so will not be considered at this time:
 
@@ -25,7 +25,7 @@ The following toolpaths are for either decorative or for Carbide Create Pro only
 * 3D Rough (Pro only)
 * 3D Finish (Pro only)
 
-The most notable limitation is that V-endmills may only be used so as to get a correct 3D preview with the toolpaths which are specifically for V carving --- while they may be assigned to other toolpaths, the 3D preview will not be correct.
+The most notable limitation is that V-endmills may only be used so as to get a correct 3D preview with the toolpaths which are specifically for V carving and for Drill toolpaths --- while they may be assigned to other toolpaths, the 3D preview will not be correct in versions up to CC622.
 
 Normally square and ball-nosed endmills will have correct previews when used with various toolpaths.
 
@@ -61,7 +61,7 @@ Pocket toolpaths allow cutting out the interior of geometry:
 
 which will be a flat bottomed pocket with vertical walls if cut out with a square endmill.
 
-If one uses a ball-nosed endmill, the bottom will be scalloped, and there may be artifacts left behind:
+If one uses a ball-nosed endmill, the edges will be rounded, the bottom will be scalloped, and there may be artifacts left behind:
 
 ![](<.gitbook/assets/image (114).png>)
 
@@ -69,14 +69,26 @@ If there is nested geometry, then the pocketing algorithm will alternate between
 
 ![](<.gitbook/assets/image (121).png>)
 
-![](<.gitbook/assets/image (116) (1).png>)
+![](<.gitbook/assets/image (116) (1) (1).png>)
 
 ## Drill
 
 Drill toolpaths plunge the tool at the center of the selected geometry:
 
-![](<.gitbook/assets/image (116).png>)
+![](<.gitbook/assets/image (116) (1).png>)
 
 As noted above, square, ball-nosed, and V endmills may be used, and will be correctly previewed in how they cut:
 
 ![](<.gitbook/assets/image (120).png>)
+
+## VCarve (and Advanced VCarve)
+
+V carving toolpaths may be assigned to closed geometry, and as noted above, will cut either along the center (normal V carving), or along the perimeter (Advanced V carving), to either the depth required, or the max depth which is set.
+
+If one limits the depth on a normal V carve, one can achieve special effects such as changing a square:
+
+![](<.gitbook/assets/image (116).png>)
+
+into a diamond:
+
+![](<.gitbook/assets/image (113).png>)
