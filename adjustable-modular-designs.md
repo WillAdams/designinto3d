@@ -20,6 +20,8 @@ As the latter two links make clear, there are two possible approaches:&#x20;
 
 The former can become quite complex and requires over-cutting where the fingers and miter angle intersect which creates voids, while the latter has voids designed in.
 
+## Blind Miter Hidden Radiused Box Joints
+
 There are a couple of different features which make the joint work:
 
 * a bisecting angle where the joint will be exposed&#x20;
@@ -100,7 +102,9 @@ Verify the positioning of everything and check with the 3D preview:
 
 ![](<.gitbook/assets/image (108).png>)
 
-A much simpler option is to use a small endmill and to overcut the fingers with Tees which allows the joints to be square, which has the advantages of increasing long grain glue surface, and greatly simplifying the geometry, reducing the number of tools needed. With a rabbeted lid and bottom, it is still possible to have a fully mitered appearance, preserving the visible diagonal.
+## Blind Miter Hidden Box Joints
+
+A much simpler option is to use a small endmill and to overcut the fingers with Tees which allows the joints to be square, which has the advantages of increasing long grain glue surface, and greatly simplifying the geometry, reducing the number of tools needed. With a rabbeted lid and bottom, it is still possible to have a fully mitered appearance, preserving the visible diagonal if one simply shortens where the box joints are cut, and adds in the successive V endmill cutting necessary to cut visible miter.
 
 Drawing things in profile with the V endmill makes the starting point of the joint geometry quite obvious:
 
