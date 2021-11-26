@@ -20,7 +20,7 @@ The following toolpath types may be used with the following sorts of tools in Ca
 
 The following toolpaths are for either decorative or for Carbide Create Pro only and so will not be considered at this time:
 
-* Texture&#x20;
+* Texture (decorative)
 * Engrave (Pro only)
 * 3D Rough (Pro only)
 * 3D Finish (Pro only)
