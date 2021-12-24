@@ -12,13 +12,13 @@ As with most drawing tools, there are menus for commands or different program fu
 
 ## Points
 
-The most basic geometric construct as noted by Euclid in [_Elements_](https://mathcs.clarku.edu/\~djoyce/java/elements/elements.html)_: _[_Book I_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/bookI.html)_: _[_Definition 1_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI1.html) is a point in coordinate space (most CAD tools and vector drawing applications use Cartesian coordinates) ― some CAM tools allow one to assign a drilling operation at a point, but many vector editors disallow a point as an individual stand-alone entity, instead, they are used as a building block for everything else. Carbide Create does not allow the creation of single points, so one would create a circle to define the perimeter of a hole which one wished to machine, or the center of which would define the point at which one wished to drill (see below).
+The most basic geometric construct as noted by Euclid in [_Elements_](https://mathcs.clarku.edu/\~djoyce/java/elements/elements.html)_:_ [_Book I_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/bookI.html)_:_ [_Definition 1_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI1.html) is a point in coordinate space (most CAD tools and vector drawing applications use Cartesian coordinates) ― some CAM tools allow one to assign a drilling operation at a point, but many vector editors disallow a point as an individual stand-alone entity, instead, they are used as a building block for everything else. Carbide Create does not allow the creation of single points, so one would create a circle to define the perimeter of a hole which one wished to machine, or the center of which would define the point at which one wished to drill (see below).
 
 Points of course will be used to define the Cartesian X, Y coordinates of all geometry in the design. Toolpaths will then allow specifying Z, extending this into the 3rd dimension. Note that in some circumstances the term “Node” will be used for a point.
 
 ## Lines
 
-Straight lines are a fundamental building block of vector drawing and are of course defined as the shortest distance between two points (Euclid’s _Elements: Book I: _[_Definitions 2–5_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/bookI.html#defs)). Some CAM tools (including Carbide Create) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point (which is to say, the path direction). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline (or Curve) tool:
+Straight lines are a fundamental building block of vector drawing and are of course defined as the shortest distance between two points (Euclid’s _Elements: Book I:_ [_Definitions 2–5_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/bookI.html#defs)). Some CAM tools (including Carbide Create) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point (which is to say, the path direction). Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline (or Curve) tool:
 
 ![Carbide Create Polyline Tool.](<.gitbook/assets/carbide\_create\_screengrab\_polyline\_hl (4).png>)
 
@@ -28,7 +28,7 @@ clicking at the beginning (as well as if desired intermediary points) and end po
 
 and then clicking on **Done**. Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange (for objects on the current layer).
 
-Open polylines (or curves, see below) are not typically used in Carbide Create, instead one will usually re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve **tool section below.
+Open polylines (or curves, see below) are not typically used in Carbide Create, instead one will usually re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve** tool section below.
 
 Lines will be used to define Rectangles (which may be squares) and regular Polygons as described below.
 
@@ -38,7 +38,7 @@ Many CAD programs will allow the definition of arcs which are easily drawn and m
 
 ## Polylines
 
-Polylines are made up of multiple points describing lines and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created, and if it has been edited. For example, a square may have corner options if drawn using the **Rectangle **tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular **Polygon **tool, may be changed into another polygon or resized proportionally, and if drawn using the **Polyline **or **Curve **tool may only be resized proportionally or node-edited (which to a degree are possible with the other creation options).
+Polylines are made up of multiple points describing lines and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created, and if it has been edited. For example, a square may have corner options if drawn using the **Rectangle** tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular **Polygon** tool, may be changed into another polygon or resized proportionally, and if drawn using the **Polyline** or **Curve** tool may only be resized proportionally or node-edited (which to a degree are possible with the other creation options).
 
 ### Open Paths
 
@@ -50,11 +50,11 @@ Edit | Select... | Select Open Vectors
 
 ### Closed Paths&#x20;
 
-Closed paths meet back at the point of origin and open up additional operations in CAM tools. In Euclid’s _Elements: Book I: _[_Definition 13–14_ ](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for **Circles**, **Rectangles **(which may be squares), and Regular **Polygons**.
+Closed paths meet back at the point of origin and open up additional operations in CAM tools. In Euclid’s _Elements: Book I:_ [_Definition 13–14_ ](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for **Circles**, **Rectangles** (which may be squares), and Regular **Polygons**.
 
 #### Circles
 
-Circles are defined in Euclid’s _Elements: Book I: _[_Definition 15–17_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI15.html)_ _as a plane figure with one line equidistant from a point, _c.f._, [_Book III_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookIII/bookIII.html). In Carbide Create one draws circles from the inside out, clicking first at the center point, then on a point at the perimeter to define the radius (and diameter):
+Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI15.html) __ as a plane figure with one line equidistant from a point, _c.f._, [_Book III_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookIII/bookIII.html). In Carbide Create one draws circles from the inside out, clicking first at the center point, then on a point at the perimeter to define the radius (and diameter):
 
 ![Carbide Create drawing a circle.](<.gitbook/assets/carbide\_create\_interface\_create\_circle (2).png>)
 
@@ -72,7 +72,7 @@ One may select the minimum and maximum diameter for adding circles to the curren
 
 #### Rectangles and Squares
 
-Named as quadrilaterals in Euclid’s _Elements: Book I: _[_Definition 19_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI19.html), rectangles have a specific tool for their creation; squares may be defined by making height and width equal, and in Carbide Create they have a corner feature which other shapes do not. As circles are, they are drawn from the inside out in Carbide Create:
+Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI19.html), rectangles have a specific tool for their creation; squares may be defined by making height and width equal, and in Carbide Create they have a corner feature which other shapes do not. As circles are, they are drawn from the inside out in Carbide Create:
 
 ![Carbide Create drawing a rectangle.](<.gitbook/assets/carbide\_create\_interface\_create\_rectangle (1).png>)
 
@@ -92,7 +92,7 @@ Once shapes have been drawn, they may be selected and changed or modified. The m
 
 #### Circle Parameters
 
-For a circle, the size parameter adjustment may be done in terms of its overall size using the **Resize **tool (either **Width **or **Height**, only one may be adjusted, the other will be forced to match), or **Radius**:
+For a circle, the size parameter adjustment may be done in terms of its overall size using the **Resize** tool (either **Width** or **Height**, only one may be adjusted, the other will be forced to match), or **Radius**:
 
 ![Carbide Create modifying circle parameters.](<.gitbook/assets/carbide\_create\_screengrab\_circle\_parameters (1).png>)
 
@@ -106,12 +106,12 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 
 ![Carbide Create corner treatments.](.gitbook/assets/carbidecreate\_corner\_treatments.png)
 
-* _Square _(the default shown above)
+* _Square_ (the default shown above)
 * _Fillet_ (rounded corners which allow applying an arc to a given corner)
-* _Chamfer _(45 degree angles)
+* _Chamfer_ (45 degree angles)
 * _Flipped fillet_ (quarter circles removed from corners)
-* _Dogbone _(placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit)
-* _Tee _(placing a semicircle at a corner to ensure that a part with right angle corners will still fit ― note that orientation may not be specified, but by adding the feature, then rotating the part, this may be controlled)
+* _Dogbone_ (placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit)
+* _Tee_ (placing a semicircle at a corner to ensure that a part with right angle corners will still fit ― note that orientation may not be specified, but by adding the feature, then rotating the part, this may be controlled)
 
 Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter/distance from the corner:
 
@@ -176,7 +176,7 @@ Booleans allow for the modification of geometry using existing geometry. Named f
 Depending on the selection, Carbide Create affords the following Boolean operations:
 
 * **Union** ― the current selection (two or more objects) will be added together, creating a new object which is the outermost perimeter of the selection
-* **Intersection **― only available when two objects are selected, the new object will be that area included within both objects
+* **Intersection** ― only available when two objects are selected, the new object will be that area included within both objects
 * **Subtraction** ― the key object (indicated by a dashed highlight) will be removed from each of the other object(s) in the selection
 
 Note that in most programs, the selection is modified, so if the original geometry will be needed after, it may be necessary that the objects be duplicated and dragged back into alignment with the originals.
