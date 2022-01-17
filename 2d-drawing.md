@@ -207,7 +207,7 @@ Note that the beginning and ending nodes will be connected as directly as possib
 
 and it may be necessary to adjust the curve if the path crosses itself.
 
-As of Carbide Create build 627 it is possible to change a closed path to an open path by right-clicking and using the Cut Vector command while in Node Edit mode. Note that often, rather than an open path, one wants a closed path which describes the region which would cut with an open path --- it is possible to use Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)&#x20;
+As of Carbide Create build 627 it is possible to change a closed path to an open path by right-clicking and using the Cut Vector command while in Node Edit mode (see below). Note that often, rather than an open path, one wants a closed path which describes the region which would cut with an open path --- it is possible to use Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)&#x20;
 
 #### Principles for Bézier Curves
 
@@ -224,11 +224,12 @@ The underlying points of geometry may be modified by selecting it and choosing N
 
 As noted above, geometry is made up of lines and/or curves which are bounded by on-path nodes, and for curves, have a pair of off-path nodes which determine how the curve is drawn.
 
-When in Node Edit Mode it is possible to right-click and:
+When in Node Edit Mode it is possible to:
 
-* add an on-path node (by clicking on an part of the path which does not have nodes)
-* delete an on-path node (when it is selected) — keyboard shortcut d
-* toggle a node from smooth to sharp and vice-versa — keyboard shortcut s
+* add an on-path node by right-clicking on a part of the path which does not have nodes and choosing Insert Node
+* delete an on-path node (when it is selected) by right-clicking and choosing Delete Node — keyboard shortcut d
+* toggle a node from smooth to sharp and vice-versa by right-clicking and choosing Toggle Smooth — keyboard shortcut s
+* convert a closed path to an open one by right-clicking and choosing Cut Vector
 
 Off-path nodes may be dragged to reshape paths, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
 
