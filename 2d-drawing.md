@@ -207,7 +207,7 @@ Note that the beginning and ending nodes will be connected as directly as possib
 
 and it may be necessary to adjust the curve if the path crosses itself.
 
-As of Carbide Create build 622 there is no way to change a closed path to being an open path. A work-around for this (other than the obvious one of exporting the geometry as an SVG, editing in a in 3rd party tool to effect the change, then reimporting) is to use off-setting and Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)&#x20;
+As of Carbide Create build 627 it is possible to change a closed path to an open path by right-clicking and using the Cut Vector command while in Node Edit mode. Note that often, rather than an open path, one wants a closed path which describes the region which would cut out an open path --- it is possible to use Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)&#x20;
 
 #### Principles for Bézier Curves
 
