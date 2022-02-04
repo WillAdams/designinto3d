@@ -4,7 +4,7 @@ description: Toolpath options in Carbide Create
 
 # Toolpaths
 
-Carbide Create affords a number of different toolpath options which provide for a wide variety of geometries which may be cut away from material depending on the endmill used. The first consideration is which sort of tool may be used with a given sort of toolpath. Carbide Create supports for the following endmill types:
+Carbide Create affords a number of different toolpath options which provide for a wide variety of geometries which may be cut away from material depending on the endmill used. Carbide Create includes support for the following endmill types:
 
 * square
 * ball-nosed
@@ -19,9 +19,7 @@ The following toolpaths are for either decorative or for Carbide Create Pro only
 * 3D Rough (Pro only)
 * 3D Finish (Pro only)
 
-The most notable limitation is that V-endmills may only be used so as to get a correct 3D preview with the toolpaths which are specifically for V carving and for Drill toolpaths --- while they may be assigned to other toolpaths, the 3D preview will not be correct in versions up to CC622.
-
-Normally square and ball-nosed endmills will have correct previews when used with various toolpaths.
+Normally square endmills will be used for removing material and creating flat-bottomed pockets, ball-nosed endmills will be used to create rounded forms (including 3D), and V endmills wil be used for V carving or chamfering.
 
 ## Contour
 
@@ -74,6 +72,8 @@ Drill toolpaths plunge the tool at the center of the selected geometry:
 As noted above, square, ball-nosed, and V endmills may be used, and will be correctly previewed in how they cut:
 
 ![](<.gitbook/assets/image (120).png>)
+
+A notable use for a V endmill when drilling is to chamfer a small hole.
 
 ## VCarve (and Advanced VCarve)
 
