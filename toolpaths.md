@@ -10,13 +10,7 @@ Carbide Create affords a number of different toolpath options which provide for 
 * ball-nosed
 * V-endmill
 
-The following toolpath types may be used with the following sorts of tools in Carbide Create:
-
-* Contour --- square or ball-nosed endmills
-* Pocket --- square or ball-nosed endmills
-* Drill --- square, ball-nosed, or V-endmills
-* VCarve --- only V-endmills --- cuts along the center of the geometry
-* Advanced VCarve --- V endmills must be used and will cut along the perimeter(s) of the geometry, but there is an option for a second tool for cutting a flat-bottomed pocket which a square endmill may be used for
+Early versions of Carbide Create had limitations in terms of which endmill type could be assigned to which toolpath, but 629 added support for using V endmills with non-V-carving-specfiic toolpaths.
 
 The following toolpaths are for either decorative or for Carbide Create Pro only and so will not be considered at this time:
 
