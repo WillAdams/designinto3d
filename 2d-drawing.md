@@ -139,19 +139,21 @@ Another option which drawing programs may afford is offsetting ― this is espec
 
 ### Move
 
-When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy point (indicated by the highlighted/selected circle), and will move the object so the referred corner is at that point when the Apply button is pressed:
+When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy point (indicated by the highlighted/selected circle), and will move the object so the referred corner is at that point when the Apply button is pressed (the dialog may be cancelled by selecting Done):
 
-![Carbide Create Move transform.](<.gitbook/assets/Carbide\_Create\_interface\_transform\_move (1).png>)
+![Carbide Create Move transform.](<.gitbook/assets/Carbide Create Move transform.png>)
 
 ### Resize
 
 In addition to moving, geometry may also be altered in size. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface ― midpoints of the selection marquee afford asymmetric scaling by dragging instead (this is a simple way to create an ellipse/oval) but it is not possible to scale asymmetrically numerically (though such drag-scaling should snap to the grid):
 
-![Carbide Create Move transform](<.gitbook/assets/Carbide Create Move transform.png>)
+![Carbide Create Resize transform](<.gitbook/assets/Carbide\_Create\_interface\_transform\_scale (1).png>)
 
 ### Rotate
 
 Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design, or to adjust for orientation of T-bones. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in Carbide Create since in current versions the rotation operation will change the objects into Curve objects, removing the ability to interact with their formal parameters.
+
+At this time, Circle objects will not alter their orientation when rotated, only positioning. If using the nodes for positional information is required, it will be necessary to convert them to Curve objects.
 
 ### Flip
 
@@ -191,7 +193,7 @@ Curves are available in most vector drawing programs, and when present may be de
 
 ### Bézier Curves&#x20;
 
-The most common is Bézier curves which are defined by an on-curve point (the origin), a matching off-curve point, and an additional off-curve point paired with the ultimate (ending) on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options.
+The most common is Bézier curves ([https://en.wikipedia.org/wiki/B%C3%A9zier\_curve](https://en.wikipedia.org/wiki/B%C3%A9zier\_curve)), named for the automotive designer Pierre Bézier, which are defined by an on-curve point (the origin), a matching off-curve point, and an additional off-curve point paired with the ultimate (ending) on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options.
 
 To create a curve, select that tool, then click or click-drag where one wants on-curve points (clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve node ― either smooth or sharp nodes may be changed to the other, see below):
 
@@ -199,7 +201,7 @@ To create a curve, select that tool, then click or click-drag where one wants on
 
 #### Open or Closed Paths
 
-Once a Curve (or Polyline) is created it may be either open (indicated by being magenta when not selected), or closed (black). Open paths may be closed using the Join command:
+Once a Curve (or Polyline) is created it may be either open (indicated by being magenta when not selected), or closed (black). Open paths may be closed using the **Join Vectors** command:
 
 ![Carbide Create closing curve using Join command. ](<.gitbook/assets/carbide\_create\_interface\_join\_curve (2).png>)
 
@@ -220,7 +222,7 @@ Bézier Curves should be drawn following some basic principles unless a design d
 
 #### Node Edit Mode
 
-The underlying points of geometry may be modified by selecting it and choosing Node Edit Mode:
+The underlying points of geometry may be modified by selecting it and choosing **Node Edit** Mode:
 
 ![Carbide Create Node Edit Mode.](<.gitbook/assets/carbide\_create\_interface\_node\_edit\_mode (1).png>)
 
@@ -229,11 +231,11 @@ As noted above, geometry is made up of lines and/or curves which are bounded by 
 When in Node Edit Mode it is possible to:
 
 * add an on-path node by right-clicking on a part of the path which does not have nodes and choosing Insert Node
-* delete an on-path node (when it is selected) by right-clicking and choosing Delete Node — keyboard shortcut d
-* toggle a node from smooth to sharp and vice-versa by right-clicking and choosing Toggle Smooth — keyboard shortcut s
+* delete an on-path node (when it is selected) by right-clicking and choosing Delete Node — keyboard shortcut d for the currently selected node(s)
+* toggle a node from smooth to sharp and vice-versa by right-clicking and choosing Toggle Smooth — keyboard shortcut s for the currently selected node(s)
 * convert a closed path to an open one by right-clicking and choosing Cut Vector
 
-Off-path nodes may be dragged to reshape paths, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
+Off-path nodes may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
 
 #### Drawing Tutorials
 
@@ -245,13 +247,13 @@ Start by launching Carbide Create — in Job Setup (gear icon) set the width of 
 
 Placing it on the background layer scaled so that it fills the entire drawing area (scaling to 0.557 should work) and lines up with the grid. Ensure that Snap to Grid is enabled.
 
-Select the Curve tool and click on each of the four points of the placed image, clicking again on the first to close the path.
+Select the **Curve** tool and click on each of the four points of the placed image, clicking again on the first to close the path.
 
 Download and place the image below on the background scaled as before:
 
 ![](.gitbook/assets/cc\_ellipse.png)
 
-Select the path and go into Node Edit Mode and right-click on each node and select "Toggle Smooth" (or press the "s" key) and drag the off-curve nodes to match the positioning of the background image.
+Select the path and go into **Node Edit** Mode and right-click on each node and select "Toggle Smooth" (or press the "s" key) and drag the off-curve nodes to match the positioning of the background image.
 
 The following additional drawing tutorials are available:
 
