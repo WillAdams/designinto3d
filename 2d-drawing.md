@@ -348,7 +348,7 @@ For further information on Carbide Create please see:
 
 ![](.gitbook/assets/carbide3d\_create\_motion\_keyboard\_shortcuts.png)
 
-* [Carbide3D\_create\_motion\_keyboard\_shortcuts.pdf](https://community.carbide3d.com/uploads/default/original/3X/1/1/11767141a1e1d62246952219ec915572aae4c699.pdf) (available at: [https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839))
+* [https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839))
 
 ## Third Dimensional Shapes
 
