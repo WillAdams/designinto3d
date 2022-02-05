@@ -28,7 +28,7 @@ Import them into Carbide Create and arrange for cutting:
 
 ![Carbide Create: 3" x 3" x 3" Open Box: SVG Plans: Imported and arranged](.gitbook/assets/cc\_makercase\_3x3x3\_import.png)
 
-_If _the MakerCase tool allowed one to set the stock thickness (0.25") which will be used.&#x20;
+_If_ the MakerCase tool allowed one to set the stock thickness (0.25") which will be used.&#x20;
 
 ### Making the Bottom
 

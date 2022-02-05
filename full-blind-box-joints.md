@@ -57,7 +57,7 @@ Once it is imported, the elements must be dragged into alignment, then it is sim
 
 &#x20;Then assign a pocket toolpath to that depth:
 
-![](<.gitbook/assets/image (117).png>)
+![](<.gitbook/assets/image (117) (1).png>)
 
 then select the rounded rectangles for the V cut and start it at the bottom of the pocket:
 

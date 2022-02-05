@@ -6,9 +6,9 @@ description: Drawing in 2 dimensions to make 3 dimensional parts
 
 As noted previously, before one can make a part, one must define the geometry of the design. This is done using classic geometric constructs, and possibly curves defined mathematically (but usually drawn up in a CAD or Bézier curve drawing program). We will use Carbide Create as a specific example (freely available from: [https://carbide3d.com/carbidecreate/](https://carbide3d.com/carbidecreate/)), but the concepts would apply to any CAD or vector drawing program and will be explored first.
 
-![Carbide Create interface.](<.gitbook/assets/carbide\_create\_interface (2).png>)
+![Carbide Create interface.](<.gitbook/assets/Carbide\_Create\_interface (1).png>)
 
-As with most drawing tools, there are menus for commands or different program functions/states, a palette of tools, and a work area.&#x20;
+As with most drawing tools, there are menus for commands or different program functions/states, a palette of tools, and a work area. Later versions add a pair of rulers around the drawing area and a status bar, (not depicted above).
 
 ## Points
 
@@ -22,11 +22,11 @@ Straight lines are a fundamental building block of vector drawing and are of cou
 
 ![Carbide Create Polyline Tool.](<.gitbook/assets/carbide\_create\_screengrab\_polyline\_hl (4).png>)
 
-clicking at the beginning (as well as if desired intermediary points) and end points:
+clicking at the beginning (as well as if desired intermediary) and end points:
 
 ![Carbide Create drawing line with Polyline tool.](<.gitbook/assets/carbide\_create\_interface\_create\_polyline (1).png>)
 
-and then clicking on **Done**. Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange (for objects on the current layer).
+and then clicking on **Done**. Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange (for objects on the current layer), and if there are more than one element/group selected, the most recently added will be considered the Key Object which will be indicated by being drawn with a dashed highlight.
 
 Open polylines (or curves, see below) are not typically used in Carbide Create, instead one will usually re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve** tool section below.
 
@@ -34,7 +34,7 @@ Lines will be used to define Rectangles (which may be squares) and regular Polyg
 
 ## Arcs
 
-Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles and geometry based on circles (segments and so forth), as fillets when rounding the corners of a rectangle (see below), or drawn using the Curve tool (see below), though since they are represented as either curves or polylines will necessarily be approximations of an actual arc.
+Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles and geometry based on circles (segments and so forth), as fillets when rounding the corners of a rectangle (see below), or drawn using the **Curve** tool (see below), though since they are represented as either curves or polylines will necessarily be approximations of an actual arc.
 
 ## Polylines
 
@@ -48,13 +48,15 @@ Note that in build 527 Carbide Create gained a feature for adding all open paths
 
 Edit | Select... | Select Open Vectors
 
+![](<.gitbook/assets/image (117).png>)
+
 ### Closed Paths&#x20;
 
 Closed paths meet back at the point of origin and open up additional operations in CAM tools. In Euclid’s _Elements: Book I:_ [_Definition 13–14_ ](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for **Circles**, **Rectangles** (which may be squares), and Regular **Polygons**.
 
 #### Circles
 
-Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI15.html) __ as a plane figure with one line equidistant from a point, _c.f._, [_Book III_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookIII/bookIII.html). In Carbide Create one draws circles from the inside out, clicking first at the center point, then on a point at the perimeter to define the radius (and diameter):
+Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI15.html) __ as a plane figure with one line equidistant from a point, _c.f._, [_Book III_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookIII/bookIII.html). In Carbide Create one draws circles from the inside out, clicking first at the center point, then on a point at the perimeter to define the radius (and by extension, diameter):
 
 ![Carbide Create drawing a circle.](<.gitbook/assets/carbide\_create\_interface\_create\_circle (2).png>)
 
@@ -98,7 +100,7 @@ For a circle, the size parameter adjustment may be done in terms of its overall 
 
 #### Rectangle Parameters
 
-Rectangles may also be modified in their dimensions, but one is not limited to a regular square, Width and/or Height may be specified separately:
+Rectangles may also be modified in their dimensions, but one is not limited to a regular square, **Width** and/or **Height** may be specified separately:
 
 ![Carbide Create modifying rectangle parameters.](<.gitbook/assets/carbide\_create\_interface\_parameters\_rectangle (3).png>)
 
