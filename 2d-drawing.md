@@ -141,13 +141,13 @@ Another option which drawing programs may afford is offsetting ― this is espec
 
 When selecting geometry in Carbide Create and selecting **Move**, the X and Y coordinates may be entered, and the reference point selected from the proxy point (indicated by the highlighted/selected circle), and will move the object so the referred corner is at that point when the Apply button is pressed:
 
-![Carbide Create Move transform.](<.gitbook/assets/carbide\_create\_interface\_transform\_move (1).png>)
+![Carbide Create Move transform.](<.gitbook/assets/Carbide\_Create\_interface\_transform\_move (1).png>)
 
 ### Resize
 
 In addition to moving, geometry may also be altered in size. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface ― midpoints of the selection marquee afford asymmetric scaling by dragging instead (this is a simple way to create an ellipse/oval) but it is not possible to scale asymmetrically numerically (though such drag-scaling should snap to the grid):
 
-![](<.gitbook/assets/carbide\_create\_interface\_transform\_scale (1).png>)
+![Carbide Create Move transform](<.gitbook/assets/Carbide Create Move transform.png>)
 
 ### Rotate
 
