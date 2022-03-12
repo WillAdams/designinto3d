@@ -33,7 +33,7 @@ This allows one to cut out a box in as few operations as stock size and working 
 using only two, or possibly three tools:
 
 * a square endmill
-* a narrow V endmill
+* a narrow V endmill (must be narrower in diameter than half the stock thickness)
 * (optional) a smaller endmill which allows cutting dogbones for the box joints which are so small as to hopefully escape notice
 
 Drawing things in profile with the V endmill makes the starting point of the joint geometry quite obvious:
