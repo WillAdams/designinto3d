@@ -4,7 +4,7 @@ description: Miter joints with hidden joinery cut flat on the machine
 
 # Full Blind Box Joints
 
-The ideal joint would be void free and not show any endgrain, while being self-aligning and offering sufficient long-grain glue surface for strength --- the classic example of this is the blind miter dovetail which is pretty much the exclusive domain of hand tool woodworking.
+The ideal joint would be void free and not show any endgrain, while being self-aligning and offering sufficient long-grain glue surface for strength — the classic example of this is the blind miter dovetail which is pretty much the exclusive domain of hand tool woodworking.
 
 A similar design would be the blind miter box (or finger) joint which has seen a number of implementations:
 
@@ -15,25 +15,26 @@ A similar design would be the blind miter box (or finger) joint which has seen a
 
 As the latter two links make clear, there are two possible approaches:&#x20;
 
-* Use the radius of the endmill to define the fingers so as to minimize voids, and end-grain--end-grain connections
+* Use the radius of the endmill to define the fingers so as to minimize voids, and end-grain–end-grain connections
 * Overcut with dogbones which makes the layout simpler, and has the benefit of increasing long-grain--long-grain glue surface
 
-The former can become quite complex and requires over-cutting where the fingers and miter angle intersect which creates voids, while the latter has voids designed in, but which has the noted advantages of increasing long-grain glue surface, and greatly simplifying the geometry, reducing the number of tools needed. With a rabbeted lid and bottom, it is still possible to have a fully mitered appearance, preserving the visible diagonal if one simply shortens where the box joints are cut, and adds in the successive V endmill cutting necessary to cut visible miter.
+The former can become quite complex and requires over-cutting where the fingers and miter angle intersect which creates voids, while the latter has voids designed in, but which has the noted advantages of increasing long-grain glue surface, and greatly simplifying the geometry, reducing the number of tools needed. With a rabbeted lid and bottom, it is still possible to have a fully mitered appearance, preserving the visible diagonal if one simply shortens where the box joints are cut, and adds in the successive V endmill cutting necessary to cut visible miter. Note that this may create a fragile cross-grain element which will require care in cutting, and post-processing.
 
 The joint in question is simple enough that it raises the idea: Why not keep track of the iterations of tools and depth of cuts and pass those into the tool files so as to allow automation of making multiple layouts in a DXF or SVG, each of which is for a different tool/depth combination.
 
 This is discussed at: [https://community.carbide3d.com/t/a-different-sort-of-box/36882](https://community.carbide3d.com/t/a-different-sort-of-box/36882)
 
-This allows one to cut out a box in 2, 3 or 4 operations:
+This allows one to cut out a box in as few operations as stock size and working area permit.
 
-* bottom (cut to size)
-* top (cut to size) — possibly combined w/ the bottom
-* front/back and one or both sides (repeat once for 2 operations if need be) — this will cut the joinery blind box joints and miter as well as feature for lid, bottom, and a relief cut to ease sawing the lid off
+* bottom (cut to size, possibly rabbet)
+* top (cut to size, possibly rabbet, possibly add features)
+* front and/or back and one or both sides (repeat once for 2 operations if need be) — this will cut the joinery blind box joints and miter as well as rabbets for lid, bottom, and if applicable, a relief cut to ease sawing the lid off, or a cut out of the front to allow for a sliding lid
 
-using only two tools:
+using only two, or possibly three tools:
 
-* a small endmill
+* a square endmill
 * a narrow V endmill
+* (optional) a smaller endmill which allows cutting dogbones for the box joints which are so small as to hopefully escape notice
 
 Drawing things in profile with the V endmill makes the starting point of the joint geometry quite obvious:
 
