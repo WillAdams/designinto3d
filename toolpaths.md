@@ -49,7 +49,7 @@ If cut with a ball-nosed endmill, a rounded groove may be achieved:
 
 Pocket toolpaths allow cutting out the interior of geometry:
 
-![](<.gitbook/assets/image (119) (1).png>)
+![](<.gitbook/assets/image (119) (1) (1).png>)
 
 which will be a flat bottomed pocket with vertical walls if cut out with a square endmill.
 

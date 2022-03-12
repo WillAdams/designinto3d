@@ -2,7 +2,7 @@
 description: Miter joints with hidden joinery cut flat on the machine
 ---
 
-# Full Blind Box Joints
+# Blind Miter Box Joints
 
 The ideal joint would be void free and not show any endgrain, while being self-aligning and offering sufficient long-grain glue surface for strength — the classic example of this is the blind miter dovetail which is pretty much the exclusive domain of hand tool woodworking.
 
@@ -27,7 +27,7 @@ This is discussed at: [https://community.carbide3d.com/t/a-different-sort-of-box
 This allows one to cut out a box in as few operations as stock size and working area permit.
 
 * bottom (cut to size, possibly rabbet)
-* top (cut to size, possibly rabbet, possibly add features)
+* top (cut to size, possibly rabbet, possibly add features, e.g., a thumb indent for a sliding lid)
 * front and/or back and one or both sides (repeat once for 2 operations if need be) — this will cut the joinery blind box joints and miter as well as rabbets for lid, bottom, and if applicable, a relief cut to ease sawing the lid off, or a cut out of the front to allow for a sliding lid
 
 using only two, or possibly three tools:
@@ -40,9 +40,13 @@ Drawing things in profile with the V endmill makes the starting point of the joi
 
 ![](<.gitbook/assets/image (113) (1) (1).png>)
 
+![](<.gitbook/assets/image (123).png>)
+
 which is easily modeled in 3D:
 
 ![](<.gitbook/assets/image (114) (1) (1) (1).png>)
+
+![](<.gitbook/assets/image (119).png>)
 
 Adding an option for laying out things so as to generate a DXF results in:
 
@@ -64,7 +68,9 @@ then select the rounded rectangles for the V cut and start it at the bottom of t
 
 ![](<.gitbook/assets/image (118) (1).png>)
 
-which then previews as:
+and assign a V carving toolpath --- alternately, it is possible to instead create a line which describes the desired V cut and assign a no-offset Contour Toolpath which has the advantage of not having any extraneous plunging at the ends.
+
+Once toolpaths are assigned, the design may be previewed:
 
 ![](<.gitbook/assets/image (116) (1) (1) (1) (1).png>)
 

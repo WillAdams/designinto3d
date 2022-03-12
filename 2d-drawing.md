@@ -241,7 +241,7 @@ Off-path nodes may be dragged to reshape the sections of curves associated with 
 
 Version 633 of Carbide Create adds a Corner Tool:
 
-![](<.gitbook/assets/image (119).png>)
+![](<.gitbook/assets/image (119) (1).png>)
 
 which allows one to modify corners to have a specified radius:
 
