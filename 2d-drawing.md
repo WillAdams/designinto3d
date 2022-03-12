@@ -305,7 +305,7 @@ CAD and drawing programs may have a number of other features, depending on their
 
 Carbide Create supports layers since version 521. Available under Edit | Show Layers:
 
-![](<.gitbook/assets/image (113) (1) (1) (1).png>)
+![](<.gitbook/assets/image (113) (1) (1) (1) (1).png>)
 
 (or using the keyboard shortcut **L**)
 
@@ -328,13 +328,13 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 ![](<.gitbook/assets/image (122) (1).png>)
 
-![](<.gitbook/assets/image (118) (1).png>)
+![](<.gitbook/assets/image (118) (1) (1).png>)
 
 Circular Arrays
 
 ![](<.gitbook/assets/image (125) (1).png>)
 
-![](<.gitbook/assets/image (121) (1).png>)
+![](<.gitbook/assets/image (121) (1) (1).png>)
 
 Circular Arrays afford a number of options, and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 copies:
 
@@ -342,11 +342,11 @@ Circular Arrays afford a number of options, and are well-suited to creating geom
 
 and then drawing multiple overlapping polylines using the tips of the rotated triangles which defines the star shape:
 
-![](<.gitbook/assets/image (120) (1).png>)
+![](<.gitbook/assets/image (120) (1) (1).png>)
 
 and Boolean unioning them:
 
-![](<.gitbook/assets/image (127) (1).png>)
+![](<.gitbook/assets/image (127) (1) (1).png>)
 
 ## Geometry
 

@@ -59,7 +59,7 @@ If one uses a ball-nosed endmill, the edges will be rounded, the bottom will be 
 
 If there is nested geometry, then the pocketing algorithm will alternate between cutting and not cutting, leaving islands:
 
-![](<.gitbook/assets/image (121) (1) (1) (1).png>)
+![](<.gitbook/assets/image (121) (1) (1) (1) (1).png>)
 
 ![](<.gitbook/assets/image (116) (1) (1) (1) (1).png>)
 
@@ -71,7 +71,7 @@ Drill toolpaths plunge the tool at the center of the selected geometry:
 
 As noted above, square, ball-nosed, and V endmills may be used, and will be correctly previewed in how they cut:
 
-![](<.gitbook/assets/image (120) (1) (1).png>)
+![](<.gitbook/assets/image (120) (1) (1) (1).png>)
 
 A notable use for a V endmill when drilling is to chamfer a small hole.
 
@@ -85,4 +85,4 @@ If one limits the depth on a normal V carve, one can achieve special effects suc
 
 into a diamond:
 
-![](<.gitbook/assets/image (113).png>)
+![](<.gitbook/assets/image (113) (1).png>)
