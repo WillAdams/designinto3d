@@ -47,37 +47,103 @@ Drawing things in profile with the V endmill makes the starting point of the joi
 
 and adding squares to stand in for the pockets and islands which make up the joints affords the balance of the joint:
 
+![](<.gitbook/assets/image (115).png>)
+
+Given the side profile of the joint, it is simple to then draw the geometry for the joint as it will be seen from overhead as it will be cut.&#x20;
+
+Draw in lines which will define where the V tooling will cut the miter:
+
 ![](<.gitbook/assets/image (123).png>)
 
-which is easily modeled in 3D:
+A no-offset Contour toolpath may then be assigned:
 
-![](<.gitbook/assets/image (114) (1) (1) (1).png>)
+![](<.gitbook/assets/image (132).png>)
 
-![](<.gitbook/assets/image (119).png>)
+This may then be verified by checking the 3D preview:
+
+![](<.gitbook/assets/image (120).png>)
+
+The joinery must be positioned relative to the bottom and/or lid which will require rabbets. Draw these in and then measure the remaining space:
+
+![](<.gitbook/assets/image (128).png>)
+
+Determine how many joint positions there will be and then do the math to determine how tall each pocket or island will be and draw one in. For most efficient cutting the height should be a bit less than twice the height of the endmill which will be used.
+
+![](<.gitbook/assets/image (124).png>)
+
+add dogbones which are as small as is possible --- if necessary, use a second endmill to cut the dogbones:
+
+![](<.gitbook/assets/image (135).png>)
+
+Then use the Linear Array tool to duplicate as necessary:
+
+![](<.gitbook/assets/image (114).png>)
+
+Select every other rectangle:&#x20;
+
+![](<.gitbook/assets/image (126).png>)
+
+Drag them out to where they can be worked with:
+
+![](<.gitbook/assets/image (130).png>)
+
+Duplicate one, drag it into alignment at the top and disable the dogbones and then drag into position:
+
+![](<.gitbook/assets/image (133).png>)
+
+Repeat for the others:
+
+![](<.gitbook/assets/image (125).png>)
+
+Extend the geometry which is at the top:
+
+![](<.gitbook/assets/image (134).png>)
+
+Then draw in geometry which represents where the V endmills will be cut and duplicate the rabbet(s):
+
+![](<.gitbook/assets/image (121).png>)
+
+And union things&#x20;
+
+![](<.gitbook/assets/image (129).png>)
+
+Duplicate this geometry, drag it into alignment w/ the original, and union it w/ the geometry for the rabbet:
+
+![](<.gitbook/assets/image (131).png>)
+
+Create a toolpath which cuts to the rabbet depth:
+
+![](<.gitbook/assets/image (127).png>)
+
+Then select the geometry which does not include the rabbet and create a toolpath which starts at the bottom of the pocket, then cut the depth which the shoulder of the V endmill cuts:
+
+![](<.gitbook/assets/image (139).png>)
+
+Which previews as:
+
+![](<.gitbook/assets/image (137).png>)
+
+(The V endmill toolpath should be moved to the bottom of the list)
+
+If the endmill used for the main pocketing won't cut the dogbones, add an inside profile using a sufficiently smaller tool to cut them as well:
+
+![](<.gitbook/assets/image (140).png>)
+
+![](<.gitbook/assets/image (118).png>)
+
+This same technique can be done in a 3D model:
+
+![](<.gitbook/assets/image (114) (1) (1) (1) (1).png>)
+
+![](<.gitbook/assets/image (119) (1).png>)
 
 Adding an option for laying out things so as to generate a DXF results in:
 
-![](<.gitbook/assets/image (115) (1).png>)
+![](<.gitbook/assets/image (115) (1) (1).png>)
 
 which may be easily exported to OpenSCAD where the projection() command can be added so that it may be exported as a DXF and imported into Carbide Create:
 
-![](<.gitbook/assets/image (121) (1).png>)
+![](<.gitbook/assets/image (121) (1) (1).png>)
 
-Once it is imported, the elements must be dragged into alignment, then it is simply a matter of working up the depth which is being cut to, and drawing or modeling the fingers --- draw in appropriate geometry to model them, and add a square in the profile drawing to show to what depth things should be cut:
-
-![](<.gitbook/assets/image (115) (1) (1) (1).png>)
-
-&#x20;Then assign a pocket toolpath to that depth:
-
-![](<.gitbook/assets/image (117) (1) (1).png>)
-
-then select the rounded rectangles for the V cut and start it at the bottom of the pocket:
-
-![](<.gitbook/assets/image (118) (1).png>)
-
-and assign a V carving toolpath --- alternately, it is possible to instead create a line which describes the desired V cut and assign a no-offset Contour Toolpath which has the advantage of not having any extraneous plunging at the ends.
-
-Once toolpaths are assigned, the design may be previewed:
-
-![](<.gitbook/assets/image (116) (1) (1) (1) (1).png>)
+Once it is imported, the elements must be dragged into alignment, then it is simply a matter of working up the depth which is being cut to, and applying suitable toolpaths.
 

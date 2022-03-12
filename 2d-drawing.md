@@ -48,7 +48,7 @@ Note that in build 527 Carbide Create gained a feature for adding all open paths
 
 Edit | Select... | Select Open Vectors
 
-![](<.gitbook/assets/image (117) (1).png>)
+![](<.gitbook/assets/image (117) (1) (1).png>)
 
 ### Closed Paths&#x20;
 
@@ -241,31 +241,31 @@ Off-path nodes may be dragged to reshape the sections of curves associated with 
 
 Version 633 of Carbide Create adds a Corner Tool:
 
-![](<.gitbook/assets/image (119) (1).png>)
+![](<.gitbook/assets/image (119) (1) (1).png>)
 
 which allows one to modify corners to have a specified radius:
 
-![](<.gitbook/assets/image (128).png>)
+![](<.gitbook/assets/image (128) (1).png>)
 
 only angles which will admit a portion of a circle of the specified radius will be eligible:
 
-![](<.gitbook/assets/image (115).png>)
+![](<.gitbook/assets/image (115) (1).png>)
 
 #### Trim Vectors
 
 A frequent feature in CAD programs is the ability to trim overlapping vectors which was added in version 636:
 
-![](<.gitbook/assets/image (124).png>)
+![](<.gitbook/assets/image (124) (1).png>)
 
 which allows one to remove segments as defined by overlapping:
 
-![](<.gitbook/assets/image (126).png>)
+![](<.gitbook/assets/image (126) (1).png>)
 
-![](<.gitbook/assets/image (117).png>)
+![](<.gitbook/assets/image (117) (1).png>)
 
 Once trimmed, the geometry will necessarily become one or more open paths:
 
-![](<.gitbook/assets/image (116).png>)
+![](<.gitbook/assets/image (116) (1).png>)
 
 #### Drawing Tutorials
 
@@ -311,7 +311,7 @@ Carbide Create supports layers since version 521. Available under Edit | Show La
 
 it then affords the ability to create and name layers, as well as to color-code them:
 
-![](<.gitbook/assets/image (114) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1).png>)
 
 and to move objects to specific layers and to hide/show, or lock/unlock layers.
 
@@ -326,27 +326,27 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 #### Linear Arrays
 
-![](<.gitbook/assets/image (122).png>)
+![](<.gitbook/assets/image (122) (1).png>)
 
-![](<.gitbook/assets/image (118).png>)
+![](<.gitbook/assets/image (118) (1).png>)
 
 Circular Arrays
 
-![](<.gitbook/assets/image (125).png>)
+![](<.gitbook/assets/image (125) (1).png>)
 
-![](<.gitbook/assets/image (121).png>)
+![](<.gitbook/assets/image (121) (1).png>)
 
 Circular Arrays afford a number of options, and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 copies:
 
-![](<.gitbook/assets/image (114).png>)
+![](<.gitbook/assets/image (114) (1).png>)
 
 and then drawing multiple overlapping polylines using the tips of the rotated triangles which defines the star shape:
 
-![](<.gitbook/assets/image (120).png>)
+![](<.gitbook/assets/image (120) (1).png>)
 
 and Boolean unioning them:
 
-![](<.gitbook/assets/image (127).png>)
+![](<.gitbook/assets/image (127) (1).png>)
 
 ## Geometry
 
