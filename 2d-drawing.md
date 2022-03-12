@@ -48,7 +48,7 @@ Note that in build 527 Carbide Create gained a feature for adding all open paths
 
 Edit | Select... | Select Open Vectors
 
-![](<.gitbook/assets/image (117).png>)
+![](<.gitbook/assets/image (117) (1).png>)
 
 ### Closed Paths&#x20;
 
@@ -237,6 +237,36 @@ When in Node Edit Mode it is possible to:
 
 Off-path nodes may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
 
+#### Corner Tool
+
+Version 633 of Carbide Create adds a Corner Tool:
+
+![](<.gitbook/assets/image (119).png>)
+
+which allows one to modify corners to have a specified radius:
+
+![](<.gitbook/assets/image (128).png>)
+
+only angles which will admit a portion of a circle of the specified radius will be eligible:
+
+![](<.gitbook/assets/image (115).png>)
+
+#### Trim Vectors
+
+A frequent feature in CAD programs is the ability to trim overlapping vectors which was added in version 636:
+
+![](<.gitbook/assets/image (124).png>)
+
+which allows one to remove segments as defined by overlapping:
+
+![](<.gitbook/assets/image (126).png>)
+
+![](<.gitbook/assets/image (117).png>)
+
+Once trimmed, the geometry will necessarily become one or more open paths:
+
+![](<.gitbook/assets/image (116).png>)
+
 #### Drawing Tutorials
 
 A very basic drawing task is to draw an oval. Originally this tutorial was available at: [http://community.carbide3d.com/t/lets-draw-an-ellipse-with-new-users/4194](http://community.carbide3d.com/t/lets-draw-an-ellipse-with-new-users/4194) — and is provided here in an updated form.
@@ -281,9 +311,42 @@ Carbide Create supports layers since version 521. Available under Edit | Show La
 
 it then affords the ability to create and name layers, as well as to color-code them:
 
-![](<.gitbook/assets/image (114) (1) (1) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1) (1) (1).png>)
 
 and to move objects to specific layers and to hide/show, or lock/unlock layers.
+
+### Arrays
+
+A useful feature in many drawing or CAD programs is the ability to create arrays of objects. Carbide Create affords two options for this:&#x20;
+
+* Linear ― allows rectangular arrangements
+* Circular ― allows polar arrangements
+
+To create an array, select one or more objects, invoke the desired command, and then specify the parameters for the array.
+
+#### Linear Arrays
+
+![](<.gitbook/assets/image (122).png>)
+
+![](<.gitbook/assets/image (118).png>)
+
+Circular Arrays
+
+![](<.gitbook/assets/image (125).png>)
+
+![](<.gitbook/assets/image (121).png>)
+
+Circular Arrays afford a number of options, and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 copies:
+
+![](<.gitbook/assets/image (114).png>)
+
+and then drawing multiple overlapping polylines using the tips of the rotated triangles which defines the star shape:
+
+![](<.gitbook/assets/image (120).png>)
+
+and Boolean unioning them:
+
+![](<.gitbook/assets/image (127).png>)
 
 ## Geometry
 

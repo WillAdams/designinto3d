@@ -41,29 +41,29 @@ Drawing things in profile with the V endmill makes the starting point of the joi
 
 which is easily modeled in 3D:
 
-![](<.gitbook/assets/image (114) (1) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1) (1).png>)
 
 Adding an option for laying out things so as to generate a DXF results in:
 
-![](<.gitbook/assets/image (115).png>)
+![](<.gitbook/assets/image (115) (1).png>)
 
 which may be easily exported to OpenSCAD where the projection() command can be added so that it may be exported as a DXF and imported into Carbide Create:
 
-![](<.gitbook/assets/image (121).png>)
+![](<.gitbook/assets/image (121) (1).png>)
 
 Once it is imported, the elements must be dragged into alignment, then it is simply a matter of working up the depth which is being cut to, and drawing or modeling the fingers --- draw in appropriate geometry to model them, and add a square in the profile drawing to show to what depth things should be cut:
 
-![](<.gitbook/assets/image (115) (1) (1).png>)
+![](<.gitbook/assets/image (115) (1) (1) (1).png>)
 
 &#x20;Then assign a pocket toolpath to that depth:
 
-![](<.gitbook/assets/image (117) (1).png>)
+![](<.gitbook/assets/image (117) (1) (1).png>)
 
 then select the rounded rectangles for the V cut and start it at the bottom of the pocket:
 
-![](<.gitbook/assets/image (118).png>)
+![](<.gitbook/assets/image (118) (1).png>)
 
 which then previews as:
 
-![](<.gitbook/assets/image (116) (1) (1) (1).png>)
+![](<.gitbook/assets/image (116) (1) (1) (1) (1).png>)
 
