@@ -36,9 +36,16 @@ using only two, or possibly three tools:
 * a narrow V endmill (must be narrower in diameter than half the stock thickness)
 * (optional) a smaller endmill which allows cutting dogbones for the box joints which are so small as to hopefully escape notice
 
+The joint is made up of two sections:&#x20;
+
+* a 45 degree V miter which is easily cut using a 90 degree V endmill with the stock flat on the machine
+* a series of interlocking pockets which make up the box joints
+
 Drawing things in profile with the V endmill makes the starting point of the joint geometry quite obvious:
 
 ![](<.gitbook/assets/image (113) (1) (1).png>)
+
+and adding squares to stand in for the pockets and islands which make up the joints affords the balance of the joint:
 
 ![](<.gitbook/assets/image (123).png>)
 
