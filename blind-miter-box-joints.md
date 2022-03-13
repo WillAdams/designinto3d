@@ -192,3 +192,19 @@ and assign a no offset Contour Toolpath to the Stock Depth:
 ![](<.gitbook/assets/image (138).png>)
 
 Then make all other layers visible and merge together all the parts so as to make cuts to the rabbet depth, and then the depth of the joinery.&#x20;
+
+Once toolpaths are assigned, the file may be duplicated if need be and things arranged so as to efficiently be cut out of the stock. A set of files to make a small box are at:
+
+[https://community.carbide3d.com/t/a-different-sort-of-box/36882/27](https://community.carbide3d.com/t/a-different-sort-of-box/36882/27?u=willadams)
+
+When cut:
+
+![](.gitbook/assets/WIN\_20220309\_21\_13\_49\_Pro.jpg)
+
+the parts may then be assembled:
+
+![](.gitbook/assets/WIN\_20220309\_21\_16\_14\_Pro.jpg)
+
+making a finished box:
+
+![](.gitbook/assets/WIN\_20220309\_21\_15\_28\_Pro.jpg)
