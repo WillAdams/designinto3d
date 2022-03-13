@@ -147,7 +147,11 @@ which is available at:
 
 [https://www.blockscad3d.com/community/projects/1356379](https://www.blockscad3d.com/community/projects/1356379)
 
-which may be easily exported to OpenSCAD  and set up for a Customizer:
+which may be easily exported to OpenSCAD:
+
+[https://github.com/WillAdams/Design\_Into\_3D/blob/master/blindmiter\_boxjoint/Design%20into%203D\_%20Box%20with%20Lid.scad](https://github.com/WillAdams/Design\_Into\_3D/blob/master/blindmiter\_boxjoint/Design%20into%203D\_%20Box%20with%20Lid.scad)
+
+which is set up for a Customizer:
 
 ![](<.gitbook/assets/image (136).png>)
 
@@ -186,3 +190,5 @@ and then align it to the center of the channel:
 and assign a no offset Contour Toolpath to the Stock Depth:
 
 ![](<.gitbook/assets/image (138).png>)
+
+Then make all other layers visible and merge together all the parts so as to make cuts to the rabbet depth, and then the depth of the joinery.&#x20;
