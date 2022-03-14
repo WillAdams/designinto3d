@@ -195,7 +195,7 @@ Then make all other layers visible and merge together all the parts so as to mak
 
 Once toolpaths are assigned, the file may be duplicated if need be and things arranged so as to efficiently be cut out of the stock. A set of files to make a small box are at:
 
-[https://community.carbide3d.com/t/a-different-sort-of-box/36882/27](https://community.carbide3d.com/t/a-different-sort-of-box/36882/27?u=willadams)
+[https://cutrocket.com/p/622970cdb482a/](https://cutrocket.com/p/622970cdb482a/)
 
 When cut:
 
