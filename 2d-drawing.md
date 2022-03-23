@@ -241,7 +241,7 @@ Off-path nodes may be dragged to reshape the sections of curves associated with 
 
 Version 633 of Carbide Create adds a Corner Tool:
 
-![](<.gitbook/assets/image (119) (1) (1).png>)
+![](<.gitbook/assets/image (119) (1) (1) (1).png>)
 
 which allows one to modify corners to have a specified radius:
 
@@ -249,7 +249,7 @@ which allows one to modify corners to have a specified radius:
 
 only angles which will admit a portion of a circle of the specified radius will be eligible:
 
-![](<.gitbook/assets/image (115) (1).png>)
+![](<.gitbook/assets/image (115) (1) (1).png>)
 
 #### Trim Vectors
 
@@ -259,13 +259,51 @@ A frequent feature in CAD programs is the ability to trim overlapping vectors wh
 
 which allows one to remove segments as defined by overlapping:
 
-![](<.gitbook/assets/image (126) (1).png>)
+![](<.gitbook/assets/image (126) (1) (1).png>)
 
 ![](<.gitbook/assets/image (117) (1).png>)
 
 Once trimmed, the geometry will necessarily become one or more open paths:
 
 ![](<.gitbook/assets/image (116) (1).png>)
+
+#### Geometric Interactions
+
+With Boolean Operations and the Trim Vector a number of possible interactions are possible. Given a set of curves, for example a rectangle with a circle superimposed:
+
+![](<.gitbook/assets/image (133).png>)
+
+Boolean Union results in:
+
+![](<.gitbook/assets/image (115).png>)
+
+Boolean Intersection:
+
+![](<.gitbook/assets/image (135).png>)
+
+and there are two possibilities for Boolean Subtraction depending on the key object:
+
+Circle:
+
+![](<.gitbook/assets/image (139).png>)
+
+Rectangle:
+
+![](<.gitbook/assets/image (137).png>)
+
+while the Trim Vectors command allows one to trim the various vectors which overlap:
+
+![](<.gitbook/assets/image (119).png>)
+
+![](<.gitbook/assets/image (140).png>)
+
+allowing one to make asymmetrical designs which are not possible with Boolean operations:
+
+![](<.gitbook/assets/image (126).png>)
+
+A further consideration is that the Trim Vectors command results in Curve objects which may be joined and which will not result in polylines:
+
+![](<.gitbook/assets/image (123).png>)
 
 #### Drawing Tutorials
 
