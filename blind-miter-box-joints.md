@@ -53,15 +53,15 @@ Given the side profile of the joint, it is simple to then draw the geometry for 
 
 Draw in lines which will define where the V tooling will cut the miter:
 
-![](<.gitbook/assets/image (123) (1).png>)
+![](<.gitbook/assets/image (123) (1) (1).png>)
 
 A no-offset Contour toolpath may then be assigned:
 
-![](<.gitbook/assets/image (132).png>)
+![](<.gitbook/assets/image (132) (1).png>)
 
 This may then be verified by checking the 3D preview:
 
-![](<.gitbook/assets/image (120) (1).png>)
+![](<.gitbook/assets/image (120) (1) (1).png>)
 
 The joinery must be positioned relative to the bottom and/or lid which will require rabbets. Draw these in and then measure the remaining space:
 
@@ -69,7 +69,7 @@ The joinery must be positioned relative to the bottom and/or lid which will requ
 
 Determine how many joint positions there will be and then do the math to determine how tall each pocket or island will be and draw one in. For most efficient cutting the height should be a bit less than twice the height of the endmill which will be used.
 
-![](<.gitbook/assets/image (124) (1).png>)
+![](<.gitbook/assets/image (124) (1) (1).png>)
 
 add dogbones which are as small as is possible --- if necessary, use a second endmill to cut the dogbones:
 
@@ -77,7 +77,7 @@ add dogbones which are as small as is possible --- if necessary, use a second en
 
 Then use the Linear Array tool to duplicate as necessary:
 
-![](<.gitbook/assets/image (114).png>)
+![](<.gitbook/assets/image (114) (1).png>)
 
 Select every other rectangle:&#x20;
 
@@ -93,7 +93,7 @@ Duplicate one, drag it into alignment at the top and disable the dogbones and th
 
 Repeat for the others:
 
-![](<.gitbook/assets/image (125).png>)
+![](<.gitbook/assets/image (125) (1).png>)
 
 Extend the geometry which is at the top:
 
@@ -101,7 +101,7 @@ Extend the geometry which is at the top:
 
 Then draw in geometry which represents where the V endmills will be cut and duplicate the rabbet(s):
 
-![](<.gitbook/assets/image (121) (1) (1).png>)
+![](<.gitbook/assets/image (121) (1) (1) (1).png>)
 
 And union things&#x20;
 
@@ -121,21 +121,21 @@ Then select the geometry which does not include the rabbet and create a toolpath
 
 Which previews as:
 
-![](<.gitbook/assets/image (137) (1).png>)
+![](<.gitbook/assets/image (137) (1) (1).png>)
 
 (The V endmill toolpath should be moved to the bottom of the list)
 
 If the endmill used for the main pocketing won't cut the dogbones, add an inside profile using a sufficiently smaller tool to cut them as well:
 
-![](<.gitbook/assets/image (140) (1).png>)
+![](<.gitbook/assets/image (140) (1) (1).png>)
 
 ![](<.gitbook/assets/image (118) (1) (1).png>)
 
 This same technique can be done in a 3D model:
 
-![](<.gitbook/assets/image (114) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1).png>)
 
-![](<.gitbook/assets/image (121) (1).png>)
+![](<.gitbook/assets/image (121) (1) (1).png>)
 
 ![](<.gitbook/assets/image (119) (1) (1).png>)
 
@@ -153,7 +153,7 @@ which may be easily exported to OpenSCAD:
 
 which is set up for a Customizer:
 
-![](<.gitbook/assets/image (136).png>)
+![](<.gitbook/assets/image (136) (1).png>)
 
 where the projection() command can be added so that it may be exported as a DXF and imported into Carbide Create:
 
@@ -181,7 +181,7 @@ Then select all the part outlines and offset them to the outside by a bit more t
 
 For each V carving channel, draw a polyline the length of the straight portion (it will snap to the nodes):
 
-![](<.gitbook/assets/image (120).png>)
+![](<.gitbook/assets/image (120) (1).png>)
 
 and then align it to the center of the channel:
 

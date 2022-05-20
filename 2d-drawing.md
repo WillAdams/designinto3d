@@ -255,7 +255,7 @@ only angles which will admit a portion of a circle of the specified radius will 
 
 A frequent feature in CAD programs is the ability to trim overlapping vectors which was added in version 636:
 
-![](<.gitbook/assets/image (124) (1) (1).png>)
+![](<.gitbook/assets/image (124) (1) (1) (1).png>)
 
 which allows one to remove segments as defined by overlapping:
 
@@ -289,13 +289,13 @@ Circle:
 
 Rectangle:
 
-![](<.gitbook/assets/image (137).png>)
+![](<.gitbook/assets/image (137) (1).png>)
 
 while the Trim Vectors command allows one to trim the various vectors which overlap:
 
 ![](<.gitbook/assets/image (119).png>)
 
-![](<.gitbook/assets/image (140).png>)
+![](<.gitbook/assets/image (140) (1).png>)
 
 allowing one to make asymmetrical designs which are not possible with Boolean operations:
 
@@ -303,7 +303,7 @@ allowing one to make asymmetrical designs which are not possible with Boolean op
 
 A further consideration is that the Trim Vectors command results in Curve objects which may be joined and which will not result in polylines:
 
-![](<.gitbook/assets/image (123).png>)
+![](<.gitbook/assets/image (123) (1).png>)
 
 #### Drawing Tutorials
 
@@ -349,7 +349,7 @@ Carbide Create supports layers since version 521. Available under Edit | Show La
 
 it then affords the ability to create and name layers, as well as to color-code them:
 
-![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1).png>)
 
 and to move objects to specific layers and to hide/show, or lock/unlock layers.
 
@@ -370,17 +370,17 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 Circular Arrays
 
-![](<.gitbook/assets/image (125) (1).png>)
+![](<.gitbook/assets/image (125) (1) (1).png>)
 
-![](<.gitbook/assets/image (121) (1) (1) (1).png>)
+![](<.gitbook/assets/image (121) (1) (1) (1) (1).png>)
 
 Circular Arrays afford a number of options, and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 copies:
 
-![](<.gitbook/assets/image (114) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1).png>)
 
 and then drawing multiple overlapping polylines using the tips of the rotated triangles which defines the star shape:
 
-![](<.gitbook/assets/image (120) (1) (1).png>)
+![](<.gitbook/assets/image (120) (1) (1) (1).png>)
 
 and Boolean unioning them:
 
