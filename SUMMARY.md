@@ -17,3 +17,4 @@
 * [Further Toolpath Details](further-toolpath-details.md)
 * [Drawer Organizers](drawer-organizers.md)
 * [A Final Project](a-final-project.md)
+* [3D Modeling](3d-modeling.md)

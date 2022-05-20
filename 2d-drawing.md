@@ -48,7 +48,7 @@ Note that in build 527 Carbide Create gained a feature for adding all open paths
 
 Edit | Select... | Select Open Vectors
 
-![](<.gitbook/assets/image (117) (1) (1).png>)
+![](<.gitbook/assets/image (117) (1) (1) (1).png>)
 
 ### Closed Paths&#x20;
 
@@ -245,7 +245,7 @@ Version 633 of Carbide Create adds a Corner Tool:
 
 which allows one to modify corners to have a specified radius:
 
-![](<.gitbook/assets/image (128) (1).png>)
+![](<.gitbook/assets/image (128) (1) (1).png>)
 
 only angles which will admit a portion of a circle of the specified radius will be eligible:
 
@@ -255,13 +255,13 @@ only angles which will admit a portion of a circle of the specified radius will 
 
 A frequent feature in CAD programs is the ability to trim overlapping vectors which was added in version 636:
 
-![](<.gitbook/assets/image (124) (1).png>)
+![](<.gitbook/assets/image (124) (1) (1).png>)
 
 which allows one to remove segments as defined by overlapping:
 
 ![](<.gitbook/assets/image (126) (1) (1).png>)
 
-![](<.gitbook/assets/image (117) (1).png>)
+![](<.gitbook/assets/image (117) (1) (1).png>)
 
 Once trimmed, the geometry will necessarily become one or more open paths:
 
@@ -326,10 +326,10 @@ Select the path and go into **Node Edit** Mode and right-click on each node and 
 The following additional drawing tutorials are available:
 
 * [https://community.carbide3d.com/t/lets-make-a-b-for-anyone/14223](https://community.carbide3d.com/t/lets-make-a-b-for-anyone/14223) — drawing more complex forms with the Curve tool
-* [https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022) — using rotation
-* [https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022)
+* [https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https:/community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022) — using rotation
+* [https://community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022](https://community.carbide3d.com/t/how-to-draw-a-compass-rose/16170https:/community.carbide3d.com/t/how-to-draw-a-star-carbide-create/16022)
 
-and if one has difficulty drawing up anything, either post on the Carbide 3D community forums: [https://community.carbide3d.com/](https://community.carbide3d.com) or e-mail in to [support@carbide3d.com](mailto:support@carbide3d.com) and we will do our best to assist.
+and if one has difficulty drawing up anything, either post on the Carbide 3D community forums: [https://community.carbide3d.com/](https://community.carbide3d.com/) or e-mail in to [support@carbide3d.com](mailto:support@carbide3d.com) and we will do our best to assist.
 
 ### Quadratic B-Splines
 
@@ -364,15 +364,15 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 #### Linear Arrays
 
-![](<.gitbook/assets/image (122) (1).png>)
+![](<.gitbook/assets/image (122) (1) (1).png>)
 
-![](<.gitbook/assets/image (118) (1) (1).png>)
+![](<.gitbook/assets/image (118) (1) (1) (1).png>)
 
 Circular Arrays
 
 ![](<.gitbook/assets/image (125) (1).png>)
 
-![](<.gitbook/assets/image (121) (1) (1).png>)
+![](<.gitbook/assets/image (121) (1) (1) (1).png>)
 
 Circular Arrays afford a number of options, and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 copies:
 

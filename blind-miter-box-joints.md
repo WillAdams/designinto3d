@@ -65,11 +65,11 @@ This may then be verified by checking the 3D preview:
 
 The joinery must be positioned relative to the bottom and/or lid which will require rabbets. Draw these in and then measure the remaining space:
 
-![](<.gitbook/assets/image (128).png>)
+![](<.gitbook/assets/image (128) (1).png>)
 
 Determine how many joint positions there will be and then do the math to determine how tall each pocket or island will be and draw one in. For most efficient cutting the height should be a bit less than twice the height of the endmill which will be used.
 
-![](<.gitbook/assets/image (124).png>)
+![](<.gitbook/assets/image (124) (1).png>)
 
 add dogbones which are as small as is possible --- if necessary, use a second endmill to cut the dogbones:
 
@@ -101,7 +101,7 @@ Extend the geometry which is at the top:
 
 Then draw in geometry which represents where the V endmills will be cut and duplicate the rabbet(s):
 
-![](<.gitbook/assets/image (121) (1).png>)
+![](<.gitbook/assets/image (121) (1) (1).png>)
 
 And union things&#x20;
 
@@ -129,13 +129,13 @@ If the endmill used for the main pocketing won't cut the dogbones, add an inside
 
 ![](<.gitbook/assets/image (140) (1).png>)
 
-![](<.gitbook/assets/image (118) (1).png>)
+![](<.gitbook/assets/image (118) (1) (1).png>)
 
 This same technique can be done in a 3D model:
 
 ![](<.gitbook/assets/image (114) (1) (1) (1) (1).png>)
 
-![](<.gitbook/assets/image (121).png>)
+![](<.gitbook/assets/image (121) (1).png>)
 
 ![](<.gitbook/assets/image (119) (1) (1).png>)
 
@@ -165,7 +165,7 @@ which may then be exported as a DXF or SVG and imported into Carbide Create:
 
 Once it is imported, the elements must be dragged into alignment, then it is simply a matter of working up the depth which is being cut to, and applying suitable toolpaths.
 
-![](<.gitbook/assets/image (118).png>)
+![](<.gitbook/assets/image (118) (1).png>)
 
 Things will be easier to work with if each type of cut is on a separate layer:
 
@@ -189,7 +189,7 @@ and then align it to the center of the channel:
 
 and assign a no offset Contour Toolpath to the Stock Depth:
 
-![](<.gitbook/assets/image (138) (1).png>)
+![](<.gitbook/assets/image (138) (1) (1).png>)
 
 Then make all other layers visible and merge together all the parts so as to make cuts to the rabbet depth, and then the depth of the joinery.&#x20;
 
