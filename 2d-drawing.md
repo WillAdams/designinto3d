@@ -249,7 +249,7 @@ which allows one to modify corners to have a specified radius:
 
 only angles which will admit a portion of a circle of the specified radius will be eligible:
 
-![](<.gitbook/assets/image (115) (1) (1).png>)
+![](<.gitbook/assets/image (115) (1) (1) (1).png>)
 
 #### Trim Vectors
 
@@ -275,7 +275,7 @@ With Boolean Operations and the Trim Vector a number of possible interactions ar
 
 Boolean Union results in:
 
-![](<.gitbook/assets/image (115).png>)
+![](<.gitbook/assets/image (115) (1).png>)
 
 Boolean Intersection:
 
@@ -303,7 +303,7 @@ allowing one to make asymmetrical designs which are not possible with Boolean op
 
 A further consideration is that the Trim Vectors command results in Curve objects which may be joined and which will not result in polylines:
 
-![](<.gitbook/assets/image (123) (1).png>)
+![](<.gitbook/assets/image (123) (1) (1).png>)
 
 #### Drawing Tutorials
 
@@ -364,7 +364,7 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 #### Linear Arrays
 
-![](<.gitbook/assets/image (122) (1) (1).png>)
+![](<.gitbook/assets/image (122) (1) (1) (1).png>)
 
 ![](<.gitbook/assets/image (118) (1) (1) (1).png>)
 

@@ -47,13 +47,13 @@ Drawing things in profile with the V endmill makes the starting point of the joi
 
 and adding squares to stand in for the pockets and islands which make up the joints affords the balance of the joint:
 
-![](<.gitbook/assets/image (115) (1).png>)
+![](<.gitbook/assets/image (115) (1) (1).png>)
 
 Given the side profile of the joint, it is simple to then draw the geometry for the joint as it will be seen from overhead as it will be cut.&#x20;
 
 Draw in lines which will define where the V tooling will cut the miter:
 
-![](<.gitbook/assets/image (123) (1) (1).png>)
+![](<.gitbook/assets/image (123) (1) (1) (1).png>)
 
 A no-offset Contour toolpath may then be assigned:
 
@@ -141,7 +141,7 @@ This same technique can be done in a 3D model:
 
 Adding an option for laying out things so as to generate a DXF results in:
 
-![](<.gitbook/assets/image (115) (1) (1) (1).png>)
+![](<.gitbook/assets/image (115) (1) (1) (1) (1).png>)
 
 which is available at:
 

@@ -16,7 +16,7 @@ Switch to the Model tab and select geometry and then choose Add Shape:
 
 which affords an interface for adding or subtracting a 3D area based on the selected geometry. One technique is to add the entirety of the stock:
 
-![](<.gitbook/assets/image (122).png>)
+![](<.gitbook/assets/image (122) (1).png>)
 
 So a Flat shape which has a height equal to the stock thickness which is Added (and one uses geometry which is the width and depth of the stock to arrive at:
 
@@ -77,7 +77,7 @@ While subtraction simply reverses things:
 
 Scaling height when adding can be useful to ensure that a particular elevation will be achieved by a given object:
 
-![](<.gitbook/assets/image (123).png>)
+![](<.gitbook/assets/image (123) (1).png>)
 
 ![](<.gitbook/assets/image (125).png>)
 
@@ -90,3 +90,23 @@ Geometry may be modeled in 3D on top of existing objects:
 Setting the Merge type to equal and the base height to where the top of the rounded form reaches will result in there being a level base for the text to be modeled from so that it isn't wrapped around the rounded form:
 
 ![](<.gitbook/assets/image (114).png>)
+
+Similarly, one can subtract using the various modeling settings to arrive at:
+
+![](<.gitbook/assets/image (123).png>)
+
+![](<.gitbook/assets/image (122).png>)
+
+![](<.gitbook/assets/image (115).png>)
+
+Once one has a design completely modeled, one used 3D toolpaths to cut things out by selecting geometry to define where the cutting will be limited to, and applying a 3D Roughing and then one or more 3D Finishing toolpaths, usually using ball-nosed endmills in a progression of sizes from large to small.
+
+For additional tutorials see:
+
+[https://community.carbide3d.com/t/starting-with-2-5-d-carving/15168/\
+https://community.carbide3d.com/t/trial-ver-432-3d-carving-not-finding-much-info-other-than-a-star/16190\
+https://community.carbide3d.com/t/vcarve-pro-wide-flutes/18942\
+https://community.carbide3d.com/t/carbide-create-pro-3d-tutorial-small-game-board-piece/18456\
+https://community.carbide3d.com/t/3d-model-creating-a-ramp-object/22423\
+https://community.carbide3d.com/t/carbide-create-pro-wavy-flag/16974/15\
+https://community.carbide3d.com/t/modeling-a-bowl-in-carbide-create/30993](https://community.carbide3d.com/t/starting-with-2-5-d-carving/15168/https://community.carbide3d.com/t/trial-ver-432-3d-carving-not-finding-much-info-other-than-a-star/16190https:/community.carbide3d.com/t/vcarve-pro-wide-flutes/18942https:/community.carbide3d.com/t/carbide-create-pro-3d-tutorial-small-game-board-piece/18456https:/community.carbide3d.com/t/3d-model-creating-a-ramp-object/22423https:/community.carbide3d.com/t/carbide-create-pro-wavy-flag/16974/15https:/community.carbide3d.com/t/modeling-a-bowl-in-carbide-create/30993)
