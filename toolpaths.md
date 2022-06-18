@@ -10,23 +10,23 @@ Carbide Create affords a number of different toolpath options which provide for 
 * ball-nosed
 * V-endmill
 
-Early versions of Carbide Create had limitations in terms of which endmill type could be assigned to which toolpath, but 629 added support for using V endmills with non-V-carving-specfiic toolpaths.
+Early versions of Carbide Create had limitations in terms of which endmill type could be assigned to which toolpath, but 629 added support for using V endmills with non-V-carving-specific toolpaths.
 
-The following toolpaths are for either decorative or for Carbide Create Pro only and so will not be considered at this time:
+The following toolpaths are either for decorative use or for Carbide Create Pro only and so will not be considered at this time:
 
 * Texture (decorative)
 * Engrave (Pro only)
 * 3D Rough (Pro only)
 * 3D Finish (Pro only)
 
-Normally square endmills will be used for removing material and creating flat-bottomed pockets, ball-nosed endmills will be used to create rounded forms (including 3D), and V endmills wil be used for V carving or chamfering.
+Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V endmills will be used for V carving or chamfering or cutting at a precise angle as for certain types of joinery.
 
 ## Contour
 
 Contour toolpaths follow along a drawn element of geometry, and will be aligned relatively towards it based on path orientation/direction which will determine the Offset Direction:
 
 * Inside / Left
-* No Offset
+* No Offset (directly along the path)
 * Outside / Right
 
 Where the toolpath will fall relative to the geometry will always be clear when viewed in the 3D preview, and the offsets will alter the geometry of features --- given a 1" circle cut with a 1/4" square endmill the following dimensions will be realized:
@@ -37,7 +37,7 @@ Where the toolpath will fall relative to the geometry will always be clear when 
 * No Offset --- a 1.25" hole will be made, and a post 0.75" in diameter will be left
 * Outside / Right --- a 1.5" hole will be made, and a post 1" in diameter will be left
 
-When not cutting all the way through, a square walled slot will result:
+When not cutting all the way through with a square endmill, a square walled slot will result:
 
 ![](<.gitbook/assets/image (90).png>)
 
@@ -69,11 +69,11 @@ Drill toolpaths plunge the tool at the center of the selected geometry:
 
 ![](<.gitbook/assets/image (116) (1) (1) (1).png>)
 
-As noted above, square, ball-nosed, and V endmills may be used, and will be correctly previewed in how they cut:
+As noted above, square, ball-nosed, and V-endmills may be used, and will be correctly previewed in how they cut:
 
 ![](<.gitbook/assets/image (120) (1) (1) (1) (1).png>)
 
-A notable use for a V endmill when drilling is to chamfer a small hole.
+A notable use for a V-endmill when drilling is to chamfer a small hole.
 
 ## VCarve (and Advanced VCarve)
 
