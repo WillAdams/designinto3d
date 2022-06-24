@@ -449,11 +449,11 @@ For further information on Carbide Create please see:
 * [https://carbide-downloads.website-us-east-1.linodeobjects.com/doc/UserManual\_Carbide\_20210718.pdf](https://carbide-downloads.website-us-east-1.linodeobjects.com/doc/UserManual\_Carbide\_20210718.pdf) (the official manual)
 * [http://carbide3d.com/carbidecreate/video/](http://carbide3d.com/carbidecreate/video/) (a collection of tutorial videos)
 * [http://community.carbide3d.com/c/software/carbide-create](http://community.carbide3d.com/c/software/carbide-create) (a community forum)
-* [https://wiki.shapeoko.com/index.php/Carbide\_Create](https://wiki.shapeoko.com/index.php/Carbide\_Create) (a wiki page)
+* [https://old.reddit.com/r/shapeoko/wiki/carbidecreate](https://old.reddit.com/r/shapeoko/wiki/carbidecreate) (a wiki page)
 
 ![](.gitbook/assets/carbide3d\_create\_motion\_keyboard\_shortcuts.png)
 
-* [https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839))
+* [https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839)
 
 ## Third Dimensional Shapes
 
