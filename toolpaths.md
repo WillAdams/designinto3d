@@ -4,11 +4,12 @@ description: Toolpath options in Carbide Create
 
 # Toolpaths
 
-Carbide Create affords a number of different toolpath options which provide for a wide variety of geometries which may be cut away from material depending on the endmill used. Carbide Create includes support for the following endmill types:
+Carbide Create affords a number of different toolpath options which provide for a wide variety of geometries which may be cut away from material depending on the endmill used. Carbide Create includes support for the following endmill/tool types:
 
 * square
 * ball-nosed
 * V-endmill
+* engravers
 
 Early versions of Carbide Create had limitations in terms of which endmill type could be assigned to which toolpath, but 629 added support for using V endmills with non-V-carving-specific toolpaths.
 
@@ -23,19 +24,19 @@ Normally square endmills will be used for removing material and creating flat-bo
 
 ## Contour
 
-Contour toolpaths follow along a drawn element of geometry, and will be aligned relatively towards it based on path orientation/direction which will determine the Offset Direction:
+Contour toolpaths follow along a drawn element of geometry, and will be aligned relatively along it based on path orientation/direction which will determine the Offset Direction:
 
 * Inside / Left
 * No Offset (directly along the path)
 * Outside / Right
 
-Where the toolpath will fall relative to the geometry will always be clear when viewed in the 3D preview, and the offsets will alter the geometry of features --- given a 1" circle cut with a 1/4" square endmill the following dimensions will be realized:
+Where the toolpath will fall relative to the geometry will always be clear when viewed in the 3D preview, and the offsets will alter the geometry of features — given a 1" circle cut with a 1/4" square endmill the following dimensions will be realized:
 
 ![Carbide Create | Contour Toolpath | Offsets](<.gitbook/assets/image (91).png>)
 
-* Inside / Left --- a 1" hole will be made, and a post 1/2" in diameter will be left
-* No Offset --- a 1.25" hole will be made, and a post 0.75" in diameter will be left
-* Outside / Right --- a 1.5" hole will be made, and a post 1" in diameter will be left
+* Inside / Left — a 1" hole will be made, and a post 1/2" in diameter will be left
+* No Offset — a 1.25" hole will be made, and a post 0.75" in diameter will be left
+* Outside / Right — a 1.5" hole will be made, and a post 1" in diameter will be left
 
 When not cutting all the way through with a square endmill, a square walled slot will result:
 
