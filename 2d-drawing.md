@@ -368,7 +368,7 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 ![](<.gitbook/assets/image (122) (1) (1) (1).png>)
 
-![](<.gitbook/assets/image (118) (1) (1) (1).png>)
+![](<.gitbook/assets/image (118) (1) (1) (1) (1).png>)
 
 Circular Arrays
 

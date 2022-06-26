@@ -79,17 +79,16 @@ Then use the Linear Array tool to duplicate as necessary:
 
 ![](<.gitbook/assets/image (114) (1).png>)
 
-Select every other rectangle:&#x20;
+and adjust the settings to get two alternating columns:
 
-![](<.gitbook/assets/image (126) (1).png>)
+* Number of rows --- this should be half as many as the total, rounded up
+* Number of colums --- 2
+* X spacing --- width of the part less the width of the stock
+* Y spacing --- twice the height of the box joint
+* Row offset --- 0
+* Column offset --- height of the box joint
 
-Drag them out to where they can be worked with:
-
-![](<.gitbook/assets/image (130).png>)
-
-Duplicate one, drag it into alignment at the top and disable the dogbones and then drag into position:
-
-![](<.gitbook/assets/image (133) (1) (1).png>)
+![](<.gitbook/assets/image (118).png>)
 
 Repeat for the others:
 
@@ -129,7 +128,7 @@ If the endmill used for the main pocketing won't cut the dogbones, add an inside
 
 ![](<.gitbook/assets/image (140) (1) (1).png>)
 
-![](<.gitbook/assets/image (118) (1) (1).png>)
+![](<.gitbook/assets/image (118) (1) (1) (1).png>)
 
 This same technique can be done in a 3D model:
 
@@ -165,7 +164,7 @@ which may then be exported as a DXF or SVG and imported into Carbide Create:
 
 Once it is imported, the elements must be dragged into alignment, then it is simply a matter of working up the depth which is being cut to, and applying suitable toolpaths.
 
-![](<.gitbook/assets/image (118) (1).png>)
+![](<.gitbook/assets/image (118) (1) (1).png>)
 
 Things will be easier to work with if each type of cut is on a separate layer:
 

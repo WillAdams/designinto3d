@@ -12,7 +12,7 @@ First, one has to have geometry which can be used as the basis for a 3D model --
 
 Switch to the Model tab and select geometry and then choose Add Shape:
 
-![](<.gitbook/assets/image (118).png>)
+![](<.gitbook/assets/image (118) (1).png>)
 
 which affords an interface for adding or subtracting a 3D area based on the selected geometry. One technique is to add the entirety of the stock:
 
