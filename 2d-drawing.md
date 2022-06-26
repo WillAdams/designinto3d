@@ -38,7 +38,7 @@ Many CAD programs will allow the definition of arcs which are easily drawn and m
 
 ## Polylines
 
-Polylines are made up of multiple points describing lines and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created, and if it has been edited. For example, a square may have corner options if drawn using the **Rectangle** tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular **Polygon** tool, may be changed into another polygon or resized proportionally, and if drawn using the **Polyline** or **Curve** tool may only be resized proportionally or node-edited (which to a degree are possible with the other creation options).
+Polylines are made up of multiple points describing lines and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created, and if it has been edited. For example, a square may have corner options if drawn using the **Rectangle** tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular **Polygon** tool, may be changed into another polygon or resized proportionally, and if drawn using the **Polyline** or **Curve** tool may only be resized proportionally or node-edited (which are possible with the other creation options).
 
 ### Open Paths
 
@@ -52,7 +52,7 @@ Edit | Select... | Select Open Vectors
 
 ### Closed Paths&#x20;
 
-Closed paths meet back at the point of origin and open up additional operations in CAM tools. In Euclid’s _Elements: Book I:_ [_Definition 13–14_ ](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for **Circles**, **Rectangles** (which may be squares), and Regular **Polygons**.
+Closed paths meet back at the point of origin and open up additional operations in Carbide Create and most other CAM tools. In Euclid’s _Elements: Book I:_ [_Definition 13–14_ ](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. They may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for **Circles**, **Rectangles** (which may be squares), and Regular **Polygons**.
 
 #### Circles
 
@@ -64,7 +64,7 @@ Note that the **Done** button allows one to cancel out of the circle drawing mod
 
 In Carbide Create, circles are defined as four Bézier curves (as opposed to using arcs) which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for machining purposes. Researching the math involved in this differentiation is left as an exercise for the interested reader.
 
-Note that in build 527 Carbide Create gained a feature for adding all circles to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)&#x20;
+Note that in build 527 Carbide Create gained a feature for adding circles which are within a certain size range to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)&#x20;
 
 Edit | Select... | Select Circles
 
@@ -151,7 +151,7 @@ In addition to moving, geometry may also be altered in size. Selections may be s
 
 ### Rotate
 
-Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design, or to adjust for orientation of T-bones. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in Carbide Create since in current versions the rotation operation will change the objects into Curve objects, removing the ability to interact with their formal parameters.
+Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design, or to adjust for orientation of T-bones. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in certain programs if the rotation operation should change the objects into Curve objects, removing the ability to interact with their formal parameters.
 
 At this time, Circle objects will not alter their orientation when rotated, only positioning. If using the nodes for positional information is required, it will be necessary to convert them to Curve objects.
 
@@ -183,7 +183,7 @@ Depending on the selection, Carbide Create affords the following Boolean operati
 * **Intersection** ― only available when two objects are selected, the new object will be that area included within both objects
 * **Subtraction** ― the key object (indicated by a dashed highlight) will be removed from each of the other object(s) in the selection
 
-Note that in most programs, the selection is modified, so if the original geometry will be needed after, it may be necessary that the objects be duplicated and dragged back into alignment with the originals.
+Note that in most programs, the selection is modified, so if the original geometry will be needed after, it may be necessary that the objects be duplicated in alignment with the originals.
 
 If a given operation does not have the desired result, undoing it in Carbide Create will change which object is the current key object (indicated by a dashed highlight) ― reattempting the operation will then do so based on that new aspect of the selection with different results than previously if applicable to the operation.
 
@@ -217,7 +217,7 @@ As of Carbide Create build 627 it is possible to change a closed path to an open
 
 Bézier Curves should be drawn following some basic principles unless a design dictates otherwise:
 
-* on-curve nodes should be at extrema (north/south (top/bottom) or east/west (left/right)) and at points of inflection (where a shape changes direction, such as at the middle of an _S_ curve)
+* on-curve nodes should be at extrema (north/south (top/bottom), or east/west (left/right)) and at points of inflection (where a shape changes direction, such as at the middle of an _S_ curve)
 * curves are smoothest when off-curve nodes follow the “Rule of 30” and are approximately one-third (\~30 percent) of the distance towards the next on-curve node
 
 #### Node Edit Mode
@@ -230,10 +230,10 @@ As noted above, geometry is made up of lines and/or curves which are bounded by 
 
 When in Node Edit Mode it is possible to:
 
-* add an on-path node by right-clicking on a part of the path which does not have nodes and choosing Insert Node
-* delete an on-path node (when it is selected) by right-clicking and choosing Delete Node — keyboard shortcut d for the currently selected node(s)
-* toggle a node from smooth to sharp and vice-versa by right-clicking and choosing Toggle Smooth — keyboard shortcut s for the currently selected node(s)
-* convert a closed path to an open one by right-clicking and choosing Cut Vector
+* add an on-path node by right-clicking on a part of the path which does not have nodes and choosing _Insert Node_
+* delete an on-path node (when it is selected) by right-clicking and choosing _Delete Node_ — keyboard shortcut _d_ for the currently selected node(s)
+* toggle a node from smooth to sharp and vice-versa by right-clicking and choosing _Toggle Smooth_ — keyboard shortcut _s_ for the currently selected node(s)
+* convert a closed path to an open one by right-clicking and choosing _Cut Vector_
 
 Off-path nodes may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
 
@@ -266,6 +266,8 @@ which allows one to remove segments as defined by overlapping:
 Once trimmed, the geometry will necessarily become one or more open paths:
 
 ![](<.gitbook/assets/image (116) (1).png>)
+
+It is frequently helpful to use this feature to create sections of geometry from multiple elements which may then be connected using the _Join Vectors_ command as discussed below.
 
 #### Geometric Interactions
 
