@@ -77,7 +77,7 @@ While subtraction simply reverses things:
 
 Scaling height when adding can be useful to ensure that a particular elevation will be achieved by a given object:
 
-![](<.gitbook/assets/image (123) (1).png>)
+![](<.gitbook/assets/image (123) (1) (1).png>)
 
 ![](<.gitbook/assets/image (125).png>)
 
@@ -93,7 +93,7 @@ Setting the Merge type to equal and the base height to where the top of the roun
 
 Similarly, one can subtract using the various modeling settings to arrive at:
 
-![](<.gitbook/assets/image (123).png>)
+![](<.gitbook/assets/image (123) (1).png>)
 
 ![](<.gitbook/assets/image (122) (1).png>)
 

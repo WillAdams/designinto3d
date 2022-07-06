@@ -53,7 +53,7 @@ Given the side profile of the joint, it is simple to then draw the geometry for 
 
 Draw in lines which will define where the V tooling will cut the miter:
 
-![](<.gitbook/assets/image (123) (1) (1) (1).png>)
+![](<.gitbook/assets/image (123) (1) (1) (1) (1).png>)
 
 A no-offset Contour toolpath may then be assigned:
 
@@ -104,7 +104,7 @@ Then draw in geometry which represents where the V endmills will be cut and dupl
 
 And union things&#x20;
 
-![](<.gitbook/assets/image (129).png>)
+![](<.gitbook/assets/image (129) (1).png>)
 
 Duplicate this geometry, drag it into alignment w/ the original, and union it w/ the geometry for the rabbet:
 

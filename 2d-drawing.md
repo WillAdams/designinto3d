@@ -305,7 +305,7 @@ allowing one to make asymmetrical designs which are not possible with Boolean op
 
 A further consideration is that the Trim Vectors command results in Curve objects which may be joined and which will not result in polylines:
 
-![](<.gitbook/assets/image (123) (1) (1).png>)
+![](<.gitbook/assets/image (123) (1) (1) (1).png>)
 
 #### Drawing Tutorials
 

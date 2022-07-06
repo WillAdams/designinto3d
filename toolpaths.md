@@ -68,6 +68,14 @@ If there is nested geometry, then the pocketing algorithm will alternate between
 
 ![](<.gitbook/assets/image (116) (1) (1) (1) (1).png>)
 
+One option for pocket toolpaths in some CAM programs is Rest machining to remove material which the endmill first used for a pocket cannot reach. Carbide Create Pro adds this:
+
+![](<.gitbook/assets/image (123).png>)
+
+Rest machining allows removing this by indicating the previous size tool used and selecting a smaller tool to cut those areas which cannot be reached:
+
+![](<.gitbook/assets/image (129).png>)
+
 ## Drill
 
 Drill toolpaths plunge the tool at the center of the selected geometry:
