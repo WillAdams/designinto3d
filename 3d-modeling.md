@@ -16,7 +16,7 @@ Switch to the Model tab and select geometry and then choose Add Shape:
 
 which affords an interface for adding or subtracting a 3D area based on the selected geometry. One technique is to add the entirety of the stock:
 
-![](<.gitbook/assets/image (122) (1).png>)
+![](<.gitbook/assets/image (122) (1) (1).png>)
 
 So a Flat shape which has a height equal to the stock thickness which is Added (and one uses geometry which is the width and depth of the stock to arrive at:
 
@@ -95,7 +95,7 @@ Similarly, one can subtract using the various modeling settings to arrive at:
 
 ![](<.gitbook/assets/image (123).png>)
 
-![](<.gitbook/assets/image (122).png>)
+![](<.gitbook/assets/image (122) (1).png>)
 
 ![](<.gitbook/assets/image (115).png>)
 

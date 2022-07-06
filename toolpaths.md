@@ -46,6 +46,10 @@ If cut with a ball-nosed endmill, a rounded groove may be achieved:
 
 ![](<.gitbook/assets/image (89).png>)
 
+One option for Contour Toolpaths is tabs. In Carbide Create v7 they may be added in the Design tab:
+
+![](<.gitbook/assets/image (122).png>)
+
 ## Pocket
 
 Pocket toolpaths allow cutting out the interior of geometry:
