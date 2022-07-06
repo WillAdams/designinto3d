@@ -53,7 +53,7 @@ Given the side profile of the joint, it is simple to then draw the geometry for 
 
 Draw in lines which will define where the V tooling will cut the miter:
 
-![](<.gitbook/assets/image (123) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (123) (1) (1) (1) (1) (1).png>)
 
 A no-offset Contour toolpath may then be assigned:
 
@@ -65,7 +65,7 @@ This may then be verified by checking the 3D preview:
 
 The joinery must be positioned relative to the bottom and/or lid which will require rabbets. Draw these in and then measure the remaining space:
 
-![](<.gitbook/assets/image (128) (1).png>)
+![](<.gitbook/assets/image (128) (1) (1).png>)
 
 Determine how many joint positions there will be and then do the math to determine how tall each pocket or island will be and draw one in. For most efficient cutting the height should be a bit less than twice the height of the endmill which will be used.
 
@@ -120,7 +120,7 @@ Then select the geometry which does not include the rabbet and create a toolpath
 
 Which previews as:
 
-![](<.gitbook/assets/image (137) (1) (1).png>)
+![](<.gitbook/assets/image (137) (1) (1) (1).png>)
 
 (The V endmill toolpath should be moved to the bottom of the list)
 
@@ -136,7 +136,7 @@ This same technique can be done in a 3D model:
 
 ![](<.gitbook/assets/image (121) (1) (1).png>)
 
-![](<.gitbook/assets/image (119) (1) (1).png>)
+![](<.gitbook/assets/image (119) (1) (1) (1).png>)
 
 Adding an option for laying out things so as to generate a DXF results in:
 
@@ -188,7 +188,7 @@ and then align it to the center of the channel:
 
 and assign a no offset Contour Toolpath to the Stock Depth:
 
-![](<.gitbook/assets/image (138) (1) (1).png>)
+![](<.gitbook/assets/image (138) (1) (1) (1).png>)
 
 Then make all other layers visible and merge together all the parts so as to make cuts to the rabbet depth, and then the depth of the joinery.&#x20;
 

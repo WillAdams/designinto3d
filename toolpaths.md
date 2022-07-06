@@ -48,13 +48,13 @@ If cut with a ball-nosed endmill, a rounded groove may be achieved:
 
 One option for Contour Toolpaths is tabs. In Carbide Create v7 they may be added in the Design tab:
 
-![](<.gitbook/assets/image (122).png>)
+![](<.gitbook/assets/image (122) (1).png>)
 
 ## Pocket
 
 Pocket toolpaths allow cutting out the interior of geometry:
 
-![](<.gitbook/assets/image (119) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (119) (1) (1) (1) (1) (1).png>)
 
 which will be a flat bottomed pocket with vertical walls if cut out with a square endmill.
 
@@ -70,7 +70,7 @@ If there is nested geometry, then the pocketing algorithm will alternate between
 
 One option for pocket toolpaths in some CAM programs is Rest machining to remove material which the endmill first used for a pocket cannot reach. Carbide Create Pro adds this:
 
-![](<.gitbook/assets/image (123).png>)
+![](<.gitbook/assets/image (123) (1).png>)
 
 Rest machining allows removing this by indicating the previous size tool used and selecting a smaller tool to cut those areas which cannot be reached:
 

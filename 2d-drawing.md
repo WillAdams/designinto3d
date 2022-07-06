@@ -125,6 +125,34 @@ Polygons may be adjusted for Radius (since only regular polygons are supported, 
 
 ![Carbide Create modifying Polygon parameters.](<.gitbook/assets/carbide\_create\_interface\_polygon\_parameters (4).png>)
 
+## Text
+
+Not geometry, but many drawing and CAD programs allow setting text. Carbide Create affords this:
+
+![](<.gitbook/assets/image (119).png>)
+
+![](<.gitbook/assets/image (138).png>)
+
+Text objects are limited to a single line in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) installed on the computer Carbide Create is running on, selecting Bold and or Italic, setting the Font Height, modifying the Spacing and setting the Alignment. Alignment is most useful when setting text on an Arc:
+
+![](<.gitbook/assets/image (122).png>)
+
+which as one checkbox to enable it, and another to move the text to the bottom:
+
+![](<.gitbook/assets/image (128).png>)
+
+and two controls, one which allows setting the center for the arc, the other for where the text is aligned against.
+
+## Measurements
+
+Some CAD and drawing programs include a measurement tool. Carbide Create adds one in v7:
+
+![](<.gitbook/assets/image (123).png>)
+
+Click on the two points which one wishes to measure to/from:
+
+![](<.gitbook/assets/image (137).png>)
+
 ## Transformations
 
 Geometry may be adjusted in a number of ways:
@@ -241,11 +269,11 @@ Off-path nodes may be dragged to reshape the sections of curves associated with 
 
 Version 633 of Carbide Create adds a Corner Tool:
 
-![](<.gitbook/assets/image (119) (1) (1) (1).png>)
+![](<.gitbook/assets/image (119) (1) (1) (1) (1).png>)
 
 which allows one to modify corners to have a specified radius:
 
-![](<.gitbook/assets/image (128) (1) (1).png>)
+![](<.gitbook/assets/image (128) (1) (1) (1).png>)
 
 only angles which will admit a portion of a circle of the specified radius will be eligible:
 
@@ -291,11 +319,11 @@ Circle:
 
 Rectangle:
 
-![](<.gitbook/assets/image (137) (1).png>)
+![](<.gitbook/assets/image (137) (1) (1).png>)
 
 while the Trim Vectors command allows one to trim the various vectors which overlap:
 
-![](<.gitbook/assets/image (119).png>)
+![](<.gitbook/assets/image (119) (1).png>)
 
 ![](<.gitbook/assets/image (140) (1).png>)
 
@@ -305,7 +333,7 @@ allowing one to make asymmetrical designs which are not possible with Boolean op
 
 A further consideration is that the Trim Vectors command results in Curve objects which may be joined and which will not result in polylines:
 
-![](<.gitbook/assets/image (123) (1) (1) (1).png>)
+![](<.gitbook/assets/image (123) (1) (1) (1) (1).png>)
 
 #### Drawing Tutorials
 
@@ -366,7 +394,7 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 #### Linear Arrays
 
-![](<.gitbook/assets/image (122) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (122) (1) (1) (1) (1) (1).png>)
 
 ![](<.gitbook/assets/image (118) (1) (1) (1) (1).png>)
 

@@ -8,7 +8,7 @@ The optional Pro mode affords 3D modeling. The interface for this is quite strai
 
 First, one has to have geometry which can be used as the basis for a 3D model --- the 2D geometry will define the edges of what will be modeled:
 
-![](<.gitbook/assets/image (128).png>)
+![](<.gitbook/assets/image (128) (1).png>)
 
 Switch to the Model tab and select geometry and then choose Add Shape:
 
@@ -16,11 +16,11 @@ Switch to the Model tab and select geometry and then choose Add Shape:
 
 which affords an interface for adding or subtracting a 3D area based on the selected geometry. One technique is to add the entirety of the stock:
 
-![](<.gitbook/assets/image (122) (1) (1).png>)
+![](<.gitbook/assets/image (122) (1) (1) (1).png>)
 
 So a Flat shape which has a height equal to the stock thickness which is Added (and one uses geometry which is the width and depth of the stock to arrive at:
 
-![](<.gitbook/assets/image (138).png>)
+![](<.gitbook/assets/image (138) (1).png>)
 
 Alternately, one can add only a median thickness which will afford a bit more flexibility, esp. if the design is to modeled proud of the surface:
 
@@ -71,13 +71,13 @@ Adding at an angle will attempt to angle the geometry up towards the specified h
 
 While subtraction simply reverses things:
 
-![](<.gitbook/assets/image (137).png>)
+![](<.gitbook/assets/image (137) (1).png>)
 
 ![](<.gitbook/assets/image (141).png>)
 
 Scaling height when adding can be useful to ensure that a particular elevation will be achieved by a given object:
 
-![](<.gitbook/assets/image (123) (1) (1).png>)
+![](<.gitbook/assets/image (123) (1) (1) (1).png>)
 
 ![](<.gitbook/assets/image (125).png>)
 
@@ -93,9 +93,9 @@ Setting the Merge type to equal and the base height to where the top of the roun
 
 Similarly, one can subtract using the various modeling settings to arrive at:
 
-![](<.gitbook/assets/image (123) (1).png>)
+![](<.gitbook/assets/image (123) (1) (1).png>)
 
-![](<.gitbook/assets/image (122) (1).png>)
+![](<.gitbook/assets/image (122) (1) (1).png>)
 
 ![](<.gitbook/assets/image (115).png>)
 
