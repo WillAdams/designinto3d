@@ -77,7 +77,7 @@ add dogbones which are as small as is possible --- if necessary, use a second en
 
 Then use the Linear Array tool to duplicate as necessary:
 
-![](<.gitbook/assets/image (114) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1).png>)
 
 and adjust the settings to get two alternating columns:
 
@@ -92,7 +92,7 @@ and adjust the settings to get two alternating columns:
 
 Repeat for the others:
 
-![](<.gitbook/assets/image (125) (1).png>)
+![](<.gitbook/assets/image (125) (1) (1).png>)
 
 Extend the geometry which is at the top:
 
@@ -132,7 +132,7 @@ If the endmill used for the main pocketing won't cut the dogbones, add an inside
 
 This same technique can be done in a 3D model:
 
-![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1).png>)
 
 ![](<.gitbook/assets/image (121) (1) (1).png>)
 

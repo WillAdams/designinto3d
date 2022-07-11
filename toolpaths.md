@@ -60,7 +60,7 @@ which will be a flat bottomed pocket with vertical walls if cut out with a squar
 
 If one uses a ball-nosed endmill, the edges will be rounded, the bottom will be scalloped, and there may be artifacts left behind:
 
-![](<.gitbook/assets/image (114) (1) (1) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1) (1) (1).png>)
 
 If there is nested geometry, then the pocketing algorithm will alternate between cutting and not cutting, leaving islands:
 

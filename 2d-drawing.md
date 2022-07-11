@@ -379,7 +379,7 @@ Carbide Create supports layers since version 521. Available under Edit | Show La
 
 it then affords the ability to create and name layers, as well as to color-code them:
 
-![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1).png>)
 
 and to move objects to specific layers and to hide/show, or lock/unlock layers.
 
@@ -398,15 +398,15 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 ![](<.gitbook/assets/image (118) (1) (1) (1) (1).png>)
 
-Circular Arrays
+#### Circular Arrays
 
-![](<.gitbook/assets/image (125) (1) (1).png>)
+![](<.gitbook/assets/image (125) (1) (1) (1).png>)
 
 ![](<.gitbook/assets/image (121) (1) (1) (1) (1).png>)
 
 Circular Arrays afford a number of options, and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 copies:
 
-![](<.gitbook/assets/image (114) (1) (1).png>)
+![](<.gitbook/assets/image (114) (1) (1) (1).png>)
 
 and then drawing multiple overlapping polylines using the tips of the rotated triangles which defines the star shape:
 
@@ -415,6 +415,16 @@ and then drawing multiple overlapping polylines using the tips of the rotated tr
 and Boolean unioning them:
 
 ![](<.gitbook/assets/image (127) (1) (1).png>)
+
+### File Notes
+
+Carbide Create 7 adds the feature of adding notes to a file:
+
+![](<.gitbook/assets/image (114).png>)
+
+Such notes may have the option of always showing when the file is opened as a reminder:
+
+![](<.gitbook/assets/image (125).png>)
 
 ## Geometry
 

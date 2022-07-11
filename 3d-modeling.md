@@ -79,7 +79,7 @@ Scaling height when adding can be useful to ensure that a particular elevation w
 
 ![](<.gitbook/assets/image (123) (1) (1) (1).png>)
 
-![](<.gitbook/assets/image (125).png>)
+![](<.gitbook/assets/image (125) (1).png>)
 
 Geometry may be modeled in 3D on top of existing objects:
 
@@ -89,7 +89,7 @@ Geometry may be modeled in 3D on top of existing objects:
 
 Setting the Merge type to equal and the base height to where the top of the rounded form reaches will result in there being a level base for the text to be modeled from so that it isn't wrapped around the rounded form:
 
-![](<.gitbook/assets/image (114).png>)
+![](<.gitbook/assets/image (114) (1).png>)
 
 Similarly, one can subtract using the various modeling settings to arrive at:
 
