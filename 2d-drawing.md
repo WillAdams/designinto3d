@@ -26,19 +26,19 @@ clicking at the beginning (as well as if desired intermediary) and end points:
 
 ![Carbide Create drawing line with Polyline tool.](<.gitbook/assets/carbide\_create\_interface\_create\_polyline (1).png>)
 
-and then clicking on **Done**. Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange (for objects on the current layer), and if there are more than one element/group selected, the most recently added will be considered the Key Object which will be indicated by being drawn with a dashed highlight.
+and then clicking on **Done** (without returning to the first point). Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange (for objects on the current layer), and if there are more than one element/group selected, the most recently added will be considered the Key Object which will be indicated by being drawn with a dashed highlight.
 
-Open polylines (or curves, see below) are not typically used in Carbide Create, instead one will usually re-work closed paths so that they have suitable geometry. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve** tool section below.
+Open polylines (or curves, see below) have limited functionality in Carbide Create, since they may only be used with Contour toolpaths. Usually one will work with closed paths, since they define regions which one may then assign toolpaths to. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve** tool section below.
 
 Lines will be used to define Rectangles (which may be squares) and regular Polygons as described below.
 
 ## Arcs
 
-Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles and geometry based on circles (segments and so forth), as fillets when rounding the corners of a rectangle (see below), or drawn using the **Curve** tool (see below), though since they are represented as either curves or polylines will necessarily be approximations of an actual arc.
+Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles and geometry based on circles (segments and so forth), as fillets when rounding the corners of a rectangle (see below), or drawn using the **Curve** tool (see below), though since they are represented as either curves or polylines will necessarily be approximations of an actual arc of a circle.
 
 ## Polylines
 
-Polylines are made up of multiple points describing lines and are differentiated by being open or closed. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created, and if it has been edited. For example, a square may have corner options if drawn using the **Rectangle** tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular **Polygon** tool, may be changed into another polygon or resized proportionally, and if drawn using the **Polyline** or **Curve** tool may only be resized proportionally or node-edited (which are possible with the other creation options).
+Polylines are made up of multiple points describing lines and may either be open or closed as noted above. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created (so long as it has not been edited). For example, a square may have corner options if drawn using the **Rectangle** tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular **Polygon** tool, may be changed into another polygon or resized proportionally, and if drawn using the **Polyline** or **Curve** tool may only be resized proportionally or node-edited (which are possible with the other creation options).
 
 ### Open Paths
 
@@ -62,7 +62,7 @@ Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](htt
 
 Note that the **Done** button allows one to cancel out of the circle drawing mode.
 
-In Carbide Create, circles are defined as four Bézier curves (as opposed to using arcs) which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for machining purposes. Researching the math involved in this differentiation is left as an exercise for the interested reader.
+In Carbide Create, circles are defined as four Bézier curves (as opposed to using arcs) which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for practical purposes. Researching the math involved in this differentiation is left as an exercise for the interested reader.
 
 Note that in build 527 Carbide Create gained a feature for adding circles which are within a certain size range to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)&#x20;
 
@@ -91,6 +91,16 @@ Once drawn, they may be adjusted in their dimensions, and for their number of si
 ### Parameters
 
 Once shapes have been drawn, they may be selected and changed or modified. The most basic change is simply modifying their dimensions, but other properties and features may be available.
+
+#### A Note on Dimensions
+
+In Carbide Create, either inches or millimeters may be selected as the unit for measurement under Job Setup.
+
+In v7, it becomes possible to enter dimensions as calculations, so typing 2\*2= will result in the dimension being set to 4 using the current units.
+
+It is also possible to enter dimensions in terms of the unit, so if in metric mode, typing 1in= will result in the dimension being set to 25.4mm, while in Imperial (inches) mode, typing 25.4mm= will result in the dimension being set to 1in.
+
+It is also possible to reference the current stock thickness. This may be done using an expression which is evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing t will leave the dimension set thus, and will dynamically update the dimension when stock thickness is changed. Expressions may also be used thus, so half the thickness may be referenced using t/2.
 
 #### Circle Parameters
 
@@ -133,15 +143,15 @@ Not geometry, but many drawing and CAD programs allow setting text. Carbide Crea
 
 ![](<.gitbook/assets/image (138).png>)
 
-Text objects are limited to a single line in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) installed on the computer Carbide Create is running on, selecting Bold and or Italic, setting the Font Height, modifying the Spacing and setting the Alignment. Alignment is most useful when setting text on an Arc:
+Text objects are limited to a single line in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) installed on the computer Carbide Create is running on, selecting Bold and or Italic (which will be applied if the appropriate font variation is installed on the system), setting the Font Height, modifying the Spacing and setting the Alignment. Alignment is most useful when setting text on an Arc:
 
 ![](<.gitbook/assets/image (122).png>)
 
-which as one checkbox to enable it, and another to move the text to the bottom:
+which has one checkbox to enable it, and another to move the text to the bottom:
 
 ![](<.gitbook/assets/image (128).png>)
 
-and two controls, one which allows setting the center for the arc, the other for where the text is aligned against.
+and two controls, one which allows setting the center for the arc, the other for where the text is aligned against. Using the shift key when dragging will move both controls in unison.
 
 ## Measurements
 
@@ -152,6 +162,10 @@ Some CAD and drawing programs include a measurement tool. Carbide Create adds on
 Click on the two points which one wishes to measure to/from:
 
 ![](<.gitbook/assets/image (137).png>)
+
+and the coordinates of the two points, the distance between them, and the angle between them will be displayed.
+
+As an alternative to this, a line may be drawn, and when selected will afford the size and the X- and Y-axes.
 
 ## Transformations
 
@@ -260,8 +274,8 @@ When in Node Edit Mode it is possible to:
 
 * add an on-path node by right-clicking on a part of the path which does not have nodes and choosing _Insert Node_
 * delete an on-path node (when it is selected) by right-clicking and choosing _Delete Node_ — keyboard shortcut _d_ for the currently selected node(s)
-* toggle a node from smooth to sharp and vice-versa by right-clicking and choosing _Toggle Smooth_ — keyboard shortcut _s_ for the currently selected node(s)
-* convert a closed path to an open one by right-clicking and choosing _Cut Vector_
+* toggle one or more nodes from smooth to sharp and vice-versa by selecting and then right-clicking and choosing _Toggle Smooth_ or using the keyboard shortcut _s_ for the currently selected node(s)
+* cut open a path (which will convert a closed path to an open one) by right-clicking and choosing _Cut Vector_
 
 Off-path nodes may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
 
@@ -351,7 +365,7 @@ Download and place the image below on the background scaled as before:
 
 ![](.gitbook/assets/cc\_ellipse.png)
 
-Select the path and go into **Node Edit** Mode and right-click on each node and select "Toggle Smooth" (or press the "s" key) and drag the off-curve nodes to match the positioning of the background image.
+Select the path and go into **Node Edit** Mode and right-click on each node and select "Toggle Smooth" (or press the _s_ key) and drag the off-curve nodes to match the positioning of the background image.
 
 The following additional drawing tutorials are available:
 
@@ -375,7 +389,7 @@ Carbide Create supports layers since version 521. Available under Edit | Show La
 
 ![](<.gitbook/assets/image (113) (1) (1) (1) (1).png>)
 
-(or using the keyboard shortcut **L**)
+(or using the keyboard shortcut _l_)
 
 it then affords the ability to create and name layers, as well as to color-code them:
 
@@ -497,4 +511,4 @@ For further information on Carbide Create please see:
 
 ## Third Dimensional Shapes
 
-Extending all of these into 3 dimensions becomes more complex with each additional element, each of which complicates the mathematics. Up through arcs and regular curves, these are usually manageable, as is expressed in constructive solid geometry (CSG), and OpenSCAD (and its Blockly derivative BlockSCAD) is essentially a scripting front-end for this. Extending arbitrary curves into 3 dimensional space involves complex geometric calculations which are the domain of 3 dimensional modeling tools such as Blender and various commercial programs. Fortunately, the regular polygons and extruded shapes of CSG afford one a very wide array of design options.
+Extending all of these into 3 dimensions becomes more complex with each additional element, each of which complicates the mathematics. Up through arcs and regular curves, these are usually manageable, as is expressed in constructive solid geometry (CSG), and OpenSCAD (and its Blockly derivative BlockSCAD, or fork RapCAD) is essentially a scripting front-end for this. Extending arbitrary curves into 3 dimensional space involves complex geometric calculations which are the domain of 3 dimensional modeling tools such as Blender and various commercial programs. Fortunately, the regular polygons and extruded shapes of CSG afford one a very wide array of design options.
