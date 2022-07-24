@@ -35,4 +35,4 @@ There are 3 approaches for cutting joinery on a CNC:
 * boards arranged at various angles via fixtures ― one example was the commercial program AnyTail which used a 15 degree fixture so that a 30 degree V endmill could make a 90 degree cut at the end of the board and various features which would line up
 * boards (or sheet goods) flat on the machine&#x20;
 
-Since joints using vertical fixtures are simply a reprise of traditional work and mechanically simpler, they will be explored briefly in a following chapter, but it is the latter two techniques which will be focused on in the balance of the book.
+Since joints using vertical fixtures are simply a reprise of traditional work and mechanically simpler, they will be explored briefly in a following chapter, but it is the latter technique which will be focused on in the balance of the book.
