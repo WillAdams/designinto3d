@@ -20,7 +20,18 @@ The following toolpaths are either for decorative use or for Carbide Create Pro 
 * 3D Rough (Pro only)
 * 3D Finish (Pro only)
 
-Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V endmills will be used for V carving or chamfering or cutting at a precise angle as for certain types of joinery.
+Carbide Create Pro also adds the option of Rest machining for Pockets.
+
+The following toolpaths which Carbide Create supports will be discussed here:
+
+* Contour
+* Pocket
+* Drill
+* VCarve
+* Advanced VCarve
+* Keyhole
+
+Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V endmills will be used for V carving or chamfering or cutting at a precise angle as for certain types of joinery. Keyhole toolpaths require the use of specialty keyhole cutters which cut wider at the bottom than their shaft. Surfacing toolpaths such as the McFly are used to flatten stock or the spoilboard.
 
 Note that in Carbide Create, dimensions may be entered using math expressions (which may contain units indicated by in or mm) which are evaluated by entering = at the end, so 1in+8mm= will result in a dimension of either 1.3150in or 33.400mm depending on the current unit. The variable _t_ may be used to reference the current stock thickness, and the expression may be left as an expression by entering it without adding the = at the end, so t/2 will result in half the current stock thickness being used.
 
@@ -51,6 +62,8 @@ If cut with a ball-nosed endmill, a rounded groove may be achieved:
 One option for Contour Toolpaths is tabs. In Carbide Create v7 they may be added in the Design tab:
 
 ![](<.gitbook/assets/image (122) (1).png>)
+
+then the tabs may be instantiated in the Contour Toolpath setting.
 
 ## Pocket
 
@@ -92,7 +105,7 @@ A notable use for a V-endmill when drilling is to chamfer a small hole.
 
 ## VCarve (and Advanced VCarve)
 
-V carving toolpaths may be assigned to closed geometry, and as noted above, will cut either along the center (normal V carving), or along the perimeter (Advanced V carving), to either the depth required, or the max depth which is set.
+V carving toolpaths may be assigned to closed geometry, and as noted above, will cut either along the center (normal V carving), or along the perimeter (Advanced V carving), to either the depth required, or the max depth which is set. Advanced VCarving adds the option of pocket clearing w/ a different endmill.
 
 If one limits the depth on a normal V carve, one can achieve special effects such as changing a square:
 
@@ -101,3 +114,7 @@ If one limits the depth on a normal V carve, one can achieve special effects suc
 into a diamond:
 
 ![](<.gitbook/assets/image (113) (1).png>)
+
+## Keyhole
+
+Keyhole toolpaths as noted above, require the use of a special tool, and are not previewed in 3D, since that would require undercuts which the 3D preview does not support.
