@@ -16,7 +16,7 @@ It is simultaneously:
 * a website: [https://designinto3d.com/](https://designinto3d.com/)
 * a design philosophy
 
-The design philosophy touches on the idea that fundamentally there are only two types of furniture:
+The design philosophy touches on the idea that fundamentally there are only two types of furniture (and arguably functional objects):
 
 * platforms
 * boxes
@@ -34,7 +34,7 @@ There are several possible approaches for making designs from BlockSCAD/OpenSCAD
 * directly export the 3D design as an STL which may then have toolpaths made using a 3D CAM tool such as MeshCAM or pyCAM
 * import the OpenSCAD file into FreeCAD and use the Path Workbench to create G-Code
 * exporting the parameters from the customizer as a preset in a JSON file (which is stored in the same directory as the OpenSCAD source file) the JSON may then be loaded into a program developed using a second language which generates a design using those parameters ― eventually for cutting, or toolpaths without further user intervention. As an example, the initial implementation of this from the afore-mentioned paper in _TUGboat_ uses [METAPOST](https://wiki.shapeoko.com/index.php/METAPOST) via the library embedded in [LuaTeX](http://luatex.org/) and importing the JSON file using the [Lua scripting language](http://www.lua.org/)
-* from within OpenSCAD (or some other programming/modeling tool) develop the design so that toolpaths are modeled and the coordinate information may be exported as G-Code commands ― RapCAD (a fork of OpenSCAD) gained the ability to write out files in v1.0.2, see: [https://forum.makerforums.info/t/g-code-preview-using-openscad-rapcad/85729](https://forum.makerforums.info/t/g-code-preview-using-openscad-rapcad/85729/10)
+* from within OpenSCAD (or some other programming/modeling tool) develop the design so that toolpaths are modeled and the coordinate information may be exported as G-Code commands&#x20;
 
 The first and last two options will be explored in the course of this text.
 
