@@ -16,7 +16,7 @@ One of the oldest of woodworking joints however is the rabbeted joint which fort
 
 {% embed url="https://www.youtube.com/watch?v=V93xDM3lXsM" %}
 
-which is detailed at: [https://www.shapeoko.com/wiki/index.php/Carbide\_Create:\_A\_Simple\_CNC\_Box](https://www.shapeoko.com/wiki/index.php/Carbide\_Create:\_A\_Simple\_CNC\_Box) and discussed at: [https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530](https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530). Note that there is a generator for a very simple rabbeted box available at: [http://chaunax.github.io/projects/twhl-box/twhl.html](http://chaunax.github.io/projects/twhl-box/twhl.html) (which creates files for older versions of Carbide Create) which has an OpenSCAD front-end at: [https://www.thingiverse.com/thing:3575705](https://www.thingiverse.com/thing:3575705).
+which is discussed at: [https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530](https://community.carbide3d.com/t/a-simple-cnc-box-in-depth/7530).&#x20;
 
 A rabbeted joint has the following advantages over a simple butt joint:
 
@@ -25,10 +25,10 @@ A rabbeted joint has the following advantages over a simple butt joint:
 
 Since it is cut at right angles, it is easily machined into stock which is laying flat on the machine bed, and it affords two options for orientation:
 
-* use a larger endmill (easing machining) and depend on adhesives to secure the bottom and have a lid which lifts off (this is the technique used in the generator mentioned above)
+* use a larger endmill (easing machining) and depend on adhesives to secure the bottom and have a lid which lifts off
 * use a smaller endmill and machine grooves trapping the lid and bottom (which is the technique used in the video linked above and which will be detailed in this chapter)
 
-Other hybrid options are possible, and a style which uses butt joints for the parts, and grooves (which are visible) for the lid and bottom is popular for inexpensive packaging.&#x20;
+Other hybrid options are possible, and a style which uses butt joints for the ends and sides, and grooves (which are visible) for the lid and bottom is popular for inexpensive packaging.&#x20;
 
 ### Dimensions
 
