@@ -141,7 +141,7 @@ Not geometry, but many drawing and CAD programs allow setting text. Carbide Crea
 
 ![](<.gitbook/assets/image (119).png>)
 
-![](<.gitbook/assets/image (138).png>)
+![](<.gitbook/assets/image (138) (1).png>)
 
 Text objects are limited to a single line in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) installed on the computer Carbide Create is running on, selecting Bold and or Italic (which will be applied if the appropriate font variation is installed on the system), setting the Font Height, modifying the Spacing and setting the Alignment. Alignment is most useful when setting text on an Arc:
 
@@ -439,6 +439,14 @@ Carbide Create 7 adds the feature of adding notes to a file:
 Such notes may have the option of always showing when the file is opened as a reminder:
 
 ![](<.gitbook/assets/image (125).png>)
+
+### Tabs
+
+Carbide Create 7 moves Tabs to the Design pane:
+
+![](<.gitbook/assets/image (138).png>)
+
+which may then be instantiated in the Toolpath pane.
 
 ## Geometry
 

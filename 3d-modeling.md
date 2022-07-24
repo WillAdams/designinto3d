@@ -20,7 +20,7 @@ which affords an interface for adding or subtracting a 3D area based on the sele
 
 So a Flat shape which has a height equal to the stock thickness which is Added (and one uses geometry which is the width and depth of the stock to arrive at:
 
-![](<.gitbook/assets/image (138) (1).png>)
+![](<.gitbook/assets/image (138) (1) (1).png>)
 
 Alternately, one can add only a median thickness which will afford a bit more flexibility, esp. if the design is to modeled proud of the surface:
 
