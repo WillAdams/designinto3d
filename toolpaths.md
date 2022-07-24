@@ -22,6 +22,8 @@ The following toolpaths are either for decorative use or for Carbide Create Pro 
 
 Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V endmills will be used for V carving or chamfering or cutting at a precise angle as for certain types of joinery.
 
+Note that in Carbide Create, dimensions may be entered using math expressions (which may contain units indicated by in or mm) which are evaluated by entering = at the end, so 1in+8mm= will result in a dimension of either 1.3150in or 33.400mm depending on the current unit. The variable _t_ may be used to reference the current stock thickness, and the expression may be left as an expression by entering it without adding the = at the end, so t/2 will result in half the current stock thickness being used.
+
 ## Contour
 
 Contour toolpaths follow along a drawn element of geometry, and will be aligned relatively along it based on path orientation/direction which will determine the Offset Direction:
