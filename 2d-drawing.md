@@ -143,7 +143,11 @@ Not geometry, but many drawing and CAD programs allow setting text. Carbide Crea
 
 ![](<.gitbook/assets/image (138) (1).png>)
 
-Text objects are limited to a single line in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) installed on the computer Carbide Create is running on, selecting Bold and or Italic (which will be applied if the appropriate font variation is installed on the system), setting the Font Height, modifying the Spacing and setting the Alignment. Alignment is most useful when setting text on an Arc:
+Text objects are limited to a single line in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) installed on the computer Carbide Create is running on, selecting Bold and or Italic (which will be applied if the appropriate font variation is installed on the system), setting the Font Height, modifying the Spacing and setting the Alignment.&#x20;
+
+It is also possible to convert text to curves using the button, "Convert to Curves" --- once converted to curves, the underlying geometry may be used.
+
+Another option is to set the text on an arc, rather than all in a straight line. When doing so, alignment may be used to control where on the arc the text will appear:
 
 ![](<.gitbook/assets/image (122).png>)
 
@@ -516,6 +520,34 @@ For further information on Carbide Create please see:
 ![](.gitbook/assets/carbide3d\_create\_motion\_keyboard\_shortcuts.png)
 
 * [https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839)
+* [https://carbide3d.com/blog/carbide-create-v7/](https://carbide3d.com/blog/carbide-create-v7/)
+* [https://carbide3d.com/blog/carbide-create-v6-done/](https://carbide3d.com/blog/carbide-create-v6-done/)
+* [https://carbide3d.com/blog/carbide-create-v6-is-almost-ready/](https://carbide3d.com/blog/carbide-create-v6-is-almost-ready/)
+* [https://carbide3d.com/blog/merging-script-fonts-in-carbide-create/](https://carbide3d.com/blog/merging-script-fonts-in-carbide-create/)
+* [https://carbide3d.com/blog/carbide-create-v6/](https://carbide3d.com/blog/carbide-create-v6/)
+* [https://carbide3d.com/blog/carbide-create-527/](https://carbide3d.com/blog/carbide-create-527/)
+* [https://carbide3d.com/blog/layers-in-carbide-create/](https://carbide3d.com/blog/layers-in-carbide-create/)
+* [https://carbide3d.com/blog/carbide-create-413-released/](https://carbide3d.com/blog/carbide-create-413-released/)
+* [https://carbide3d.com/blog/carbide-create-400/](https://carbide3d.com/blog/carbide-create-400/)
+* [https://carbide3d.com/blog/carbide-create-316/](https://carbide3d.com/blog/carbide-create-316/)
+* [https://carbide3d.com/blog/carbide-create-315/](https://carbide3d.com/blog/carbide-create-315/)
+* [https://carbide3d.com/blog/carbide-create-311/](https://carbide3d.com/blog/carbide-create-311/)
+* [https://carbide3d.com/blog/carbide-create-310/](https://carbide3d.com/blog/carbide-create-310/)
+* [https://carbide3d.com/blog/carbide-create-308/](https://carbide3d.com/blog/carbide-create-308/)
+* [https://carbide3d.com/blog/carbide-create-307/](https://carbide3d.com/blog/carbide-create-307/)
+* [https://carbide3d.com/blog/carbide-create-306/](https://carbide3d.com/blog/carbide-create-306/)
+* [https://carbide3d.com/blog/carbide-create-305/](https://carbide3d.com/blog/carbide-create-305/)
+* [https://carbide3d.com/blog/carbide-create-304/](https://carbide3d.com/blog/carbide-create-304/)
+* [https://carbide3d.com/blog/carbide-create-303/](https://carbide3d.com/blog/carbide-create-303/)
+* [https://carbide3d.com/blog/carbide-create-302/](https://carbide3d.com/blog/carbide-create-302/)
+* [https://carbide3d.com/blog/carbide-create-301/](https://carbide3d.com/blog/carbide-create-301/)
+* [https://carbide3d.com/blog/carbide-create-290/](https://carbide3d.com/blog/carbide-create-290/)
+* [https://carbide3d.com/blog/carbide-create-build-289/](https://carbide3d.com/blog/carbide-create-build-289/)
+* [https://carbide3d.com/blog/carbide-create-289/](https://carbide3d.com/blog/carbide-create-289/)
+* [https://carbide3d.com/blog/big-carbide-create-update/](https://carbide3d.com/blog/big-carbide-create-update/)
+* [https://carbide3d.com/blog/Carbide-Create-Now-With-V-Carving/](https://carbide3d.com/blog/Carbide-Create-Now-With-V-Carving/)
+
+
 
 ## Third Dimensional Shapes
 
