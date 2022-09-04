@@ -6,6 +6,7 @@
 * [3D Project](3d-project.md)
 * [Prototypes and Designs](prototypes-and-designs.md)
 * [Toolpaths](toolpaths.md)
+* [Mitered Box](mitered-box.md)
 * [Box (Finger) Joints](fingerjoints.md)
 * [Radiused Box joints](radiused-fingerjoints.md)
 * [Blind Miter & Hidden Spline](blind-miter-and-hidden-spline.md)
