@@ -278,10 +278,10 @@ When in Node Edit Mode it is possible to:
 
 * add an on-path node by right-clicking on a part of the path which does not have nodes and choosing _Insert Node_
 * delete an on-path node (when it is selected) by right-clicking and choosing _Delete Node_ — keyboard shortcut _d_ for the currently selected node(s)
-* toggle one or more nodes from smooth to sharp and vice-versa by selecting and then right-clicking and choosing _Toggle Smooth_ or using the keyboard shortcut _s_ for the currently selected node(s)
+* toggle one or more nodes from smooth (indicated by an open circle) to sharp (indicated by a square) and vice-versa by selecting and then right-clicking and choosing _Toggle Smooth_ or using the keyboard shortcut _s_ for the currently selected node(s)
 * cut open a path (which will convert a closed path to an open one) by right-clicking and choosing _Cut Vector_
 
-Off-path nodes may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
+Off-path nodes (indicated by small filled circles) may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
 
 #### Corner Tool
 
