@@ -26,7 +26,7 @@ with more complicated pieces incorporating both structures, and that any object 
 * its design
 * its dimensions
 
-Currently it uses [BlockSCAD](https://www.blockscad3d.com/) and [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD) as a 3D modeling front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) in OpenSCAD which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518)&#x20;
+Currently it uses [BlockSCAD](https://www.blockscad3d.com/) and [OpenSCAD Graph Editor ](https://github.com/derkork/openscad-graph-editor)as front-ends to [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD), a 3D modeling tool which can then afford a comfortable front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) in OpenSCAD which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518)&#x20;
 
 There are several possible approaches for making designs from BlockSCAD/OpenSCAD:
 
@@ -38,7 +38,7 @@ There are several possible approaches for making designs from BlockSCAD/OpenSCAD
 
 The first and last two options will be explored in the course of this text.
 
-An alternative which is worth exploring is working up a program in a general-purpose programming language and writing out in parallel both .scad code for a 3D model as a preview, and G-Code for actually cutting out the parts:
+An alternative which is worth exploring is working up a program in a general-purpose programming language and writing out in parallel both .scad code for a 3D model as a preview, and G-Code for actually cutting out the parts. Two examples of this approach are:
 
 * LiveCode: [https://community.carbide3d.com/t/previewing-g-code-using-openscad/35153/12](https://community.carbide3d.com/t/previewing-g-code-using-openscad/35153/12)
 * Python: [https://community.carbide3d.com/t/previewing-g-code-using-openscad/35153/27](https://community.carbide3d.com/t/previewing-g-code-using-openscad/35153/27)
