@@ -37,7 +37,7 @@ Only two toolpaths are necessary, a no-offset Contour with a V endmill:
 
 <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-(which is done to stock thickness (t) less an onion skin (0.015"))
+(which is done to stock thickness (t) less an onion skin (0.015″))
 
 and pockets to cut the parts free:
 
@@ -46,3 +46,7 @@ and pockets to cut the parts free:
 As the 3D preview shows, workholding may be done at the corners, depending on the onion-skin of the V endmill cut to hold things in place:
 
 <figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+For a 3D model and preview option, see:
+
+[https://forum.makerforums.info/t/openscad-graph-editor/85973](https://forum.makerforums.info/t/openscad-graph-editor/85973)
