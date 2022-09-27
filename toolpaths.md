@@ -33,13 +33,13 @@ The following toolpaths which Carbide Create supports will be discussed here:
 
 Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V endmills will be used for V carving or chamfering or cutting at a precise angle as for certain types of joinery. Keyhole toolpaths require the use of specialty keyhole cutters which cut wider at the bottom than their shaft. Surfacing toolpaths such as the McFly are used to flatten stock or the spoilboard.
 
-Note that in Carbide Create, dimensions may be entered using math expressions (which may contain units indicated by in or mm) which are evaluated by entering = at the end, so 1in+8mm= will result in a dimension of either 1.3150in or 33.400mm depending on the current unit. The variable _t_ may be used to reference the current stock thickness, and the expression may be left as an expression by entering it without adding the = at the end, so t/2 will result in half the current stock thickness being used.
+Note that in Carbide Create, dimensions may be entered using math expressions (which may contain units indicated by in or mm) which are evaluated by entering = at the end, so 1in+8mm= will result in a dimension of either 1.3150in or 33.400mm depending on the current unit. The variable _t_ may be used to reference the current stock thickness, and the expression may be left as an expression by entering it without adding the = at the end, so t/2 will result in half the current stock thickness being used, and will update dynamically when the stock thickness is changed.
 
 Carbide Create v7 adds the option of associating a Toolpath with the content of a selected layer.
 
 ## Contour
 
-Contour toolpaths follow along a drawn element of geometry, and will be aligned relatively along it based on path orientation/direction which will determine the Offset Direction:
+Contour toolpaths follow along one or more drawn element(s) of geometry, and will be aligned relatively along based on path orientation/direction which will determine the Offset Direction:
 
 * Inside / Left
 * No Offset (directly along the path)
@@ -89,7 +89,7 @@ One option for pocket toolpaths in some CAM programs is Rest machining to remove
 
 ![](<.gitbook/assets/image (123) (1).png>)
 
-Rest machining allows removing this by indicating the previous size tool used and selecting a smaller tool to cut those areas which cannot be reached:
+Rest machining allows removing uncut material where a larger endmill cannot reach by indicating the previous size tool used and selecting a smaller tool to cut those areas which were not previously cut away:
 
 ![](<.gitbook/assets/image (129).png>)
 
@@ -107,7 +107,7 @@ A notable use for a V-endmill when drilling is to chamfer a small hole.
 
 ## VCarve (and Advanced VCarve)
 
-V carving toolpaths may be assigned to closed geometry, and as noted above, will cut either along the center (normal V carving), or along the perimeter (Advanced V carving), to either the depth required, or the max depth which is set. Advanced VCarving adds the option of pocket clearing w/ a different endmill.
+V carving toolpaths may be assigned to closed geometry, and as noted above, will cut either along the center (normal V carving), or along the perimeter (Advanced V carving), to either the depth required, or the max depth which is set. Advanced VCarving adds the option of pocket clearing to the depth set w/ a different endmill.
 
 If one limits the depth on a normal V carve, one can achieve special effects such as changing a square:
 
