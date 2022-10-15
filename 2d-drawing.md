@@ -509,6 +509,10 @@ Projects involving circles are usually calculated in terms of chords, radius, an
 
 ![Formulae for calculating radius, length or chord, and height of chord segment.](.gitbook/assets/circle-chord.png)
 
+Websites for this sort of thing:
+
+[https://www.mathportal.org/calculators/plane-geometry-calculators/right-triangle-calculator.php](https://www.mathportal.org/calculators/plane-geometry-calculators/right-triangle-calculator.php)
+
 ## Resources
 
 For further information on Carbide Create please see:
