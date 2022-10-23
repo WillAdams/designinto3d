@@ -120,3 +120,25 @@ into a diamond:
 ## Keyhole
 
 Keyhole toolpaths as noted above, require the use of a special tool, and are not previewed in 3D, since that would require undercuts which the 3D preview does not support.
+
+## Organization
+
+Carbide Create affords the option of organizing toolpaths into groups --- this is done using a contextual right-click menu:
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Groups may be:
+
+* Disabled/Enabled
+* Deleted
+* Moved up/down
+* Renamed
+
+and there is a menu entry for creating new groups.
+
+Groups may be used to:
+
+* organize toolpaths by tool&#x20;
+* separate toolpaths for two-sided cutting
+* separate toolpaths for tiling
+* separate toolpaths for individual parts

@@ -72,11 +72,11 @@ And then Boolean union:
 
 For the sides we can recycle the remaining rectangles by setting them to the same thickness and aligning them with the base and recreating the inset and Boolean unioning the parts:
 
-![Carbide Create: Radiused box joints: 3" x 3" x 3": Bottom Box Joints for Sides](.gitbook/assets/image.png)
+![Carbide Create: Radiused box joints: 3" x 3" x 3": Bottom Box Joints for Sides](<.gitbook/assets/image (3).png>)
 
 ### Making the Front/Back
 
-![Carbide Create: Radiused box joints: 3" x 3" x 3": Side after Boolean Union](<.gitbook/assets/image (3).png>)
+![Carbide Create: Radiused box joints: 3" x 3" x 3": Side after Boolean Union](<.gitbook/assets/image (3) (1).png>)
 
 (Alternately, the bottom could have been duplicated, rotated and aligned against the bottom and Boolean subtracted.)
 
