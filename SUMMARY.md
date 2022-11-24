@@ -13,7 +13,7 @@
 * [Mortise and Tenon Joinery](mortise-and-tenon-joinery.md)
 * [Butt Joints and Measuring](butt-joints-and-measuring.md)
 * [Box with Fitted Lid](pencil-box-with-fitted-lid.md)
-* [Blind Miter Box Joints](blind-miter-box-joints.md)
+* [Quarter Blind Miter Box Joints](quarter-blind-miter-box-joints.md)
 * [Adjustable Modular Designs](adjustable-modular-designs.md)
 * [Further Toolpath Details](further-toolpath-details.md)
 * [Drawer Organizers](drawer-organizers.md)
