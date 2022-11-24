@@ -19,3 +19,4 @@
 * [Drawer Organizers](drawer-organizers.md)
 * [A Final Project](a-final-project.md)
 * [3D Modeling](3d-modeling.md)
+* [Programming](programming.md)
