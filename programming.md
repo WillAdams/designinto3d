@@ -27,5 +27,15 @@ The language used for toolpaths is G-code (RS-274) [https://www.nist.gov/manuscr
 
 OpenSCAD affords a programming environment which has variable and loops and 3D modeling, and in the RapCAD implementation is able to write out files, allowing one to export toolpaths to G-code. The first thing which must be done is to define the stock, then it is possible to model the shapes of tools in such a way that they may be hulled together along toolpaths and then subtracted from the stock.
 
+## setupstock
 
+Every module must do each thing twice over, modeling in 3D in OpenSCAD, and writing out matching G-code. Since G-code is inherently subtractive, the stock is simply a comment which defines it. The necessary parameters are:
+
+* stocklength
+* stockwidth
+* stockthickness
+* zeroheight --- either Top or Bottom
+* stockorigin --- Lower-Left, Center-Left, Top-Left, or Center
+
+The latter two match job setup options in Carbide Create and determine where the stock will be placed relative to the origin.
 
