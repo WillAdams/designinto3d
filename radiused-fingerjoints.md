@@ -50,7 +50,7 @@ This needs to be divided into fifths (two box and three gaps):
 
 And then duplicated and dragged into registration with the desired positioning:
 
-![Carbide Create: Radiused box joints: 3" x 3" x 3": Box Joint Width](<.gitbook/assets/image (1).png>)
+![Carbide Create: Radiused box joints: 3" x 3" x 3": Box Joint Width](<.gitbook/assets/image (1) (1).png>)
 
 Then set the rectangles at the box joint locations to be the height of the box and drag them into position:
 

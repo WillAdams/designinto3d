@@ -125,7 +125,7 @@ Keyhole toolpaths as noted above, require the use of a special tool, and are not
 
 Carbide Create affords the option of organizing toolpaths into groups --- this is done using a contextual right-click menu:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Groups may be:
 

@@ -39,3 +39,8 @@ Every module must do each thing twice over, modeling in 3D in OpenSCAD, and writ
 
 The latter two match job setup options in Carbide Create and determine where the stock will be placed relative to the origin.
 
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+which generates matching G-code:
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
