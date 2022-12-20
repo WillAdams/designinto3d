@@ -104,8 +104,8 @@ Once one has a design completely modeled, one used 3D toolpaths to cut things ou
 For additional tutorials see:
 
 * [https://community.carbide3d.com/t/starting-with-2-5-d-carving/15168/](https://community.carbide3d.com/t/starting-with-2-5-d-carving/15168/)
-* [https://community.carbide3d.com/t/trial-ver-432-3d-carving-not-finding-much-info-other-than-a-star/16190\
-  https://community.carbide3d.com/t/vcarve-pro-wide-flutes/18942](https://community.carbide3d.com/t/trial-ver-432-3d-carving-not-finding-much-info-other-than-a-star/16190https:/community.carbide3d.com/t/vcarve-pro-wide-flutes/18942)
+* [https://community.carbide3d.com/t/trial-ver-432-3d-carving-not-finding-much-info-other-than-a-star/16190](https://community.carbide3d.com/t/trial-ver-432-3d-carving-not-finding-much-info-other-than-a-star/16190)
+* [https://community.carbide3d.com/t/vcarve-pro-wide-flutes/18942](https://community.carbide3d.com/t/vcarve-pro-wide-flutes/18942)
 * [https://community.carbide3d.com/t/carbide-create-pro-3d-tutorial-small-game-board-piece/18456](https://community.carbide3d.com/t/carbide-create-pro-3d-tutorial-small-game-board-piece/18456)
 * [https://community.carbide3d.com/t/3d-model-creating-a-ramp-object/22423](https://community.carbide3d.com/t/3d-model-creating-a-ramp-object/22423)
 * [https://community.carbide3d.com/t/carbide-create-pro-wavy-flag/16974/15](https://community.carbide3d.com/t/carbide-create-pro-wavy-flag/16974/15)
