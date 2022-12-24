@@ -512,7 +512,8 @@ Projects involving circles are usually calculated in terms of chords, radius, an
 
 Websites for this sort of thing:
 
-[https://www.mathportal.org/calculators/plane-geometry-calculators/right-triangle-calculator.php](https://www.mathportal.org/calculators/plane-geometry-calculators/right-triangle-calculator.php)
+* [https://www.mathportal.org/calculators/plane-geometry-calculators/right-triangle-calculator.php](https://www.mathportal.org/calculators/plane-geometry-calculators/right-triangle-calculator.php)
+* [https://www.wermac.org/others/convert\_right\_triangle\_calculation.html](https://www.wermac.org/others/convert\_right\_triangle\_calculation.html)
 
 ## Resources
 
