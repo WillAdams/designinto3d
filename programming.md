@@ -31,7 +31,7 @@ The language used for toolpaths is G-code (RS-274) [https://www.nist.gov/manuscr
 
 A straight-forward program which cuts an "X" in a 100mm square using two different tools from origin at the Lower-Left, and Top of the stock with a Retract Height of 5mm:
 
-```
+```clike
 (Design File: gcode_sample_102_390.c2d)
 (stockMin:0.00mm, 0.00mm, -1.00mm)
 (stockMax:100.00mm, 100.00mm, 0.00mm)
@@ -63,7 +63,6 @@ G1Z-1.000F203.2
 X100.000Y0.000F254.0
 Z5.000
 M02
-
 ```
 
 This previews as:
@@ -100,7 +99,7 @@ which generates matching G-code:
 
 As noted above, it is necessary to be able to toggle G-code generation on/off, both for performance considerations, and because the command used for this, writeln, is not supported by OpenSCAD, but is specific to RapCAD.
 
-Usually it is included as a true/false (boolean) option in the customizer:
+Naturally, it is included as a true/false (boolean) option in the customizer:
 
 ```clike
 generategcode = false; 
