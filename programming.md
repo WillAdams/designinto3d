@@ -4,7 +4,7 @@ description: The underlying mechanism behind the designs
 
 # Programming
 
-A number of different programming tools and methodologies have been shown throughout this work. New ones are regularly developed, and this new development will continue in the future. Tools which are notable and which are used include:
+A number of different programming tools and methodologies have been shown throughout this work. Tools which are notable and which are used include:
 
 * OpenSCAD --- [https://openscad.org/ ](https://openscad.org/)--- developed from Art of Illusion, this is described as "The Programmers Solid 3D CAD Modeller" and is a de facto standard, so that many other tools extend it.
 * BlockSCAD --- [https://www.blockscad3d.com/ ](https://www.blockscad3d.com/) --- a Blockly implementation of OpenSCAD, BlockSCAD affords a quick, easy, and interactive way to model in 3D.
@@ -14,12 +14,14 @@ A number of different programming tools and methodologies have been shown throug
 * RapCAD --- [https://rapcad.org/](https://rapcad.org/) --- an alternative to OpenSCAD, RapCAD adds the option of writing out text files with full user control.
 * gcodepreview --- [https://github.com/WillAdams/gcodepreview](https://github.com/WillAdams/gcodepreview) --- a library for OpenSCAD/RapCAD which allows 3D modeling tool movement/cutting and the generation of a matching G-code file.
 
-Creating a project programmatically allows one to have multiple views of the project --- finished project, any optional states required by features such as lids, and arranging the parts so as to visualize their relationship, and so as to actually cut them out, and to move parts around so as to check fit of joinery and so forth.
+New ones are regularly developed, and future developments will be documented here as circumstances dictate.&#x20;
 
 Programming allows dividing a project into two different aspects:
 
 * parameters which define dimensions and features
 * algorithms which instantiate the various designs and relationships
+
+Creating a project programmatically allows one to have multiple views of the project --- finished project, any optional states required by features such as lids, and arranging the parts so as to visualize their relationship, and so as to actually cut them out, and to move parts around so as to check fit of joinery and so forth.
 
 Most systems for 3D modeling have one directly model the part itself, then depend on 3D CAM software to create toolpaths to cut things out. A more direct approach is to instead model toolpaths, which has the advantages of ensuring that a part can be cut, that the cutting toolpath is as efficient as it possibly can be, and eliminating the need for a separate CAM program.
 
@@ -29,7 +31,7 @@ OpenSCAD affords a programming environment which has variable and loops and 3D m
 
 ## setupstock
 
-Every module must do each thing twice over, modeling in 3D in OpenSCAD, and writing out matching G-code. Since G-code is inherently subtractive, the stock is simply a comment which defines it. The necessary parameters are:
+Every module must do what it does twice over, modeling in 3D in OpenSCAD, and if enabled, writing out matching G-code. Since G-code is inherently subtractive, the stock is simply a comment which defines it. The necessary parameters are:
 
 * stocklength
 * stockwidth
@@ -44,3 +46,16 @@ The latter two match job setup options in Carbide Create and determine where the
 which generates matching G-code:
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+## generategcode
+
+As noted above, it is necessary to be able to toggle G-code generation on/off, both for performance considerations, and because the command used for this, writeln, is not supported by OpenSCAD, but is specific to RapCAD.
+
+Usually it is included as a true/false (boolean) option in the customizer:
+
+```clike
+generategcode = false; 
+```
+
+
+
