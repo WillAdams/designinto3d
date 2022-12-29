@@ -21,13 +21,13 @@ As with all boxes, they are defined by their height, width, and depth, with the 
 
 The design is easily drawn up using straight lines:
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 which would then have no-offset Contour toolpaths assigned using a 90 degree V endmill.
 
 Surround the parts with a rectangle, and geometry offset from it by endmill diameter plus 10%:
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Alternately, to make workholding easier, only the edges of the parts strictly need to be cut out:
 

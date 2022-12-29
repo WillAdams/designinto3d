@@ -72,7 +72,7 @@ And then Boolean union:
 
 For the sides we can recycle the remaining rectangles by setting them to the same thickness and aligning them with the base and recreating the inset and Boolean unioning the parts:
 
-![Carbide Create: Radiused box joints: 3" x 3" x 3": Bottom Box Joints for Sides](<.gitbook/assets/image (3) (1).png>)
+![Carbide Create: Radiused box joints: 3" x 3" x 3": Bottom Box Joints for Sides](<.gitbook/assets/image (3) (1) (2).png>)
 
 ### Making the Front/Back
 
@@ -124,7 +124,7 @@ At this point one could go to the Toolpath pane and set up all the cuts, but sin
 
 Due to limitations of the Computational Solid Geometry (CSG) kernel used in OpenSCAD and similar modeling techniques used in other CAM tools it is not possible to directly model a cove radius endmill in 3D. A work-around for this limitation in OpenSCAD is to instead model a series of stacked truncated inverted cones which are hulled together for each layer:
 
-![OpenSCAD: Modeling Cove Radius Endmill](<.gitbook/assets/image (4) (1).png>)
+![OpenSCAD: Modeling Cove Radius Endmill](<.gitbook/assets/image (4) (1) (1).png>)
 
 ## Model the Box
 

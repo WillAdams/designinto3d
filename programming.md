@@ -67,11 +67,11 @@ M02
 
 This previews as:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 As verified by a 3rd party G-code simulator, CutViewer Mill:
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## gcodepreview
 
@@ -89,11 +89,11 @@ Every module must do what it does twice over, modeling in 3D in OpenSCAD, and if
 
 The latter two match job setup options in Carbide Create and determine where the stock will be placed relative to the origin.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 which generates matching G-code:
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### generategcode
 
@@ -107,5 +107,38 @@ generategcode = false;
 
 and of course the module tests for that variable being set to true when writing out G-code is necessary.
 
-&#x20;
+When one is generating G-code some additional commands will be needed.
 
+### toolchange
+
+This command will output an M6 tool change command and the tool number used as an argument.
+
+### startspindle
+
+Starts the spindle at the specified RPM.
+
+### retract
+
+Issues a rapid movement to the specified Z-height (usually safety/retract height)
+
+### closecut
+
+Outputs the commands to end a cut (retract to safety/retract height and M02).
+
+## OpenSCAD Graph Editor
+
+If one loads the module gcodepreview into OSGE, it is pretty straight-forward to use it to create a file to cut out a design using G-code:
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+which when generated as OpenSCAD code previews as expected:
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+which with a bit of editing in RapCAD works as expected:
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+and generates G-code which previews as expected:
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
