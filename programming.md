@@ -125,6 +125,12 @@ Issues a rapid movement to the specified Z-height (usually safety/retract height
 
 Outputs the commands to end a cut (retract to safety/retract height and M02).
 
+## modules
+
+Putting the commands together has several expectations and requirements. The simplest usage is one where a single cut is made and the tool is plunged at the beginning, the cut is made, and then the tool is lifted to the retract height --- more complex cuts have the same requirements, to ensure that the tool is moved so that it cuts and does not collide with the stock at a rapid rate.
+
+Having multiple cuts presents the possibility of redundant G-code commands, but the simplistic and persistent nature of G-code, that a single command is a movement to the specified position from the current one, and that OpenSCAD requires describing both positions means that every other OpenSCAD command after the first can omit writing out the G-code, which will them omit the redundant commands and result in terse code which still describes the expected machine motion.
+
 ## OpenSCAD Graph Editor
 
 If one loads the module gcodepreview into OSGE, it is pretty straight-forward to use it to create a file to cut out a design using G-code:
@@ -142,3 +148,4 @@ which with a bit of editing in RapCAD works as expected:
 and generates G-code which previews as expected:
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
