@@ -402,7 +402,11 @@ it then affords the ability to create and name layers, as well as to color-code 
 
 ![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1).png>)
 
-and to move objects to specific layers and to hide/show, or lock/unlock layers.
+and to move objects to specific layers and to hide/show, or lock/unlock layers. A Layer is an organizational tool which allows one to separate geometry and colour-code it.​ ​ ​How they are used, depends on a given project and how a user wishes to approach it:
+
+* a two-sided job might have separate layers for each side ​
+* a file with multiple parts might have each part on a separate layer
+* a file with multiple tools might have the geometry for each tool on a separate layer, and use the Toolpaths facility to associate a toolpath w/ a layer ​
 
 ### Arrays
 
