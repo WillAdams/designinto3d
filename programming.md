@@ -16,6 +16,8 @@ A number of different programming tools and methodologies have been shown throug
 
 New ones are regularly developed, and future developments will be documented here as circumstances dictate.&#x20;
 
+Naturally, any programming language which is able to write out files can be used to make G-code, and many programming languages have 3D libraries which will allow modeling in 3D --- this page will focus on those tools which are specifically applicable to CNC usage.
+
 Programming allows dividing a project into two different aspects:
 
 * parameters which define dimensions and features
@@ -72,6 +74,23 @@ This previews as:
 As verified by a 3rd party G-code simulator, CutViewer Mill:
 
 <figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+
+The control software for many CNC machines will afford G-code entry in one or more ways. For the Carbide 3D machines which I use (and support), this is Carbide Motion, which has two options: MDI --- one can enter G-coded into the MDI one line at a time, and also "Quick Actions" which allow entering small programs which can then be run at will.&#x20;
+
+For a list of the G-codes supported by Carbide Motion and Grbl see:\
+\
+[https://docs.carbide3d.com/software-faq/list-of-supported-gcodes/](https://docs.carbide3d.com/software-faq/list-of-supported-gcodes/)\
+and\
+[https://my.carbide3d.com/faq/grbl-g-code-definitions/](https://my.carbide3d.com/faq/grbl-g-code-definitions/)\
+\
+There is a 3rd party tool which will accept G-code with such commands and instantiate them:\
+\
+[https://github.com/NRSoft/GSharp](https://github.com/NRSoft/GSharp)\
+\
+which is incorporated into bCNC which is also on Github:&#x20;
+
+[https://github.com/vlachoudis/bCNC](https://github.com/vlachoudis/bCNC)\
+
 
 ## gcodepreview
 
