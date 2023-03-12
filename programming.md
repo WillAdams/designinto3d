@@ -162,7 +162,7 @@ which when generated as OpenSCAD code previews as expected:
 
 which with a bit of editing in RapCAD works as expected:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 and generates G-code which previews as expected:
 

@@ -8,7 +8,7 @@ As noted previously, before one can make a part, one must define the geometry of
 
 ![Carbide Create interface.](<.gitbook/assets/Carbide\_Create\_interface (1).png>)
 
-As with most drawing tools, there are menus for commands or different program functions/states, a palette of tools, and a work area. Later versions add a pair of rulers around the drawing area and a status bar, (not depicted above).
+As with most drawing tools, there are menus for commands or different program functions/states, a palette of tools, and a work area, which includes a graphical representation of the "Stock" which is the material which will be cut away to make a design or part, and on the Stock there are lines for a grid which may be re-sized or hidden. The initial view has no objects which may be manipulated, these may be added as described below. Later versions add a pair of rulers around the drawing area and a status bar, (not depicted above).
 
 ## Points
 
@@ -22,7 +22,7 @@ Straight lines are a fundamental building block of vector drawing and are of cou
 
 ![Carbide Create Polyline Tool.](<.gitbook/assets/carbide\_create\_screengrab\_polyline\_hl (4).png>)
 
-clicking at the beginning (as well as if desired intermediary) and end points:
+clicking at the beginning (as well as if desired, intermediary) and end points:
 
 ![Carbide Create drawing line with Polyline tool.](<.gitbook/assets/carbide\_create\_interface\_create\_polyline (1).png>)
 
@@ -34,11 +34,11 @@ Lines will be used to define Rectangles (which may be squares) and regular Polyg
 
 ## Arcs
 
-Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles and geometry based on circles (segments and so forth), as fillets when rounding the corners of a rectangle (see below), or drawn using the **Curve** tool (see below), though since they are represented as either curves or polylines will necessarily be approximations of an actual arc of a circle.
+Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Boolean operations as parts of circles and geometry based on circles (segments and so forth), as fillets when rounding the corners of a rectangle (see below), or drawn using the **Curve** tool (see below), or arrived at by Node Editing a circle or other object, though since they are represented as either Curves or Polylines will necessarily be approximations of an actual arc of a circle.
 
 ## Polylines
 
-Polylines are made up of multiple points describing lines and may either be open or closed as noted above. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created (so long as it has not been edited). For example, a square may have corner options if drawn using the **Rectangle** tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular **Polygon** tool, may be changed into another polygon or resized proportionally, and if drawn using the **Polyline** or **Curve** tool may only be resized proportionally (or asymmetrically by dragging) or node-edited (which are possible with the other creation options).
+Polylines are made up of multiple points describing lines and may either be open or closed as noted above. Note that there are multiple ways to represent a given figure, and the capabilities and interface options will be different based on how it was created (so long as it has not been edited). For example, a square may have corner options if drawn using the **Rectangle** tool and may be changed to a rectangle by altering one dimension parameter or other, but if drawn with the regular **Polygon** tool, may be changed into another polygon or resized proportionally, and if drawn using the **Polyline** or **Curve** tool may only be resized proportionally (or asymmetrically by dragging) or Node-Edited (which are possible with the other creation options).
 
 ### Open Paths
 
@@ -63,6 +63,8 @@ Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](htt
 Note that the **Done** button allows one to cancel out of the circle drawing mode.
 
 In Carbide Create, circles are defined as four Bézier curves (as opposed to using arcs) which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for practical purposes. Researching the math involved in this differentiation is left as an exercise for the interested reader.
+
+One limitation of circles in current versions of Carbide Create is that they may not be rotated. A work-around for this is to put one node on a grid point, go into Node Edit mode, move the node, then move it back, converting the Circle into a Curve object which describes the same geometry as the original circle, but which is no longer described by its radius.
 
 Note that in build 527 Carbide Create gained a feature for adding circles which are within a certain size range to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)&#x20;
 
@@ -100,7 +102,7 @@ In v7, it becomes possible to enter dimensions as calculations, so typing 2\*2= 
 
 It is also possible to enter dimensions in terms of the unit, so if in metric mode, typing 1in= will result in the dimension being set to 25.4mm, while in Imperial (inches) mode, typing 25.4mm= will result in the dimension being set to 1in.
 
-It is also possible to reference the current stock thickness. This may be done using an expression which is evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing t will leave the dimension set thus, and will dynamically update the dimension when stock thickness is changed. Expressions may also be used thus, so half the thickness may be referenced using t/2.&#x20;
+It is also possible to reference the current stock thickness as the variable _t_. This may be done using an expression which is evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus, and will dynamically update the dimension when stock thickness is changed. Expressions may also be used thus, so half the thickness may be referenced using t/2.&#x20;
 
 #### Circle Parameters
 
@@ -157,6 +159,8 @@ which has one checkbox to enable it, and another to move the text to the bottom:
 
 and two controls, one which allows setting the center for the arc, the other for where the text is aligned against. Using the shift key when dragging will move both controls in unison.
 
+If more than one line of text is needed, they may be created/positioned using the Linear Array feature described below.
+
 ## Measurements
 
 Some CAD and drawing programs include a measurement tool. Carbide Create adds one in v7:
@@ -169,7 +173,7 @@ Click on the two points which one wishes to measure to/from:
 
 and the coordinates of the two points, the distance between them, and the angle between them will be displayed.
 
-As an alternative to this, a line may be drawn, and when selected will afford the size and the X- and Y-axes.
+As an alternative to this, a line may be drawn, and when selected will afford the size and the X- and Y- dimensions.
 
 ## Transformations
 
@@ -181,7 +185,7 @@ Geometry may be adjusted in a number of ways:
 * Flipped along an axis (Carbide Create affords tools for horizontal and vertical)
 * Aligned, either to another piece of geometry or the defined Stock
 
-Another option which drawing programs may afford is offsetting ― this is especially important for Carbide Create since it allows one to adjust the geometry in terms of the radius or diameter of the endmill (see below).
+Another option which drawing programs may afford is offsetting ― this is especially important for Carbide Create since it allows one to adjust the geometry in terms of the radius or diameter of the endmill (see below). It is also possible to edit objects as noted below.
 
 ### Move
 
@@ -191,15 +195,17 @@ When selecting geometry in Carbide Create and selecting **Move**, the X and Y co
 
 ### Resize
 
-In addition to moving, geometry may also be altered in size. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface ― midpoints of the selection marquee afford asymmetric scaling by dragging instead (this is a simple way to create an ellipse/oval) but it is not possible to scale asymmetrically numerically (though such drag-scaling should snap to the grid):
+In addition to moving, geometry may also be altered in size. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface ― midpoints of the selection marquee afford asymmetric scaling by dragging instead (this is a simple way to create an ellipse/oval) and later versions add a checkbox, "Keep Proportions" which makes it possible to scale asymmetrically numerically (note that drag-scaling will snap to the grid and can afford a similar precision):
 
-![Carbide Create Resize transform](<.gitbook/assets/Carbide\_Create\_interface\_transform\_scale (1).png>)
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Carbide Create Resize transform</p></figcaption></figure>
 
 ### Rotate
 
 Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design, or to adjust for orientation of T-bones. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in certain programs if the rotation operation should change the objects into Curve objects, removing the ability to interact with their formal parameters.
 
-At this time in Carbide Create, Circle objects will not alter their orientation when rotated, only positioning. If using the nodes for positional information is required, it will be necessary to convert them to Curve objects.
+At this time in Carbide Create, Circle objects will not alter their orientation when rotated, only positioning. If using the nodes for positional information is required, it will be necessary to convert them to Curve objects by Node Editing.
+
+See also the Circular Array tool below.
 
 ### Flip
 
@@ -233,7 +239,7 @@ Depending on the selection, Carbide Create affords the following Boolean operati
 
 Note that in most programs, the selection is modified, so if the original geometry will be needed after, it may be necessary that the objects be duplicated in alignment with the originals.
 
-If a given operation does not have the desired result, undoing it in Carbide Create will change which object is the current key object (indicated by a dashed highlight) ― reattempting the operation will then do so based on that new aspect of the selection with different results than previously if applicable to the operation.
+If a given operation does not have the desired result, undoing it in older versions of Carbide Create will change which object is the current key object (indicated by a dashed highlight) ― reattempting the operation will then do so based on that new aspect of the selection with different results than previously if applicable to the operation. In current versions it will be necessary to recreate the selection.
 
 ## Curves&#x20;
 
@@ -333,11 +339,11 @@ Boolean Intersection:
 
 and there are two possibilities for Boolean Subtraction depending on the key object:
 
-Circle:
+Circle as key object:
 
 ![](<.gitbook/assets/image (139).png>)
 
-Rectangle:
+Rectangle as key object:
 
 ![](<.gitbook/assets/image (137) (1) (1).png>)
 
@@ -347,7 +353,7 @@ while the Trim Vectors command allows one to trim the various vectors which over
 
 ![](<.gitbook/assets/image (140) (1).png>)
 
-allowing one to make asymmetrical designs which are not possible with Boolean operations:
+allowing one to make asymmetrical designs which are not easily done with Boolean operations and which would require additional geometry:
 
 ![](<.gitbook/assets/image (126).png>)
 
@@ -386,6 +392,8 @@ There is also the game:
 
 {% embed url="https://bezier.method.ac" %}
 
+which is a useful tutorial and exercise, though to facilitate gameplay, it shows many incorrect constructions.
+
 ### Quadratic B-Splines
 
 A curve which alternates on-curve and off-curve nodes, B-Splines are used for TrueType fonts, since their calculation is efficiently done, but are not used in typical CAD or Bézier curve drawing applications because of the difficulty in editing them. Note that when TrueType fonts are converted to paths, conversion from B-Splines to Bézier curves may result in odd node placement.
@@ -400,7 +408,7 @@ Carbide Create supports layers since version 521. Available under Edit | Show La
 
 ![](<.gitbook/assets/image (113) (1) (1) (1) (1).png>)
 
-(or using the keyboard shortcut _l_)
+(or using the alphabetic keyboard shortcut _l_)
 
 it then affords the ability to create and name layers, as well as to color-code them:
 
@@ -410,7 +418,7 @@ and to move objects to specific layers and to hide/show, or lock/unlock layers. 
 
 * a two-sided job might have separate layers for each side ​
 * a file with multiple parts might have each part on a separate layer
-* a file with multiple tools might have the geometry for each tool on a separate layer, and use the Toolpaths facility to associate a toolpath w/ a layer ​
+* a file with multiple tools might have the geometry for each tool on a separate layer, and use the Toolpath facility to associate a toolpath w/ a layer ​
 
 ### Arrays
 
@@ -461,7 +469,7 @@ Carbide Create 7 moves Tabs to the Design pane:
 
 ![](<.gitbook/assets/image (138).png>)
 
-which may then be instantiated in the Toolpath pane.
+which may then be instantiated in the Toolpath pane using Contour toolpaths, or ignored by unchecking the appropriate checkbox.
 
 ## Geometry
 
@@ -534,10 +542,10 @@ For further information on Carbide Create please see:
 * [http://carbide3d.com/carbidecreate/video/](http://carbide3d.com/carbidecreate/video/) (a collection of tutorial videos)
 * [http://community.carbide3d.com/c/software/carbide-create](http://community.carbide3d.com/c/software/carbide-create) (a community forum)
 * [https://old.reddit.com/r/shapeoko/wiki/carbidecreate](https://old.reddit.com/r/shapeoko/wiki/carbidecreate) (a wiki page)
+* [https://carbide3d.com/carbidecreate/shortcuts](https://carbide3d.com/carbidecreate/shortcuts)
 
 ![](.gitbook/assets/carbide3d\_create\_motion\_keyboard\_shortcuts.png)
 
-* [https://carbide3d.com/carbidecreate/shortcuts](https://carbide3d.com/carbidecreate/shortcuts)
 * [https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839)
 * [https://carbide3d.com/blog/carbide-create-v7/](https://carbide3d.com/blog/carbide-create-v7/)
 * [https://carbide3d.com/blog/carbide-create-v6-done/](https://carbide3d.com/blog/carbide-create-v6-done/)
