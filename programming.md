@@ -4,7 +4,7 @@ description: The underlying mechanism behind the designs
 
 # Programming
 
-A number of different programming tools and methodologies have been shown throughout this work. Tools which are notable and which are used include:
+A number of different programming tools and methodologies have been shown throughout this work. Tools which are notable and/or which are used include:
 
 * OpenSCAD --- [https://openscad.org/ ](https://openscad.org/)--- developed from Art of Illusion, this is described as "The Programmers Solid 3D CAD Modeller" and is a de facto standard, so that many other tools extend it.
 * BlockSCAD --- [https://www.blockscad3d.com/ ](https://www.blockscad3d.com/) --- a Blockly implementation of OpenSCAD, BlockSCAD affords a quick, easy, and interactive way to model in 3D.
@@ -13,8 +13,10 @@ A number of different programming tools and methodologies have been shown throug
 * lualatex --- [http://luatex.org/](http://luatex.org/) --- a latterday implementation of the venerable TeX typesetting system, this allows Lua-scripting, and includes an embedded METAPOST interpreter.
 * RapCAD --- [https://rapcad.org/](https://rapcad.org/) --- an alternative to OpenSCAD, RapCAD adds the option of writing out text files with full user control.
 * gcodepreview --- [https://github.com/WillAdams/gcodepreview](https://github.com/WillAdams/gcodepreview) --- a library for OpenSCAD/RapCAD which allows 3D modeling tool movement/cutting and the generation of a matching G-code file.
+* GSharp --- [https://github.com/NRSoft/GSharp](https://github.com/NRSoft/GSharp) --- a system which allows programming in G-code using loops and variables even on G-code implementations which lack such features.
+* FullControl GCODE --- [https://fullcontrolgcode.com/software](https://fullcontrolgcode.com/software) --- this was originally an Excel spreadsheet, but it was re-implemented in Python and is available as a website: [https://fullcontrol.xyz/](https://fullcontrol.xyz/)
 
-New ones are regularly developed, and future developments will be documented here as circumstances dictate.&#x20;
+New ones are regularly developed, and future developments will be documented here as circumstances warrant.&#x20;
 
 Naturally, any programming language which is able to write out files can be used to make G-code, and many programming languages have 3D libraries which will allow modeling in 3D --- this page will focus on those tools which are specifically applicable to CNC usage.
 
@@ -75,7 +77,7 @@ As verified by a 3rd party G-code simulator, CutViewer Mill:
 
 <figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-The control software for many CNC machines will afford G-code entry in one or more ways. For the Carbide 3D machines which I use (and support), this is Carbide Motion, which has two options: MDI --- one can enter G-coded into the MDI one line at a time, and also "Quick Actions" which allow entering small programs which can then be run at will.&#x20;
+The control software for many CNC machines will afford G-code entry in one or more ways. For the Carbide 3D machines which I use (and support), this is Carbide Motion, which has two options: MDI --- one can enter G-code into the MDI one line at a time, and also "Quick Actions" which allow entering small programs which can then be run at will.&#x20;
 
 For a list of the G-codes supported by Carbide Motion and Grbl see:\
 \
@@ -148,7 +150,7 @@ Outputs the commands to end a cut (retract to safety/retract height and M02).
 
 Putting the commands together has several expectations and requirements. The simplest usage is one where a single cut is made and the tool is plunged at the beginning, the cut is made, and then the tool is lifted to the retract height --- more complex cuts have the same requirements, to ensure that the tool is moved so that it cuts and does not collide with the stock at a rapid rate.
 
-Having multiple cuts presents the possibility of redundant G-code commands, but the simplistic and persistent nature of G-code, that a single command is a movement to the specified position from the current one, and that OpenSCAD requires describing both positions means that every other OpenSCAD command after the first can omit writing out the G-code, which will them omit the redundant commands and result in terse code which still describes the expected machine motion.
+Having multiple cuts presents the possibility of redundant G-code commands, but the simplistic and persistent nature of G-code, that a single command is a movement to the specified position from the current one, and that OpenSCAD requires describing both positions means that every other OpenSCAD command after the first can omit writing out the G-code, which will then omit the redundant commands and result in terse code which still describes the expected machine motion.
 
 ## OpenSCAD Graph Editor
 
