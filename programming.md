@@ -10,8 +10,8 @@ A number of different programming tools and methodologies have been shown throug
 * BlockSCAD --- [https://www.blockscad3d.com/ ](https://www.blockscad3d.com/) --- a Blockly implementation of OpenSCAD, BlockSCAD affords a quick, easy, and interactive way to model in 3D.
 * OpenSCAD Graph Editor (OSGE) --- [https://github.com/derkork/openscad-graph-editor](https://github.com/derkork/openscad-graph-editor) --- a visual programming system, OSGE allows full access to all of OpenSCAD (in marked contrast to the limited number of commands and options afforded by BlockSCAD), including support for the Customizer.
 * METAPOST --- [https://www.tug.org/metapost.html](https://www.tug.org/metapost.html) --- a PostScript-oriented re-implementation of the venerable METAFONT [https://www-cs-faculty.stanford.edu/\~knuth/abcde.html#mfbk](https://www-cs-faculty.stanford.edu/\~knuth/abcde.html#mfbk) MP allows one to create 2D drawings as SVGs which may then be imported into Carbide Create to make projects.
-* lualatex --- [http://luatex.org/](http://luatex.org/) --- a latterday implementation of the venerable TeX typesetting system, this allows Lua-scripting, and includes an embedded METAPOST interpreter.
-* RapCAD --- [https://rapcad.org/](https://rapcad.org/) --- an alternative to OpenSCAD, RapCAD adds the option of writing out text files with full user control.
+* lualatex --- [http://luatex.org/](http://luatex.org/) --- a latter-day implementation of the venerable TeX typesetting system, this allows Lua-scripting, and includes an embedded METAPOST interpreter.
+* RapCAD --- [https://rapcad.org/](https://rapcad.org/) --- an alternative to OpenSCAD, RapCAD notably adds the option of writing out text files with full user control.
 * gcodepreview --- [https://github.com/WillAdams/gcodepreview](https://github.com/WillAdams/gcodepreview) --- a library for OpenSCAD/RapCAD which allows 3D modeling tool movement/cutting and the generation of a matching G-code file.
 * GSharp --- [https://github.com/NRSoft/GSharp](https://github.com/NRSoft/GSharp) --- a system which allows programming in G-code using loops and variables even on G-code implementations which lack such features.
 * FullControl GCODE --- [https://fullcontrolgcode.com/software](https://fullcontrolgcode.com/software) --- this was originally an Excel spreadsheet, but it was re-implemented in Python and is available as a website: [https://fullcontrol.xyz/](https://fullcontrol.xyz/)
@@ -32,6 +32,14 @@ Most systems for 3D modeling have one directly model the part itself, then depen
 ## G-code
 
 The language used for toolpaths is G-code (RS-274) [https://www.nist.gov/manuscript-publication-search.cfm?pub\_id=823374](https://www.nist.gov/manuscript-publication-search.cfm?pub\_id=823374) --- in some implementations it is a full-fledged programming language, so it is possible to use it directly to program if one has a suitable 3D previewing tool. Unfortunately, most hobby-level G-code implementations lack variables, branching, and looping, so are only suited to the G-code which is output by CAM programs.
+
+There is a 3rd party tool which will accept G-code with such commands and instantiate them:\
+\
+[https://github.com/NRSoft/GSharp](https://github.com/NRSoft/GSharp)\
+\
+which is incorporated into bCNC which is also on Github:&#x20;
+
+[https://github.com/vlachoudis/bCNC](https://github.com/vlachoudis/bCNC)
 
 A straight-forward program which cuts an "X" in a 100mm square using two different tools from origin at the Lower-Left, and Top of the stock with a Retract Height of 5mm:
 
@@ -83,24 +91,17 @@ For a list of the G-codes supported by Carbide Motion and Grbl see:\
 \
 [https://docs.carbide3d.com/software-faq/list-of-supported-gcodes/](https://docs.carbide3d.com/software-faq/list-of-supported-gcodes/)\
 and\
-[https://my.carbide3d.com/faq/grbl-g-code-definitions/](https://my.carbide3d.com/faq/grbl-g-code-definitions/)\
-\
-There is a 3rd party tool which will accept G-code with such commands and instantiate them:\
-\
-[https://github.com/NRSoft/GSharp](https://github.com/NRSoft/GSharp)\
-\
-which is incorporated into bCNC which is also on Github:&#x20;
-
-[https://github.com/vlachoudis/bCNC](https://github.com/vlachoudis/bCNC)\
-
+[https://my.carbide3d.com/faq/grbl-g-code-definitions/](https://my.carbide3d.com/faq/grbl-g-code-definitions/)
 
 ## gcodepreview
 
-OpenSCAD affords a programming environment which has variable and loops and 3D modeling, and in the RapCAD implementation is able to write out files, allowing one to export toolpaths to G-code. The first thing which must be done is to define the stock, then it is possible to model the shapes of tools in such a way that they may be hulled together along toolpaths and then subtracted from the stock.
+OpenSCAD affords a programming environment which has variable and loops and 3D modeling, and in the RapCAD implementation is able to write out files, allowing one to export toolpaths to G-code, making it well-suited to creating a library which allows modeling in 3D as if one was cutting with a machine.&#x20;
+
+Every module must do what it does twice over, modeling in 3D in OpenSCAD, and if enabled, writing out matching G-code. Further, in some instances, it will be desirable or even necessary to directly write out G-code which has no OpenSCAD equivalent.&#x20;
 
 ### setupstock
 
-Every module must do what it does twice over, modeling in 3D in OpenSCAD, and if enabled, writing out matching G-code. Further, in some instances, it will be desirable or even necessary to directly write out G-code which has no OpenSCAD equivalent. Since G-code is inherently subtractive, the stock is simply a comment which defines it. The necessary parameters are:
+The first thing which must be done is to define the stock, then it is possible to model the shapes of tools in such a way that they may be hulled together along toolpaths and then subtracted from the stock. Since G-code is inherently subtractive, the stock is simply a comment which defines it. The necessary parameters are:
 
 * stocklength
 * stockwidth
@@ -154,7 +155,7 @@ Having multiple cuts presents the possibility of redundant G-code commands, but 
 
 ## OpenSCAD Graph Editor
 
-If one loads the module gcodepreview into OSGE, it is pretty straight-forward to use it to create a file to cut out a design using G-code:
+If one loads the library gcodepreview as a module into OSGE, it is pretty straight-forward to use it to create a file to cut out a design using G-code:
 
 <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
@@ -162,7 +163,7 @@ which when generated as OpenSCAD code previews as expected:
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-which with a bit of editing in RapCAD works as expected:
+which with a bit of editing works as expected in RapCAD:
 
 <figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
