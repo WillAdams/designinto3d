@@ -142,3 +142,14 @@ Groups may be used to:
 * separate toolpaths for two-sided cutting
 * separate toolpaths for tiling
 * separate toolpaths for individual parts
+
+## G-code
+
+Once toolpaths have been set up in a file, they may be sent to a machine to be cut out. The traditional way to do this is to write out the G-code instructions in a text file with a file extension which identifies is a a G-code file. Typically used extensions include:
+
+* .nc
+* .gc
+* .gcode
+* .tap
+
+MeshCAM and early versions of Carbide Create add the possibility of a .egc file extension (for encrypted G-code), and Carbide Create v7 normally stores the G-code in the .c2d file itself, allowing that to be loaded into Carbide Motion when connected to a Carbide 3D machine, at which time the G-code will be extracted and sent to the machine. The Pro license for Carbide Create v7 also affords the option to write out G-code as earlier versions had done.
