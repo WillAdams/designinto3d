@@ -161,7 +161,7 @@ If one loads the library gcodepreview as a module into OSGE, it is pretty straig
 
 which when generated as OpenSCAD code previews as expected:
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 which with a bit of editing works as expected in RapCAD:
 

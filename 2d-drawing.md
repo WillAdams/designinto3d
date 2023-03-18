@@ -533,6 +533,18 @@ Websites for this sort of thing:
 * [http://ambrnet.com/TrigoCalc/Circle3D.htm](http://ambrnet.com/TrigoCalc/Circle3D.htm)
 * [https://mathopenref.com/arcradius.html](https://mathopenref.com/arcradius.html)
 
+## Additional Features
+
+Beyond just drawing, vector drawing and CAD/CAM programs may have many additional features which go beyond just manipulating geometry or other elements. Many are adjuncts to Toolpaths, but are mentioned here since there is often an element of geometrical editing which they address. A few which Carbide Create has include:
+
+* Image Tracing --- rather than manually re-draw a pixel image: [https://community.carbide3d.com/t/carbide-create-re-drawing/15811](https://community.carbide3d.com/t/carbide-create-re-drawing/15811) it is possible to import a pixel image and re-draw it: [https://community.carbide3d.com/t/carbide-create-image-tracing/31208](https://community.carbide3d.com/t/carbide-create-image-tracing/31208) (note that tracing is inherently black and white, on/off, and that it may be necessary to adjust the Threshold setting and trace multiple times in order to capture all details of an image).
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+* STL Import --- this is a feature in Pro, which allows importing an STL centered on the geometry which is selected when it is imported: [https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12](https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12)
+* Inlay --- [https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115](https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115)
+* Tiling --- another Pro feature: [https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334](https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334) this may be done manually as noted at: [https://community.carbide3d.com/t/tiling-questions-issues/14352/5](https://community.carbide3d.com/t/tiling-questions-issues/14352/5)
+
 ## Resources
 
 For further information on Carbide Create please see:
