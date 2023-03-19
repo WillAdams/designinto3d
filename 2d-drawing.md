@@ -145,7 +145,9 @@ Not geometry, but many drawing and CAD programs allow setting text. Carbide Crea
 
 ![](<.gitbook/assets/image (138) (1).png>)
 
-Text objects are limited to a single line of text in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) installed on the computer Carbide Create is running on, selecting Bold and or Italic (which will be applied if the appropriate font variation is installed on the system), setting the Font Height, modifying the Spacing and setting the Alignment.&#x20;
+Text objects are limited to a single line of text in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) installed on the computer Carbide Create is running on, selecting Bold and or Italic (which will be applied if the appropriate font variation is installed on the system), setting the Font Height, modifying the Spacing and setting the Alignment.
+
+When initially selected, a text object will not bring up the properties of the Text tool. It is necessary to either select the Text tool to access these properties, or to double-click on the text object.&#x20;
 
 It is also possible to convert text to curves using the button, "Convert to Curves" --- once converted to curves, the underlying geometry may be used. See: [https://carbide3d.com/blog/merging-script-fonts-in-carbide-create/](https://carbide3d.com/blog/merging-script-fonts-in-carbide-create/)
 
