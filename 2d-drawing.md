@@ -80,7 +80,7 @@ Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](http
 
 ![Carbide Create drawing a rectangle.](<.gitbook/assets/carbide\_create\_interface\_create\_rectangle (1).png>)
 
-Since Carbide Create draws from center out by default, shapes are often twice the desired dimensions, in such instances they may be easily scaled to half their size (this applies to other shapes and is often useful/expedient) so as to have them at the desired size, or use the new ctrl-click corner-to-corner option.
+Carbide Create draws from center out by default, but will draw from corner-to-corner when one holds the control (or command) keyboard modifier.
 
 ### Polygons
 
