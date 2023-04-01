@@ -188,3 +188,4 @@ and generates G-code which previews as expected:
 * [http://nodezator.com/](http://nodezator.com/)
 * [https://ryven.org/](https://ryven.org/)
 * [https://github.com/Bycelium/PyFlow](https://github.com/Bycelium/PyFlow)
+* [https://nodeeditor.seneral.dev/index.html](https://nodeeditor.seneral.dev/index.html)
