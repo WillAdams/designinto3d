@@ -184,3 +184,7 @@ and generates G-code which previews as expected:
 * [https://github.com/chigraph/chigraph](https://github.com/chigraph/chigraph)
 * [https://github.com/studiotc/NodeGraphInterface](https://github.com/studiotc/NodeGraphInterface)
 * SnapSCAD --- [https://github.com/martymcguire/snapscad](https://github.com/martymcguire/snapscad)
+* [https://chigraph.io/](https://chigraph.io/)
+* [http://nodezator.com/](http://nodezator.com/)
+* [https://ryven.org/](https://ryven.org/)
+* [https://github.com/Bycelium/PyFlow](https://github.com/Bycelium/PyFlow)
