@@ -9,8 +9,6 @@ A number of different programming tools and methodologies have been shown throug
 * OpenSCAD --- [https://openscad.org/ ](https://openscad.org/)--- developed from Art of Illusion, this is described as "The Programmers Solid 3D CAD Modeller" and is a de facto standard, so that many other tools extend it.
 * BlockSCAD --- [https://www.blockscad3d.com/ ](https://www.blockscad3d.com/) --- a Blockly implementation of OpenSCAD, BlockSCAD affords a quick, easy, and interactive way to model in 3D.
 * OpenSCAD Graph Editor (OSGE) --- [https://github.com/derkork/openscad-graph-editor](https://github.com/derkork/openscad-graph-editor) --- a visual programming system, OSGE allows full access to all of OpenSCAD (in marked contrast to the limited number of commands and options afforded by BlockSCAD), including support for the Customizer.
-* SnapSCAD --- [https://github.com/martymcguire/snapscad](https://github.com/martymcguire/snapscad)
-* [https://github.com/studiotc/NodeGraphInterface](https://github.com/studiotc/NodeGraphInterface)
 * METAPOST --- [https://www.tug.org/metapost.html](https://www.tug.org/metapost.html) --- a PostScript-oriented re-implementation of the venerable METAFONT [https://www-cs-faculty.stanford.edu/\~knuth/abcde.html#mfbk](https://www-cs-faculty.stanford.edu/\~knuth/abcde.html#mfbk) MP allows one to create 2D drawings as SVGs which may then be imported into Carbide Create to make projects.
 * lualatex --- [http://luatex.org/](http://luatex.org/) --- a latter-day implementation of the venerable TeX typesetting system, this allows Lua-scripting, and includes an embedded METAPOST interpreter.
 * RapCAD --- [https://rapcad.org/](https://rapcad.org/) --- an alternative to OpenSCAD, RapCAD notably adds the option of writing out text files with full user control.
@@ -181,3 +179,8 @@ and generates G-code which previews as expected:
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+## Other tools to consider
+
+* [https://github.com/chigraph/chigraph](https://github.com/chigraph/chigraph)
+* [https://github.com/studiotc/NodeGraphInterface](https://github.com/studiotc/NodeGraphInterface)
+* SnapSCAD --- [https://github.com/martymcguire/snapscad](https://github.com/martymcguire/snapscad)
