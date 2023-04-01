@@ -29,6 +29,14 @@ Creating a project programmatically allows one to have multiple views of the pro
 
 Most systems for 3D modeling have one directly model the part itself, then depend on 3D CAM software to create toolpaths to cut things out. A more direct approach is to instead model toolpaths, which has the advantages of ensuring that a part can be cut, that the cutting toolpath is as efficient as it possibly can be, and eliminating the need for a separate CAM program.
 
+Many of the tools discussed here are visual programming languages (VPLs). While this makes things more approachable to some folks, and arguably more expressive, like most things in life, there are tradeoffs. VPLs are not popular, or widely used, and this nicheness can make usage even more awkward. Further considerations are that they attempt to solve a question which does not at this time have an agreed-upon answer:
+
+What does an algorithm look like?
+
+A further concern is scalability --- while many VPLs allow the definition of functions and modules, the usage of them usually goes against the visual nature which is the _raison d'être_ of choosing a VPL, resulting in the exact textual representation which one was trying to escape from, but trapping the words in little boxes or frames. Arguably not using such componentry is even worse as evinced by pages such as:
+
+{% embed url="https://scriptsofanotherdimension.tumblr.com/" %}
+
 ## G-code
 
 The language used for toolpaths is G-code (RS-274) [https://www.nist.gov/manuscript-publication-search.cfm?pub\_id=823374](https://www.nist.gov/manuscript-publication-search.cfm?pub\_id=823374) --- in some implementations it is a full-fledged programming language, so it is possible to use it directly to program if one has a suitable 3D previewing tool. Unfortunately, most hobby-level G-code implementations lack variables, branching, and looping, so are only suited to the G-code which is output by CAM programs.
