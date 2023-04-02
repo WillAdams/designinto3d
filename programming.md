@@ -195,4 +195,5 @@ and generates G-code which previews as expected:
 * [https://bitbybit.dev/](https://bitbybit.dev/)
 * [https://github.com/nortikin/sverchok](https://github.com/nortikin/sverchok)
 * [https://github.com/kovacsv/VisualScriptCAD](https://github.com/kovacsv/VisualScriptCAD)
+* [https://macad3d.net/](https://macad3d.net/)
 
