@@ -20,7 +20,7 @@ The following toolpaths are either for decorative use or for Carbide Create Pro 
 * 3D Rough (Pro only)
 * 3D Finish (Pro only)
 
-Carbide Create Pro also adds the option of Rest machining for Pockets.
+Carbide Create Pro also adds the option of Ramping in for toolpaths, and Rest machining for Pockets.
 
 The following toolpaths which Carbide Create supports will be discussed here:
 
@@ -33,13 +33,15 @@ The following toolpaths which Carbide Create supports will be discussed here:
 
 Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V endmills will be used for V carving or chamfering or cutting at a precise angle as for certain types of joinery. Keyhole toolpaths require the use of specialty keyhole cutters which cut wider at the bottom than their shaft. Surfacing tools such as the McFly are used to flatten stock or the spoilboard with either a very shallow pocket toolpath, or a contour toolpath which follows geometry which describes the area to be cut.
 
-Note that in Carbide Create, dimensions may be entered using math expressions (which may contain units indicated by in or mm) which are evaluated by entering = at the end, so 1in+8mm= will result in a dimension of either 1.3150in or 33.400mm depending on the current unit. The variable _t_ may be used to reference the current stock thickness, and the expression may be left as an expression by entering it without adding the = at the end, so t/2 will result in half the current stock thickness being used, and will update dynamically when the stock thickness is changed.
+Note that in Carbide Create, dimensions may be entered using math expressions (which may contain units indicated by in or mm) which are evaluated by entering = at the end, so 1in+8mm= will result in a dimension of either 1.3150in or 33.400mm depending on the current unit.&#x20;
 
-Carbide Create v7 adds the option of associating a Toolpath with the content of a selected layer.
+There are also 3 variables, _w_, _h_, and  _t_ may be used to reference the current stock width, height, and thickness respectively, and the expression may be left as an expression in certain fields by entering it without adding the = at the end, so t/2 will result in half the current stock thickness being used, and will update dynamically when the stock thickness is changed.
+
+Carbide Create v7 adds the option of associating a Toolpath with the content of a specified layer.
 
 ## Contour
 
-Contour toolpaths follow along one or more drawn element(s) of geometry, and will be aligned relatively along based on path orientation/direction which will determine the Offset Direction:
+Contour toolpaths follow along one or more drawn element(s) of geometry, and will be aligned relatively based on path orientation/direction which will determine the Offset Direction:
 
 * Inside / Left
 * No Offset (directly along the path)
@@ -49,9 +51,9 @@ Where the toolpath will fall relative to the geometry will always be clear when 
 
 ![Carbide Create | Contour Toolpath | Offsets](<.gitbook/assets/image (91).png>)
 
-* Inside / Left — a 1" hole will be made, and a post 1/2" in diameter will be left
+* Inside / Left — a 1" hole will be made, matching the diameter of the original circle, and a post 1/2" in diameter will be left
 * No Offset — a 1.25" hole will be made, and a post 0.75" in diameter will be left
-* Outside / Right — a 1.5" hole will be made, and a post 1" in diameter will be left
+* Outside / Right — a 1.5" hole will be made, and the original 1" diameter circle will be left as a column
 
 When not cutting all the way through with a square endmill, a square walled slot will result:
 
@@ -119,7 +121,7 @@ into a diamond:
 
 ## Keyhole
 
-Keyhole toolpaths as noted above, require the use of a special tool, and are not previewed in 3D, since that would require undercuts which the 3D preview does not support.
+Keyhole toolpaths as noted above, require the use of a special tool, and are not previewed in 3D, since that would require undercuts which the 3D preview does not support. They have the tool plunging at the center of a specified geometry, then moving a fixed distance at a specified angle. It is best practice to machine away the material which may be reached using a normal tool first. For further details, see the discussion at: [https://community.carbide3d.com/t/using-a-keyhole-tool/39989](https://community.carbide3d.com/t/using-a-keyhole-tool/39989/38) and the actual announcement at: [https://community.carbide3d.com/t/carbide-create-v7-question-keyhole-toolpath/47489](https://community.carbide3d.com/t/carbide-create-v7-question-keyhole-toolpath/47489)
 
 ## Organization
 
@@ -140,7 +142,7 @@ Groups may be used to:
 
 * organize toolpaths by tool&#x20;
 * separate toolpaths for two-sided cutting
-* separate toolpaths for tiling
+* separate toolpaths for tiling --- note that Carbide Create Pro now has a specific feature for this:  [https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334](https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334)
 * separate toolpaths for individual parts
 
 ## G-code
@@ -152,4 +154,4 @@ Once toolpaths have been set up in a file, they may be sent to a machine to be c
 * .gcode
 * .tap
 
-MeshCAM and early versions of Carbide Create add the possibility of a .egc file extension (for encrypted G-code), and Carbide Create v7 normally stores the G-code in the .c2d file itself, allowing that to be loaded into Carbide Motion when connected to a Carbide 3D machine, at which time the G-code will be extracted and sent to the machine. The Pro license for Carbide Create v7 also affords the option to write out G-code as earlier versions had done.
+MeshCAM and early versions of Carbide Create add the possibility of a .egc file extension (for encrypted G-code), and Carbide Create v7 normally stores the G-code in the .c2d file itself, allowing that to be loaded into Carbide Motion when connected to a Carbide 3D machine, at which time the G-code will be extracted and sent to the machine. The Pro license for Carbide Create v7 also affords the option to write out G-code.
