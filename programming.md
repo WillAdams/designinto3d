@@ -190,3 +190,9 @@ and generates G-code which previews as expected:
 * [https://github.com/Bycelium/PyFlow](https://github.com/Bycelium/PyFlow)
 * [https://nodeeditor.seneral.dev/index.html](https://nodeeditor.seneral.dev/index.html)
 * [https://nodes.io/](https://nodes.io/)
+* [https://github.com/Nodi3d/nodi](https://github.com/Nodi3d/nodi)
+* [https://makecode.buildbee.com/](https://makecode.buildbee.com/)
+* [https://bitbybit.dev/](https://bitbybit.dev/)
+* [https://github.com/nortikin/sverchok](https://github.com/nortikin/sverchok)
+* [https://github.com/kovacsv/VisualScriptCAD](https://github.com/kovacsv/VisualScriptCAD)
+
