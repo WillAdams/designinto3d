@@ -196,4 +196,5 @@ and generates G-code which previews as expected:
 * [https://github.com/nortikin/sverchok](https://github.com/nortikin/sverchok)
 * [https://github.com/kovacsv/VisualScriptCAD](https://github.com/kovacsv/VisualScriptCAD)
 * [https://macad3d.net/](https://macad3d.net/)
+* [https://nodi3d.com/](https://nodi3d.com/)
 
