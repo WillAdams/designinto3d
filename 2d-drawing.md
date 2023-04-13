@@ -56,7 +56,7 @@ Closed paths meet back at the point of origin and open up additional operations 
 
 #### Circles
 
-Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI15.html) __ as a plane figure with one line equidistant from a point, _c.f._, [_Book III_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookIII/bookIII.html). In Carbide Create one draws circles from the inside out, clicking first at the center point, then on a point at the perimeter to define the radius (and by extension, diameter):
+Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI15.html) as a plane figure with one line equidistant from a point, _c.f._, [_Book III_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookIII/bookIII.html). In Carbide Create one draws circles from the inside out, clicking first at the center point, then on a point at the perimeter to define the radius (and by extension, diameter):
 
 ![Carbide Create drawing a circle.](<.gitbook/assets/carbide\_create\_interface\_create\_circle (2).png>)
 

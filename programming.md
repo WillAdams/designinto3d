@@ -177,7 +177,7 @@ which with a bit of editing works as expected in RapCAD:
 
 and generates G-code which previews as expected:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Other tools to consider
 
