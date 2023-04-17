@@ -186,7 +186,7 @@ and generates G-code which previews as expected:
 * SnapSCAD --- [https://github.com/martymcguire/snapscad](https://github.com/martymcguire/snapscad)
 * [https://chigraph.io/](https://chigraph.io/)
 * [http://nodezator.com/](http://nodezator.com/)
-* [https://ryven.org/](https://ryven.org/)
+* [https://ryven.org/](https://ryven.org/) and [https://github.com/Tanneguydv/Pythonocc-nodes-for-Ryven](https://github.com/Tanneguydv/Pythonocc-nodes-for-Ryven)
 * [https://github.com/Bycelium/PyFlow](https://github.com/Bycelium/PyFlow)
 * [https://nodeeditor.seneral.dev/index.html](https://nodeeditor.seneral.dev/index.html)
 * [https://nodes.io/](https://nodes.io/)
@@ -199,4 +199,7 @@ and generates G-code which previews as expected:
 * [https://nodi3d.com/](https://nodi3d.com/)
 * [https://brlcad.org/](https://brlcad.org/)
 * [https://beegraphy.com](https://beegraphy.com)
+* [https://github.com/sgenoud/replicad](https://github.com/sgenoud/replicad)
+* [https://www.nodebox.net/](https://www.nodebox.net/)
+* [https://github.com/zalo/CascadeStudio](https://github.com/zalo/CascadeStudio)
 
