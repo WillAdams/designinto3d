@@ -412,11 +412,13 @@ Carbide Create supports layers since version 521. Available under Edit | Show La
 
 (or using the alphabetic keyboard shortcut _l_)
 
-it then affords the ability to create and name layers, as well as to color-code them:
+it then affords the ability to create and name layers (or delete them), as well as to color-code them:
 
 ![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1).png>)
 
-and to move objects to specific layers and to hide/show, or lock/unlock layers. A Layer is an organizational tool which allows one to separate geometry and colour-code it.​ ​ ​How they are used, depends on a given project and how a user wishes to approach it:
+and to move objects to specific layers and to hide/show, or lock/unlock layers, or set a layer to be "Active" (which will cause all new objects to be created on that layer).&#x20;
+
+A Layer is an organizational tool which allows one to separate geometry and colour-code it.​ ​ ​How they are used, depends on a given project and how a user wishes to approach it:
 
 * a two-sided job might have separate layers for each side ​
 * a file with multiple parts might have each part on a separate layer
