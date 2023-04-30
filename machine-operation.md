@@ -4,9 +4,9 @@ description: How to move a machine around
 
 # Machine Operation
 
-Once a design has been created and toolpaths made for it, it must be cut on a machine, which means using the software which controls it. This software is generally referred to as Machine Control Software. The machine control software from Carbide 3D is Carbide Motion.
+Once a design has been created and toolpaths made for it, it must be cut on a machine, which means using the software which controls it. This software is generally referred to as Machine Control Software. The machine control software from Carbide 3D is Carbide Motion, which may be downloaded from: [https://carbide3d.com/carbidemotion/download](https://carbide3d.com/carbidemotion/download)
 
-Basically, Carbide Motion is the control panel of your CNC machine, allowing you to jog your machine, initialize (home) it, load and preview G-Code, set the origin relative to the stock, and interact directly with the firmware (Grbl) using the MDI.
+Basically, such software is the control panel of your CNC machine, allowing you to jog your machine, initialize (home) it, load and preview G-Code, set the origin relative to the stock, and interact directly with the firmware (Grbl) using the MDI.
 
 Carbide Motion is only compatible with CNC machines from Carbide3D, but other manufacturers have similar software, or electronics which afford similar controls.
 
@@ -18,7 +18,7 @@ Click **Connect Cutter** to connect to your machine. The screen will update to r
 
 <figure><img src=".gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
 
-When one first connects a copy of Carbide Motion to a machine it will be necessary to go to **Settings** which has several tabs and configure for the specific machine type, type of Z-axis, the size of the machine, and any accessories as noted in the assembly/installation instructions. See the relevant documentation at: [https://my.carbide3d.com/](https://my.carbide3d.com/) and in the event of any difficulties, write in to support@carbide3d.com.
+When one first connects a copy of Carbide Motion to a machine it will be necessary to go to **Settings** which has several tabs and configure for the specific machine type, type of Z-axis, the size of the machine, and any accessories as noted in the assembly/installation instructions. See the relevant documentation at: [https://my.carbide3d.com/](https://my.carbide3d.com/) as well as: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681) and in the event of any difficulties, write in to support@carbide3d.com.
 
 Once the software is connected press **Initialize Machine** to home your machine:
 
@@ -75,9 +75,13 @@ Once a file has loaded the Run/Job Info window will update to reflect this:
 
 <figure><img src=".gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
-And will show the name, note the time, and first tool needed, and will add a Preview button which will again bring up the information/preview screens.
+And will show the name, note the time, and first tool needed, and will add a **Preview** button which will again bring up the information/preview screens.
 
 Note that it is not critical at this time to have the first tool which a file needs --- often a probing pin will be installed for use with a BitZero --- there will be a prompt when starting a file which has tool change commands to load the correct tool.
+
+Once a file has been loaded and zero set relative to the stock one may press the **Start Job** button and follow the prompts to actually cut the job.
+
+While a job is running there will be a **Pause** button in addition to the **Stop** button. Pause will slow the machine down to a controlled halt and then lift and turn off the spindle. Stop will attempt to stop more abruptly, but in the event of any sort of emergency, the power to the machine, spindle and vacuum should all be turned off using a suitable Emergency Stop button or switch.
 
 ## Jog
 
@@ -85,15 +89,15 @@ Each time you click on the Jog or Run menu buttons there may be a prompt:
 
 <figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-If you have changed the tool without using the appropriate command, use this reminder to measure the tool, otherwise **Continue** which will bring one to:
+If you have changed the tool without using the appropriate command, use this reminder to measure the tool, (note that depending on version, there may be an additional prompt noting the existence of this prompt and offering further information/options) otherwise **Continue** which will bring one to:
 
 <figure><img src=".gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
 
-which allows one to control the machine, jogging it around and setting various options.
+which allows one to control the machine, jogging it around (left--right: **X-**/**X+** , front--back: **Y-**/**Y+**, and up/down: **Z+**/**Z-**) and setting various options.
 
 ### Jog Speed Increment
 
-The first option is the current jog speed Increment --- **Increment +** and **Increment -** buttons afford one the ability to change the jog speeds/increments (when in metric, determining the equivalent Imperial values is left as an exercise for the reader):
+The first option is the current jog speed Increment --- **Increment +** and **Increment -** buttons afford one the ability to change the jog speeds/increments (the values show are in metric, determining the equivalent Imperial values is left as an exercise for the reader):
 
 * 0.025 mm (keyboard shortcut 1) --- the default, note that it is too small an increment to be readily perceptible
 * 0.25 mm (keyboard shortcut 2)
@@ -116,7 +120,7 @@ Once the machine has been moved/jogged so that the tip of the spindle is at the 
 
 ### Rapid Position
 
-This screen affords an interface for rapidly positioning the machine at cardinal points:
+This screen affords an interface for rapidly positioning the machine at cardinal points and the center of the working area:
 
 <figure><img src=".gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
 
@@ -135,17 +139,17 @@ There are four options:
 * X
 * Y
 
-Note that there are two versions of BitZero and it is important that the correct type is selected in Carbide Motion's Settings | Options --- when probing various windows/prompts will be presented, select the correct options which match the probing operation which you wish to do.
+Note that there are two versions of BitZero and it is important that the correct type is selected in Carbide Motion's Settings | Options. When probing, various windows/prompts will be presented, select the correct options which match the probing operation which you wish to do.
 
-It is possible to probe for all three axes at a Corner, and then overwrite for example the Z-axis zero thus set by probing for Z, say at the surface of the wasteboard which the stock is positioned on.
+Note: It is possible to probe for all three axes at a Corner, and then overwrite for example the Z-axis zero thus set by probing for Z, say at the surface of the wasteboard which the stock is positioned on.
 
 See: [https://community.carbide3d.com/t/using-verifying-the-bitzero/34662](https://community.carbide3d.com/t/using-verifying-the-bitzero/34662) for further details.
 
 ### Position
 
-Note the display at the left which shows the current machine position.&#x20;
+There is a persistent display at the left of the application window which shows the current machine position.&#x20;
 
-The title is also a button which when pressed, changes the display coordinates into Machine Position:
+The title is also a button which when pressed, changes the display coordinates into Machine Position which will show the coordinates relative to the machine origin which is set one the machine is homed:
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -153,13 +157,13 @@ Pressing it again will toggle back the current/job coordinate system.
 
 ## Manual Data Input (MDI)
 
-The MDI (also known as a Manual Digital Interface) affords a text box into which a line of G-code commands may be entered and then sent to the machine:
+The MDI (also known as a Manual Digital Interface) affords a text box into which a line of G-code or commands for Grbl may be entered and then sent to the machine:
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Note that any commands entered will be parsed by Carbide Motion unless prefaced with a /.&#x20;
 
-Normal operation should not require using the MDI.
+Normal operation should not require using the MDI. For information on commands which may be used see the Grbl documentation: [https://github.com/gnea/grbl/wiki/Grbl-v1.1-Commands](https://github.com/gnea/grbl/wiki/Grbl-v1.1-Commands)
 
 ## Quick Actions
 
