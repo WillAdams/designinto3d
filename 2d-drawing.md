@@ -199,7 +199,7 @@ When selecting geometry in Carbide Create and selecting **Move**, the X and Y co
 
 In addition to moving, geometry may also be altered in size. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface ― midpoints of the selection marquee afford asymmetric scaling by dragging instead (this is a simple way to create an ellipse/oval) and later versions add a checkbox, "Keep Proportions" which makes it possible to scale asymmetrically numerically (note that drag-scaling will snap to the grid and can afford a similar precision):
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Carbide Create Resize transform</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (145).png" alt=""><figcaption><p>Carbide Create Resize transform</p></figcaption></figure>
 
 ### Rotate
 
@@ -471,7 +471,7 @@ Such notes may have the option of always showing when the file is opened as a re
 
 Carbide Create 7 moves Tabs to the Design pane:
 
-![](<.gitbook/assets/image (138).png>)
+![](<.gitbook/assets/image (138) (2).png>)
 
 which may then be instantiated in the Toolpath pane using Contour toolpaths, or ignored by unchecking the appropriate checkbox.
 
@@ -543,7 +543,7 @@ Beyond just drawing, vector drawing and CAD/CAM programs may have many additiona
 
 * Image Tracing --- rather than manually re-draw a pixel image: [https://community.carbide3d.com/t/carbide-create-re-drawing/15811](https://community.carbide3d.com/t/carbide-create-re-drawing/15811) it is possible to import a pixel image and re-draw it: [https://community.carbide3d.com/t/carbide-create-image-tracing/31208](https://community.carbide3d.com/t/carbide-create-image-tracing/31208) (note that tracing is inherently black and white, on/off, and that it may be necessary to adjust the Threshold setting and trace multiple times in order to capture all details of an image).
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
 
 * STL Import --- this is a feature in Pro, which allows importing an STL centered on the geometry which is selected when it is imported: [https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12](https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12)
 * Inlay --- [https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115](https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115)

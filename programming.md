@@ -87,11 +87,11 @@ M02
 
 This previews as:
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 As verified by a 3rd party G-code simulator, CutViewer Mill:
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 The control software for many CNC machines will afford G-code entry in one or more ways. For the Carbide 3D machines which I use (and support), this is Carbide Motion, which has two options: MDI --- one can enter G-code into the MDI one line at a time, and also "Quick Actions" which allow entering small programs which can then be run at will.&#x20;
 
@@ -165,7 +165,7 @@ Having multiple cuts presents the possibility of redundant G-code commands, but 
 
 If one loads the library gcodepreview as a module into OSGE, it is pretty straight-forward to use it to create a file to cut out a design using G-code:
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 which when generated as OpenSCAD code previews as expected:
 
@@ -173,11 +173,11 @@ which when generated as OpenSCAD code previews as expected:
 
 which with a bit of editing works as expected in RapCAD:
 
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
 
 and generates G-code which previews as expected:
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Other tools to consider
 

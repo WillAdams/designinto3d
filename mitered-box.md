@@ -27,7 +27,7 @@ which would then have no-offset Contour toolpaths assigned using a 90 degree V e
 
 Surround the parts with a rectangle, and geometry offset from it by endmill diameter plus 10%:
 
-<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Alternately, to make workholding easier, only the edges of the parts strictly need to be cut out:
 
@@ -35,13 +35,13 @@ Alternately, to make workholding easier, only the edges of the parts strictly ne
 
 Only two toolpaths are necessary, a no-offset Contour with a V endmill:
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 (which is done to stock thickness (t) less an onion skin (0.015″))
 
 and pockets to cut the parts free:
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 As the 3D preview shows, workholding may be done at the corners, depending on the onion-skin of the V endmill cut to hold things in place:
 
