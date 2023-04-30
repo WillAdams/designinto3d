@@ -145,6 +145,12 @@ See: [https://community.carbide3d.com/t/using-verifying-the-bitzero/34662](https
 
 Note the display at the left which shows the current machine position.&#x20;
 
+The title is also a button which when pressed, changes the display coordinates into Machine Position:
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Pressing it again will toggle back the current/job coordinate system.
+
 ## Manual Data Input (MDI)
 
 The MDI (also known as a Manual Digital Interface) affords a text box into which a line of G-code commands may be entered and then sent to the machine:
@@ -185,7 +191,7 @@ which affords an interface for **Load Defaults**&#x20;
 
 or to Send Configuration Data:
 
-![](<.gitbook/assets/image (2).png>)
+![](<.gitbook/assets/image (2) (1).png>)
 
 (Note that for a Shapeoko 5 or Nomad the machine type will be detected automatically. For the specifics of settings for a Shapeoko 3, 4, or Pro see: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681))
 

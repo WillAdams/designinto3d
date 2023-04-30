@@ -123,7 +123,7 @@ The latter two match job setup options in Carbide Create and determine where the
 
 which generates matching G-code:
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### generategcode
 
