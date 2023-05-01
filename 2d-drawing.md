@@ -404,6 +404,18 @@ A curve which alternates on-curve and off-curve nodes, B-Splines are used for Tr
 
 CAD and drawing programs may have a number of other features, depending on their intended use. Some of these include:
 
+### Group Vectors/Ungroup Vectors
+
+When two or more objects are selected, the command **Group Vectors** becomes available:
+
+![](<.gitbook/assets/image (12).png>)
+
+which will then group the current selection so that it may be selected and manipulated as a unit.
+
+This may be undone using the command **Ungroup Vectors**:
+
+![](<.gitbook/assets/image (4).png>)
+
 ### Layers
 
 Carbide Create supports layers since version 521. Available under Edit | Show Layers:

@@ -193,7 +193,7 @@ The Machine Settings window has three tabs:
 
 ### Machine
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 which affords an interface for **Load Defaults**&#x20;
 
