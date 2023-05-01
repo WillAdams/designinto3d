@@ -18,7 +18,7 @@ Click **Connect Cutter** to connect to your machine. The screen will update to r
 
 <figure><img src=".gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
 
-When one first connects a copy of Carbide Motion to a machine it will be necessary to go to **Settings** which has several tabs and configure for the specific machine type, type of Z-axis, the size of the machine, and any accessories as noted in the assembly/installation instructions. See the relevant documentation at: [https://my.carbide3d.com/](https://my.carbide3d.com/) as well as: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681) and in the event of any difficulties, write in to support@carbide3d.com.
+When one first connects a copy of Carbide Motion to a machine it will be necessary to go to **Settings** which has several tabs and configure for the specific machine type, type of Z-axis, the size of the machine, and any accessories as noted in the assembly/installation instructions. See the relevant documentation at: [https://my.carbide3d.com/](https://my.carbide3d.com/) as well as: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681) and in the event of any difficulties, write in to [support@carbide3d.com](mailto:support@carbide3d.com).
 
 Once the software is connected press **Initialize Machine** to home your machine:
 
@@ -26,7 +26,11 @@ Once the software is connected press **Initialize Machine** to home your machine
 
 Note that while doing so, it will display a BUSY status in the green menu bar.
 
-Initialization will have the machine find the machine origin at the right (X), back (Y), top (Z) corner of your machine. If you have a BitSetter (see below) it will also measure the tool offset. Once your machine is initialized, you’ll be presented with the **Job Info** screen (which is selected by the **Run** tab in the top menu bar. and the Jog menu will appear, so that the possible screens are:
+Initialization will have the machine find the machine origin at the right (X+), back (Y+), top (Z+) corner of your machine. Note that the origin being there is a traditional choice for machining which has its basis in safety considerations --- positive moves should be away from the operator/material, so it is negative motions which are most concerning from a safety standpoint.
+
+If you have a BitSetter (see below) it will also measure the tool offset.&#x20;
+
+Once your machine is initialized, you’ll be presented with the **Job Info** screen (which is selected by the **Run** tab in the top menu bar. and the Jog menu will appear, so that the possible screens are:
 
 * Run/Job Info&#x20;
 * Jog
@@ -44,7 +48,7 @@ This will afford the chance to load a project at this time, or it may be returne
 * Start Job --- this will start a job once loaded
 * Quick Actions --- this allows storing G-code snippets/commands for repetitive tasks
 
-The usual workflow is to load a file --- doing so will bring up an information/G-code preview screen with several views:
+The usual workflow is to first load a file --- doing so will bring up an information/G-code preview screen with several views:
 
 ### Info
 
@@ -79,7 +83,7 @@ And will show the name, note the time, and first tool needed, and will add a **P
 
 Note that it is not critical at this time to have the first tool which a file needs --- often a probing pin will be installed for use with a BitZero --- there will be a prompt when starting a file which has tool change commands to load the correct tool.
 
-Once a file has been loaded and zero set relative to the stock one may press the **Start Job** button and follow the prompts to actually cut the job.
+Once a file has been loaded and zero set relative to the stock by jogging (see below) one may press the **Start Job** button and follow the prompts to actually cut the job.
 
 While a job is running there will be a **Pause** button in addition to the **Stop** button. Pause will slow the machine down to a controlled halt and then lift and turn off the spindle. Stop will attempt to stop more abruptly, but in the event of any sort of emergency, the power to the machine, spindle and vacuum should all be turned off using a suitable Emergency Stop button or switch.
 
@@ -94,6 +98,8 @@ If you have changed the tool without using the appropriate command, use this rem
 <figure><img src=".gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
 
 which allows one to control the machine, jogging it around (left--right: **X-**/**X+** , front--back: **Y-**/**Y+**, and up/down: **Z+**/**Z-**) and setting various options.
+
+There are keyboard shortcuts for jogging are set up so that a numeric keypad may be used for jogging, so the arrow keys control X- and Y-axes, while + and - control the Z-axis (Page Up and Page Down may also be used). Alternately, a gaming controller with joysticks may be used: [https://community.carbide3d.com/t/using-a-game-controller-with-cm513-and-later/21867](https://community.carbide3d.com/t/using-a-game-controller-with-cm513-and-later/21867) another option is to remap buttons on a game pad: [https://community.carbide3d.com/t/a-different-sort-of-pendant/22503](https://community.carbide3d.com/t/a-different-sort-of-pendant/22503) c.f., [https://community.carbide3d.com/t/keyboard-shortcut-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-shortcut-cheat-sheet-for-carbide-create-and-motion/7839)
 
 ### Jog Speed Increment
 
@@ -120,11 +126,11 @@ Once the machine has been moved/jogged so that the tip of the spindle is at the 
 
 ### Rapid Position
 
-This screen affords an interface for rapidly positioning the machine at cardinal points and the center of the working area:
+This screen affords an interface for rapidly positioning the machine at cardinal points and the approximate center of the working area:
 
 <figure><img src=".gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
 
-as well as to **Rapid to Current XY** (zero) and to **Rapid to Current Z + 6mm** (or some reasonable equivalent in inches). The actual coordinates of the various rapid positions is determined by the physical position of the home switches, the distance which Grbl is set to pull off of them, and the Travel Dimensions for the machine.&#x20;
+as well as to **Rapid to Current XY** (zero) and to **Rapid to Current Z + 6mm** (or some reasonable equivalent in inches). The actual coordinates of the various rapid positions is determined by the physical position of the home switches, the distance which Grbl is set to pull off of them, and the Travel Dimensions for the machine. For more on this see: [http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131](http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131)
 
 ### Probe
 
@@ -134,7 +140,7 @@ If you have a BitZero, then there will be an option for Probing with it so as to
 
 There are four options:
 
-* Corner, which probes all 3 axes
+* Corner, which probes all 3 axes and requires that the unit be registered at the lower-left corner of the stock
 * Z, which probes for Z only and requires that the unit be fully supported on the top of the stock
 * X
 * Y
@@ -157,7 +163,7 @@ Pressing it again will toggle back the current/job coordinate system.
 
 ## Manual Data Input (MDI)
 
-The MDI (also known as a Manual Digital Interface) affords a text box into which a line of G-code or commands for Grbl may be entered and then sent to the machine:
+The Manual Data Input or MDI, (also known as a Manual Digital Interface) affords a text box into which a line of G-code or commands for Grbl may be entered and then sent to the machine:
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -167,7 +173,7 @@ Normal operation should not require using the MDI. For information on commands w
 
 ## Quick Actions
 
-Similar to the MDI are Quick Actions, accessed from the button for them on the Run/Job Info pane:
+In addition to the MDI it is also possible to enter G-code commands for the machine using Quick Actions, accessed from the button for them on the Run/Job Info pane:
 
 <figure><img src=".gitbook/assets/image (138).png" alt=""><figcaption></figcaption></figure>
 
@@ -197,9 +203,9 @@ or to Send Configuration Data:
 
 ![](<.gitbook/assets/image (2) (1).png>)
 
-(Note that for a Shapeoko 5 or Nomad the machine type will be detected automatically. For the specifics of settings for a Shapeoko 3, 4, or Pro see: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681))
+Note that for a Shapeoko 5 or Nomad the machine type will be detected automatically. For the specifics of settings for a Shapeoko 3, 4, or Pro see: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681)
 
-Note that there is an area for display Grbl Active Input Pins which will show the state of the various switches, e.g., the BitSetter which registers as a Probe input:
+Note that there is an area for displaying Grbl Active Input Pins which will show the state of the various switches, e.g., the BitSetter which registers as a Probe input:
 
 <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
