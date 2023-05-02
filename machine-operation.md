@@ -6,7 +6,7 @@ description: How to move a machine around
 
 Once a design has been created and toolpaths made for it, it must be cut on a machine, which means using the software which controls it. This software is generally referred to as Machine Control Software. The machine control software from Carbide 3D is Carbide Motion, which may be downloaded from: [https://carbide3d.com/carbidemotion/download](https://carbide3d.com/carbidemotion/download)
 
-Basically, such software is the control panel of your CNC machine, allowing you to jog your machine, initialize (home) it, load and preview G-Code, set the origin relative to the stock, and interact directly with the firmware (Grbl) using the MDI.
+Basically, such software is the control panel of your CNC machine, allowing you to jog your machine, initialize (home) it, load and preview G-code, set the origin relative to the stock, and interact directly with the firmware (Grbl) using the MDI.
 
 Carbide Motion is only compatible with CNC machines from Carbide3D, but other manufacturers have similar software, or electronics which afford similar controls.
 
@@ -26,9 +26,9 @@ Once the software is connected press **Initialize Machine** to home your machine
 
 Note that while doing so, it will display a BUSY status in the green menu bar.
 
-Initialization will have the machine find the machine origin at the right (X+), back (Y+), top (Z+) corner of your machine. Note that the origin being there is a traditional choice for machining which has its basis in safety considerations --- positive moves should be away from the operator/material, so it is negative motions which are most concerning from a safety standpoint.
+Initialization will have the machine find the machine origin at the right (**X+**), back (**Y+**), top (**Z+**) corner of your machine. Note that the origin being there is a traditional choice for machining which has its basis in safety considerations --- positive moves should be away from the operator/material, so it is negative motions which are most concerning from a safety standpoint.
 
-If you have a BitSetter (see below) it will also measure the tool offset.&#x20;
+If you have a BitSetter (see below) it will also measure the tool offset once it has been confirmed that a tool was loaded.&#x20;
 
 Once your machine is initialized, you’ll be presented with the **Job Info** screen (which is selected by the **Run** tab in the top menu bar. and the Jog menu will appear, so that the possible screens are:
 
@@ -43,10 +43,10 @@ Once your machine is initialized, you’ll be presented with the **Job Info** sc
 
 This will afford the chance to load a project at this time, or it may be returned to and a file loaded later. The options are:
 
-* Load New File --- When you load a file, a normal file selection dialog for your OS will be brought up to allow selecting a file.&#x20;
-* Load New Tool (if you have a BitSetter) --- this will allow changing the currently loaded tool and then measuring its offset relative to the first tool which was measured
-* Start Job --- this will start a job once loaded
-* Quick Actions --- this allows storing G-code snippets/commands for repetitive tasks
+* **Load New File** --- When you load a file, a normal file selection dialog for your OS will be brought up to allow selecting a file.&#x20;
+* **Load New Tool** (if you have a BitSetter) --- this will allow changing the currently loaded tool and then measuring its offset relative to the first tool which was measured
+* **Start Job** --- this will start a job once loaded
+* **Quick Actions** --- this allows storing G-code snippets/commands for repetitive tasks
 
 The usual workflow is to first load a file --- doing so will bring up an information/G-code preview screen with several views:
 
@@ -72,24 +72,24 @@ The usual workflow is to first load a file --- doing so will bring up an informa
 
 and two possible options:
 
-* Save G-code to File --- this will allow extracting the G-code from a .c2d file
-* Done --- this will load the G-code from the file into Carbide Motion in preparation for sending it to the machine
+* **Save G-code to File** --- this will allow extracting the G-code from a .c2d file and saving it as a .nc file
+* **Done** --- this will load the G-code from the file into Carbide Motion in preparation for sending it to the machine
 
-Once a file has loaded the Run/Job Info window will update to reflect this:
+Once a file has loaded the **Run**/**Job Info** window will update to reflect this:
 
 <figure><img src=".gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 And will show the name, note the time, and first tool needed, and will add a **Preview** button which will again bring up the information/preview screens.
 
-Note that it is not critical at this time to have the first tool which a file needs --- often a probing pin will be installed for use with a BitZero --- there will be a prompt when starting a file which has tool change commands to load the correct tool.
+Note that it is not critical at this time to have the first tool which a file needs installed --- often a probing pin will be installed for use with a BitZero --- there will be a prompt when starting a file which has tool change commands to load the correct tool.
 
 Once a file has been loaded and zero set relative to the stock by jogging (see below) one may press the **Start Job** button and follow the prompts to actually cut the job.
 
-While a job is running there will be a **Pause** button in addition to the **Stop** button. Pause will slow the machine down to a controlled halt and then lift and turn off the spindle. Stop will attempt to stop more abruptly, but in the event of any sort of emergency, the power to the machine, spindle and vacuum should all be turned off using a suitable Emergency Stop button or switch.
+While a job is running there will be a **Pause** button in addition to the **Stop** button. **Pause** will slow the machine down to a controlled halt and then lift and turn off the spindle. The Feed-Hold button on machines so equip should function similarly. **Stop** will attempt to stop more abruptly, but in the event of any sort of emergency, the power to the machine, spindle and vacuum should all be turned off using a suitable Emergency Stop button or switch.
 
 ## Jog
 
-Each time you click on the Jog or Run menu buttons there may be a prompt:
+Each time you click on the **Jog** or **Run** menu buttons there may be a prompt:
 
 <figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
@@ -97,18 +97,18 @@ If you have changed the tool without using the appropriate command, use this rem
 
 <figure><img src=".gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
 
-which allows one to control the machine, jogging it around (left--right: **X-**/**X+** , front--back: **Y-**/**Y+**, and up/down: **Z+**/**Z-**) and setting various options.
+which allows one to control the machine, jogging it around using [Cartesian coordinates](https://en.wikipedia.org/wiki/Cartesian\_coordinate\_system) (left--right: **X-**/**X+** , front--back: **Y-**/**Y+**, and up/down: **Z+**/**Z-**) and setting various options.
 
-There are keyboard shortcuts for jogging are set up so that a numeric keypad may be used for jogging, so the arrow keys control X- and Y-axes, while + and - control the Z-axis (Page Up and Page Down may also be used). Alternately, a gaming controller with joysticks may be used: [https://community.carbide3d.com/t/using-a-game-controller-with-cm513-and-later/21867](https://community.carbide3d.com/t/using-a-game-controller-with-cm513-and-later/21867) another option is to remap buttons on a game pad: [https://community.carbide3d.com/t/a-different-sort-of-pendant/22503](https://community.carbide3d.com/t/a-different-sort-of-pendant/22503) c.f., [https://community.carbide3d.com/t/keyboard-shortcut-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-shortcut-cheat-sheet-for-carbide-create-and-motion/7839)
+There are keyboard shortcuts for jogging set up so that a numeric keypad may be used for moving the machine, so that the arrow keys control **X-** and **Y-**axes, while **+** and **-** control the Z-axis (Page Up and Page Down may also be used). Alternately, a gaming controller with joysticks may be used: [https://community.carbide3d.com/t/using-a-game-controller-with-cm513-and-later/21867](https://community.carbide3d.com/t/using-a-game-controller-with-cm513-and-later/21867) another option is to remap buttons on a game pad: [https://community.carbide3d.com/t/a-different-sort-of-pendant/22503](https://community.carbide3d.com/t/a-different-sort-of-pendant/22503) c.f., [https://community.carbide3d.com/t/keyboard-shortcut-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-shortcut-cheat-sheet-for-carbide-create-and-motion/7839)
 
 ### Jog Speed Increment
 
 The first option is the current jog speed Increment --- **Increment +** and **Increment -** buttons afford one the ability to change the jog speeds/increments (the values show are in metric, determining the equivalent Imperial values is left as an exercise for the reader):
 
-* 0.025 mm (keyboard shortcut 1) --- the default, note that it is too small an increment to be readily perceptible
-* 0.25 mm (keyboard shortcut 2)
-* 1 mm (keyboard shortcut 3)
-* Fast (keyboard shortcut 4) --- this is the most used, and allows navigating the working area of even a large machine with a bit of patience, alternately, see the **Rapid Position** command below
+* **0.025 mm** (keyboard shortcut 1) --- the default, note that it is too small an increment to be readily perceptible
+* **0.25 mm** (keyboard shortcut 2)
+* **1 mm** (keyboard shortcut 3)
+* **Fast** (keyboard shortcut 4) --- this is the most used, and allows navigating the working area of even a large machine with a bit of patience, alternately, see the **Rapid Position** command below
 
 ### Spindle On/Off
 
@@ -134,20 +134,20 @@ as well as to **Rapid to Current XY** (zero) and to **Rapid to Current Z + 6mm**
 
 ### Probe
 
-If you have a BitZero, then there will be an option for Probing with it so as to set zero using it:
+If you have a BitZero and have it enabled in the Settings | Options pane, then there will be an option for Probing with it so as to set zero using it:
 
 <figure><img src=".gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
 
 There are four options:
 
-* Corner, which probes all 3 axes and requires that the unit be registered at the lower-left corner of the stock
-* Z, which probes for Z only and requires that the unit be fully supported on the top of the stock
-* X
-* Y
+* **Corner**, which probes all 3 axes and requires that the unit be registered at the lower-left corner of the stock
+* **Z**, which probes for Z only and requires that the unit be fully supported on the top of the stock
+* **X**
+* **Y**
 
 Note that there are two versions of BitZero and it is important that the correct type is selected in Carbide Motion's Settings | Options. When probing, various windows/prompts will be presented, select the correct options which match the probing operation which you wish to do.
 
-Note: It is possible to probe for all three axes at a Corner, and then overwrite for example the Z-axis zero thus set by probing for Z, say at the surface of the wasteboard which the stock is positioned on.
+**Note:** It is possible to probe for all three axes at a Corner, and then overwrite for example the Z-axis zero thus set by probing for Z, say at the surface of the wasteboard which the stock is positioned on.
 
 See: [https://community.carbide3d.com/t/using-verifying-the-bitzero/34662](https://community.carbide3d.com/t/using-verifying-the-bitzero/34662) for further details.
 
@@ -155,7 +155,7 @@ See: [https://community.carbide3d.com/t/using-verifying-the-bitzero/34662](https
 
 There is a persistent display at the left of the application window which shows the current machine position.&#x20;
 
-The title is also a button which when pressed, changes the display coordinates into Machine Position which will show the coordinates relative to the machine origin which is set one the machine is homed:
+The title is also a button which when pressed, changes the display coordinates into Machine Position which will show the coordinates relative to the machine origin which is set once the machine is homed:
 
 <figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -227,7 +227,7 @@ The button **Show Log** brings up the **Log Window**:
 
 <figure><img src=".gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
 
-Which has a checkbox to **Hide Status Reports**, preventing the machine's reporting its current position from cluttering things up, and buttons to Copy All and Clear. Note that leaving it open will have a deleterious effect of machine performance.
+Which has a checkbox to **Hide Status Reports**, preventing the machine's reporting its current position from cluttering things up, and buttons to **Copy All** and **Clear**. Note that leaving it open will have a deleterious effect of machine performance.
 
 If the MDI is used to send commands, their results/output will be shown here, e.g., \$$ for showing the current Grbl configuration:
 
