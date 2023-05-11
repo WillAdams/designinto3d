@@ -548,6 +548,7 @@ Websites for this sort of thing:
 * [https://www.wermac.org/others/convert\_right\_triangle\_calculation.html](https://www.wermac.org/others/convert\_right\_triangle\_calculation.html)
 * [http://ambrnet.com/TrigoCalc/Circle3D.htm](http://ambrnet.com/TrigoCalc/Circle3D.htm)
 * [https://mathopenref.com/arcradius.html](https://mathopenref.com/arcradius.html)
+* [https://www.omnicalculator.com/construction/taper](https://www.omnicalculator.com/construction/taper)
 
 ## Additional Features
 
