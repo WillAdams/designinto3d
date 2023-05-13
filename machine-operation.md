@@ -25,6 +25,17 @@ The stock must be securely held in place in the working area of the machine so t
 * access of the tool to the work and the ability of the tool to clear the workholding if need be
 * efficient usage of the stock
 * distorting the stock, or having it collapse in on the part as material is removed
+* how securely the piece is secured --- it must be fastened so as to not be displaced by cumulative cutting forces and vibration
+
+When securing stock, options include:
+
+* mechanically clamping from above/outside the part
+* mechanically clamping from the sides
+* mechanically clamping using through holes (this can include the use of polymer nails)
+* using adhesives to secure the stock (a popular option is painter's tape on both the bed of the machine and the stock, fastened together using cyanoacrylate glue)
+* vacuum
+
+It is possible for a single part/project to use multiple techniques (a typical one would be clamping from the side initially so as to drill through holes, then using those holes to fasten a part in place for the balance of the operations). When fastening it is important to consider leverage and the attendant principles. See: [https://community.carbide3d.com/t/work-part-clamping-many-of-you-are-doing-it-wrong/3396](https://community.carbide3d.com/t/work-part-clamping-many-of-you-are-doing-it-wrong/3396)&#x20;
 
 ## Machine Operating Checklist
 
