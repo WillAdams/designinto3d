@@ -6,13 +6,25 @@ description: Putting everything together to make parts and projects
 
 Ideally everything for operating a machine would be covered at: [https://my.carbide3d.com/](https://my.carbide3d.com/) as well as: [https://shapeokoenthusiasts.gitbook.io/shapeoko-cnc-a-to-z/](https://shapeokoenthusiasts.gitbook.io/shapeoko-cnc-a-to-z/) with the specifics of Carbide Create covered in [2D Drawing](2d-drawing.md), [Toolpaths](toolpaths.md), and (for folks with Pro licenses) [3D Modeling from 2D Geometry](3d-modeling-from-2d-geometry.md), and Carbide Motion covered in [Machine Motion](machine-motion.md). This chapter will function as an overview of the entire process of making a part or project.
 
-Design
+## Design
 
-Toolpaths
+Design will be done in either a 2D (e.g, Carbide Create as shown in [2D Drawing](2d-drawing.md)), or 3D program (such as Alibre Atom 3D, FreeCAD, \&c.). Design elements may be completely contained within the geometry of the part/project, or may define the perimeter/structure of the part/project. Once a final appearance is arrived at, Toolpaths may be set up.
 
-Stock
+## Toolpaths
 
-Workholding
+Toolpaths will be created or assigned in a suitable CAM program (or by directly creating toolpaths by hand-coding G-code or directly programming), and like the design, will be either 2D or 3D. Note that it is possible to assign 3D toolpaths to 2D elements and vice-versa (cutting a 3D part free with a 2D perimeter cut). Toolpaths should be added/adjusted until the 3D preview of the toolpaths is correct.
+
+## Stock
+
+The raw material is referred to as the stock. Depending on the nature of the cut, it may be necessary to have the stock precisely measured and entered accurately into the design file, or not. It will be necessary that the stock is securely clamped in place (see Workholding below) and the zero set relative to the stock so as to match how this is set in the G-code file.
+
+## Workholding
+
+The stock must be securely held in place in the working area of the machine so that the origin may be set relative to it. There are myriad products and approaches. Considerations include:
+
+* access of the tool to the work and the ability of the tool to clear the workholding if need be
+* efficient usage of the stock
+* distorting the stock, or having it collapse in on the part as material is removed
 
 ## Machine Operating Checklist
 
