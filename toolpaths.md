@@ -123,6 +123,20 @@ into a diamond:
 
 Keyhole toolpaths as noted above, require the use of a special tool, and are not previewed in 3D, since that would require undercuts which the 3D preview does not support. They have the tool plunging at the center of a specified geometry, then moving a fixed distance at a specified angle. It is best practice to machine away the material which may be reached using a normal tool first. For further details, see the discussion at: [https://community.carbide3d.com/t/using-a-keyhole-tool/39989](https://community.carbide3d.com/t/using-a-keyhole-tool/39989/38) and the actual announcement at: [https://community.carbide3d.com/t/carbide-create-v7-question-keyhole-toolpath/47489](https://community.carbide3d.com/t/carbide-create-v7-question-keyhole-toolpath/47489)
 
+## Arrangement
+
+As noted in [2D Drawing](2d-drawing.md#arrangement), there are several possible arrangements for multiple pieces of geometry:
+
+* Adjacent/coincident --- the geometries are actually touching along some edges
+* Overlapping/intersecting --- the geometries overlap or intersect
+* Nesting --- each piece of geometry either contains, or is contained by the other piece(s) of geometry
+* No interaction --- geometries do not interact in any fashion
+
+Best practice is for geometries to either nest or have no interaction, and all toolpaths will work as expected for those two cases whether they expect closed or open geometry. Contour toolpaths which work along the geometry will work for any sort of arrangement. The other options will have implications for how Toolpaths which expect closed geometries are applied to geometry and interact:
+
+* Adjacent/coincident --- such geometries will effectively be unioned when Toolpaths which interact with closed toolpaths are applied
+* Overlapping/intersecting --- depending on the winding, intersecting areas will either be filled or not, which can be hard to predict --- when the Toolpaths are not as expected, it will be necessary to create Boolean Union and/or Intersections of geometry to create the desired effect
+
 ## Organization
 
 Carbide Create affords the option of organizing toolpaths into groups --- this is done using a contextual right-click menu:
