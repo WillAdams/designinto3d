@@ -400,6 +400,17 @@ which is a useful tutorial and exercise, though to facilitate gameplay, it shows
 
 A curve which alternates on-curve and off-curve nodes, B-Splines are used for TrueType fonts, since their calculation is efficiently done, but are not used in typical CAD or Bézier curve drawing applications because of the difficulty in editing them. Note that when TrueType fonts are converted to paths, conversion from B-Splines to Bézier curves may result in odd node placement.
 
+## Arrangement
+
+There are of course several possible arrangements for multiple pieces of geometry:
+
+* Adjacent/coincident --- the geometries are actually touching along some edges
+* Overlapping/intersecting --- the geometries overlap or intersect
+* Nesting --- each piece of geometry either contains, or is contained by the other piece(s) of geometry
+* No interaction --- geometries do not interact in any fashion
+
+Best practice is for geometries to either nest or have no interaction --- the other two possibilities have potential interactions and implications which will be discussed in [Toolpaths](toolpaths.md).
+
 ## Other Features
 
 CAD and drawing programs may have a number of other features, depending on their intended use. Some of these include:
