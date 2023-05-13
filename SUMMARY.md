@@ -22,4 +22,5 @@
 * [3D Modeling from 2D Geometry](3d-modeling-from-2d-geometry.md)
 * [3D Modeling](3d-modeling.md)
 * [Machine Motion](machine-motion.md)
+* [Machine Operation](machine-operation.md)
 * [Programming](programming.md)
