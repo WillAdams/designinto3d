@@ -1,8 +1,8 @@
 ---
-description: How to move a machine around
+description: Software to move a machine around
 ---
 
-# Machine Operation
+# Machine Motion
 
 Once a design has been created and toolpaths made for it, it must be cut on a machine, which means using the software which controls it. This software is generally referred to as Machine Control Software. The machine control software from Carbide 3D is Carbide Motion, which may be downloaded from: [https://carbide3d.com/carbidemotion/download](https://carbide3d.com/carbidemotion/download)
 
@@ -14,7 +14,7 @@ Upon launch, Carbide Motion will present a screen which notes it is **Not Connec
 
 <figure><img src=".gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
 
-Click **Connect Cutter** to connect to your machine. The screen will update to reflect this if it is successful (if it is not, contact support@carbide3d.com):
+Click **Connect Cutter** to connect to your machine. The screen will update to reflect this if it is successful (if it is not, contact [support@carbide3d.com](mailto:support@carbide3d.com)):
 
 <figure><img src=".gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
 
@@ -30,12 +30,12 @@ Initialization will have the machine find the machine origin at the right (**X+*
 
 If you have a BitSetter (see below) it will also measure the tool offset once it has been confirmed that a tool was loaded.&#x20;
 
-Once your machine is initialized, you’ll be presented with the **Job Info** screen (which is selected by the **Run** tab in the top menu bar. and the Jog menu will appear, so that the possible screens are:
+Once your machine is initialized, you’ll be presented with the **Job Info** screen (which is selected by the **Run** tab in the top menu bar) and the Jog menu will appear, so that the possible screens are:
 
-* Run/Job Info&#x20;
-* Jog
-* MDI
-* Settings
+* **Run**/Job Info&#x20;
+* **Jog**/Position
+* **MDI** (Manual Data Input)
+* (Machine) **Settings**
 
 ## Run/Job Info
 
@@ -79,17 +79,17 @@ Once a file has loaded the **Run**/**Job Info** window will update to reflect th
 
 <figure><img src=".gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
-And will show the name, note the time, and first tool needed, and will add a **Preview** button which will again bring up the information/preview screens.
+And will show the name, note the time the file was loaded, and the first tool needed, and will add a **Preview** button which will again bring up the information/preview screens.
 
-Note that it is not critical at this time to have the first tool which a file needs installed --- often a probing pin will be installed for use with a BitZero --- there will be a prompt when starting a file which has tool change commands to load the correct tool.
+Note that it is not critical at this time to have the first tool which a file needs installed --- often a probing pin will be installed for use with a BitZero, or the tool from a previous job may still be loaded --- there will be a prompt when starting a file to load the correct tool.
 
 Once a file has been loaded and zero set relative to the stock by jogging (see below) one may press the **Start Job** button and follow the prompts to actually cut the job.
 
 While a job is running there will be a **Pause** button in addition to the **Stop** button. **Pause** will slow the machine down to a controlled halt and then lift and turn off the spindle. The Feed-Hold button on machines so equip should function similarly. **Stop** will attempt to stop more abruptly, but in the event of any sort of emergency, the power to the machine, spindle and vacuum should all be turned off using a suitable Emergency Stop button or switch.
 
-## Jog
+## Jog/Position
 
-Each time you click on the **Jog** or **Run** menu buttons there may be a prompt:
+Each time you click on the **Jog** or **Run** or other menu buttons there may be a prompt:
 
 <figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
@@ -142,8 +142,8 @@ There are four options:
 
 * **Corner**, which probes all 3 axes and requires that the unit be registered at the lower-left corner of the stock
 * **Z**, which probes for Z only and requires that the unit be fully supported on the top of the stock
-* **X**
-* **Y**
+* **X**, which probes for that single axis, and requires that the BitZero be positioned either at a corner (v2), or along the left edge (v1)
+* **Y**, which probes for that single axis, and requires that the BitZero be positioned either at a corner (v2), or along the front edge (v1)
 
 Note that there are two versions of BitZero and it is important that the correct type is selected in Carbide Motion's Settings | Options. When probing, various windows/prompts will be presented, select the correct options which match the probing operation which you wish to do.
 
@@ -195,11 +195,11 @@ The Machine Settings window has three tabs:
 
 <figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-which affords an interface for **Load Defaults**&#x20;
+which affords an interface for **Load Defaults** (which will set the Travel Dimensions)
 
 ![](<.gitbook/assets/image (148).png>)
 
-or to Send Configuration Data:
+or to Send Configuration Data (which will configure Grbl):
 
 ![](<.gitbook/assets/image (2) (1).png>)
 
@@ -214,6 +214,12 @@ Note that there is an area for displaying Grbl Active Input Pins which will show
 The Options pane allows configuration of various machine accessories as noted in the respective manuals:
 
 <figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+The accessories include (but are not necessarily limited to:
+
+* BitSetter --- allows measuring tools for tool changes [https://my.carbide3d.com/pdf/bitsetter-v2.pdf](https://my.carbide3d.com/pdf/bitsetter-v2.pdf) (standard on the Nomad and Pro models)
+* BitRunner --- affords on/off of a trim router used as a spindle [https://my.carbide3d.com/manuals/bitrunner-v2](https://my.carbide3d.com/manuals/bitrunner-v2)
+* BitZero --- allows probing so as to set the origin relative to rectangular stock [https://my.carbide3d.com/manuals/shapeoko-bitzero-v2](https://my.carbide3d.com/manuals/shapeoko-bitzero-v2)
 
 ### User Interface
 
