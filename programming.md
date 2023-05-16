@@ -179,6 +179,10 @@ and generates G-code which previews as expected:
 
 <figure><img src=".gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
+## Programming Modules
+
+
+
 ## Other tools to consider
 
 * [https://github.com/chigraph/chigraph](https://github.com/chigraph/chigraph)
