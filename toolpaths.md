@@ -123,6 +123,19 @@ into a diamond:
 
 Keyhole toolpaths as noted above, require the use of a special tool, and are not previewed in 3D, since that would require undercuts which the 3D preview does not support. They have the tool plunging at the center of a specified geometry, then moving a fixed distance at a specified angle. It is best practice to machine away the material which may be reached using a normal tool first. For further details, see the discussion at: [https://community.carbide3d.com/t/using-a-keyhole-tool/39989](https://community.carbide3d.com/t/using-a-keyhole-tool/39989/38) and the actual announcement at: [https://community.carbide3d.com/t/carbide-create-v7-question-keyhole-toolpath/47489](https://community.carbide3d.com/t/carbide-create-v7-question-keyhole-toolpath/47489)
 
+## Selection
+
+There are two buttons in Toolpaths which function as the interface for what geometry is associated with a given toolpath:
+
+* Change Vectors
+* Select Current Vectors
+
+and the resultant window for the former:
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+also afford the option to associate toolpaths with a Layer. For a discussion of the interactions of selection and toolpaths see: [https://community.carbide3d.com/t/still-struggling-with-toolpath/63383](https://community.carbide3d.com/t/still-struggling-with-toolpath/63383) If more than one piece of geometry is associated with a toolpath, then their arrangement will determine how the toolpath is actually cut.
+
 ## Arrangement
 
 As noted in [2D Drawing](2d-drawing.md#arrangement), there are several possible arrangements for multiple pieces of geometry:
@@ -132,10 +145,12 @@ As noted in [2D Drawing](2d-drawing.md#arrangement), there are several possible 
 * Nesting --- each piece of geometry either contains, or is contained by the other piece(s) of geometry
 * No interaction --- geometries do not interact in any fashion
 
-Best practice is for geometries to either nest or have no interaction, and all toolpaths will work as expected for those two cases whether they expect closed or open geometry. Contour toolpaths which work along the geometry will work for any sort of arrangement. The other options will have implications for how Toolpaths which expect closed geometries are applied to geometry and interact:
+Best practice is for geometries to either nest or have no interaction, and all toolpaths will work as expected for those two cases whether they expect closed or open geometry. Contour toolpaths which work along the geometry will work for any sort of arrangement (though the cutting of them may be repetitive/non-optimal). The other options will have implications for how Toolpaths which expect closed geometries are applied to geometry and interact:
 
 * Adjacent/coincident --- such geometries will effectively be unioned when Toolpaths which interact with closed toolpaths are applied
 * Overlapping/intersecting --- depending on the winding, intersecting areas will either be filled or not, which can be hard to predict --- when the Toolpaths are not as expected, it will be necessary to create Boolean Union and/or Intersections of geometry to create the desired effect
+
+The most important consideration here is that it is consistent for a given version how a particular toolpath/geometry selection will be cut when a given toolpath is applied to it, so check the 3D preview, and if not as expected, select the geometry, go to the Design pane, and adjust as necessary to achieve the desired result, if need be, duplicating and unioning.
 
 ## Organization
 
