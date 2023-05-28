@@ -200,9 +200,13 @@ A potentially useful example would be one for creating joinery. The first consid
 * tool radius --- used to calculate the geometry of the joint
 * square tool no, V tool no, large V tool no --- the specific tools used define the geometry of the joint as cut/modeled
 
+The initial structure requires 4 sub-modules, one for each possible combination or orientation and side:
+
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+The actual work of modeling/cutting is then done in these sub-modules. Working this up wants a graphical representation/preview --- for that, we turn to Carbide Create to draw things up in profile and in 2D so as to assign 3D toolpaths:
 
 
-##
 
 ## Other tools to consider
 

@@ -86,7 +86,7 @@ Since the box is symmetrical on can re-use the previous set of rectangles and cr
 
 At which point one simply has to fill in the top and clean up the bottom:
 
-![Carbide Create: Radiused box joints: 3" x 3" x 3": Side](<.gitbook/assets/image (12) (1).png>)
+![Carbide Create: Radiused box joints: 3" x 3" x 3": Side](<.gitbook/assets/image (12) (1) (1).png>)
 
 Repeat a similar process for the front/back:
 

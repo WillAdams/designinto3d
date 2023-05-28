@@ -419,7 +419,7 @@ CAD and drawing programs may have a number of other features, depending on their
 
 When two or more objects are selected, the command **Group Vectors** becomes available:
 
-![](<.gitbook/assets/image (12).png>)
+![](<.gitbook/assets/image (12) (1).png>)
 
 which will then group the current selection so that it may be selected and manipulated as a unit.
 
