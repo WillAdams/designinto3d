@@ -87,7 +87,7 @@ M02
 
 This previews as:
 
-<figure><img src=".gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 As verified by a 3rd party G-code simulator, CutViewer Mill:
 
@@ -202,11 +202,25 @@ A potentially useful example would be one for creating joinery. The first consid
 
 The initial structure requires 4 sub-modules, one for each possible combination or orientation and side:
 
+<figure><img src=".gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+
+The actual work of modeling/cutting is then done in these sub-modules. Working this up wants a graphical representation/preview --- for that, we turn to Carbide Create to draw things up in profile and in 2D so as to assign 3D toolpaths, first matching the stock setup as assigned in OpenSCAD Graph Editor/OpenSCAD:
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+In Carbide Create:
+
+![](<.gitbook/assets/image (13).png>)
+
+so that we can draw up things in Carbide Create as we work through the programming. First consideration is what the call is to the module:
+
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
+which we will match in Carbide Create, keeping the twain in synch so as to keep track of our progress and how things fit together:
+
 <figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-The actual work of modeling/cutting is then done in these sub-modules. Working this up wants a graphical representation/preview --- for that, we turn to Carbide Create to draw things up in profile and in 2D so as to assign 3D toolpaths:
-
-
 
 ## Other tools to consider
 

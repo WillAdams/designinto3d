@@ -8,5 +8,5 @@ Adding a third tool, a large V endmill, and using it to cut a full blind miter j
 
 One concern with doing this is that the thickness to which even a 1/2" tool will cut is strictly limited, being of course equal to half the diameter:
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

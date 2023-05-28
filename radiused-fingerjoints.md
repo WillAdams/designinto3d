@@ -46,11 +46,11 @@ The design will not be precisely recreated, but the basic concept will be follow
 
 This needs to be divided into fifths (two box and three gaps):
 
-![Carbide Create: Radiused box joints: 3" x 3" x 3": Box Joint Width](<.gitbook/assets/image (6) (1).png>)
+![Carbide Create: Radiused box joints: 3" x 3" x 3": Box Joint Width](<.gitbook/assets/image (6) (1) (1).png>)
 
 And then duplicated and dragged into registration with the desired positioning:
 
-![Carbide Create: Radiused box joints: 3" x 3" x 3": Box Joint Width](<.gitbook/assets/image (1) (1) (1).png>)
+![Carbide Create: Radiused box joints: 3" x 3" x 3": Box Joint Width](<.gitbook/assets/image (1) (1) (1) (1).png>)
 
 Then set the rectangles at the box joint locations to be the height of the box and drag them into position:
 
@@ -82,11 +82,11 @@ For the sides we can recycle the remaining rectangles by setting them to the sam
 
 Since the box is symmetrical on can re-use the previous set of rectangles and create a crossing set which may then be Boolean unioned:
 
-![Carbide Create: Radiused box joints: 3" x 3" x 3": Side before Boolean Union](<.gitbook/assets/image (11) (1).png>)
+![Carbide Create: Radiused box joints: 3" x 3" x 3": Side before Boolean Union](<.gitbook/assets/image (11) (1) (1).png>)
 
 At which point one simply has to fill in the top and clean up the bottom:
 
-![Carbide Create: Radiused box joints: 3" x 3" x 3": Side](<.gitbook/assets/image (12) (1) (1).png>)
+![Carbide Create: Radiused box joints: 3" x 3" x 3": Side](<.gitbook/assets/image (12) (1) (1) (1).png>)
 
 Repeat a similar process for the front/back:
 
@@ -124,7 +124,7 @@ At this point one could go to the Toolpath pane and set up all the cuts, but sin
 
 Due to limitations of the Computational Solid Geometry (CSG) kernel used in OpenSCAD and similar modeling techniques used in other CAM tools it is not possible to directly model a cove radius endmill in 3D. A work-around for this limitation in OpenSCAD is to instead model a series of stacked truncated inverted cones which are hulled together for each layer:
 
-![OpenSCAD: Modeling Cove Radius Endmill](<.gitbook/assets/image (4) (1) (1) (1).png>)
+![OpenSCAD: Modeling Cove Radius Endmill](<.gitbook/assets/image (4) (1) (1) (1) (1).png>)
 
 ## Model the Box
 

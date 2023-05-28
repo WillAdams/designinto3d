@@ -132,7 +132,7 @@ There are two buttons in Toolpaths which function as the interface for what geom
 
 and the resultant window for the former:
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 also afford the option to associate toolpaths with a Layer. For a discussion of the interactions of selection and toolpaths see: [https://community.carbide3d.com/t/still-struggling-with-toolpath/63383](https://community.carbide3d.com/t/still-struggling-with-toolpath/63383) If more than one piece of geometry is associated with a toolpath, then their arrangement will determine how the toolpath is actually cut.
 

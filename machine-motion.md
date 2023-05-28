@@ -165,7 +165,7 @@ Pressing it again will toggle back the current/job coordinate system.
 
 The Manual Data Input or MDI, (also known as a Manual Digital Interface) affords a text box into which a line of G-code or commands for Grbl may be entered and then sent to the machine:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Note that any commands entered will be parsed by Carbide Motion unless prefaced with a /.&#x20;
 
@@ -193,7 +193,7 @@ The Machine Settings window has three tabs:
 
 ### Machine
 
-<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 which affords an interface for **Load Defaults** (which will set the Travel Dimensions)
 
