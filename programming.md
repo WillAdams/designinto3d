@@ -155,11 +155,13 @@ Issues a rapid movement to the specified Z-height (usually safety/retract height
 
 Outputs the commands to end a cut (retract to safety/retract height and M02).
 
-## modules
+### Usage
 
 Putting the commands together has several expectations and requirements. The simplest usage is one where a single cut is made and the tool is plunged at the beginning, the cut is made, and then the tool is lifted to the retract height --- more complex cuts have the same requirements, to ensure that the tool is moved so that it cuts and does not collide with the stock at a rapid rate.
 
 Having multiple cuts presents the possibility of redundant G-code commands, but the simplistic and persistent nature of G-code, that a single command is a movement to the specified position from the current one, and that OpenSCAD requires describing both positions means that every other OpenSCAD command after the first can omit writing out the G-code, which will then omit the redundant commands and result in terse code which still describes the expected machine motion.
+
+Available at: [https://github.com/WillAdams/gcodepreview](https://github.com/WillAdams/gcodepreview)
 
 ## OpenSCAD Graph Editor
 
@@ -179,9 +181,28 @@ and generates G-code which previews as expected:
 
 <figure><img src=".gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
+Available at: [https://github.com/WillAdams/gcodepreview/blob/main/flatten.graph.tres](https://github.com/WillAdams/gcodepreview/blob/main/flatten.graph.tres)
+
 ## Programming Modules
 
+Rather than create each project completely from scratch, one will often develop libraries of modules which effectively customize the language/system so as to make it more expressive and consistent. The gcodepreview library noted above when loaded into OpenSCAD Graph Editor allows one to create projects which are able to make use of arbitrary G-code, and by extension to create a module which does so.
 
+### cutjoinery
+
+A potentially useful example would be one for creating joinery. The first consideration is which values would need to be passed into the module:
+
+* orientation --- whether the joint is horizontal or vertical
+* side --- which side of the joint is cut, since a different number of fingers will be used on each side the possibilities could be labeled as: even, odd, or both
+* number of pins --- the code is simpler if it is required that the user specify this, rather than attempting to calculate it, and it is a useful control for the user
+* bx, by, bz --- the origin point of the joint
+* ex, ey, ez --- the ending point
+* clear center --- whether or not the center channel is cleared, since when both are cut together it would be redundant to have it cut by both the even and odd sub-modules
+* tool radius --- used to calculate the geometry of the joint
+* square tool no, V tool no, large V tool no --- the specific tools used define the geometry of the joint as cut/modeled
+
+
+
+##
 
 ## Other tools to consider
 
