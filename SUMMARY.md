@@ -24,3 +24,4 @@
 * [Machine Motion](machine-motion.md)
 * [Machine Operation](machine-operation.md)
 * [Programming](programming.md)
+* [Resources](resources.md)
