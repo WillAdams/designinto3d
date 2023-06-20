@@ -28,7 +28,7 @@ Note that while doing so, it will display a BUSY status in the green menu bar.
 
 Initialization will have the machine find the machine origin at the right (**X+**), back (**Y+**), top (**Z+**) corner of your machine. Note that the origin being there is a traditional choice for machining which has its basis in safety considerations --- positive moves should be away from the operator/material, so it is negative motions which are most concerning from a safety standpoint.
 
-If you have a BitSetter (see below) it will also measure the tool offset once it has been confirmed that a tool was loaded.&#x20;
+If you have a BitSetter (see below) it will also measure the tool offset once it has been confirmed that a tool was loaded. When using a BitSetter note that it is important that the tool only be changed when prompted, or using the interface to do so. See: [https://carbide3d.com/blog/unexpected-z-axis-plunges/](https://carbide3d.com/blog/unexpected-z-axis-plunges/)
 
 Once your machine is initialized, you’ll be presented with the **Job Info** screen (which is selected by the **Run** tab in the top menu bar) and the Jog menu will appear, so that the possible screens are:
 
