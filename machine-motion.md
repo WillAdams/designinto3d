@@ -207,13 +207,13 @@ Note that for a Shapeoko 5 or Nomad the machine type will be detected automatica
 
 Note that there is an area for displaying Grbl Active Input Pins which will show the state of the various switches, e.g., the BitSetter which registers as a Probe input:
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Options
 
 The Options pane allows configuration of various machine accessories as noted in the respective manuals:
 
-<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
 
 The accessories include (but are not necessarily limited to:
 

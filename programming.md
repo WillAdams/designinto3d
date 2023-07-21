@@ -216,7 +216,7 @@ so that we can draw up things in Carbide Create as we work through the programmi
 
 <figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 which we will match in Carbide Create, keeping the twain in synch so as to keep track of our progress and how things fit together:
 

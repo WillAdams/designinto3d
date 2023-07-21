@@ -415,6 +415,29 @@ Best practice is for geometries to either nest or have no interaction --- the ot
 
 CAD and drawing programs may have a number of other features, depending on their intended use. Some of these include:
 
+### Job Setup (gear icon)
+
+This allows setting:
+
+* Stock size: Width (X), Height (Y)
+* Model Resolution (for the 3D model in Pro mode)
+* Stock Thickness (Z)
+* Zero Height: Top or Bottom
+* Toolpath Zero: Lower-Left, Center-Left, Top-Left, Center
+* Material and Machine --- these are legacy settings and have no effect
+* Retract height --- also termed Safety height, this is how much the machine will lift in-between toolpaths
+* Units: Inch or millimeters
+
+### Set Grid
+
+This allows setting the spacing of the grid, or by checking or unchecking a checkbox, showing or hiding it.
+
+![](<.gitbook/assets/image (4).png>)
+
+### Set Background
+
+It is possible to load a background image as noted above, and use it as a reference. For further specifics see: [https://community.carbide3d.com/t/importing-a-file-or-a-backgound-image/27166](https://community.carbide3d.com/t/importing-a-file-or-a-backgound-image/27166)
+
 ### Group Vectors/Ungroup Vectors
 
 When two or more objects are selected, the command **Group Vectors** becomes available:

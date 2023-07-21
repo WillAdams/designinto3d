@@ -10,3 +10,19 @@ One concern with doing this is that the thickness to which even a 1/2" tool will
 
 <figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+While in theory one could just source an arbitrarily large tool to brute force this, the reality of available tooling and the trim routers which are used as spindles on many less expensive CNC machines makes this untenable. Using larger tooling also increases the area lost to such features at the corners, including increasing the waste area around the parts. Fortunately, the geometry of the cut makes for an obvious solution which will take advantage of the tooling which one is using for the narrow V cut along the outer edge of the joint.
+
+Positioning the tool to have it make the cut at the upper edge of the narrow V cut increases the possible thickness by that height:
+
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+The further consideration is that the fingers should be relieved to a depth equal to or greater than the radius of the narrow tool, matched to how close to the sides fo the joint the recesses are cut, so as to eliminate the fit interference of the fingers against the rounded ends of the pockets for them. Another option would be round the top of the positive joinery elements using a suitable tool, but that would add another tool change.
+
+The most expedient option seems to be just two passes, one at the bottom of the stock, the other at the mid-point:
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+Which has the advantage of having an overlap (if tool cut depth is greater than half the stock thickness), and being invariant of tool geometry (with the proviso that that thickness of the stock must be equal to or less than twice the depth to which the large V tool can cut).
+
+
+
