@@ -8,7 +8,7 @@ Adding a third tool, a large V endmill, and using it to cut a full blind miter j
 
 One concern with doing this is that the thickness to which even a 1/2" tool will cut is strictly limited, being of course equal to half the diameter:
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 While in theory one could just source an arbitrarily large tool to brute force this, the reality of available tooling and the trim routers which are used as spindles on many less expensive CNC machines makes this untenable. Using larger tooling also increases the area lost to such features at the corners, including increasing the waste area around the parts. Fortunately, the geometry of the cut makes for an obvious solution which will take advantage of the tooling which one is using for the narrow V cut along the outer edge of the joint.
 
@@ -22,7 +22,9 @@ The most expedient option seems to be just two passes, one at the bottom of the 
 
 <figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-Which has the advantage of having an overlap (if tool cut depth is greater than half the stock thickness), and being invariant of tool geometry (with the proviso that that thickness of the stock must be equal to or less than twice the depth to which the large V tool can cut).
+Which has the advantage of having an overlap (if tool cut depth is greater than half the stock thickness), and being invariant of tool geometry (with the proviso that thickness of the stock must be equal to or less than twice the depth to which the large V tool can cut).
+
+
 
 
 

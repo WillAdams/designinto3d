@@ -12,9 +12,9 @@ Carbide Motion is only compatible with CNC machines from Carbide3D, but other ma
 
 Upon launch, Carbide Motion will present a screen which notes it is **Not Connected**, and afford one the chance to connect:
 
-<figure><img src=".gitbook/assets/image (147).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-Click **Connect Cutter** to connect to your machine. The screen will update to reflect this if it is successful (if it is not, contact [support@carbide3d.com](mailto:support@carbide3d.com)):
+If you have not yet setup your machine on the computer Carbide Motion is running on, click **Setup New Machine** (and see below), otherwise, click **Connect Cutter** to connect to your machine. The screen will update to reflect this if it is successful (if it is not, contact [support@carbide3d.com](mailto:support@carbide3d.com)):
 
 <figure><img src=".gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
 
@@ -91,7 +91,7 @@ While a job is running there will be a **Pause** button in addition to the **Sto
 
 Each time you click on the **Jog** or **Run** or other menu buttons there may be a prompt:
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you have changed the tool without using the appropriate command, use this reminder to measure the tool, (note that depending on version, there may be an additional prompt noting the existence of this prompt and offering further information/options) otherwise **Continue** which will bring one to:
 
@@ -157,7 +157,7 @@ There is a persistent display at the left of the application window which shows 
 
 The title is also a button which when pressed, changes the display coordinates into Machine Position which will show the coordinates relative to the machine origin which is set once the machine is homed:
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
 
 Pressing it again will toggle back the current/job coordinate system.
 
@@ -165,7 +165,7 @@ Pressing it again will toggle back the current/job coordinate system.
 
 The Manual Data Input or MDI, (also known as a Manual Digital Interface) affords a text box into which a line of G-code or commands for Grbl may be entered and then sent to the machine:
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Note that any commands entered will be parsed by Carbide Motion unless prefaced with a /.&#x20;
 
@@ -183,7 +183,7 @@ There are two sets, Built-In (shown above), and User:
 
 The Edit User Macros button allows one to create or modify User Macros/Quick Actions:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 Quick Actions are made up of G-code, but only that which Grbl supports, plus those commands which Carbide Motion interprets. Unfortunately, no loops, variables, or other programming niceties.
 
@@ -239,3 +239,84 @@ If the MDI is used to send commands, their results/output will be shown here, e.
 
 <figure><img src=".gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
 
+## Setup New Machine
+
+When first setting up Carbide Motion on a new computer, it will be necessary to choose this option. Version 6 of Carbide Motion adds a setup wizard:
+
+<figure><img src=".gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+
+click Next
+
+Power up your machine as prompted:
+
+<figure><img src=".gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+
+click Next
+
+<figure><img src=".gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+click Connect to Machine
+
+<figure><img src=".gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+
+click Next
+
+<figure><img src=".gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+
+select your machine type and size from the drop-down menu and click "Download"
+
+<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;click Next
+
+<figure><img src=".gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+
+If desired, test the homing switches, then Initialize Machine. Once the machine has finished initializing by moving to the homing switches at the top, back, right corner, click Next:
+
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+If desired, test machine motion, click Next
+
+<figure><img src=".gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+
+If your machine has a BitSetter check the box to enable it, press the button to test that it is properly connected and working
+
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+click Move to default position to move the machine close to where the BitSetter is by default, monitoring that the machine does not lose steps
+
+<figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+
+click Next
+
+<figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+
+Use the buttons to jog the machine to as close to the center of the BitSetter as is possible
+
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+click Save BitSetter Configuration, click Next
+
+<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+
+Select the options appropriate to your machine/configuration
+
+<figure><img src=".gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
+click Save Changes if necessary, then, click Next
+
+<figure><img src=".gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+
+adjust Machine Options as desired
+
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+If necessary, click Save Changes, then click Next
+
+<figure><img src=".gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+
+click Finish.
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Click Connect to Cutter and see above.

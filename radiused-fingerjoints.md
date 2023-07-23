@@ -90,7 +90,7 @@ At which point one simply has to fill in the top and clean up the bottom:
 
 Repeat a similar process for the front/back:
 
-![Carbide Create: Radiused Box joints: 3" x 3" x 3": Side](<.gitbook/assets/image (16).png>)
+![Carbide Create: Radiused Box joints: 3" x 3" x 3": Side](<.gitbook/assets/image (16) (1).png>)
 
 Duplicate the geometry for the front/back and sides and arrange them with the bottom part in a single file as before.
 
@@ -114,7 +114,7 @@ If we modify a copy of the front/back part to show the radius which will be left
 
 With the geometry verified it is now possible to draw in circles which will allow us to determine where the cove radius endmill will cut and connect their centerpoints with the lines along which the tool should move:
 
-![Carbide Create: Radiused box joints: 3" x 3" x 3": Toolpath Preview](<.gitbook/assets/image (18).png>)
+![Carbide Create: Radiused box joints: 3" x 3" x 3": Toolpath Preview](<.gitbook/assets/image (18) (1).png>)
 
 Use that construct to place lines relative to each edge which needs to be radiused:
 
@@ -162,15 +162,15 @@ Repeating the intersection verifies that the rounding works:
 
 But unfortunately also indicates that some material will be left for a fit which would require post-processing. The tip on the cove radius endmill selected above is too wide to clear this material without leaving a void larger than is desired or one which would be visible inside the box, so the solution is to draw in a suitable geometry to clear this material as a V carving.
 
-![Carbide Create: Box: 3" x 3" x 3": Geometry for V carving](<.gitbook/assets/image (54).png>)
+![Carbide Create: Box: 3" x 3" x 3": Geometry for V carving](<.gitbook/assets/image (54) (1).png>)
 
 With the rounding working the 3D model is verified:
 
-![OpenSCAD: Box: 3" x 3" x 3": Radius and V carving Relief cut](<.gitbook/assets/image (52).png>)
+![OpenSCAD: Box: 3" x 3" x 3": Radius and V carving Relief cut](<.gitbook/assets/image (52) (1).png>)
 
 Including the intersection:
 
-![OpenSCAD: Box: 3" x 3" x 3": Radius and V carving Relief cut intersection](<.gitbook/assets/image (53).png>)
+![OpenSCAD: Box: 3" x 3" x 3": Radius and V carving Relief cut intersection](<.gitbook/assets/image (53) (1).png>)
 
 Which once verified, allows us to preview the box:
 
@@ -186,7 +186,7 @@ With the concept proven out it is simply a matter of making the toolpaths to cut
 
 With the parts laid out, select the part outlines and offset them a suitable distance:
 
-![Carbide Create: Box: 3" x 3" x 3": Parts Outline](<.gitbook/assets/image (27).png>)
+![Carbide Create: Box: 3" x 3" x 3": Parts Outline](<.gitbook/assets/image (27) (1).png>)
 
 Select the outline and the parts and assign a pocket toolpath which will cut down to tab depth:
 
@@ -198,11 +198,11 @@ Select the lines for the relief cut, select a suitable tool and assign it a suit
 
 Then add the geometry for the internal (hidden) V carving relief:
 
-![](<.gitbook/assets/image (55).png>)
+![](<.gitbook/assets/image (55) (1).png>)
 
 Next add an outer profile toolpath to cut out the parts:
 
-![Carbide Create: Box: 3" x 3" x 3": Profile Toolpath](<.gitbook/assets/image (26).png>)
+![Carbide Create: Box: 3" x 3" x 3": Profile Toolpath](<.gitbook/assets/image (26) (1).png>)
 
 And preview insofar as is possible:
 
