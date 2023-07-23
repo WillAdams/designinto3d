@@ -38,7 +38,7 @@ Then, a cove radius endmill is used to relieve the fingers:
 
 (which cut Carbide Create cannot preview accurately at this time, so the tool used is simply provided with appropriate feeds and speed and set to a diameter which will show)
 
-![](<.gitbook/assets/image (94).png>)
+![](<.gitbook/assets/image (94) (1).png>)
 
 Lastly the pockets for the top and bottom and relief and indicator cuts for sawing off the lid are drawn in and then suitable toolpaths applied:
 

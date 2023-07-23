@@ -432,7 +432,7 @@ This allows setting:
 
 This allows setting the spacing of the grid, or by checking or unchecking a checkbox, showing or hiding it.
 
-![](<.gitbook/assets/image (4).png>)
+![](<.gitbook/assets/image (4) (3).png>)
 
 ### Set Background
 
@@ -442,7 +442,7 @@ It is possible to load a background image as noted above, and use it as a refere
 
 When two or more objects are selected, the command **Group Vectors** becomes available:
 
-![](<.gitbook/assets/image (12) (1) (1).png>)
+![](<.gitbook/assets/image (12) (1) (1) (2).png>)
 
 which will then group the current selection so that it may be selected and manipulated as a unit.
 

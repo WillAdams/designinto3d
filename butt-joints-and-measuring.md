@@ -12,11 +12,11 @@ Most joinery techniques require that each part be extended into the other and th
 
 Like all other projects, it begins with a set of parameters:
 
-![Wren birdhouse: parameters](<.gitbook/assets/image (69).png>)
+![Wren birdhouse: parameters](<.gitbook/assets/image (69) (1).png>)
 
 Usually designed around the dimensions of the stock used:
 
-![Wren birdhouse: calculated dimensions](<.gitbook/assets/image (68) (1).png>)
+![Wren birdhouse: calculated dimensions](<.gitbook/assets/image (68).png>)
 
 This requirement suggests a technique which will address the inability to parse an object w/in OpenSCAD to determine its dimensions:
 

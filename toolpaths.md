@@ -57,7 +57,7 @@ Where the toolpath will fall relative to the geometry will always be clear when 
 
 When not cutting all the way through with a square endmill, a square walled slot will result:
 
-![](<.gitbook/assets/image (90).png>)
+![](<.gitbook/assets/image (90) (1).png>)
 
 If cut with a ball-nosed endmill, a rounded groove may be achieved:
 

@@ -34,7 +34,7 @@ In theory one would simply assign an outer profile toolpath to the front view ab
 
 A further consideration is the matter of tooling ― it is necessary to consider the diameter of the endmill in cutting out the part, so it is necessary to add a few more variables including `Endmill Diameter` and some logic to arrange things. This also requires that one revisit matters of orientation and rotation. It is best to work with the normal Cartesian orientation ― this allows one to use a cylinder to represent an endmill. Similarly, we want to represent the area which the endmill will remove, as opposed to merely the part itself. Adjust for that and we get:
 
-![Design into 3D: 1st Project: BlockSCAD: Part view](<.gitbook/assets/image (67).png>)
+![Design into 3D: 1st Project: BlockSCAD: Part view](<.gitbook/assets/image (67) (1).png>)
 
 This is available at: [https://www.blockscad3d.com/community/projects/810179](https://www.blockscad3d.com/community/projects/810179)
 

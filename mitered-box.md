@@ -31,7 +31,7 @@ Surround the parts with a rectangle, and geometry offset from it by endmill diam
 
 Alternately, to make workholding easier, only the edges of the parts strictly need to be cut out:
 
-<figure><img src=".gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Only two toolpaths are necessary, a no-offset Contour with a V endmill:
 
@@ -41,11 +41,11 @@ Only two toolpaths are necessary, a no-offset Contour with a V endmill:
 
 and pockets to cut the parts free:
 
-<figure><img src=".gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 As the 3D preview shows, workholding may be done at the corners, depending on the onion-skin of the V endmill cut to hold things in place:
 
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 For a 3D model and preview option, see:
 

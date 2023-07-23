@@ -12,17 +12,17 @@ Carbide Motion is only compatible with CNC machines from Carbide3D, but other ma
 
 Upon launch, Carbide Motion will present a screen which notes it is **Not Connected**, and afford one the chance to connect:
 
-<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
 
 If you have not yet setup your machine on the computer Carbide Motion is running on, click **Setup New Machine** (and see below), otherwise, click **Connect Cutter** to connect to your machine. The screen will update to reflect this if it is successful (if it is not, contact [support@carbide3d.com](mailto:support@carbide3d.com)):
 
-<figure><img src=".gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 When one first connects a copy of Carbide Motion to a machine it will be necessary to go to **Settings** which has several tabs and configure for the specific machine type, type of Z-axis, the size of the machine, and any accessories as noted in the assembly/installation instructions. See the relevant documentation at: [https://my.carbide3d.com/](https://my.carbide3d.com/) and [https://my.carbide3d.com/docs/shapeoko-setup/](https://my.carbide3d.com/docs/shapeoko-setup/) as well as: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681) and in the event of any difficulties, write in to [support@carbide3d.com](mailto:support@carbide3d.com).
 
 Once the software is connected press **Initialize Machine** to home your machine:
 
-<figure><img src=".gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Note that while doing so, it will display a BUSY status in the green menu bar.
 
@@ -39,7 +39,7 @@ Once your machine is initialized, you’ll be presented with the **Job Info** sc
 
 ## Run/Job Info
 
-<figure><img src=".gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 This will afford the chance to load a project at this time, or it may be returned to and a file loaded later. The options are:
 
@@ -52,7 +52,7 @@ The usual workflow is to first load a file --- doing so will bring up an informa
 
 ### Info
 
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Top View
 
@@ -77,7 +77,7 @@ and two possible options:
 
 Once a file has loaded the **Run**/**Job Info** window will update to reflect this:
 
-<figure><img src=".gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 And will show the name, note the time the file was loaded, and the first tool needed, and will add a **Preview** button which will again bring up the information/preview screens.
 
@@ -91,11 +91,11 @@ While a job is running there will be a **Pause** button in addition to the **Sto
 
 Each time you click on the **Jog** or **Run** or other menu buttons there may be a prompt:
 
-<figure><img src=".gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 If you have changed the tool without using the appropriate command, use this reminder to measure the tool, (note that depending on version, there may be an additional prompt noting the existence of this prompt and offering further information/options) otherwise **Continue** which will bring one to:
 
-<figure><img src=".gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 which allows one to control the machine, jogging it around using [Cartesian coordinates](https://en.wikipedia.org/wiki/Cartesian\_coordinate\_system) (left--right: **X-**/**X+** , front--back: **Y-**/**Y+**, and up/down: **Z+**/**Z-**) and setting various options.
 
@@ -118,17 +118,17 @@ This button will allow toggling the spindle on/off if one has a Nomad (with inte
 
 Once the machine has been moved/jogged so that the tip of the spindle is at the desired position relative to the stock, then pressing this button will bring up a window which allows setting one or more axes to zero.
 
-<figure><img src=".gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 **Zero All** will set all 3 axes with a single button press, while the **Zero X**, **Zero Y**, and **Zero Z** commands allow setting individual axes. **Clear all offsets** will restore the coordinates to their defaults for the current coordinate system, but should not normally need to be used. **Done** will return to the Jog screen once the zero has been set.
 
-<figure><img src=".gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### Rapid Position
 
 This screen affords an interface for rapidly positioning the machine at cardinal points and the approximate center of the working area:
 
-<figure><img src=".gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 as well as to **Rapid to Current XY** (zero) and to **Rapid to Current Z + 6mm** (or some reasonable equivalent in inches). The actual coordinates of the various rapid positions is determined by the physical position of the home switches, the distance which Grbl is set to pull off of them, and the Travel Dimensions for the machine. For more on this see: [http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131](http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131)
 
@@ -136,7 +136,7 @@ as well as to **Rapid to Current XY** (zero) and to **Rapid to Current Z + 6mm**
 
 If you have a BitZero and have it enabled in the Settings | Options pane, then there will be an option for Probing with it so as to set zero using it:
 
-<figure><img src=".gitbook/assets/image (153).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 There are four options:
 
@@ -145,7 +145,7 @@ There are four options:
 * **X**, which probes for that single axis, and requires that the BitZero be positioned either at a corner (v2), or along the left edge (v1)
 * **Y**, which probes for that single axis, and requires that the BitZero be positioned either at a corner (v2), or along the front edge (v1)
 
-Note that there are two versions of BitZero and it is important that the correct type is selected in Carbide Motion's Settings | Options. When probing, various windows/prompts will be presented, select the correct options which match the probing operation which you wish to do.
+Note that there are two versions of BitZero and it is important that the correct type is selected --- if need be, use the button for Change BitZero Type. When probing, various windows/prompts will be presented, select the correct options which match the probing operation which you wish to do.
 
 **Note:** It is possible to probe for all three axes at a Corner, and then overwrite for example the Z-axis zero thus set by probing for Z, say at the surface of the wasteboard which the stock is positioned on.
 
@@ -157,7 +157,7 @@ There is a persistent display at the left of the application window which shows 
 
 The title is also a button which when pressed, changes the display coordinates into Machine Position which will show the coordinates relative to the machine origin which is set once the machine is homed:
 
-<figure><img src=".gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 Pressing it again will toggle back the current/job coordinate system.
 
@@ -165,7 +165,7 @@ Pressing it again will toggle back the current/job coordinate system.
 
 The Manual Data Input or MDI, (also known as a Manual Digital Interface) affords a text box into which a line of G-code or commands for Grbl may be entered and then sent to the machine:
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 Note that any commands entered will be parsed by Carbide Motion unless prefaced with a /.&#x20;
 
@@ -183,7 +183,7 @@ There are two sets, Built-In (shown above), and User:
 
 The Edit User Macros button allows one to create or modify User Macros/Quick Actions:
 
-<figure><img src=".gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
 Quick Actions are made up of G-code, but only that which Grbl supports, plus those commands which Carbide Motion interprets. Unfortunately, no loops, variables, or other programming niceties.
 
@@ -191,43 +191,33 @@ Quick Actions are made up of G-code, but only that which Grbl supports, plus tho
 
 The Machine Settings window has three tabs:
 
-### Machine
-
-<figure><img src=".gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-which affords an interface for **Load Defaults** (which will set the Travel Dimensions)
-
-![](<.gitbook/assets/image (148).png>)
-
-or to Send Configuration Data (which will configure Grbl):
-
-![](<.gitbook/assets/image (2) (1).png>)
-
-Note that for a Shapeoko 5 or Nomad the machine type will be detected automatically. For the specifics of settings for a Shapeoko 3, 4, or Pro see: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681)
-
-Note that there is an area for displaying Grbl Active Input Pins which will show the state of the various switches, e.g., the BitSetter which registers as a Probe input:
-
-<figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
-
 ### Options
 
-The Options pane allows configuration of various machine accessories as noted in the respective manuals:
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (5) (3).png" alt=""><figcaption></figcaption></figure>
+For the specifics of settings for a Shapeoko 3, 4, or Pro in CM5 see: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681)
 
-The accessories include (but are not necessarily limited to:
+The Options pane allows enabling or disabling the BitSetter.
+
+The accessories which may be attached to a machine include:
 
 * BitSetter --- allows measuring tools for tool changes [https://my.carbide3d.com/pdf/bitsetter-v2.pdf](https://my.carbide3d.com/pdf/bitsetter-v2.pdf) (standard on the Nomad and Pro models)
-* BitRunner --- affords on/off of a trim router used as a spindle [https://my.carbide3d.com/manuals/bitrunner-v2](https://my.carbide3d.com/manuals/bitrunner-v2)
-* BitZero --- allows probing so as to set the origin relative to rectangular stock [https://my.carbide3d.com/manuals/shapeoko-bitzero-v2](https://my.carbide3d.com/manuals/shapeoko-bitzero-v2)
+* BitRunner --- affords on/off of a trim router used as a spindle [https://my.carbide3d.com/manuals/bitrunner-v2](https://my.carbide3d.com/manuals/bitrunner-v2) and is enabled or disabled using the setup wizard (see below)
+* BitZero --- allows probing so as to set the origin relative to rectangular stock [https://my.carbide3d.com/manuals/shapeoko-bitzero-v2](https://my.carbide3d.com/manuals/shapeoko-bitzero-v2) which type is connected is selected in the Probing window as noted above
 
-### User Interface
+### Maintenance
 
-The User Interface pane allows changing the units used for measurements, as well as toggling **Allow Remote Access** or **Full Screen Mode**.
+The Maintenance pane shows information about the machine usage and affords the option to clear the counters.
 
-<figure><img src=".gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-### Show Log/Log Window
+### Debug
+
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+The Debug pane shows information on the firmware, the current state of the homing switches and BitZero/BitSetter accessores, and displays the current Machine Settings and affords an option to copy them to the clipboard for pasting (say into an e-mail to support@carbide3d.com).
+
+#### Show Log/Log Window
 
 The button **Show Log** brings up the **Log Window**:
 
@@ -243,80 +233,80 @@ If the MDI is used to send commands, their results/output will be shown here, e.
 
 When first setting up Carbide Motion on a new computer, it will be necessary to choose this option. Version 6 of Carbide Motion adds a setup wizard:
 
-<figure><img src=".gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
 
 click Next
 
 Power up your machine as prompted:
 
-<figure><img src=".gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
 click Next
 
-<figure><img src=".gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 click Connect to Machine
 
-<figure><img src=".gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
 click Next
 
-<figure><img src=".gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
 select your machine type and size from the drop-down menu and click "Download"
 
-<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;click Next
 
-<figure><img src=".gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 If desired, test the homing switches, then Initialize Machine. Once the machine has finished initializing by moving to the homing switches at the top, back, right corner, click Next:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 If desired, test machine motion, click Next
 
-<figure><img src=".gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 If your machine has a BitSetter check the box to enable it, press the button to test that it is properly connected and working
 
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 click Move to default position to move the machine close to where the BitSetter is by default, monitoring that the machine does not lose steps
 
-<figure><img src=".gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
 click Next
 
-<figure><img src=".gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
 Use the buttons to jog the machine to as close to the center of the BitSetter as is possible
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 click Save BitSetter Configuration, click Next
 
-<figure><img src=".gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 Select the options appropriate to your machine/configuration
 
-<figure><img src=".gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
 click Save Changes if necessary, then, click Next
 
-<figure><img src=".gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
 adjust Machine Options as desired
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 If necessary, click Save Changes, then click Next
 
-<figure><img src=".gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 click Finish.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 Click Connect to Cutter and see above.

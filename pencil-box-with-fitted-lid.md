@@ -12,7 +12,7 @@ As with all projects, we begin by defining the parameters of the design and its 
 
 Then a module for cutting the desired shapes:
 
-![Fitted Pencil Box module for cutting pockets at specified depth and location](<.gitbook/assets/image (76).png>)
+![Fitted Pencil Box module for cutting pockets at specified depth and location](<.gitbook/assets/image (76) (1).png>)
 
 Then modules for cutting each part:
 
@@ -32,18 +32,18 @@ Available at:
 
 The project can then be exported to OpenSCAD code and modified to use the customizer:
 
-`Width = 8.25; `\
-`Depth = 2.625; `\
-`Height = 0.625; `\
-`Units = 25.4; // [1:Millimeters, 25.4:Inches] `\
-`Number_of_Rows = 2; `\
-`Number_of_Columns = 3; `\
-`Large_Compartment = "Depth-wise"; // [Width-wise, Depth-wise, None] `\
-`Corner_Radius = 0.25; `\
-`Lid_Proportion = 40; `\
-`Stock_Thickness = 0.5625; `\
-`Endmill_Diameter = 0.125; `\
-`my_3D_Preview = false; `\
+`Width = 8.25;` \
+`Depth = 2.625;` \
+`Height = 0.625;` \
+`Units = 25.4; // [1:Millimeters, 25.4:Inches]` \
+`Number_of_Rows = 2;` \
+`Number_of_Columns = 3;` \
+`Large_Compartment = "Depth-wise"; // [Width-wise, Depth-wise, None]` \
+`Corner_Radius = 0.25;` \
+`Lid_Proportion = 40;` \
+`Stock_Thickness = 0.5625;` \
+`Endmill_Diameter = 0.125;` \
+`my_3D_Preview = false;` \
 `$fn=80;`
 
 ![Fitted Pencil Box in OpenSCAD with customization](<.gitbook/assets/image (83).png>)
@@ -58,7 +58,7 @@ to get a flattened view which may be exported to a DXF or SVG and then imported 
 
 Once imported into Carbide Create it is simply a matter of assigning toolpaths:
 
-![Fitted Pencil Box in Carbide Create](<.gitbook/assets/image (86).png>)
+![Fitted Pencil Box in Carbide Create](<.gitbook/assets/image (86) (1).png>)
 
 Files are available at: [https://community.carbide3d.com/t/fitted-box-design-generator-underway/13437/29](https://community.carbide3d.com/t/fitted-box-design-generator-underway/13437/29)
 
