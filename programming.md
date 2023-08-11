@@ -101,9 +101,23 @@ For a list of the G-codes supported by Carbide Motion and Grbl see:\
 and\
 [https://my.carbide3d.com/faq/grbl-g-code-definitions/](https://my.carbide3d.com/faq/grbl-g-code-definitions/)
 
+## OpenSCAD
+
+Billed as "The Programmer's Solid 3D CAD Modeller", OpenSCAD affords a programming environment which has variable and loops and 3D modeling and which allows one to export designs as DXF, SVG, and STL files, and affords a variety of tools for creating 3D, and to a lesser extent, 2D designs.
+
+There are a few things to note. Writing out one of the afore-mentioned filetypes requires using a separate CAM tool. OpenSCAD has little to no support for writing out text files. There are certain parameters for setting the size of the elements used to create curved elements which will greatly influence the appearance of the 3D preview, and the verisimilitude of the 3D model.
+
+The OpenSCAD parameters for controlling appearance are:
+
+* $fn --- a global parameter, if applied can make it difficult to ensure that large circles have sufficient segments to render well, while conversely, can cause small circles to be drawn with so many that performance unnecessarily suffers and the appearance is not substantively improved
+* $fa --- this sets the smallest number of degrees which will be used to draw a circle using lines, so if set to 4 would result in a circle being approximated using 90 line segments each connected to the next at 4 degrees.
+* $fs --- this sets the smallest length which is allowed to be used to draw a circle
+
+Since $fs controls small circles ensuring that the sides are not so small that a point of diminishing returns is reached, and $fa controls large circles, ensuring that the sides are not so smooth that performance suffers, there is no reason to set $fn in normal usage, and many arguments for not doing so.
+
 ## gcodepreview
 
-OpenSCAD affords a programming environment which has variable and loops and 3D modeling, and in the RapCAD implementation is able to write out files, allowing one to export toolpaths to G-code, making it well-suited to creating a library which allows modeling in 3D as if one was cutting with a machine.&#x20;
+While OpenSCAD allows 3D modeling, it unfortunately does not allow writing out files other than DXFs and SVGs and STLs, but there is fortunately, a similar tool which implements much of the OpenSCAD language, the RapCAD implementation which is able to write out files, allowing one to export toolpaths to G-code, making it well-suited to creating a library which allows modeling in 3D as if one was cutting with a machine.&#x20;
 
 Every module must do what it does twice over, modeling in 3D in OpenSCAD, and if enabled, writing out matching G-code. Further, in some instances, it will be desirable or even necessary to directly write out G-code which has no OpenSCAD equivalent.&#x20;
 
