@@ -26,11 +26,11 @@ Once the software is connected press **Initialize Machine** to home your machine
 
 Note that while doing so, it will display a BUSY status in the green menu bar.
 
-Initialization will have the machine find the machine origin at the right (**X+**), back (**Y+**), top (**Z+**) corner of your machine. Note that the origin being there is a traditional choice for machining which has its basis in safety considerations --- positive moves should be away from the operator/material, so it is negative motions which are most concerning from a safety standpoint.
+Initialization will have the machine find the machine origin at the right (**X+**), back (**Y+**), top (**Z+**) corner of your machine. When a machine is first commissioned and powered up, the initial zero is at the "machine origin", which is X (far right), Y (all the way back), Z (all the way at the top). This is a conscious design choice enshrined in tradition --- this way any movement in a positive direction should be "safe" in that it is away from the operator (assuming the operator is standing at the front-left of the machine and orienting themselves relative to the surface of the machine's working area) --- positive moves should be away from the operator/material, so it is negative motions which are most concerning from a safety standpoint.
 
 If you have a BitSetter (see below) it will also measure the tool offset once it has been confirmed that a tool was loaded. When using a BitSetter note that it is important that the tool only be changed when prompted, or using the command **Load New Tool** (see below) to do so. See: [https://carbide3d.com/blog/unexpected-z-axis-plunges/](https://carbide3d.com/blog/unexpected-z-axis-plunges/) for further details.
 
-Once your machine is initialized, you’ll be presented with the **Job Info** screen (which is selected by the **Run** tab in the top menu bar) and the Jog menu will appear, so that the possible screens are:
+Once your machine is initialized, you will need to jog the machine to where you want the machine to be relative to the stock for the origin and set zero there, load and run a file, or interact with the machine in some other fashion. You will be presented with the **Job Info** screen (which is selected by the **Run** tab in the top menu bar) and the Jog menu will appear, so that the possible screens are:
 
 * **Run**/Job Info&#x20;
 * **Jog**/Position
