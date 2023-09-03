@@ -169,6 +169,10 @@ Issues a rapid movement to the specified Z-height (usually safety/retract height
 
 Outputs the commands to end a cut (retract to safety/retract height and M02).
 
+### beziercurves
+
+For the underlying mathematics see: [https://jamie-wong.com/post/bezier-curves/](https://jamie-wong.com/post/bezier-curves/) [https://pomax.github.io/bezierinfo/](https://pomax.github.io/bezierinfo/) and [https://blog.richardekwonye.com/bezier-curves](https://blog.richardekwonye.com/bezier-curves) and [https://ciechanow.ski/drawing-bezier-curves/](https://ciechanow.ski/drawing-bezier-curves/) [https://ciechanow.ski/curves-and-surfaces/](https://ciechanow.ski/curves-and-surfaces/)&#x20;
+
 ### Usage
 
 Putting the commands together has several expectations and requirements. The simplest usage is one where a single cut is made and the tool is plunged at the beginning, the cut is made, and then the tool is lifted to the retract height --- more complex cuts have the same requirements, to ensure that the tool is moved so that it cuts and does not collide with the stock at a rapid rate.
