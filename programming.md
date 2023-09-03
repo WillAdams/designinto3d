@@ -263,4 +263,5 @@ which we will match in Carbide Create, keeping the twain in synch so as to keep 
 * [https://github.com/sgenoud/replicad](https://github.com/sgenoud/replicad)
 * [https://www.nodebox.net/](https://www.nodebox.net/)
 * [https://github.com/zalo/CascadeStudio](https://github.com/zalo/CascadeStudio)
+* [https://book.gtoolkit.com/index.html](https://book.gtoolkit.com/index.html)
 
