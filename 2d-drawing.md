@@ -251,6 +251,8 @@ Curves are available in most vector drawing programs, and when present may be de
 
 The most common is Bézier curves ([https://en.wikipedia.org/wiki/B%C3%A9zier\_curve](https://en.wikipedia.org/wiki/B%C3%A9zier\_curve)), named for the automotive designer Pierre Bézier, which are defined by an on-curve point (the origin), a matching off-curve point, and an additional off-curve point paired with the ultimate (ending) on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options.
 
+For the underlying mathematics see: [https://pomax.github.io/bezierinfo/](https://pomax.github.io/bezierinfo/)
+
 To create a curve, select the Curve tool, then click or click-drag where one wants on-curve points (clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve nodes ― either smooth or sharp nodes may be changed to the other, see below):
 
 ![Carbide Create drawing curve.](<.gitbook/assets/carbide\_create\_interface\_create\_curve (1).png>)
