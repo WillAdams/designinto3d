@@ -10,6 +10,8 @@ Most joinery techniques require that each part be extended into the other and th
 
 ![Wren birdhouse](<.gitbook/assets/birdhouse\_-wren (1).jpg>)
 
+Birdhouses need to be sized for the species of bird they are intended for: [http://indianagourdsociety.org/education/birdhouses.pdf](http://indianagourdsociety.org/education/birdhouses.pdf)
+
 Like all other projects, it begins with a set of parameters:
 
 ![Wren birdhouse: parameters](<.gitbook/assets/image (69) (1).png>)

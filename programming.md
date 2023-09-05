@@ -218,7 +218,7 @@ A potentially useful example would be one for creating joinery. The first consid
 * tool radius --- used to calculate the geometry of the joint
 * square tool no, V tool no, large V tool no --- the specific tools used define the geometry of the joint as cut/modeled
 
-The initial structure requires 4 sub-modules, one for each possible combination or orientation and side:
+The initial structure requires 4 sub-modules, one for each possible combination of orientation and side:
 
 <figure><img src=".gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
