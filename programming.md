@@ -177,9 +177,11 @@ For the underlying mathematics see: [https://jamie-wong.com/post/bezier-curves/]
 
 The integration of Python into OpenSCAD [http://www.guenther-sohler.net/openscad/](http://www.guenther-sohler.net/openscad/) allows directly writing out a file rather than using RapCAD
 
-`f = open("gcode.nc", "w")`\
-`f.write(<line to add>)`\
-`f.close()`&#x20;
+```python
+f = open("gcode.nc", "w")
+f.write('{} {} {} {}\n'.format(a, x, y, z))
+f.close()  
+```
 
 which must be set up in multiple modules and used sequentially.
 
