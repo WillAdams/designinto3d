@@ -173,6 +173,16 @@ Outputs the commands to end a cut (retract to safety/retract height and M02).
 
 For the underlying mathematics see: [https://jamie-wong.com/post/bezier-curves/](https://jamie-wong.com/post/bezier-curves/) [https://pomax.github.io/bezierinfo/](https://pomax.github.io/bezierinfo/) and [https://blog.richardekwonye.com/bezier-curves](https://blog.richardekwonye.com/bezier-curves) and [https://ciechanow.ski/drawing-bezier-curves/](https://ciechanow.ski/drawing-bezier-curves/) [https://ciechanow.ski/curves-and-surfaces/](https://ciechanow.ski/curves-and-surfaces/)&#x20;
 
+### Python version
+
+The integration of Python into OpenSCAD [http://www.guenther-sohler.net/openscad/](http://www.guenther-sohler.net/openscad/) allows directly writing out a file rather than using RapCAD
+
+`f = open("gcode.nc", "w")`\
+`f.write(<line to add>)`\
+`f.close()`&#x20;
+
+which must be set up in multiple modules and used sequentially.
+
 ### Usage
 
 Putting the commands together has several expectations and requirements. The simplest usage is one where a single cut is made and the tool is plunged at the beginning, the cut is made, and then the tool is lifted to the retract height --- more complex cuts have the same requirements, to ensure that the tool is moved so that it cuts and does not collide with the stock at a rapid rate.
