@@ -179,8 +179,20 @@ The integration of Python into OpenSCAD [http://www.guenther-sohler.net/openscad
 
 ```python
 f = open("gcode.nc", "w")
+
 f.write('{} {} {} {}\n'.format(a, x, y, z))
+
+my_lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+my_lst_str = ''.join(map(str, my_lst))
+
 f.close()  
+
+# function definition
+def writeln(*arguments):
+    line_to_write = ""
+    for number in arguments:
+        line_to_write += number
+    print(line_to_write)
 ```
 
 which must be set up in multiple modules and used sequentially.
