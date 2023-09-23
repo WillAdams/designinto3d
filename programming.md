@@ -184,18 +184,125 @@ f.write('{} {} {} {}\n'.format(a, x, y, z))
 
 my_lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 my_lst_str = ''.join(map(str, my_lst))
-
-f.close()  
-
-# function definition
-def writeln(*arguments):
-    line_to_write = ""
-    for number in arguments:
-        line_to_write += number
-    print(line_to_write)
 ```
 
 which must be set up in multiple modules and used sequentially.
+
+There are two ways to incorporate files into OpenSCAD:
+
+* use — this will allow definitions in either Python, or in OpenSCAD and using a mix of OpenSCAD and Python code
+* include — this allows using variables from the main OpenSCAD file, but does not allow directly making use a function defined in Python
+
+Since we want to be able to turn on/off calling Python from w/in OpenSCAD we require a total of 3 files:
+
+* a Python file which is loaded using use \<gcodepreview.py>; — this is able to define Python functions
+* an OpenSCAD file which is loaded using use \<pygcodepreview.scad>; — this wraps the defined Python function in OpenSCAD
+* an OpenSCAD file which is loaded using include \<gcodepreview.scad>; — this allows using OpenSCAD variables from the main file to determine whether or no an OpenSCAD module which calls a Python module should be called
+
+Thus we have a Python file which is loaded using use:
+
+{% code title="gcodepreview.py" %}
+```python
+def popengcodefile(fn):
+    global f
+    f = open(fn, "w")
+
+def writeln(*arguments):
+    line_to_write = ""
+    for element in arguments:
+        line_to_write += element
+    f.write(line_to_write)
+    f.write("\n")
+
+def pclosegcodefile():
+    f.close()
+```
+{% endcode %}
+
+An OpenSCAD file which is loaded using use and which references the Python file:
+
+{% code title="pygcodepreview.scad" %}
+```clike
+//!OpenSCAD
+
+module oopengcodefile(fn) {
+    popengcodefile(fn);
+}
+
+module owritecomment(comment) {
+    writeln("(",comment,")");
+}
+
+module oclosegcodefile() {
+    pclosegcodefile();
+} 
+```
+{% endcode %}
+
+And a second OpenSCAD file which references the module definitions from the previous OpenSCAD file:
+
+{% code title="gcodepreview.scad" %}
+```clike
+//!OpenSCAD
+
+module opengcodefile(fn) {
+if (generategcode == true) {
+    oopengcodefile(fn);
+    }
+}
+
+module writecomment(comment) {
+if (generategcode == true) {
+    owritecomment(comment);
+    }
+}
+
+module closegcodefile() {
+    if (generategcode == true) {
+    oclosegcodefile();
+    }
+}
+```
+{% endcode %}
+
+which is all put together by an OpenSCAD file:
+
+```clike
+//!OpenSCAD
+
+use <gcodepreview.py>;
+use <pygcodepreview.scad>;
+include <gcodepreview.scad>;
+
+/* [G-code] */
+Gcode_filename = "gcode.nc"; 
+/* [G-code] */
+generategcode = true;
+
+a = 300;
+
+opengcodefile(Gcode_filename);
+
+writecomment(str(a));
+
+writecomment("Test");
+
+closegcodefile();
+```
+
+which when run, creates the file:
+
+{% code title="gcode.nc" %}
+```
+(300)
+(Test)
+```
+{% endcode %}
+
+
+
+\
+
 
 ### Usage
 
