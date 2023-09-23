@@ -15,6 +15,7 @@ A number of different programming tools and methodologies have been shown throug
 * gcodepreview --- [https://github.com/WillAdams/gcodepreview](https://github.com/WillAdams/gcodepreview) --- a library for OpenSCAD/RapCAD which allows 3D modeling tool movement/cutting and the generation of a matching G-code file.
 * GSharp --- [https://github.com/NRSoft/GSharp](https://github.com/NRSoft/GSharp) --- a system which allows programming in G-code using loops and variables even on G-code implementations which lack such features.
 * FullControl GCODE --- [https://fullcontrolgcode.com/software](https://fullcontrolgcode.com/software) --- this was originally an Excel spreadsheet, but it was re-implemented in Python and is available as a website: [https://fullcontrol.xyz/](https://fullcontrol.xyz/) as well as a Python module: [https://github.com/FullControlXYZ/fullcontrol](https://github.com/FullControlXYZ/fullcontrol)
+* [http://www.guenther-sohler.net/openscad/](http://www.guenther-sohler.net/openscad/) --- a recent development, this implements Python within OpenSCAD, allowing one to either use a Python (.py) file, or OpenSCAD which uses or references Python files
 
 New ones are regularly developed, and future developments will be documented here as circumstances warrant.&#x20;
 
