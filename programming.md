@@ -36,6 +36,10 @@ What does an algorithm look like?
 
 A further concern is scalability --- while many VPLs allow the definition of functions and modules, the usage of them usually goes against the visual nature which is the _raison d'être_ of choosing a VPL, resulting in the exact textual representation which one was trying to escape from, but trapping the words in little boxes or frames. Arguably not using such componentry is even worse as evinced by pages such as:
 
+{% embed url="https://blueprintsfromhell.tumblr.com/" %}
+
+and
+
 {% embed url="https://scriptsofanotherdimension.tumblr.com/" %}
 
 ## G-code
