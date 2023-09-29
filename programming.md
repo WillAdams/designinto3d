@@ -300,10 +300,7 @@ which when run, creates the file:
 ```
 {% endcode %}
 
-
-
-\
-
+This concept may then be expanded upon to create a complete system for modeling files as if cutting, and writing out the matching G-code.
 
 ### Usage
 
