@@ -373,6 +373,10 @@ which we will match in Carbide Create, keeping the twain in synch so as to keep 
 
 <figure><img src=".gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
+### DXF
+
+[https://stackoverflow.com/questions/54937433/how-do-i-write-a-dxf-code-for-a-polyline](https://stackoverflow.com/questions/54937433/how-do-i-write-a-dxf-code-for-a-polyline)
+
 ## Other tools to consider
 
 * [https://github.com/chigraph/chigraph](https://github.com/chigraph/chigraph)
