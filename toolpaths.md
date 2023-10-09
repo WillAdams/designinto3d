@@ -49,7 +49,7 @@ Contour toolpaths follow along one or more drawn element(s) of geometry, and wil
 
 Where the toolpath will fall relative to the geometry will always be clear when viewed in the 3D preview, and the offsets will alter the geometry of features — given a 1" circle cut with a 1/4" square endmill the following dimensions will be realized:
 
-![Carbide Create | Contour Toolpath | Offsets](<.gitbook/assets/image (91).png>)
+![Carbide Create | Contour Toolpath | Offsets](<.gitbook/assets/image (10).png>)
 
 * Inside / Left — a 1" hole will be made, matching the diameter of the original circle, and a post 1/2" in diameter will be left
 * No Offset — a 1.25" hole will be made, and a post 0.75" in diameter will be left
@@ -57,15 +57,15 @@ Where the toolpath will fall relative to the geometry will always be clear when 
 
 When not cutting all the way through with a square endmill, a square walled slot will result:
 
-![](<.gitbook/assets/image (90) (1).png>)
+![](<.gitbook/assets/image (113).png>)
 
 If cut with a ball-nosed endmill, a rounded groove may be achieved:
 
-![](<.gitbook/assets/image (89).png>)
+![](<.gitbook/assets/image (4).png>)
 
 One option for Contour Toolpaths is tabs. In Carbide Create v7 they may be added in the Design tab:
 
-![](<.gitbook/assets/image (122) (1).png>)
+![](<.gitbook/assets/image (20).png>)
 
 then the tabs may be instantiated in the Contour Toolpath setting.
 
@@ -73,37 +73,37 @@ then the tabs may be instantiated in the Contour Toolpath setting.
 
 Pocket toolpaths allow cutting out the interior of geometry:
 
-![](<.gitbook/assets/image (119) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (89).png>)
 
 which will be a flat bottomed pocket with vertical walls if cut out with a square endmill.
 
 If one uses a ball-nosed endmill, the edges will be rounded, the bottom will be scalloped, and there may be artifacts left behind:
 
-![](<.gitbook/assets/image (114) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (60).png>)
 
 If there is nested geometry, then the pocketing algorithm will alternate between cutting and not cutting, leaving islands:
 
-![](<.gitbook/assets/image (121) (1) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (69).png>)
 
-![](<.gitbook/assets/image (116) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (54).png>)
 
 One option for pocket toolpaths in some CAM programs is Rest machining to remove material which the endmill first used for a pocket cannot reach. Carbide Create Pro adds this:
 
-![](<.gitbook/assets/image (123) (1).png>)
+![](<.gitbook/assets/image (61).png>)
 
 Rest machining allows removing uncut material where a larger endmill cannot reach by indicating the previous size tool used and selecting a smaller tool to cut those areas which were not previously cut away:
 
-![](<.gitbook/assets/image (129).png>)
+![](<.gitbook/assets/image (33).png>)
 
 ## Drill
 
 Drill toolpaths plunge the tool at the center of the selected geometry:
 
-![](<.gitbook/assets/image (116) (1) (1) (1).png>)
+![](<.gitbook/assets/image (91).png>)
 
 As noted above, square, ball-nosed, and V-endmills may be used, and will be correctly previewed in how they cut:
 
-![](<.gitbook/assets/image (120) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (249).png>)
 
 A notable use for a V-endmill when drilling is to chamfer a small hole.
 
@@ -113,11 +113,11 @@ V carving toolpaths may be assigned to closed geometry, and as noted above, will
 
 If one limits the depth on a normal V carve, one can achieve special effects such as changing a square:
 
-![](<.gitbook/assets/image (116) (1) (1).png>)
+![](<.gitbook/assets/image (244).png>)
 
 into a diamond:
 
-![](<.gitbook/assets/image (113) (1).png>)
+![](<.gitbook/assets/image (16).png>)
 
 ## Keyhole
 
@@ -132,7 +132,7 @@ There are two buttons in Toolpaths which function as the interface for what geom
 
 and the resultant window for the former:
 
-<figure><img src=".gitbook/assets/image (6) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
 
 also afford the option to associate toolpaths with a Layer. For a discussion of the interactions of selection and toolpaths see: [https://community.carbide3d.com/t/still-struggling-with-toolpath/63383](https://community.carbide3d.com/t/still-struggling-with-toolpath/63383) If more than one piece of geometry is associated with a toolpath, then their arrangement will determine how the toolpath is actually cut.
 
@@ -156,7 +156,7 @@ The most important consideration here is that it is consistent for a given versi
 
 Carbide Create affords the option of organizing toolpaths into groups --- this is done using a contextual right-click menu:
 
-<figure><img src=".gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
 Groups may be:
 

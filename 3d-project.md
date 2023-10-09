@@ -34,15 +34,15 @@ Other hybrid options are possible, and a style which uses butt joints for the en
 
 The first consideration is overall dimensions, in this case 3″ wide × 7″ deep × 1½″ high, and the thickness of the stock, ¼″. Based on those, we draw up the three different views (clockwise from top-left: side, top/bottom, end):
 
-![Carbide Create Initial view of Rabbeted Box 3×7×1½″](.gitbook/assets/carbide-create\_rabbeted-box-with-features-3-7-1-\_initialview.png)
+![Carbide Create Initial view of Rabbeted Box 3×7×1½″](<.gitbook/assets/Carbide Create\_Rabbeted Box with features 3×7×1½\_initialview.png>)
 
 Next, draw in the thickness of the material:
 
-![Carbide Create Rabbeted Box 3×7×1½″ with boards drawn in.](.gitbook/assets/carbide-create\_rabbeted-box-with-features-3-7-1-\_drawinboards.png)
+![Carbide Create Rabbeted Box 3×7×1½″ with boards drawn in.](<.gitbook/assets/Carbide Create\_Rabbeted Box with features 3×7×1½\_drawinboards.png>)
 
 It is at the overlapping squares where it will be necessary to adjust the sizing of parts to accommodate rabbets and so forth. First, reduce the grid spacing to half the board thickness (0.25" so we change grid spacing to 0.125" in this case), then adjust parts to show the fit of the various rabbeted joints using Boolean operations:
 
-![Carbide Create Rabbeted Box 3×7×1½″ with parts drawn in.](.gitbook/assets/carbide-create\_rabbeted-box-with-features-3-7-1-\_drawinparts.png)
+![Carbide Create Rabbeted Box 3×7×1½″ with parts drawn in.](<.gitbook/assets/Carbide Create\_Rabbeted Box with features 3×7×1½\_drawinparts.png>)
 
 To confirm these dimensions, we model things in 3D. All dimensions need to be specified in terms of the overall dimensions of the box and the stock thickness:
 
@@ -53,7 +53,7 @@ To confirm these dimensions, we model things in 3D. All dimensions need to be sp
 
 First these dimensions are entered into a 3D modeling system as parameters. For this, [BlockSCAD ](https://www.blockscad3d.com/)will be used: [https://www.blockscad3d.com/editor/](https://www.blockscad3d.com/editor/)
 
-![BlockSCAD Rabbeted Box 3×7×1½″ dimensions as variables.](.gitbook/assets/blockscad\_3d\_variables.png)
+![BlockSCAD Rabbeted Box 3×7×1½″ dimensions as variables.](.gitbook/assets/BlockSCAD\_3D\_variables.png)
 
 With the dimensions available one can then begin laying out the box and associated parts.
 
@@ -61,11 +61,11 @@ With the dimensions available one can then begin laying out the box and associat
 
 Each part will ultimately need to be located within a cube the dimensions of the box:
 
-![BlockSCAD Rabbeted Box 3×7×1½″ cube.](.gitbook/assets/blockscad\_3d\_cube.png)
+![BlockSCAD Rabbeted Box 3×7×1½″ cube.](.gitbook/assets/BlockSCAD\_3D\_cube.png)
 
 Start with the top/bottom, since its orientation and placement match that of the entire box in situ (save for the bottom being upside down). Note that it must be shifted within the box outline up and over by half the stock thickness (and reduced in dimensions by that as well), and that at this time, we will ignore the matter of toolpaths in doing the 3D modeling. However, best practice is to modularize the code, and that will be done:
 
-![BlockSCAD Rabbeted Box 3×7×1½″ bottom.](.gitbook/assets/blockscad\_3d\_makebottom.png)
+![BlockSCAD Rabbeted Box 3×7×1½″ bottom.](.gitbook/assets/BlockSCAD\_3D\_makebottom.png)
 
 It will be necessary to create some variables and code.
 
@@ -75,7 +75,7 @@ For expedience the calculations are done directly (however, it is suggested for 
 
 Taking all of that into account, it is straight-forward to show the different lengths and their attendant calculations with a bit of color-coding:
 
-![BlockSCAD Rabbeted Box 3×7×1½″ parts and dimensions.](<.gitbook/assets/rabbeted-box-with-features-3\_7\_1\_5\_partsdimensions (1).png>)
+![BlockSCAD Rabbeted Box 3×7×1½″ parts and dimensions.](<.gitbook/assets/Rabbeted Box with features 3\_7\_1\_5\_partsdimensions (1).png>)
 
 This should make it obvious that the box sides are the full depth of the box, while the box ends are the width of the box less twice the rabbet dimension (since they are inset into the sides). Similarly the bottom is the width and depth of the box less the rabbet twice over, since it is placed in grooves which are one rabbet deep, leaving one rabbet of thickness around it. Lastly the lid is the same width as the bottom, but is only shorter than the box depth by a single rabbet, since it aligns with the edge of the box at the opening.
 
@@ -83,11 +83,11 @@ Placement of the geometry for rabbets should be obvious from that as well, with 
 
 In Carbide Create begin by arranging rectangles of the appropriate sizes for the six parts needed:
 
-![Carbide Create Rabbeted Box 3×7×1½″ part outlines only.](.gitbook/assets/rabbeted-box-with-features-3-7-1-\_partoutlinesonly.png)
+![Carbide Create Rabbeted Box 3×7×1½″ part outlines only.](<.gitbook/assets/Rabbeted Box with features 3×7×1½\_partoutlinesonly.png>)
 
 Model them by drawing in additional rectangles which represent the interior of the box to model the rabbets. Basically you need to draw outlines for all the stock which will be left uncut:
 
-![Carbide Create Rabbeted Box 3×7×1½″ part geometry.](.gitbook/assets/carbide\_create\_screengrab\_rabbetedbox\_paths.PNG)
+![Carbide Create Rabbeted Box 3×7×1½″ part geometry.](.gitbook/assets/Carbide\_Create\_screengrab\_rabbetedbox\_paths.PNG)
 
 (and we've taken the liberty of drawing in the circle for the finger hole).
 
@@ -97,23 +97,23 @@ Adding the machining operations takes us into the 3rd dimension. While one could
 
 Select the geometry for the parts and offset by a distance at least 10% greater than the diameter of the endmill which will be used:
 
-![Carbide Create rabbeted box parts selected for offsetting.](.gitbook/assets/rabbeted-box-with-features-3-7-1-\_partoutlines\_selected.png)
+![Carbide Create rabbeted box parts selected for offsetting.](<.gitbook/assets/Rabbeted Box with features 3×7×1½\_partoutlines\_selected.png>)
 
 After, an optional optimization would be to edit out the small divots in the offset path:
 
-![Carbide Create rabbeted box after offsetting parts.](.gitbook/assets/rabbeted-box-with-features-3-7-1-\_partoutlines\_offset.png)
+![Carbide Create rabbeted box after offsetting parts.](<.gitbook/assets/Rabbeted Box with features 3×7×1½\_partoutlines\_offset.png>)
 
 With the outer outlines for the rabbet/pocket made, it is simply a matter of selecting the feature geometries as well and pocketing to one-half the stock thickness:
 
-![Carbide Create rabbeted box rabbets.](.gitbook/assets/carbide-create\_rabbeted-box-with-features-3-7-1-\_rabbets.png)
+![Carbide Create rabbeted box rabbets.](<.gitbook/assets/Carbide Create\_Rabbeted Box with features 3×7×1½\_rabbets.png>)
 
 Then select each part outline and add suitable toolpaths and tabs to allow them to be cut free:
 
-![Carbide Create rabbeted box toolpaths with tabs.](.gitbook/assets/carbide-create\_rabbeted-box-with-features-3-7-1-\_rabbets\_profiles.png)
+![Carbide Create rabbeted box toolpaths with tabs.](<.gitbook/assets/Carbide Create\_Rabbeted Box with features 3×7×1½\_rabbets\_profiles.png>)
 
 The box may then be cut out, the pieces post-processed if need be (setting the Z origin on the spoilboard surface should minimize this), and then glued-up and assembled.
 
-![Rabbeted box.](.gitbook/assets/win\_20200409\_22\_12\_01\_pro.jpg)
+![Rabbeted box.](.gitbook/assets/WIN\_20200409\_22\_12\_01\_Pro.jpg)
 
 See: [https://cutrocket.com/p/5e8fd99cc1578/](https://cutrocket.com/p/5e8fd99cc1578/)
 
@@ -121,12 +121,12 @@ See: [https://cutrocket.com/p/5e8fd99cc1578/](https://cutrocket.com/p/5e8fd99cc1
 
 Creating a variation is simply a matter of entering the new dimensions (height, width, depth, stock thickness) into the BlockSCAD or OpenSCAD program, exporting an SVG, then re-arranging in the CAM program to create a file to cut which is efficient in terms of material usage, or directly creating a file in Carbide Create per the relative dimensions and techniques noted above.
 
-![BlocksCAD: Rabbeted Box: 1½″ × 1½″ × 8″](.gitbook/assets/rabbeted-box-with-features-1\_5x8x1\_5\_blockscad.png)
+![BlocksCAD: Rabbeted Box: 1½″ × 1½″ × 8″](<.gitbook/assets/Rabbeted Box with features 1\_5x8x1\_5\_BlockSCAD.png>)
 
 See: [https://www.blockscad3d.com/community/projects/819419](https://www.blockscad3d.com/community/projects/819419)
 
 Or in Carbide Create:
 
-![Carbide Create: Rabbeted Box: 1½″ × 1½″ × 8″](.gitbook/assets/rabbeted-box-with-features-1\_5x8x1\_5\_carbide-create.png)
+![Carbide Create: Rabbeted Box: 1½″ × 1½″ × 8″](<.gitbook/assets/Rabbeted Box with features 1\_5x8x1\_5\_Carbide Create.png>)
 
 See: [https://cutrocket.com/p/5fb0a1afbf9d6/](https://cutrocket.com/p/5fb0a1afbf9d6/) for a file, and comments and discussion: [https://community.carbide3d.com/t/design-into-3d-rabbeted-box-with-features/20741/36](https://community.carbide3d.com/t/design-into-3d-rabbeted-box-with-features/20741/36).

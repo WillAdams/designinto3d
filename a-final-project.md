@@ -24,9 +24,9 @@ In addition we will provide the following options for styles of lid:
 
 * Flat — a plain flat lid
 * Faceted — a three-sided, Mansard-style lid
-* Arched — a traditional coopered \(curved, multi-piece\) lid
+* Arched — a traditional coopered (curved, multi-piece) lid
 
-In order to facilitate the strapping \(for simplicity's sake it is assumed the flat strapping is the same width and thickness as the angle profile\) it will be necessary to specify the dimensions for it:
+In order to facilitate the strapping (for simplicity's sake it is assumed the flat strapping is the same width and thickness as the angle profile) it will be necessary to specify the dimensions for it:
 
 * AngleWidth
 * AngleThickness
@@ -37,57 +37,56 @@ Lastly we will need to fasten things with some sort of hardware which requires t
 
 This yields:
 
-![](.gitbook/assets/blockscad-final-project-variables.PNG)
+![](<.gitbook/assets/Blockscad final project variables.PNG>)
 
-In addition, since we are cutting the boards in half lengthwise for the lid parts it will be necessary to know the width of the saw kerf \(dimension of material lost to the cutting\), so add:
+In addition, since we are cutting the boards in half lengthwise for the lid parts it will be necessary to know the width of the saw kerf (dimension of material lost to the cutting), so add:
 
 * SawKerf
 
-Working in multiples of boards we need a module to create an array of boards. The inputs should be obvious, as are the calculations and looping. It will be expedient to calculate out the actual dimensions of the \(lower portion of the\) box:
+Working in multiples of boards we need a module to create an array of boards. The inputs should be obvious, as are the calculations and looping. It will be expedient to calculate out the actual dimensions of the (lower portion of the) box:
 
 * boxwidth
 * boxdepth
 * boxheight
 
-![](.gitbook/assets/blockscad-final-project-makeboardarry.PNG)
+![](<.gitbook/assets/Blockscad final project makeboardarry.PNG>)
 
 Next we erect the front and back and ends:
 
-![](.gitbook/assets/blockscad-final-project-front-and-back-and-ends.PNG)
+![](<.gitbook/assets/Blockscad final project front and back and ends.PNG>)
 
-Next is the logic for the lid, a simple if-then construct based on the allowed lid types \(which will become a drop-down menu in OpenSCAD\). Since the skirt will vary, amongst designs, but the basic version will work for multiple designs it is made into a module \(from which code will be copied for the 3-faceted version\):
+Next is the logic for the lid, a simple if-then construct based on the allowed lid types (which will become a drop-down menu in OpenSCAD). Since the skirt will vary, amongst designs, but the basic version will work for multiple designs it is made into a module (from which code will be copied for the 3-faceted version):
 
-![](.gitbook/assets/blockscad-final-project-makelidskirt.PNG)
+![](<.gitbook/assets/Blockscad final project makelidskirt.PNG>)
 
 Placing the flat lid is simply a matter of positioning a duplicate of the bottom:
 
-![](.gitbook/assets/blockscad-final-project-lid-flat.PNG)
+![](<.gitbook/assets/Blockscad final project lid - flat.PNG>)
 
 The faceted lid is a basic variation, starting with appropriate angles on the skirt pieces:
 
-![](.gitbook/assets/blockscad-final-project-makefacetedlidskirt.PNG)
+![](<.gitbook/assets/Blockscad final project makefacetedlidskirt.PNG>)
 
 Adding the front/back facets is easily done:
 
-![](.gitbook/assets/blockscad-final-project-makefacetedlidfrontback.PNG)
+![](<.gitbook/assets/Blockscad final project makefacetedlidfrontback.PNG>)
 
 The ends require a bit of trigonometry to calculate the offset of the angled boards and necessary gaps:
 
-![](.gitbook/assets/blockscad-final-project-makefacetedlid-ends.PNG)
+![](<.gitbook/assets/Blockscad final project makefacetedlid ends.PNG>)
 
 Add the boards at the top to finish this version of the box:
 
-![](.gitbook/assets/blockscad-final-project-makefacetedlidtop.PNG)
+![](<.gitbook/assets/Blockscad final project makefacetedlidtop.PNG>)
 
 The arched form requires some additional variables:
 
-![](.gitbook/assets/blockscad-final-project-variables-for-arched-lid%20%281%29.PNG)
+![](<.gitbook/assets/Blockscad final project variables for arched lid.PNG>)
 
 Arching the lid so that it fits requires calculating two triangle angles:
 
-![](.gitbook/assets/blockscad-final-project-archedlid.PNG)
+![](<.gitbook/assets/Blockscad final project archedlid.PNG>)
 
 Combining all the wooden parts and one arrives at:
 
-![](.gitbook/assets/blockscad-final-project-withoutstraps.PNG)
-
+![](<.gitbook/assets/Blockscad final project withoutstraps.PNG>)

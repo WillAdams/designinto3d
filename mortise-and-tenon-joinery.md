@@ -16,21 +16,21 @@ A more expedient option is to use the full thickness of the stock for the tenon 
 
 When the stock has a tenon cut while flat the tenons will have a rounded base which will need to be adjusted for when cutting the mortises:
 
-![Tenons cut from flat stock.](<.gitbook/assets/image (58).png>)
+![Tenons cut from flat stock.](<.gitbook/assets/image (31).png>)
 
 When cutting the mortises it will be necessary to cut T-bones or dogbones to allow for the square corners, and the longitudinal edges will need to be relieved, say with a V cut.
 
-![Mortises relieved with a V cut.](<.gitbook/assets/image (59).png>)
+![Mortises relieved with a V cut.](<.gitbook/assets/image (292).png>)
 
 With code in place to make the mortises and tenons, it is a simple matter to use them in a suitable design:
 
-![Child's step stool made with mortise and tenon joinery.](<.gitbook/assets/image (60).png>)
+![Child's step stool made with mortise and tenon joinery.](<.gitbook/assets/image (130).png>)
 
 Available at: [https://www.blockscad3d.com/community/projects/1151153](https://www.blockscad3d.com/community/projects/1151153)
 
 Arguably, the proportions should be adjusted, since the current dimensions seem more bench-like and is a bit low for use.
 
-![Child's step stool with visible mortise and tenon joinery](.gitbook/assets/20210303\_163038-1-.jpg)
+![Child's step stool with visible mortise and tenon joinery](.gitbook/assets/20210303\_163038\[1].jpg)
 
 
 

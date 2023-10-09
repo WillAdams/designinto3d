@@ -9,9 +9,9 @@ Drawer organization is a typical aspect of homes, especially the kitchen. Custom
 To simplify things, the interface will make certain assumptions:
 
 * no sides or front
-* spacing will be evenly divided amongst the dividers \(but specific dividers may be disabled, or set to start from right or rear\)
+* spacing will be evenly divided amongst the dividers (but specific dividers may be disabled, or set to start from right or rear)
 
-Programmatically this will be done by the following possible values: 
+Programmatically this will be done by the following possible values:&#x20;
 
 Position
 
@@ -25,21 +25,19 @@ Length
 
 In order to do this we need a module which has an input for the maximum possible number of positions:
 
-![Draw divider module](.gitbook/assets/image%20%2861%29.png)
+![Draw divider module](<.gitbook/assets/image (41).png>)
 
 Then, based on the logic of which is the highest numbered position which has a non-zero number the distances are apportioned evenly and calculated. First create variables for each divider position:
 
-![Drawer divider variables](.gitbook/assets/image%20%2864%29.png)
+![Drawer divider variables](<.gitbook/assets/image (21).png>)
 
 To make checking the position easier, draw in a surround:
 
-![Drawer divider surround](.gitbook/assets/image%20%2863%29.png)
+![Drawer divider surround](<.gitbook/assets/image (210).png>)
 
 Calculate out the widths of the divided areas:
 
-![Drawer divider section width](.gitbook/assets/image%20%2862%29.png)
-
-
+![Drawer divider section width](<.gitbook/assets/image (214).png>)
 
 
 

@@ -10,7 +10,7 @@ The first project is a rectangular block with the proportions of the monolith fr
 
 This is of course easily drawn up in overhead, front, and profile views:
 
-![1 × 4 × 9 monolith drawn in 2D](.gitbook/assets/monolith\_1x4x9\_carbide\_create.png)
+![1 × 4 × 9 monolith drawn in 2D](.gitbook/assets/monolith\_1x4x9\_Carbide\_Create.PNG)
 
 Which may be combined into an isometric view quite easily:
 
@@ -24,7 +24,7 @@ In it, one simply drags blocks and arranges them and updates variable values unt
 
 the best practice would be to use a module and have the calculations done automatically based on the user inputting the thickness desired:
 
-![Design into 3D: 1st Project: BlockSCAD](<.gitbook/assets/image (66).png>)
+![Design into 3D: 1st Project: BlockSCAD](<.gitbook/assets/image (241).png>)
 
 With the part designed, the next consideration is manufacture. The easiest way to get a project from BlockSCAD (or OpenSCAD) into a CAM tool such as Carbide Create is to export a DXF or SVG. If this were done along the standard 2D view, one would get a rectangle as wide as the cube, but only as deep as the thickness, where instead what is wanted is the height, so the block needs to be rotated to provide a different view. As the above 2D drawing makes obvious the correct view for manufacture would be the front.
 
@@ -34,7 +34,7 @@ In theory one would simply assign an outer profile toolpath to the front view ab
 
 A further consideration is the matter of tooling ― it is necessary to consider the diameter of the endmill in cutting out the part, so it is necessary to add a few more variables including `Endmill Diameter` and some logic to arrange things. This also requires that one revisit matters of orientation and rotation. It is best to work with the normal Cartesian orientation ― this allows one to use a cylinder to represent an endmill. Similarly, we want to represent the area which the endmill will remove, as opposed to merely the part itself. Adjust for that and we get:
 
-![Design into 3D: 1st Project: BlockSCAD: Part view](<.gitbook/assets/image (67) (1).png>)
+![Design into 3D: 1st Project: BlockSCAD: Part view](<.gitbook/assets/image (110).png>)
 
 This is available at: [https://www.blockscad3d.com/community/projects/810179](https://www.blockscad3d.com/community/projects/810179)
 

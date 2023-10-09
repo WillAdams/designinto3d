@@ -92,11 +92,11 @@ M02
 
 This previews as:
 
-<figure><img src=".gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
 
 As verified by a 3rd party G-code simulator, CutViewer Mill:
 
-<figure><img src=".gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
 
 The control software for many CNC machines will afford G-code entry in one or more ways. For the Carbide 3D machines which I use (and support), this is Carbide Motion, which has two options: MDI --- one can enter G-code into the MDI one line at a time, and also "Quick Actions" which allow entering small programs which can then be run at will.&#x20;
 
@@ -138,11 +138,11 @@ The first thing which must be done is to define the stock, then it is possible t
 
 The latter two match job setup options in Carbide Create and determine where the stock will be placed relative to the origin.
 
-<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
 
 which generates matching G-code:
 
-<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (222).png" alt=""><figcaption></figcaption></figure>
 
 ### generategcode
 
@@ -318,19 +318,19 @@ Available at: [https://github.com/WillAdams/gcodepreview](https://github.com/Wil
 
 If one loads the library gcodepreview as a module into OSGE, it is pretty straight-forward to use it to create a file to cut out a design using G-code:
 
-<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
 which when generated as OpenSCAD code previews as expected:
 
-<figure><img src=".gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
 
 which with a bit of editing works as expected in RapCAD:
 
-<figure><img src=".gitbook/assets/image (9) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
 
 and generates G-code which previews as expected:
 
-<figure><img src=".gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
 
 Available at: [https://github.com/WillAdams/gcodepreview/blob/main/flatten.graph.tres](https://github.com/WillAdams/gcodepreview/blob/main/flatten.graph.tres)
 
@@ -353,25 +353,25 @@ A potentially useful example would be one for creating joinery. The first consid
 
 The initial structure requires 4 sub-modules, one for each possible combination of orientation and side:
 
-<figure><img src=".gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (163).png" alt=""><figcaption></figcaption></figure>
 
 The actual work of modeling/cutting is then done in these sub-modules. Working this up wants a graphical representation/preview --- for that, we turn to Carbide Create to draw things up in profile and in 2D so as to assign 3D toolpaths, first matching the stock setup as assigned in OpenSCAD Graph Editor/OpenSCAD:
 
-<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
 In Carbide Create:
 
-![](<.gitbook/assets/image (13) (2).png>)
+![](<.gitbook/assets/image (192).png>)
 
 so that we can draw up things in Carbide Create as we work through the programming. First consideration is what the call is to the module:
 
-<figure><img src=".gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (221).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (126).png" alt=""><figcaption></figcaption></figure>
 
 which we will match in Carbide Create, keeping the twain in synch so as to keep track of our progress and how things fit together:
 
-<figure><img src=".gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 
 ### DXF
 

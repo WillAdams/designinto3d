@@ -6,7 +6,7 @@ description: Drawing in 2 dimensions to make 3 dimensional parts
 
 As noted previously, before one can make a part, one must define the geometry of the design. This is done using classic geometric constructs, and possibly curves defined mathematically (but usually drawn up in a CAD or Bézier curve drawing program). We will use Carbide Create as a specific example (available from: [https://carbide3d.com/carbidecreate/](https://carbide3d.com/carbidecreate/) — note that some features may only be available in the current beta: [https://carbide3d.com/carbidecreate/beta](https://carbide3d.com/carbidecreate/beta) and that there is an older, unsupported version at: [https://carbide3d.com/carbidecreate/download6](https://carbide3d.com/carbidecreate/download6)), but the concepts would apply to any CAD or vector drawing program and will be explored first.
 
-![Carbide Create interface.](<.gitbook/assets/Carbide\_Create\_interface (1).png>)
+![Carbide Create interface.](.gitbook/assets/Carbide\_Create\_interface.png)
 
 As with most drawing tools, there are menus for commands or different program functions/states, a palette of tools, and a work area, which includes a graphical representation of the "Stock" which is the material which will be cut away to make a design or part, and on the Stock there are lines for a grid which may be re-sized or hidden. The initial view has no objects which may be manipulated, these may be added as described below. Later versions add a pair of rulers around the drawing area and a status bar, (not depicted above).
 
@@ -20,11 +20,11 @@ Points of course will be used to define the Cartesian X, Y coordinates of all ge
 
 Straight lines are a fundamental building block of vector drawing and are of course defined as the shortest distance between two points (Euclid’s _Elements: Book I:_ [_Definitions 2–5_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/bookI.html#defs)). Some CAM tools (including Carbide Create) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point (which is to say, the path direction) and whether the offset is to the left- or right-hand of the path direction. Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline (or Curve) tool:
 
-![Carbide Create Polyline Tool.](<.gitbook/assets/carbide\_create\_screengrab\_polyline\_hl (4).png>)
+![Carbide Create Polyline Tool.](<.gitbook/assets/Carbide\_Create\_screengrab\_polyline\_hl (2).png>)
 
 clicking at the beginning (as well as if desired, intermediary) and end points:
 
-![Carbide Create drawing line with Polyline tool.](<.gitbook/assets/carbide\_create\_interface\_create\_polyline (1).png>)
+![Carbide Create drawing line with Polyline tool.](.gitbook/assets/Carbide\_Create\_interface\_create\_polyline.png)
 
 and then clicking on **Done** (without returning to the first point if one wishes an open path). Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange (for objects on the current layer), and if there are more than one element/group selected, the most recently added will be considered the Key Object which will be indicated by being drawn with a dashed highlight.
 
@@ -48,7 +48,7 @@ Note that in build 527 Carbide Create gained a feature for adding all open paths
 
 Edit | Select... | Select Open Vectors
 
-![](<.gitbook/assets/image (117) (1) (1) (1).png>)
+![](<.gitbook/assets/image (98).png>)
 
 ### Closed Paths&#x20;
 
@@ -58,7 +58,7 @@ Closed paths meet back at the point of origin and open up additional operations 
 
 Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI15.html) as a plane figure with one line equidistant from a point, _c.f._, [_Book III_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookIII/bookIII.html). In Carbide Create one draws circles from the inside out, clicking first at the center point, then on a point at the perimeter to define the radius (and by extension, diameter):
 
-![Carbide Create drawing a circle.](<.gitbook/assets/carbide\_create\_interface\_create\_circle (2).png>)
+![Carbide Create drawing a circle.](<.gitbook/assets/Carbide\_Create\_interface\_create\_circle (2).png>)
 
 Note that the **Done** button allows one to cancel out of the circle drawing mode.
 
@@ -70,7 +70,7 @@ Note that in build 527 Carbide Create gained a feature for adding circles which 
 
 Edit | Select... | Select Circles
 
-![Carbide Create dialog for Select Circles ](<.gitbook/assets/image (73).png>)
+![Carbide Create dialog for Select Circles ](<.gitbook/assets/image (2).png>)
 
 One may select the minimum and maximum diameter for adding circles to the current selection which will include circles drawn with the native circle tool, circles drawn as Bézier curves, and polylines which approximate a circle.&#x20;
 
@@ -78,7 +78,7 @@ One may select the minimum and maximum diameter for adding circles to the curren
 
 Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI19.html), rectangles have a specific tool for their creation; squares may be defined by making height and width equal, and in Carbide Create rectangles have a corner feature which other shapes do not. As circles are, they are drawn from the inside out in Carbide Create by default, or one may hold the ctrl key to draw from corner-to-corner:
 
-![Carbide Create drawing a rectangle.](<.gitbook/assets/carbide\_create\_interface\_create\_rectangle (1).png>)
+![Carbide Create drawing a rectangle.](<.gitbook/assets/Carbide\_Create\_interface\_create\_rectangle (1).png>)
 
 Carbide Create draws from center out by default, but will draw from corner-to-corner when one holds the control (or command) keyboard modifier.
 
@@ -86,7 +86,7 @@ Carbide Create draws from center out by default, but will draw from corner-to-co
 
 Drawing programs often have support for regular polygons, as does Carbide Create. As with other objects in Carbide Create, Polygons are drawn from the center point out:
 
-![Carbide Create drawing a hexagon.](<.gitbook/assets/carbide\_create\_interface\_create\_polygon (1).png>)
+![Carbide Create drawing a hexagon.](.gitbook/assets/Carbide\_Create\_interface\_create\_polygon.png)
 
 Once drawn, they may be adjusted in their dimensions, and for their number of sides, see below.
 
@@ -108,13 +108,13 @@ It is also possible to reference the current stock thickness as the variable _t_
 
 For a circle, the size parameter adjustment may be done in terms of its overall size using the **Resize** tool (either **Width** or **Height**, only one may be adjusted, the other will be forced to match), or **Radius**:
 
-![Carbide Create modifying circle parameters.](<.gitbook/assets/carbide\_create\_screengrab\_circle\_parameters (1).png>)
+![Carbide Create modifying circle parameters.](.gitbook/assets/Carbide\_Create\_screengrab\_circle\_parameters.png)
 
 #### Rectangle Parameters
 
 Rectangles may also be modified in their dimensions, but one is not limited to a regular square, **Width** and/or **Height** may be specified separately:
 
-![Carbide Create modifying rectangle parameters.](<.gitbook/assets/carbide\_create\_interface\_parameters\_rectangle (3).png>)
+![Carbide Create modifying rectangle parameters.](<.gitbook/assets/Carbide\_Create\_interface\_parameters\_rectangle (1).png>)
 
 Note that in addition to the dimensions, one may change the shaping/appearance of corners. The possible options are:
 
@@ -129,21 +129,21 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 
 Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter/distance from the corner:
 
-![Carbide Create modifying Rectangle corner parameters.](<.gitbook/assets/carbide\_create\_interface\_rectangle\_fillet\_parameters (2).png>)
+![Carbide Create modifying Rectangle corner parameters.](.gitbook/assets/Carbide\_Create\_interface\_rectangle\_fillet\_parameters.png)
 
 #### Polygon Parameters
 
 Polygons may be adjusted for Radius (since only regular polygons are supported, only one measurement need be specified) and number of sides:
 
-![Carbide Create modifying Polygon parameters.](<.gitbook/assets/carbide\_create\_interface\_polygon\_parameters (4).png>)
+![Carbide Create modifying Polygon parameters.](.gitbook/assets/Carbide\_Create\_interface\_polygon\_parameters.png)
 
 ## Text
 
 Not geometry, but many drawing and CAD programs allow setting text. Carbide Create affords this:
 
-![](<.gitbook/assets/image (119).png>)
+![](<.gitbook/assets/image (23).png>)
 
-![](<.gitbook/assets/image (138) (1).png>)
+![](<.gitbook/assets/image (129).png>)
 
 Text objects are limited to a single line of text in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) installed on the computer Carbide Create is running on, selecting Bold and or Italic (which will be applied if the appropriate font variation is installed on the system), setting the Font Height, modifying the Spacing and setting the Alignment.
 
@@ -153,11 +153,11 @@ It is also possible to convert text to curves using the button, "Convert to Curv
 
 Another option is to set the text on an arc, rather than all in a straight line. When doing so, alignment may be used to control where on the arc the text will appear:
 
-![](<.gitbook/assets/image (122).png>)
+![](<.gitbook/assets/image (274).png>)
 
 which has one checkbox to enable it, and another to move the text to the bottom:
 
-![](<.gitbook/assets/image (128).png>)
+![](<.gitbook/assets/image (28).png>)
 
 and two controls, one which allows setting the center for the arc, the other for where the text is aligned against. Using the shift key when dragging will move both controls in unison.
 
@@ -167,11 +167,11 @@ If more than one line of text is needed, they may be created/positioned using th
 
 Some CAD and drawing programs include a measurement tool. Carbide Create adds one in v7:
 
-![](<.gitbook/assets/image (123).png>)
+![](<.gitbook/assets/image (138).png>)
 
 Click on the two points which one wishes to measure to/from:
 
-![](<.gitbook/assets/image (137).png>)
+![](<.gitbook/assets/image (127).png>)
 
 and the coordinates of the two points, the distance between them, and the angle between them will be displayed.
 
@@ -199,7 +199,7 @@ When selecting geometry in Carbide Create and selecting **Move**, the X and Y co
 
 In addition to moving, geometry may also be altered in size. Selections may be scaled symmetrically using the hollow square drag handles at the corners or by using the numeric interface ― midpoints of the selection marquee afford asymmetric scaling by dragging instead (this is a simple way to create an ellipse/oval) and later versions add a checkbox, "Keep Proportions" which makes it possible to scale asymmetrically numerically (note that drag-scaling will snap to the grid and can afford a similar precision):
 
-<figure><img src=".gitbook/assets/image (145).png" alt=""><figcaption><p>Carbide Create Resize transform</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (226).png" alt=""><figcaption><p>Carbide Create Resize transform</p></figcaption></figure>
 
 ### Rotate
 
@@ -223,7 +223,7 @@ In Carbide Create, if multiple objects are selected and stock is not used to ali
 
 Geometry may be selected and offset, either to the inside or outside:
 
-![Carbide Create offset interface options](<.gitbook/assets/carbide\_create\_interface\_offsetpath (2).png>)
+![Carbide Create offset interface options](<.gitbook/assets/Carbide\_Create\_interface\_offsetpath (3).png>)
 
 When offsetting paths to the outside in Carbide Create, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired, either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a third party tool such as Inkscape, and then reimport, or, redraw the geometry.
 
@@ -231,7 +231,7 @@ When offsetting paths to the outside in Carbide Create, corners are rounded off 
 
 Booleans allow for the modification of geometry using existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected (the green indicates the geometry which will be produced by the operation, the black what is used and which is normally replaced by the result):
 
-![Carbide Create Boolean options.](<.gitbook/assets/carbide\_create\_interface\_boolean (1).png>)
+![Carbide Create Boolean options.](.gitbook/assets/Carbide\_Create\_interface\_Boolean.png)
 
 Depending on the selection, Carbide Create affords the following Boolean operations:
 
@@ -253,17 +253,17 @@ The most common is Bézier curves ([https://en.wikipedia.org/wiki/B%C3%A9zier\_c
 
 To create a curve, select the Curve tool, then click or click-drag where one wants on-curve points (clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve nodes ― either smooth or sharp nodes may be changed to the other, see below):
 
-![Carbide Create drawing curve.](<.gitbook/assets/carbide\_create\_interface\_create\_curve (1).png>)
+![Carbide Create drawing curve.](<.gitbook/assets/Carbide\_Create\_interface\_create\_curve (1).png>)
 
 #### Open or Closed Paths
 
 Once a Curve (or Polyline) is created it may be either open (indicated by being magenta when not selected), or closed (black). Open paths may be closed using the **Join Vectors** command:
 
-![Carbide Create closing curve using Join command. ](<.gitbook/assets/carbide\_create\_interface\_join\_curve (2).png>)
+![Carbide Create closing curve using Join command. ](<.gitbook/assets/Carbide\_Create\_interface\_join\_curve (3).png>)
 
 Note that the beginning and ending nodes will be connected as directly as possible:
 
-![Carbide Create curve closed using Join command.](<.gitbook/assets/carbide\_create\_interface\_join\_curve\_after (1).png>)
+![Carbide Create curve closed using Join command.](.gitbook/assets/Carbide\_Create\_interface\_join\_curve\_after.png)
 
 and it may be necessary to adjust the curve if the path crosses itself.
 
@@ -280,7 +280,7 @@ Bézier Curves should be drawn following some basic principles unless a design d
 
 The underlying points of geometry may be modified by selecting it and choosing **Node Edit** Mode:
 
-![Carbide Create Node Edit Mode.](<.gitbook/assets/carbide\_create\_interface\_node\_edit\_mode (1).png>)
+![Carbide Create Node Edit Mode.](<.gitbook/assets/Carbide\_Create\_interface\_node\_edit\_mode (1).png>)
 
 As noted above, geometry is made up of lines and/or curves which are bounded by on-path nodes, and for curves, have a pair of off-path nodes which determine how the curve is drawn.
 
@@ -297,31 +297,31 @@ Off-path nodes (indicated by small filled circles) may be dragged to reshape the
 
 Version 633 of Carbide Create adds a Corner Tool:
 
-![](<.gitbook/assets/image (119) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (111).png>)
 
 which allows one to modify corners to have a specified radius:
 
-![](<.gitbook/assets/image (128) (1) (1) (1).png>)
+![](<.gitbook/assets/image (1).png>)
 
 only angles which will admit a portion of a circle of the specified radius will be eligible:
 
-![](<.gitbook/assets/image (115) (1) (1) (1).png>)
+![](<.gitbook/assets/image (149).png>)
 
 #### Trim Vectors
 
 A frequent feature in CAD programs is the ability to trim overlapping vectors which was added in version 636:
 
-![](<.gitbook/assets/image (124) (1) (1) (1).png>)
+![](<.gitbook/assets/image (57).png>)
 
 which allows one to remove segments as defined by overlapping:
 
-![](<.gitbook/assets/image (126) (1) (1).png>)
+![](<.gitbook/assets/image (141).png>)
 
-![](<.gitbook/assets/image (117) (1) (1).png>)
+![](<.gitbook/assets/image (67).png>)
 
 Once trimmed, the geometry will necessarily become one or more open paths:
 
-![](<.gitbook/assets/image (116) (1).png>)
+![](<.gitbook/assets/image (87).png>)
 
 It is frequently helpful to use this feature to create sections of geometry from multiple elements which may then be connected using the _Join Vectors_ command as discussed below.
 
@@ -329,39 +329,39 @@ It is frequently helpful to use this feature to create sections of geometry from
 
 With Boolean Operations and the Trim Vector a number of possible interactions are possible. Given a set of curves, for example a rectangle with a circle superimposed:
 
-![](<.gitbook/assets/image (133).png>)
+![](<.gitbook/assets/image (86).png>)
 
 Boolean Union results in:
 
-![](<.gitbook/assets/image (115) (1).png>)
+![](<.gitbook/assets/image (145).png>)
 
 Boolean Intersection:
 
-![](<.gitbook/assets/image (135).png>)
+![](<.gitbook/assets/image (105).png>)
 
 and there are two possibilities for Boolean Subtraction depending on the key object:
 
 Circle as key object:
 
-![](<.gitbook/assets/image (139).png>)
+![](<.gitbook/assets/image (316).png>)
 
 Rectangle as key object:
 
-![](<.gitbook/assets/image (137) (1) (1).png>)
+![](<.gitbook/assets/image (311).png>)
 
 while the Trim Vectors command allows one to trim the various vectors which overlap:
 
-![](<.gitbook/assets/image (119) (1).png>)
+![](<.gitbook/assets/image (239).png>)
 
-![](<.gitbook/assets/image (140) (1).png>)
+![](<.gitbook/assets/image (321).png>)
 
 allowing one to make asymmetrical designs which are not easily done with Boolean operations and which would require additional geometry:
 
-![](<.gitbook/assets/image (126).png>)
+![](<.gitbook/assets/image (78).png>)
 
 A further consideration is that the Trim Vectors command results in Curve objects which may be joined and which will not result in polylines:
 
-![](<.gitbook/assets/image (123) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (263).png>)
 
 #### Drawing Tutorials
 
@@ -369,7 +369,7 @@ A very basic drawing task is to draw an oval. Originally this tutorial was avail
 
 Start by launching Carbide Create — in Job Setup (gear icon) set the width of the drawing area to 20″, the height to 15″, and go into Job Setup | Document background | Edit Ensure the grid spacing is 0.50″. Download the following file:
 
-![](.gitbook/assets/cc\_diamond.png)
+![](.gitbook/assets/Cc\_diamond.png)
 
 Placing it on the background layer scaled so that it fills the entire drawing area (scaling to 0.557 should work) and lines up with the grid. Ensure that Snap to Grid is enabled.
 
@@ -377,7 +377,7 @@ Select the **Curve** tool and click on each of the four points of the placed ima
 
 Download and place the image below on the background scaled as before:
 
-![](.gitbook/assets/cc\_ellipse.png)
+![](.gitbook/assets/Cc\_ellipse.png)
 
 Select the path and go into **Node Edit** Mode and right-click on each node and select "Toggle Smooth" (or press the _s_ key) and drag the off-curve nodes to match the positioning of the background image.
 
@@ -432,7 +432,7 @@ This allows setting:
 
 This allows setting the spacing of the grid, or by checking or unchecking a checkbox, showing or hiding it.
 
-![](<.gitbook/assets/image (4) (3).png>)
+![](<.gitbook/assets/image (99).png>)
 
 ### Set Background
 
@@ -442,25 +442,25 @@ It is possible to load a background image as noted above, and use it as a refere
 
 When two or more objects are selected, the command **Group Vectors** becomes available:
 
-![](<.gitbook/assets/image (12) (1) (1) (2).png>)
+![](<.gitbook/assets/image (205).png>)
 
 which will then group the current selection so that it may be selected and manipulated as a unit.
 
 This may be undone using the command **Ungroup Vectors**:
 
-![](<.gitbook/assets/image (4) (1).png>)
+![](<.gitbook/assets/image (177).png>)
 
 ### Layers
 
 Carbide Create supports layers since version 521. Available under Edit | Show Layers:
 
-![](<.gitbook/assets/image (113) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (92).png>)
 
 (or using the alphabetic keyboard shortcut _l_)
 
 it then affords the ability to create and name layers (or delete them), as well as to color-code them:
 
-![](<.gitbook/assets/image (114) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (310).png>)
 
 and to move objects to specific layers and to hide/show, or lock/unlock layers, or set a layer to be "Active" (which will cause all new objects to be created on that layer).&#x20;
 
@@ -481,43 +481,43 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 #### Linear Arrays
 
-![](<.gitbook/assets/image (122) (1) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (275).png>)
 
-![](<.gitbook/assets/image (118) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (313).png>)
 
 #### Circular Arrays
 
-![](<.gitbook/assets/image (125) (1) (1) (1).png>)
+![](<.gitbook/assets/image (262).png>)
 
-![](<.gitbook/assets/image (121) (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (46).png>)
 
 Circular Arrays afford a number of options, and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 copies:
 
-![](<.gitbook/assets/image (114) (1) (1) (1).png>)
+![](<.gitbook/assets/image (234).png>)
 
 and then drawing multiple overlapping polylines using the tips of the rotated triangles which defines the star shape:
 
-![](<.gitbook/assets/image (120) (1) (1) (1).png>)
+![](<.gitbook/assets/image (117).png>)
 
 and Boolean unioning them:
 
-![](<.gitbook/assets/image (127) (1) (1).png>)
+![](<.gitbook/assets/image (306).png>)
 
 ### File Notes
 
 Carbide Create 7 adds the feature of adding notes to a file:
 
-![](<.gitbook/assets/image (114).png>)
+![](<.gitbook/assets/image (40).png>)
 
 Such notes may have the option of always showing when the file is opened as a reminder:
 
-![](<.gitbook/assets/image (125).png>)
+![](.gitbook/assets/image.png)
 
 ### Tabs
 
 Carbide Create 7 moves Tabs to the Design pane:
 
-![](<.gitbook/assets/image (138) (2).png>)
+![](<.gitbook/assets/image (196).png>)
 
 which may then be instantiated in the Toolpath pane using Contour toolpaths, or ignored by unchecking the appropriate checkbox.
 
@@ -590,7 +590,7 @@ Beyond just drawing, vector drawing and CAD/CAM programs may have many additiona
 
 * Image Tracing --- rather than manually re-draw a pixel image: [https://community.carbide3d.com/t/carbide-create-re-drawing/15811](https://community.carbide3d.com/t/carbide-create-re-drawing/15811) it is possible to import a pixel image and re-draw it: [https://community.carbide3d.com/t/carbide-create-image-tracing/31208](https://community.carbide3d.com/t/carbide-create-image-tracing/31208) (note that tracing is inherently black and white, on/off, and that it may be necessary to adjust the Threshold setting and trace multiple times in order to capture all details of an image).
 
-<figure><img src=".gitbook/assets/image (2) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 * STL Import --- this is a feature in Pro, which allows importing an STL centered on the geometry which is selected when it is imported: [https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12](https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12)
 * Inlay --- [https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115](https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115)
@@ -607,7 +607,7 @@ For further information on Carbide Create please see:
 * [https://old.reddit.com/r/shapeoko/wiki/carbidecreate](https://old.reddit.com/r/shapeoko/wiki/carbidecreate) (a wiki page)
 * [https://carbide3d.com/carbidecreate/shortcuts](https://carbide3d.com/carbidecreate/shortcuts)
 
-![](.gitbook/assets/carbide3d\_create\_motion\_keyboard\_shortcuts.png)
+![](.gitbook/assets/Carbide3D\_create\_motion\_keyboard\_shortcuts.png)
 
 * [https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839)
 * [https://carbide3d.com/blog/carbide-create-v7/](https://carbide3d.com/blog/carbide-create-v7/)

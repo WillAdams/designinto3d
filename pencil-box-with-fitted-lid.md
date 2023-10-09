@@ -8,23 +8,23 @@ Arguably, the simplest project of all is one where all features are cut out from
 
 As with all projects, we begin by defining the parameters of the design and its display:
 
-![Fitted Pencil Box Parameters](<.gitbook/assets/image (77).png>)
+![Fitted Pencil Box Parameters](<.gitbook/assets/image (22).png>)
 
 Then a module for cutting the desired shapes:
 
-![Fitted Pencil Box module for cutting pockets at specified depth and location](<.gitbook/assets/image (76) (1).png>)
+![Fitted Pencil Box module for cutting pockets at specified depth and location](<.gitbook/assets/image (88).png>)
 
 Then modules for cutting each part:
 
-![Fitted Pencil Box top module](<.gitbook/assets/image (80).png>)
+![Fitted Pencil Box top module](<.gitbook/assets/image (326).png>)
 
-![Fitted Pencil Box bottom module setup](<.gitbook/assets/image (87).png>)
+![Fitted Pencil Box bottom module setup](<.gitbook/assets/image (260).png>)
 
-![Fitted Pencil Box bottom module loop](<.gitbook/assets/image (88).png>)
+![Fitted Pencil Box bottom module loop](<.gitbook/assets/image (251).png>)
 
 Creating a file for cutting is simply a matter of capturing each elevation of features:
 
-![](<.gitbook/assets/image (84).png>)
+![](<.gitbook/assets/image (5).png>)
 
 Available at:
 
@@ -46,7 +46,7 @@ The project can then be exported to OpenSCAD code and modified to use the custom
 `my_3D_Preview = false;` \
 `$fn=80;`
 
-![Fitted Pencil Box in OpenSCAD with customization](<.gitbook/assets/image (83).png>)
+![Fitted Pencil Box in OpenSCAD with customization](<.gitbook/assets/image (312).png>)
 
 Add the command:
 
@@ -54,11 +54,11 @@ Add the command:
 
 to get a flattened view which may be exported to a DXF or SVG and then imported into Carbide Create:
 
-![Fitted Pencil Box in OpenSCAD projection](<.gitbook/assets/image (85).png>)
+![Fitted Pencil Box in OpenSCAD projection](<.gitbook/assets/image (247).png>)
 
 Once imported into Carbide Create it is simply a matter of assigning toolpaths:
 
-![Fitted Pencil Box in Carbide Create](<.gitbook/assets/image (86) (1).png>)
+![Fitted Pencil Box in Carbide Create](<.gitbook/assets/image (70).png>)
 
 Files are available at: [https://community.carbide3d.com/t/fitted-box-design-generator-underway/13437/29](https://community.carbide3d.com/t/fitted-box-design-generator-underway/13437/29)
 
@@ -78,6 +78,6 @@ It works when placed in the Carbide 3D font directory (Help | About | Open Data 
 
 Once installed, load the Carbide Create file, select the center divider, then choose the font tool and replace the number with the number of dividers you want:
 
-![Fitted round box with variable dividers](<.gitbook/assets/image (81).png>)
+![Fitted round box with variable dividers](<.gitbook/assets/image (56).png>)
 
-![Fitted round box with 2 or 7 dividers](.gitbook/assets/win\_20190825\_11\_17\_15\_pro.jpg)
+![Fitted round box with 2 or 7 dividers](.gitbook/assets/WIN\_20190825\_11\_17\_15\_Pro.jpg)
