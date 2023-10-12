@@ -219,6 +219,10 @@ Most, if not all CAD and design tools allow an option for aligning one or more o
 
 In Carbide Create, if multiple objects are selected and stock is not used to align against, the alignment will be against the key object (indicated by being drawn with a dashed highlight).
 
+### Spacing
+
+Another option for alignment is to space elements horizontally or vertically.
+
 ### Offset Path
 
 Geometry may be selected and offset, either to the inside or outside:
