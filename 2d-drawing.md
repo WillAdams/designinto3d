@@ -177,6 +177,15 @@ and the coordinates of the two points, the distance between them, and the angle 
 
 As an alternative to this, a line may be drawn, and when selected will afford the size and the X- and Y- dimensions.
 
+## Selection
+
+There are multiple ways to select objects:
+
+* click to select --- this will select a single object
+* shift click to add (or remove) and object from the current selection
+* click-drag --- this will make a selection of the objects within the drag-rectangle --- note that there are two directions to drag and they are meaningful: down is selective and will only include objects completely within the drag-rectangle, while up is promiscuous and will include any object partially are wholly within the drag-rectangle
+* menu entries to select object according to certain criteria such as Edit | Select All which will select all objects
+
 ## Transformations
 
 Geometry may be adjusted in a number of ways:
