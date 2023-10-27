@@ -42,6 +42,10 @@ and
 
 {% embed url="https://scriptsofanotherdimension.tumblr.com/" %}
 
+Traditional visual documentation practices may be applicable:
+
+[https://terrastruct.com/blog/post/draw-software-architecture-diagrams/](https://terrastruct.com/blog/post/draw-software-architecture-diagrams/)
+
 ## G-code
 
 The language used for toolpaths is G-code (RS-274) [https://www.nist.gov/manuscript-publication-search.cfm?pub\_id=823374](https://www.nist.gov/manuscript-publication-search.cfm?pub\_id=823374) --- in some implementations it is a full-fledged programming language, so it is possible to use it directly to program if one has a suitable 3D previewing tool. Unfortunately, most hobby-level G-code implementations lack variables, branching, and looping, so are only suited to the G-code which is output by CAM programs.
