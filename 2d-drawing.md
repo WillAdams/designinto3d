@@ -608,6 +608,7 @@ Beyond just drawing, vector drawing and CAD/CAM programs may have many additiona
 * STL Import --- this is a feature in Pro, which allows importing an STL centered on the geometry which is selected when it is imported: [https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12](https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12)
 * Inlay --- [https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115](https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115)
 * Tiling --- another Pro feature: [https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334](https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334) this may be done manually as noted at: [https://community.carbide3d.com/t/tiling-questions-issues/14352/5](https://community.carbide3d.com/t/tiling-questions-issues/14352/5)
+* Toolpath Volume --- another Pro feature,&#x20;
 
 ## Resources
 
