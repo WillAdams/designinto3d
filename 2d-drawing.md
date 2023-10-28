@@ -186,6 +186,22 @@ There are multiple ways to select objects:
 * click-drag --- this will make a selection of the objects within the drag-rectangle --- note that there are two directions to drag and they are meaningful: down is selective and will only include objects completely within the drag-rectangle, while up is promiscuous and will include any object partially are wholly within the drag-rectangle
 * menu entries to select object according to certain criteria such as Edit | Select All which will select all objects
 
+Note that when selecting there are certain special points which may be used for selection or snapping and which will afford useful options for precision movement and placement:
+
+Circles afford the option to select the center in addition to the cardinal points:
+
+<figure><img src=".gitbook/assets/image (334).png" alt=""><figcaption></figcaption></figure>
+
+and the midpoints of the arcs:
+
+<figure><img src=".gitbook/assets/image (336).png" alt=""><figcaption></figcaption></figure>
+
+Rectangles and regular polygons will allow the use of midpoints along the sides:
+
+<figure><img src=".gitbook/assets/image (335).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (337).png" alt=""><figcaption></figcaption></figure>
+
 ## Transformations
 
 Geometry may be adjusted in a number of ways:
