@@ -599,7 +599,7 @@ Websites for this sort of thing:
 
 ## Additional Features
 
-Beyond just drawing, vector drawing and CAD/CAM programs may have many additional features which go beyond just manipulating geometry or other elements. Many are adjuncts to Toolpaths, but are mentioned here since there is often an element of geometrical editing which they address. A few which Carbide Create has include:
+Beyond just drawing, vector drawing and CAD/CAM programs may have many additional features which go beyond just manipulating geometry or other elements. Many are adjuncts to Toolpaths, but are mentioned here since there is often an element of geometrical editing which they address. They are divided between bundled and being only available in the Pro version. A few which Carbide Create has include (it is possible that additional feature(s) may be in betas which are still in testing):
 
 * Image Tracing --- rather than manually re-draw a pixel image: [https://community.carbide3d.com/t/carbide-create-re-drawing/15811](https://community.carbide3d.com/t/carbide-create-re-drawing/15811) it is possible to import a pixel image and re-draw it: [https://community.carbide3d.com/t/carbide-create-image-tracing/31208](https://community.carbide3d.com/t/carbide-create-image-tracing/31208) (note that tracing is inherently black and white, on/off, and that it may be necessary to adjust the Threshold setting and trace multiple times in order to capture all details of an image).
 
@@ -608,7 +608,8 @@ Beyond just drawing, vector drawing and CAD/CAM programs may have many additiona
 * STL Import --- this is a feature in Pro, which allows importing an STL centered on the geometry which is selected when it is imported: [https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12](https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12)
 * Inlay --- [https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115](https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115)
 * Tiling --- another Pro feature: [https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334](https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334) this may be done manually as noted at: [https://community.carbide3d.com/t/tiling-questions-issues/14352/5](https://community.carbide3d.com/t/tiling-questions-issues/14352/5)
-* Toolpath Volume --- another Pro feature,&#x20;
+* Toolpath Volume --- another Pro feature, this allows one to know in advance how much epoxy will be needed to fill a given toolpath: [https://community.carbide3d.com/t/carbide-create-beta-760/68493/23](https://community.carbide3d.com/t/carbide-create-beta-760/68493/23)
+* Post Processor --- this is a concept specific to CAM tools. G-code is available in many dialects, so an application will use a post-processor to adapt the specifics of the G-code to match the dialect used by the firmware in a specific machine. Carbide Create affords four post-processors: Basic G-code --- this should be simple enough to work in pretty much any machine, Grbl --- this is the firmware used by Carbide 3D machines (and many others) and should work in any machine which uses that G-code interpreter (note that Grbl uses LinuxCNC as a reference implementation, which in turn uses Mach 3, which is a de facto industry standard, so this should work for a wide variety of machines), and Carbide 3D Nomad/Shapeoko --- these post-processors support Carbide 3D machines, and all of the possible accessories, including the BitRunner or VFD spindle (affording tool on/off and possibly speed control), or the BitSetter (which allows for measurement of tool length offset and tool changes)
 
 ## Resources
 
