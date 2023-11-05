@@ -122,7 +122,11 @@ The OpenSCAD parameters for controlling appearance are:
 * $fa --- this sets the smallest number of degrees which will be used to draw a circle using lines, so if set to 4 would result in a circle being approximated using 90 line segments each connected to the next at 4 degrees.
 * $fs --- this sets the smallest length which is allowed to be used to draw a circle
 
-Since $fs controls small circles ensuring that the sides are not so small that a point of diminishing returns is reached, and $fa controls large circles, ensuring that the sides are not so smooth that performance suffers, there is no reason to set $fn in normal usage, and many arguments for not doing so.
+Since $fs controls small circles ensuring that the sides are not so small that a point of diminishing returns is reached, and $fa controls large circles, ensuring that the sides are not so smooth that performance suffers, there is no reason to set $fn in normal usage, and many arguments for not doing so. One useful approachis to make the values conditional:
+
+```
+$fn = $preview ? 64 : 128;
+```
 
 ## gcodepreview
 
