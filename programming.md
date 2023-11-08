@@ -128,6 +128,17 @@ Since $fs controls small circles ensuring that the sides are not so small that a
 $fn = $preview ? 64 : 128;
 ```
 
+## Linewinder
+
+Once upon a time, there was a drawing tool made by Mattel which had a grid system where a pen was positioned by two cranks along an XY coordinate system, allowing one to draw by rotating the cranks to position the pen and lowering or lifting it as indicated by notations on an instruction strip.
+
+This might work well as an interface concept for a drawing program, but one where:
+
+* there are formulae
+* variables may be declared
+* each node has associated with it a pair of values each of which is a number, variable, or formula, and when the node is selected, it is possible to edit the underlying formula or variable definition or value
+* loops would be shown graphically in the drawing area, surrounding all nodes which a given loop creates with a surrounding border
+
 ## gcodepreview
 
 While OpenSCAD allows 3D modeling, it unfortunately does not allow writing out files other than DXFs and SVGs and STLs, but there is fortunately, a similar tool which implements much of the OpenSCAD language, the RapCAD implementation which is able to write out files, allowing one to export toolpaths to G-code, making it well-suited to creating a library which allows modeling in 3D as if one was cutting with a machine.&#x20;
