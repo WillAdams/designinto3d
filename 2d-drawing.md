@@ -246,7 +246,19 @@ In Carbide Create, if multiple objects are selected and stock is not used to ali
 
 ### Spacing
 
-Another option for alignment is to space elements horizontally or vertically.
+Another option for alignment is to space elements horizontally or vertically. This was added to Carbide Create in the 760 build:
+
+&#x20;
+
+<figure><img src=".gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
+
+or for vertical:
+
+<figure><img src=".gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (341).png" alt=""><figcaption></figcaption></figure>
 
 ### Offset Path
 
