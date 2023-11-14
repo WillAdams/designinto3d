@@ -102,7 +102,13 @@ In v7, it becomes possible to enter dimensions as calculations, so typing 2\*2= 
 
 It is also possible to enter dimensions in terms of the unit, so if in metric mode, typing 1in= will result in the dimension being set to 25.4mm, while in Imperial (inches) mode, typing 25.4mm= will result in the dimension being set to 1in.
 
-It is also possible to reference the current stock thickness as the variable _t_. This may be done using an expression which is evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus, and will dynamically update the dimension when stock thickness is changed. Expressions may also be used thus, so half the thickness may be referenced using t/2.&#x20;
+It is also possible to reference the current stock dimensions:
+
+* t == Stock Thickness
+* w == Stock Width
+* d == Stock Height (depth)
+
+using those letters when using an expression which may be evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus, and will dynamically update the dimension when stock thickness is changed for toolpaths. Mathematical expressions may also be used thus, so half the thickness may be referenced using t/2.&#x20;
 
 #### Circle Parameters
 
