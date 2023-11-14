@@ -100,7 +100,7 @@ In Carbide Create, either inches or millimeters may be selected as the unit for 
 
 In v7, it becomes possible to enter dimensions as calculations, so typing 2\*2= will result in the dimension being set to 4 using the current units.
 
-It is also possible to enter dimensions in terms of the unit, so if in metric mode, typing 1in= will result in the dimension being set to 25.4mm, while in Imperial (inches) mode, typing 25.4mm= will result in the dimension being set to 1in.
+It is also possible to enter dimensions in terms of specified units (naturally, numbers entered without a specified unit are assumed to be in the current coordinate system, but note that that will change the dimension if the units assigned to the project are changed), so if in metric mode, typing 1in= will result in the dimension being set to 25.4mm, while in Imperial (inches) mode, typing 25.4mm= will result in the dimension being set to 1in, and similarly, specifying a formulae using such units is advised as best practice.
 
 It is also possible to reference the current stock dimensions:
 
