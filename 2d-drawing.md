@@ -110,6 +110,8 @@ It is also possible to reference the current stock dimensions:
 
 using those letters when using an expression which may be evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus, and will dynamically update the dimension when stock thickness is changed for toolpaths. Mathematical expressions may also be used thus, so half the thickness may be referenced using t/2.&#x20;
 
+See: [https://community.carbide3d.com/t/how-to-use-the-height-width-and-thickness-variables-in-a-design/61155](https://community.carbide3d.com/t/how-to-use-the-height-width-and-thickness-variables-in-a-design/61155)
+
 #### Circle Parameters
 
 For a circle, the size parameter adjustment may be done in terms of its overall size using the **Resize** tool (either **Width** or **Height**, only one may be adjusted, the other will be forced to match), or **Radius**:
