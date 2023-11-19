@@ -394,7 +394,29 @@ which we will match in Carbide Create, keeping the twain in synch so as to keep 
 
 ### DXF
 
-[https://stackoverflow.com/questions/54937433/how-do-i-write-a-dxf-code-for-a-polyline](https://stackoverflow.com/questions/54937433/how-do-i-write-a-dxf-code-for-a-polyline)
+{% embed url="https://stackoverflow.com/questions/54937433/how-do-i-write-a-dxf-code-for-a-polyline" %}
+
+### Pockets
+
+For cutting pockets, it will be necessary to have suitable modules for cutting them. The most straight-forward listing of the possible shapes would be based on the number of points. Arranging them by the number of points, we find that all but a few have an accepted single word nomenclature (or suitably concise description):
+
+* 0 – circle – ellipse (requires some sort of non-arc curve) ∗ egg-shaped (oval) – annulus (one circle within another, forming a ring) – superellipse (see astroid below)
+* 1 – cone with rounded end (arc) — see also “sector” under 3 below
+* 2 – semicircle/circular/half-circle segment (arc and a straight line); see also sector below – arch— curve possibly smoothly joining a pair of straight lines with a flat bottom – lens/vesica piscis (two convex curves) – lune/crescent (one convex, one concave curve) – heart (two curves) – tomoe (comma shape) — non-arc curves
+* 3 – triangle ∗ equilateral ∗ isosceles ∗ right triangle ∗ scalene – (circular) sector (two straight edges, one convex arc) ∗ quadrant (90°) ∗ sextants (60°) ∗ octants (45°) – deltoid curve (three concave arcs) – Reuleaux triangle (three convex arcs) – arbelos (one convex, two concave arcs) – two straight edges, one concave arc ∗ An example is the hyperbolic sector – two convex, one concave arc
+* 4 – rectangle (including square) parallelogram – rhombus – trapezoid/trapezium – kite – ring/annulus segment (straight line, concave arc, straight line, convex arc) – astroid (four concave arcs) – salinon (four semicircles) – three straight lines and one concave arc
+
+Each such module will need an interface which defines its coordinates/dimensions, and any relevant options --- for rectangles:
+
+* options --- horizontal/vertical/diagonal
+* bx
+* by
+* bz
+* ex
+* ey
+* ez
+* tr
+* stepover
 
 ## Other tools to consider
 
