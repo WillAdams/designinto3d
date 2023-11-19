@@ -408,7 +408,7 @@ For cutting pockets, it will be necessary to have suitable modules for cutting t
 
 Each such module will need an interface which defines its coordinates/dimensions, and any relevant options --- for rectangles:
 
-* options --- horizontal/vertical/diagonal
+* options --- horizontal/vertical/diagonal/oppositediagonal/radial
 * bx
 * by
 * bz
@@ -417,6 +417,7 @@ Each such module will need an interface which defines its coordinates/dimensions
 * ez
 * tr
 * stepover
+* clearperimeter (Boolean)
 
 ## Other tools to consider
 
