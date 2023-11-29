@@ -87,6 +87,30 @@ If there is nested geometry, then the pocketing algorithm will alternate between
 
 ![](<.gitbook/assets/image (54).png>)
 
+## Pockets and Contours
+
+It is possible to combine pocket and contour toolpaths which will create various effects. One frequent usage is to create a pocket with a radius along the edge and a flat bottom.
+
+This is done by insetting the inner geometry by the desired radius:
+
+<figure><img src=".gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
+
+Assign a pocket toolpath:
+
+<figure><img src=".gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
+
+Then assign an inside Contour toolpath to the balance of the geometry:
+
+<figure><img src=".gitbook/assets/image (348).png" alt=""><figcaption></figcaption></figure>
+
+which previews as:
+
+<figure><img src=".gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
+
 One option for pocket toolpaths in some CAM programs is Rest machining to remove material which the endmill first used for a pocket cannot reach. Carbide Create Pro adds this:
 
 ![](<.gitbook/assets/image (61).png>)
