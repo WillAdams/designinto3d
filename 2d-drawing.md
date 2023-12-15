@@ -653,9 +653,9 @@ Beyond just drawing, vector drawing and CAD/CAM programs may have many additiona
 
 For further information on Carbide Create please see:
 
-* [http://docs.carbide3d.com/assembly/carbidecreate/userguide/](http://docs.carbide3d.com/assembly/carbidecreate/userguide/) (a web page)
-* [https://carbide-downloads.website-us-east-1.linodeobjects.com/doc/UserManual\_Carbide\_20210718.pdf](https://carbide-downloads.website-us-east-1.linodeobjects.com/doc/UserManual\_Carbide\_20210718.pdf) (the official manual for v5)
-* [http://carbide3d.com/carbidecreate/video/](http://carbide3d.com/carbidecreate/video/) (a collection of tutorial videos)
+* [https://my.carbide3d.com/manuals/carbide-create/](https://my.carbide3d.com/manuals/carbide-create/) --- a web page which currently links to: [https://carbide-downloads.website-us-east-1.linodeobjects.com/doc/UserManual\_Carbide\_20210718.pdf](https://carbide-downloads.website-us-east-1.linodeobjects.com/doc/UserManual\_Carbide\_20210718.pdf) (the official manual for v5)
+* [https://my.carbide3d.com/#Design\_with\_Carbide\_Create](https://my.carbide3d.com/#Design\_with\_Carbide\_Create) (a collection of tutorial videos on the 2D aspects)
+* [https://my.carbide3d.com/#Carbide\_Create\_Pro](https://my.carbide3d.com/#Carbide\_Create\_Pro) (a collection of videos on the features added by the Pro licensing mode)
 * [http://community.carbide3d.com/c/software/carbide-create](http://community.carbide3d.com/c/software/carbide-create) (a community forum)
 * [https://old.reddit.com/r/shapeoko/wiki/carbidecreate](https://old.reddit.com/r/shapeoko/wiki/carbidecreate) (a wiki page)
 * [https://carbide3d.com/carbidecreate/shortcuts](https://carbide3d.com/carbidecreate/shortcuts)
