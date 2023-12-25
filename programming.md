@@ -394,7 +394,11 @@ which we will match in Carbide Create, keeping the twain in synch so as to keep 
 
 ### DXF
 
+The DXF Reference is: [https://images.autodesk.com/adsk/files/autocad\_2012\_pdf\_dxf-reference\_enu.pdf](https://images.autodesk.com/adsk/files/autocad\_2012\_pdf\_dxf-reference\_enu.pdf)
+
 {% embed url="https://stackoverflow.com/questions/54937433/how-do-i-write-a-dxf-code-for-a-polyline" %}
+
+
 
 ### Pockets
 
