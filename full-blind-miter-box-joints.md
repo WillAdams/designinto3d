@@ -24,6 +24,10 @@ The most expedient option seems to be just two passes, one at the bottom of the 
 
 Which has the advantage of having an overlap (if tool cut depth is greater than half the stock thickness), and being invariant of tool geometry (with the proviso that thickness of the stock must be equal to or less than twice the depth to which the large V tool can cut).
 
+For more on this see:
+
+[https://community.carbide3d.com/t/full-blind-finger-joints-in-carbide-create/53329](https://community.carbide3d.com/t/full-blind-finger-joints-in-carbide-create/53329)
+
 
 
 
