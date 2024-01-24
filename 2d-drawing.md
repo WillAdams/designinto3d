@@ -222,7 +222,9 @@ Geometry may be adjusted in a number of ways:
 * Flipped along an axis (Carbide Create affords tools for horizontal and vertical)
 * Aligned, either to another piece of geometry or the defined Stock
 
-Another option which drawing programs may afford is offsetting ― this is especially important for Carbide Create since it allows one to adjust the geometry in terms of the radius or diameter of the endmill (see below). It is also possible to edit objects as noted below.
+Another option which drawing programs may afford is offsetting ― this is especially important for Carbide Create since it allows one to adjust the geometry in terms of the radius or diameter of the endmill (see below). Naturally, a selected object may be deleted, either by pressing the Delete (or Backspace) key, or using the cut (ctrl/command x) command to remove it from the drawing area and copy it into memory.
+
+It is also possible to edit objects as noted below.
 
 ### Move
 
