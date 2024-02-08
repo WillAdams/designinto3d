@@ -26,7 +26,9 @@ with more complicated pieces incorporating both structures, and that any object 
 * its design
 * its dimensions
 
-Currently it uses [BlockSCAD](https://www.blockscad3d.com/) and [OpenSCAD Graph Editor ](https://github.com/derkork/openscad-graph-editor)as front-ends to [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD), a 3D modeling tool which can then afford a comfortable front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) in OpenSCAD which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518)&#x20;
+Currently it uses [BlockSCAD](https://www.blockscad3d.com/) and [OpenSCAD Graph Editor ](https://github.com/derkork/openscad-graph-editor)as front-ends to [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD), a 3D modeling tool which can then afford a comfortable front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) in OpenSCAD which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518) A new development is that it is now possible to load OpenSCAD files into a web browser using: [https://github.com/seasick/openscad-web-gui](https://github.com/seasick/openscad-web-gui) which will make available files from GitHub or Printables.com and then export to DXF, SVG, or STL.
+
+
 
 There are several possible approaches for making designs from BlockSCAD/OpenSCAD:
 
