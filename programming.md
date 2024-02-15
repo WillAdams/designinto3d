@@ -128,6 +128,46 @@ Since $fs controls small circles ensuring that the sides are not so small that a
 $fn = $preview ? 64 : 128;
 ```
 
+## BlockSCAD, OpenSCAD Web GUI, and Carbide Create
+
+Okay, more-or-less thinking out loud here....
+
+BlockSCAD has a pretty cool graphic environment which allows creating designs quickly using blocks --- the only editing necessary is to find the variables and move them to the top of the file, then edit/adjust comments to get them to function as drop-down menus, \&c. where need be.
+
+Posting such projects to Github seems pretty workable, w/ the OpenSCAD Web GUI then able to load them, allow the Customizer to be used to adjust designs, and then to write out DXF files which can be imported into Carbide Create.
+
+One minor concern is that when exporting DXFs, these are rendered as polylines, with the number of nodes/line-segments dependent on the $fa/fn/fs variables.
+
+One notable feature when using the projection() command to make DXFs is the
+
+```
+cut = true
+```
+
+option which limits the geometry to that at the Z-axis, making it simple to have a specific/separate export in addition to one of the overall geometry (cut = false).
+
+The DXFs import exactly, and one can write out multiple sections for different depths, then manually composite them.
+
+Carbide Create does have some quite nice tools for rounding off geometry:
+
+![image|690x414](upload://ki6FutdWVNqDAWfOH5B8oLa4agq.png)
+
+![image|690x414](upload://pHvacdjiXnPUFl7mpbz7IQorLL8.png)
+
+![image|690x414](upload://o2wlOR3yGlf4q4aBkJH9PNzWbh3.png)
+
+Or,
+
+![image|690x414](upload://wUaT3HoEEAyksE4Y5G3wpwWfxNI.png)
+
+![image|690x414](upload://v9mqvyQM3FlPRyuutGadyQIi0cX.png)
+
+![image|690x414](upload://23Ir0jZEI87YftaV3ZvG7LteZo.png)
+
+so perhaps a valid approach would be to output geometry with sharp corners, then round as necessary after importing things.
+
+The T (Stock Thickness) variable when used in Toolpaths is persistent, and toolpaths may be associated w/ Layers, so potentially one could work up matched pairs of files where a DXF from an OpenSCAD project was imported, geometry adjusted/rounded as necessary, then elements assigned to the appropriate layers, at which point the 3D preview could be checked and the file ought to be ready to cut.
+
 ## Linewinder
 
 Once upon a time, there was a drawing tool made by Mattel which had a grid system where a pen was positioned by two cranks along an XY coordinate system, allowing one to draw by rotating the cranks to position the pen and lowering or lifting it as indicated by notations on an instruction strip.
