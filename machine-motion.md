@@ -18,9 +18,9 @@ If you have not yet setup your machine on the computer Carbide Motion is running
 
 <figure><img src=".gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
 
-When one first connects a copy of Carbide Motion to a machine it will be necessary to go to **Settings** which has several tabs and configure for the specific machine type, type of Z-axis, the size of the machine, and any accessories as noted in the assembly/installation instructions. See the relevant documentation at: [https://my.carbide3d.com/](https://my.carbide3d.com/) and [https://my.carbide3d.com/docs/shapeoko-setup/](https://my.carbide3d.com/docs/shapeoko-setup/) as well as: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681) and in the event of any difficulties, write in to [support@carbide3d.com](mailto:support@carbide3d.com).
+When one first connects a copy of Carbide Motion to a machine it is possible to go to **Settings** which has several tabs and review and adjust the specific options and settings, including any accessories or other preferences (such as units) as noted in the assembly/installation instructions. Notably, the BitSetter can be enabled or disabled. See the relevant documentation at: [https://my.carbide3d.com/](https://my.carbide3d.com/) and [https://my.carbide3d.com/docs/shapeoko-setup/](https://my.carbide3d.com/docs/shapeoko-setup/) as well as: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681) and in the event of any difficulties, write in to [support@carbide3d.com](mailto:support@carbide3d.com).
 
-Once the software is connected press **Initialize Machine** to home your machine:
+Once the software is configured and connected, press **Initialize Machine** to home your machine:
 
 <figure><img src=".gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
 
@@ -28,13 +28,13 @@ Note that while doing so, it will display a BUSY status in the green menu bar.
 
 Initialization will have the machine find the machine origin at the right (**X+**), back (**Y+**), top (**Z+**) corner of your machine. When a machine is first commissioned and powered up, the initial zero is at the "machine origin", which is X (far right), Y (all the way back), Z (all the way at the top). This is a conscious design choice enshrined in tradition --- this way any movement in a positive direction should be "safe" in that it is away from the operator (assuming the operator is standing at the front-left of the machine and orienting themselves relative to the surface of the machine's working area) --- positive moves should be away from the operator/material, so it is negative motions which are most concerning from a safety standpoint.
 
-If you have a BitSetter (see below) it will also measure the tool offset once it has been confirmed that a tool was loaded. When using a BitSetter note that it is important that the tool only be changed when prompted, or using the command **Load New Tool** (see below) to do so. See: [https://carbide3d.com/blog/unexpected-z-axis-plunges/](https://carbide3d.com/blog/unexpected-z-axis-plunges/) for further details.
+If you have a BitSetter (see below) in older versions (build 622 and before) it will also measure the tool offset once it has been confirmed that a tool was loaded. For newer versions, this is deferred, see: [https://community.carbide3d.com/t/carbide-motion-beta-with-new-bitsetter-workflow/73576](https://community.carbide3d.com/t/carbide-motion-beta-with-new-bitsetter-workflow/73576). When using a BitSetter note that it is important that the tool only be changed when prompted, or using the command **Load New Tool** (see below) to do so. See: [https://carbide3d.com/blog/unexpected-z-axis-plunges/](https://carbide3d.com/blog/unexpected-z-axis-plunges/) for further details.
 
-Once your machine is initialized, you will need to jog the machine to where you want the machine to be relative to the stock for the origin and set zero there, load and run a file, or interact with the machine in some other fashion. You will be presented with the **Job Info** screen (which is selected by the **Run** tab in the top menu bar) and the Jog menu will appear, so that the possible screens are:
+Once your machine is initialized, you will need to jog the machine to where you want the machine to be relative to the stock for the origin and set zero there (or at an offset from that point, see below), load and run a file, or interact with the machine in some other fashion. You will be presented with the **Job Info** screen (which is selected by the **Run** tab in the top menu bar) and the Jog menu will appear, so that the possible screens are:
 
 * **Run**/Job Info&#x20;
 * **Jog**/Position
-* **MDI** (Manual Data Input)
+* **MDI** (Manual Data Input) --- note that in current versions this is an option which must be enabled
 * (Machine) **Settings**
 
 ## Run/Job Info
@@ -45,7 +45,7 @@ This will afford the chance to load a project at this time, or it may be returne
 
 * **Load New File** --- When you load a file, a normal file selection dialog for your OS will be brought up to allow selecting a file.&#x20;
 * **Load New Tool** (if you have a BitSetter) --- this will allow changing the currently loaded tool and then measuring its offset relative to the first tool which was measured
-* **Start Job** --- this will start a job once loaded
+* **Start Job** --- this will start a job once loaded, and will also evaluate its extents compared to the current zero position, see: [https://carbide3d.com/blog/carbide-motion-bounds-checking/](https://carbide3d.com/blog/carbide-motion-bounds-checking/)
 * **Quick Actions** --- this allows storing G-code snippets/commands for repetitive tasks
 
 The usual workflow is to first load a file --- doing so will bring up an information/G-code preview screen with several views:
@@ -85,11 +85,11 @@ Note that it is not critical at this time to have the first tool which a file ne
 
 Once a file has been loaded and zero set relative to the stock by jogging (see below) one may press the **Start Job** button and follow the prompts to actually cut the job.
 
-While a job is running there will be a **Pause** button in addition to the **Stop** button. **Pause** will slow the machine down to a controlled halt and then lift and turn off the spindle. The Feed-Hold button on machines so equip should function similarly. **Stop** will attempt to stop more abruptly, but in the event of any sort of emergency, the power to the machine, spindle and vacuum should all be turned off using a suitable Emergency Stop button or switch.
+While a job is running there will be a **Pause** button in addition to the **Stop** button. **Pause** will slow the machine down to a controlled halt (depending on the machine/Carbide Motion version it may then lift and turn off the spindle). The Feed-Hold button on machines so equipped should function similarly. **Stop** will attempt to stop more abruptly, but in the event of any sort of emergency, the power to the machine, spindle and vacuum should all be turned off using a suitable Emergency Stop button or switch.
 
 ## Jog/Position
 
-Each time you click on the **Jog** or **Run** or other menu buttons there may be a prompt:
+In CM622 and earlier, each time you click on the **Jog** or **Run** or other menu buttons there may be a prompt:
 
 <figure><img src=".gitbook/assets/image (180).png" alt=""><figcaption></figcaption></figure>
 
@@ -120,7 +120,7 @@ Once the machine has been moved/jogged so that the tip of the spindle is at the 
 
 <figure><img src=".gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
 
-If it is desired that the origin be at an offset from the current position, for example the case of setting the origin at the top of uneven stock on the machine, but cutting a file which has the origin at the top, so want it to be set as an offset (relative) to the bottom of the stock, then with the machine positioned at the bottom, manually enter the desired Stock Thickness as the Z offset (replacing the current position information) and then hit Zero Z. This will of course work for other axes as well.
+If it is desired that the origin be at an offset from the current position, for example the case of setting the origin at the top of uneven stock on the machine, but cutting a file which has the origin at the top, so want it to be set as an offset (relative) to the bottom of the stock, then with the machine positioned at the bottom, manually enter the desired Stock Thickness as the Z offset (replacing the current position information) and then hit **Zero Z**. This will of course work for other axes as well.
 
 **Zero All** will set all 3 axes with a single button press, while the **Zero X**, **Zero Y**, and **Zero Z** commands allow setting individual axes. **Clear all offsets** will restore the coordinates to their defaults for the current coordinate system, but should not normally need to be used. **Done** will return to the Jog screen once the zero has been set.
 
@@ -155,9 +155,9 @@ See: [https://community.carbide3d.com/t/using-verifying-the-bitzero/34662](https
 
 ### Position
 
-There is a persistent display at the left of the application window which shows the current machine position.&#x20;
+There is a persistent display at the left of the application window which shows the current position.&#x20;
 
-The title is also a button which when pressed, changes the display coordinates into Machine Position which will show the coordinates relative to the machine origin which is set once the machine is homed:
+The title is also a button which when pressed, changes the display coordinates into **Machine Position** which will show the coordinates relative to the machine origin which is set when the machine is homed:
 
 <figure><img src=".gitbook/assets/image (290).png" alt=""><figcaption></figcaption></figure>
 
@@ -165,17 +165,17 @@ Pressing it again will toggle back the current/job coordinate system.
 
 ## Manual Data Input (MDI)
 
-The Manual Data Input or MDI, (also known as a Manual Digital Interface) affords a text box into which a line of G-code or commands for Grbl may be entered and then sent to the machine:
+Optionally enabled in current versions, the Manual Data Input or **MDI**, (also known as a Manual Digital Interface) affords a text box into which a line of G-code or commands for Grbl may be entered and then sent to the machine:
 
 <figure><img src=".gitbook/assets/image (294).png" alt=""><figcaption></figcaption></figure>
 
 Note that any commands entered will be parsed by Carbide Motion unless prefaced with a /.&#x20;
 
-Normal operation should not require using the MDI. For information on commands which may be used see the Grbl documentation: [https://github.com/gnea/grbl/wiki/Grbl-v1.1-Commands](https://github.com/gnea/grbl/wiki/Grbl-v1.1-Commands)
+Normal operation should not require using the **MDI**. For information on commands which may be used see the Grbl documentation: [https://github.com/gnea/grbl/wiki/Grbl-v1.1-Commands](https://github.com/gnea/grbl/wiki/Grbl-v1.1-Commands)
 
 ## Quick Actions
 
-In addition to the MDI it is also possible to enter G-code commands for the machine using Quick Actions, accessed from the button for them on the Run/Job Info pane:
+In addition to the **MDI** it is also possible to enter G-code commands for the machine using **Quick Actions**, accessed from the button for them on the Run/Job Info pane:
 
 <figure><img src=".gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
@@ -227,7 +227,7 @@ The button **Show Log** brings up the **Log Window**:
 
 Which has a checkbox to **Hide Status Reports**, preventing the machine's reporting its current position from cluttering things up, and buttons to **Copy All** and **Clear**. Note that leaving it open will have a deleterious effect of machine performance.
 
-If the MDI is used to send commands, their results/output will be shown here, e.g., \$$ for showing the current Grbl configuration:
+If the **MDI** is used to send commands, their results/output will be shown here, e.g., \$$ for showing the current Grbl configuration:
 
 <figure><img src=".gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
 
@@ -263,7 +263,7 @@ select your machine type and size from the drop-down menu and click "Download"
 
 <figure><img src=".gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
-If desired, test the homing switches, then Initialize Machine. Once the machine has finished initializing by moving to the homing switches at the top, back, right corner, click Next:
+If desired, test the homing switches, then **Initialize Machine**. Once the machine has finished initializing by moving to the homing switches at the top, back, right corner, click Next:
 
 <figure><img src=".gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
 
