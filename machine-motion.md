@@ -120,6 +120,8 @@ Once the machine has been moved/jogged so that the tip of the spindle is at the 
 
 <figure><img src=".gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
 
+If it is desired that the origin be at an offset from the current position, for example the case of setting the origin at the top of uneven stock on the machine, but cutting a file which has the origin at the top, so want it to be set as an offset (relative) to the bottom of the stock, then with the machine positioned at the bottom, manually enter the desired Stock Thickness as the Z offset (replacing the current position information) and then hit Zero Z. This will of course work for other axes as well.
+
 **Zero All** will set all 3 axes with a single button press, while the **Zero X**, **Zero Y**, and **Zero Z** commands allow setting individual axes. **Clear all offsets** will restore the coordinates to their defaults for the current coordinate system, but should not normally need to be used. **Done** will return to the Jog screen once the zero has been set.
 
 <figure><img src=".gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
