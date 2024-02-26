@@ -523,10 +523,12 @@ A Layer is an organizational tool which allows one to separate geometry and colo
 * a file with multiple parts might have each part on a separate layer
 * a file with multiple tools might have the geometry for each tool on a separate layer, and use the Toolpath facility to associate a toolpath w/ a layer ​
 
-### Arrays
+### Duplication and Arrays
 
-A useful feature in many drawing or CAD programs is the ability to create arrays of objects. Carbide Create affords two options for this:&#x20;
+A useful feature in many drawing or CAD programs is the ability to duplicate or create arrays of objects. Carbide Create affords four options for this:&#x20;
 
+* Copy/Paste ― a selection may be copied into memory and then pasted, either centered on the current cursor location, or if the cursor is not within the drawing area, stacked on top of the original
+* Duplicate ― Edit | Duplicate Selected (ctrl or command d), this allows placing duplicates by clicking and affords a series of checkboxes which allow one to Keep Groups, Keep Toolpath Links, and/or Duplicate to Current Layer
 * Linear ― allows rectangular arrangements
 * Circular ― allows polar arrangements
 
