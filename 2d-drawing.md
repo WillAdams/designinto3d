@@ -8,7 +8,9 @@ As noted previously, before one can make a part, one must define the geometry of
 
 ![Carbide Create interface.](.gitbook/assets/Carbide\_Create\_interface.png)
 
-As with most drawing tools, there are menus for commands or different program functions/states, a palette of tools, and a work area, which includes a graphical representation of the "Stock" which is the material which will be cut away to make a design or part, and on the Stock there are lines for a grid which may be re-sized or hidden. The initial view has no objects which may be manipulated, these may be added as described below. Later versions add a pair of rulers around the drawing area and a status bar, (not depicted above).
+Carbide Create has two or three panes (Design, Toolpaths, and in Pro mode, Model). As with most drawing tools, there are menus for commands or different program functions/states, a palette of tools, and a work area, which includes a graphical representation of the "Stock" which is the material which will be cut away to make a design or part, and on the Stock there are lines for a grid which may be re-sized or hidden. The initial view has no objects which may be manipulated, these may be added as described below. Later versions add a pair of rulers around the drawing area and a status bar, (not depicted above).
+
+Like most graphic applications there is a standard set of menus, File which allows making new files, opening existing files, saving the current file, or exporting geometry as an SVG file, or in Carbide Create Pro, exporting the 3D model as a PNG file, or to quite the application. The Edit menu affords various copy and selection options, Undo and Redo, Show Layers, as well as access to the Tool Database or to Select Post Processor. The View menu controls the view of the drawing area, as well as enabling or disabling Snap to Grid and High Resolution Simulation. Lastly, a Help menu has About, Register, and Help options.&#x20;
 
 Note that the interface in Carbide Create is contextual, certain controls will only appear when nothing is selected, while others only when a single object is selected, while others only make sense to show when multiple objects are selected and may have further requirements for usage such as the objects overlapping.
 
@@ -28,7 +30,7 @@ clicking at the beginning (as well as if desired, intermediary) and end points:
 
 ![Carbide Create drawing line with Polyline tool.](.gitbook/assets/Carbide\_Create\_interface\_create\_polyline.png)
 
-and then clicking on **Done** (without returning to the first point if one wishes an open path). Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. The current selection is drawn in orange (for objects on the current layer), and if there are more than one element/group selected, the most recently added will be considered the Key Object which will be indicated by being drawn with a dashed highlight.
+and then clicking on **Done** (without returning to the first point if one wishes an open path). Note that open lines on the default layer in Carbide Create will be indicated by being magenta (for objects on the current layer) when not selected, as opposed to the black (or other color when on a layer) of closed paths. The current selection is drawn in orange, and if there are more than one element/group selected, the most recently added will be considered the Key Object which will be indicated by being drawn with a dashed highlight.
 
 Open polylines (or curves, see below) have limited functionality in Carbide Create, since they may only be used with Contour toolpaths. Usually one will work with closed paths, since they define regions which one may then assign suitable toolpaths to. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve** tool section below.
 
@@ -72,7 +74,7 @@ Note that in build 527 Carbide Create gained a feature for adding circles which 
 
 Edit | Select... | Select Circles
 
-![Carbide Create dialog for Select Circles ](<.gitbook/assets/image (2) (1).png>)
+![Carbide Create dialog for Select Circles ](<.gitbook/assets/image (2) (1) (1).png>)
 
 One may select the minimum and maximum diameter for adding circles to the current selection which will include circles drawn with the native circle tool, circles drawn as Bézier curves, and polylines which approximate a circle.&#x20;
 
@@ -94,7 +96,7 @@ Once drawn, they may be adjusted in their dimensions, and for their number of si
 
 ### Parameters
 
-Once shapes have been drawn, they may be selected and changed or modified. The most basic change is simply modifying their dimensions, but other properties and features may be available.
+The most basic change is simply selecting an object and modifying dimensions, but other properties and features may be available.
 
 #### A Note on Dimensions
 
@@ -110,13 +112,13 @@ It is also possible to reference the current stock dimensions:
 * w == Stock Width
 * d == Stock Height (depth)
 
-using those letters when using an expression which may be evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus, and will dynamically update the dimension when stock thickness is changed for toolpaths. Mathematical expressions may also be used thus, so half the thickness may be referenced using t/2.&#x20;
+using those letters when using an expression which may be evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus when setting up or editing a toolpath, and will dynamically update the dimension when stock thickness is changed for toolpaths. Mathematical expressions may also be used thus, so half the thickness may be referenced using t/2.&#x20;
 
 See: [https://community.carbide3d.com/t/how-to-use-the-height-width-and-thickness-variables-in-a-design/61155](https://community.carbide3d.com/t/how-to-use-the-height-width-and-thickness-variables-in-a-design/61155)
 
 #### Circle Parameters
 
-For a circle, the size parameter adjustment may be done in terms of its overall size using the **Resize** tool (either **Width** or **Height**, only one may be adjusted, the other will be forced to match), or **Radius**:
+For a circle, the size parameter adjustment may be done in terms of its overall size using the **Resize** tool, or **Radius**:
 
 ![Carbide Create modifying circle parameters.](.gitbook/assets/Carbide\_Create\_screengrab\_circle\_parameters.png)
 
@@ -147,6 +149,14 @@ Polygons may be adjusted for Radius (since only regular polygons are supported, 
 
 ![Carbide Create modifying Polygon parameters.](.gitbook/assets/Carbide\_Create\_interface\_polygon\_parameters.png)
 
+## View
+
+It is possible to zoom in/out using the scroll wheel on a mouse, or by using pinch gestures on a trackpad. There are also three commands, two of which have keyboard shortcuts which control the view:
+
+* Fit to Job --- f --- this sets the view to encompass the entire stock area and any elements which extend beyond it
+* Fit View to Stock (this is in the View menu only) --- sets the view to the Stock area
+* Fit View to Seleciton --- ctrl/command f --- zooms in/out to the currently selected object
+
 ## Text
 
 Not geometry, but many drawing and CAD programs allow setting text. Carbide Create affords this:
@@ -155,7 +165,7 @@ Not geometry, but many drawing and CAD programs allow setting text. Carbide Crea
 
 ![](<.gitbook/assets/image (129).png>)
 
-Text objects are limited to a single line of text in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) installed on the computer Carbide Create is running on, selecting Bold and or Italic (which will be applied if the appropriate font variation is installed on the system), setting the Font Height, modifying the Spacing and setting the Alignment.
+Text objects are limited to a single line of text in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) fonts installed on the computer Carbide Create is running on, selecting Bold and or Italic (which will be applied if the appropriate font variation is installed on the system), setting the Font Height, modifying the Spacing and setting the Alignment.
 
 When initially selected, a text object will not bring up the properties of the Text tool. It is necessary to either select the Text tool to access these properties, or to double-click on the text object.&#x20;
 
@@ -246,9 +256,9 @@ At this time in Carbide Create, Circle objects will not alter their orientation 
 
 See also the Circular Array tool below.
 
-### Flip
+### Mirror
 
-Objects may be flipped (mirrored) horizontally or vertically. Useful for decorative designs, it also allows (for instance) the creation of reversed geometry for creating stamps or printing blocks or branding irons or creating a mirror of a part for cutting it as an inlay, or cutting a part from the bottom orientation.
+Objects may be mirrored (flipped) horizontally or vertically. Useful for decorative designs, it also allows (for instance) the creation of reversed geometry for creating stamps or printing blocks or branding irons or creating a mirror of a part for cutting it as an inlay, or cutting a part from the bottom orientation.
 
 ### Align
 
@@ -354,7 +364,7 @@ Version 633 of Carbide Create adds a Corner Tool:
 
 which allows one to modify corners to have a specified radius:
 
-![](<.gitbook/assets/image (1) (1).png>)
+![](<.gitbook/assets/image (1) (1) (1).png>)
 
 only angles which will admit a portion of a circle of the specified radius will be eligible:
 
@@ -481,6 +491,8 @@ This allows setting:
 * Retract height --- also termed Safety height, this is how much the machine will lift in-between toolpaths
 * Units: Inch or millimeters
 
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 ### Set Grid
 
 This allows setting the spacing of the grid, or by checking or unchecking a checkbox, showing or hiding it.
@@ -566,7 +578,7 @@ Carbide Create 7 adds the feature of adding notes to a file:
 
 Such notes may have the option of always showing when the file is opened as a reminder:
 
-![](<.gitbook/assets/image (2).png>)
+![](<.gitbook/assets/image (2) (1).png>)
 
 ### Tabs
 
