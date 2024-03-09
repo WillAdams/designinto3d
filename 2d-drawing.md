@@ -364,7 +364,7 @@ Version 633 of Carbide Create adds a Corner Tool:
 
 which allows one to modify corners to have a specified radius:
 
-![](<.gitbook/assets/image (1) (1) (1).png>)
+![](<.gitbook/assets/image (1) (1) (1) (1).png>)
 
 only angles which will admit a portion of a circle of the specified radius will be eligible:
 
@@ -491,7 +491,7 @@ This allows setting:
 * Retract height --- also termed Safety height, this is how much the machine will lift in-between toolpaths
 * Units: Inch or millimeters
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Set Grid
 

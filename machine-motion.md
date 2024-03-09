@@ -140,7 +140,13 @@ If you have a BitZero and have it enabled in the Settings | Options pane, then t
 
 <figure><img src=".gitbook/assets/image (320).png" alt=""><figcaption></figcaption></figure>
 
-There are four options:
+If need be, click "Change BitZero Type"
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+to select the type of BitZero which is installed.
+
+Once the type of BitZero is installed, there are four options:
 
 * **Corner**, which probes all 3 axes and requires that the unit be registered at the lower-left corner of the stock
 * **Z**, which probes for Z only and requires that the unit be fully supported on the top of the stock
