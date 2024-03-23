@@ -8,13 +8,13 @@ Once a design has been created and toolpaths made for it, it must be cut on a ma
 
 Basically, such software is the control panel of your CNC machine, allowing you to jog your machine, initialize (home) it, load and preview G-code, set the origin relative to the stock, and interact directly with the firmware (Grbl) using the MDI.
 
-Carbide Motion is only compatible with CNC machines from Carbide3D, but other manufacturers have similar software, or electronics which afford similar controls.
+Carbide Motion is only compatible with CNC machines from Carbide 3D, but other manufacturers have similar software, or electronics which afford similar controls.
 
 Upon launch, Carbide Motion will present a screen which notes it is **Not Connected**, and afford one the chance to connect:
 
 <figure><img src=".gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
-If you have not yet setup your machine on the computer Carbide Motion is running on, click **Setup New Machine** (and see below), otherwise, click **Connect Cutter** to connect to your machine. The screen will update to reflect this if it is successful (if it is not, contact [support@carbide3d.com](mailto:support@carbide3d.com)):
+If you have not yet setup your machine on the computer Carbide Motion is running on, click **Setup New Machine** (and see below), otherwise, click **Connect to Cutter** to connect to your machine. The screen will update to reflect this if it is successful (if it is not, contact [support@carbide3d.com](mailto:support@carbide3d.com)):
 
 <figure><img src=".gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
 
@@ -22,7 +22,7 @@ When one first connects a copy of Carbide Motion to a machine it is possible to 
 
 Once the software is configured and connected, press **Initialize Machine** to home your machine:
 
-<figure><img src=".gitbook/assets/image (329).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (350).png" alt=""><figcaption></figcaption></figure>
 
 Note that while doing so, it will display a BUSY status in the green menu bar.
 
@@ -49,6 +49,14 @@ This will afford the chance to load a project at this time, or it may be returne
 * **Quick Actions** --- this allows storing G-code snippets/commands for repetitive tasks
 
 The usual workflow is to first load a file --- doing so will bring up an information/G-code preview screen with several views:
+
+### Load New Tool
+
+If the Load New Tool button is pressed, or if a tool change is encountered in the course of running a G-code file, the machine will prompt:
+
+<figure><img src=".gitbook/assets/image (351).png" alt=""><figcaption></figcaption></figure>
+
+and will then measure a tool once it is loaded and Resume is selected.
 
 ### Info
 
@@ -81,7 +89,7 @@ Once a file has loaded the **Run**/**Job Info** window will update to reflect th
 
 And will show the name, note the time the file was loaded, and the first tool needed, and will add a **Preview** button which will again bring up the information/preview screens.
 
-Note that it is not critical at this time to have the first tool which a file needs installed --- often a probing pin will be installed for use with a BitZero, or the tool from a previous job may still be loaded --- there will be a prompt when starting a file to load the correct tool.
+Note that it is not critical at this time to have the first tool which a file needs installed --- often a probing pin will be installed for use with a BitZero, or the tool from a previous job may still be loaded --- there will be a prompt when starting a file to load the correct tool if the file has a tool change command at the beginning (which is the default for Carbide Create when the Carbide 3D Shapeoko post-processor is selected).
 
 Once a file has been loaded and zero set relative to the stock by jogging (see below) one may press the **Start Job** button and follow the prompts to actually cut the job.
 
@@ -112,7 +120,7 @@ The first option is the current jog speed Increment --- **Increment +** and **In
 
 ### Spindle On/Off
 
-This button will allow toggling the spindle on/off if one has a Nomad (with integrated spindle), BitRunner (which affords on/off automatic control of a spindle), or VFD Spindle (which allows speed control in addition to on/off). The state of the button will update to reflect the current status.
+This button will allow toggling the spindle on/off if one has a Nomad or HDM (with integrated spindle), BitRunner (which affords on/off automatic control of a spindle), or VFD Spindle (which allows speed control in addition to on/off). The state of the button will update to reflect the current status.
 
 ### Set Zero
 
@@ -120,23 +128,25 @@ Once the machine has been moved/jogged so that the tip of the spindle is at the 
 
 <figure><img src=".gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
 
-If it is desired that the origin be at an offset from the current position, for example the case of setting the origin at the top of uneven stock on the machine, but cutting a file which has the origin at the top, so want it to be set as an offset (relative) to the bottom of the stock, then with the machine positioned at the bottom, manually enter the desired Stock Thickness as the Z offset (replacing the current position information) and then hit **Zero Z**. This will of course work for other axes as well.
+If it is desired that the origin be at an offset from the current position, for example the case of setting the origin at the top of uneven stock on the machine, but cutting a file which has the origin at the top, so that would would want it to be set as an offset (relative) to the bottom of the stock, then with the machine positioned at the bottom, manually enter the desired Stock Thickness as the Z offset (replacing the current position information) and then hit **Zero Z**. This will of course work for other axes as well.
 
-**Zero All** will set all 3 axes with a single button press, while the **Zero X**, **Zero Y**, and **Zero Z** commands allow setting individual axes. **Clear all offsets** will restore the coordinates to their defaults for the current coordinate system, but should not normally need to be used. **Done** will return to the Jog screen once the zero has been set.
+**Zero All** will set all 3 axes with a single button press, while the **Zero X**, **Zero Y**, and **Zero Z** commands allow setting individual axes. **Clear all offsets** will restore the coordinates to their defaults for the current coordinate system, but should not normally need to be used.&#x20;
 
 <figure><img src=".gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
+
+**Done** will return to the Jog screen once the zero has been set.
 
 ### Rapid Position
 
 This screen affords an interface for rapidly positioning the machine at cardinal points and the approximate center of the working area:
 
-<figure><img src=".gitbook/assets/image (317).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
 
-as well as to **Rapid to Current XY** (zero) and to **Rapid to Current Z + 6mm** (or some reasonable equivalent in inches). The actual coordinates of the various rapid positions is determined by the physical position of the home switches, the distance which Grbl is set to pull off of them, and the Travel Dimensions for the machine. For more on this see: [http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131](http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131)
+as well as to **Rapid to Current XY** (zero) and to **Rapid to Current Z + 6mm** (or some reasonable equivalent in inches) and/or to **Current Z**. The actual coordinates of the various rapid positions is determined by the physical position of the home switches, the distance which Grbl is set to pull off of them, and the Travel Dimensions for the machine. For more on this see: [http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131](http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131)
 
 ### Probe
 
-If you have a BitZero and have it enabled in the Settings | Options pane, then there will be an option for Probing with it so as to set zero using it:
+If you have a BitZero, then it will be possible to use the button for **Probing** so as to set zero using it:
 
 <figure><img src=".gitbook/assets/image (320).png" alt=""><figcaption></figcaption></figure>
 
@@ -183,7 +193,7 @@ Normal operation should not require using the **MDI**. For information on comman
 
 In addition to the **MDI** it is also possible to enter G-code commands for the machine using **Quick Actions**, accessed from the button for them on the Run/Job Info pane:
 
-<figure><img src=".gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (353).png" alt=""><figcaption></figcaption></figure>
 
 There are two sets, Built-In (shown above), and User:
 
@@ -193,7 +203,7 @@ The Edit User Macros button allows one to create or modify User Macros/Quick Act
 
 <figure><img src=".gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
 
-Quick Actions are made up of G-code, but only that which Grbl supports, plus those commands which Carbide Motion interprets. Unfortunately, no loops, variables, or other programming niceties.
+Quick Actions are made up of G-code, but only that which Grbl supports, plus those commands which Carbide Motion interprets. Not that there are no loops, variables, or other programming niceties.
 
 ## (Machine) Settings
 
@@ -211,7 +221,10 @@ The accessories which may be attached to a machine include:
 
 * BitSetter --- allows measuring tools for tool changes [https://my.carbide3d.com/pdf/bitsetter-v2.pdf](https://my.carbide3d.com/pdf/bitsetter-v2.pdf) (standard on the Nomad and Pro models)
 * BitRunner --- affords on/off of a trim router used as a spindle [https://my.carbide3d.com/manuals/bitrunner-v2](https://my.carbide3d.com/manuals/bitrunner-v2) and is enabled or disabled using the setup wizard (see below)
+* VFD spindle
 * BitZero --- allows probing so as to set the origin relative to rectangular stock [https://my.carbide3d.com/manuals/shapeoko-bitzero-v2](https://my.carbide3d.com/manuals/shapeoko-bitzero-v2) which type is connected is selected in the Probing window as noted above
+
+Note that only the BitSetter may be enabled/disabled. The BitRunner/VFD are configured in the Setup Wizard, while the BitZero type is selected in the Probe window.
 
 ### Maintenance
 
@@ -223,7 +236,7 @@ The Maintenance pane shows information about the machine usage and affords the o
 
 <figure><img src=".gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
 
-The Debug pane shows information on the firmware, the current state of the homing switches and BitZero/BitSetter accessores, and displays the current Machine Settings and affords an option to copy them to the clipboard for pasting (say into an e-mail to support@carbide3d.com).
+The Debug pane shows information on the firmware, the current state of the homing switches and BitZero/BitSetter accessories, and displays the current Machine Settings and affords an option to copy them to the clipboard for pasting (say into an e-mail to support@carbide3d.com).
 
 #### Show Log/Log Window
 
