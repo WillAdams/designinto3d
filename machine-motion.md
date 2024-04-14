@@ -250,6 +250,16 @@ If the **MDI** is used to send commands, their results/output will be shown here
 
 <figure><img src=".gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
 
+## Keyboard Shortcuts
+
+Note that the keyboard shortcuts for Carbide Motion are set up so as to allow the use of a numeric keypad as a pendant.
+
+There is a PDF with keyboard shortcuts at:
+
+{% embed url="https://community.carbide3d.com/t/keyboard-shortcut-cheat-sheet-for-carbide-create-and-motion/7839" %}
+
+[https://community.carbide3d.com/uploads/short-url/tRxj5iW8JT1gtD1sF1I313VeKfI.pdf](https://community.carbide3d.com/uploads/short-url/tRxj5iW8JT1gtD1sF1I313VeKfI.pdf)
+
 ## Setup New Machine
 
 When first setting up Carbide Motion on a new computer, it will be necessary to choose this option. Version 6 of Carbide Motion adds a setup wizard:
