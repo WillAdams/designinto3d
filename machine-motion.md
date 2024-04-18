@@ -6,11 +6,11 @@ description: Software to move a machine around
 
 Once a design has been created and toolpaths made for it, it must be cut on a machine, which means using the software which controls it. This software is generally referred to as Machine Control Software. The machine control software from Carbide 3D is Carbide Motion, which may be downloaded from: [https://carbide3d.com/carbidemotion/download](https://carbide3d.com/carbidemotion/download)
 
-Basically, such software is the control panel of your CNC machine, allowing you to jog your machine, initialize (home) it, load and preview G-code, set the origin relative to the stock, and interact directly with the firmware (Grbl) using the MDI.
+Basically, such software is the control panel of your CNC machine, allowing you to jog your machine, initialize (home) it, load and (possibly) preview G-code, set the origin relative to the stock, and interact directly with the firmware (Grbl) using the MDI.
 
 Carbide Motion is only compatible with CNC machines from Carbide 3D, but other manufacturers have similar software, or electronics which afford similar controls.
 
-Upon launch, Carbide Motion will present a screen which notes it is **Not Connected**, and afford one the chance to connect:
+Upon launch, Carbide Motion will present a screen which notes it is **Not Connected**, and afford one the chance to connect or set up a new machine:
 
 <figure><img src=".gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
@@ -44,11 +44,11 @@ Once your machine is initialized, you will need to jog the machine to where you 
 This will afford the chance to load a project at this time, or it may be returned to and a file loaded later. The options are:
 
 * **Load New File** --- When you load a file, a normal file selection dialog for your OS will be brought up to allow selecting a file.&#x20;
-* **Load New Tool** (if you have a BitSetter) --- this will allow changing the currently loaded tool and then measuring its offset relative to the first tool which was measured
+* **Load New Tool** (if you have a BitSetter) --- this will allow changing the currently loaded tool and then measuring its offset (relative to the first tool which was measured on older versions)
 * **Start Job** --- this will start a job once loaded, and will also evaluate its extents compared to the current zero position, see: [https://carbide3d.com/blog/carbide-motion-bounds-checking/](https://carbide3d.com/blog/carbide-motion-bounds-checking/)
 * **Quick Actions** --- this allows storing G-code snippets/commands for repetitive tasks
 
-The usual workflow is to first load a file --- doing so will bring up an information/G-code preview screen with several views:
+The usual workflow is to first load a file --- doing so will bring up an information/G-code preview screen with several views as noted below.
 
 ### Load New Tool
 
@@ -142,7 +142,7 @@ This screen affords an interface for rapidly positioning the machine at cardinal
 
 <figure><img src=".gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
 
-as well as to **Rapid to Current XY** (zero) and to **Rapid to Current Z + 6mm** (or some reasonable equivalent in inches) and/or to **Current Z**. The actual coordinates of the various rapid positions is determined by the physical position of the home switches, the distance which Grbl is set to pull off of them, and the Travel Dimensions for the machine. For more on this see: [http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131](http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131)
+as well as to **Rapid to Current XY** (zero) and to **Rapid to Current Z + 6mm** (or some reasonable equivalent in inches) and/or to **Current Z** (this was added in more recent versions). The actual coordinates of the various rapid positions is determined by the physical position of the home switches, the distance which Grbl is set to pull off of them, and the Travel Dimensions for the machine. For more on this see: [http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131](http://community.carbide3d.com/t/notes-on-rapid-positions-and-wasteboard-leveling/8131)
 
 ### Probe
 
@@ -163,7 +163,7 @@ Once the type of BitZero is installed, there are four options:
 * **X**, which probes for that single axis, and requires that the BitZero be positioned either at a corner (v2), or along the left edge (v1)
 * **Y**, which probes for that single axis, and requires that the BitZero be positioned either at a corner (v2), or along the front edge (v1)
 
-Note that there are two versions of BitZero and it is important that the correct type is selected --- if need be, use the button for Change BitZero Type. When probing, various windows/prompts will be presented, select the correct options which match the probing operation which you wish to do.
+Note that there are two versions of BitZero and it is important that the correct type is selected --- if need be, use the button for **Change BitZero Type**. When probing, various windows/prompts will be presented, select the correct options which match the probing operation which you wish to do.
 
 **Note:** It is possible to probe for all three axes at a Corner, and then overwrite for example the Z-axis zero thus set by probing for Z, say at the surface of the wasteboard which the stock is positioned on.
 
@@ -213,7 +213,7 @@ The Machine Settings window has three tabs:
 
 <figure><img src=".gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
 
-For the specifics of settings for a Shapeoko 3, 4, or Pro in CM5 see: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681)
+For the specifics of settings for a Shapeoko in CM5 see: [https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681](https://community.carbide3d.com/t/setting-grbl-configuration-in-cm-517-and-later/27681)
 
 The Options pane allows enabling or disabling the BitSetter.
 
