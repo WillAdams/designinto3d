@@ -367,7 +367,7 @@ This concept may then be expanded upon to create a complete system for modeling 
 
 
 
-{% embed url="https://github.com/WillAdams/gcodepreview/blob/main/gcodepreview.dtx" %}
+{% @github-files/github-code-block url="https://github.com/WillAdams/gcodepreview/blob/main/gcodepreview.dtx" %}
 
 {% embed url="https://raw.githubusercontent.com/WillAdams/gcodepreview/main/gcodepreview.dtx" %}
 
@@ -493,4 +493,11 @@ Each such module will need an interface which defines its coordinates/dimensions
 * [https://www.nodebox.net/](https://www.nodebox.net/)
 * [https://github.com/zalo/CascadeStudio](https://github.com/zalo/CascadeStudio)
 * [https://book.gtoolkit.com/index.html](https://book.gtoolkit.com/index.html)
+* [https://www.paintcodeapp.com/](https://www.paintcodeapp.com/)
+* [https://inkscape.org/\~pakin/%E2%98%85simple-inkscape-scripting](https://inkscape.org/\~pakin/%E2%98%85simple-inkscape-scripting)
+* [https://wiki.librecad.org/index.php/LibreCAD\_3\_-\_Lua\_Scripting](https://wiki.librecad.org/index.php/LibreCAD\_3\_-\_Lua\_Scripting)
+* [https://scripting.krita.org/lessons/introduction](https://scripting.krita.org/lessons/introduction)
+* [https://qsketchmetric.readthedocs.io/en/latest/index.html](https://qsketchmetric.readthedocs.io/en/latest/index.html)
+
+
 
