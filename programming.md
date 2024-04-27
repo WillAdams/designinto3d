@@ -501,3 +501,18 @@ Each such module will need an interface which defines its coordinates/dimensions
 
 
 
+### Literate Programming
+
+There are a number of tools for this:
+
+
+
+* docmfp
+* gmdoc
+* [https://marimo.io/](https://marimo.io/)
+* [https://quarto.org/docs/get-started/hello/text-editor.html](https://quarto.org/docs/get-started/hello/text-editor.html)
+* [https://diataxis.fr/tutorials/](https://diataxis.fr/tutorials/)
+* [https://nbdev.fast.ai/getting\_started.html](https://nbdev.fast.ai/getting\_started.html)
+
+
+
