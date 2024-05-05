@@ -10,7 +10,7 @@ As noted previously, before one can make a part, one must define the geometry of
 
 Carbide Create has two or three panes (Design, Toolpaths, and in Pro mode, Model). As with most drawing tools, there are menus for commands or different program functions/states, a palette of tools, and a work area, which includes a graphical representation of the "Stock" which is the material which will be cut away to make a design or part, and on the Stock there are lines for a grid which may be re-sized or hidden. The initial view has no objects which may be manipulated, these may be added as described below. Later versions add a pair of rulers around the drawing area and a status bar, (not depicted above).
 
-Like most graphic applications there is a standard set of menus, File which allows making new files, opening existing files, saving the current file, or exporting geometry as an SVG file, or in Carbide Create Pro, exporting the 3D model as a PNG file, or to quite the application. The Edit menu affords various copy and selection options, Undo and Redo, Show Layers, as well as access to the Tool Database or to Select Post Processor. The View menu controls the view of the drawing area, as well as enabling or disabling Snap to Grid and High Resolution Simulation. Lastly, a Help menu has About, Register, and Help options.&#x20;
+Like most graphic applications there is a standard set of menus, File which allows making new files, opening existing files, saving the current file, or exporting geometry as an SVG file, or in Carbide Create Pro, exporting the 3D model as a PNG file, or to quite the application. The Edit menu affords various copy and selection options, Undo and Redo, Show Layers, as well as access to the Tool Database or to Select Post Processor. The View menu controls the view of the drawing area, as well as enabling or disabling Snap to Grid and High Resolution Simulation. Lastly, a Help menu has About, Register, and Help options.
 
 Note that the interface in Carbide Create is contextual, certain controls will only appear when nothing is selected, while others only when a single object is selected, while others only make sense to show when multiple objects are selected and may have further requirements for usage such as the objects overlapping.
 
@@ -46,15 +46,15 @@ Polylines are made up of multiple points describing lines and may either be open
 
 ### Open Paths
 
-As noted above, open paths are indicated by being magenta when on the Default layer and not selected. They may be made up of lines, arcs, curves, or some combination. Toolpaths may be assigned to open paths, and the directionality will determine any offset if needed for a toolpath. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the Join Vectors command (see Curve Editing below) and it is also possible to combine two (or more) open paths drawn in Carbide Create into a single path, open or closed.&#x20;
+As noted above, open paths are indicated by being magenta when on the Default layer and not selected. They may be made up of lines, arcs, curves, or some combination. Toolpaths may be assigned to open paths, and the directionality will determine any offset if needed for a toolpath. Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the Join Vectors command (see Curve Editing below) and it is also possible to combine two (or more) open paths drawn in Carbide Create into a single path, open or closed.
 
-Note that in build 527 Carbide Create gained a feature for adding all open paths to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)&#x20;
+Note that in build 527 Carbide Create gained a feature for adding all open paths to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)
 
 Edit | Select... | Select Open Vectors
 
 ![](<.gitbook/assets/image (98).png>)
 
-### Closed Paths&#x20;
+### Closed Paths
 
 Closed paths meet back at the point of origin and open up additional operations in Carbide Create and most other CAM tools. In Carbide Create they are indicated by being black when on the Default layer and not selected. In Euclid’s _Elements: Book I:_ [_Definition 13–14_ ](https://mathcs.clarku.edu/\~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. As Open Paths, they may be made up of lines, arcs, curves, or some combination. Often tools will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for **Circles**, **Rectangles** (which may be squares), and Regular **Polygons**.
 
@@ -70,13 +70,13 @@ In Carbide Create, circles are defined as four Bézier curves (as opposed to usi
 
 One limitation of circles in current versions of Carbide Create is that they may not be rotated. A work-around for this is to put one node on a grid point, go into Node Edit mode, move the node, then move it back, converting the Circle into a Curve object which describes the same geometry as the original circle, but which is no longer described by its radius.
 
-Note that in build 527 Carbide Create gained a feature for adding circles which are within a certain size range to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)&#x20;
+Note that in build 527 Carbide Create gained a feature for adding circles which are within a certain size range to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)
 
 Edit | Select... | Select Circles
 
-![Carbide Create dialog for Select Circles ](<.gitbook/assets/image (2) (1) (1).png>)
+![Carbide Create dialog for Select Circles](<.gitbook/assets/image (2) (1) (1).png>)
 
-One may select the minimum and maximum diameter for adding circles to the current selection which will include circles drawn with the native circle tool, circles drawn as Bézier curves, and polylines which approximate a circle.&#x20;
+One may select the minimum and maximum diameter for adding circles to the current selection which will include circles drawn with the native circle tool, circles drawn as Bézier curves, and polylines which approximate a circle.
 
 #### Rectangles and Squares
 
@@ -112,7 +112,7 @@ It is also possible to reference the current stock dimensions:
 * w == Stock Width
 * d == Stock Height (depth)
 
-using those letters when using an expression which may be evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus when setting up or editing a toolpath, and will dynamically update the dimension when stock thickness is changed for toolpaths. Mathematical expressions may also be used thus, so half the thickness may be referenced using t/2.&#x20;
+using those letters when using an expression which may be evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus when setting up or editing a toolpath, and will dynamically update the dimension when stock thickness is changed for toolpaths. Mathematical expressions may also be used thus, so half the thickness may be referenced using t/2.
 
 See: [https://community.carbide3d.com/t/how-to-use-the-height-width-and-thickness-variables-in-a-design/61155](https://community.carbide3d.com/t/how-to-use-the-height-width-and-thickness-variables-in-a-design/61155)
 
@@ -167,7 +167,7 @@ Not geometry, but many drawing and CAD programs allow setting text. Carbide Crea
 
 Text objects are limited to a single line of text in Carbide Create, and one may select the font from among those outline (OpenType or TrueType format) fonts installed on the computer Carbide Create is running on, selecting Bold and or Italic (which will be applied if the appropriate font variation is installed on the system), setting the Font Height, modifying the Spacing and setting the Alignment.
 
-When initially selected, a text object will not bring up the properties of the Text tool. It is necessary to either select the Text tool to access these properties, or to double-click on the text object.&#x20;
+When initially selected, a text object will not bring up the properties of the Text tool. It is necessary to either select the Text tool to access these properties, or to double-click on the text object.
 
 It is also possible to convert text to curves using the button, "Convert to Curves" --- once converted to curves, the underlying geometry may be used. See: [https://carbide3d.com/blog/merging-script-fonts-in-carbide-create/](https://carbide3d.com/blog/merging-script-fonts-in-carbide-create/)
 
@@ -270,8 +270,6 @@ In Carbide Create, if multiple objects are selected and stock is not used to ali
 
 Another option for alignment is to space elements horizontally or vertically. This was added to Carbide Create in the 760 build:
 
-&#x20;
-
 <figure><img src=".gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src=".gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
@@ -306,11 +304,11 @@ Note that in most programs, the selection is modified, so if the original geomet
 
 If a given operation does not have the desired result, undoing it in older versions of Carbide Create will change which object is the current key object (indicated by a dashed highlight) ― reattempting the operation will then do so based on that new aspect of the selection with different results than previously if applicable to the operation. In current versions it will be necessary to recreate the selection.
 
-## Curves&#x20;
+## Curves
 
-Curves are available in most vector drawing programs, and when present may be defined in several ways.&#x20;
+Curves are available in most vector drawing programs, and when present may be defined in several ways.
 
-### Bézier Curves&#x20;
+### Bézier Curves
 
 The most common is Bézier curves ([https://en.wikipedia.org/wiki/B%C3%A9zier\_curve](https://en.wikipedia.org/wiki/B%C3%A9zier\_curve)), named for the automotive designer Pierre Bézier, which are defined by an on-curve point (the origin), a matching off-curve point, and an additional off-curve point paired with the ultimate (ending) on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options.
 
@@ -322,7 +320,7 @@ To create a curve, select the Curve tool, then click or click-drag where one wan
 
 Once a Curve (or Polyline) is created it may be either open (indicated by being magenta when not selected), or closed (black). Open paths may be closed using the **Join Vectors** command:
 
-![Carbide Create closing curve using Join command. ](<.gitbook/assets/Carbide\_Create\_interface\_join\_curve (3).png>)
+![Carbide Create closing curve using Join command.](<.gitbook/assets/Carbide\_Create\_interface\_join\_curve (3).png>)
 
 Note that the beginning and ending nodes will be connected as directly as possible:
 
@@ -330,7 +328,7 @@ Note that the beginning and ending nodes will be connected as directly as possib
 
 and it may be necessary to adjust the curve if the path crosses itself.
 
-As of Carbide Create build 627 it is possible to change a closed path to an open path by right-clicking and using the Cut Vector command while in Node Edit mode (see below). Note that often, rather than an open path, one wants a closed path which describes the region which would cut with an open path --- it is possible to use Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)&#x20;
+As of Carbide Create build 627 it is possible to change a closed path to an open path by right-clicking and using the Cut Vector command while in Node Edit mode (see below). Note that often, rather than an open path, one wants a closed path which describes the region which would cut with an open path --- it is possible to use Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)
 
 #### Principles for Bézier Curves
 
@@ -527,17 +525,17 @@ it then affords the ability to create and name layers (or delete them), as well 
 
 ![](<.gitbook/assets/image (310).png>)
 
-and to move objects to specific layers and to hide/show, or lock/unlock layers, or set a layer to be "Active" (which will cause all new objects to be created on that layer).&#x20;
+and to move objects to specific layers and to hide/show, or lock/unlock layers, or set a layer to be "Active" (which will cause all new objects to be created on that layer).
 
 A Layer is an organizational tool which allows one to separate geometry and colour-code it.​ ​ ​How they are used, depends on a given project and how a user wishes to approach it:
 
 * a two-sided job might have separate layers for each side ​
 * a file with multiple parts might have each part on a separate layer
-* a file with multiple tools might have the geometry for each tool on a separate layer, and use the Toolpath facility to associate a toolpath w/ a layer ​
+* a file with multiple tools or which has different types of toolpaths or toolpaths which cut to different depths might have the geometry for each tool/toolpath type/depth on a separate layer, and use the Toolpath facility to associate a toolpath w/ a layer ​
 
 ### Duplication and Arrays
 
-A useful feature in many drawing or CAD programs is the ability to duplicate or create arrays of objects. Carbide Create affords four options for this:&#x20;
+A useful feature in many drawing or CAD programs is the ability to duplicate or create arrays of objects. Carbide Create affords four options for this:
 
 * Copy/Paste ― a selection may be copied into memory and then pasted, either centered on the current cursor location, or if the cursor is not within the drawing area, stacked on top of the original
 * Duplicate ― Edit | Duplicate Selected (ctrl or command d), this allows placing duplicates by clicking and affords a series of checkboxes which allow one to Keep Groups, Keep Toolpath Links, and/or Duplicate to Current Layer
@@ -586,13 +584,13 @@ Carbide Create 7 moves Tabs to the Design pane:
 
 ![](<.gitbook/assets/image (196).png>)
 
-which may then be instantiated in the Toolpath pane using Contour toolpaths, or ignored by unchecking the appropriate checkbox.
+which may then be instantiated in the Toolpath pane using Contour toolpaths (and their settings adjusted), or ignored by unchecking the appropriate checkbox.
 
 ## Geometry
 
-When drawing and modeling it is often necessary to place parts relative to the original positioning based on a distance and possibly rotation determined by the dimensions of the parts. Geometry and trigonometry allow the calculation of such positioning, usually in terms of right triangles, or chords for elements based on circles or segments of circles.&#x20;
+When drawing and modeling it is often necessary to place parts relative to the original positioning based on a distance and possibly rotation determined by the dimensions of the parts. Geometry and trigonometry allow the calculation of such positioning, usually in terms of right triangles, or chords for elements based on circles or segments of circles.
 
-There are of course several different sorts of triangles depending on the specifics of their angles and the length of their sides.&#x20;
+There are of course several different sorts of triangles depending on the specifics of their angles and the length of their sides.
 
 By length:
 
@@ -607,9 +605,9 @@ By angles:
 * obtuse ― one angle is greater than 90 degrees
 * acute ― all angles are less than 90 degrees
 
-Depending on the angles and the orientation of a given triangle, various labeling may be appropriate.&#x20;
+Depending on the angles and the orientation of a given triangle, various labeling may be appropriate.
 
-For specific triangles, different formulae apply.&#x20;
+For specific triangles, different formulae apply.
 
 We begin of course with the Pythagorean theorem:
 
@@ -706,11 +704,9 @@ For further information on Carbide Create please see:
 * [https://carbide3d.com/blog/big-carbide-create-update/](https://carbide3d.com/blog/big-carbide-create-update/)
 * [https://carbide3d.com/blog/Carbide-Create-Now-With-V-Carving/](https://carbide3d.com/blog/Carbide-Create-Now-With-V-Carving/)
 
-
-
 ## Third Dimensional Shapes
 
-Extending all of these into 3 dimensions becomes more complex with each additional element, each of which complicates the mathematics.&#x20;
+Extending all of these into 3 dimensions becomes more complex with each additional element, each of which complicates the mathematics.
 
 The Toolpaths pane of Carbide Create affords a number of options to realize 2D geometry as 3D elements cut away from the stock: [https://willadams.gitbook.io/design-into-3d/toolpaths](https://willadams.gitbook.io/design-into-3d/toolpaths) and the Pro mode adds even more: [https://willadams.gitbook.io/design-into-3d/3d-modeling-from-2d-geometry](https://willadams.gitbook.io/design-into-3d/3d-modeling-from-2d-geometry)
 
