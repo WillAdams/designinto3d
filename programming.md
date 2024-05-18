@@ -11,13 +11,16 @@ A number of different programming tools and methodologies have been shown throug
 * OpenSCAD Graph Editor (OSGE) --- [https://github.com/derkork/openscad-graph-editor](https://github.com/derkork/openscad-graph-editor) --- a visual programming system, OSGE allows full access to all of OpenSCAD (in marked contrast to the limited number of commands and options afforded by BlockSCAD), including support for the Customizer.
 * METAPOST --- [https://www.tug.org/metapost.html](https://www.tug.org/metapost.html) --- a PostScript-oriented re-implementation of the venerable METAFONT [https://www-cs-faculty.stanford.edu/\~knuth/abcde.html#mfbk](https://www-cs-faculty.stanford.edu/\~knuth/abcde.html#mfbk) MP allows one to create 2D drawings as SVGs which may then be imported into Carbide Create to make projects.
 * lualatex --- [http://luatex.org/](http://luatex.org/) --- a latter-day implementation of the venerable TeX typesetting system, this allows Lua-scripting, and includes an embedded METAPOST interpreter.
-* RapCAD --- [https://rapcad.org/](https://rapcad.org/) --- an alternative to OpenSCAD, RapCAD notably adds the option of writing out text files with full user control.
-* gcodepreview --- [https://github.com/WillAdams/gcodepreview](https://github.com/WillAdams/gcodepreview) --- a library for OpenSCAD/RapCAD which allows 3D modeling tool movement/cutting and the generation of a matching G-code file.
+* RapCAD --- [https://rapcad.org/](https://rapcad.org/) --- an alternative to OpenSCAD, RapCAD notably adds the option of writing out text files with user control.
 * GSharp --- [https://github.com/NRSoft/GSharp](https://github.com/NRSoft/GSharp) --- a system which allows programming in G-code using loops and variables even on G-code implementations which lack such features.
 * FullControl GCODE --- [https://fullcontrolgcode.com/software](https://fullcontrolgcode.com/software) --- this was originally an Excel spreadsheet, but it was re-implemented in Python and is available as a website: [https://fullcontrol.xyz/](https://fullcontrol.xyz/) as well as a Python module: [https://github.com/FullControlXYZ/fullcontrol](https://github.com/FullControlXYZ/fullcontrol)
-* [http://www.guenther-sohler.net/openscad/](http://www.guenther-sohler.net/openscad/) --- a recent development, this implements Python within OpenSCAD, allowing one to either use a Python (.py) file, or OpenSCAD which uses or references Python files
+* [https://pythonscad.org/](https://pythonscad.org/) (originally available at: [http://www.guenther-sohler.net/openscad/](http://www.guenther-sohler.net/openscad/)) --- a recent development, this implements Python within OpenSCAD, allowing one to either use a Python (.py) file, or OpenSCAD code which uses or references Python files
 
-New ones are regularly developed, and future developments will be documented here as circumstances warrant.&#x20;
+New ones are frequently developed, and future developments will be documented here as circumstances warrant.&#x20;
+
+Note that several of the above are integrated so as to make:
+
+* gcodepreview --- [https://github.com/WillAdams/gcodepreview](https://github.com/WillAdams/gcodepreview) --- a library for OpenSCAD/RapCAD which allows 3D modeling tool movement/cutting and the generation of a matching G-code file.
 
 Naturally, any programming language which is able to write out files can be used to make G-code, and many programming languages have 3D libraries which will allow modeling in 3D --- this page will focus on those tools which are specifically applicable to CNC usage.
 
@@ -32,7 +35,7 @@ Most systems for 3D modeling have one directly model the part itself, then depen
 
 Many of the tools discussed here are visual programming languages (VPLs). While this makes things more approachable to some folks, and arguably more expressive, like most things in life, there are tradeoffs. VPLs are not popular, or widely used, and this nicheness can make usage even more awkward. Further considerations are that they attempt to solve a question which does not at this time have an agreed-upon answer:
 
-What does an algorithm look like?
+_What does an algorithm look like?_
 
 A further concern is scalability --- while many VPLs allow the definition of functions and modules, the usage of them usually goes against the visual nature which is the _raison d'être_ of choosing a VPL, resulting in the exact textual representation which one was trying to escape from, but trapping the words in little boxes or frames. Arguably not using such componentry is even worse as evinced by pages such as:
 
@@ -148,25 +151,9 @@ option which limits the geometry to that at the Z-axis, making it simple to have
 
 The DXFs import exactly, and one can write out multiple sections for different depths, then manually composite them.
 
-Carbide Create does have some quite nice tools for rounding off geometry:
+Carbide Create does have some quite nice tools for rounding off geometry, so perhaps a valid approach would be to output geometry with sharp corners, then round as necessary after importing things.
 
-![image|690x414](upload://ki6FutdWVNqDAWfOH5B8oLa4agq.png)
-
-![image|690x414](upload://pHvacdjiXnPUFl7mpbz7IQorLL8.png)
-
-![image|690x414](upload://o2wlOR3yGlf4q4aBkJH9PNzWbh3.png)
-
-Or,
-
-![image|690x414](upload://wUaT3HoEEAyksE4Y5G3wpwWfxNI.png)
-
-![image|690x414](upload://v9mqvyQM3FlPRyuutGadyQIi0cX.png)
-
-![image|690x414](upload://23Ir0jZEI87YftaV3ZvG7LteZo.png)
-
-so perhaps a valid approach would be to output geometry with sharp corners, then round as necessary after importing things.
-
-The T (Stock Thickness) variable when used in Toolpaths is persistent, and toolpaths may be associated w/ Layers, so potentially one could work up matched pairs of files where a DXF from an OpenSCAD project was imported, geometry adjusted/rounded as necessary, then elements assigned to the appropriate layers, at which point the 3D preview could be checked and the file ought to be ready to cut.
+The T (Stock Thickness) variable when used in Toolpaths is persistent, and toolpaths may be associated w/ Layers, so potentially one could work up matched pairs of files where a DXF from an OpenSCAD project was imported, geometry adjusted/rounded if necessary, then elements assigned to the appropriate layers, at which point the 3D preview could be checked and the file ought to be ready to cut.
 
 ## Linewinder
 
@@ -365,12 +352,6 @@ which when run, creates the file:
 
 This concept may then be expanded upon to create a complete system for modeling files as if cutting, and writing out the matching G-code.
 
-
-
-{% @github-files/github-code-block url="https://github.com/WillAdams/gcodepreview/blob/main/gcodepreview.dtx" %}
-
-{% embed url="https://raw.githubusercontent.com/WillAdams/gcodepreview/main/gcodepreview.dtx" %}
-
 ### Usage
 
 Putting the commands together has several expectations and requirements. The simplest usage is one where a single cut is made and the tool is plunged at the beginning, the cut is made, and then the tool is lifted to the retract height --- more complex cuts have the same requirements, to ensure that the tool is moved so that it cuts and does not collide with the stock at a rapid rate.
@@ -378,6 +359,8 @@ Putting the commands together has several expectations and requirements. The sim
 Having multiple cuts presents the possibility of redundant G-code commands, but the simplistic and persistent nature of G-code, that a single command is a movement to the specified position from the current one, and that OpenSCAD requires describing both positions means that every other OpenSCAD command after the first can omit writing out the G-code, which will then omit the redundant commands and result in terse code which still describes the expected machine motion.
 
 Available at: [https://github.com/WillAdams/gcodepreview](https://github.com/WillAdams/gcodepreview)
+
+Note that it is being re-written as a Literate Program, so one would ideally download the .dtx and .ins files, then process each w/ LaTeX (ideally pdflatexmk in TeXshop on a Mac) which would then create a .pdf of the documented source code, and .scad and .py files which may be placed in an appropriate library folder or used as a starting point for projects.
 
 ## OpenSCAD Graph Editor
 
@@ -389,7 +372,7 @@ which when generated as OpenSCAD code previews as expected:
 
 <figure><img src=".gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
 
-which with a bit of editing works as expected in RapCAD:
+which with a bit of editing worked as expected in RapCAD:
 
 <figure><img src=".gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
 
@@ -398,6 +381,8 @@ and generates G-code which previews as expected:
 <figure><img src=".gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
 
 Available at: [https://github.com/WillAdams/gcodepreview/blob/main/flatten.graph.tres](https://github.com/WillAdams/gcodepreview/blob/main/flatten.graph.tres)
+
+Note that with PythonSCAD, RapCAD is no longer required, since PythonSCAD affords the ability to write out files with complete control and traditional variables.
 
 ## Programming Modules
 
@@ -444,7 +429,7 @@ The DXF Reference is: [https://images.autodesk.com/adsk/files/autocad\_2012\_pdf
 
 {% embed url="https://stackoverflow.com/questions/54937433/how-do-i-write-a-dxf-code-for-a-polyline" %}
 
-
+The code for gcodepreview now includes commands for writing out dxfs using lines and arcs. Note that arcs must be limited to 90 degrees or less of arc so as to ensure that they line up properly at the begin and end points.
 
 ### Pockets
 
@@ -507,7 +492,7 @@ There are a number of tools for this:
 
 One possibility would be to use the include file option in Gitbook, write the code in separate files which are named in such a way that they may be easily combined, and then to edit the underlying files as needed and to concatenate them when making the source for the actual program.
 
-* docmfp --- this is the tool which was ultimately selected (as is obvious above in the included file)
+* docmfp --- this is the tool which was ultimately selected (as is obvious above in the referenced file)
 * gmdoc
 * [https://marimo.io/](https://marimo.io/)
 * [https://quarto.org/docs/get-started/hello/text-editor.html](https://quarto.org/docs/get-started/hello/text-editor.html)
