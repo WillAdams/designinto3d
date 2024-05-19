@@ -16,4 +16,6 @@ Naturally, everything in this book is only one person's overview and presentatio
 
 ## References
 
-[https://www.goodreads.com/review/list/21394355-william-adams?ref=nav\_mybooks\&shelf=cnc](https://www.goodreads.com/review/list/21394355-william-adams?ref=nav\_mybooks\&shelf=cnc)
+{% embed url="https://www.goodreads.com/review/list/21394355-william-adams?ref=nav_mybooks&shelf=cnc" %}
+
+{% embed url="https://forum.makerforums.info/t/books-on-math-and-geometry-and-woodworking/86399" %}
