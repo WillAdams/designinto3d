@@ -152,7 +152,7 @@ If you have a BitZero, then it will be possible to use the button for **Probing*
 
 If need be, click "Change BitZero Type"
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 to select the type of BitZero which is installed.
 

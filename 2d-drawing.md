@@ -74,7 +74,7 @@ Note that in build 527 Carbide Create gained a feature for adding circles which 
 
 Edit | Select... | Select Circles
 
-![Carbide Create dialog for Select Circles](<.gitbook/assets/image (2) (1) (1).png>)
+![Carbide Create dialog for Select Circles](<.gitbook/assets/image (2) (1) (1) (1).png>)
 
 One may select the minimum and maximum diameter for adding circles to the current selection which will include circles drawn with the native circle tool, circles drawn as Bézier curves, and polylines which approximate a circle.
 
@@ -362,7 +362,7 @@ Version 633 of Carbide Create adds a Corner Tool:
 
 which allows one to modify corners to have a specified radius:
 
-![](<.gitbook/assets/image (1) (1) (1) (1).png>)
+![](<.gitbook/assets/image (1) (1) (1) (1) (1).png>)
 
 only angles which will admit a portion of a circle of the specified radius will be eligible:
 
@@ -489,7 +489,7 @@ This allows setting:
 * Retract height --- also termed Safety height, this is how much the machine will lift in-between toolpaths
 * Units: Inch or millimeters
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Set Grid
 
@@ -576,7 +576,7 @@ Carbide Create 7 adds the feature of adding notes to a file:
 
 Such notes may have the option of always showing when the file is opened as a reminder:
 
-![](<.gitbook/assets/image (2) (1).png>)
+![](<.gitbook/assets/image (2) (1) (1).png>)
 
 ### Tabs
 

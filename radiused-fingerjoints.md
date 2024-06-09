@@ -190,7 +190,7 @@ With the parts laid out, select the part outlines and offset them a suitable dis
 
 Select the outline and the parts and assign a pocket toolpath which will cut down to tab depth:
 
-![Carbide Create: Box: 3" x 3" x 3": Parts Toolpath](<.gitbook/assets/image (3).png>)
+![Carbide Create: Box: 3" x 3" x 3": Parts Toolpath](<.gitbook/assets/image (3) (1).png>)
 
 Select the lines for the relief cut, select a suitable tool and assign it a suitable tool cutting to a depth which will cut the relief (in this case 0.125") ― the actual tool used doesn't matter since it's not possible to get a correct preview, but matching the outer diameter if convenient will help in verifying the cut:
 
