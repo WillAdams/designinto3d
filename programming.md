@@ -423,6 +423,14 @@ which we will match in Carbide Create, keeping the twain in synch so as to keep 
 
 <figure><img src=".gitbook/assets/image (223).png" alt=""><figcaption></figcaption></figure>
 
+### radiuscut
+
+Radius or roundover tooling is not supported by Carbide Create, but may be simulated using a series of No Offset Contour toolpaths with several different angles of V tooling to suitable depths:
+
+{% embed url="https://community.carbide3d.com/t/using-unsupported-tooling-in-carbide-create-roundover-cove-radius-bits/43723" %}
+
+
+
 ### DXF
 
 The DXF Reference is: [https://images.autodesk.com/adsk/files/autocad\_2012\_pdf\_dxf-reference\_enu.pdf](https://images.autodesk.com/adsk/files/autocad\_2012\_pdf\_dxf-reference\_enu.pdf)

@@ -254,6 +254,8 @@ If the **MDI** is used to send commands, their results/output will be shown here
 
 Note that the keyboard shortcuts for Carbide Motion are set up so as to allow the use of a numeric keypad as a pendant.
 
+<figure><img src=".gitbook/assets/Carbide3D_create_motion_keyboard_shortcuts_CM.png" alt=""><figcaption></figcaption></figure>
+
 There is a PDF with keyboard shortcuts at:
 
 {% embed url="https://community.carbide3d.com/t/keyboard-shortcut-cheat-sheet-for-carbide-create-and-motion/7839" %}
