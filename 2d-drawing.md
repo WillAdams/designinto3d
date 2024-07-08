@@ -527,7 +527,16 @@ it then affords the ability to create and name layers (or delete them), as well 
 
 and to move objects to specific layers and to hide/show, or lock/unlock layers, or set a layer to be "Active" (which will cause all new objects to be created on that layer).
 
-A Layer is an organizational tool which allows one to separate geometry and colour-code it.​ ​ ​How they are used, depends on a given project and how a user wishes to approach it:
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+A Layer is an organizational tool which allows one to separate geometry and colour-code it​ and may exist in one of several states:
+
+* **ACTIVE** (indicated by being bold, must also be unlocked and visible/not-hidden) --- all new objects will be created on the ACTIVE layer
+* Hidden (indicated by strike-through)
+* Locked (indicated by closed padlock)
+* not ACTIVE --- elements may be selected/manipulated
+
+​How they are used, depends on a given project and how a user wishes to approach it:
 
 * a two-sided job might have separate layers for each side ​
 * a file with multiple parts might have each part on a separate layer
