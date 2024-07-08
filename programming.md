@@ -47,7 +47,11 @@ and
 
 Traditional visual documentation practices may be applicable:
 
-[https://terrastruct.com/blog/post/draw-software-architecture-diagrams/](https://terrastruct.com/blog/post/draw-software-architecture-diagrams/)
+{% embed url="https://terrastruct.com/blog/post/draw-software-architecture-diagrams/" %}
+
+For one discussion see:
+
+{% embed url="https://nickarner.com/notes/a-personal-history-of-visual-programming-enviornments-november-13-2021/" %}
 
 ## G-code
 
