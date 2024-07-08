@@ -198,6 +198,12 @@ Groups may be used to:
 * separate toolpaths for tiling --- note that Carbide Create Pro now has a specific feature for this:  [https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334](https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334)
 * separate toolpaths for individual parts
 
+A further consideration is that layers may be used to associate the contents of a layer with a toolpath:
+
+<figure><img src=".gitbook/assets/image (354).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
+
 ## G-code
 
 Once toolpaths have been set up in a file, they may be sent to a machine to be cut out. The traditional way to do this is to write out the G-code instructions in a text file with a file extension which identifies is a a G-code file. Typically used extensions include:
