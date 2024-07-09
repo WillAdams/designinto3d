@@ -531,7 +531,7 @@ and to move objects to specific layers and to hide/show, or lock/unlock layers, 
 
 A Layer is an organizational tool which allows one to separate geometry and colour-code it​ and may exist in one of several states:
 
-* **ACTIVE** (indicated by being bold, must also be unlocked and visible/not-hidden) --- all new objects will be created on the ACTIVE layer
+* **ACTIVE** (indicated by being bold, must also be unlocked and visible/not-hidden) --- all new objects will be created on the ACTIVE layer. Double-clicking on a layer will set it to be the **ACTIVE** layer.
 * Hidden (indicated by strike-through)
 * Locked (indicated by closed padlock)
 * not ACTIVE --- elements may be selected/manipulated
