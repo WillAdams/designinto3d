@@ -495,6 +495,7 @@ Each such module will need an interface which defines its coordinates/dimensions
 * [https://wiki.librecad.org/index.php/LibreCAD\_3\_-\_Lua\_Scripting](https://wiki.librecad.org/index.php/LibreCAD\_3\_-\_Lua\_Scripting)
 * [https://scripting.krita.org/lessons/introduction](https://scripting.krita.org/lessons/introduction)
 * [https://qsketchmetric.readthedocs.io/en/latest/index.html](https://qsketchmetric.readthedocs.io/en/latest/index.html)
+* [https://github.com/baku89/glisp](https://github.com/baku89/glisp) [https://news.ycombinator.com/item?id=41026214](https://news.ycombinator.com/item?id=41026214)
 
 
 
