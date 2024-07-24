@@ -677,7 +677,7 @@ Beyond just drawing, vector drawing and CAD/CAM programs may have many additiona
 For further information on Carbide Create please see:
 
 * [https://my.carbide3d.com/manuals/carbide-create/](https://my.carbide3d.com/manuals/carbide-create/) --- a web page which currently links to: [https://carbide-downloads.website-us-east-1.linodeobjects.com/doc/UserManual\_Carbide\_20210718.pdf](https://carbide-downloads.website-us-east-1.linodeobjects.com/doc/UserManual\_Carbide\_20210718.pdf) (the official manual for v5)
-* [https://my.carbide3d.com/#Design\_with\_Carbide\_Create](https://my.carbide3d.com/#Design\_with\_Carbide\_Create) (a collection of tutorial videos on the 2D aspects)
+* [https://carbide3d.com/hub/courses/create/](https://carbide3d.com/hub/courses/create/) (a collection of tutorial videos on the 2D aspects)
 * [https://my.carbide3d.com/#Carbide\_Create\_Pro](https://my.carbide3d.com/#Carbide\_Create\_Pro) (a collection of videos on the features added by the Pro licensing mode)
 * [http://community.carbide3d.com/c/software/carbide-create](http://community.carbide3d.com/c/software/carbide-create) (a community forum)
 * [https://old.reddit.com/r/shapeoko/wiki/carbidecreate](https://old.reddit.com/r/shapeoko/wiki/carbidecreate) (a wiki page)
