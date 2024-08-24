@@ -108,9 +108,9 @@ It is also possible to enter dimensions in terms of specified units (naturally, 
 
 It is also possible to reference the current stock dimensions:
 
-* t == Stock Thickness
+* h == Stock Height
 * w == Stock Width
-* d == Stock Height (depth)
+* t == Stock Thickness
 
 using those letters when using an expression which may be evaluated using the = key, so typing t= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus when setting up or editing a toolpath, and will dynamically update the dimension when stock thickness is changed for toolpaths. Mathematical expressions may also be used thus, so half the thickness may be referenced using t/2.
 
