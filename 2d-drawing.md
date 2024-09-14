@@ -644,7 +644,7 @@ All the possible formulae for calculating the lengths of the sides of a right tr
 
 Similarly, the angles of a right triangle may be calculated by:
 
-![Formulae for calculating the angles of a right triangle.](.gitbook/assets/triangle-angles.png)
+<figure><img src=".gitbook/assets/triangle-angles (1).png" alt=""><figcaption><p>Formulae for calculating the angles of a right triangle.</p></figcaption></figure>
 
 Projects involving circles are usually calculated in terms of chords, radius, and the height of the chord segment.
 
