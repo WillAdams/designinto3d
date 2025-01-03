@@ -9,7 +9,7 @@ A number of different programming tools and methodologies have been shown throug
 * OpenSCAD --- [https://openscad.org/ ](https://openscad.org/)--- developed from Art of Illusion, this is described as "The Programmers Solid 3D CAD Modeller" and is a de facto standard, so that many other tools extend it.
 * BlockSCAD --- [https://www.blockscad3d.com/ ](https://www.blockscad3d.com/) --- a Blockly implementation of OpenSCAD, BlockSCAD affords a quick, easy, and interactive way to model in 3D.
 * OpenSCAD Graph Editor (OSGE) --- [https://github.com/derkork/openscad-graph-editor](https://github.com/derkork/openscad-graph-editor) --- a visual programming system, OSGE allows full access to all of OpenSCAD (in marked contrast to the limited number of commands and options afforded by BlockSCAD), including support for the Customizer.
-* METAPOST --- [https://www.tug.org/metapost.html](https://www.tug.org/metapost.html) --- a PostScript-oriented re-implementation of the venerable METAFONT [https://www-cs-faculty.stanford.edu/\~knuth/abcde.html#mfbk](https://www-cs-faculty.stanford.edu/\~knuth/abcde.html#mfbk) MP allows one to create 2D drawings as SVGs which may then be imported into Carbide Create to make projects.
+* METAPOST --- [https://www.tug.org/metapost.html](https://www.tug.org/metapost.html) --- a PostScript-oriented re-implementation of the venerable METAFONT [https://www-cs-faculty.stanford.edu/\~knuth/abcde.html#mfbk](https://www-cs-faculty.stanford.edu/~knuth/abcde.html#mfbk) MP allows one to create 2D drawings as SVGs which may then be imported into Carbide Create to make projects.
 * lualatex --- [http://luatex.org/](http://luatex.org/) --- a latter-day implementation of the venerable TeX typesetting system, this allows Lua-scripting, and includes an embedded METAPOST interpreter.
 * RapCAD --- [https://rapcad.org/](https://rapcad.org/) --- an alternative to OpenSCAD, RapCAD notably adds the option of writing out text files with user control.
 * GSharp --- [https://github.com/NRSoft/GSharp](https://github.com/NRSoft/GSharp) --- a system which allows programming in G-code using loops and variables even on G-code implementations which lack such features.
@@ -55,7 +55,7 @@ For one discussion see:
 
 ## G-code
 
-The language used for toolpaths is G-code (RS-274) [https://www.nist.gov/manuscript-publication-search.cfm?pub\_id=823374](https://www.nist.gov/manuscript-publication-search.cfm?pub\_id=823374) --- in some implementations it is a full-fledged programming language, so it is possible to use it directly to program if one has a suitable 3D previewing tool. Unfortunately, most hobby-level G-code implementations lack variables, branching, and looping, so are only suited to the G-code which is output by CAM programs.
+The language used for toolpaths is G-code (RS-274) [https://www.nist.gov/manuscript-publication-search.cfm?pub\_id=823374](https://www.nist.gov/manuscript-publication-search.cfm?pub_id=823374) --- in some implementations it is a full-fledged programming language, so it is possible to use it directly to program if one has a suitable 3D previewing tool. Unfortunately, most hobby-level G-code implementations lack variables, branching, and looping, so are only suited to the G-code which is output by CAM programs.
 
 There is a 3rd party tool which will accept G-code with such commands and instantiate them:\
 \
@@ -173,6 +173,11 @@ This might work well as an interface concept for a drawing program, but one wher
 ## gcodepreview
 
 While OpenSCAD allows 3D modeling, it unfortunately does not allow writing out files other than DXFs and SVGs and STLs, but there is fortunately, a similar tool which implements much of the OpenSCAD language, the RapCAD implementation which is able to write out files, allowing one to export toolpaths to G-code, making it well-suited to creating a library which allows modeling in 3D as if one was cutting with a machine.&#x20;
+
+This is discussed at:
+
+* https://forum.makerforums.info/t/g-code-preview-using-openscad-rapcad/85729
+* https://forum.makerforums.info/t/openscad-and-python-looking-to-finally-be-resolved/88171
 
 Every module must do what it does twice over, modeling in 3D in OpenSCAD, and if enabled, writing out matching G-code. Further, in some instances, it will be desirable or even necessary to directly write out G-code which has no OpenSCAD equivalent.&#x20;
 
@@ -437,7 +442,7 @@ Radius or roundover tooling is not supported by Carbide Create, but may be simul
 
 ### DXF
 
-The DXF Reference is: [https://images.autodesk.com/adsk/files/autocad\_2012\_pdf\_dxf-reference\_enu.pdf](https://images.autodesk.com/adsk/files/autocad\_2012\_pdf\_dxf-reference\_enu.pdf)
+The DXF Reference is: [https://images.autodesk.com/adsk/files/autocad\_2012\_pdf\_dxf-reference\_enu.pdf](https://images.autodesk.com/adsk/files/autocad_2012_pdf_dxf-reference_enu.pdf)
 
 {% embed url="https://stackoverflow.com/questions/54937433/how-do-i-write-a-dxf-code-for-a-polyline" %}
 
@@ -491,8 +496,8 @@ Each such module will need an interface which defines its coordinates/dimensions
 * [https://github.com/zalo/CascadeStudio](https://github.com/zalo/CascadeStudio)
 * [https://book.gtoolkit.com/index.html](https://book.gtoolkit.com/index.html)
 * [https://www.paintcodeapp.com/](https://www.paintcodeapp.com/)
-* [https://inkscape.org/\~pakin/%E2%98%85simple-inkscape-scripting](https://inkscape.org/\~pakin/%E2%98%85simple-inkscape-scripting)
-* [https://wiki.librecad.org/index.php/LibreCAD\_3\_-\_Lua\_Scripting](https://wiki.librecad.org/index.php/LibreCAD\_3\_-\_Lua\_Scripting)
+* [https://inkscape.org/\~pakin/%E2%98%85simple-inkscape-scripting](https://inkscape.org/~pakin/%E2%98%85simple-inkscape-scripting)
+* [https://wiki.librecad.org/index.php/LibreCAD\_3\_-\_Lua\_Scripting](https://wiki.librecad.org/index.php/LibreCAD_3_-_Lua_Scripting)
 * [https://scripting.krita.org/lessons/introduction](https://scripting.krita.org/lessons/introduction)
 * [https://qsketchmetric.readthedocs.io/en/latest/index.html](https://qsketchmetric.readthedocs.io/en/latest/index.html)
 * [https://github.com/baku89/glisp](https://github.com/baku89/glisp) [https://news.ycombinator.com/item?id=41026214](https://news.ycombinator.com/item?id=41026214)
@@ -510,7 +515,7 @@ One possibility would be to use the include file option in Gitbook, write the co
 * [https://marimo.io/](https://marimo.io/)
 * [https://quarto.org/docs/get-started/hello/text-editor.html](https://quarto.org/docs/get-started/hello/text-editor.html)
 * [https://diataxis.fr/tutorials/](https://diataxis.fr/tutorials/)
-* [https://nbdev.fast.ai/getting\_started.html](https://nbdev.fast.ai/getting\_started.html)
+* [https://nbdev.fast.ai/getting\_started.html](https://nbdev.fast.ai/getting_started.html)
 
 
 
