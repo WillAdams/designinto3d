@@ -27,17 +27,17 @@ The following toolpaths which Carbide Create supports will be discussed here:
 * Contour
 * Pocket
 * Drill
-* VCarve
-* Advanced VCarve
+* V-carve (Note that originally there were two different options, the normal which cut along the center and Advanced V-carve which cut along the perimeter, the former was eliminated, so “Advanced” was removed from the description)
 * Keyhole
+* Face
 
-Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V endmills will be used for V carving or chamfering or cutting at a precise angle as for certain types of joinery. Keyhole toolpaths require the use of specialty keyhole cutters which cut wider at the bottom than their shaft. Surfacing tools such as the McFly are used to flatten stock or the spoilboard with either a very shallow pocket toolpath, or a contour toolpath which follows geometry which describes the area to be cut.
+Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V-endmills will be used for V-carving or chamfering or cutting at a precise angle as for certain types of joinery. Keyhole toolpaths require the use of specialty keyhole cutters which cut wider at the bottom than their shaft. Surfacing tools such as the McFly are used to flatten stock or the spoilboard with the Face toolpath (before it was available they were used with either a very shallow pocket toolpath, or a contour toolpath which follows geometry which describes the area to be cut).
 
 Note that in Carbide Create, dimensions may be entered using math expressions (which may contain units indicated by in or mm) which are evaluated by entering = at the end, so 1in+8mm= will result in a dimension of either 1.3150in or 33.400mm depending on the current unit.&#x20;
 
 There are also 3 variables, _w_, _h_, and  _t_ may be used to reference the current stock width, height, and thickness respectively, and the expression may be left as an expression in certain fields by entering it without adding the = at the end, so t/2 will result in half the current stock thickness being used, and will update dynamically when the stock thickness is changed.
 
-Carbide Create v7 adds the option of associating a Toolpath with the content of a specified layer.
+Carbide Create v7 added the option of associating a Toolpath with the content of a specified layer.
 
 ## Contour
 
@@ -65,7 +65,7 @@ If cut with a ball-nosed endmill, a rounded groove may be achieved:
 
 One option for Contour Toolpaths is tabs. In Carbide Create v7 they may be added in the Design tab:
 
-![](<.gitbook/assets/image (20).png>)
+<figure><img src=".gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
 
 then the tabs may be instantiated in the Contour Toolpath setting.
 
@@ -131,11 +131,11 @@ As noted above, square, ball-nosed, and V-endmills may be used, and will be corr
 
 A notable use for a V-endmill when drilling is to chamfer a small hole.
 
-## VCarve (and Advanced VCarve)
+## V-Carve
 
-V carving toolpaths may be assigned to closed geometry, and as noted above, will cut either along the center (normal V carving), or along the perimeter (Advanced V carving), to either the depth required, or the max depth which is set. Advanced VCarving adds the option of pocket clearing to the depth set w/ a different endmill.
+V-carving toolpaths may be assigned to closed geometry, and as noted above, will cut along the perimeter (formerly termed Advanced V-carving), to either the depth required, or the max depth which is set. V-carving adds the option of pocket clearing to the depth set w/ a different endmill.
 
-If one limits the depth on a normal V carve, one can achieve special effects such as changing a square:
+In v7 or earlier, if one limits the depth on a normal V-carve, one can achieve special effects such as changing a square:
 
 ![](<.gitbook/assets/image (244).png>)
 
@@ -149,16 +149,16 @@ Keyhole toolpaths as noted above, require the use of a special tool, and are not
 
 ## Selection
 
-There are two buttons in Toolpaths which function as the interface for what geometry is associated with a given toolpath:
+When a toolpath is first made, a dialog is displayed which has two buttons in Toolpaths which function as the interface for what geometry is associated with a given toolpath. When editing a Toolpath, the following options are afforded which allow one to interact with the associated selection:
 
 * Change Vectors
 * Select Current Vectors
 
-and the resultant window for the former:
+and the resultant window for the former (which is the same as when a toolpath is first made):
 
 <figure><img src=".gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
 
-also afford the option to associate toolpaths with a Layer. For a discussion of the interactions of selection and toolpaths see: [https://community.carbide3d.com/t/still-struggling-with-toolpath/63383](https://community.carbide3d.com/t/still-struggling-with-toolpath/63383) If more than one piece of geometry is associated with a toolpath, then their arrangement will determine how the toolpath is actually cut.
+also affords the option to associate toolpaths with a Layer. For a discussion of the interactions of selection and toolpaths see: [https://community.carbide3d.com/t/still-struggling-with-toolpath/63383](https://community.carbide3d.com/t/still-struggling-with-toolpath/63383) If more than one piece of geometry is associated with a toolpath, then their arrangement will determine how the toolpath is actually cut.
 
 ## Arrangement
 
@@ -180,7 +180,7 @@ The most important consideration here is that it is consistent for a given versi
 
 Carbide Create affords the option of organizing toolpaths into groups --- this is done using a contextual right-click menu:
 
-<figure><img src=".gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (387).png" alt=""><figcaption></figcaption></figure>
 
 Groups may be:
 
@@ -213,4 +213,8 @@ Once toolpaths have been set up in a file, they may be sent to a machine to be c
 * .gcode
 * .tap
 
-MeshCAM and early versions of Carbide Create add the possibility of a .egc file extension (for encrypted G-code), and Carbide Create v7 normally stores the G-code in the .c2d file itself, allowing that to be loaded into Carbide Motion when connected to a Carbide 3D machine, at which time the G-code will be extracted and sent to the machine. The Pro license for Carbide Create v7 also affords the option to write out G-code.
+MeshCAM and early versions of Carbide Create add the possibility of a .egc file extension (for encrypted G-code), and Carbide Create v7 and later normally stores the G-code in the .c2d file itself, allowing that to be loaded into Carbide Motion when connected to a Carbide 3D machine, at which time the G-code will be extracted and sent to the machine as discussed at:
+
+[https://carbide3d.com/blog/carbide-create-v7/](https://carbide3d.com/blog/carbide-create-v7/)
+
+The Pro license for Carbide Create v7 also affords the option to write out G-code.
