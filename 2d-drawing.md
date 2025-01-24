@@ -32,7 +32,7 @@ clicking at the beginning (as well as if desired, intermediary) and end points:
 
 and then clicking on **Done** (Note that returning to the first point will also complete the Polyline or Curve as a closed path). Note that open lines on the default layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. Paths which are on layers which have an assigned color other than black will be drawn in that color without consideration for open or closed status. The current selection is drawn in orange, and if there are more than one element/group selected, the most recently added will be considered the Key Object which will be indicated by being drawn with a dashed highlight.
 
-Open polylines (or curves, see below) have limited functionality in terms of Toolpaths in Carbide Create, since they may only be used with Contour toolpaths. Usually one will work with closed paths, since they define regions which one may then assign suitable toolpaths to. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve** tool section below.
+Open polylines (or curves, see below) have limited functionality in terms of Toolpaths in Carbide Create, since they may only be used with Contour toolpaths. Usually, one will work with closed paths, since they define regions which one may then assign suitable toolpaths to. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve** tool section below.
 
 Lines will be used to define Rectangles (which may be squares) and regular Polygons as described below.
 
@@ -138,10 +138,10 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 
 * _Square_ (the default shown above)
 * _Fillet_ (rounded corners which allow applying an arc to a given corner)
-* _Chamfer_ (45 degree angles)
+* _Chamfer_ (45-degree angles)
 * _Flipped fillet_ (quarter circles removed from corners)
-* _Dogbone_ (placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right angle corner will still fit)
-* _Tee_ (placing a semicircle at a corner to ensure that a part with right angle corners will still fit ― note that orientation may not be specified, but by adding the feature, then rotating the part, this may be controlled)
+* _Dogbone_ (placing a circle up against the corner so as to ensure that after cutting with a round endmill a part with a right-angle corner will still fit)
+* _Tee_ (placing a semicircle at a corner to ensure that a part with right-angle corners will still fit ― note that orientation may not be specified, but by adding the feature, then rotating the part, this may be controlled)
 
 Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter/distance from the corner:
 
@@ -159,7 +159,7 @@ It is possible to zoom in/out using the scroll wheel on a mouse, or by using pin
 
 * Fit to Job --- f --- this sets the view to encompass the entire stock area and any elements which extend beyond it
 * Fit View to Stock (this is in the View menu only) --- sets the view to the Stock area
-* Fit View to Seleciton --- ctrl/command f --- zooms in/out to the currently selected object
+* Fit View to Selection --- ctrl/command f --- zooms in/out to the currently selected object
 
 ## Text
 
@@ -207,10 +207,10 @@ There are multiple ways to select objects:
 
 * click to select --- this will select a single object
 * shift click to add (or remove) and object from the current selection
-* click-drag --- this will make a selection of the objects within the drag-rectangle --- note that there are two directions to drag and they are meaningful: down is selective and will only include objects completely within the drag-rectangle, while up is promiscuous and will include any object partially are wholly within the drag-rectangle
+* click-drag --- this will make a selection of the objects within the drag-rectangle --- note that there are two directions to drag, and they are meaningful: down is selective and will only include objects completely within the drag-rectangle, while up is promiscuous and will include any object partially are wholly within the drag-rectangle
 * menu entries to select object according to certain criteria such as Edit | Select All which will select all objects
 
-Note that when selecting there are certain special points which may be used for selection or snapping and which will afford useful options for precision movement and placement:
+Note that when selecting there are certain special points which may be used for selection or snapping, and which will afford useful options for precision movement and placement:
 
 Circles afford the option to select the center in addition to the cardinal points:
 
@@ -254,7 +254,7 @@ In addition to moving, geometry may also be altered in size. Selections may be s
 
 ### Rotate
 
-Objects may be rotated. This is often useful for decorative designs, and may be required to control part orientation when cutting or doing mechanical design, or to adjust for orientation of T-bones. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in certain programs if the rotation operation should change the objects into Curve objects, removing the ability to interact with their formal parameters.
+Objects may be rotated. This is often useful for decorative designs, and, may be required to control part orientation when cutting or doing mechanical design, or to adjust for orientation of T-bones. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in certain programs if the rotation operation should change the objects into Curve objects, removing the ability to interact with their formal parameters.
 
 At this time in Carbide Create, Circle objects will not alter their orientation when rotated, only positioning. If using the nodes for positional information is required, it will be necessary to convert them to Curve objects by Node Editing.
 
@@ -266,7 +266,7 @@ Objects may be mirrored (flipped) horizontally or vertically. Useful for decorat
 
 ### Align
 
-Most, if not all CAD and design tools allow an option for aligning one or more objects. Typically if only one object is selected, the alignment is against the drawing area, in the case of Carbide Create, against the Stock. Alignment affords precision, and control, especially when one is using Rotation.
+Most, if not all CAD and design tools allow an option for aligning one or more objects. Typically, if only one object is selected, the alignment is against the drawing area, in the case of Carbide Create, against the Stock. Alignment affords precision, and control, especially when one is using Rotation.
 
 In Carbide Create, if multiple objects are selected and stock is not used to align against, the alignment will be against the key object (indicated by being drawn with a dashed highlight).
 
@@ -290,7 +290,7 @@ Geometry may be selected and offset, either to the inside or outside:
 
 ![Carbide Create offset interface options](<.gitbook/assets/Carbide_Create_interface_offsetpath (3).png>)
 
-When offsetting paths to the outside in Carbide Create, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired, either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a third party tool such as Inkscape, and then reimport, or, redraw the geometry.
+When offsetting paths to the outside in Carbide Create, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired, either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a third-party tool such as Inkscape, and then reimport, or, redraw the geometry.
 
 ### Boolean Operations
 
@@ -356,7 +356,7 @@ When in Node Edit Mode it is possible to:
 * toggle one or more nodes from smooth (indicated by a circle) to sharp (indicated by a square) and vice-versa by selecting and then right-clicking and choosing _Toggle Smooth_ or using the keyboard shortcut _s_ for the currently selected node(s)
 * cut open a path (which will convert a closed path to an open one) by right-clicking and choosing _Cut Vector_
 
-Off-path nodes (indicated by small filled circles) may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
+Off-path nodes (indicated by small, filled circles) may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and asymmetry.
 
 A forum post on this:
 
@@ -400,7 +400,7 @@ It is frequently helpful to use this feature to create sections of geometry from
 
 #### Geometric Interactions
 
-With Boolean Operations and the Trim Vector a number of possible interactions are possible. Given a set of curves, for example a rectangle with a circle superimposed:
+With Boolean Operations and the Trim Vector Tool a number of possible interactions are possible. Given a set of curves, for example a rectangle with a circle superimposed:
 
 ![](<.gitbook/assets/image (86).png>)
 
@@ -428,11 +428,11 @@ while the Trim Vectors command allows one to trim the various vectors which over
 
 ![](<.gitbook/assets/image (321).png>)
 
-allowing one to make asymmetrical designs which are not easily done with Boolean operations and which would require additional geometry:
+allowing one to make asymmetrical designs which are not easily done with Boolean operations, and which would require additional geometry:
 
 ![](<.gitbook/assets/image (78).png>)
 
-A further consideration is that the Trim Vectors command results in Curve objects which may be joined and which will not result in polylines:
+A further consideration is that the Trim Vectors command results in Curve objects which may be joined, and which will not result in polylines:
 
 ![](<.gitbook/assets/image (263).png>)
 
@@ -511,7 +511,7 @@ This allows setting the spacing of the grid, or by checking or unchecking a chec
 
 ### Set Background
 
-It is possible to load a background image as noted above, and use it as a reference. For further specifics see: [https://community.carbide3d.com/t/importing-a-file-or-a-backgound-image/27166](https://community.carbide3d.com/t/importing-a-file-or-a-backgound-image/27166)
+It is possible to load a background image as noted above and use it as a reference. For further specifics see: [https://community.carbide3d.com/t/importing-a-file-or-a-backgound-image/27166](https://community.carbide3d.com/t/importing-a-file-or-a-backgound-image/27166)
 
 ### Group Vectors/Ungroup Vectors
 
@@ -577,7 +577,7 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 <figure><img src=".gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
 
-Circular Arrays afford a number of options, and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 copies:
+Circular Arrays afford a number of options and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 copies:
 
 ![](<.gitbook/assets/image (234).png>)
 
@@ -672,7 +672,7 @@ Websites for this sort of thing:
 
 ## Additional Features
 
-Beyond just drawing, vector drawing and CAD/CAM programs may have many additional features which go beyond just manipulating geometry or other elements. Many are adjuncts to Toolpaths, but are mentioned here since there is often an element of geometrical editing which they address. They are divided between bundled and being only available in the Pro version. A few which Carbide Create has include (it is possible that additional feature(s) may be in betas which are still in testing):
+Beyond just drawing, vector drawing and CAD/CAM programs may have many additional features which go beyond just manipulating geometry or other elements. Many are adjuncts to Toolpaths but are mentioned here since there is often an element of geometrical editing which they address. They are divided between bundled and being only available in the Pro version. A few which Carbide Create has include (it is possible that additional feature(s) may be in betas which are still in testing):
 
 * Image Tracing --- rather than manually re-draw a pixel image: [https://community.carbide3d.com/t/carbide-create-re-drawing/15811](https://community.carbide3d.com/t/carbide-create-re-drawing/15811) it is possible to import a pixel image and re-draw it: [https://community.carbide3d.com/t/carbide-create-image-tracing/31208](https://community.carbide3d.com/t/carbide-create-image-tracing/31208) (note that tracing is inherently black and white, on/off, and that it may be necessary to adjust the Threshold setting and trace multiple times in order to capture all details of an image).
 
@@ -731,4 +731,4 @@ Extending all of these into 3 dimensions becomes more complex with each addition
 
 The Toolpaths pane of Carbide Create affords a number of options to realize 2D geometry as 3D elements cut away from the stock: [https://willadams.gitbook.io/design-into-3d/toolpaths](https://willadams.gitbook.io/design-into-3d/toolpaths) and the Pro mode adds even more: [https://willadams.gitbook.io/design-into-3d/3d-modeling-from-2d-geometry](https://willadams.gitbook.io/design-into-3d/3d-modeling-from-2d-geometry)
 
-Up through arcs and regular curves, these are usually manageable, as is expressed in constructive solid geometry (CSG), and OpenSCAD (and its Blockly derivative BlockSCAD, or fork RapCAD) is essentially a scripting front-end for this. Extending arbitrary curves into 3 dimensional space involves complex geometric calculations which are the domain of 3 dimensional modeling tools such as Blender and various commercial programs. Fortunately, the regular polygons and extruded shapes of CSG afford one a very wide array of design options.
+Up through arcs and regular curves, these are usually manageable, as is expressed in constructive solid geometry (CSG), and OpenSCAD (and its Blockly derivative BlockSCAD, or fork RapCAD) is essentially a scripting front-end for this. Extending arbitrary curves into 3-dimensional space involves complex geometric calculations which are the domain of 3 dimensional modeling tools such as Blender and various commercial programs. Fortunately, the regular polygons and extruded shapes of CSG afford one a very wide array of design options.
