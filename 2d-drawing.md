@@ -70,6 +70,8 @@ Note that in 810 it is possible to shift-click to create a circle from edge-to-e
 
 Note that the **Done** button allows one to cancel out of the circle drawing mode.
 
+Note that circles, as other shapes made with tools specific to a shape such as rectangles and regular polygons have a center point in addition to their cardinal nodes, and midpoints at the intercardinal directions.
+
 In Carbide Create, circles are defined as four Bézier curves (as opposed to using arcs) which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for practical purposes. Researching the math involved in this differentiation is left as an exercise for the interested reader.
 
 One limitation of circles in current versions of Carbide Create is that they may not be rotated. A work-around for this is to put one node on a grid point, go into Node Edit mode, move the node, then move it back, converting the Circle into a Curve object which describes the same geometry as the original circle, but which is no longer described by its radius.
