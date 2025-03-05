@@ -92,6 +92,8 @@ Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](http
 
 Carbide Create draws from center out by default, but will draw from corner-to-corner when one holds the control (or command) (or shift) keyboard modifier.
 
+In the same fashion as other shapes which have specific support in Carbide Create, rectangles will have a center point which may be interacted with, as well as a midpoint along each side.
+
 ### Polygons
 
 Drawing programs often have support for regular polygons, as does Carbide Create. As with other objects in Carbide Create, Polygons are drawn from the center point out, unless the Shift modifier key is held which allows drawing Corner-to-Corner:
@@ -99,6 +101,8 @@ Drawing programs often have support for regular polygons, as does Carbide Create
 <figure><img src=".gitbook/assets/image (361).png" alt=""><figcaption><p>Carbide Create drawing a hexagon.</p></figcaption></figure>
 
 Once drawn, they may be adjusted in their dimensions, and for their number of sides, see below.
+
+In common with circles and rectangles, regular polygons will have a center (necessary since they are defined by radius) as well as a midpoint for each segment which may be interacted with.
 
 ### Parameters
 
