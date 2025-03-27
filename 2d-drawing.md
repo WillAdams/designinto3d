@@ -498,7 +498,7 @@ CAD and drawing programs may have a number of other features, depending on their
 
 This allows setting:
 
-* Stock size: Width (X), Height (Y)
+* Stock size: Width (X), Height (Y) — note that the minimum dimension is 25mm, maximum 200 inches
 * Model Resolution (for the 3D model in Pro mode)
 * Stock Thickness (Z)
 * Zero Height: Top or Bottom
@@ -533,7 +533,7 @@ This may be undone using the command **Ungroup Vectors**:
 
 ### Layers
 
-Carbide Create supports layers since version 521. Available under Edit | Show Layers:
+Carbide Create supports layers since version 521. Available under Edit | Show Layers in versions prior to build 814:
 
 ![](<.gitbook/assets/image (92).png>)
 
@@ -546,6 +546,14 @@ it then affords the ability to create and name layers (or delete them), as well 
 and to move objects to specific layers and to hide/show, or lock/unlock layers, or set a layer to be "Active" (which will cause all new objects to be created on that layer).
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Since Build 814, the layer functionality has moved to a persistent pane beneath the tool area:
+
+<figure><img src=".gitbook/assets/image (388).png" alt=""><figcaption></figcaption></figure>
+
+and all layer functionality is accessible from the icons associated with each layer, including functionality for the palette as a whole (so to make a new layer, click on the gear icon button for _any_ layer), as well as functionality specific to the layer associated with the gear icon button:
+
+
 
 A Layer is an organizational tool which allows one to separate geometry and colour-code it​ and may exist in one of several states:
 
