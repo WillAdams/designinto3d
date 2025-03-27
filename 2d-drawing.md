@@ -553,7 +553,15 @@ Since Build 814, the layer functionality has moved to a persistent pane beneath 
 
 and all layer functionality is accessible from the icons associated with each layer, including functionality for the palette as a whole (so to make a new layer, click on the gear icon button for _any_ layer), as well as functionality specific to the layer associated with the gear icon button:
 
-
+* Activate
+* Select all on Layer
+* Move Selection to Layer
+* Rename
+* Hide
+* Lock
+* Delete
+* Move Up
+* Move Down
 
 A Layer is an organizational tool which allows one to separate geometry and colour-code it​ and may exist in one of several states:
 
@@ -567,6 +575,9 @@ A Layer is an organizational tool which allows one to separate geometry and colo
 * a two-sided job might have separate layers for each side ​
 * a file with multiple parts might have each part on a separate layer
 * a file with multiple tools or which has different types of toolpaths or toolpaths which cut to different depths might have the geometry for each tool/toolpath type/depth on a separate layer, and use the Toolpath facility to associate a toolpath w/ a layer ​
+* a file which is created from an auto-tracing might have the initial version duplicated and moved to a separate locked layer for reference
+
+or, any other usage which assists in working with geometry and other elements in the application.
 
 ### Duplication and Arrays
 
