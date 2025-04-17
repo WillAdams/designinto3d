@@ -511,12 +511,13 @@ There are a number of tools for this:
 
 One possibility would be to use the include file option in Gitbook, write the code in separate files which are named in such a way that they may be easily combined, and then to edit the underlying files as needed and to concatenate them when making the source for the actual program.
 
-* docmfp --- this is the tool which was ultimately selected (as is obvious above in the referenced file)
+* docmfp --- this is the tool which was ultimately selected (as is obvious above in the referenced file), but note that a package was ultimately created, see literati.sty
 * gmdoc
 * [https://marimo.io/](https://marimo.io/)
 * [https://quarto.org/docs/get-started/hello/text-editor.html](https://quarto.org/docs/get-started/hello/text-editor.html)
 * [https://diataxis.fr/tutorials/](https://diataxis.fr/tutorials/)
 * [https://nbdev.fast.ai/getting\_started.html](https://nbdev.fast.ai/getting_started.html)
+* [https://gtoolkit.com/](https://gtoolkit.com/)
 
 
 
