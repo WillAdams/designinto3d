@@ -15,6 +15,7 @@ A number of different programming tools and methodologies have been shown throug
 * GSharp --- [https://github.com/NRSoft/GSharp](https://github.com/NRSoft/GSharp) --- a system which allows programming in G-code using loops and variables even on G-code implementations which lack such features.
 * FullControl GCODE --- [https://fullcontrolgcode.com/software](https://fullcontrolgcode.com/software) --- this was originally an Excel spreadsheet, but it was re-implemented in Python and is available as a website: [https://fullcontrol.xyz/](https://fullcontrol.xyz/) as well as a Python module: [https://github.com/FullControlXYZ/fullcontrol](https://github.com/FullControlXYZ/fullcontrol)
 * [https://pythonscad.org/](https://pythonscad.org/) (originally available at: [http://www.guenther-sohler.net/openscad/](http://www.guenther-sohler.net/openscad/)) --- a recent development, this implements Python within OpenSCAD, allowing one to either use a Python (.py) file, or OpenSCAD code which uses or references Python files
+* [https://blockmill.github.io/BlockMill/](https://blockmill.github.io/BlockMill/) -— recently announced at: [https://old.reddit.com/r/CNC/comments/1k08j3y/blockmill\_gcode\_building\_tool/](https://old.reddit.com/r/CNC/comments/1k08j3y/blockmill_gcode_building_tool/) this tool allows one to create G-code using blocks
 
 New ones are frequently developed, and future developments will be documented here as circumstances warrant.&#x20;
 
