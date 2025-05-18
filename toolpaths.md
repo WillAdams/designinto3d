@@ -17,10 +17,11 @@ The following toolpaths are either for decorative use or for Carbide Create Pro 
 
 * Texture (decorative)
 * Engrave (Pro only)
+* Face (Pro only)
 * 3D Rough (Pro only)
 * 3D Finish (Pro only)
 
-Carbide Create Pro also adds the option of Ramping in for toolpaths, and Rest machining for Pockets.
+Carbide Create Pro also adds the option of Ramping in for toolpaths, and Rest machining for Pockets, as well as Stock to Leave and Direct (Climb vs. Conventional) for Contours.
 
 The following toolpaths which Carbide Create supports will be discussed here:
 
@@ -31,11 +32,11 @@ The following toolpaths which Carbide Create supports will be discussed here:
 * Keyhole
 * Face
 
-Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V-endmills will be used for V-carving or chamfering or cutting at a precise angle as for certain types of joinery. Keyhole toolpaths require the use of specialty keyhole cutters which cut wider at the bottom than their shaft. Surfacing tools such as the McFly are used to flatten stock or the spoilboard with the Face toolpath (before it was available they were used with either a very shallow pocket toolpath, or a contour toolpath which follows geometry which describes the area to be cut).
+Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V-endmills will be used for V-carving or chamfering or cutting at a precise angle as for certain types of joinery. Keyhole toolpaths require the use of specialty keyhole cutters which cut wider at the bottom than their shaft. Surfacing tools such as the McFly are used to flatten stock or the spoilboard with the Face toolpath (before it was available they were used with either a very shallow pocket toolpath, or a contour toolpath which follows geometry which describes the area to be cut, see: [https://community.carbide3d.com/t/preparing-rough-cut-lumber-for-machining/73429](https://community.carbide3d.com/t/preparing-rough-cut-lumber-for-machining/73429)).
 
 Note that in Carbide Create, dimensions may be entered using math expressions (which may contain units indicated by in or mm) which are evaluated by entering = at the end, so 1in+8mm= will result in a dimension of either 1.3150in or 33.400mm depending on the current unit.&#x20;
 
-There are also 3 variables, _w_, _h_, and  _t_ may be used to reference the current stock width, height, and thickness respectively, and the expression may be left as an expression in certain fields by entering it without adding the = at the end, so t/2 will result in half the current stock thickness being used, and will update dynamically when the stock thickness is changed.
+There are also 3 variables, _w_, _h_, and  _t_ may be used to reference the current stock width, height, and thickness respectively, and the expression may be left as an expression in certain fields by entering it without adding the = at the end, so t/2 will result in half the current stock thickness being used, and will update dynamically when the stock thickness is changed. Such expressions are persistent for Start Depth and Max Depth if = is not used, allowing a somewhat parametric approach to cutting, and affording the possibility of creating template files containing toolpaths which may be used with appropriate geometry to quickly create parts.
 
 Carbide Create v7 added the option of associating a Toolpath with the content of a specified layer.
 
@@ -66,6 +67,8 @@ If cut with a ball-nosed endmill, a rounded groove may be achieved:
 One option for Contour Toolpaths is tabs. In Carbide Create v7 they may be added in the Design tab:
 
 <figure><img src=".gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 then the tabs may be instantiated in the Contour Toolpath setting.
 
@@ -129,7 +132,7 @@ As noted above, square, ball-nosed, and V-endmills may be used, and will be corr
 
 ![](<.gitbook/assets/image (249).png>)
 
-A notable use for a V-endmill when drilling is to chamfer a small hole.
+A notable use for a V-endmill when drilling is to chamfer a small hole, but this will require one to either do the math or draw up the stock, hole, and tool in profile, position as desired, and then measure to determine the necessary depth.
 
 ## V-Carve
 
@@ -149,7 +152,7 @@ Keyhole toolpaths as noted above, require the use of a special tool, and are not
 
 ## Selection
 
-When a toolpath is first made, a dialog is displayed which has two buttons in Toolpaths which function as the interface for what geometry is associated with a given toolpath. When editing a Toolpath, the following options are afforded which allow one to interact with the associated selection:
+When a toolpath is first made, a dialog is displayed which has two buttons in Toolpaths which function as the interface for what geometry is initially associated with a given toolpath. When editing a Toolpath, the following options are afforded which allow one to interact with the associated selection:
 
 * Change Vectors
 * Select Current Vectors
@@ -160,11 +163,13 @@ and the resultant window for the former (which is the same as when a toolpath is
 
 also affords the option to associate toolpaths with a Layer. For a discussion of the interactions of selection and toolpaths see: [https://community.carbide3d.com/t/still-struggling-with-toolpath/63383](https://community.carbide3d.com/t/still-struggling-with-toolpath/63383) If more than one piece of geometry is associated with a toolpath, then their arrangement will determine how the toolpath is actually cut.
 
+Naturally, editing a Toolpath affords a button to change what geometry/which layer is associated with it.
+
 ## Arrangement
 
 As noted in [2D Drawing](2d-drawing.md#arrangement), there are several possible arrangements for multiple pieces of geometry:
 
-* Adjacent/coincident --- the geometries are actually touching along some edges
+* Adjacent/coincident/superimposed --- the geometries are actually touching along some edges
 * Overlapping/intersecting --- the geometries overlap or intersect
 * Nesting --- each piece of geometry either contains, or is contained by the other piece(s) of geometry
 * No interaction --- geometries do not interact in any fashion
@@ -174,7 +179,7 @@ Best practice is for geometries to either nest or have no interaction, and all t
 * Adjacent/coincident --- such geometries will effectively be unioned when Toolpaths which interact with closed toolpaths are applied
 * Overlapping/intersecting --- depending on the winding, intersecting areas will either be filled or not, which can be hard to predict --- when the Toolpaths are not as expected, it will be necessary to create Boolean Union and/or Intersections of geometry to create the desired effect
 
-The most important consideration here is that it is consistent for a given version how a particular toolpath/geometry selection will be cut when a given toolpath is applied to it, so check the 3D preview, and if not as expected, select the geometry, go to the Design pane, and adjust as necessary to achieve the desired result, if need be, duplicating and unioning.
+The most important consideration here is that it is consistent for a given version how a particular toolpath/geometry selection will be cut when a given toolpath is applied to it, so check the 3D preview, and if not as expected, select the geometry, go to the Design pane, and adjust as necessary to achieve the desired result, if need be, duplicating and unioning, or for greater control, using Trim Vectors (possibly with additional drawn-in geometry) and/or Node Editing.
 
 ## Organization
 

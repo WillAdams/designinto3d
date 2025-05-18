@@ -312,7 +312,7 @@ Depending on the selection, Carbide Create affords the following Boolean operati
 
 Note that in most programs, the selection is modified, so if the original geometry will be needed after, it may be necessary that the objects be duplicated in alignment with the originals.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Note that Carbide Create does afford two checkbox options:
 
@@ -514,7 +514,7 @@ This allows setting:
 * Retract height --- also termed Safety height, this is how much the machine will lift in-between toolpaths
 * Units: Inch or millimeters
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Set Grid
 
@@ -552,7 +552,7 @@ it then affords the ability to create and name layers (or delete them), as well 
 
 and to move objects to specific layers and to hide/show, or lock/unlock layers, or set a layer to be "Active" (which will cause all new objects to be created on that layer).
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Since Build 814, the layer functionality has moved to a persistent pane beneath the tool area:
 
