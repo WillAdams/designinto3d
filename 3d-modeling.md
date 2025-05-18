@@ -20,11 +20,11 @@ and is available as an installable download for Windows: [https://github.com/dun
 
 When first launched, it appears as a small window:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 with a list of recent files (if applicable) and buttons for creating a new document or opening an existing one, as well as standard window controls and interface elements for other commands such as maximizing:
 
-<figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Creating a new document brings up a window:
 
