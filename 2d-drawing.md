@@ -167,6 +167,8 @@ It is possible to zoom in/out using the scroll wheel on a mouse, or by using pin
 * Fit View to Stock (this is in the View menu only) --- sets the view to the Stock area
 * Fit View to Selection --- ctrl/command f --- zooms in/out to the currently selected object
 
+In the absence of traditional scroll bars, panning may be done by right-click dragging.
+
 ## Text
 
 Not geometry, but many drawing and CAD programs allow setting text. Carbide Create affords this:
