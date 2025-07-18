@@ -40,6 +40,16 @@ There are also 3 variables, _w_, _h_, and  _t_ may be used to reference the curr
 
 Carbide Create v7 added the option of associating a Toolpath with the content of a specified layer.
 
+## Toolpath Options
+
+Toolpaths will in general allow specifying:
+
+* Tool with an "Edit..." button to allow tool selection
+* Contours with buttons for "Change Vectors" and "Select Current Vectors"
+* Starting Depth — this is the height relative to the top of the stock where the cut will be positioned/modeled, which allows for instance placing a V carving design at the bottom of a pocket
+* Max Depth — the depth to which the feature will be cut (for V carving, the greatest possible depth allowed, and if a given region exceeds that depth it will be left uncut or cleared using the Pocket Clearing option if enabled
+* Name
+
 ## Contour
 
 Contour toolpaths follow along one or more drawn element(s) of geometry, and will be aligned relatively based on path orientation/direction which will determine the Offset Direction:
@@ -68,7 +78,7 @@ One option for Contour Toolpaths is tabs. In Carbide Create v7 they may be added
 
 <figure><img src=".gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 then the tabs may be instantiated in the Contour Toolpath setting.
 
@@ -127,6 +137,14 @@ Rest machining allows removing uncut material where a larger endmill cannot reac
 Drill toolpaths plunge the tool at the center of the selected geometry:
 
 ![](<.gitbook/assets/image (91).png>)
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+Toolpath options include all normal choices, and "Drill Type":
+
+* Full Depth — plunges to the full depth (only for thin stock or easily cut materials which clear chips easily)
+* Peck — the tool will cut to a given distance, partially retract, then plunge again
+* Peck w/ Full Retract — the tool will cut to a given distance, retract completely affording the best possibility of clearing chips, then plunge again
 
 As noted above, square, ball-nosed, and V-endmills may be used, and will be correctly previewed in how they cut:
 
