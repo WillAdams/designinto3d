@@ -36,7 +36,7 @@ Open polylines (or curves, see below) have limited functionality in terms of Too
 
 Lines will be used to define Rectangles (which may be squares) and regular Polygons as described below.
 
-Note that it is important that a given element not cross back upon itself, or have superimposed/repeated sections — the latter is of especial concern for imported files and can cause the automatic joining of elements in a DXF to become problematic.
+Note that it is important that a given element not cross back upon itself, or have superimposed/repeated sections — the latter is of especial concern for imported files and can cause the automatic joining of elements in a DXF to become problematic, as well as interfering with the calculation of toolpaths.
 
 ## Arcs
 
