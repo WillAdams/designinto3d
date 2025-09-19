@@ -10,7 +10,7 @@ As noted previously, before one can make a part, one must define the geometry of
 
 Carbide Create has two or three panes (Design, Toolpaths, and in Pro mode, Model). As with most drawing tools, there are menus for commands or different program functions/states, a palette of tools, and a work area, which includes a graphical representation of the "Stock" which is the material which will be cut away to make a design or part, and on the Stock there are lines for a grid which may be re-sized or hidden. The initial view has no objects which may be manipulated, these may be added as described below. Later versions add a pair of rulers around the drawing area and a status bar.
 
-Like most graphic applications there is a standard set of menus, **File** which allows making new files, opening existing files, saving the current file, or exporting geometry as an SVG file, or in Carbide Create Pro, exporting the 3D model as a PNG file, or to quit the application. The **Edit** menu affords various copy and selection options, Undo and Redo, Show Layers, as well as access to the Tool Database or to Select Post Processor. The **View** menu controls the view of the drawing area, as well as enabling or disabling Snap to Grid and High Resolution Simulation. Lastly, a **Help** menu has About, Register, and Help options.
+Like most graphical applications there is a standard set of menus, **File** which allows making new files, opening existing files, saving the current file, or exporting geometry as an SVG file, or in Carbide Create Pro, exporting the 3D model as a PNG file, printing the vector design (note that such a print may be used to make a PDF), or to quit the application. The **Edit** menu affords various copy and selection options, Undo and Redo, (note that while there is a command for Show Layers, that pane is persistent in current versions), as well as access to the Tool Database or to Select Post Processor. The **View** menu controls the view of the drawing area, as well as enabling or disabling Snap to Grid (keyboard shortcut for turning this on/off is F4) and High Resolution Simulation. Lastly, a **Help** menu has About, Register, and Help options.
 
 Note that the interface in Carbide Create is contextual, certain commands will only appear when nothing is selected, while others only when a single object is selected, while still others only make sense to show when multiple objects are selected and may have further requirements for usage such as the objects overlapping.
 
@@ -58,7 +58,7 @@ Edit | Select... | Select Open Vectors
 
 ### Closed Paths
 
-**Closed Paths** meet back at the point of origin and open up additional operations in Carbide Create and most other CAM tools. In Carbide Create they are indicated by being black when on the Default layer and not selected. In Euclid’s _Elements: Book I:_ [_Definition 13–14_ ](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. As **Open Paths**, they may be made up of lines, arcs, curves, or some combination. Often applications will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for **Circles**, **Rectangles** (which may be squares), and Regular **Polygons**.
+**Closed Paths** meet back at the point of origin and open up additional operations in Carbide Create and most other CAM tools. In Carbide Create they are indicated by being black when on the Default layer and not selected. In Euclid’s _Elements: Book I:_ [_Definition 13–14_ ](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI13.html)they are described as a defined boundary comprising a figure. Like to **Open Paths**, they may be made up of lines, arcs, curves, or some combination. Often applications will have especial support for regular polygons, allowing their creation or definition quickly and efficiently. Carbide Create has specific support for **Circles**, **Rectangles** (which may be squares), and Regular **Polygons**.
 
 #### Circles
 
@@ -66,7 +66,7 @@ Circles are defined in Euclid’s _Elements: Book I:_ [_Definition 15–17_](htt
 
 <figure><img src=".gitbook/assets/image (360).png" alt=""><figcaption><p>Carbide Create drawing a circle.</p></figcaption></figure>
 
-Note that in 810 it is possible to shift-click to create a circle from edge-to-edge.
+Note that in 810 and later it is possible to shift-click to create a circle from edge-to-edge.
 
 Note that the **Done** button allows one to cancel out of the circle drawing mode.
 
@@ -90,7 +90,7 @@ Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](http
 
 ![Carbide Create drawing a rectangle.](<.gitbook/assets/Carbide_Create_interface_create_rectangle (1).png>)
 
-Carbide Create draws from center out by default, but will draw from corner-to-corner when one holds the control (or command) (or shift) keyboard modifier.
+Carbide Create draws from corner-to-corner by default in 830 and later, but will draw from center-to-corner when one holds the control (or command) (or shift) keyboard modifier.
 
 In the same fashion as other shapes which have specific support in Carbide Create, rectangles will have a center point which may be interacted with, as well as a midpoint along each side.
 
@@ -366,10 +366,12 @@ As noted above, geometry is made up of lines and/or curves which are bounded by 
 
 When in Node Edit Mode it is possible to:
 
-* add an on-path node by right-clicking on a part of the path which does not have nodes and choosing _Insert Node_
+* add an on-path node by right-clicking on a part of the path which does not have nodes and choosing _Insert Node_ — keyboard shortcut _i_
 * delete an on-path node (when it is selected) by right-clicking and choosing _Delete Node_ — keyboard shortcut _d_ for the currently selected node(s)
-* toggle one or more nodes from smooth (indicated by a circle) to sharp (indicated by a square) and vice-versa by selecting and then right-clicking and choosing _Toggle Smooth_ or using the keyboard shortcut _s_ for the currently selected node(s)
-* cut open a path (which will convert a closed path to an open one) by right-clicking and choosing _Cut Vector_
+* set one or more nodes to be smooth (indicated by a circle) by selecting and then right-clicking and choosing _Set Smooth_ or using the keyboard shortcut _s_ for the currently selected node(s)
+* set one or more nodes to be sharp, retracting the associated off-curve nodes by right-clicking and choosing _Set Sharp_ or using the keyboard shortcut _v_
+* set one or more nodes to cusp, setting the off-curve nodes to project at an angle, allowing them to be dragged asymmetrically by right-clicking and choosing _Set Cusp_ or using the keyboard shortcut _u_
+* cut open a path (which will convert a closed path to an open one) by right-clicking and choosing _Cut Vector_ or using the keyboard shortcut _c_
 
 Off-path nodes (indicated by small, filled circles) may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and/or asymmetry.
 
@@ -548,7 +550,7 @@ Carbide Create supports layers since version 521. Available under Edit | Show La
 
 (or using the alphabetic keyboard shortcut _l_)
 
-it then affords the ability to create and name layers (or delete them), as well as to color-code them:
+it then affords the ability to create and name layers (or delete them), as well as to color-code them (by clicking on the color swatch in current versions):
 
 ![](<.gitbook/assets/image (310).png>)
 
@@ -566,11 +568,13 @@ and all layer functionality is accessible from the icons associated with each la
 * Select all on Layer
 * Move Selection to Layer
 * Rename
-* Hide
+* Hide/Show
 * Lock
 * Delete
 * Move Up
 * Move Down
+
+The color swatch for a given layer may be clicked on to bring up a dialog to change the color used for that layer. It is also possible to toggle the icons for show/hide and lock/unlock by double-clicking on them.
 
 A Layer is an organizational tool which allows one to separate geometry and colour-code it​ and may exist in one of several states:
 
