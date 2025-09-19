@@ -337,7 +337,7 @@ To create a curve, select the Curve tool, then click or click-drag where one wan
 
 #### Open or Closed Paths
 
-Once a Curve (or Polyline) is created it may be either open (indicated by being magenta when not selected), or closed (black). Open paths may be closed using the **Join Vectors** command:
+Once a Curve (or Polyline) is created it may be either open (indicated by being magenta when not selected) and made by clicking Done in the Curve tool, or closed (black) which is done by clicking on the initial point or continuing that click as a drag to define the positioning of the off-curve nodes. Open paths may be closed using the **Join Vectors** command:
 
 ![Carbide Create closing curve using Join command.](<.gitbook/assets/Carbide_Create_interface_join_curve (3).png>)
 
