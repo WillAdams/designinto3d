@@ -737,6 +737,9 @@ For further information on Carbide Create please see:
 
 * [https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839)
 * [https://old.reddit.com/r/shapeoko/wiki/carbidecreate](https://old.reddit.com/r/shapeoko/wiki/carbidecreate) (a wiki page)
+
+Carbide Create has been the subject of a number of Carbide 3D blog posts which together with various posts about beta versions on the Carbide 3D Community Forums capture the history of its development:
+
 * [https://carbide3d.com/blog/carbide-create-node-editing/](https://carbide3d.com/blog/carbide-create-node-editing/)
 * [https://carbide3d.com/blog/create-v8/](https://carbide3d.com/blog/create-v8/)
 * [https://carbide3d.com/blog/create-big-file-update/](https://carbide3d.com/blog/create-big-file-update/)
