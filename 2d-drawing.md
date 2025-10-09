@@ -730,12 +730,14 @@ For further information on Carbide Create please see:
 * [https://carbide3d.com/hub/courses/create/](https://carbide3d.com/hub/courses/create/) (a collection of tutorial videos on the 2D aspects)
 * [https://carbide3d.com/hub/courses/create-pro/](https://carbide3d.com/hub/courses/create-pro/) (a collection of videos on the features added by the Pro licensing mode)
 * [http://community.carbide3d.com/c/software/carbide-create](http://community.carbide3d.com/c/software/carbide-create) (a community forum)
-* [https://old.reddit.com/r/shapeoko/wiki/carbidecreate](https://old.reddit.com/r/shapeoko/wiki/carbidecreate) (a wiki page)
+* [https://community.carbide3d.com/c/tutorials/14](https://community.carbide3d.com/c/tutorials/14) (a list of tutorials, mostly for Carbide Create)
 * [https://carbide3d.com/carbidecreate/shortcuts](https://carbide3d.com/carbidecreate/shortcuts)
 
 ![](.gitbook/assets/Carbide3D_create_motion_keyboard_shortcuts.png)
 
 * [https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839](https://community.carbide3d.com/t/keyboard-cheat-sheet-for-carbide-create-and-motion/7839)
+* [https://old.reddit.com/r/shapeoko/wiki/carbidecreate](https://old.reddit.com/r/shapeoko/wiki/carbidecreate) (a wiki page)
+* [https://carbide3d.com/blog/carbide-create-node-editing/](https://carbide3d.com/blog/carbide-create-node-editing/)
 * [https://carbide3d.com/blog/create-v8/](https://carbide3d.com/blog/create-v8/)
 * [https://carbide3d.com/blog/create-big-file-update/](https://carbide3d.com/blog/create-big-file-update/)
 * [https://carbide3d.com/blog/carbide-create-v7/](https://carbide3d.com/blog/carbide-create-v7/)
