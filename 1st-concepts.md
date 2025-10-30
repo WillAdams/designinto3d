@@ -10,11 +10,11 @@ The first project is a rectangular block with the proportions of the monolith fr
 
 This is of course easily drawn up in overhead, front, and profile views:
 
-![1 × 4 × 9 monolith drawn in 2D](.gitbook/assets/monolith\_1x4x9\_Carbide\_Create.PNG)
+![1 × 4 × 9 monolith drawn in 2D](.gitbook/assets/monolith_1x4x9_Carbide_Create.PNG)
 
 Which may be combined into an isometric view quite easily:
 
-![Isometric view](.gitbook/assets/monolith\_isometric.png)
+![Isometric view](.gitbook/assets/monolith_isometric.png)
 
 A quick and easy way to model in 3D is to use the Blockly variant of OpenSCAD, BlockSCAD: [https://www.blockscad3d.com/editor/](https://www.blockscad3d.com/editor/)
 
@@ -30,7 +30,7 @@ With the part designed, the next consideration is manufacture. The easiest way t
 
 In order to do this, one would create a checkbox (or Boolean) in BlockSCAD (or OpenSCAD). Unfortunately, support for 2D in the former is quite limited, so it will be necessary to model this in 3D, and then export to the latter to actually export a DXF or SVG, as opposed to just exporting the 3D model as an STL.
 
-In theory one would simply assign an outer profile toolpath to the front view above, but actually manufacturing this is a bit problematic however, since a typical endmill such as a #201 only has ¾″ of flute length, slotting is hard, and wood is measured in rough cut, not finished dimensions. For the former see: [https://docs.carbide3d.com/tutorials/tutorial-tooling/](https://docs.carbide3d.com/tutorials/tutorial-tooling/) and for the latter, consult a text on woodworking or a book such as R. Bruce Hoadley’s highly-recommended [_Understanding Wood: A Craftsman's Guide to Wood Technology_](https://www.goodreads.com/book/show/156605.Understanding\_Wood).
+In theory one would simply assign an outer profile toolpath to the front view above, but actually manufacturing this is a bit problematic however, since a typical endmill such as a #201 only has ¾″ of flute length, slotting is hard, and wood is measured in rough cut, not finished dimensions. For the former see: [https://docs.carbide3d.com/tutorials/tutorial-tooling/](https://docs.carbide3d.com/tutorials/tutorial-tooling/) and for the latter, consult a text on woodworking or a book such as R. Bruce Hoadley’s highly-recommended [_Understanding Wood: A Craftsman's Guide to Wood Technology_](https://www.goodreads.com/book/show/156605.Understanding_Wood).
 
 A further consideration is the matter of tooling ― it is necessary to consider the diameter of the endmill in cutting out the part, so it is necessary to add a few more variables including `Endmill Diameter` and some logic to arrange things. This also requires that one revisit matters of orientation and rotation. It is best to work with the normal Cartesian orientation ― this allows one to use a cylinder to represent an endmill. Similarly, we want to represent the area which the endmill will remove, as opposed to merely the part itself. Adjust for that and we get:
 
@@ -38,4 +38,4 @@ A further consideration is the matter of tooling ― it is necessary to consider
 
 This is available at: [https://www.blockscad3d.com/community/projects/810179](https://www.blockscad3d.com/community/projects/810179)
 
-The solution of course, is making a hollow part with top and bottom and four sides. While modern adhesives would allow a simple butt joint to work, having a CNC affords the option of doing joinery in new ways suited to how the machine can move precisely despite repetition. This book is about that solution.
+The solution of course, is making a hollow part with top and bottom and four sides. While modern adhesives would allow a simple butt joint to work, having a CNC affords the option of doing joinery in new ways suited to how the machine can move precisely including with repetition. This book is about that solution.
