@@ -12,7 +12,7 @@ An alternative technique would be to lay the stock out flat and machine the edge
 
 ## The Simple Box Rabbeted Joint
 
-One of the oldest of woodworking joints however is the rabbeted joint which fortuitously allows for this sort of thing without voids. It is so simple that it is the subject of a video, “The Simple Box” by Carbide 3D:
+One of the oldest of woodworking joints however is the rabbeted joint which fortuitously allows for this sort of thing, possibly without voids. It is so simple that it is the subject of a video, “The Simple Box” by Carbide 3D:
 
 {% embed url="https://www.youtube.com/watch?v=V93xDM3lXsM" %}
 
