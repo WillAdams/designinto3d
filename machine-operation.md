@@ -6,7 +6,7 @@ description: Putting everything together to make parts and projects
 
 Ideally everything for operating a machine would be covered at: [https://my.carbide3d.com/](https://my.carbide3d.com/) as well as: [https://shapeokoenthusiasts.gitbook.io/shapeoko-cnc-a-to-z/](https://shapeokoenthusiasts.gitbook.io/shapeoko-cnc-a-to-z/) with the specifics of Carbide Create covered in [2D Drawing](2d-drawing.md), [Toolpaths](toolpaths.md), and (for folks with Pro licenses) [3D Modeling from 2D Geometry](3d-modeling-from-2d-geometry.md), and Carbide Motion covered in [Machine Motion](machine-motion.md). This chapter will function as an overview of the entire process of making a part or project, making no assumptions.
 
-The Shapeoko is a 3-axis CNC router made by Carbide 3D. [https://carbide3d.com/](https://carbide3d.com/)
+The Shapeoko and Nomad are 3-axis CNC routers made by Carbide 3D. [https://carbide3d.com/](https://carbide3d.com/).
 
 ## Design
 
@@ -38,6 +38,10 @@ When securing stock, options include:
 * vacuum
 
 It is possible for a single part/project to use multiple techniques (a typical one would be clamping from the side initially so as to drill through holes, then using those holes to fasten a part in place for the balance of the operations). When fastening it is important to consider leverage and the attendant principles. See: [https://community.carbide3d.com/t/work-part-clamping-many-of-you-are-doing-it-wrong/3396](https://community.carbide3d.com/t/work-part-clamping-many-of-you-are-doing-it-wrong/3396)&#x20;
+
+## Safety/Dust Collection
+
+Personal Protective Equipment (PPE) is vital to safe operation, and dust collection can be a big part of it. PPE should be comfortable and have safety features and ratings suited to the material being cut and the tool being used. Dust collection/chip management might be deferred for certain materials in favour of an air blast or coolant setup, but should be considered and addressed as necessary.
 
 ## Machine Operating Checklist
 
