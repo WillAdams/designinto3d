@@ -6,6 +6,8 @@ description: A system for parametric design of projects for CNC or traditional t
 
 Design into 3D is an effort to create a systematic set of design and fabrication techniques and project generators for objects made using CNC machines, documenting things well enough that one would be able to draw up traditional plans using pen and pencil and fabricate an instance of a project using hand tools, or create files which will efficiently and correctly make toolpaths for cutting on a CNC.
 
+Note that it is _not_ a general-purpose CNC reference text, for that, see the excellent: [https://shapeokoenthusiasts.gitbook.io/shapeoko-cnc-a-to-z/](https://shapeokoenthusiasts.gitbook.io/shapeoko-cnc-a-to-z/).
+
 It is simultaneously:
 
 * an opensource project which is a collection of projects for objects such as boxes, furniture, and tools (available on [https://cutrocket.com/u/WillAdams](https://cutrocket.com/u/WillAdams) and [https://www.thingiverse.com/willadams/designs](https://www.thingiverse.com/willadams/designs) and [https://github.com/WillAdams/Design\_Into\_3D/](https://github.com/WillAdams/Design_Into_3D/))
