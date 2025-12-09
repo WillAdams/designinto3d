@@ -90,3 +90,9 @@ Arching the lid so that it fits requires calculating two triangle angles:
 Combining all the wooden parts and one arrives at:
 
 ![](<.gitbook/assets/Blockscad final project withoutstraps.PNG>)
+
+Kerf Bending
+
+A further technique not yet discussed is kerf bending, which is well-described in the video:
+
+[https://www.youtube.com/watch?v=auLHu3s8B1c](https://www.youtube.com/watch?v=auLHu3s8B1c)
