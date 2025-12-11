@@ -205,6 +205,10 @@ The Edit User Macros button allows one to create or modify User Macros/Quick Act
 
 Quick Actions are made up of G-code, but only that which Grbl supports, plus those commands which Carbide Motion interprets. Not that there are no loops, variables, or other programming niceties.
 
+N.B., the "Create from current zero" button — this may be used to create a Quick Action to restore the current zero as described in:
+
+[https://www.youtube.com/watch?v=QI-TZltM2HY](https://www.youtube.com/watch?v=QI-TZltM2HY)&#x20;
+
 ## (Machine) Settings
 
 The Machine Settings window has three tabs:
