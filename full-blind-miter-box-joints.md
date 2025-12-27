@@ -30,7 +30,9 @@ For more on this see:
 
 [https://community.carbide3d.com/t/full-blind-finger-joints-in-carbide-create/53329](https://community.carbide3d.com/t/full-blind-finger-joints-in-carbide-create/53329)
 
+and
 
+[https://community.carbide3d.com/t/kitchen-drawers-with-finger-or-box-joints/99642](https://community.carbide3d.com/t/kitchen-drawers-with-finger-or-box-joints/99642/10)
 
 
 
