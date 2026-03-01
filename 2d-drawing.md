@@ -167,9 +167,9 @@ Polygons may be adjusted for Radius (since only regular polygons are supported, 
 
 It is possible to zoom in/out using the scroll wheel on a mouse, or by using pinch gestures on a trackpad. There are also three commands, two of which have keyboard shortcuts which control the view:
 
-* Fit to Job --- f --- this sets the view to encompass the entire stock area and any elements which extend beyond it
-* Fit View to Stock (this is in the View menu only) --- sets the view to the Stock area
-* Fit View to Selection --- ctrl/command f --- zooms in/out to the currently selected object
+* Fit to Job — f — this sets the view to encompass the entire stock area and any elements which extend beyond it
+* Fit View to Stock (this is in the View menu only) — sets the view to the Stock area
+* Fit View to Selection — ctrl/command f — zooms in/out to the currently selected object
 
 In the absence of traditional scroll bars, panning may be done by right-click dragging.
 
@@ -185,7 +185,7 @@ Text objects are limited to a single line of text in Carbide Create, and one may
 
 When initially selected, a text object will not bring up the properties of the Text tool. It is necessary to either select the Text tool to access these properties, or to double-click on the text object.
 
-It is also possible to convert text to curves using the button, "Convert to Curves" --- once converted to curves, the underlying geometry may be manipulated. See: [https://carbide3d.com/blog/merging-script-fonts-in-carbide-create/](https://carbide3d.com/blog/merging-script-fonts-in-carbide-create/)
+It is also possible to convert text to curves using the button, "Convert to Curves" — once converted to curves, the underlying geometry may be manipulated. See: [https://carbide3d.com/blog/merging-script-fonts-in-carbide-create/](https://carbide3d.com/blog/merging-script-fonts-in-carbide-create/)
 
 Another option is to set the text on an arc, rather than all in a straight line. When doing so, alignment may be used to control where on the arc the text will appear:
 
@@ -217,9 +217,9 @@ As an alternative to this, a line may be drawn, and when selected will afford th
 
 There are multiple ways to select objects:
 
-* click to select --- this will select a single object
+* click to select — this will select a single object
 * shift click to add (or remove) an object from the current selection
-* click-drag --- this will make a selection of the objects within the drag-rectangle --- note that there are two directions to drag, and they are meaningful: down is selective and will only include objects completely within the drag-rectangle, while up is promiscuous and will include any object partially are wholly within the drag-rectangle
+* click-drag — this will make a selection of the objects within the drag-rectangle — note that there are two directions to drag, and they are meaningful: down is selective and will only include objects completely within the drag-rectangle, while up is promiscuous and will include any object partially are wholly within the drag-rectangle
 * menu entries to select object according to certain criteria such as Edit | Select All which will select all objects
 
 Note that when selecting there are certain special points which may be used for selection or snapping, and which will afford useful options for precision movement and placement:
@@ -351,7 +351,7 @@ Note that the beginning and ending nodes will be connected as directly as possib
 
 and it may be necessary to adjust the curve if the path crosses itself.
 
-As of Carbide Create build 627 it is possible to change a closed path to an open path by right-clicking and using the Cut Vector command while in Node Edit mode (see below). Note that often, rather than an open path, one wants a closed path which describes the region which would cut with an open path --- it is possible to use Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)
+As of Carbide Create build 627 it is possible to change a closed path to an open path by right-clicking and using the Cut Vector command while in Node Edit mode (see below). Note that often, rather than an open path, one wants a closed path which describes the region which would cut with an open path — it is possible to use Boolean operations to create a closed geometry which describes where one wishes to cut: [https://community.carbide3d.com/t/deleting-line-help/32956](https://community.carbide3d.com/t/deleting-line-help/32956)
 
 #### Principles for Bézier Curves
 
@@ -498,12 +498,12 @@ A curve which alternates on-curve and off-curve nodes, B-Splines are used for Tr
 
 There are of course several possible arrangements for multiple pieces of geometry:
 
-* Adjacent/coincident/superimposed --- the geometries are actually touching along some edges
-* Overlapping/intersecting --- the geometries overlap or intersect
-* Nesting --- each piece of geometry either contains, or is contained by the other piece(s) of geometry
-* No interaction --- geometries do not interact in any fashion
+* Adjacent/coincident/superimposed — the geometries are actually touching along some edges
+* Overlapping/intersecting — the geometries overlap or intersect
+* Nesting — each piece of geometry either contains, or is contained by the other piece(s) of geometry
+* No interaction — geometries do not interact in any fashion
 
-Best practice is for geometries to either nest or have no interaction --- the other two possibilities have potential interactions and implications which will be discussed in [Toolpaths](toolpaths.md).
+Best practice is for geometries to either nest or have no interaction — the other two possibilities have potential interactions and implications which will be discussed in [Toolpaths](toolpaths.md).
 
 ## Other Features
 
@@ -518,8 +518,8 @@ This allows setting:
 * Stock Thickness (Z)
 * Zero Height: Top or Bottom
 * Toolpath Zero: Lower-Left, Center-Left, Top-Left, Center
-* Material and Machine --- these are legacy settings and have no effect
-* Retract height --- also termed Safety height, this is how much the machine will lift in-between toolpaths
+* Material and Machine — these are legacy settings and have no effect
+* Retract height — also termed Safety height, this is how much the machine will lift in-between toolpaths
 * Units: Inch or millimeters
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -582,10 +582,10 @@ The color swatch for a given layer may be clicked on to bring up a dialog to cha
 
 A Layer is an organizational tool which allows one to separate geometry and colour-code it​ and may exist in one of several states:
 
-* **ACTIVE** (indicated by being bold, must also be unlocked and visible/not-hidden) --- all new objects will be created on the ACTIVE layer. Double-clicking on a layer will set it to be the **ACTIVE** layer.
+* **ACTIVE** (indicated by being bold, must also be unlocked and visible/not-hidden) — all new objects will be created on the ACTIVE layer. Double-clicking on a layer will set it to be the **ACTIVE** layer.
 * Hidden (indicated by strike-through)
 * Locked (indicated by closed padlock)
-* not ACTIVE --- elements may be selected/manipulated, but adding elements to a layer is done by using the menu to move the current selection to the desired layer
+* not ACTIVE — elements may be selected/manipulated, but adding elements to a layer is done by using the menu to move the current selection to the desired layer
 
 ​How they are used, depends on a given project and how a user wishes to approach it:
 
@@ -717,16 +717,15 @@ Websites for this sort of thing:
 Beyond just drawing, vector drawing and CAD/CAM programs may have many additional features which go beyond just manipulating geometry or other elements. Many are adjuncts to Toolpaths but are mentioned here since there is often an element of geometrical editing which they address. They are divided between bundled and being only available in the Pro version. A few which Carbide Create has include (it is possible that additional feature(s) may be in betas which are still in testing):
 
 * Cutter Check — interactively demonstrates if a specified diameter of tool will fit within the current selection
-* Image Tracing --- rather than manually re-draw a pixel image: [https://community.carbide3d.com/t/carbide-create-re-drawing/15811](https://community.carbide3d.com/t/carbide-create-re-drawing/15811) it is possible to import a pixel image and auto-trace it: [https://community.carbide3d.com/t/carbide-create-image-tracing/31208](https://community.carbide3d.com/t/carbide-create-image-tracing/31208) (note that tracing is inherently black and white, on/off, and that it may be necessary to adjust the Threshold setting and trace multiple times in order to capture all details of an image, see: [https://community.carbide3d.com/t/how-to-use-multiple-image-traces-to-capture-all-details-in-an-image/65714](https://community.carbide3d.com/t/how-to-use-multiple-image-traces-to-capture-all-details-in-an-image/65714)).
+* Image Tracing — rather than manually re-draw a pixel image: [https://community.carbide3d.com/t/carbide-create-re-drawing/15811](https://community.carbide3d.com/t/carbide-create-re-drawing/15811) it is possible to import a pixel image and auto-trace it: [https://community.carbide3d.com/t/carbide-create-image-tracing/31208](https://community.carbide3d.com/t/carbide-create-image-tracing/31208) (note that tracing is inherently black and white, on/off, and that it may be necessary to adjust the Threshold setting and trace multiple times in order to capture all details of an image, see: [https://community.carbide3d.com/t/how-to-use-multiple-image-traces-to-capture-all-details-in-an-image/65714](https://community.carbide3d.com/t/how-to-use-multiple-image-traces-to-capture-all-details-in-an-image/65714)).
 
 <figure><img src=".gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
 * Inlay — originally made available at [https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115](https://community.carbide3d.com/t/inlay-mode-for-carbide-create/59115) since then, a new inlay mode has become standard: [https://community.carbide3d.com/t/inlay-update-in-carbide-create/78451](https://community.carbide3d.com/t/inlay-update-in-carbide-create/78451)
-* STL Import --- this is a feature in Pro, which allows importing an STL centered on the geometry which is selected when it is imported: [https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12](https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12)
-*
-* Tiling --- another Pro feature: [https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334](https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334) this may be done manually as noted at: [https://community.carbide3d.com/t/tiling-questions-issues/14352/5](https://community.carbide3d.com/t/tiling-questions-issues/14352/5)
-* Toolpath Volume --- another Pro feature, this allows one to know in advance how much epoxy will be needed to fill a given toolpath: [https://community.carbide3d.com/t/carbide-create-beta-760/68493/23](https://community.carbide3d.com/t/carbide-create-beta-760/68493/23)
-* Post Processor --- this is a concept specific to CAM tools. G-code is available in many dialects, so an application will use a post-processor to adapt the specifics of the G-code to match the dialect used by the firmware in a specific machine. Carbide Create affords four post-processors: Basic G-code --- this should be simple enough to work in pretty much any machine, Grbl --- this is the firmware used by Carbide 3D machines (and many others) and should work in any machine which uses that G-code interpreter (note that Grbl uses LinuxCNC as a reference implementation, which in turn uses Mach 3, which is a de facto industry standard, so this should work for a wide variety of machines), and Carbide 3D Nomad/Shapeoko --- these post-processors support Carbide 3D machines, and all of the possible accessories, including the BitRunner or VFD spindle (affording tool on/off and possibly speed control), or the BitSetter (which allows for measurement of tool length offset and tool changes). Note that there is an option for programming custom post-processors: [https://carbide3d.com/hub/faq/create-pro-custom-post-processor/](https://carbide3d.com/hub/faq/create-pro-custom-post-processor/)
+* Post Processor — this is a concept specific to CAM tools. G-code is available in many dialects, so an application will use a post-processor to adapt the specifics of the G-code to match the dialect used by the firmware in a specific machine. Carbide Create affords four post-processors: Basic G-code — this should be simple enough to work in pretty much any machine, Grbl — this is the firmware used by Carbide 3D machines (and many others) and should work in any machine which uses that G-code interpreter (note that Grbl uses LinuxCNC as a reference implementation, which in turn uses Mach 3, which is a de facto industry standard, so this should work for a wide variety of machines), and Carbide 3D Nomad/Shapeoko — these post-processors support Carbide 3D machines, and all of the possible accessories, including the BitRunner or VFD spindle (affording tool on/off and possibly speed control), or the BitSetter (which allows for measurement of tool length offset and tool changes). Note that there is an option for programming custom post-processors: [https://carbide3d.com/hub/faq/create-pro-custom-post-processor/](https://carbide3d.com/hub/faq/create-pro-custom-post-processor/)
+* STL Import — this is a feature in Pro, which allows importing an STL centered on the geometry which is selected when it is imported: [https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12](https://community.carbide3d.com/t/instructions-on-how-to-3d-carve-using-cc-v7-pro/48906/12)
+* Tiling — another Pro feature: [https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334](https://community.carbide3d.com/t/toolpath-tiling-in-carbide-create-pro/59334) this may be done manually as noted at: [https://community.carbide3d.com/t/tiling-questions-issues/14352/5](https://community.carbide3d.com/t/tiling-questions-issues/14352/5)
+* Toolpath Volume — another Pro feature, this allows one to know in advance how much epoxy will be needed to fill a given toolpath: [https://community.carbide3d.com/t/carbide-create-beta-760/68493/23](https://community.carbide3d.com/t/carbide-create-beta-760/68493/23)
 * Nesting — another Pro feature, this automates arranging multiple objects as efficiently as possible, using the minimum area of stock material
 
 ## Resources
