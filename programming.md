@@ -112,24 +112,20 @@ As verified by a 3rd party G-code simulator, CutViewer Mill:
 
 The control software for many CNC machines will afford G-code entry in one or more ways. For the Carbide 3D machines which I use (and support), this is Carbide Motion, which has two options: MDI --- one can enter G-code into the MDI one line at a time, and also "Quick Actions" which allow entering small programs which can then be run at will.&#x20;
 
-For a list of the G-codes supported by Carbide Motion and Grbl see:\
-\
-[https://docs.carbide3d.com/software-faq/list-of-supported-gcodes/](https://docs.carbide3d.com/software-faq/list-of-supported-gcodes/)\
-and\
-[https://my.carbide3d.com/faq/grbl-g-code-definitions/](https://my.carbide3d.com/faq/grbl-g-code-definitions/)
+For a list of the G-codes supported by Carbide Motion and Grbl see:
+
+[https://guides.carbide3d.com/faq/supported-gcodes/](https://guides.carbide3d.com/faq/supported-gcodes/)
 
 ### BlockMill
 
 A graphical tool for directly programming G-code is: \
 ​[https://blockmill.github.io/BlockMill/](https://blockmill.github.io/BlockMill/) which was announced at: [https://old.reddit.com/r/CNC/comments/1k08j3y/blockmill\_gcode\_building\_tool/](https://old.reddit.com/r/CNC/comments/1k08j3y/blockmill_gcode_building_tool/) this tool allows one to create G-code using blocks.
 
-
-
 ## OpenSCAD
 
 Billed as "The Programmer's Solid 3D CAD Modeller", OpenSCAD affords a programming environment which has variable and loops and 3D modeling and which allows one to export designs as DXF, SVG, and STL files, and affords a variety of tools for creating 3D, and to a lesser extent, 2D designs.
 
-There are a few things to note. Writing out one of the afore-mentioned filetypes requires using a separate CAM tool. OpenSCAD has little to no support for writing out text files. There are certain parameters for setting the size of the elements used to create curved elements which will greatly influence the appearance of the 3D preview, and the verisimilitude of the 3D model.
+There are a few things to note. Writing out one of the afore-mentioned filetypes requires using a separate CAM tool. OpenSCAD has no support for writing out arbitrary text files, only a log is supported. There are certain parameters for setting the size of the elements used to create curved elements which will greatly influence the appearance of the 3D preview, and the verisimilitude of the 3D model.
 
 The OpenSCAD parameters for controlling appearance are:
 
@@ -145,11 +141,9 @@ $fn = $preview ? 64 : 128;
 
 ## BlockSCAD, OpenSCAD Web GUI, and Carbide Create
 
-Okay, more-or-less thinking out loud here....
+BlockSCAD has a graphical environment which allows creating designs quickly using blocks -— to bring its files into OpenSCAD, the only editing necessary is to find the variables and move them to the top of the file, then edit/adjust comments to get them to function as drop-down menus, \&c. where need be.
 
-BlockSCAD has a pretty cool graphic environment which allows creating designs quickly using blocks --- the only editing necessary is to find the variables and move them to the top of the file, then edit/adjust comments to get them to function as drop-down menus, \&c. where need be.
-
-Posting such projects to Github seems pretty workable, w/ the OpenSCAD Web GUI then able to load them, allow the Customizer to be used to adjust designs, and then to write out DXF files which can be imported into Carbide Create.
+Such projects may then be posted to Github pretty easily, and the OpenSCAD Web GUI then used to load them, which allows the Customizer to be used to adjust designs, and then to write out DXF files which can be imported into Carbide Create.
 
 One minor concern is that when exporting DXFs, these are rendered as polylines, with the number of nodes/line-segments dependent on the $fa/fn/fs variables.
 
@@ -377,7 +371,7 @@ Having multiple cuts presents the possibility of redundant G-code commands, but 
 
 Available at: [https://github.com/WillAdams/gcodepreview](https://github.com/WillAdams/gcodepreview)
 
-Note that it is being re-written as a Literate Program, so one would ideally download the .dtx and .ins files, then process each w/ LaTeX (ideally pdflatexmk in TeXshop on a Mac) which would then create a .pdf of the documented source code, and .scad and .py files which may be placed in an appropriate library folder or used as a starting point for projects.
+Note that it has been re-written as a Literate Program, so one could download the .tex file, then process with LuaLaTeX which would then create a .pdf of the documented source code, and .scad and .py files which may be placed in an appropriate library folder or used as a starting point for projects.
 
 ## OpenSCAD Graph Editor
 
