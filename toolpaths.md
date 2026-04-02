@@ -78,7 +78,7 @@ One option for Contour Toolpaths is tabs. In Carbide Create v7 they may be added
 
 <figure><img src=".gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 then the tabs may be instantiated in the Contour Toolpath setting.
 
@@ -138,7 +138,7 @@ Drill toolpaths plunge the tool at the center of the selected geometry:
 
 ![](<.gitbook/assets/image (91).png>)
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Toolpath options include all normal choices, and "Drill Type":
 
@@ -172,7 +172,7 @@ Keyhole toolpaths as noted above, require the use of a special tool, and are not
 
 The Cutout toolpath is an automation of the best practice of "offsetting geometry by endmill diameter plus 10% and cutting as a pocket down to tab height or the penultimate pass and then finishing with a contour, possibly also leaving a roughing clearance and finally taking a finishing pass". The interface is quite straight-forward, being expressed in terms of total Stock Thickness:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 and affording the user the option of either allowing the program to Auto Select the Cutout type, or to force one of either:
 
