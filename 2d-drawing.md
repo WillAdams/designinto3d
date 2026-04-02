@@ -655,7 +655,7 @@ Carbide Create 7 moves Tabs to the Design pane:
 
 <figure><img src=".gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>
 
-which may then be instantiated in the Toolpath pane using Contour toolpaths (and their settings adjusted), or ignored by unchecking the appropriate checkbox.
+which may then be instantiated in the Toolpath pane using Contour or Cutout toolpaths (and their settings adjusted), or ignored by unchecking the appropriate checkbox.
 
 ## Geometry
 
