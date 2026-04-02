@@ -30,7 +30,7 @@ The following toolpaths which Carbide Create supports will be discussed here:
 * Drill
 * V-carve (Note that originally there were two different options, the normal which cut along the center and Advanced V-carve which cut along the perimeter, the former was eliminated, so “Advanced” was removed from the description)
 * Keyhole
-* Face
+* Cutout (new in the 843 beta)
 
 Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V-endmills will be used for V-carving or chamfering or cutting at a precise angle as for certain types of joinery. Keyhole toolpaths require the use of specialty keyhole cutters which cut wider at the bottom than their shaft. Surfacing tools such as the McFly are used to flatten stock or the spoilboard with the Face toolpath (before it was available they were used with either a very shallow pocket toolpath, or a contour toolpath which follows geometry which describes the area to be cut, see: [https://community.carbide3d.com/t/preparing-rough-cut-lumber-for-machining/73429](https://community.carbide3d.com/t/preparing-rough-cut-lumber-for-machining/73429)).
 
@@ -78,7 +78,7 @@ One option for Contour Toolpaths is tabs. In Carbide Create v7 they may be added
 
 <figure><img src=".gitbook/assets/image (385).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 then the tabs may be instantiated in the Contour Toolpath setting.
 
@@ -138,7 +138,7 @@ Drill toolpaths plunge the tool at the center of the selected geometry:
 
 ![](<.gitbook/assets/image (91).png>)
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Toolpath options include all normal choices, and "Drill Type":
 
@@ -167,6 +167,19 @@ into a diamond:
 ## Keyhole
 
 Keyhole toolpaths as noted above, require the use of a special tool, and are not previewed in 3D, since that would require undercuts which the 3D preview does not support. They have the tool plunging at the center of a specified geometry, then moving a fixed distance at a specified angle. It is best practice to machine away the material which may be reached using a normal tool first. For further details, see the discussion at: [https://community.carbide3d.com/t/using-a-keyhole-tool/39989](https://community.carbide3d.com/t/using-a-keyhole-tool/39989/38) and the actual announcement at: [https://community.carbide3d.com/t/carbide-create-v7-question-keyhole-toolpath/47489](https://community.carbide3d.com/t/carbide-create-v7-question-keyhole-toolpath/47489)
+
+## Cutout
+
+The Cutout toolpath is an automation of the best practice of "offsetting geometry by endmill diameter plus 10% and cutting as a pocket down to tab height or the penultimate pass and then finishing with a contour, possibly also leaving a roughing clearance and finally taking a finishing pass". The interface is quite straight-forward, being expressed in terms of total Stock Thickness:
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+and affording the user the option of either allowing the program to Auto Select the Cutout type, or to force one of either:
+
+* Normal
+* Wide
+
+A careful review of the toolpath in the 3D Preview will greatly aid in verificationa and allow a full understanding of what the toolpath will do and how it will cut.
 
 ## Selection
 
