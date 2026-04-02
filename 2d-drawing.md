@@ -318,7 +318,7 @@ Depending on the selection, Carbide Create affords the following Boolean operati
 
 Note that in most programs, the selection is modified, so if the original geometry will be needed after, it may be necessary that the objects be duplicated in alignment with the originals.
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Note that Carbide Create does afford two checkbox options:
 
@@ -379,7 +379,7 @@ When in Node Edit Mode it is possible to:
 
 Off-path nodes (indicated by small, filled circles) may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and/or asymmetry. All of this is explained in the sidebar when in Edit Nodes mode:
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 A forum post on this:
 
@@ -409,7 +409,7 @@ A frequent feature in CAD programs is the ability to trim overlapping vectors wh
 
 <figure><img src=".gitbook/assets/image (377).png" alt=""><figcaption></figcaption></figure>
 
-which allows one to remove segments as defined by overlapping:
+which allows one to remove segments as defined by intersection:
 
 <figure><img src=".gitbook/assets/image (378).png" alt=""><figcaption></figcaption></figure>
 
@@ -420,6 +420,12 @@ Once trimmed, the geometry will necessarily become one or more open paths:
 ![](<.gitbook/assets/image (87).png>)
 
 It is frequently helpful to use this feature to create sections of geometry from multiple elements which may then be connected using the _Join Vectors_ command as discussed below.
+
+If all possible intersections are interacted with, the dialog:
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+will pop up, OK, OK, will then return to the main Design tab.
 
 #### Geometric Interactions
 
@@ -524,7 +530,7 @@ This allows setting:
 * Retract height — also termed Safety height, this is how much the machine will lift in-between toolpaths
 * Units: Inch or millimeters
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Set Grid
 
@@ -562,7 +568,7 @@ it then affords the ability to create and name layers (or delete them), as well 
 
 and to move objects to specific layers and to hide/show, or lock/unlock layers, or set a layer to be "Active" (which will cause all new objects to be created on that layer).
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Since Build 814, the layer functionality has moved to a persistent pane beneath the tool area:
 
