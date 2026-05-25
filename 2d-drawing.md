@@ -320,6 +320,14 @@ Note that in most programs, the selection is modified, so if the original geomet
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+Further note that for the Boolean Subtraction option there are two implementations which may be chosen from:
+
+<figure><img src=".gitbook/assets/image (389).png" alt=""><figcaption><p>Subtract A-B</p></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (391).png" alt=""><figcaption><p>Subtract B-A</p></figcaption></figure>
+
+which allow either possibility regardless key object selection.
+
 Note that Carbide Create does afford two checkbox options:
 
 * Keep Original Vectors (which removes the need to duplicate and align before the operation)
