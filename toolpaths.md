@@ -174,12 +174,17 @@ The Cutout toolpath is an automation of the best practice of "offsetting geometr
 
 <figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+where&#x20;
+
+* Start Depth will specify the depth at which the initial cut begins
+* Breakthrough is specified in terms of a position relative to the bottom of the stock, so a positive value will cut that much deeper, ensuring that the cut exits fully at the bottom of the stock, while negative values will be subtracted from the Stock Thickness and leave that dimension as an uncut "onion skin"
+
 and affording the user the option of either allowing the program to Auto Select the Cutout type, or to force one of either:
 
 * Normal
 * Wide
 
-A careful review of the toolpath in the 3D Preview will greatly aid in verificationa and allow a full understanding of what the toolpath will do and how it will cut.
+A careful review of the toolpath in the 3D Preview will greatly aid in verification and allow a full understanding of what the toolpath will do and how it will cut.
 
 ## Selection
 
@@ -190,7 +195,7 @@ When a toolpath is first made, a dialog is displayed which has two buttons in To
 
 and the resultant window for the former (which is the same as when a toolpath is first made):
 
-<figure><img src=".gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (398).png" alt=""><figcaption></figcaption></figure>
 
 also affords the option to associate toolpaths with a Layer. For a discussion of the interactions of selection and toolpaths see: [https://community.carbide3d.com/t/still-struggling-with-toolpath/63383](https://community.carbide3d.com/t/still-struggling-with-toolpath/63383) If more than one piece of geometry is associated with a toolpath, then their arrangement will determine how the toolpath is actually cut.
 
@@ -236,9 +241,9 @@ Groups may be used to:
 
 A further consideration is that layers may be used to associate the contents of a layer with a toolpath:
 
-<figure><img src=".gitbook/assets/image (354).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (399).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (400).png" alt=""><figcaption></figcaption></figure>
 
 ## G-code
 
