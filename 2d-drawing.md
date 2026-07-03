@@ -304,6 +304,8 @@ Geometry may be selected and offset, either to the inside or outside:
 
 When offsetting paths to the outside in Carbide Create, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired, either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a third-party tool such as Inkscape, and then reimport, or, redraw the geometry.
 
+Note that in Build 847 the Offset operation gained the ability to delete originals and to rebuild the offset geometry as Beziér curves.
+
 ### Boolean Operations
 
 Booleans allow for the modification of geometry using existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected (the green indicates the geometry which will be produced by the operation, the black what is used and which is normally replaced by the result):
@@ -341,7 +343,7 @@ Curves are available in most vector drawing programs, and when present may be de
 
 ### Bézier Curves
 
-The most common is Bézier curves ([https://en.wikipedia.org/wiki/B%C3%A9zier\_curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)), named for the automotive designer Pierre Bézier, which are defined by an on-curve point (the origin), a matching off-curve point, and an additional off-curve point paired with the ultimate (ending) on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options.
+The most common is Bézier curves ([https://en.wikipedia.org/wiki/B%C3%A9zier\_curve](https://en.wikipedia.org/wiki/B%C3%A9zier_curve)), named for the automotive designer Pierre Bézier, which are defined by an on-curve point (the origin), a matching off-curve point, and an additional off-curve point paired with the ultimate (ending) on-curve point. Carbide Create uses Bézier curves in its Curve tool. Note that points are termed as Nodes in the various Curve tool options. Another term used for them is "handle" [https://wiki.wordsoftype.com/en/entry/handle](https://wiki.wordsoftype.com/en/entry/handle).
 
 To create a curve, select the Curve tool, then click or click-drag where one wants on-curve points (clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve nodes ― either smooth or sharp nodes may be changed to the other, see below):
 
@@ -472,6 +474,34 @@ allowing one to make asymmetrical designs which are not easily done with Boolean
 A further consideration is that the Trim Vectors command results in Curve objects which may be joined, and which will not result in polylines:
 
 ![](<.gitbook/assets/image (263).png>)
+
+#### Region Builder
+
+A new feature in Build 847 is Region Builder:
+
+<figure><img src=".gitbook/assets/image (392).png" alt=""><figcaption></figcaption></figure>
+
+which afford an interactive approach to working with overlapping and intersecting geometry:
+
+<figure><img src=".gitbook/assets/image (393).png" alt=""><figcaption></figcaption></figure>
+
+clicking on a region will turn it green:
+
+<figure><img src=".gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+
+adding it to what will be output at the end of the command (clicking on a green region will toggle it to red and remove it from the output):
+
+<figure><img src=".gitbook/assets/image (395).png" alt=""><figcaption></figcaption></figure>
+
+Once the desired selection is achieved:
+
+<figure><img src=".gitbook/assets/image (396).png" alt=""><figcaption></figcaption></figure>
+
+"Done"
+
+<figure><img src=".gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
+
+will return the desired region as an outline (possibly with nested interior regions).
 
 #### Drawing Tutorials
 
