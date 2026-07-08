@@ -383,11 +383,11 @@ When in Node Edit Mode it is possible to:
 * add an on-path node by right-clicking on a part of the path which does not have nodes and choosing _Insert Node_ — keyboard shortcut _i_
 * delete an on-path node (when it is selected) by right-clicking and choosing _Delete Node_ — keyboard shortcut _d_ for the currently selected node(s)
 * set one or more nodes to be smooth (indicated by a circle) by selecting and then right-clicking and choosing _Set Smooth_ or using the keyboard shortcut _s_ for the currently selected node(s)
-* set one or more nodes to be sharp, retracting the associated off-curve nodes by right-clicking and choosing _Set Sharp_ or using the keyboard shortcut _v_
-* set one or more nodes to cusp, setting the off-curve nodes to project at an angle, allowing them to be dragged asymmetrically by right-clicking and choosing _Set Cusp_ or using the keyboard shortcut _u_
-* cut open a path (which will convert a closed path to an open one) by right-clicking and choosing _Cut Vector_ or using the keyboard shortcut _c_
+* set one or more nodes to be sharp (indicated by a square), retracting the associated off-curve nodes by right-clicking and choosing _Set Sharp_ or using the keyboard shortcut _v_
+* set one or more nodes to cusp (indicated by a diamond), setting the off-curve nodes to project at an angle, allowing them to be dragged asymmetrically by right-clicking and choosing _Set Cusp_ or using the keyboard shortcut _u_
+* cut open a path (which will convert a closed path to an open one) by right-clicking and choosing _Cut Vector_ or using the keyboard shortcut _c_ note that it is possible that such a separation will remove a portion of the geometry from the current selection requiring that it be added back to the selection
 
-Off-path nodes (indicated by small, filled circles) may be dragged to reshape the sections of curves associated with smooth nodes, and by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and/or asymmetry. All of this is explained in the sidebar when in Edit Nodes mode:
+Off-path nodes (indicated by small, filled circles) may be dragged to reshape the sections of curves associated with smooth nodes, in some applications by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and/or asymmetry. All of this is explained in the sidebar when in Edit Nodes mode:
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -612,7 +612,7 @@ Since Build 814, the layer functionality has moved to a persistent pane beneath 
 
 <figure><img src=".gitbook/assets/image (388).png" alt=""><figcaption></figcaption></figure>
 
-and all layer functionality is accessible from the icons associated with each layer, including functionality for the palette as a whole (so to make a new layer, click on the gear icon button for _any_ layer), as well as functionality specific to the layer associated with the gear icon button:
+and all layer functionality is accessible from the icons associated with each layer, including functionality for the palette as a whole (so to make a new layer, click on the gear icon button for _any_ layer, or click the + buttun under the Layer palette), as well as functionality specific to the layer associated with the gear icon button:
 
 * Activate
 * Select all on Layer
@@ -631,13 +631,13 @@ A Layer is an organizational tool which allows one to separate geometry and colo
 * **ACTIVE** (indicated by being bold, must also be unlocked and visible/not-hidden) — all new objects will be created on the ACTIVE layer. Double-clicking on a layer will set it to be the **ACTIVE** layer.
 * Hidden (indicated by strike-through)
 * Locked (indicated by closed padlock)
-* not ACTIVE — elements may be selected/manipulated, but adding elements to a layer is done by using the menu to move the current selection to the desired layer
+* not ACTIVE — (all layers other than the active layer which are not bold) elements may be selected/manipulated, but adding elements to a layer is done by using the menu to move the current selection to the desired layer
 
 ​How they are used, depends on a given project and how a user wishes to approach it:
 
 * a two-sided job might have separate layers for each side ​
 * a file with multiple parts might have each part on a separate layer
-* a file with multiple tools or which has different types of toolpaths or toolpaths which cut to different depths might have the geometry for each tool/toolpath type/depth on a separate layer, and use the Toolpath facility to associate a toolpath w/ a layer ​
+* a file with multiple tools or which has different types of toolpaths or toolpaths which cut to different depths might have the geometry for each tool/toolpath type/depth on a separate layer, and use the Toolpath facility to associate a toolpath with a layer ​
 * a file which is created from an auto-tracing might have the initial version duplicated and moved to a separate locked layer for reference
 
 or, any other usage which assists in working with geometry and other elements in the application.
@@ -665,7 +665,7 @@ To create an array, select one or more objects, invoke the desired command, and 
 
 <figure><img src=".gitbook/assets/image (382).png" alt=""><figcaption></figcaption></figure>
 
-Circular Arrays afford a number of options and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 instances (one original, the selected orange dashed key object, and four copies):
+Circular Arrays afford a number of options and are well-suited to creating geometry which requires symmetry. For example, a five-pointed star may be easily drawn by rotating a triangle to have 5 instances (one original, the selected orange dashed key object, and four copies indicated by blue proxies):
 
 ![](<.gitbook/assets/image (234).png>)
 
