@@ -38,7 +38,7 @@ Open polylines (or curves, see below) have limited functionality in terms of Too
 
 Lines will be used to define Rectangles (which may be squares) and regular Polygons as described below.
 
-Note that it is important that a given element not cross back upon itself, or have unintentional superimposed/repeated sections — the latter is of especial concern for imported files and can cause the automatic joining of elements in a DXF to become problematic, as well as interfering with the calculation of toolpaths. If a given toolpath does not function as expected, edit it and the select the vectors associated with it to determine what is being used and adjust/edit/update as necessary.
+Note that it is important that a given element not cross back upon itself, or have unintentional superimposed/repeated sections — the latter is of especial concern for imported files and can cause the automatic joining of elements in a DXF to become problematic, as well as interfering with the calculation of toolpaths. If a given toolpath does not function as expected, edit it and then select the vectors associated with it to determine what is being used and adjust/edit/update as necessary.
 
 ## Arcs
 
@@ -120,7 +120,7 @@ In v7, it becomes possible to enter dimensions as calculations, so typing 2\*2= 
 
 It is also possible to enter dimensions in terms of specified units (naturally, numbers entered without a specified unit are assumed to be in the current coordinate system, but note that that will change the dimension if the units assigned to the project are changed for such calculations which are persistent, e.g., Toolpath Max Depth), so if in metric mode, typing 1in= will result in the dimension being set to 25.4mm, while in Imperial (inches) mode, typing 25.4mm= will result in the dimension being set to 1in, and similarly, specifying a formulae using such units is advised as best practice.
 
-It is also possible to reference the current stock dimensions:
+It is also possible to reference the current Stock dimensions:
 
 * h == Stock Height
 * w == Stock Width
