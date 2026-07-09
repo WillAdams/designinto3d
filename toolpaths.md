@@ -254,7 +254,7 @@ Once toolpaths have been set up in a file, they may be sent to a machine to be c
 * .gcode
 * .tap
 
-Since v7: [https://carbide3d.com/blog/carbide-create-v7/](https://carbide3d.com/blog/carbide-create-v7/) Carbide Create has afforded the option to store the toolpaths as G-code in the .c2d file itself, to then be extracted when loaded into Carbide Motion when connected to a Carbide 3D machine, at which time the G-code will be extracted and sent to the machine .
+Since v7: [https://carbide3d.com/blog/carbide-create-v7/](https://carbide3d.com/blog/carbide-create-v7/) Carbide Create has afforded the option to store the toolpaths as G-code in the .c2d file itself, to then be extracted when loaded into Carbide Motion when connected to a Carbide 3D machine, at which time the G-code will be extracted and sent to the machine. Note that the generation of G-code does not mark a file as dirty, so a file saved may not have toolpaths, but when opened the toolpaths may be generated and show as expected.
 
 MeshCAM and early versions of Carbide Create add the possibility of a .egc file extension (for encrypted G-code), which similarly, will be extracted by Carbide Motion when connected to a Carbide 3D machine.
 
