@@ -258,4 +258,4 @@ Since v7: [https://carbide3d.com/blog/carbide-create-v7/](https://carbide3d.com/
 
 MeshCAM and early versions of Carbide Create add the possibility of a .egc file extension (for encrypted G-code), which similarly, will be extracted by Carbide Motion when connected to a Carbide 3D machine.
 
-The Pro license for Carbide Create v7 also affords the option to write out G-code.
+The Pro license for Carbide Create v7 and later also afford the option to write out G-code.
