@@ -26,7 +26,7 @@ Possible errors include:
 
 * Incorrect orientation of toolpath relative to geometry (inside vs. outside or No offset)
 * Wrong tool definition (entering taper vs nominal angle for a V-tool, using a tapered ball-nose tool where a V-tool is being calculated for)
-* Excessive tooling engagement (cutting a slot rather than adding geometry and cutting as a pocket)
+* Excessive tooling engagement (cutting a slot rather than adding geometry and cutting as a pocket or using a specialized Cutout toolpath)
 * Toolpath configuration is incorrect (setting Speed (RPM) so low that the spindle will not start, wrong dimension specified for depth or offset)
 
 ## Stock
@@ -36,7 +36,7 @@ The raw material is referred to as the stock. Depending on the nature of the cut
 Possible errors include:
 
 * Mis-measuring stock
-* Setting zero so that it does not match Job Setup
+* Setting zero so that it does not match Job Setup (using Top of stock for zero when Bottom of Stock is specified will result in an "air cut", while the reverse will result in the tool attempting to travel completely through the stock at Rapid speed)
 
 ## Workholding
 
@@ -62,7 +62,7 @@ Possible errors include:
 * Not securing the stock adequately and it coming loose
 * Not securing an internal part/counter and it coming loose
 * Clamping in such a way that clamping forces interfere with cutting or distort the part
-* Positioning clamps so that they will interfere with cutting or rapid movement
+* Positioning clamps so that they will interfere with cutting or rapid movement resulting in damage to the tool and/or the clamp
 
 ## Safety/Dust Collection
 
