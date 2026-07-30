@@ -4,7 +4,9 @@ description: Putting everything together to make parts and projects
 
 # Machine Operation
 
-Ideally everything for operating a machine would be covered at: [https://my.carbide3d.com/](https://my.carbide3d.com/) as well as: [https://shapeokoenthusiasts.gitbook.io/shapeoko-cnc-a-to-z/](https://shapeokoenthusiasts.gitbook.io/shapeoko-cnc-a-to-z/) with the specifics of Carbide Create covered in [2D Drawing](2d-drawing.md), [Toolpaths](toolpaths.md), and (for folks with Pro licenses) [3D Modeling from 2D Geometry](3d-modeling-from-2d-geometry.md), and Carbide Motion covered in [Machine Motion](machine-motion.md). This chapter will function as an overview of the entire process of making a part or project, making no assumptions.
+Ideally everything for operating a machine would be covered at: [https://my.carbide3d.com/](https://my.carbide3d.com/) and/or [https://guides.carbide3d.com/](https://guides.carbide3d.com/) as well as: [https://shapeokoenthusiasts.gitbook.io/shapeoko-cnc-a-to-z/](https://shapeokoenthusiasts.gitbook.io/shapeoko-cnc-a-to-z/) with the specifics of Carbide Create covered in [2D Drawing](2d-drawing.md), [Toolpaths](toolpaths.md), and (for folks with Pro licenses) [3D Modeling from 2D Geometry](3d-modeling-from-2d-geometry.md), and Carbide Motion covered in [Machine Motion](machine-motion.md). This chapter will function as an overview of the entire process of making a part or project, making no assumptions and attempting to enumerate all the ways in which doing something wrong may cause difficulties.
+
+The great thing about CNC is that when a file is set up as intended and is run without something going wrong, the part turns out correctly. The awful thing about CNC is that a part will only turn out correctly if the file is set up as intended and is run without something going wrong.
 
 The Shapeoko and Nomad are 3-axis CNC routers made by Carbide 3D. [https://carbide3d.com/](https://carbide3d.com/).
 
@@ -12,13 +14,29 @@ The Shapeoko and Nomad are 3-axis CNC routers made by Carbide 3D. [https://carbi
 
 Design will be done in either a 2D (e.g, Carbide Create as shown in [2D Drawing](2d-drawing.md)), or 3D program (such as Alibre Atom 3D, FreeCAD, \&c.). Design elements may describe the geometry of the part/project, or may define the perimeter/structure of the part/project, or even describe the toolpath which will cut out some aspect of the part/project. Once a final appearance is arrived at, Toolpaths may be set up.
 
+Possible errors include:
+
+* Incorrect dimension or angle or curve
+
 ## Toolpaths
 
 Toolpaths will be created or assigned in a suitable CAM program (or by directly creating toolpaths by hand-coding G-code or directly programming), and like the design, will be either 2D or 3D. Note that it is possible to assign 3D toolpaths to 2D elements and vice-versa (cutting a 3D part free with a 2D perimeter cut). Toolpaths should be added/adjusted until the 3D preview of the toolpaths is correct.
 
+Possible errors include:
+
+* Incorrect orientation of toolpath relative to geometry (inside vs. outside or No offset)
+* Wrong tool definition (entering taper vs nominal angle for a V-tool, using a tapered ball-nose tool where a V-tool is being calculated for)
+* Excessive tooling engagement (cutting a slot rather than adding geometry and cutting as a pocket)
+* Toolpath configuration is incorrect (setting Speed (RPM) so low that the spindle will not start, wrong dimension specified for depth or offset)
+
 ## Stock
 
 The raw material is referred to as the stock. Depending on the nature of the cut, it may be necessary to have the stock precisely measured and entered accurately into the design file, or not. It will be necessary that the stock is securely clamped in place (see Workholding below) and the zero set relative to the stock so as to match how this is set in the G-code file.
+
+Possible errors include:
+
+* Mis-measuring stock
+* Setting zero so that it does not match Job Setup
 
 ## Workholding
 
@@ -38,6 +56,13 @@ When securing stock, options include:
 * vacuum
 
 It is possible for a single part/project to use multiple techniques (a typical one would be clamping from the side initially so as to drill through holes, then using those holes to fasten a part in place for the balance of the operations). When fastening it is important to consider leverage and the attendant principles. See: [https://community.carbide3d.com/t/work-part-clamping-many-of-you-are-doing-it-wrong/3396](https://community.carbide3d.com/t/work-part-clamping-many-of-you-are-doing-it-wrong/3396)&#x20;
+
+Possible errors include:
+
+* Not securing the stock adequately and it coming loose
+* Not securing an internal part/counter and it coming loose
+* Clamping in such a way that clamping forces interfere with cutting or distort the part
+* Positioning clamps so that they will interfere with cutting or rapid movement
 
 ## Safety/Dust Collection
 
