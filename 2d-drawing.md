@@ -20,7 +20,7 @@ Note that the interface in Carbide Create is contextual, certain commands will o
 
 The most basic geometric construct as noted by Euclid in [_Elements_](https://mathcs.clarku.edu/~djoyce/java/elements/elements.html)_:_ [_Book I_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html)_:_ [_Definition 1_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI1.html) is a point in coordinate space (most CAD tools and vector drawing applications use Cartesian coordinates, see: [https://gamemath.com/book/cartesianspace.html](https://gamemath.com/book/cartesianspace.html)) ― some CAM tools allow one to assign a drilling operation at a point, but many vector editors disallow a point as an individual stand-alone entity, instead, they are used as a building block for everything else. Carbide Create does _not_ allow the creation of single points, so one would create a circle to define the perimeter of a hole which one wished to machine, or the center of which would define the point at which one wished to drill (see below).
 
-Points of course will be used to define the Cartesian X, Y coordinates of all geometry in the design. Toolpaths and 3D modeling will then allow specifying Z, extending this into the third dimension. Note that in some circumstances the term “Node” will be used for a point.
+Points of course will be used to define the Cartesian X, Y coordinates of all geometry in the design. Toolpaths and 3D modeling will then allow specifying Z, extending this into the third dimension. Note that in some circumstances the term “Node” will be used for a point. Another term is “Control Handle” (or just Handle).
 
 ## Lines
 
