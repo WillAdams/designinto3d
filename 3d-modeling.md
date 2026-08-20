@@ -192,5 +192,31 @@ Rectangular Array: Arrangement of copies of an original object based on X,Y, pos
 
 Regular Polygon: An object which has all equal sides and angles, i.e., a triangle, square, pentagon, or hexagon
 
+### S
+
+Section lines: Lines or hatching in a view of a drawing that indicate the features shown by the cut/slice differentiating interior and exterior
+
+Shade: Visual representation of surfaces using tints of grey or colour to depict materials or differently lit surfaces
+
+Shoulder: A feature where an edge transitions sharply&#x20;
+
+Spline: Smooth and continuous curve defined by control points allowing for arbitrary shaping of curves
+
+### T
+
+Tangent: Relationship or orientation where a line, curve, or surface touches or intersets another line, curve or surface
+
+Tolerance: The allowed variation from a dimension
+
+### U
+
+Under-constrained: An element lacking sufficient geometric or dimensional constraints to define its position and dimensions
+
+### Z
+
+Zero: Reference point or origin of a coordinate system (0,0) or (0,0,0)
+
+
+
 
 
