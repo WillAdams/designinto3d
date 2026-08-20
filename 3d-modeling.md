@@ -74,3 +74,17 @@ Coordinates: Numbers or parameters used to specify position
 
 ### D
 
+Datum: A reference point used for a basis of dimensional relationships
+
+Deferred perpendicular: A constraint that forces two lines or objects to be perpendicular to one another after other constraints are applied
+
+Deferred tangency: A constraint that forces two lines or objects to be tangent to one another after other constraints are applied
+
+Definition points: objects placed on a separate, often invisible layer used for construction or reference
+
+Diameter: The measurement of a circle from edge-to-edge through the center
+
+Dimension: The measurement of an object's size or position relative to a specified origin
+
+DXF: Drawing eXchange File: File format used to exchange drawings, may organize objects onto layers
+
