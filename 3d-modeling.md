@@ -42,7 +42,7 @@ which along with basic commands is discussed at: [https://docs.dune3d.org/en/lat
 
 ### A
 
-Absolute coordinates: specifying a position relative to a fixed origin
+Absolute Coordinates: specifying a position relative to a fixed origin
 
 Arc: a curved element relative to, and equidistant from a center point specified by radius and begin and end angles
 
@@ -52,11 +52,11 @@ Centroid: The average position of the center of a shape or object
 
 Chamfer: Beveled or angled surface along the edge of two adjacent surfaces, c.f., Fillet
 
-Chord length: The straight-line distance between two points on the circumference of a circle.
+Chord Length: The straight-line distance between two points on the circumference of a circle.
 
 Circle: Figure created by equidistant points from a center forming a closed shape
 
-Circumscribed polygon: A polygon placed within a circle so that all of its vertices are placed on the circumference of the circle
+Circumscribed Polygon: A polygon placed within a circle so that all of its vertices are placed on the circumference of the circle
 
 Coincident: A constraint or relationship which forces two or more points, lines, or elements to have the same specified position relative to each other
 
@@ -64,11 +64,11 @@ Concentric: A constraint or relationship which forces two or more circles or arc
 
 Constraint: A relationship or rule applied to elements so as to set their relationship or interaction in terms of position
 
-Constraint parameters: Setting which control or define relationship or positioning of elements
+Constraint Parameters: Setting which control or define relationship or positioning of elements
 
-Construction drawing: A reference line or other 2D element used for alignment or guiding other elements, usually not included in a final work
+Construction Drawing: A reference line or other 2D element used for alignment or guiding other elements, usually not included in a final work
 
-Control vertices: Points or nodes or handles used to define a shape
+Control Vertices: Points or nodes or handles used to define a shape
 
 Coordinates: Numbers or parameters used to specify position
 
@@ -76,9 +76,9 @@ Coordinates: Numbers or parameters used to specify position
 
 Datum: A reference point used for a basis of dimensional relationships
 
-Deferred perpendicular: A constraint that forces two lines or objects to be perpendicular to one another after other constraints are applied
+Deferred Perpendicular: A constraint that forces two lines or objects to be perpendicular to one another after other constraints are applied
 
-Deferred tangency: A constraint that forces two lines or objects to be tangent to one another after other constraints are applied
+Deferred Tangency: A constraint that forces two lines or objects to be tangent to one another after other constraints are applied
 
 Definition points: objects placed on a separate, often invisible layer used for construction or reference
 
@@ -87,4 +87,110 @@ Diameter: The measurement of a circle from edge-to-edge through the center
 Dimension: The measurement of an object's size or position relative to a specified origin
 
 DXF: Drawing eXchange File: File format used to exchange drawings, may organize objects onto layers
+
+### E
+
+Ellipse: a shape defined by a set of points where the sum of the distances between any point on the perimeter and two foci is constant
+
+Entity: An object, element, or shape such as a line, circle, or text object
+
+### F
+
+Fillet: A curved transition or rounding of an edge where two planes intersect, c.f., Chamfer
+
+Fully Constrained: A drawing or model where all elements are constrained or positioned according to defined relationships
+
+### G
+
+Geometric Constraints: Relationships or rules that maintain specific properties such as parallelism, perpendicularity, or tangency
+
+Geometric Dimensioning and Tolerancing (GD\&T): A system of symbols, rules, and practices to communicate and specify dimensions, tolerances, and relationships
+
+Grid: An array of horizontal and vertical lines on a specified spacing used as a visual reference and alignment aid
+
+### H
+
+Hatches (hatch patterns): Patterns of lines used to fill areas in a drawing to represent materials, surfaces, \&c.
+
+Hexagon: A regular polygon with six sides and angles of equal-length and angles (120 degrees)
+
+### I
+
+Implied Intersection: An automatically determined point of intersection between two or more lines or curves
+
+Included Angle: Angle formed by two lines
+
+Infer: Automatic prediction of an action or operation
+
+Inscribed Polygon: A polygon placed within a circle so that all of its vertices touch the perimeter
+
+Insertion Base Point: Reference point or location where a block or object is pladced
+
+Intersection: Point or points at which two or more lines, curves, or objects cross
+
+Island: Disconnected or isolated region within a closed shape
+
+### K
+
+Key Point: Point which serves as a reference usually for measurement or specifying alignment or relationships
+
+### L
+
+Layer: A sub-division of elements into a drawing so that they may be selectively hidden, shown, locked, unlocked, or selected&#x20;
+
+Line: A straight path or segment connecting two points
+
+### M
+
+Major Axis: The longer or primary axis of an ellipse (or portion thereof)
+
+Minor Axis: The shorter axis of an ellipse (or portion thereof)
+
+### N
+
+Nesting: Placing elements which describe parts to be cut out so that they may optimally use material of a specified dimension
+
+Non-Uniform Rational Basis Spline (NURBS, B-spline: A curve representation which allows for smooth shapes and flexible control often used for organic elements
+
+Nudging: Moving or adjusting objects in increments, often that of grid spacing, or some fraction thereof
+
+### O
+
+Ordinate Dimensioning: Dimensions aligned to a common base or reference line
+
+Origin: Reference point or coordinate used as a starting point (0,0)
+
+### P
+
+Parallel: elements which are equidistant
+
+Perpendicular: Relationship where two lines or objects meet at a 90-degree (right) angle
+
+Perspective: Representation method which creates the illusion of depth and a three-dimensional appearance
+
+Point: A specific location or coordinate defined by X,Y, or X,Y, Z position
+
+Point of Tangency: Point were a line or curve coincides with a line or curve
+
+Polar Coordinate System: Representation of a point using distance and angle from a specified origin
+
+Polyline: A connected sequence of line segments
+
+Projection Plane: Plane or surface a drawing is projected to or sliced by for a 2D view
+
+### Q
+
+Quadrant: Subdivision of a plane into four equal regions based on a central origin
+
+Quadratic Curve: Curve mathematically defined by off-curve control point(s) using a formula to arrive at a smooth shape
+
+### R
+
+Radius: Distance from the center of a circle or arc
+
+Rectangular Array: Arrangement of copies of an original object based on X,Y, positioning
+
+Regular Polygon: An object which has all equal sides and angles, i.e., a triangle, square, pentagon, or hexagon
+
+
 
