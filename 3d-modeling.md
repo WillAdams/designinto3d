@@ -46,6 +46,8 @@ Absolute Coordinates: specifying a position relative to a fixed origin
 
 Arc: a curved element relative to, and equidistant from a center point specified by radius and begin and end angles
 
+Array: Duplicated objects based on user settings
+
 ### C
 
 Centroid: The average position of the center of a shape or object
@@ -72,9 +74,13 @@ Control Vertices: Points or nodes or handles used to define a shape
 
 Coordinates: Numbers or parameters used to specify position
 
+Counterbore: Cylindrical recess to accomdate the head of a fastener
+
+Countersink: Conoical recess to accomdate the head of a fastener
+
 ### D
 
-Datum: A reference point used for a basis of dimensional relationships
+Datum: A reference element used for a basis of dimensional relationships
 
 Deferred Perpendicular: A constraint that forces two lines or objects to be perpendicular to one another after other constraints are applied
 
@@ -211,6 +217,10 @@ Tolerance: The allowed variation from a dimension
 ### U
 
 Under-constrained: An element lacking sufficient geometric or dimensional constraints to define its position and dimensions
+
+### V
+
+Vertex: Point of intersection or connection between lines, curves, or edges
 
 ### Z
 
