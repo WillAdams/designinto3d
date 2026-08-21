@@ -86,7 +86,9 @@ Deferred Perpendicular: A constraint that forces two lines or objects to be perp
 
 Deferred Tangency: A constraint that forces two lines or objects to be tangent to one another after other constraints are applied
 
-Definition points: objects placed on a separate, often invisible layer used for construction or reference
+Definition Points: objects placed on a separate, often invisible layer used for construction or reference
+
+Degrees of Freedom (DOF): the ability of a point or dimension to be repositioned along one or more axes, c.f., Fully Constrained
 
 Diameter: The measurement of a circle from edge-to-edge through the center
 
@@ -104,7 +106,7 @@ Entity: An object, element, or shape such as a line, circle, or text object
 
 Fillet: A curved transition or rounding of an edge where two planes intersect, c.f., Chamfer
 
-Fully Constrained: A drawing or model where all elements are constrained or positioned according to defined relationships
+Fully Constrained: A drawing or model where all elements are constrained or positioned according to defined relationships, c.f., Degrees of Freedom
 
 ### G
 
