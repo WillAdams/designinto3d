@@ -168,6 +168,8 @@ Ordinate Dimensioning: Dimensions aligned to a common base or reference line
 
 Origin: Reference point or coordinate used as a starting point (0,0)
 
+Overconstrained: An error state where too many constraints, one or more of which is redundant, have been applied to a drawing, c.f., Fully Constrained
+
 ### P
 
 Parallel: elements which are equidistant
