@@ -40,6 +40,8 @@ which along with basic commands is discussed at: [https://docs.dune3d.org/en/lat
 
 2D Drafting: two-dimensional drawings along X and Y
 
+3D CAD: Drafting or modeling with indication for height/depth/thickness
+
 ### A
 
 Absolute Coordinates: specifying a position relative to a fixed origin
@@ -173,6 +175,8 @@ Overconstrained: An error state where too many constraints, one or more of which
 ### P
 
 Parallel: elements which are equidistant
+
+Parametric CAD: A technique where dimensions and positions are specified as values which may be changed/adjusted, causing the model to update&#x20;
 
 Perpendicular: Relationship where two lines or objects meet at a 90-degree (right) angle
 
