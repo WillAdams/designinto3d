@@ -101,9 +101,17 @@ Similarly, one can subtract using the various modeling settings to arrive at:
 
 Once one has a design completely modeled, one used 3D toolpaths to cut things out by selecting geometry to define where the cutting will be limited to, and applying a 3D Roughing and then one or more 3D Finishing toolpaths, usually using ball-nosed endmills in a progression of sizes from large to small.
 
-Once a 3D model has been made, matching 3D toolpaths may be set up.&#x20;
+Once a 3D model has been made, matching 3D toolpaths may be set up. There are two sorts of 3D toolpaths, Roughing:
 
-A new feature in 856 is "Project to 3D Model":&#x20;
+<figure><img src=".gitbook/assets/image (402).png" alt=""><figcaption></figcaption></figure>
+
+and Finishing:
+
+<figure><img src=".gitbook/assets/image (403).png" alt=""><figcaption></figcaption></figure>
+
+Note that the shape of the tool should be suited to that of the 3D Model and that sizes should _not_ be skipped. For more on Finishing toolpaths see: [https://community.carbide3d.com/t/using-successive-sizes-of-smaller-tooling-for-3d-toolpaths/99623](https://community.carbide3d.com/t/using-successive-sizes-of-smaller-tooling-for-3d-toolpaths/99623)
+
+Further, it is possible for successive toolpaths to interact with the 3D model as cut by previous toolpaths. A new feature in 856 is "Project to 3D Model":&#x20;
 
 <figure><img src=".gitbook/assets/image (401).png" alt=""><figcaption></figcaption></figure>
 
