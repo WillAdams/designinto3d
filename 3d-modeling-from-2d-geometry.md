@@ -101,6 +101,14 @@ Similarly, one can subtract using the various modeling settings to arrive at:
 
 Once one has a design completely modeled, one used 3D toolpaths to cut things out by selecting geometry to define where the cutting will be limited to, and applying a 3D Roughing and then one or more 3D Finishing toolpaths, usually using ball-nosed endmills in a progression of sizes from large to small.
 
+Once a 3D model has been made, matching 3D toolpaths may be set up.&#x20;
+
+A new feature in 856 is "Project to 3D Model":&#x20;
+
+<figure><img src=".gitbook/assets/image (401).png" alt=""><figcaption></figcaption></figure>
+
+and for an overview of this new feature see: [https://community.carbide3d.com/t/create-856-posted-to-beta/106220/13](https://community.carbide3d.com/t/create-856-posted-to-beta/106220/13)
+
 For additional tutorials see:
 
 * [https://community.carbide3d.com/t/starting-with-2-5-d-carving/15168/](https://community.carbide3d.com/t/starting-with-2-5-d-carving/15168/)
