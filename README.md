@@ -28,7 +28,7 @@ with more complicated pieces incorporating both structures, and that any object 
 * its design
 * its dimensions
 
-Currently it uses [BlockSCAD](https://www.blockscad3d.com/) and [OpenSCAD Graph Editor ](https://github.com/derkork/openscad-graph-editor)as front-ends to [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD), a 3D modeling tool which can then afford a comfortable front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) in OpenSCAD which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518) A new development is that it is now possible to load OpenSCAD files into a web browser using: [https://github.com/seasick/openscad-web-gui](https://github.com/seasick/openscad-web-gui) which will make available files from GitHub or Printables.com and then export to DXF, SVG, or STL. The core implementation is in the computer programming language Python and may be used in [https://pythonscad.org/](https://pythonscad.org/) for 3D modeling.
+Currently it uses [BlockSCAD](https://www.blockscad3d.com/) and [OpenSCAD Graph Editor ](https://github.com/derkork/openscad-graph-editor)as front-ends to [OpenSCAD](https://wiki.shapeoko.com/index.php/OpenSCAD) and [PythonSCAD](https://pythonscad.org/), a family of programmable 3D modeling tools which can then afford a comfortable front-end using the [customizer feature](https://github.com/openscad/openscad/issues/1781) which is available in current versions.[\[1\]](http://www.openscad.org/news.html#20190518) A new development is that it is now possible to load OpenSCAD files into a web browser using: [https://github.com/seasick/openscad-web-gui](https://github.com/seasick/openscad-web-gui) which will make available files from GitHub or Printables.com and then export to DXF, SVG, or STL. The core implementation is in the computer programming language Python and may be used in [https://pythonscad.org/](https://pythonscad.org/) for 3D modeling.
 
 There are several possible approaches for making designs from BlockSCAD/OpenSCAD:
 
@@ -39,10 +39,10 @@ There are several possible approaches for making designs from BlockSCAD/OpenSCAD
 * from within OpenSCAD (or some other programming/modeling tool) develop the design so that toolpaths are modeled and the coordinate information may be exported as G-Code commands ― [https://pythonscad.org/](https://pythonscad.org/) is used in the current version (in early versions, RapCAD (a fork of OpenSCAD) was used when it gained the ability to write out files in v1.0.2, see: [https://forum.makerforums.info/t/g-code-preview-using-openscad-rapcad/85729](https://forum.makerforums.info/t/g-code-preview-using-openscad-rapcad/85729/10))
 * work up the design as toolpaths which simultaneously creates a 3D model as preview and captures the geometry so that it my be exported to a DXF which may then be imported into a traditional CAM program to make toolpaths
 
-It is that last technique which will be the main focus.
+It is that last technique which will be the main focus of this project.
 
 This online ebook is available under a Creative Commons license: Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) [https://creativecommons.org/licenses/by-nc-sa/3.0/](https://creativecommons.org/licenses/by-nc-sa/3.0/)
 
-The Kickstarter edition and print versions are available under a license which will allow commercial usage to a reasonable degree.
+The Kickstarter edition and print versions will be available under a license which will allow commercial usage to a reasonable degree.
 
 Please contact [willadams@aol.com](mailto:willadams@aol.com) if you wish to arrange for any other sort of arrangement.
