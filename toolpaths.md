@@ -132,6 +132,8 @@ Rest machining allows removing uncut material where a larger endmill cannot reac
 
 ![](<.gitbook/assets/image (33).png>)
 
+A note on REST machining. While this ostensibly can only be done with Pocket toolpaths, for interiors, it works the same whether a pocket or a contour, but for exteriors, simply adding surrounding geometry which would not have uncut areas (a circle works well as noted at: [https://community.carbide3d.com/t/create-856-posted-to-beta/106220/56](https://community.carbide3d.com/t/create-856-posted-to-beta/106220/56)) will suffice.
+
 ## Drill
 
 Drill toolpaths plunge the tool at the center of the selected geometry:
