@@ -14,7 +14,7 @@ Like most graphical applications there is a standard set of menus, **File** whic
 
 Note that since Carbide Create is a cross-platform application (Mac OS and Windows) there are certain differences in the menu structures and keyboard shortcuts typical to such applications. Windows has a **Help** menu with About, Register, and Help options, while the Mac OS version has a Carbide Create menu with **About Carbide Create**, and a **Help** menu with Register, Help, and so forth. The Mac OS will use the command key for keyboard shortcuts where appropriate, while the Windows version will use the ctrl key. To minimize cross-platform differences, the shift key is normally used as a modifier (as opposed to a alt/option).
 
-Note that the interface in Carbide Create is contextual, certain commands will only appear when nothing is selected, while others only when a single object is selected, while still others only make sense to show when multiple objects are selected and may have further requirements for usage such as the objects overlapping or intersecting.
+The interface in Carbide Create is contextual, so certain commands will only appear when nothing is selected, while parameters will be shown only when a single object is selected, while still others only show when multiple objects are selected and may have further requirements for usage such as the objects overlapping or intersecting.
 
 ## Points
 
@@ -42,7 +42,7 @@ Note that it is important that a given element not cross back upon itself, or ha
 
 ## Arcs
 
-Many CAD programs will allow the definition of arcs which are easily drawn and may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Node Editing or Trim Vectors or Boolean operations as parts of circles and geometry based on circles (segments and so forth), as fillets when rounding the corners of a rectangle (see below), or drawn using the **Curve** tool (see below), or arrived at by Node Editing a circle or other object, though since they are represented as either Curves or Polylines will necessarily be approximations of an actual arc of a circle.
+Many CAD programs will allow the definition of arcs since they are the most basic and elemental of non-linear forms. Arcs may be specified in several ways — an origin point, end point, and a point of rotation are typical. Carbide Create does not have an arc tool, but they may be made using Node Editing or Trim Vectors or Boolean operations as parts of circles and geometry based on circles (segments and so forth), as fillets when rounding the corners of a rectangle (see below), or drawn using the **Curve** tool (see below), or arrived at by Node Editing a circle or other object, though since they are represented as either Curves or Polylines will necessarily be approximations of an actual arc of a circle.
 
 ## Polylines
 
@@ -78,7 +78,7 @@ Note that circles, as other shapes made with tools specific to a shape such as r
 
 In Carbide Create, circles are defined as four Bézier curves (as opposed to using arcs) which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for practical purposes. Researching the math involved in this differentiation is left as an exercise for the interested reader.
 
-One limitation of circles in current versions of Carbide Create is that they may not be rotated. A work-around for this is to put one node on a grid point, go into Node Edit mode, move the node, then move it back, converting the Circle into a Curve object which describes the same geometry as the original circle, but which is no longer described by its radius.
+One feature of circles in current versions of Carbide Create is that they will not be rotated when used for a Circular Array even if the checkbox for this is checked. A work-around for this is to put one node on a grid point, go into Node Edit mode, move the node, then move it back, converting the Circle into a Curve object which describes the same geometry as the original circle, but which is no longer described by its radius.
 
 Note that in build 527 Carbide Create gained a feature for adding circles which are within a certain size range to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)
 
@@ -94,7 +94,7 @@ Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](http
 
 ![Carbide Create drawing a rectangle.](<.gitbook/assets/Carbide_Create_interface_create_rectangle (1).png>)
 
-Carbide Create draws from corner-to-corner by default in 830 and later, but will draw from center-to-corner when one holds the control (or command) (or shift) keyboard modifier.
+Carbide Create draws from corner-to-corner by default in 830 and later, but will draw from center-to-corner when one holds the shift or control (or command) keyboard modifier.
 
 In the same fashion as other shapes which have specific support in Carbide Create, rectangles will have a center point which may be interacted with, as well as a midpoint along each side.
 
@@ -268,8 +268,6 @@ In addition to moving, geometry may also be altered in size. Selections may be s
 
 Objects may be rotated. This is often useful for decorative designs, and, may be required to control part orientation when cutting or doing mechanical design, or to adjust for orientation of T-bones. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in certain programs if the rotation operation should change the objects into Curve objects, removing the ability to interact with their formal parameters.
 
-At this time in Carbide Create, Circle objects will not alter their orientation when rotated, only positioning. If using the nodes for positional information is required, it will be necessary to convert them to Curve objects by Node Editing.
-
 See also the Circular Array tool below.
 
 ### Mirror
@@ -323,7 +321,7 @@ Depending on the selection, Carbide Create affords the following Boolean operati
 * **Intersection** ― only available when two objects are selected, the new object will be that area included within both objects
 * **Subtraction** ― the key object (indicated by a dashed highlight) will be removed from each of the other object(s) in the selection
 
-Note that in most programs, the selection is modified, so if the original geometry will be needed after, it may be necessary that the objects be duplicated in alignment with the originals.
+Note that in most programs, the selection is modified, so if the original geometry will be needed after, it may be necessary that the objects be duplicated in alignment with the originals (but see the checkbox option below).&#x20;
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -391,10 +389,13 @@ When in Node Edit Mode it is possible to:
 * set one or more nodes to be sharp (indicated by a square), retracting the associated off-curve nodes by right-clicking and choosing _Set Sharp_ or using the keyboard shortcut _v_
 * set one or more nodes to cusp (indicated by a diamond), setting the off-curve nodes to project at an angle, allowing them to be dragged asymmetrically by right-clicking and choosing _Set Cusp_ or using the keyboard shortcut _u_
 * cut open a path (which will convert a closed path to an open one) by right-clicking and choosing _Cut Vector_ or using the keyboard shortcut _c_ note that it is possible that such a separation will remove a portion of the geometry from the current selection requiring that it be added back to the selection
+* reverse the direction of the vector underneath the mouse _r_
 
-Off-path nodes (indicated by small, filled circles) may be dragged to reshape the sections of curves associated with smooth nodes, in some applications by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and/or asymmetry. All of this is explained in the sidebar when in Edit Nodes mode:
+Off-path nodes (indicated by small, filled circles) may be dragged to reshape the sections of curves associated with smooth or cusp nodes, in some applications by holding the Alt (Option) key, dragged without affecting the other off-path node for the associated on-path node creating a sharp node and/or asymmetry. All of this is explained in the sidebar when in Edit Nodes mode:
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (405).png" alt=""><figcaption></figcaption></figure>
+
+A further feature is "Check Cutter Access" (also available separately) which allows interactive checking of whether a tool of a particular size will fit inside geometry.
 
 A forum post on this:
 
@@ -647,6 +648,10 @@ A Layer is an organizational tool which allows one to separate geometry and colo
 
 or, any other usage which assists in working with geometry and other elements in the application.
 
+Build 839 updated the DXF import parser to allow an option for preserving layers from a DXF:
+
+<figure><img src=".gitbook/assets/image (406).png" alt=""><figcaption></figcaption></figure>
+
 ### Duplication and Arrays
 
 A useful feature in many drawing or CAD programs is the ability to duplicate or create arrays of objects. Carbide Create affords four options for this:
@@ -767,7 +772,7 @@ Websites for this sort of thing:
 
 Beyond just drawing, vector drawing and CAD/CAM programs may have many additional features which go beyond just manipulating geometry or other elements. Many are adjuncts to Toolpaths but are mentioned here since there is often an element of geometrical editing which they address. They are divided between bundled and being only available in the Pro version. A few which Carbide Create has include (it is possible that additional feature(s) may be in betas which are still in testing):
 
-* Cutter Check — interactively demonstrates if a specified diameter of tool will fit within the current selection
+* Check Cutter Access — interactively demonstrates if a specified diameter of tool will fit within the current selection (note that this is also available when Node Editing as noted above)
 * Image Tracing — rather than manually re-draw a pixel image: [https://community.carbide3d.com/t/carbide-create-re-drawing/15811](https://community.carbide3d.com/t/carbide-create-re-drawing/15811) it is possible to import a pixel image and auto-trace it: [https://community.carbide3d.com/t/carbide-create-image-tracing/31208](https://community.carbide3d.com/t/carbide-create-image-tracing/31208) (note that tracing is inherently black and white, on/off, and that it may be necessary to adjust the Threshold setting and trace multiple times in order to capture all details of an image, see: [https://community.carbide3d.com/t/how-to-use-multiple-image-traces-to-capture-all-details-in-an-image/65714](https://community.carbide3d.com/t/how-to-use-multiple-image-traces-to-capture-all-details-in-an-image/65714)).
 
 <figure><img src=".gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
