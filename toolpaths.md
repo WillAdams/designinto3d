@@ -26,11 +26,11 @@ Carbide Create Pro also adds the option of Ramping in for toolpaths, and Rest ma
 The following toolpaths which Carbide Create supports will be discussed here:
 
 * Contour
-* Pocket
+* Pocket — a Pro feature affords the option of Pocket Type, either Offset (the default) or Raster (Pro only)
 * Drill
 * V-carve (Note that originally there were two different options, the normal which cut along the center and Advanced V-carve which cut along the perimeter, the former was eliminated, so “Advanced” was removed from the description)
 * Keyhole
-* Cutout (new in the 843 beta)
+* Cutout (new in Build 843 and later)
 
 Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V-endmills will be used for V-carving or chamfering or cutting at a precise angle as for certain types of joinery. Keyhole toolpaths require the use of specialty keyhole cutters which cut wider at the bottom than their shaft. Surfacing tools such as the McFly are used to flatten stock or the spoilboard with the Face toolpath (before it was available they were used with either a very shallow pocket toolpath, or a contour toolpath which follows geometry which describes the area to be cut, see: [https://community.carbide3d.com/t/preparing-rough-cut-lumber-for-machining/73429](https://community.carbide3d.com/t/preparing-rough-cut-lumber-for-machining/73429)).
 
@@ -158,7 +158,7 @@ A notable use for a V-endmill when drilling is to chamfer a small hole, but this
 
 V-carving toolpaths may be assigned to closed geometry, and as noted above, will cut along the perimeter (formerly termed Advanced V-carving), to either the depth required, or the max depth which is set. V-carving adds the option of pocket clearing to the depth set w/ a different endmill.
 
-In v7 or earlier, if one limits the depth on a normal V-carve, one can achieve special effects such as changing a square:
+In v7 or earlier, if one limits the depth on a normal V-carve, one could achieve special effects such as changing a square:
 
 ![](<.gitbook/assets/image (244).png>)
 
