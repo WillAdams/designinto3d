@@ -300,11 +300,16 @@ or for vertical:
 
 Geometry may be selected and offset, either to the inside or outside:
 
-![Carbide Create offset interface options](<.gitbook/assets/Carbide_Create_interface_offsetpath (3).png>)
+<figure><img src=".gitbook/assets/image (404).png" alt=""><figcaption></figcaption></figure>
 
-When offsetting paths to the outside in Carbide Create, corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired, either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a third-party tool such as Inkscape, and then reimport, or, redraw the geometry.
+When offsetting paths to the outside in Carbide Create, by default corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired, either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a third-party tool such as Inkscape, and then reimport, or, redraw the geometry.
 
-Note that in Build 847 the Offset operation gained the ability to delete originals and to rebuild the offset geometry as Beziér curves.
+Note that in Build 847 the Offset operation gained the ability to delete originals and to rebuild the offset geometry as Beziér curves and Build 874 added several additional checkboxes:
+
+* Delete Original — only the new offset geometry will be left after clicking Apply
+* Process Separately — note that checking this box will remove the consideration of the inside/outside relationship, so that the side to which the operation is done will be consistent for all elements
+* Output Bezier — rather than a Polyline, a Curve object will be returned
+* Square Corners — when offsetting to the outside, rather than the default rounding, square or sharp corners will be preserved/returned
 
 ### Boolean Operations
 
