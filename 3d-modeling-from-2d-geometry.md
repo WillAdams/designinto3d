@@ -117,6 +117,20 @@ Further, it is possible for successive toolpaths to interact with the 3D model a
 
 and for an overview of this new feature see: [https://community.carbide3d.com/t/create-856-posted-to-beta/106220/13](https://community.carbide3d.com/t/create-856-posted-to-beta/106220/13)
 
+For the new Angled modeling feature see: [https://community.carbide3d.com/t/create-856-posted-to-beta/106220/79](https://community.carbide3d.com/t/create-856-posted-to-beta/106220/79)
+
+The new Cylinder model:
+
+<figure><img src=".gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (409).png" alt=""><figcaption></figcaption></figure>
+
+allows one to model shapes which in previous versions would have been quite difficult:
+
+<figure><img src=".gitbook/assets/image (410).png" alt=""><figcaption></figcaption></figure>
+
+
+
 For additional tutorials see:
 
 * [https://community.carbide3d.com/t/starting-with-2-5-d-carving/15168/](https://community.carbide3d.com/t/starting-with-2-5-d-carving/15168/)
