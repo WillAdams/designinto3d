@@ -32,6 +32,8 @@ The following toolpaths which Carbide Create supports will be discussed here:
 * Keyhole
 * Cutout (new in Build 843 and later)
 
+Note: Holding "Shift" while clicking to create a toolpath defaults to using the selected vectors.
+
 Normally square endmills will be used for removing material and creating flat-bottomed pockets and making profile cuts all the way through material to cut parts free, ball-nosed endmills will be used to create rounded forms (including 3D), and V-endmills will be used for V-carving or chamfering or cutting at a precise angle as for certain types of joinery. Keyhole toolpaths require the use of specialty keyhole cutters which cut wider at the bottom than their shaft. Surfacing tools such as the McFly are used to flatten stock or the spoilboard with the Face toolpath (before it was available they were used with either a very shallow pocket toolpath, or a contour toolpath which follows geometry which describes the area to be cut, see: [https://community.carbide3d.com/t/preparing-rough-cut-lumber-for-machining/73429](https://community.carbide3d.com/t/preparing-rough-cut-lumber-for-machining/73429)).
 
 Note that in Carbide Create, dimensions may be entered using math expressions (which may contain units indicated by in or mm) which are evaluated by entering = at the end, so 1in+8mm= will result in a dimension of either 1.3150in or 33.400mm depending on the current unit.&#x20;
@@ -172,7 +174,7 @@ Keyhole toolpaths as noted above, require the use of a special tool, and are not
 
 ## Cutout
 
-The Cutout toolpath is an automation of the best practice of "offsetting geometry by endmill diameter plus 10% and cutting as a pocket down to tab height or the penultimate pass and then finishing with a contour, possibly also leaving a roughing clearance and finally taking a finishing pass". The interface is quite straight-forward, being expressed in terms of total Stock Thickness:
+The Cutout toolpath is an automation of the best practice of "offsetting geometry by endmill diameter plus some percentage (at least 10%) and cutting as a pocket down to tab height or the penultimate pass and then finishing with a contour, possibly also leaving a roughing clearance and finally taking a finishing pass". The interface is quite straight-forward, being expressed in terms of total Stock Thickness:
 
 <figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 

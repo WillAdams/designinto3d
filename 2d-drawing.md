@@ -32,9 +32,9 @@ clicking at the beginning (as well as if desired, intermediary) and end points:
 
 <figure><img src=".gitbook/assets/image (358).png" alt=""><figcaption><p>Carbide Create drawing line with Polyline tool.</p></figcaption></figure>
 
-and then clicking on **Done** (Note that returning to the first point will also complete the Polyline or Curve as a closed path). Note that open lines on the default (black) layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. Paths which are on layers which have an assigned color other than black will be drawn in that color without consideration for open or closed status. The current selection is drawn in orange, and if there are more than one element/group selected, the most recently added will be considered the Key Object which will be indicated by being drawn with a dashed highlight. If a single object is selected it is necessarily the Key Object and highlighted by being both orange and dashed.
+and then clicking on **Done** (Note that returning to the first point will also complete the Polyline or Curve as a closed path). Note that open lines on the default (black) layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. Paths which are on layers which have an assigned color other than black will be drawn in that color without consideration for open or closed status. The current selection is drawn in orange, and if there is more than one element/group selected, the most recently added will be considered the Key Object which will be indicated by being drawn with a dashed highlight. If a single object is selected it is necessarily the Key Object and highlighted by being both orange and dashed.
 
-Open polylines (or curves, see below) have limited functionality in terms of Toolpaths in Carbide Create, since they may only be used with Contour toolpaths. Usually, one will work with closed paths, since they define regions which one may then assign suitable toolpaths to. There are commands for editing polylines when they are selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve** tool section below.
+Open **Polylines** (or **Curves**, see below) have limited functionality in terms of Toolpaths in Carbide Create, since they may only be used with Contour toolpaths. Usually, one will work with closed paths, since they define regions which one may then assign suitable toolpaths to. There are commands for editing Polylines when selected in addition to the normal transforms (see below) ― since the edits possible are a subset of those for the Curve tool, and the editing interface makes it possible to convert a polyline into a curve, this is discussed in the **Curve** tool section below.
 
 Lines will be used to define Rectangles (which may be squares) and regular Polygons as described below.
 
@@ -52,7 +52,7 @@ Note that when drawing a Polyline (or Curve, see below), if one wishes an open/u
 
 ### Open Paths
 
-As noted above, open paths are indicated by being magenta when on the Default layer and not selected. They may be made up of lines, arcs, curves, or some combination thereof. Toolpaths may be assigned to open paths, and the directionality will determine any offset if needed for a toolpath (as well as setting climb vs. conventional in CAM tools which afford that option). Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the **Join Vectors** command (see Curve Editing below) and it is also possible to combine two (or more) open paths drawn in Carbide Create into a single path, open or closed.
+As noted above, open paths are indicated by being magenta when on the Default layer and not selected. They may be made up of lines, arcs, curves, or some combination thereof. Toolpaths may be assigned to open paths, and the directionality will determine any offset if needed for a toolpath (as well as setting Climb vs. Conventional in CAM tools which afford that option). Open paths are necessarily limited in the toolpaths which may be assigned, and it will typically not be possible to assign any but the most basic of operations to them. In Carbide Create, open paths may be converted to closed by using the **Join Vectors** command (see Curve Editing below) and it is also possible to combine two (or more) open paths drawn in Carbide Create into a single path, open or closed.
 
 Note that in build 527 Carbide Create gained a feature for adding all open paths to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)
 
@@ -74,11 +74,11 @@ Note that in 810 and later it is possible to shift-click to create a circle from
 
 Note that the **Done** button allows one to cancel out of the circle drawing mode.
 
-Note that circles, as other shapes made with tools specific to a shape such as rectangles and regular polygons have a center point in addition to their cardinal nodes, and midpoints at the intercardinal directions.
+Note that Circles, as other shapes made with tools specific to a shape such as Rectangles and regular Polygons have a center point in addition to their cardinal nodes, and midpoints at the intercardinal directions.
 
 In Carbide Create, circles are defined as four Bézier curves (as opposed to using arcs) which is necessarily an approximation of a perfect circle, but one with an error so small as to not matter for practical purposes. Researching the math involved in this differentiation is left as an exercise for the interested reader.
 
-One feature of circles in current versions of Carbide Create is that they will not be rotated when used for a Circular Array even if the checkbox for this is checked. A work-around for this is to put one node on a grid point, go into Node Edit mode, move the node, then move it back, converting the Circle into a Curve object which describes the same geometry as the original circle, but which is no longer described by its radius.
+One feature of circles in current versions of Carbide Create is that they will not be rotated when used for a Circular Array even if the checkbox for this is checked. A work-around for this is to put one node on a grid point, go into Node Edit mode, move the node, then move it back, (or nudge it back and forth using an arrow key) converting the Circle into a Curve object which describes the same geometry as the original circle, but which is no longer described by its radius.
 
 Note that in build 527 Carbide Create gained a feature for adding circles which are within a certain size range to the current selection: [https://blog.carbide3d.com/2021/carbide-create-527/](https://blog.carbide3d.com/2021/carbide-create-527/)
 
@@ -126,7 +126,7 @@ It is also possible to reference the current Stock dimensions:
 * w == Stock Width
 * t == Stock Thickness
 
-using those letters (note that they are not case-sensitive, so _H_, _W_, and _T_ may be used interchangeably) when using an expression which may be evaluated using the = key, so typing _t_= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus when setting up or editing a toolpath, and will dynamically update the dimension when stock thickness is changed for toolpaths. Mathematical expressions may also be used thus, so half the thickness may be referenced using _t_/2.
+using those letters (note that they are not case-sensitive, so _H_, _W_, and _T_ may be used as well) when using an expression which may be evaluated using the = key, so typing _t_= will result in the dimension being set to the current thickness, or typing _t_ will leave the dimension set thus when setting up or editing a toolpath, and will dynamically update the dimension when stock thickness is changed for toolpaths. Mathematical expressions may also be used thus, so half the thickness may be referenced using _t_/2.
 
 See: [https://community.carbide3d.com/t/how-to-use-the-height-width-and-thickness-variables-in-a-design/61155](https://community.carbide3d.com/t/how-to-use-the-height-width-and-thickness-variables-in-a-design/61155)
 
@@ -224,11 +224,9 @@ There are multiple ways to select objects:
 
 Note that when selecting there are certain special points which may be used for selection or snapping, and which will afford useful options for precision movement and placement:
 
-Circles afford the option to select the center in addition to the cardinal points:
+Circles, Rectangles, and regular Polygons afford the option to select the center in addition to the cardinal points/nodes and midpoints:
 
 <figure><img src=".gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
-
-and the midpoints of the arcs:
 
 <figure><img src=".gitbook/assets/image (369).png" alt=""><figcaption></figcaption></figure>
 
@@ -268,7 +266,7 @@ In addition to moving, geometry may also be altered in size. Selections may be s
 
 Objects may be rotated. This is often useful for decorative designs, and, may be required to control part orientation when cutting or doing mechanical design, or to adjust for orientation of T-bones. Note that for some objects it may be better to alter their size rather than rotating them by 90 or −90 degrees in certain programs if the rotation operation should change the objects into Curve objects, removing the ability to interact with their formal parameters.
 
-See also the Circular Array tool below.
+See also the **Circular Array** tool below.
 
 ### Mirror
 
@@ -300,14 +298,14 @@ Geometry may be selected and offset, either to the inside or outside:
 
 <figure><img src=".gitbook/assets/image (404).png" alt=""><figcaption></figcaption></figure>
 
-When offsetting paths to the outside in Carbide Create, by default corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape. If sharp corners are desired, either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a third-party tool such as Inkscape, and then reimport, or, redraw the geometry.
+When offsetting paths to the outside in Carbide Create, by default corners are rounded off to match the distance specified as a radius. This allows one to instantiate as geometry the path which would be assigned to an endmill when cutting out a shape.&#x20;
 
 Note that in Build 847 the Offset operation gained the ability to delete originals and to rebuild the offset geometry as Beziér curves and Build 874 added several additional checkboxes:
 
 * Delete Original — only the new offset geometry will be left after clicking Apply
 * Process Separately — note that checking this box will remove the consideration of the inside/outside relationship, so that the side to which the operation is done will be consistent for all elements
 * Output Bezier — rather than a Polyline, a Curve object will be returned
-* Square Corners — when offsetting to the outside, rather than the default rounding, square or sharp corners will be preserved/returned
+* Square Corners — when offsetting to the outside, rather than the default rounding, square or sharp corners will be preserved/returned (alternately, either draw the design at the largest possible size and inset only, or export to an SVG, do the offsetting operation in a third-party tool such as Inkscape, and then reimport, or, redraw the geometry)
 
 ### Boolean Operations
 
@@ -383,6 +381,7 @@ As noted above, geometry is made up of lines and/or curves which are bounded by 
 
 When in Node Edit Mode it is possible to:
 
+* reposition a selected on-path node by either dragging or nudging one grid distance via the arrow keys (shift will reduce the movement to 1/10th that dimension)
 * add an on-path node by right-clicking on a part of the path which does not have nodes and choosing _Insert Node_ — keyboard shortcut _i_
 * delete an on-path node (when it is selected) by right-clicking and choosing _Delete Node_ — keyboard shortcut _d_ for the currently selected node(s)
 * set one or more nodes to be smooth (indicated by a circle) by selecting and then right-clicking and choosing _Set Smooth_ or using the keyboard shortcut _s_ for the currently selected node(s)
@@ -477,7 +476,7 @@ allowing one to make asymmetrical designs which are not easily done with Boolean
 
 ![](<.gitbook/assets/image (78).png>)
 
-A further consideration is that the Trim Vectors command results in Curve objects which may be joined, and which will not result in polylines:
+A further consideration is that the Trim Vectors command results in Curve objects which may be joined, and which will not result in polylines for objects which have Curves:
 
 ![](<.gitbook/assets/image (263).png>)
 
@@ -582,6 +581,8 @@ This allows setting the spacing of the grid, or by checking or unchecking a chec
 
 ![](<.gitbook/assets/image (99).png>)
 
+Note that the drawing of the grid will dynamically re-size depending on zoom level.&#x20;
+
 ### Set Background
 
 It is possible to load a background image as noted above and use it as a reference. For further specifics see: [https://community.carbide3d.com/t/importing-a-file-or-a-backgound-image/27166](https://community.carbide3d.com/t/importing-a-file-or-a-backgound-image/27166)
@@ -637,7 +638,7 @@ A Layer is an organizational tool which allows one to separate geometry and colo
 * **ACTIVE** (indicated by being bold, must also be unlocked and visible/not-hidden) — all new objects will be created on the ACTIVE layer. Double-clicking on a layer will set it to be the **ACTIVE** layer.
 * Hidden (indicated by strike-through)
 * Locked (indicated by closed padlock)
-* not ACTIVE — (all layers other than the active layer which are not bold) elements may be selected/manipulated, but adding elements to a layer is done by using the menu to move the current selection to the desired layer
+* not ACTIVE — (all layers other than the active layer) elements may be selected/manipulated, but adding elements to a layer is done by using the menu to move the current selection to the desired layer
 
 ​How they are used, depends on a given project and how a user wishes to approach it:
 
@@ -658,8 +659,8 @@ A useful feature in many drawing or CAD programs is the ability to duplicate or 
 
 * Copy/Paste ― a selection may be copied into memory and then pasted, either centered on the current cursor location, or if the cursor is not within the drawing area, stacked on top of the original
 * Duplicate ― Edit | Duplicate Selected (ctrl or command d), this allows placing duplicates by clicking and affords a series of checkboxes which allow one to Keep Groups, Keep Toolpath Links, and/or Duplicate to Current Layer
-* Linear ― allows rectangular arrangements
-* Circular ― allows polar arrangements
+* Linear Array ― allows rectangular arrangements
+* Circular Array ― allows polar arrangements
 
 To create an array, select one or more objects, invoke the desired command, and then specify the parameters for the array.
 

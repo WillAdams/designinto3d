@@ -41,6 +41,7 @@ The possible shapes which may be added are:
 * Round
 * Angled
 * Flat
+* Cylinder
 
 When adding a shape the angle used for the model may be specified.
 
@@ -52,10 +53,14 @@ Each component may be named, and the type of the merge used for 3D modeling spec
 * Subtract
 * Min
 * Max
-* Multiply
+* Multiply (removed in 873, Equal is used instead)
 * Equal
 
 and lastly a Base Height may be specified which will result in the 3D modeling component having that height added beneath it if not present and calculated as starting at that base height.
+
+It is also possible to import 3D models (STLs) or pixel images as textures/height/depth maps (PNG, JPEG, PNG, and TIFF).
+
+Note that beginning in build 856 it became possible to project Engraving Toolpaths onto the 3D model.
 
 Adding flat shapes is quite straight-forward:
 
