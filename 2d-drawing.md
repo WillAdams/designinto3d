@@ -6,7 +6,7 @@ description: Drawing in 2 dimensions to make 3 dimensional parts
 
 As noted previously, before one can make a part, one must define the geometry of the design. This is done using classic geometric constructs, and possibly curves defined mathematically (but usually drawn up in a CAD or Bézier curve drawing program). We will use Carbide Create as a specific example (available from: [https://carbide3d.com/carbidecreate/](https://carbide3d.com/carbidecreate/) — note that some features may only be available in the current beta: [https://carbide3d.com/carbidecreate/beta](https://carbide3d.com/carbidecreate/beta) (if there is an open beta currently in testing) and that there are older, unsupported versions at: [https://carbide3d.com/downloads](https://carbide3d.com/downloads), but the concepts would apply to any CAD or vector drawing program and will be explored first.
 
-<figure><img src=".gitbook/assets/image (357).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (412).png" alt=""><figcaption></figcaption></figure>
 
 Carbide Create has two or three panes (Design, Toolpaths, and in Pro mode, Model). As with most drawing tools, there are menus for commands or different program functions/states, a palette of tools, and a work area, which includes a graphical representation of the "Stock" which is the material which will be cut away to make a design or part, and on the Stock there may be lines for a grid which may be re-sized or hidden. The initial view has no objects which may be manipulated, these may be added as described below. Later versions add a pair of rulers around the drawing area and a status bar.
 
@@ -26,11 +26,11 @@ Points of course will be used to define the Cartesian X, Y coordinates of all ge
 
 Straight lines are a fundamental building block of vector drawing and are of course defined as the shortest distance between two points (Euclid’s _Elements: Book I:_ [_Definitions 2–5_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/bookI.html#defs)). Some CAM tools (including Carbide Create) will allow one to assign various toolpaths to lines, and if not directly on the line, the offset will be determined by which point is the origin and which is the final point (which is to say, the path direction) and whether the offset is to the left- or right-hand of the path direction. Carbide Create allows one to draw lines as unclosed paths, by choosing either the Polyline or Curve tool:
 
-![Carbide Create Polyline Tool.](<.gitbook/assets/Carbide_Create_screengrab_polyline_hl (2).png>)
+<figure><img src=".gitbook/assets/image (413).png" alt=""><figcaption></figcaption></figure>
 
 clicking at the beginning (as well as if desired, intermediary) and end points:
 
-<figure><img src=".gitbook/assets/image (358).png" alt=""><figcaption><p>Carbide Create drawing line with Polyline tool.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (414).png" alt=""><figcaption><p>Carbide Create drawing line with Polyline tool.</p></figcaption></figure>
 
 and then clicking on **Done** (Note that returning to the first point will also complete the Polyline or Curve as a closed path). Note that open lines on the default (black) layer in Carbide Create will be indicated by being magenta when not selected, as opposed to the black of closed paths. Paths which are on layers which have an assigned color other than black will be drawn in that color without consideration for open or closed status. The current selection is drawn in orange, and if there is more than one element/group selected, the most recently added will be considered the Key Object which will be indicated by being drawn with a dashed highlight. If a single object is selected it is necessarily the Key Object and highlighted by being both orange and dashed.
 
@@ -92,7 +92,7 @@ One may select the minimum and maximum diameter for adding circles to the curren
 
 Named as quadrilaterals in Euclid’s _Elements: Book I:_ [_Definition 19_](https://mathcs.clarku.edu/~djoyce/java/elements/bookI/defI19.html), rectangles have a specific tool for their creation; squares may be defined by making height and width equal, and in Carbide Create rectangles have a corner feature which other shapes do not.&#x20;
 
-![Carbide Create drawing a rectangle.](<.gitbook/assets/Carbide_Create_interface_create_rectangle (1).png>)
+<figure><img src=".gitbook/assets/image (416).png" alt=""><figcaption><p>Carbide Create drawing a rectangle.</p></figcaption></figure>
 
 Carbide Create draws from corner-to-corner by default in 830 and later, but will draw from center-to-corner when one holds the shift or control (or command) keyboard modifier.
 
@@ -134,13 +134,13 @@ See: [https://community.carbide3d.com/t/how-to-use-the-height-width-and-thicknes
 
 For a circle, the size parameter adjustment may be done in terms of its overall size using the **Resize** tool, or by adjusting its **Radius**:
 
-![Carbide Create modifying circle parameters.](.gitbook/assets/Carbide_Create_screengrab_circle_parameters.png)
+<figure><img src=".gitbook/assets/image (417).png" alt=""><figcaption><p>Carbide Create modifying circle parameters.</p></figcaption></figure>
 
 #### Rectangle Parameters
 
 Rectangles may also be modified in their dimensions, but one is not limited to a regular square, **Width** and/or **Height** may be specified separately:
 
-![Carbide Create modifying rectangle parameters.](<.gitbook/assets/Carbide_Create_interface_parameters_rectangle (1).png>)
+<figure><img src=".gitbook/assets/image (418).png" alt=""><figcaption><p>Carbide Create modifying rectangle parameters.</p></figcaption></figure>
 
 Note that in addition to the dimensions, one may change the shaping/appearance of corners. The possible options are:
 
@@ -155,13 +155,13 @@ Note that in addition to the dimensions, one may change the shaping/appearance o
 
 Once a corner treatment is specified, one may set its dimension in terms of the radius/diameter/distance from the corner:
 
-![Carbide Create modifying Rectangle corner parameters.](.gitbook/assets/Carbide_Create_interface_rectangle_fillet_parameters.png)
+<figure><img src=".gitbook/assets/image (419).png" alt=""><figcaption><p>Carbide Create modifying Rectangle corner parameters.</p></figcaption></figure>
 
 #### Polygon Parameters
 
 Polygons may be adjusted for Radius (since only regular polygons are supported, only one measurement need be specified) and number of sides:
 
-![Carbide Create modifying Polygon parameters.](.gitbook/assets/Carbide_Create_interface_polygon_parameters.png)
+<figure><img src=".gitbook/assets/image (420).png" alt=""><figcaption><p>Carbide Create modifying Polygon parameters.</p></figcaption></figure>
 
 ## View
 
@@ -311,7 +311,7 @@ Note that in Build 847 the Offset operation gained the ability to delete origina
 
 Booleans allow for the modification of geometry using existing geometry. Named for the British Mathematician George Boole: [https://www.britannica.com/biography/George-Boole](https://www.britannica.com/biography/George-Boole), they result in new figures based on a logical interaction of two or more figures, so the interface for them only appears when two or more objects are selected (the green indicates the geometry which will be produced by the operation, the black what is used and which is normally replaced by the result):
 
-![Carbide Create Boolean options.](.gitbook/assets/Carbide_Create_interface_Boolean.png)
+<figure><img src=".gitbook/assets/image (421).png" alt=""><figcaption></figcaption></figure>
 
 Depending on the selection, Carbide Create affords the following Boolean operations:
 
@@ -348,17 +348,17 @@ The most common is Bézier curves ([https://en.wikipedia.org/wiki/B%C3%A9zier\_c
 
 To create a curve, select the Curve tool, then click or click-drag where one wants on-curve points (clicking creates sharp nodes, click-dragging creates smooth nodes, with the click placing the on-curve node, and the drag-release determining the position of the off-curve nodes ― either smooth or sharp nodes may be changed to the other, see below):
 
-![Carbide Create drawing curve.](<.gitbook/assets/Carbide_Create_interface_create_curve (1).png>)
+<figure><img src=".gitbook/assets/image (422).png" alt=""><figcaption><p>Carbide Create drawing curve.</p></figcaption></figure>
 
 #### Open or Closed Paths
 
 Once a Curve (or Polyline) is created it may be either open (indicated by being magenta when not selected) and made by clicking Done in the Curve tool, or closed (black) which is done by clicking on the initial point or continuing that click as a drag to define the positioning of the off-curve nodes. Open paths may be closed using the **Join Vectors** command:
 
-![Carbide Create closing curve using Join command.](<.gitbook/assets/Carbide_Create_interface_join_curve (3).png>)
+<figure><img src=".gitbook/assets/image (423).png" alt=""><figcaption><p>Carbide Create closing curve using Join command.</p></figcaption></figure>
 
 Note that the beginning and ending nodes will be connected as directly as possible:
 
-![Carbide Create curve closed using Join command.](.gitbook/assets/Carbide_Create_interface_join_curve_after.png)
+<figure><img src=".gitbook/assets/image (424).png" alt=""><figcaption><p>Carbide Create curve closed using Join command.</p></figcaption></figure>
 
 and it may be necessary to adjust the curve if the path crosses itself.
 
@@ -375,7 +375,7 @@ Bézier Curves should be drawn following some basic principles unless a design d
 
 The underlying points of geometry may be modified by selecting it and choosing **Node Edit** Mode:
 
-![Carbide Create Node Edit Mode.](<.gitbook/assets/Carbide_Create_interface_node_edit_mode (1).png>)
+<figure><img src=".gitbook/assets/image (425).png" alt=""><figcaption><p>Carbide Create Node Edit Mode.</p></figcaption></figure>
 
 As noted above, geometry is made up of lines and/or curves which are bounded by on-path nodes, and for curves, have a pair of off-path nodes which determine how the curve is drawn.
 
@@ -573,13 +573,13 @@ This allows setting:
 * Retract height — also termed Safety height, this is how much the machine will lift in-between toolpaths
 * Units: Inch or millimeters
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (426).png" alt=""><figcaption></figcaption></figure>
 
 ### Set Grid
 
 This allows setting the spacing of the grid, or by checking or unchecking a checkbox, showing or hiding it.
 
-![](<.gitbook/assets/image (99).png>)
+<figure><img src=".gitbook/assets/image (427).png" alt=""><figcaption></figcaption></figure>
 
 Note that the drawing of the grid will dynamically re-size depending on zoom level.&#x20;
 
