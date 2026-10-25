@@ -266,6 +266,14 @@ There is a PDF with keyboard shortcuts at:
 
 [https://community.carbide3d.com/uploads/short-url/tRxj5iW8JT1gtD1sF1I313VeKfI.pdf](https://community.carbide3d.com/uploads/short-url/tRxj5iW8JT1gtD1sF1I313VeKfI.pdf)
 
+## Installation
+
+Installation is typical, but one will be prompted to install a driver and so forth -— the defaults should work well. One notable difference is a request for network access:
+
+<figure><img src=".gitbook/assets/image (428).png" alt=""><figcaption></figcaption></figure>
+
+which is required to support the Carbide Create feature for sending a .c2d file directly to Carbide Motion.
+
 ## Setup New Machine
 
 When first setting up Carbide Motion on a new computer, it will be necessary to choose this option. Version 6 of Carbide Motion adds a setup wizard:
