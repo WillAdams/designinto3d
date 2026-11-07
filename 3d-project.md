@@ -156,7 +156,7 @@ which imports into a Carbide Create template file:
 
 <figure><img src=".gitbook/assets/image (431).png" alt=""><figcaption></figcaption></figure>
 
-which once adjuste for position/stock may be cut out:
+which once adjusted for position/stock may be cut out:
 
 <figure><img src=".gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
 
