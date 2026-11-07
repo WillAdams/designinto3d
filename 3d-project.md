@@ -130,3 +130,38 @@ Or in Carbide Create:
 ![Carbide Create: Rabbeted Box: 1½″ × 1½″ × 8″](<.gitbook/assets/Rabbeted Box with features 1_5x8x1_5_Carbide Create.png>)
 
 See: [https://cutrocket.com/p/5fb0a1afbf9d6/](https://cutrocket.com/p/5fb0a1afbf9d6/) for a file, and comments and discussion: [https://community.carbide3d.com/t/design-into-3d-rabbeted-box-with-features/20741/36](https://community.carbide3d.com/t/design-into-3d-rabbeted-box-with-features/20741/36).
+
+## Rabbet Box Designer app
+
+An app is now available for this: [https://studio.flet.dev/run/bicQWc3Aul](https://studio.flet.dev/run/bicQWc3Aul) as discussed at: [https://community.carbide3d.com/t/rabbet-box-designer-on-flet-dev/108107](https://community.carbide3d.com/t/rabbet-box-designer-on-flet-dev/108107)
+
+The UI includes parameters for:
+
+* Box width
+* Box depth
+* Box height
+* Stock thickness
+* Lid type (sliding or none)
+* Cutout tool diameter
+
+<figure><img src=".gitbook/assets/image (429).png" alt=""><figcaption></figcaption></figure>
+
+and outputs a DXF:
+
+<figure><img src=".gitbook/assets/image (430).png" alt=""><figcaption></figcaption></figure>
+
+which imports into a Carbide Create template file:
+
+{% embed url="https://github.com/WillAdams/Design_Into_3D/raw/refs/heads/master/box/Rabbet-Box-Designer%20box%20template.c2d" %}
+
+<figure><img src=".gitbook/assets/image (431).png" alt=""><figcaption></figcaption></figure>
+
+which once adjuste for position/stock may be cut out:
+
+<figure><img src=".gitbook/assets/image (432).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src=".gitbook/assets/image (433).png" alt=""><figcaption></figcaption></figure>
+
+and post-processed and then assembled into a box:
+
+<figure><img src=".gitbook/assets/image (434).png" alt=""><figcaption></figcaption></figure>
